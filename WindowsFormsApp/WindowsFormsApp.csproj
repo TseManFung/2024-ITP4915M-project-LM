@@ -97,6 +97,12 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormReOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReOrder.Designer.cs">
+      <DependentUpon>FormReOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="PlacingOrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReOrder.resx">
+      <DependentUpon>FormReOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlacingOrderForm.resx">
       <DependentUpon>PlacingOrderForm.cs</DependentUpon>
