@@ -21,5 +21,10 @@ namespace WindowsFormsApp
         {
 
         }
+
+        private void FrmDirectory_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

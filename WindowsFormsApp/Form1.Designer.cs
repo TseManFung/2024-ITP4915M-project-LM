@@ -44,8 +44,6 @@
             this.pictureBoxReOrder = new System.Windows.Forms.PictureBox();
             this.lblReOrder = new System.Windows.Forms.Label();
             this.pictureBoxLenguage = new System.Windows.Forms.PictureBox();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
-            this.lalDirectory = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlaceOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCheckOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInformationCenter)).BeginInit();
@@ -54,7 +52,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOrderStatus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLenguage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxPlaceOrder
@@ -204,34 +201,11 @@
             this.pictureBoxLenguage.TabIndex = 21;
             this.pictureBoxLenguage.TabStop = false;
             // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Image = global::WindowsFormsApp.Properties.Resources.LoGoLeGend;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(746, 12);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(75, 50);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogo.TabIndex = 22;
-            this.pictureBoxLogo.TabStop = false;
-            this.pictureBoxLogo.Click += new System.EventHandler(this.pictureBoxLogo_Click);
-            // 
-            // lalDirectory
-            // 
-            this.lalDirectory.AutoSize = true;
-            this.lalDirectory.Font = new System.Drawing.Font("新細明體", 36F);
-            this.lalDirectory.Location = new System.Drawing.Point(878, 14);
-            this.lalDirectory.Name = "lalDirectory";
-            this.lalDirectory.Size = new System.Drawing.Size(195, 48);
-            this.lalDirectory.TabIndex = 23;
-            this.lalDirectory.Text = "Directory";
-            // 
             // FrmDirectory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.lalDirectory);
-            this.Controls.Add(this.pictureBoxLogo);
             this.Controls.Add(this.pictureBoxLenguage);
             this.Controls.Add(this.lblReOrder);
             this.Controls.Add(this.pictureBoxReOrder);
@@ -250,6 +224,7 @@
             this.Name = "FrmDirectory";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Directory";
+            this.Load += new System.EventHandler(this.FrmDirectory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlaceOrder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCheckOrder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInformationCenter)).EndInit();
@@ -258,7 +233,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOrderStatus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReOrder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLenguage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,8 +255,6 @@
         private System.Windows.Forms.PictureBox pictureBoxReOrder;
         private System.Windows.Forms.Label lblReOrder;
         private System.Windows.Forms.PictureBox pictureBoxLenguage;
-        private System.Windows.Forms.PictureBox pictureBoxLogo;
-        private System.Windows.Forms.Label lalDirectory;
     }
 }
 
