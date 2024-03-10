@@ -83,7 +83,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1626, 94);
+            this.button1.Location = new System.Drawing.Point(1641, 96);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(143, 60);
             this.button1.TabIndex = 4;
@@ -93,15 +93,15 @@
             // dataGridView3
             // 
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(89, 94);
+            this.dataGridView3.Location = new System.Drawing.Point(89, 211);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(1668, 681);
+            this.dataGridView3.Size = new System.Drawing.Size(1695, 564);
             this.dataGridView3.TabIndex = 5;
             // 
             // btnCheckDetail
             // 
-            this.btnCheckDetail.Location = new System.Drawing.Point(1582, 897);
+            this.btnCheckDetail.Location = new System.Drawing.Point(1597, 892);
             this.btnCheckDetail.Name = "btnCheckDetail";
             this.btnCheckDetail.Size = new System.Drawing.Size(187, 72);
             this.btnCheckDetail.TabIndex = 6;
