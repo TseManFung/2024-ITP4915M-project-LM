@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.lblGOODSRECEIVEDNOTE = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtGOODSRECEIVEDNOTE = new System.Windows.Forms.TextBox();
             this.lblSUPPLIER = new System.Windows.Forms.Label();
             this.lblSerialStamp = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtSUPPLIER = new System.Windows.Forms.TextBox();
+            this.txtSerialStamp = new System.Windows.Forms.TextBox();
             this.lblGRN = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.pictureBoxBack = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLanguage = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // lblGOODSRECEIVEDNOTE
@@ -53,14 +53,14 @@
             this.lblGOODSRECEIVEDNOTE.TabIndex = 77;
             this.lblGOODSRECEIVEDNOTE.Text = "GOODS RECEIVED NOTE:";
             // 
-            // textBox1
+            // txtGOODSRECEIVEDNOTE
             // 
-            this.textBox1.Font = new System.Drawing.Font("新細明體", 24F);
-            this.textBox1.Location = new System.Drawing.Point(975, 191);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(218, 46);
-            this.textBox1.TabIndex = 78;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtGOODSRECEIVEDNOTE.Font = new System.Drawing.Font("新細明體", 24F);
+            this.txtGOODSRECEIVEDNOTE.Location = new System.Drawing.Point(975, 191);
+            this.txtGOODSRECEIVEDNOTE.Name = "txtGOODSRECEIVEDNOTE";
+            this.txtGOODSRECEIVEDNOTE.Size = new System.Drawing.Size(218, 46);
+            this.txtGOODSRECEIVEDNOTE.TabIndex = 78;
+            this.txtGOODSRECEIVEDNOTE.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lblSUPPLIER
             // 
@@ -82,21 +82,21 @@
             this.lblSerialStamp.TabIndex = 80;
             this.lblSerialStamp.Text = "Serial Stamp:";
             // 
-            // textBox2
+            // txtSUPPLIER
             // 
-            this.textBox2.Font = new System.Drawing.Font("新細明體", 24F);
-            this.textBox2.Location = new System.Drawing.Point(975, 323);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(218, 46);
-            this.textBox2.TabIndex = 81;
+            this.txtSUPPLIER.Font = new System.Drawing.Font("新細明體", 24F);
+            this.txtSUPPLIER.Location = new System.Drawing.Point(975, 323);
+            this.txtSUPPLIER.Name = "txtSUPPLIER";
+            this.txtSUPPLIER.Size = new System.Drawing.Size(218, 46);
+            this.txtSUPPLIER.TabIndex = 81;
             // 
-            // textBox3
+            // txtSerialStamp
             // 
-            this.textBox3.Font = new System.Drawing.Font("新細明體", 24F);
-            this.textBox3.Location = new System.Drawing.Point(975, 512);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(218, 46);
-            this.textBox3.TabIndex = 82;
+            this.txtSerialStamp.Font = new System.Drawing.Font("新細明體", 24F);
+            this.txtSerialStamp.Location = new System.Drawing.Point(975, 512);
+            this.txtSerialStamp.Name = "txtSerialStamp";
+            this.txtSerialStamp.Size = new System.Drawing.Size(218, 46);
+            this.txtSerialStamp.TabIndex = 82;
             // 
             // lblGRN
             // 
@@ -108,36 +108,36 @@
             this.lblGRN.TabIndex = 83;
             this.lblGRN.Text = "Goods Received note (GRN)";
             // 
-            // pictureBox1
+            // pictureBoxBack
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp.Properties.Resources.back;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(138, 130);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 76;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxBack.Image = global::WindowsFormsApp.Properties.Resources.back;
+            this.pictureBoxBack.Location = new System.Drawing.Point(12, 12);
+            this.pictureBoxBack.Name = "pictureBoxBack";
+            this.pictureBoxBack.Size = new System.Drawing.Size(138, 130);
+            this.pictureBoxBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxBack.TabIndex = 76;
+            this.pictureBoxBack.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBoxLanguage
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox2.Image = global::WindowsFormsApp.Properties.Resources.languageimage1;
-            this.pictureBox2.Location = new System.Drawing.Point(1748, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(144, 130);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 75;
-            this.pictureBox2.TabStop = false;
+            this.pictureBoxLanguage.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBoxLanguage.Image = global::WindowsFormsApp.Properties.Resources.languageimage1;
+            this.pictureBoxLanguage.Location = new System.Drawing.Point(1748, 12);
+            this.pictureBoxLanguage.Name = "pictureBoxLanguage";
+            this.pictureBoxLanguage.Size = new System.Drawing.Size(144, 130);
+            this.pictureBoxLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLanguage.TabIndex = 75;
+            this.pictureBoxLanguage.TabStop = false;
             // 
-            // pictureBox3
+            // pictureBoxLogo
             // 
-            this.pictureBox3.Image = global::WindowsFormsApp.Properties.Resources.LoGoLeGend;
-            this.pictureBox3.Location = new System.Drawing.Point(596, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(163, 130);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 74;
-            this.pictureBox3.TabStop = false;
+            this.pictureBoxLogo.Image = global::WindowsFormsApp.Properties.Resources.LoGoLeGend;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(596, 12);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(163, 130);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLogo.TabIndex = 74;
+            this.pictureBoxLogo.TabStop = false;
             // 
             // frmGRN
             // 
@@ -145,20 +145,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.lblGRN);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtSerialStamp);
+            this.Controls.Add(this.txtSUPPLIER);
             this.Controls.Add(this.lblSerialStamp);
             this.Controls.Add(this.lblSUPPLIER);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtGOODSRECEIVEDNOTE);
             this.Controls.Add(this.lblGOODSRECEIVEDNOTE);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBoxBack);
+            this.Controls.Add(this.pictureBoxLanguage);
+            this.Controls.Add(this.pictureBoxLogo);
             this.Name = "frmGRN";
             this.Text = "GRN(e-GRN) for LM";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,15 +166,15 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.PictureBox pictureBoxLanguage;
+        private System.Windows.Forms.PictureBox pictureBoxBack;
         private System.Windows.Forms.Label lblGOODSRECEIVEDNOTE;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtGOODSRECEIVEDNOTE;
         private System.Windows.Forms.Label lblSUPPLIER;
         private System.Windows.Forms.Label lblSerialStamp;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtSUPPLIER;
+        private System.Windows.Forms.TextBox txtSerialStamp;
         private System.Windows.Forms.Label lblGRN;
     }
 }

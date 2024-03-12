@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp
 {
-    partial class FrmDirectory
+    partial class frmDirectory
     {
         /// <summary>
         /// 設計工具所需的變數。
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDirectory));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDirectory));
             this.pictureBoxPlaceOrder = new System.Windows.Forms.PictureBox();
             this.pictureBoxCheckOrder = new System.Windows.Forms.PictureBox();
             this.pictureBoxInformationCenter = new System.Windows.Forms.PictureBox();
@@ -201,7 +201,7 @@
             this.pictureBoxLenguage.TabIndex = 21;
             this.pictureBoxLenguage.TabStop = false;
             // 
-            // FrmDirectory
+            // frmDirectory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -221,7 +221,7 @@
             this.Controls.Add(this.pictureBoxInformationCenter);
             this.Controls.Add(this.pictureBoxCheckOrder);
             this.Controls.Add(this.pictureBoxPlaceOrder);
-            this.Name = "FrmDirectory";
+            this.Name = "frmDirectory";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Directory";
             this.Load += new System.EventHandler(this.FrmDirectory_Load);

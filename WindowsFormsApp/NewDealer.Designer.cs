@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.AddNewStaff = new System.Windows.Forms.Label();
+            this.AddNewDeliver = new System.Windows.Forms.Label();
             this.txtInfromation = new System.Windows.Forms.TextBox();
             this.btnCencel = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // AddNewStaff
+            // AddNewDeliver
             // 
-            this.AddNewStaff.AutoSize = true;
-            this.AddNewStaff.Font = new System.Drawing.Font("新細明體", 36F);
-            this.AddNewStaff.Location = new System.Drawing.Point(625, 119);
-            this.AddNewStaff.Name = "AddNewStaff";
-            this.AddNewStaff.Size = new System.Drawing.Size(350, 48);
-            this.AddNewStaff.TabIndex = 1;
-            this.AddNewStaff.Text = "Add New Dealer?";
+            this.AddNewDeliver.AutoSize = true;
+            this.AddNewDeliver.Font = new System.Drawing.Font("新細明體", 36F);
+            this.AddNewDeliver.Location = new System.Drawing.Point(625, 119);
+            this.AddNewDeliver.Name = "AddNewDeliver";
+            this.AddNewDeliver.Size = new System.Drawing.Size(350, 48);
+            this.AddNewDeliver.TabIndex = 1;
+            this.AddNewDeliver.Text = "Add New Dealer?";
             // 
             // txtInfromation
             // 
@@ -92,7 +92,7 @@
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnCencel);
             this.Controls.Add(this.txtInfromation);
-            this.Controls.Add(this.AddNewStaff);
+            this.Controls.Add(this.AddNewDeliver);
             this.Name = "frmNewDealer";
             this.Text = "New Dealer";
             this.ResumeLayout(false);
@@ -102,7 +102,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label AddNewStaff;
+        private System.Windows.Forms.Label AddNewDeliver;
         private System.Windows.Forms.TextBox txtInfromation;
         private System.Windows.Forms.Button btnCencel;
         private System.Windows.Forms.Button btnEdit;

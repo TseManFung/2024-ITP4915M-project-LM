@@ -28,41 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxBack = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.lblReOrderPurchasingDepartment = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lblFollowingROL = new System.Windows.Forms.Label();
+            this.pictureBoxLanguage = new System.Windows.Forms.PictureBox();
+            this.dataGridViewItemFollowingROL = new System.Windows.Forms.DataGridView();
+            this.lblItemFollowingROL = new System.Windows.Forms.Label();
             this.lblReStock = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewRestock = new System.Windows.Forms.DataGridView();
             this.btnConfirm = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItemFollowingROL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRestock)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBoxBack
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp.Properties.Resources.back;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(138, 130);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 42;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxBack.Image = global::WindowsFormsApp.Properties.Resources.back;
+            this.pictureBoxBack.Location = new System.Drawing.Point(26, 12);
+            this.pictureBoxBack.Name = "pictureBoxBack";
+            this.pictureBoxBack.Size = new System.Drawing.Size(138, 130);
+            this.pictureBoxBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxBack.TabIndex = 42;
+            this.pictureBoxBack.TabStop = false;
             // 
-            // pictureBox3
+            // pictureBoxLogo
             // 
-            this.pictureBox3.Image = global::WindowsFormsApp.Properties.Resources.LoGoLeGend;
-            this.pictureBox3.Location = new System.Drawing.Point(465, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(163, 130);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 44;
-            this.pictureBox3.TabStop = false;
+            this.pictureBoxLogo.Image = global::WindowsFormsApp.Properties.Resources.LoGoLeGend;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(465, 12);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(163, 130);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLogo.TabIndex = 44;
+            this.pictureBoxLogo.TabStop = false;
             // 
             // lblReOrderPurchasingDepartment
             // 
@@ -74,36 +74,36 @@
             this.lblReOrderPurchasingDepartment.TabIndex = 45;
             this.lblReOrderPurchasingDepartment.Text = "Re-Order (Purchasing Department)";
             // 
-            // pictureBox2
+            // pictureBoxLanguage
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox2.Image = global::WindowsFormsApp.Properties.Resources.languageimage1;
-            this.pictureBox2.Location = new System.Drawing.Point(1681, -5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(144, 130);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 71;
-            this.pictureBox2.TabStop = false;
+            this.pictureBoxLanguage.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBoxLanguage.Image = global::WindowsFormsApp.Properties.Resources.languageimage1;
+            this.pictureBoxLanguage.Location = new System.Drawing.Point(1681, -5);
+            this.pictureBoxLanguage.Name = "pictureBoxLanguage";
+            this.pictureBoxLanguage.Size = new System.Drawing.Size(144, 130);
+            this.pictureBoxLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLanguage.TabIndex = 71;
+            this.pictureBoxLanguage.TabStop = false;
             // 
-            // dataGridView1
+            // dataGridViewItemFollowingROL
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(178, 216);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1488, 392);
-            this.dataGridView1.TabIndex = 72;
+            this.dataGridViewItemFollowingROL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewItemFollowingROL.Location = new System.Drawing.Point(178, 216);
+            this.dataGridViewItemFollowingROL.Name = "dataGridViewItemFollowingROL";
+            this.dataGridViewItemFollowingROL.RowTemplate.Height = 24;
+            this.dataGridViewItemFollowingROL.Size = new System.Drawing.Size(1488, 392);
+            this.dataGridViewItemFollowingROL.TabIndex = 72;
             // 
-            // lblFollowingROL
+            // lblItemFollowingROL
             // 
-            this.lblFollowingROL.AutoSize = true;
-            this.lblFollowingROL.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblFollowingROL.Location = new System.Drawing.Point(37, 171);
-            this.lblFollowingROL.Name = "lblFollowingROL";
-            this.lblFollowingROL.Size = new System.Drawing.Size(519, 32);
-            this.lblFollowingROL.TabIndex = 73;
-            this.lblFollowingROL.Text = "The following items have arrived in ROL:";
-            this.lblFollowingROL.Click += new System.EventHandler(this.lblFollowingROL_Click);
+            this.lblItemFollowingROL.AutoSize = true;
+            this.lblItemFollowingROL.Font = new System.Drawing.Font("新細明體", 24F);
+            this.lblItemFollowingROL.Location = new System.Drawing.Point(37, 171);
+            this.lblItemFollowingROL.Name = "lblItemFollowingROL";
+            this.lblItemFollowingROL.Size = new System.Drawing.Size(519, 32);
+            this.lblItemFollowingROL.TabIndex = 73;
+            this.lblItemFollowingROL.Text = "The following items have arrived in ROL:";
+            this.lblItemFollowingROL.Click += new System.EventHandler(this.lblFollowingROL_Click);
             // 
             // lblReStock
             // 
@@ -115,14 +115,14 @@
             this.lblReStock.TabIndex = 74;
             this.lblReStock.Text = "Restock:";
             // 
-            // dataGridView2
+            // dataGridViewRestock
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(178, 675);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1488, 160);
-            this.dataGridView2.TabIndex = 75;
+            this.dataGridViewRestock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewRestock.Location = new System.Drawing.Point(178, 675);
+            this.dataGridViewRestock.Name = "dataGridViewRestock";
+            this.dataGridViewRestock.RowTemplate.Height = 24;
+            this.dataGridViewRestock.Size = new System.Drawing.Size(1488, 160);
+            this.dataGridViewRestock.TabIndex = 75;
             // 
             // btnConfirm
             // 
@@ -140,21 +140,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.btnConfirm);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dataGridViewRestock);
             this.Controls.Add(this.lblReStock);
-            this.Controls.Add(this.lblFollowingROL);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.lblItemFollowingROL);
+            this.Controls.Add(this.dataGridViewItemFollowingROL);
+            this.Controls.Add(this.pictureBoxLanguage);
             this.Controls.Add(this.lblReOrderPurchasingDepartment);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBoxLogo);
+            this.Controls.Add(this.pictureBoxBack);
             this.Name = "frmReOrderPurchasingDepartment";
             this.Text = "Re-Order(Purchasing Department)";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItemFollowingROL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRestock)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,14 +162,14 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBoxBack;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Label lblReOrderPurchasingDepartment;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label lblFollowingROL;
+        private System.Windows.Forms.PictureBox pictureBoxLanguage;
+        private System.Windows.Forms.DataGridView dataGridViewItemFollowingROL;
+        private System.Windows.Forms.Label lblItemFollowingROL;
         private System.Windows.Forms.Label lblReStock;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridViewRestock;
         private System.Windows.Forms.Button btnConfirm;
     }
 }

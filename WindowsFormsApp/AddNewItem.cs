@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class FormLogin : Form
+    public partial class frmAddNewItem : Form
     {
-        public FormLogin()
+        public frmAddNewItem()
         {
             InitializeComponent();
+        }
+
+        private void txtReOrderLevel_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLanguage = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.pictureBoxBack = new System.Windows.Forms.PictureBox();
             this.lblReport = new System.Windows.Forms.Label();
             this.lblYearlyOrMonthly = new System.Windows.Forms.Label();
             this.lblPeriod = new System.Windows.Forms.Label();
@@ -39,43 +39,43 @@
             this.txtYearlyOrMonthly = new System.Windows.Forms.TextBox();
             this.txtPeriod = new System.Windows.Forms.TextBox();
             this.txtReportType = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lstPreview = new System.Windows.Forms.ListBox();
             this.btnOutput = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox2
+            // pictureBoxLanguage
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox2.Image = global::WindowsFormsApp.Properties.Resources.languageimage1;
-            this.pictureBox2.Location = new System.Drawing.Point(1748, -1);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(144, 130);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 71;
-            this.pictureBox2.TabStop = false;
+            this.pictureBoxLanguage.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBoxLanguage.Image = global::WindowsFormsApp.Properties.Resources.languageimage1;
+            this.pictureBoxLanguage.Location = new System.Drawing.Point(1748, -1);
+            this.pictureBoxLanguage.Name = "pictureBoxLanguage";
+            this.pictureBoxLanguage.Size = new System.Drawing.Size(144, 130);
+            this.pictureBoxLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLanguage.TabIndex = 71;
+            this.pictureBoxLanguage.TabStop = false;
             // 
-            // pictureBox3
+            // pictureBoxLogo
             // 
-            this.pictureBox3.Image = global::WindowsFormsApp.Properties.Resources.LoGoLeGend;
-            this.pictureBox3.Location = new System.Drawing.Point(667, -1);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(163, 130);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 72;
-            this.pictureBox3.TabStop = false;
+            this.pictureBoxLogo.Image = global::WindowsFormsApp.Properties.Resources.LoGoLeGend;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(667, -1);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(163, 130);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLogo.TabIndex = 72;
+            this.pictureBoxLogo.TabStop = false;
             // 
-            // pictureBox1
+            // pictureBoxBack
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp.Properties.Resources.back;
-            this.pictureBox1.Location = new System.Drawing.Point(1, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(138, 130);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 73;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxBack.Image = global::WindowsFormsApp.Properties.Resources.back;
+            this.pictureBoxBack.Location = new System.Drawing.Point(1, -1);
+            this.pictureBoxBack.Name = "pictureBoxBack";
+            this.pictureBoxBack.Size = new System.Drawing.Size(138, 130);
+            this.pictureBoxBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxBack.TabIndex = 73;
+            this.pictureBoxBack.TabStop = false;
             // 
             // lblReport
             // 
@@ -93,9 +93,9 @@
             this.lblYearlyOrMonthly.Font = new System.Drawing.Font("新細明體", 36F);
             this.lblYearlyOrMonthly.Location = new System.Drawing.Point(144, 178);
             this.lblYearlyOrMonthly.Name = "lblYearlyOrMonthly";
-            this.lblYearlyOrMonthly.Size = new System.Drawing.Size(315, 48);
+            this.lblYearlyOrMonthly.Size = new System.Drawing.Size(328, 48);
             this.lblYearlyOrMonthly.TabIndex = 75;
-            this.lblYearlyOrMonthly.Text = "Yearly/Monthly";
+            this.lblYearlyOrMonthly.Text = "Yearly/Monthly:";
             // 
             // lblPeriod
             // 
@@ -103,9 +103,9 @@
             this.lblPeriod.Font = new System.Drawing.Font("新細明體", 36F);
             this.lblPeriod.Location = new System.Drawing.Point(822, 178);
             this.lblPeriod.Name = "lblPeriod";
-            this.lblPeriod.Size = new System.Drawing.Size(139, 48);
+            this.lblPeriod.Size = new System.Drawing.Size(152, 48);
             this.lblPeriod.TabIndex = 76;
-            this.lblPeriod.Text = "Period";
+            this.lblPeriod.Text = "Period:";
             // 
             // lblReportType
             // 
@@ -113,9 +113,9 @@
             this.lblReportType.Font = new System.Drawing.Font("新細明體", 36F);
             this.lblReportType.Location = new System.Drawing.Point(1318, 178);
             this.lblReportType.Name = "lblReportType";
-            this.lblReportType.Size = new System.Drawing.Size(250, 48);
+            this.lblReportType.Size = new System.Drawing.Size(263, 48);
             this.lblReportType.TabIndex = 77;
-            this.lblReportType.Text = "Report Type";
+            this.lblReportType.Text = "Report Type:";
             // 
             // lblPreview
             // 
@@ -151,14 +151,14 @@
             this.txtReportType.Size = new System.Drawing.Size(168, 46);
             this.txtReportType.TabIndex = 81;
             // 
-            // listBox1
+            // lstPreview
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 12;
-            this.listBox1.Location = new System.Drawing.Point(190, 512);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(1344, 208);
-            this.listBox1.TabIndex = 82;
+            this.lstPreview.FormattingEnabled = true;
+            this.lstPreview.ItemHeight = 12;
+            this.lstPreview.Location = new System.Drawing.Point(190, 512);
+            this.lstPreview.Name = "lstPreview";
+            this.lstPreview.Size = new System.Drawing.Size(1344, 208);
+            this.lstPreview.TabIndex = 82;
             // 
             // btnOutput
             // 
@@ -176,7 +176,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.btnOutput);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lstPreview);
             this.Controls.Add(this.txtReportType);
             this.Controls.Add(this.txtPeriod);
             this.Controls.Add(this.txtYearlyOrMonthly);
@@ -185,14 +185,14 @@
             this.Controls.Add(this.lblPeriod);
             this.Controls.Add(this.lblYearlyOrMonthly);
             this.Controls.Add(this.lblReport);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBoxBack);
+            this.Controls.Add(this.pictureBoxLogo);
+            this.Controls.Add(this.pictureBoxLanguage);
             this.Name = "frmReport";
             this.Text = "Report";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,9 +200,9 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxLanguage;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.PictureBox pictureBoxBack;
         private System.Windows.Forms.Label lblReport;
         private System.Windows.Forms.Label lblYearlyOrMonthly;
         private System.Windows.Forms.Label lblPeriod;
@@ -211,7 +211,7 @@
         private System.Windows.Forms.TextBox txtYearlyOrMonthly;
         private System.Windows.Forms.TextBox txtPeriod;
         private System.Windows.Forms.TextBox txtReportType;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lstPreview;
         private System.Windows.Forms.Button btnOutput;
     }
 }

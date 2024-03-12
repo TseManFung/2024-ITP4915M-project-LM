@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp
 {
-    partial class FrmOrderStatus
+    partial class frmOrderStatus
     {
         /// <summary>
         /// Required designer variable.
@@ -32,13 +32,13 @@
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.lblOrderStatus = new System.Windows.Forms.Label();
             this.pictureBoxLanguage = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.btnSelect = new System.Windows.Forms.Button();
+            this.dataGridViewOrderStatus = new System.Windows.Forms.DataGridView();
             this.btnCheckDetail = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOrderStatus)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxBack
@@ -81,23 +81,24 @@
             this.pictureBoxLanguage.TabIndex = 3;
             this.pictureBoxLanguage.TabStop = false;
             // 
-            // button1
+            // btnSelect
             // 
-            this.button1.Location = new System.Drawing.Point(1641, 96);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(143, 60);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Select";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSelect.Font = new System.Drawing.Font("新細明體", 24F);
+            this.btnSelect.Location = new System.Drawing.Point(1641, 96);
+            this.btnSelect.Name = "btnSelect";
+            this.btnSelect.Size = new System.Drawing.Size(143, 60);
+            this.btnSelect.TabIndex = 4;
+            this.btnSelect.Text = "Select";
+            this.btnSelect.UseVisualStyleBackColor = true;
             // 
-            // dataGridView3
+            // dataGridViewOrderStatus
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(89, 211);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(1695, 564);
-            this.dataGridView3.TabIndex = 5;
+            this.dataGridViewOrderStatus.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewOrderStatus.Location = new System.Drawing.Point(89, 211);
+            this.dataGridViewOrderStatus.Name = "dataGridViewOrderStatus";
+            this.dataGridViewOrderStatus.RowTemplate.Height = 24;
+            this.dataGridViewOrderStatus.Size = new System.Drawing.Size(1695, 564);
+            this.dataGridViewOrderStatus.TabIndex = 5;
             // 
             // btnCheckDetail
             // 
@@ -108,24 +109,24 @@
             this.btnCheckDetail.Text = "Check Detail";
             this.btnCheckDetail.UseVisualStyleBackColor = true;
             // 
-            // FrmOrderStatus
+            // frmOrderStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.btnCheckDetail);
-            this.Controls.Add(this.dataGridView3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridViewOrderStatus);
+            this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.pictureBoxLanguage);
             this.Controls.Add(this.lblOrderStatus);
             this.Controls.Add(this.pictureBoxLogo);
             this.Controls.Add(this.pictureBoxBack);
-            this.Name = "FrmOrderStatus";
+            this.Name = "frmOrderStatus";
             this.Text = "Order Status";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOrderStatus)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,8 +138,8 @@
         private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Label lblOrderStatus;
         private System.Windows.Forms.PictureBox pictureBoxLanguage;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Button btnSelect;
+        private System.Windows.Forms.DataGridView dataGridViewOrderStatus;
         private System.Windows.Forms.Button btnCheckDetail;
     }
 }

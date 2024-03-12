@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class FormAddNewItem : Form
+    public partial class frmLogin : Form
     {
-        public FormAddNewItem()
+        public frmLogin()
         {
             InitializeComponent();
         }

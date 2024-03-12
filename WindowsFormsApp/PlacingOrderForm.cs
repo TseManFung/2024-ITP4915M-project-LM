@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class PlacingOrderForm : Form
+    public partial class frmPlacingOrderForm : Form
     {
-        public PlacingOrderForm()
+        public frmPlacingOrderForm()
         {
             InitializeComponent();
         }

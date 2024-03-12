@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp
 {
-    partial class UserManagementAndAccountManagement
+    partial class frmUserManagementAndAccountManagement
     {
         /// <summary>
         /// Required designer variable.
@@ -28,63 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBoxBack = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLanguage = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.lblUserManagementAndAccountManagement = new System.Windows.Forms.Label();
             this.lablEnter = new System.Windows.Forms.Label();
             this.lblDealerOrStaff = new System.Windows.Forms.Label();
             this.btnDealer = new System.Windows.Forms.Button();
             this.btnStaff = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtLoginName = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.lblLoginName = new System.Windows.Forms.Label();
             this.lblPassWord = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBoxBack
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp.Properties.Resources.back1;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(97, 68);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxBack.Image = global::WindowsFormsApp.Properties.Resources.back1;
+            this.pictureBoxBack.Location = new System.Drawing.Point(12, 12);
+            this.pictureBoxBack.Name = "pictureBoxBack";
+            this.pictureBoxBack.Size = new System.Drawing.Size(97, 68);
+            this.pictureBoxBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxBack.TabIndex = 0;
+            this.pictureBoxBack.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBoxLanguage
             // 
-            this.pictureBox2.Image = global::WindowsFormsApp.Properties.Resources.languageimage1;
-            this.pictureBox2.Location = new System.Drawing.Point(1770, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(97, 68);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.pictureBoxLanguage.Image = global::WindowsFormsApp.Properties.Resources.languageimage1;
+            this.pictureBoxLanguage.Location = new System.Drawing.Point(1770, 12);
+            this.pictureBoxLanguage.Name = "pictureBoxLanguage";
+            this.pictureBoxLanguage.Size = new System.Drawing.Size(97, 68);
+            this.pictureBoxLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLanguage.TabIndex = 1;
+            this.pictureBoxLanguage.TabStop = false;
             // 
-            // pictureBox3
+            // pictureBoxLogo
             // 
-            this.pictureBox3.Image = global::WindowsFormsApp.Properties.Resources.LoGoLeGend;
-            this.pictureBox3.Location = new System.Drawing.Point(431, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(97, 68);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.pictureBoxLogo.Image = global::WindowsFormsApp.Properties.Resources.LoGoLeGend;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(431, 12);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(97, 68);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 2;
+            this.pictureBoxLogo.TabStop = false;
             // 
-            // label4
+            // lblUserManagementAndAccountManagement
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("新細明體", 36F);
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(559, 32);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(826, 48);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "User management and account management";
+            this.lblUserManagementAndAccountManagement.AutoSize = true;
+            this.lblUserManagementAndAccountManagement.Font = new System.Drawing.Font("新細明體", 36F);
+            this.lblUserManagementAndAccountManagement.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblUserManagementAndAccountManagement.Location = new System.Drawing.Point(559, 32);
+            this.lblUserManagementAndAccountManagement.Name = "lblUserManagementAndAccountManagement";
+            this.lblUserManagementAndAccountManagement.Size = new System.Drawing.Size(826, 48);
+            this.lblUserManagementAndAccountManagement.TabIndex = 20;
+            this.lblUserManagementAndAccountManagement.Text = "User management and account management";
             // 
             // lablEnter
             // 
@@ -108,6 +108,7 @@
             // 
             // btnDealer
             // 
+            this.btnDealer.Font = new System.Drawing.Font("新細明體", 24F);
             this.btnDealer.Location = new System.Drawing.Point(556, 591);
             this.btnDealer.Name = "btnDealer";
             this.btnDealer.Size = new System.Drawing.Size(169, 78);
@@ -117,6 +118,7 @@
             // 
             // btnStaff
             // 
+            this.btnStaff.Font = new System.Drawing.Font("新細明體", 24F);
             this.btnStaff.Location = new System.Drawing.Point(1159, 591);
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.Size = new System.Drawing.Size(169, 78);
@@ -124,21 +126,21 @@
             this.btnStaff.Text = "Staff";
             this.btnStaff.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtLoginName
             // 
-            this.textBox1.Font = new System.Drawing.Font("新細明體", 24F);
-            this.textBox1.Location = new System.Drawing.Point(646, 260);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(153, 46);
-            this.textBox1.TabIndex = 25;
+            this.txtLoginName.Font = new System.Drawing.Font("新細明體", 24F);
+            this.txtLoginName.Location = new System.Drawing.Point(646, 260);
+            this.txtLoginName.Name = "txtLoginName";
+            this.txtLoginName.Size = new System.Drawing.Size(153, 46);
+            this.txtLoginName.TabIndex = 25;
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.Font = new System.Drawing.Font("新細明體", 24F);
-            this.textBox2.Location = new System.Drawing.Point(1175, 260);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(153, 46);
-            this.textBox2.TabIndex = 26;
+            this.txtPassword.Font = new System.Drawing.Font("新細明體", 24F);
+            this.txtPassword.Location = new System.Drawing.Point(1175, 260);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(153, 46);
+            this.txtPassword.TabIndex = 26;
             // 
             // lblLoginName
             // 
@@ -160,28 +162,28 @@
             this.lblPassWord.TabIndex = 28;
             this.lblPassWord.Text = "Password:";
             // 
-            // UserManagementAndAccountManagement
+            // frmUserManagementAndAccountManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.lblPassWord);
             this.Controls.Add(this.lblLoginName);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtLoginName);
             this.Controls.Add(this.btnStaff);
             this.Controls.Add(this.btnDealer);
             this.Controls.Add(this.lblDealerOrStaff);
             this.Controls.Add(this.lablEnter);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Name = "UserManagementAndAccountManagement";
+            this.Controls.Add(this.lblUserManagementAndAccountManagement);
+            this.Controls.Add(this.pictureBoxLogo);
+            this.Controls.Add(this.pictureBoxLanguage);
+            this.Controls.Add(this.pictureBoxBack);
+            this.Name = "frmUserManagementAndAccountManagement";
             this.Text = "User Management And Account Management";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,16 +191,16 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBoxBack;
+        private System.Windows.Forms.PictureBox pictureBoxLanguage;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.Label lblUserManagementAndAccountManagement;
         private System.Windows.Forms.Label lablEnter;
         private System.Windows.Forms.Label lblDealerOrStaff;
         private System.Windows.Forms.Button btnDealer;
         private System.Windows.Forms.Button btnStaff;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtLoginName;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label lblLoginName;
         private System.Windows.Forms.Label lblPassWord;
     }

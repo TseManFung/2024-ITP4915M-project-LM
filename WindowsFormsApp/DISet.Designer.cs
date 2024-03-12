@@ -47,12 +47,12 @@
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.txtROL = new System.Windows.Forms.TextBox();
             this.txtCSL = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pictureBoxBack = new System.Windows.Forms.PictureBox();
+            this.pictureLogo = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLanguage = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDIsetTransportStaff
@@ -227,36 +227,36 @@
             this.txtCSL.Size = new System.Drawing.Size(91, 46);
             this.txtCSL.TabIndex = 93;
             // 
-            // pictureBox1
+            // pictureBoxBack
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp.Properties.Resources.back;
-            this.pictureBox1.Location = new System.Drawing.Point(-3, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(138, 130);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 74;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxBack.Image = global::WindowsFormsApp.Properties.Resources.back;
+            this.pictureBoxBack.Location = new System.Drawing.Point(-3, 1);
+            this.pictureBoxBack.Name = "pictureBoxBack";
+            this.pictureBoxBack.Size = new System.Drawing.Size(138, 130);
+            this.pictureBoxBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxBack.TabIndex = 74;
+            this.pictureBoxBack.TabStop = false;
             // 
-            // pictureBox3
+            // pictureLogo
             // 
-            this.pictureBox3.Image = global::WindowsFormsApp.Properties.Resources.LoGoLeGend;
-            this.pictureBox3.Location = new System.Drawing.Point(732, 1);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(163, 130);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 73;
-            this.pictureBox3.TabStop = false;
+            this.pictureLogo.Image = global::WindowsFormsApp.Properties.Resources.LoGoLeGend;
+            this.pictureLogo.Location = new System.Drawing.Point(732, 1);
+            this.pictureLogo.Name = "pictureLogo";
+            this.pictureLogo.Size = new System.Drawing.Size(163, 130);
+            this.pictureLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureLogo.TabIndex = 73;
+            this.pictureLogo.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBoxLanguage
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox2.Image = global::WindowsFormsApp.Properties.Resources.languageimage1;
-            this.pictureBox2.Location = new System.Drawing.Point(1748, 1);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(144, 130);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 72;
-            this.pictureBox2.TabStop = false;
+            this.pictureBoxLanguage.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBoxLanguage.Image = global::WindowsFormsApp.Properties.Resources.languageimage1;
+            this.pictureBoxLanguage.Location = new System.Drawing.Point(1748, 1);
+            this.pictureBoxLanguage.Name = "pictureBoxLanguage";
+            this.pictureBoxLanguage.Size = new System.Drawing.Size(144, 130);
+            this.pictureBoxLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLanguage.TabIndex = 72;
+            this.pictureBoxLanguage.TabStop = false;
             // 
             // frmDISet
             // 
@@ -282,14 +282,15 @@
             this.Controls.Add(this.lblCategoryLetter);
             this.Controls.Add(this.lblLMSerialNumber);
             this.Controls.Add(this.lblDIsetTransportStaff);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBoxBack);
+            this.Controls.Add(this.pictureLogo);
+            this.Controls.Add(this.pictureBoxLanguage);
             this.Name = "frmDISet";
             this.Text = "DI set (Transport Staff)";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Load += new System.EventHandler(this.frmDISet_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,9 +298,9 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxLanguage;
+        private System.Windows.Forms.PictureBox pictureLogo;
+        private System.Windows.Forms.PictureBox pictureBoxBack;
         private System.Windows.Forms.Label lblDIsetTransportStaff;
         private System.Windows.Forms.Label lblLMSerialNumber;
         private System.Windows.Forms.Label lblCategoryLetter;

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class UserManagementAndAccountManagement : Form
+    public partial class frmUserManagementAndAccountManagement : Form
     {
-        public UserManagementAndAccountManagement()
+        public frmUserManagementAndAccountManagement()
         {
             InitializeComponent();
         }

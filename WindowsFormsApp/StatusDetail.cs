@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class FrmStatusDetail : Form
+    public partial class frmStatusDetail : Form
     {
-        public FrmStatusDetail()
+        public frmStatusDetail()
         {
             InitializeComponent();
         }

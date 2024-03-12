@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp
 {
-    partial class lblQuantityDelivered
+    partial class frmInvoice
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.pictureBoxBack = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLanguage = new System.Windows.Forms.PictureBox();
             this.lblInvoice = new System.Windows.Forms.Label();
             this.lblLM = new System.Windows.Forms.Label();
             this.lblSMLC = new System.Windows.Forms.Label();
@@ -45,8 +45,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.lblPartNo = new System.Windows.Forms.Label();
             this.lblQuantityToFollow = new System.Windows.Forms.Label();
-            this.lblQtyUnder = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lblQtyUnderDelivered = new System.Windows.Forms.Label();
+            this.lblQuantityDelivered = new System.Windows.Forms.Label();
             this.lblDespatchForeman = new System.Windows.Forms.Label();
             this.lblReceivedInGoodOrder = new System.Windows.Forms.Label();
             this.lblSignature = new System.Windows.Forms.Label();
@@ -58,50 +58,50 @@
             this.txtYOUROrderNO = new System.Windows.Forms.TextBox();
             this.txtOURORDERTO = new System.Windows.Forms.TextBox();
             this.txtDealerCode = new System.Windows.Forms.TextBox();
-            this.txtQtyUnder = new System.Windows.Forms.TextBox();
+            this.txtQtyUnderDelivered = new System.Windows.Forms.TextBox();
             this.txtQuantityToFollow = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtQuantityDelivered = new System.Windows.Forms.TextBox();
             this.txtDespatchForeman = new System.Windows.Forms.TextBox();
             this.txtSignature = new System.Windows.Forms.TextBox();
             this.txtPartNo = new System.Windows.Forms.TextBox();
             this.txtTotalWeight = new System.Windows.Forms.TextBox();
             this.txtNoOfBundles = new System.Windows.Forms.TextBox();
             this.txtSignDate = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox3
+            // pictureBoxLogo
             // 
-            this.pictureBox3.Image = global::WindowsFormsApp.Properties.Resources.LoGoLeGend;
-            this.pictureBox3.Location = new System.Drawing.Point(722, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(163, 130);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 75;
-            this.pictureBox3.TabStop = false;
+            this.pictureBoxLogo.Image = global::WindowsFormsApp.Properties.Resources.LoGoLeGend;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(722, 0);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(163, 130);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLogo.TabIndex = 75;
+            this.pictureBoxLogo.TabStop = false;
             // 
-            // pictureBox1
+            // pictureBoxBack
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp.Properties.Resources.back;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(138, 130);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 77;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxBack.Image = global::WindowsFormsApp.Properties.Resources.back;
+            this.pictureBoxBack.Location = new System.Drawing.Point(2, 0);
+            this.pictureBoxBack.Name = "pictureBoxBack";
+            this.pictureBoxBack.Size = new System.Drawing.Size(138, 130);
+            this.pictureBoxBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxBack.TabIndex = 77;
+            this.pictureBoxBack.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBoxLanguage
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox2.Image = global::WindowsFormsApp.Properties.Resources.languageimage1;
-            this.pictureBox2.Location = new System.Drawing.Point(1759, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(144, 130);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 78;
-            this.pictureBox2.TabStop = false;
+            this.pictureBoxLanguage.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBoxLanguage.Image = global::WindowsFormsApp.Properties.Resources.languageimage1;
+            this.pictureBoxLanguage.Location = new System.Drawing.Point(1759, 0);
+            this.pictureBoxLanguage.Name = "pictureBoxLanguage";
+            this.pictureBoxLanguage.Size = new System.Drawing.Size(144, 130);
+            this.pictureBoxLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLanguage.TabIndex = 78;
+            this.pictureBoxLanguage.TabStop = false;
             // 
             // lblInvoice
             // 
@@ -242,25 +242,25 @@
             this.lblQuantityToFollow.TabIndex = 92;
             this.lblQuantityToFollow.Text = "Quantity to follow:";
             // 
-            // lblQtyUnder
+            // lblQtyUnderDelivered
             // 
-            this.lblQtyUnder.AutoSize = true;
-            this.lblQtyUnder.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblQtyUnder.Location = new System.Drawing.Point(629, 584);
-            this.lblQtyUnder.Name = "lblQtyUnder";
-            this.lblQtyUnder.Size = new System.Drawing.Size(340, 32);
-            this.lblQtyUnder.TabIndex = 93;
-            this.lblQtyUnder.Text = "Prev. Qty. under delivered:";
+            this.lblQtyUnderDelivered.AutoSize = true;
+            this.lblQtyUnderDelivered.Font = new System.Drawing.Font("新細明體", 24F);
+            this.lblQtyUnderDelivered.Location = new System.Drawing.Point(629, 584);
+            this.lblQtyUnderDelivered.Name = "lblQtyUnderDelivered";
+            this.lblQtyUnderDelivered.Size = new System.Drawing.Size(340, 32);
+            this.lblQtyUnderDelivered.TabIndex = 93;
+            this.lblQtyUnderDelivered.Text = "Prev. Qty. under delivered:";
             // 
-            // label13
+            // lblQuantityDelivered
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("新細明體", 24F);
-            this.label13.Location = new System.Drawing.Point(1320, 584);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(244, 32);
-            this.label13.TabIndex = 94;
-            this.label13.Text = "Quantity delivered:";
+            this.lblQuantityDelivered.AutoSize = true;
+            this.lblQuantityDelivered.Font = new System.Drawing.Font("新細明體", 24F);
+            this.lblQuantityDelivered.Location = new System.Drawing.Point(1320, 584);
+            this.lblQuantityDelivered.Name = "lblQuantityDelivered";
+            this.lblQuantityDelivered.Size = new System.Drawing.Size(244, 32);
+            this.lblQuantityDelivered.TabIndex = 94;
+            this.lblQuantityDelivered.Text = "Quantity delivered:";
             // 
             // lblDespatchForeman
             // 
@@ -271,6 +271,7 @@
             this.lblDespatchForeman.Size = new System.Drawing.Size(247, 32);
             this.lblDespatchForeman.TabIndex = 95;
             this.lblDespatchForeman.Text = "Despatch Foreman:";
+            this.lblDespatchForeman.Click += new System.EventHandler(this.lblDespatchForeman_Click);
             // 
             // lblReceivedInGoodOrder
             // 
@@ -360,13 +361,13 @@
             this.txtDealerCode.Size = new System.Drawing.Size(207, 46);
             this.txtDealerCode.TabIndex = 105;
             // 
-            // txtQtyUnder
+            // txtQtyUnderDelivered
             // 
-            this.txtQtyUnder.Font = new System.Drawing.Font("新細明體", 24F);
-            this.txtQtyUnder.Location = new System.Drawing.Point(680, 658);
-            this.txtQtyUnder.Name = "txtQtyUnder";
-            this.txtQtyUnder.Size = new System.Drawing.Size(207, 46);
-            this.txtQtyUnder.TabIndex = 106;
+            this.txtQtyUnderDelivered.Font = new System.Drawing.Font("新細明體", 24F);
+            this.txtQtyUnderDelivered.Location = new System.Drawing.Point(680, 658);
+            this.txtQtyUnderDelivered.Name = "txtQtyUnderDelivered";
+            this.txtQtyUnderDelivered.Size = new System.Drawing.Size(207, 46);
+            this.txtQtyUnderDelivered.TabIndex = 106;
             // 
             // txtQuantityToFollow
             // 
@@ -376,12 +377,13 @@
             this.txtQuantityToFollow.Size = new System.Drawing.Size(207, 46);
             this.txtQuantityToFollow.TabIndex = 107;
             // 
-            // textBox9
+            // txtQuantityDelivered
             // 
-            this.textBox9.Location = new System.Drawing.Point(1326, 674);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(207, 22);
-            this.textBox9.TabIndex = 108;
+            this.txtQuantityDelivered.Font = new System.Drawing.Font("新細明體", 24F);
+            this.txtQuantityDelivered.Location = new System.Drawing.Point(1326, 658);
+            this.txtQuantityDelivered.Name = "txtQuantityDelivered";
+            this.txtQuantityDelivered.Size = new System.Drawing.Size(207, 46);
+            this.txtQuantityDelivered.TabIndex = 108;
             // 
             // txtDespatchForeman
             // 
@@ -431,7 +433,7 @@
             this.txtSignDate.Size = new System.Drawing.Size(207, 46);
             this.txtSignDate.TabIndex = 114;
             // 
-            // lblQuantityDelivered
+            // frmInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -442,9 +444,9 @@
             this.Controls.Add(this.txtPartNo);
             this.Controls.Add(this.txtSignature);
             this.Controls.Add(this.txtDespatchForeman);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txtQuantityDelivered);
             this.Controls.Add(this.txtQuantityToFollow);
-            this.Controls.Add(this.txtQtyUnder);
+            this.Controls.Add(this.txtQtyUnderDelivered);
             this.Controls.Add(this.txtDealerCode);
             this.Controls.Add(this.txtOURORDERTO);
             this.Controls.Add(this.txtYOUROrderNO);
@@ -456,8 +458,8 @@
             this.Controls.Add(this.lblSignature);
             this.Controls.Add(this.lblReceivedInGoodOrder);
             this.Controls.Add(this.lblDespatchForeman);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.lblQtyUnder);
+            this.Controls.Add(this.lblQuantityDelivered);
+            this.Controls.Add(this.lblQtyUnderDelivered);
             this.Controls.Add(this.lblQuantityToFollow);
             this.Controls.Add(this.lblPartNo);
             this.Controls.Add(this.label9);
@@ -472,14 +474,15 @@
             this.Controls.Add(this.lblSMLC);
             this.Controls.Add(this.lblLM);
             this.Controls.Add(this.lblInvoice);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox3);
-            this.Name = "lblQuantityDelivered";
+            this.Controls.Add(this.pictureBoxLanguage);
+            this.Controls.Add(this.pictureBoxBack);
+            this.Controls.Add(this.pictureBoxLogo);
+            this.Name = "frmInvoice";
             this.Text = "Invoice";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Load += new System.EventHandler(this.lblQuantityDelivered_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -487,9 +490,9 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.PictureBox pictureBoxBack;
+        private System.Windows.Forms.PictureBox pictureBoxLanguage;
         private System.Windows.Forms.Label lblInvoice;
         private System.Windows.Forms.Label lblLM;
         private System.Windows.Forms.Label lblSMLC;
@@ -504,8 +507,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lblPartNo;
         private System.Windows.Forms.Label lblQuantityToFollow;
-        private System.Windows.Forms.Label lblQtyUnder;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblQtyUnderDelivered;
+        private System.Windows.Forms.Label lblQuantityDelivered;
         private System.Windows.Forms.Label lblDespatchForeman;
         private System.Windows.Forms.Label lblReceivedInGoodOrder;
         private System.Windows.Forms.Label lblSignature;
@@ -517,9 +520,9 @@
         private System.Windows.Forms.TextBox txtYOUROrderNO;
         private System.Windows.Forms.TextBox txtOURORDERTO;
         private System.Windows.Forms.TextBox txtDealerCode;
-        private System.Windows.Forms.TextBox txtQtyUnder;
+        private System.Windows.Forms.TextBox txtQtyUnderDelivered;
         private System.Windows.Forms.TextBox txtQuantityToFollow;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtQuantityDelivered;
         private System.Windows.Forms.TextBox txtDespatchForeman;
         private System.Windows.Forms.TextBox txtSignature;
         private System.Windows.Forms.TextBox txtPartNo;

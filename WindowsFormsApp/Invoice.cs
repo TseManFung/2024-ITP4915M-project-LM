@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class lblQuantityDelivered : Form
+    public partial class frmInvoice : Form
     {
-        public lblQuantityDelivered()
+        public frmInvoice()
         {
             InitializeComponent();
+        }
+
+        private void lblQuantityDelivered_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDespatchForeman_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

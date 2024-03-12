@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp
 {
-    partial class PlacingOrderForm
+    partial class frmPlacingOrderForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,223 +28,235 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlacingOrderForm));
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPlacingOrderForm));
+            this.lblSeen = new System.Windows.Forms.TextBox();
+            this.comboBoxCategoryType = new System.Windows.Forms.ComboBox();
+            this.txtSpareName = new System.Windows.Forms.TextBox();
+            this.txtSpareID = new System.Windows.Forms.TextBox();
+            this.lblCategoryType = new System.Windows.Forms.Label();
+            this.lblSpareName = new System.Windows.Forms.Label();
+            this.lblSpareID = new System.Windows.Forms.Label();
+            this.lblPlacingOrder = new System.Windows.Forms.Label();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.pictureBoxBack = new System.Windows.Forms.PictureBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.lstSearchResults = new System.Windows.Forms.ListBox();
+            this.pictureBoxLanguage = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLogoViewCart = new System.Windows.Forms.PictureBox();
+            this.btnViewCart = new System.Windows.Forms.Button();
+            this.btnConfirm = new System.Windows.Forms.Button();
+            this.btnReduce = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogoViewCart)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox3
+            // lblSeen
             // 
-            this.textBox3.Location = new System.Drawing.Point(299, 555);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(404, 59);
-            this.textBox3.TabIndex = 26;
+            this.lblSeen.Location = new System.Drawing.Point(299, 555);
+            this.lblSeen.Multiline = true;
+            this.lblSeen.Name = "lblSeen";
+            this.lblSeen.Size = new System.Drawing.Size(404, 59);
+            this.lblSeen.TabIndex = 26;
             // 
-            // comboBox1
+            // comboBoxCategoryType
             // 
-            this.comboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBox1.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(521, 475);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(182, 34);
-            this.comboBox1.TabIndex = 25;
+            this.comboBoxCategoryType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxCategoryType.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxCategoryType.FormattingEnabled = true;
+            this.comboBoxCategoryType.Location = new System.Drawing.Point(521, 475);
+            this.comboBoxCategoryType.Name = "comboBoxCategoryType";
+            this.comboBoxCategoryType.Size = new System.Drawing.Size(182, 34);
+            this.comboBoxCategoryType.TabIndex = 25;
             // 
-            // textBox2
+            // txtSpareName
             // 
-            this.textBox2.Location = new System.Drawing.Point(521, 378);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(182, 32);
-            this.textBox2.TabIndex = 24;
+            this.txtSpareName.Location = new System.Drawing.Point(521, 378);
+            this.txtSpareName.Multiline = true;
+            this.txtSpareName.Name = "txtSpareName";
+            this.txtSpareName.Size = new System.Drawing.Size(182, 32);
+            this.txtSpareName.TabIndex = 24;
             // 
-            // textBox1
+            // txtSpareID
             // 
-            this.textBox1.Location = new System.Drawing.Point(521, 267);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 32);
-            this.textBox1.TabIndex = 23;
+            this.txtSpareID.Location = new System.Drawing.Point(521, 267);
+            this.txtSpareID.Multiline = true;
+            this.txtSpareID.Name = "txtSpareID";
+            this.txtSpareID.Size = new System.Drawing.Size(182, 32);
+            this.txtSpareID.TabIndex = 23;
             // 
-            // label9
+            // lblCategoryType
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.SystemColors.Control;
-            this.label9.CausesValidation = false;
-            this.label9.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold);
-            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(293, 477);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(214, 32);
-            this.label9.TabIndex = 22;
-            this.label9.Text = "Category Type:";
+            this.lblCategoryType.AutoSize = true;
+            this.lblCategoryType.BackColor = System.Drawing.SystemColors.Control;
+            this.lblCategoryType.CausesValidation = false;
+            this.lblCategoryType.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold);
+            this.lblCategoryType.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCategoryType.Location = new System.Drawing.Point(293, 477);
+            this.lblCategoryType.Name = "lblCategoryType";
+            this.lblCategoryType.Size = new System.Drawing.Size(214, 32);
+            this.lblCategoryType.TabIndex = 22;
+            this.lblCategoryType.Text = "Category Type:";
             // 
-            // label8
+            // lblSpareName
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.SystemColors.Control;
-            this.label8.CausesValidation = false;
-            this.label8.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(293, 378);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(171, 32);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "SpareName:";
+            this.lblSpareName.AutoSize = true;
+            this.lblSpareName.BackColor = System.Drawing.SystemColors.Control;
+            this.lblSpareName.CausesValidation = false;
+            this.lblSpareName.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold);
+            this.lblSpareName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSpareName.Location = new System.Drawing.Point(293, 378);
+            this.lblSpareName.Name = "lblSpareName";
+            this.lblSpareName.Size = new System.Drawing.Size(171, 32);
+            this.lblSpareName.TabIndex = 21;
+            this.lblSpareName.Text = "SpareName:";
             // 
-            // label5
+            // lblSpareID
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.Control;
-            this.label5.CausesValidation = false;
-            this.label5.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(293, 267);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 32);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "SpareID:";
+            this.lblSpareID.AutoSize = true;
+            this.lblSpareID.BackColor = System.Drawing.SystemColors.Control;
+            this.lblSpareID.CausesValidation = false;
+            this.lblSpareID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSpareID.Location = new System.Drawing.Point(293, 267);
+            this.lblSpareID.Name = "lblSpareID";
+            this.lblSpareID.Size = new System.Drawing.Size(130, 32);
+            this.lblSpareID.TabIndex = 20;
+            this.lblSpareID.Text = "SpareID:";
             // 
-            // label4
+            // lblPlacingOrder
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("新細明體", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(668, 18);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(545, 96);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Placing Order";
+            this.lblPlacingOrder.AutoSize = true;
+            this.lblPlacingOrder.Font = new System.Drawing.Font("新細明體", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblPlacingOrder.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblPlacingOrder.Location = new System.Drawing.Point(668, 18);
+            this.lblPlacingOrder.Name = "lblPlacingOrder";
+            this.lblPlacingOrder.Size = new System.Drawing.Size(545, 96);
+            this.lblPlacingOrder.TabIndex = 19;
+            this.lblPlacingOrder.Text = "Placing Order";
             // 
-            // pictureBox3
+            // pictureBoxLogo
             // 
-            this.pictureBox3.Image = global::WindowsFormsApp.Properties.Resources.LoGoLeGend;
-            this.pictureBox3.Location = new System.Drawing.Point(499, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(163, 130);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 18;
-            this.pictureBox3.TabStop = false;
+            this.pictureBoxLogo.Image = global::WindowsFormsApp.Properties.Resources.LoGoLeGend;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(499, 0);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(163, 130);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLogo.TabIndex = 18;
+            this.pictureBoxLogo.TabStop = false;
             // 
-            // pictureBox1
+            // pictureBoxBack
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp.Properties.Resources.back1;
-            this.pictureBox1.Location = new System.Drawing.Point(1, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(138, 130);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxBack.Image = global::WindowsFormsApp.Properties.Resources.back1;
+            this.pictureBoxBack.Location = new System.Drawing.Point(1, 0);
+            this.pictureBoxBack.Name = "pictureBoxBack";
+            this.pictureBoxBack.Size = new System.Drawing.Size(138, 130);
+            this.pictureBoxBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxBack.TabIndex = 17;
+            this.pictureBoxBack.TabStop = false;
             // 
-            // textBox4
+            // btnAdd
             // 
-            this.textBox4.Font = new System.Drawing.Font("新細明體", 40F);
-            this.textBox4.Location = new System.Drawing.Point(1095, 663);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(460, 59);
-            this.textBox4.TabIndex = 30;
-            this.textBox4.Text = "confirm";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAdd.Font = new System.Drawing.Font("新細明體", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnAdd.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAdd.Location = new System.Drawing.Point(1473, 536);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(82, 78);
+            this.btnAdd.TabIndex = 29;
+            this.btnAdd.Text = "+";
+            this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // lstSearchResults
             // 
-            this.button2.Font = new System.Drawing.Font("新細明體", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(1473, 536);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(82, 78);
-            this.button2.TabIndex = 29;
-            this.button2.Text = "+";
-            this.button2.UseVisualStyleBackColor = true;
+            this.lstSearchResults.FormattingEnabled = true;
+            this.lstSearchResults.ItemHeight = 12;
+            this.lstSearchResults.Location = new System.Drawing.Point(1095, 267);
+            this.lstSearchResults.Name = "lstSearchResults";
+            this.lstSearchResults.Size = new System.Drawing.Size(460, 244);
+            this.lstSearchResults.TabIndex = 28;
             // 
-            // listBox1
+            // pictureBoxLanguage
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 12;
-            this.listBox1.Location = new System.Drawing.Point(1095, 267);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(460, 244);
-            this.listBox1.TabIndex = 28;
+            this.pictureBoxLanguage.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBoxLanguage.Image = global::WindowsFormsApp.Properties.Resources.languageimage1;
+            this.pictureBoxLanguage.Location = new System.Drawing.Point(1763, 0);
+            this.pictureBoxLanguage.Name = "pictureBoxLanguage";
+            this.pictureBoxLanguage.Size = new System.Drawing.Size(144, 130);
+            this.pictureBoxLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLanguage.TabIndex = 27;
+            this.pictureBoxLanguage.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBoxLogoViewCart
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox2.Image = global::WindowsFormsApp.Properties.Resources.languageimage1;
-            this.pictureBox2.Location = new System.Drawing.Point(1763, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(144, 130);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 27;
-            this.pictureBox2.TabStop = false;
+            this.pictureBoxLogoViewCart.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogoViewCart.Image")));
+            this.pictureBoxLogoViewCart.Location = new System.Drawing.Point(302, 663);
+            this.pictureBoxLogoViewCart.Name = "pictureBoxLogoViewCart";
+            this.pictureBoxLogoViewCart.Size = new System.Drawing.Size(142, 127);
+            this.pictureBoxLogoViewCart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLogoViewCart.TabIndex = 31;
+            this.pictureBoxLogoViewCart.TabStop = false;
             // 
-            // pictureBox4
+            // btnViewCart
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(302, 663);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(142, 127);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 31;
-            this.pictureBox4.TabStop = false;
+            this.btnViewCart.Font = new System.Drawing.Font("新細明體", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnViewCart.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnViewCart.Location = new System.Drawing.Point(521, 663);
+            this.btnViewCart.Name = "btnViewCart";
+            this.btnViewCart.Size = new System.Drawing.Size(314, 127);
+            this.btnViewCart.TabIndex = 32;
+            this.btnViewCart.Text = "View cart";
+            this.btnViewCart.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnConfirm
             // 
-            this.button1.Font = new System.Drawing.Font("新細明體", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(521, 663);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(314, 127);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "View cart";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnConfirm.Font = new System.Drawing.Font("新細明體", 24F);
+            this.btnConfirm.Location = new System.Drawing.Point(1095, 663);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(460, 64);
+            this.btnConfirm.TabIndex = 33;
+            this.btnConfirm.Text = "Confirm";
+            this.btnConfirm.UseVisualStyleBackColor = true;
             // 
-            // PlacingOrderForm
+            // btnReduce
+            // 
+            this.btnReduce.Font = new System.Drawing.Font("新細明體", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnReduce.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnReduce.Location = new System.Drawing.Point(1095, 536);
+            this.btnReduce.Name = "btnReduce";
+            this.btnReduce.Size = new System.Drawing.Size(82, 78);
+            this.btnReduce.TabIndex = 34;
+            this.btnReduce.Text = "-";
+            this.btnReduce.UseVisualStyleBackColor = true;
+            // 
+            // frmPlacingOrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox1);
-            this.Name = "PlacingOrderForm";
+            this.Controls.Add(this.btnReduce);
+            this.Controls.Add(this.btnConfirm);
+            this.Controls.Add(this.btnViewCart);
+            this.Controls.Add(this.pictureBoxLogoViewCart);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.lstSearchResults);
+            this.Controls.Add(this.pictureBoxLanguage);
+            this.Controls.Add(this.lblSeen);
+            this.Controls.Add(this.comboBoxCategoryType);
+            this.Controls.Add(this.txtSpareName);
+            this.Controls.Add(this.txtSpareID);
+            this.Controls.Add(this.lblCategoryType);
+            this.Controls.Add(this.lblSpareName);
+            this.Controls.Add(this.lblSpareID);
+            this.Controls.Add(this.lblPlacingOrder);
+            this.Controls.Add(this.pictureBoxLogo);
+            this.Controls.Add(this.pictureBoxBack);
+            this.Name = "frmPlacingOrderForm";
             this.Text = "PlacingOrderForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogoViewCart)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,21 +264,22 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox3;
-        public System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox lblSeen;
+        public System.Windows.Forms.ComboBox comboBoxCategoryType;
+        private System.Windows.Forms.TextBox txtSpareName;
+        private System.Windows.Forms.TextBox txtSpareID;
+        private System.Windows.Forms.Label lblCategoryType;
+        private System.Windows.Forms.Label lblSpareName;
+        private System.Windows.Forms.Label lblSpareID;
+        private System.Windows.Forms.Label lblPlacingOrder;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.PictureBox pictureBoxBack;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.ListBox lstSearchResults;
+        private System.Windows.Forms.PictureBox pictureBoxLanguage;
+        private System.Windows.Forms.PictureBox pictureBoxLogoViewCart;
+        private System.Windows.Forms.Button btnViewCart;
+        private System.Windows.Forms.Button btnConfirm;
+        private System.Windows.Forms.Button btnReduce;
     }
 }

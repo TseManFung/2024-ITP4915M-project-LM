@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp
 {
-    partial class FrmCheckOrder
+    partial class frmCheckOrder
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCheckOrder));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCheckOrder));
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.btnClear = new System.Windows.Forms.Button();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
@@ -122,7 +122,7 @@
             this.lblSelected.TabIndex = 7;
             this.lblSelected.Text = "Items Selected with a total quantity of";
             // 
-            // FrmCheckOrder
+            // frmCheckOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -135,7 +135,7 @@
             this.Controls.Add(this.pictureBoxLogo);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.dataGridView2);
-            this.Name = "FrmCheckOrder";
+            this.Name = "frmCheckOrder";
             this.Text = "Check Order";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
