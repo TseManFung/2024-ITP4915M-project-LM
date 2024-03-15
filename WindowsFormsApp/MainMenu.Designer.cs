@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp
 {
-    partial class frmDirectory
+    partial class frmMainMenu
     {
         /// <summary>
         /// 設計工具所需的變數。
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDirectory));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainMenu));
             this.pictureBoxPlaceOrder = new System.Windows.Forms.PictureBox();
             this.pictureBoxCheckOrder = new System.Windows.Forms.PictureBox();
             this.pictureBoxInformationCenter = new System.Windows.Forms.PictureBox();
@@ -59,7 +59,7 @@
             this.pictureBoxPlaceOrder.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBoxPlaceOrder.Enabled = false;
             this.pictureBoxPlaceOrder.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPlaceOrder.Image")));
-            this.pictureBoxPlaceOrder.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxPlaceOrder.Location = new System.Drawing.Point(276, 463);
             this.pictureBoxPlaceOrder.Name = "pictureBoxPlaceOrder";
             this.pictureBoxPlaceOrder.Size = new System.Drawing.Size(192, 108);
             this.pictureBoxPlaceOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -99,7 +99,7 @@
             // lblPlaceOrder
             // 
             this.lblPlaceOrder.AutoSize = true;
-            this.lblPlaceOrder.Location = new System.Drawing.Point(63, 121);
+            this.lblPlaceOrder.Location = new System.Drawing.Point(339, 584);
             this.lblPlaceOrder.Name = "lblPlaceOrder";
             this.lblPlaceOrder.Size = new System.Drawing.Size(59, 12);
             this.lblPlaceOrder.TabIndex = 11;
@@ -175,7 +175,7 @@
             // pictureBoxReOrder
             // 
             this.pictureBoxReOrder.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxReOrder.Image")));
-            this.pictureBoxReOrder.Location = new System.Drawing.Point(0, 709);
+            this.pictureBoxReOrder.Location = new System.Drawing.Point(-35, 785);
             this.pictureBoxReOrder.Name = "pictureBoxReOrder";
             this.pictureBoxReOrder.Size = new System.Drawing.Size(192, 108);
             this.pictureBoxReOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -193,7 +193,7 @@
             // 
             // pictureBoxLenguage
             // 
-            this.pictureBoxLenguage.Image = global::WindowsFormsApp.Properties.Resources.languageimage1;
+            this.pictureBoxLenguage.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLenguage.Image")));
             this.pictureBoxLenguage.Location = new System.Drawing.Point(1789, 12);
             this.pictureBoxLenguage.Name = "pictureBoxLenguage";
             this.pictureBoxLenguage.Size = new System.Drawing.Size(75, 50);
@@ -201,7 +201,7 @@
             this.pictureBoxLenguage.TabIndex = 21;
             this.pictureBoxLenguage.TabStop = false;
             // 
-            // frmDirectory
+            // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -221,9 +221,9 @@
             this.Controls.Add(this.pictureBoxInformationCenter);
             this.Controls.Add(this.pictureBoxCheckOrder);
             this.Controls.Add(this.pictureBoxPlaceOrder);
-            this.Name = "frmDirectory";
+            this.Name = "frmMainMenu";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "Directory";
+            this.Text = "Main Menu";
             this.Load += new System.EventHandler(this.FrmDirectory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlaceOrder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCheckOrder)).EndInit();

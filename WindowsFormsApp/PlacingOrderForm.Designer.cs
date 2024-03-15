@@ -148,7 +148,7 @@
             // 
             // pictureBoxBack
             // 
-            this.pictureBoxBack.Image = global::WindowsFormsApp.Properties.Resources.back1;
+            this.pictureBoxBack.Image = global::WindowsFormsApp.Properties.Resources.back;
             this.pictureBoxBack.Location = new System.Drawing.Point(1, 0);
             this.pictureBoxBack.Name = "pictureBoxBack";
             this.pictureBoxBack.Size = new System.Drawing.Size(138, 130);
@@ -179,7 +179,7 @@
             // pictureBoxLanguage
             // 
             this.pictureBoxLanguage.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBoxLanguage.Image = global::WindowsFormsApp.Properties.Resources.languageimage1;
+            this.pictureBoxLanguage.Image = global::WindowsFormsApp.Properties.Resources.languageimage;
             this.pictureBoxLanguage.Location = new System.Drawing.Point(1763, 0);
             this.pictureBoxLanguage.Name = "pictureBoxLanguage";
             this.pictureBoxLanguage.Size = new System.Drawing.Size(144, 130);

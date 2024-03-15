@@ -12,9 +12,23 @@ namespace WindowsFormsApp
 {
     public partial class frmLogin : Form
     {
+
         public frmLogin()
         {
             InitializeComponent();
+        }
+
+        //step to dnow
+        private void btnLogIn_Click(object sender, EventArgs e)
+        {
+
+
+            
+        }
+
+        private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+ 
         }
     }
 }

@@ -105,7 +105,7 @@
             // pictureBoxLaunuage
             // 
             this.pictureBoxLaunuage.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.pictureBoxLaunuage.Image = global::WindowsFormsApp.Properties.Resources.languageimage1;
+            this.pictureBoxLaunuage.Image = global::WindowsFormsApp.Properties.Resources.languageimage;
             this.pictureBoxLaunuage.Location = new System.Drawing.Point(1762, 12);
             this.pictureBoxLaunuage.Name = "pictureBoxLaunuage";
             this.pictureBoxLaunuage.Size = new System.Drawing.Size(75, 50);

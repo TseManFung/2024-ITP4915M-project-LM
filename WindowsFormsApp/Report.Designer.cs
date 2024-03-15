@@ -49,7 +49,7 @@
             // pictureBoxLanguage
             // 
             this.pictureBoxLanguage.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBoxLanguage.Image = global::WindowsFormsApp.Properties.Resources.languageimage1;
+            this.pictureBoxLanguage.Image = global::WindowsFormsApp.Properties.Resources.languageimage;
             this.pictureBoxLanguage.Location = new System.Drawing.Point(1748, -1);
             this.pictureBoxLanguage.Name = "pictureBoxLanguage";
             this.pictureBoxLanguage.Size = new System.Drawing.Size(144, 130);
