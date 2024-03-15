@@ -10,12 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class frmAddNewItem : Form
+    public partial class frmEditItem : Form
     {
-        public frmAddNewItem()
+        public frmEditItem()
         {
             InitializeComponent();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel1.Visible = true;
+        }
     }
 }

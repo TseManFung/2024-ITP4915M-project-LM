@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class frmMainMenu : Form
+    public partial class frmMenu : Form
     {
-        public frmMainMenu()
+        public frmMenu()
         {
             InitializeComponent();
         }
@@ -25,6 +25,18 @@ namespace WindowsFormsApp
         private void FrmDirectory_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void tableLayoutPanel8_MouseClick(object sender, MouseEventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmEditItem));
+        }
+
+
+
+        private void tableLayoutPanel3_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmAddNewItem));
         }
     }
 }

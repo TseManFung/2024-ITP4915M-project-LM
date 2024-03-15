@@ -12,28 +12,48 @@ namespace WindowsFormsApp
 {
     public partial class Main : Form
     {
+        bool isLogin = false;
+        public void SetIsLogin(bool succ)
+        {
+            this.isLogin = succ;
+        }
         public Main()
         {
             InitializeComponent();
         }
 
-        private void lblPlacingOrder_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void pictureBoxLogo_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Main_Load(object sender, EventArgs e)
         {
-            frmLogin login = new frmLogin() { TopLevel = false,TopMost =true,Anchor= AnchorStyles.None , FormBorderStyle = FormBorderStyle.None ,Dock=DockStyle.Fill};
+            this.Change_pContent(typeof(frmLogin));
+        }
 
-            pContent.Controls.Add(login);
-            login.Show();
-            lblTitle.Text = login.Text;
+        public void Change_pContent(Type formType) {
+            pContent.Controls.Clear();
+            Form frm = (Form)Activator.CreateInstance(formType);
+            frm.TopLevel = false;
+            frm.TopMost = true;
+            frm.Anchor = AnchorStyles.None;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+            pContent.Controls.Add(frm);
+            frm.Show();
+            lblTitle.Text = frm.Text;
+        }
+
+
+        private void pContent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
+        private void lblTitle_Click_1(object sender, EventArgs e) { 
+        
+            //if(this.isLogin){
+                this.Change_pContent(typeof(frmMenu));
+            //}
         }
     }
 }
