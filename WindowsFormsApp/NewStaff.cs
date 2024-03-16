@@ -21,5 +21,20 @@ namespace WindowsFormsApp
         {
 
         }
+
+
+
+        private void radNo_CheckedChanged(object sender, EventArgs e)
+        {
+            this.ShowTable();
+        }
+
+        private void ShowTable()
+        {
+            tableLayoutPanel1.Visible = radYes.Checked;
+            tableLayoutPanel12.Visible = radNo.Checked;
+
+        }
+
     }
 }

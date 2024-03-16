@@ -62,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountManagement.Designer.cs">
+      <DependentUpon>AccountManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="DISet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,12 +172,15 @@
     <Compile Include="Report.Designer.cs">
       <DependentUpon>Report.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserManagementAndAccountManagement.cs">
+    <Compile Include="UserAndAccountCreate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserManagementAndAccountManagement.Designer.cs">
-      <DependentUpon>UserManagementAndAccountManagement.cs</DependentUpon>
+    <Compile Include="UserAndAccountCreate.Designer.cs">
+      <DependentUpon>UserAndAccountCreate.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AccountManagement.resx">
+      <DependentUpon>AccountManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DISet.resx">
       <DependentUpon>DISet.cs</DependentUpon>
     </EmbeddedResource>
@@ -233,8 +242,8 @@
     <EmbeddedResource Include="Report.resx">
       <DependentUpon>Report.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserManagementAndAccountManagement.resx">
-      <DependentUpon>UserManagementAndAccountManagement.cs</DependentUpon>
+    <EmbeddedResource Include="UserAndAccountCreate.resx">
+      <DependentUpon>UserAndAccountCreate.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

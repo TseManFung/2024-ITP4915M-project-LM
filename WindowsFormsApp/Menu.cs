@@ -38,5 +38,11 @@ namespace WindowsFormsApp
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmAddNewItem));
         }
+
+        private void tableLayoutPanel9_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmUserManagementAndAccountManagement));
+        }
+
     }
 }

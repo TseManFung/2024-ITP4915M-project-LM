@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class frmUserManagementAndAccountManagement : Form
+    public partial class frmAccountManagement : Form
     {
-        public frmUserManagementAndAccountManagement()
+        public frmAccountManagement()
         {
             InitializeComponent();
         }
-
-
     }
 }
