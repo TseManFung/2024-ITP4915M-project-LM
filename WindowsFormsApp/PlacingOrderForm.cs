@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class frmPlacingOrderForm : Form
+    public partial class frmPlacingOrder : Form
     {
-        public frmPlacingOrderForm()
+        public frmPlacingOrder()
         {
             InitializeComponent();
+        }
+
+        private void btnViewCart_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmCart));
         }
     }
 }

@@ -68,6 +68,12 @@
     <Compile Include="AccountManagement.Designer.cs">
       <DependentUpon>AccountManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cart.Designer.cs">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </Compile>
     <Compile Include="DISet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,12 +97,6 @@
     </Compile>
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CheckOrder.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CheckOrder.Designer.cs">
-      <DependentUpon>CheckOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="OrderStatus.cs">
       <SubType>Form</SubType>
@@ -181,6 +181,9 @@
     <EmbeddedResource Include="AccountManagement.resx">
       <DependentUpon>AccountManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cart.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DISet.resx">
       <DependentUpon>DISet.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,9 +195,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CheckOrder.resx">
-      <DependentUpon>CheckOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrderStatus.resx">
       <DependentUpon>OrderStatus.cs</DependentUpon>

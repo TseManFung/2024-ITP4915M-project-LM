@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class frmCheckOrder : Form
+    public partial class frmCart : Form
     {
-        public frmCheckOrder()
+        public frmCart()
         {
             InitializeComponent();
         }

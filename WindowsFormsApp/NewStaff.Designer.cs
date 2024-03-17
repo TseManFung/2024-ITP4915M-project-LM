@@ -245,7 +245,7 @@
             this.lblSpareWeight.Name = "lblSpareWeight";
             this.lblSpareWeight.Size = new System.Drawing.Size(361, 50);
             this.lblSpareWeight.TabIndex = 58;
-            this.lblSpareWeight.Text = "Department ID:";
+            this.lblSpareWeight.Text = "Department:";
             // 
             // tableLayoutPanel5
             // 
@@ -478,7 +478,7 @@
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 1;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 119F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 107F));
             this.tableLayoutPanel12.Size = new System.Drawing.Size(1865, 107);
             this.tableLayoutPanel12.TabIndex = 94;
             this.tableLayoutPanel12.Visible = false;

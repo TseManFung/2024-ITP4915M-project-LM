@@ -44,5 +44,9 @@ namespace WindowsFormsApp
             (this.ParentForm as Main)?.Change_pContent(typeof(frmUserManagementAndAccountManagement));
         }
 
+        private void tableLayoutPanel1_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmPlacingOrder));
+        }
     }
 }

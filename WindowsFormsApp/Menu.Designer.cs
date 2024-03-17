@@ -290,6 +290,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel1.TabIndex = 23;
+            this.tableLayoutPanel1.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
             // 
             // lblPlaceOrder
             // 
@@ -300,6 +301,7 @@
             this.lblPlaceOrder.Size = new System.Drawing.Size(59, 12);
             this.lblPlaceOrder.TabIndex = 11;
             this.lblPlaceOrder.Text = "Place Order";
+            this.lblPlaceOrder.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
             // 
             // pictureBoxPlaceOrder
             // 
@@ -313,6 +315,7 @@
             this.pictureBoxPlaceOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxPlaceOrder.TabIndex = 0;
             this.pictureBoxPlaceOrder.TabStop = false;
+            this.pictureBoxPlaceOrder.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
             // 
             // tableLayoutPanel4
             // 
