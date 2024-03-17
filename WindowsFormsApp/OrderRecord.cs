@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class frmOrderStatus : Form
+    public partial class frmOrderRecord : Form
     {
-        public frmOrderStatus()
+        public frmOrderRecord()
         {
             InitializeComponent();
         }

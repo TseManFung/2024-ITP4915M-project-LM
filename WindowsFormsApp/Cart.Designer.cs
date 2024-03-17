@@ -54,13 +54,13 @@
             this.dataGridView2.Location = new System.Drawing.Point(3, 3);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1898, 618);
+            this.dataGridView2.Size = new System.Drawing.Size(1399, 294);
             this.dataGridView2.TabIndex = 0;
             // 
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("新細明體", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnClear.Location = new System.Drawing.Point(3, 835);
+            this.btnClear.Location = new System.Drawing.Point(3, 403);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(222, 58);
             this.btnClear.TabIndex = 1;
@@ -70,7 +70,7 @@
             // btnConfirm
             // 
             this.btnConfirm.Font = new System.Drawing.Font("新細明體", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnConfirm.Location = new System.Drawing.Point(1523, 835);
+            this.btnConfirm.Location = new System.Drawing.Point(1127, 403);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(222, 58);
             this.btnConfirm.TabIndex = 5;
@@ -81,7 +81,7 @@
             // 
             this.lblSelected.AutoSize = true;
             this.lblSelected.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblSelected.Location = new System.Drawing.Point(1143, 624);
+            this.lblSelected.Location = new System.Drawing.Point(846, 300);
             this.lblSelected.Name = "lblSelected";
             this.lblSelected.Size = new System.Drawing.Size(196, 32);
             this.lblSelected.TabIndex = 7;
@@ -109,14 +109,14 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1904, 1041);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1405, 501);
             this.tableLayoutPanel1.TabIndex = 8;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(1523, 624);
+            this.label1.Location = new System.Drawing.Point(1127, 300);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 32);
             this.label1.TabIndex = 9;
@@ -129,12 +129,12 @@
             this.tableLayoutPanel4.Controls.Add(this.txtSpareName, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.lblSpareName, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 627);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 303);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(374, 101);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(275, 94);
             this.tableLayoutPanel4.TabIndex = 85;
             // 
             // txtSpareName
@@ -142,11 +142,11 @@
             this.txtSpareName.BackColor = System.Drawing.SystemColors.Info;
             this.txtSpareName.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtSpareName.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtSpareName.Location = new System.Drawing.Point(3, 53);
+            this.txtSpareName.Location = new System.Drawing.Point(3, 50);
             this.txtSpareName.Multiline = true;
             this.txtSpareName.Name = "txtSpareName";
             this.txtSpareName.ReadOnly = true;
-            this.txtSpareName.Size = new System.Drawing.Size(368, 45);
+            this.txtSpareName.Size = new System.Drawing.Size(269, 41);
             this.txtSpareName.TabIndex = 47;
             // 
             // lblSpareName
@@ -159,7 +159,7 @@
             this.lblSpareName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareName.Location = new System.Drawing.Point(3, 0);
             this.lblSpareName.Name = "lblSpareName";
-            this.lblSpareName.Size = new System.Drawing.Size(368, 50);
+            this.lblSpareName.Size = new System.Drawing.Size(269, 47);
             this.lblSpareName.TabIndex = 50;
             this.lblSpareName.Text = "Selected Spare Name:";
             // 
@@ -168,9 +168,9 @@
             this.btnReduce.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnReduce.Font = new System.Drawing.Font("新細明體", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnReduce.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnReduce.Location = new System.Drawing.Point(17, 3);
+            this.btnReduce.Location = new System.Drawing.Point(3, 3);
             this.btnReduce.Name = "btnReduce";
-            this.btnReduce.Size = new System.Drawing.Size(133, 78);
+            this.btnReduce.Size = new System.Drawing.Size(117, 78);
             this.btnReduce.TabIndex = 86;
             this.btnReduce.Text = "-";
             this.btnReduce.UseVisualStyleBackColor = true;
@@ -180,9 +180,9 @@
             this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnAdd.Font = new System.Drawing.Font("新細明體", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAdd.Location = new System.Drawing.Point(221, 3);
+            this.btnAdd.Location = new System.Drawing.Point(153, 3);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(137, 78);
+            this.btnAdd.Size = new System.Drawing.Size(119, 78);
             this.btnAdd.TabIndex = 87;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -196,19 +196,19 @@
             this.tableLayoutPanel2.Controls.Add(this.btnAdd, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnReduce, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(383, 627);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(284, 303);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(374, 202);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(275, 94);
             this.tableLayoutPanel2.TabIndex = 9;
             // 
             // frmCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1405, 501);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmCart";
             this.Text = "Cart";
