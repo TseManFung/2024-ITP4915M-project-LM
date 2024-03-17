@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class frmGRN : Form
+    public partial class frmScrap : Form
     {
-        public frmGRN()
+        public frmScrap()
         {
             InitializeComponent();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

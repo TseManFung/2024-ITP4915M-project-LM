@@ -48,5 +48,28 @@ namespace WindowsFormsApp
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmPlacingOrder));
         }
+
+        private void pictureBoxCheckOrder_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmOrderRecord));
+        }
+
+        private void tableLayoutPanel13_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmScrap));
+        }
+
+
+
+        private void tableLayoutPanel7_Click(object sender, EventArgs e)
+        {
+            //(this.ParentForm as Main)?.Change_pContent(typeof(frmLogin));
+            
+        }
+
+        private void tableLayoutPanel5_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmReport));
+        }
     }
 }

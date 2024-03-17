@@ -29,17 +29,18 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblSpareID = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblSpareID = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.flow = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -53,9 +54,71 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Order Overview";
             // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.Controls.Add(this.label2, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lblSpareID, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.button1, 2, 2);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 18);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1237, 144);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
+            this.label2.CausesValidation = false;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(3, 96);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(365, 32);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Purchase date and time :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.CausesValidation = false;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(3, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(365, 32);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Status :";
+            // 
+            // lblSpareID
+            // 
+            this.lblSpareID.AutoSize = true;
+            this.lblSpareID.BackColor = System.Drawing.SystemColors.Control;
+            this.lblSpareID.CausesValidation = false;
+            this.lblSpareID.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblSpareID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSpareID.Location = new System.Drawing.Point(3, 0);
+            this.lblSpareID.Name = "lblSpareID";
+            this.lblSpareID.Size = new System.Drawing.Size(365, 32);
+            this.lblSpareID.TabIndex = 21;
+            this.lblSpareID.Text = "Order No. :";
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.flowLayoutPanel1);
+            this.groupBox2.Controls.Add(this.flow);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(3, 174);
             this.groupBox2.Name = "groupBox2";
@@ -64,14 +127,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Delivery Status and Product Details";
             // 
-            // flowLayoutPanel1
+            // flow
             // 
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 18);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1237, 374);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.flow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flow.Location = new System.Drawing.Point(3, 18);
+            this.flow.Name = "flow";
+            this.flow.Size = new System.Drawing.Size(1237, 374);
+            this.flow.TabIndex = 0;
             // 
             // tableLayoutPanel1
             // 
@@ -89,65 +152,15 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1249, 572);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
-            // tableLayoutPanel2
+            // button1
             // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel2.Controls.Add(this.label2, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lblSpareID, 0, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 18);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1237, 144);
-            this.tableLayoutPanel2.TabIndex = 0;
-            // 
-            // lblSpareID
-            // 
-            this.lblSpareID.AutoSize = true;
-            this.lblSpareID.BackColor = System.Drawing.SystemColors.Control;
-            this.lblSpareID.CausesValidation = false;
-            this.lblSpareID.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblSpareID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblSpareID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSpareID.Location = new System.Drawing.Point(3, 0);
-            this.lblSpareID.Name = "lblSpareID";
-            this.lblSpareID.Size = new System.Drawing.Size(365, 32);
-            this.lblSpareID.TabIndex = 21;
-            this.lblSpareID.Text = "Order No. :";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.CausesValidation = false;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(3, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(365, 32);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "Status :";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Control;
-            this.label2.CausesValidation = false;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(3, 96);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(365, 32);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Purchase date and time :";
+            this.button1.Font = new System.Drawing.Font("新細明體", 24F);
+            this.button1.Location = new System.Drawing.Point(992, 99);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(242, 42);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "All Invoices (pdf)";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // frmOrderDetail
             // 
@@ -157,11 +170,12 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmOrderDetail";
             this.Text = "Order Detail";
+            this.Load += new System.EventHandler(this.frmOrderDetail_Load);
             this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -170,11 +184,12 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flow;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label lblSpareID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }

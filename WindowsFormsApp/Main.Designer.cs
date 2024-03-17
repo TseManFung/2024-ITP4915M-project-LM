@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBoxLanguage = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.pictureBoxBack = new System.Windows.Forms.PictureBox();
             this.pContent = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBoxLanguage = new System.Windows.Forms.PictureBox();
+            this.pictureBoxBack = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -59,17 +59,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1258, 94);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
-            // pictureBoxLanguage
-            // 
-            this.pictureBoxLanguage.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBoxLanguage.Image = global::WindowsFormsApp.Properties.Resources.languageimage;
-            this.pictureBoxLanguage.Location = new System.Drawing.Point(1161, 3);
-            this.pictureBoxLanguage.Name = "pictureBoxLanguage";
-            this.pictureBoxLanguage.Size = new System.Drawing.Size(94, 88);
-            this.pictureBoxLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxLanguage.TabIndex = 28;
-            this.pictureBoxLanguage.TabStop = false;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.lblTitle);
@@ -81,6 +70,7 @@
             // 
             // lblTitle
             // 
+            this.lblTitle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTitle.Font = new System.Drawing.Font("微軟正黑體", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
@@ -91,20 +81,9 @@
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click_1);
             // 
-            // pictureBoxBack
-            // 
-            this.pictureBoxBack.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBoxBack.Image = global::WindowsFormsApp.Properties.Resources.back;
-            this.pictureBoxBack.Location = new System.Drawing.Point(3, 3);
-            this.pictureBoxBack.Name = "pictureBoxBack";
-            this.pictureBoxBack.Size = new System.Drawing.Size(94, 88);
-            this.pictureBoxBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxBack.TabIndex = 18;
-            this.pictureBoxBack.TabStop = false;
-            // 
             // pContent
             // 
-            this.pContent.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pContent.Location = new System.Drawing.Point(3, 103);
             this.pContent.Name = "pContent";
             this.pContent.Size = new System.Drawing.Size(1258, 575);
@@ -126,6 +105,31 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1264, 681);
             this.tableLayoutPanel1.TabIndex = 23;
             // 
+            // pictureBoxLanguage
+            // 
+            this.pictureBoxLanguage.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBoxLanguage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxLanguage.Image = global::WindowsFormsApp.Properties.Resources.languageimage;
+            this.pictureBoxLanguage.Location = new System.Drawing.Point(1161, 3);
+            this.pictureBoxLanguage.Name = "pictureBoxLanguage";
+            this.pictureBoxLanguage.Size = new System.Drawing.Size(94, 88);
+            this.pictureBoxLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLanguage.TabIndex = 28;
+            this.pictureBoxLanguage.TabStop = false;
+            this.pictureBoxLanguage.Click += new System.EventHandler(this.pictureBoxLanguage_Click);
+            // 
+            // pictureBoxBack
+            // 
+            this.pictureBoxBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxBack.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxBack.Image = global::WindowsFormsApp.Properties.Resources.back;
+            this.pictureBoxBack.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxBack.Name = "pictureBoxBack";
+            this.pictureBoxBack.Size = new System.Drawing.Size(94, 88);
+            this.pictureBoxBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxBack.TabIndex = 18;
+            this.pictureBoxBack.TabStop = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -136,10 +140,10 @@
             this.Text = "Main";
             this.Load += new System.EventHandler(this.Main_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).EndInit();
             this.ResumeLayout(false);
 
         }

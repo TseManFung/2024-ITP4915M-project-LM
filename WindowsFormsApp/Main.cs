@@ -55,5 +55,11 @@ namespace WindowsFormsApp
                 this.Change_pContent(typeof(frmMenu));
             //}
         }
+
+        private void pictureBoxLanguage_Click(object sender, EventArgs e)
+        {
+            frmLanguage f=new frmLanguage();
+            f.ShowDialog();
+        }
     }
 }
