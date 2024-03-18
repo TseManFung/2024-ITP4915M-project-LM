@@ -49,21 +49,21 @@
             this.lblReOrderLevel = new System.Windows.Forms.Label();
             this.txtReOrderLevel = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.lblSupplierID = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lblSpareWeight = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBoxSpareType = new System.Windows.Forms.ComboBox();
             this.lblPrice = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.txtSpareName = new System.Windows.Forms.TextBox();
             this.lblSpareName = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.lblSpareType = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.comboBoxSpareType = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -385,6 +385,17 @@
             this.tableLayoutPanel7.Size = new System.Drawing.Size(256, 144);
             this.tableLayoutPanel7.TabIndex = 87;
             // 
+            // comboBox2
+            // 
+            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBox2.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(3, 75);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(250, 41);
+            this.comboBox2.TabIndex = 61;
+            // 
             // lblSupplierID
             // 
             this.lblSupplierID.AutoSize = true;
@@ -414,6 +425,17 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(252, 144);
             this.tableLayoutPanel6.TabIndex = 86;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBox1.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(3, 75);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(246, 41);
+            this.comboBox1.TabIndex = 59;
+            // 
             // lblSpareWeight
             // 
             this.lblSpareWeight.AutoSize = true;
@@ -442,6 +464,17 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(252, 144);
             this.tableLayoutPanel5.TabIndex = 85;
+            // 
+            // comboBoxSpareType
+            // 
+            this.comboBoxSpareType.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxSpareType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxSpareType.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSpareType.FormattingEnabled = true;
+            this.comboBoxSpareType.Location = new System.Drawing.Point(3, 75);
+            this.comboBoxSpareType.Name = "comboBoxSpareType";
+            this.comboBoxSpareType.Size = new System.Drawing.Size(246, 41);
+            this.comboBoxSpareType.TabIndex = 74;
             // 
             // lblPrice
             // 
@@ -511,6 +544,16 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(252, 144);
             this.tableLayoutPanel3.TabIndex = 83;
             // 
+            // textBox5
+            // 
+            this.textBox5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBox5.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox5.Location = new System.Drawing.Point(3, 75);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(246, 41);
+            this.textBox5.TabIndex = 49;
+            // 
             // lblSpareType
             // 
             this.lblSpareType.AutoSize = true;
@@ -536,49 +579,6 @@
             this.btnSave.TabIndex = 51;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox5.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox5.Location = new System.Drawing.Point(3, 75);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(246, 41);
-            this.textBox5.TabIndex = 49;
-            // 
-            // comboBoxSpareType
-            // 
-            this.comboBoxSpareType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSpareType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBoxSpareType.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBoxSpareType.FormattingEnabled = true;
-            this.comboBoxSpareType.Location = new System.Drawing.Point(3, 75);
-            this.comboBoxSpareType.Name = "comboBoxSpareType";
-            this.comboBoxSpareType.Size = new System.Drawing.Size(246, 41);
-            this.comboBoxSpareType.TabIndex = 74;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBox1.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(3, 75);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(246, 41);
-            this.comboBox1.TabIndex = 59;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBox2.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(3, 75);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(250, 41);
-            this.comboBox2.TabIndex = 61;
             // 
             // tableLayoutPanel13
             // 

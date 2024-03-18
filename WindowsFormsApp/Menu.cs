@@ -71,5 +71,10 @@ namespace WindowsFormsApp
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmReport));
         }
+
+        private void tableLayoutPanel15_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmNewSupplier));
+        }
     }
 }

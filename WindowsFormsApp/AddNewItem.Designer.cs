@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.lblSupplierID = new System.Windows.Forms.Label();
-            this.txtSupplierID = new System.Windows.Forms.TextBox();
             this.lblSpareWeight = new System.Windows.Forms.Label();
             this.txtSpareWeight = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
@@ -57,6 +56,7 @@
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
@@ -80,17 +80,7 @@
             this.lblSupplierID.Name = "lblSupplierID";
             this.lblSupplierID.Size = new System.Drawing.Size(238, 50);
             this.lblSupplierID.TabIndex = 60;
-            this.lblSupplierID.Text = "SupplierID:";
-            // 
-            // txtSupplierID
-            // 
-            this.txtSupplierID.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtSupplierID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtSupplierID.Location = new System.Drawing.Point(3, 53);
-            this.txtSupplierID.Multiline = true;
-            this.txtSupplierID.Name = "txtSupplierID";
-            this.txtSupplierID.Size = new System.Drawing.Size(238, 45);
-            this.txtSupplierID.TabIndex = 59;
+            this.lblSupplierID.Text = "Supplier:";
             // 
             // lblSpareWeight
             // 
@@ -386,8 +376,8 @@
             // 
             this.tableLayoutPanel7.ColumnCount = 1;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel7.Controls.Add(this.comboBox1, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.lblSupplierID, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.txtSupplierID, 0, 1);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(1003, 3);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -457,6 +447,17 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(244, 101);
             this.tableLayoutPanel3.TabIndex = 83;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBox1.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(3, 53);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(238, 41);
+            this.comboBox1.TabIndex = 61;
+            // 
             // frmAddNewItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -492,7 +493,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblSupplierID;
-        private System.Windows.Forms.TextBox txtSupplierID;
         private System.Windows.Forms.Label lblSpareWeight;
         private System.Windows.Forms.TextBox txtSpareWeight;
         private System.Windows.Forms.Button btnSave;
@@ -520,5 +520,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        public System.Windows.Forms.ComboBox comboBox1;
     }
 }

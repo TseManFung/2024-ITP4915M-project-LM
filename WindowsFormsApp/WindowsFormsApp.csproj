@@ -217,6 +217,9 @@
     <EmbeddedResource Include="EditItem.resx">
       <DependentUpon>EditItem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditSupplier.resx">
+      <DependentUpon>EditSupplier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="language.resx">
       <DependentUpon>language.cs</DependentUpon>
     </EmbeddedResource>

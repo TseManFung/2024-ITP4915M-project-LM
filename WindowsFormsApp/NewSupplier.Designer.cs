@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp
 {
-    partial class NewSupplier
+    partial class frmNewSupplier
     {
         /// <summary>
         /// Required designer variable.
@@ -75,7 +75,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1337, 344);
             this.tableLayoutPanel1.TabIndex = 81;
             // 
             // button1
@@ -84,12 +84,13 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.Font = new System.Drawing.Font("新細明體", 32F);
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(163, 3);
+            this.button1.Location = new System.Drawing.Point(270, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(474, 53);
+            this.button1.Size = new System.Drawing.Size(795, 53);
             this.button1.TabIndex = 73;
             this.button1.Text = "Edit exist supplier";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -99,12 +100,12 @@
             this.tableLayoutPanel4.Controls.Add(this.txtSpareName, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.lblSpareName, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(483, 115);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(804, 89);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(314, 101);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(530, 101);
             this.tableLayoutPanel4.TabIndex = 84;
             // 
             // txtSpareName
@@ -114,7 +115,7 @@
             this.txtSpareName.Location = new System.Drawing.Point(3, 53);
             this.txtSpareName.Multiline = true;
             this.txtSpareName.Name = "txtSpareName";
-            this.txtSpareName.Size = new System.Drawing.Size(308, 45);
+            this.txtSpareName.Size = new System.Drawing.Size(524, 45);
             this.txtSpareName.TabIndex = 47;
             // 
             // lblSpareName
@@ -127,7 +128,7 @@
             this.lblSpareName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareName.Location = new System.Drawing.Point(3, 0);
             this.lblSpareName.Name = "lblSpareName";
-            this.lblSpareName.Size = new System.Drawing.Size(308, 50);
+            this.lblSpareName.Size = new System.Drawing.Size(524, 50);
             this.lblSpareName.TabIndex = 50;
             this.lblSpareName.Text = "Address:";
             // 
@@ -138,12 +139,12 @@
             this.tableLayoutPanel3.Controls.Add(this.textBox1, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.lblSpareType, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 115);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 89);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(154, 101);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(261, 101);
             this.tableLayoutPanel3.TabIndex = 83;
             // 
             // textBox1
@@ -153,7 +154,7 @@
             this.textBox1.Location = new System.Drawing.Point(3, 53);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 45);
+            this.textBox1.Size = new System.Drawing.Size(255, 45);
             this.textBox1.TabIndex = 49;
             // 
             // lblSpareType
@@ -166,7 +167,7 @@
             this.lblSpareType.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareType.Location = new System.Drawing.Point(3, 0);
             this.lblSpareType.Name = "lblSpareType";
-            this.lblSpareType.Size = new System.Drawing.Size(148, 50);
+            this.lblSpareType.Size = new System.Drawing.Size(255, 50);
             this.lblSpareType.TabIndex = 48;
             this.lblSpareType.Text = "Name:";
             // 
@@ -180,12 +181,12 @@
             this.tableLayoutPanel2.Controls.Add(this.btnSave, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.button5, 2, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 340);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 261);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(794, 107);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1331, 80);
             this.tableLayoutPanel2.TabIndex = 89;
             // 
             // btnSave
@@ -195,7 +196,7 @@
             this.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSave.Location = new System.Drawing.Point(3, 3);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(258, 101);
+            this.btnSave.Size = new System.Drawing.Size(437, 74);
             this.btnSave.TabIndex = 52;
             this.btnSave.Text = "Create a new supplier";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -205,9 +206,9 @@
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button5.Font = new System.Drawing.Font("新細明體", 32F);
             this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button5.Location = new System.Drawing.Point(531, 3);
+            this.button5.Location = new System.Drawing.Point(889, 3);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(260, 101);
+            this.button5.Size = new System.Drawing.Size(439, 74);
             this.button5.TabIndex = 72;
             this.button5.Text = "Clear";
             this.button5.UseVisualStyleBackColor = true;
@@ -219,13 +220,13 @@
             this.tableLayoutPanel5.Controls.Add(this.textBox2, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(323, 115);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(537, 89);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(154, 101);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(261, 101);
             this.tableLayoutPanel5.TabIndex = 90;
             // 
             // textBox2
@@ -235,7 +236,7 @@
             this.textBox2.Location = new System.Drawing.Point(3, 53);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 45);
+            this.textBox2.Size = new System.Drawing.Size(255, 45);
             this.textBox2.TabIndex = 47;
             // 
             // label1
@@ -248,7 +249,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 50);
+            this.label1.Size = new System.Drawing.Size(255, 50);
             this.label1.TabIndex = 50;
             this.label1.Text = "Contant Number:";
             // 
@@ -259,12 +260,12 @@
             this.tableLayoutPanel6.Controls.Add(this.textBox3, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(163, 115);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(270, 89);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(154, 101);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(261, 101);
             this.tableLayoutPanel6.TabIndex = 91;
             // 
             // textBox3
@@ -274,7 +275,7 @@
             this.textBox3.Location = new System.Drawing.Point(3, 53);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(148, 45);
+            this.textBox3.Size = new System.Drawing.Size(255, 45);
             this.textBox3.TabIndex = 47;
             // 
             // label2
@@ -287,17 +288,17 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 50);
+            this.label2.Size = new System.Drawing.Size(255, 50);
             this.label2.TabIndex = 50;
             this.label2.Text = "email:";
             // 
-            // NewSupplier
+            // frmNewSupplier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1337, 344);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "NewSupplier";
+            this.Name = "frmNewSupplier";
             this.Text = "NewSupplier";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);

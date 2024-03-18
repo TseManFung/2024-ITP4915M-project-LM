@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class NewSupplier : Form
+    public partial class frmNewSupplier : Form
     {
-        public NewSupplier()
+        public frmNewSupplier()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmEditSupplier));
         }
     }
 }
