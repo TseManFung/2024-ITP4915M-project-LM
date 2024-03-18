@@ -62,6 +62,7 @@
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBoxLenguage = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAddNewProduct)).BeginInit();
@@ -79,6 +80,7 @@
             this.tableLayoutPanel14.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
+            this.tableLayoutPanel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLenguage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,8 +130,8 @@
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel6);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel13);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel14);
-            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel7);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel15);
+            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel7);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel16);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel10);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel11);
@@ -306,11 +308,11 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Location = new System.Drawing.Point(68, 129);
+            this.label2.Location = new System.Drawing.Point(51, 129);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 12);
+            this.label2.Size = new System.Drawing.Size(89, 12);
             this.label2.TabIndex = 17;
-            this.label2.Text = "User Mang";
+            this.label2.Text = "User Management";
             // 
             // tableLayoutPanel5
             // 
@@ -443,7 +445,7 @@
             this.tableLayoutPanel7.Controls.Add(this.pictureBoxLogout, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.lblLogout, 0, 1);
             this.tableLayoutPanel7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(795, 159);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 315);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
@@ -470,8 +472,9 @@
             // 
             this.tableLayoutPanel15.ColumnCount = 1;
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel15.Controls.Add(this.label6, 0, 1);
             this.tableLayoutPanel15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tableLayoutPanel15.Location = new System.Drawing.Point(3, 315);
+            this.tableLayoutPanel15.Location = new System.Drawing.Point(795, 159);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 2;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
@@ -547,6 +550,17 @@
             this.pictureBoxLenguage.TabIndex = 21;
             this.pictureBoxLenguage.TabStop = false;
             // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label6.Location = new System.Drawing.Point(42, 129);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(107, 12);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Supplier Management";
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -586,6 +600,8 @@
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).EndInit();
+            this.tableLayoutPanel15.ResumeLayout(false);
+            this.tableLayoutPanel15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLenguage)).EndInit();
             this.ResumeLayout(false);
 
@@ -625,6 +641,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
 

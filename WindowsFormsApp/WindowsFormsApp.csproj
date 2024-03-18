@@ -92,6 +92,12 @@
     <Compile Include="EditItem.Designer.cs">
       <DependentUpon>EditItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditSupplier.Designer.cs">
+      <DependentUpon>EditSupplier.cs</DependentUpon>
+    </Compile>
     <Compile Include="language.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,12 @@
     </Compile>
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewSupplier.Designer.cs">
+      <DependentUpon>NewSupplier.cs</DependentUpon>
     </Compile>
     <Compile Include="OrderRecord.cs">
       <SubType>Form</SubType>
@@ -213,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewSupplier.resx">
+      <DependentUpon>NewSupplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrderRecord.resx">
       <DependentUpon>OrderRecord.cs</DependentUpon>
