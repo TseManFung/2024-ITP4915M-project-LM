@@ -20,12 +20,7 @@ namespace WindowsFormsApp
         }
         FilterInfoCollection FInfoC;
         VideoCaptureDevice cam;
-        private void btnScreen_Click(object sender, EventArgs e)
-        {
-            cam = new VideoCaptureDevice(FInfoC[cboCamera.SelectedIndex].MonikerString);
-            cam.NewFrame += cam_NewFrame;
-            cam.Start();
-        }
+
 
         private void cam_NewFrame(object sender, NewFrameEventArgs e)
         {
@@ -43,7 +38,7 @@ namespace WindowsFormsApp
                 cboCamera.Items.Add(FInfo.Name);
             }
             cboCamera.SelectedIndex = 0;
-            cam = new VideoCaptureDevice();
+            
         }
 
         private void frmWebcam_FormClosing(object sender, FormClosingEventArgs e)
@@ -51,6 +46,17 @@ namespace WindowsFormsApp
             if (cam.IsRunning) { 
                 cam.Stop();
             }
+        }
+
+        private void cboCamera_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cam != null && cam.IsRunning)
+            {
+                cam.Stop();
+            }
+            cam = new VideoCaptureDevice(FInfoC[cboCamera.SelectedIndex].MonikerString);
+            cam.NewFrame += cam_NewFrame;
+            cam.Start();
         }
     }
 }

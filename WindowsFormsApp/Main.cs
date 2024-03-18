@@ -27,6 +27,7 @@ namespace WindowsFormsApp
         private void Main_Load(object sender, EventArgs e)
         {
             this.Change_pContent(typeof(frmLogin));
+            //this.Change_pContent(typeof(frmOrderDetail));
         }
 
         public void Change_pContent(Type formType) {

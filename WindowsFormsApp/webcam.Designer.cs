@@ -30,11 +30,10 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.cboCamera = new System.Windows.Forms.ComboBox();
-            this.picCamera = new System.Windows.Forms.PictureBox();
-            this.btnScreen = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.picCamera)).BeginInit();
+            this.picCamera = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCamera)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -59,6 +58,26 @@
             this.cboCamera.Name = "cboCamera";
             this.cboCamera.Size = new System.Drawing.Size(232, 29);
             this.cboCamera.TabIndex = 1;
+            this.cboCamera.SelectedIndexChanged += new System.EventHandler(this.cboCamera_SelectedIndexChanged);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.Controls.Add(this.picCamera, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.cboCamera, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(405, 452);
+            this.tableLayoutPanel1.TabIndex = 4;
             // 
             // picCamera
             // 
@@ -71,38 +90,6 @@
             this.picCamera.TabIndex = 2;
             this.picCamera.TabStop = false;
             // 
-            // btnScreen
-            // 
-            this.btnScreen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnScreen.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnScreen.Location = new System.Drawing.Point(273, 364);
-            this.btnScreen.Name = "btnScreen";
-            this.btnScreen.Size = new System.Drawing.Size(129, 85);
-            this.btnScreen.TabIndex = 3;
-            this.btnScreen.Text = "Screen";
-            this.btnScreen.UseVisualStyleBackColor = true;
-            this.btnScreen.Click += new System.EventHandler(this.btnScreen_Click);
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Controls.Add(this.picCamera, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.cboCamera, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnScreen, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(405, 452);
-            this.tableLayoutPanel1.TabIndex = 4;
-            // 
             // frmWebcam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -113,9 +100,9 @@
             this.Text = "webcam";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmWebcam_FormClosing);
             this.Load += new System.EventHandler(this.frmWebcam_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picCamera)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCamera)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -125,7 +112,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cboCamera;
         private System.Windows.Forms.PictureBox picCamera;
-        private System.Windows.Forms.Button btnScreen;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

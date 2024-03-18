@@ -83,6 +83,12 @@
     <Compile Include="Cart.Designer.cs">
       <DependentUpon>Cart.cs</DependentUpon>
     </Compile>
+    <Compile Include="CollectSpare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CollectSpare.Designer.cs">
+      <DependentUpon>CollectSpare.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeliveryStatusandProductDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cart.resx">
       <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectSpare.resx">
+      <DependentUpon>CollectSpare.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeliveryStatusandProductDetails.resx">
       <DependentUpon>DeliveryStatusandProductDetails.cs</DependentUpon>

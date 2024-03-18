@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblDIsetTransportStaff = new System.Windows.Forms.Label();
             this.lblLMSerialNumber = new System.Windows.Forms.Label();
             this.lblCategoryLetter = new System.Windows.Forms.Label();
             this.lblSpareName = new System.Windows.Forms.Label();
@@ -47,23 +46,7 @@
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.txtROL = new System.Windows.Forms.TextBox();
             this.txtCSL = new System.Windows.Forms.TextBox();
-            this.pictureBoxBack = new System.Windows.Forms.PictureBox();
-            this.pictureLogo = new System.Windows.Forms.PictureBox();
-            this.pictureBoxLanguage = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblDIsetTransportStaff
-            // 
-            this.lblDIsetTransportStaff.AutoSize = true;
-            this.lblDIsetTransportStaff.Font = new System.Drawing.Font("新細明體", 36F);
-            this.lblDIsetTransportStaff.Location = new System.Drawing.Point(915, 47);
-            this.lblDIsetTransportStaff.Name = "lblDIsetTransportStaff";
-            this.lblDIsetTransportStaff.Size = new System.Drawing.Size(451, 48);
-            this.lblDIsetTransportStaff.TabIndex = 75;
-            this.lblDIsetTransportStaff.Text = "DI set (Transport Staff)";
             // 
             // lblLMSerialNumber
             // 
@@ -227,37 +210,6 @@
             this.txtCSL.Size = new System.Drawing.Size(91, 46);
             this.txtCSL.TabIndex = 93;
             // 
-            // pictureBoxBack
-            // 
-            this.pictureBoxBack.Image = global::WindowsFormsApp.Properties.Resources.back;
-            this.pictureBoxBack.Location = new System.Drawing.Point(-3, 1);
-            this.pictureBoxBack.Name = "pictureBoxBack";
-            this.pictureBoxBack.Size = new System.Drawing.Size(138, 130);
-            this.pictureBoxBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxBack.TabIndex = 74;
-            this.pictureBoxBack.TabStop = false;
-            // 
-            // pictureLogo
-            // 
-            this.pictureLogo.Image = global::WindowsFormsApp.Properties.Resources.LoGoLeGend;
-            this.pictureLogo.Location = new System.Drawing.Point(732, 1);
-            this.pictureLogo.Name = "pictureLogo";
-            this.pictureLogo.Size = new System.Drawing.Size(163, 130);
-            this.pictureLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureLogo.TabIndex = 73;
-            this.pictureLogo.TabStop = false;
-            // 
-            // pictureBoxLanguage
-            // 
-            this.pictureBoxLanguage.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBoxLanguage.Image = global::WindowsFormsApp.Properties.Resources.languageimage;
-            this.pictureBoxLanguage.Location = new System.Drawing.Point(1748, 1);
-            this.pictureBoxLanguage.Name = "pictureBoxLanguage";
-            this.pictureBoxLanguage.Size = new System.Drawing.Size(144, 130);
-            this.pictureBoxLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxLanguage.TabIndex = 72;
-            this.pictureBoxLanguage.TabStop = false;
-            // 
             // frmDISet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -281,27 +233,15 @@
             this.Controls.Add(this.lblSpareName);
             this.Controls.Add(this.lblCategoryLetter);
             this.Controls.Add(this.lblLMSerialNumber);
-            this.Controls.Add(this.lblDIsetTransportStaff);
-            this.Controls.Add(this.pictureBoxBack);
-            this.Controls.Add(this.pictureLogo);
-            this.Controls.Add(this.pictureBoxLanguage);
             this.Name = "frmDISet";
             this.Text = "DI set (Transport Staff)";
             this.Load += new System.EventHandler(this.frmDISet_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBoxLanguage;
-        private System.Windows.Forms.PictureBox pictureLogo;
-        private System.Windows.Forms.PictureBox pictureBoxBack;
-        private System.Windows.Forms.Label lblDIsetTransportStaff;
         private System.Windows.Forms.Label lblLMSerialNumber;
         private System.Windows.Forms.Label lblCategoryLetter;
         private System.Windows.Forms.Label lblSpareName;
