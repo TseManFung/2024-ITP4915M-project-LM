@@ -59,11 +59,12 @@
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBoxLogout = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
+            this.label7 = new System.Windows.Forms.Label();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.label8 = new System.Windows.Forms.Label();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBoxLenguage = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAddNewProduct)).BeginInit();
@@ -83,6 +84,7 @@
             this.tableLayoutPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
             this.tableLayoutPanel16.SuspendLayout();
+            this.tableLayoutPanel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLenguage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,6 +122,7 @@
             this.lblReOrder.Size = new System.Drawing.Size(48, 12);
             this.lblReOrder.TabIndex = 20;
             this.lblReOrder.Text = "Re-Stock";
+            this.lblReOrder.Click += new System.EventHandler(this.pictureBoxReOrder_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -373,6 +376,7 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel6.TabIndex = 28;
+            this.tableLayoutPanel6.Click += new System.EventHandler(this.pictureBoxReOrder_Click);
             // 
             // pictureBoxReOrder
             // 
@@ -385,6 +389,7 @@
             this.pictureBoxReOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxReOrder.TabIndex = 19;
             this.pictureBoxReOrder.TabStop = false;
+            this.pictureBoxReOrder.Click += new System.EventHandler(this.pictureBoxReOrder_Click);
             // 
             // tableLayoutPanel13
             // 
@@ -513,10 +518,22 @@
             this.tableLayoutPanel16.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel16.TabIndex = 35;
             // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label7.Location = new System.Drawing.Point(81, 129);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 12);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "執貨";
+            // 
             // tableLayoutPanel10
             // 
             this.tableLayoutPanel10.ColumnCount = 1;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel10.Controls.Add(this.label8, 0, 1);
             this.tableLayoutPanel10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tableLayoutPanel10.Location = new System.Drawing.Point(399, 315);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
@@ -526,6 +543,19 @@
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel10.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel10.TabIndex = 36;
+            this.tableLayoutPanel10.Click += new System.EventHandler(this.tableLayoutPanel10_Click);
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.AutoSize = true;
+            this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label8.Location = new System.Drawing.Point(53, 129);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(85, 12);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "Re-Stock Record";
+            this.label8.Click += new System.EventHandler(this.tableLayoutPanel10_Click);
             // 
             // tableLayoutPanel11
             // 
@@ -565,17 +595,6 @@
             this.pictureBoxLenguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxLenguage.TabIndex = 21;
             this.pictureBoxLenguage.TabStop = false;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label7.Location = new System.Drawing.Point(81, 129);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 12);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "執貨";
             // 
             // frmMenu
             // 
@@ -620,6 +639,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).EndInit();
             this.tableLayoutPanel16.ResumeLayout(false);
             this.tableLayoutPanel16.PerformLayout();
+            this.tableLayoutPanel10.ResumeLayout(false);
+            this.tableLayoutPanel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLenguage)).EndInit();
             this.ResumeLayout(false);
 
@@ -661,6 +682,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
 

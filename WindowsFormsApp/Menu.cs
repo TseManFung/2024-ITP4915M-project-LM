@@ -76,5 +76,15 @@ namespace WindowsFormsApp
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmNewSupplier));
         }
+
+        private void tableLayoutPanel10_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmReStockCheck));
+        }
+
+        private void pictureBoxReOrder_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmReStock));
+        }
     }
 }

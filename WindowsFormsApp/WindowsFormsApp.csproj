@@ -181,17 +181,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Re-order %28spare parts shipping department%29.cs">
+    <Compile Include="Re-StockCheck.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Re-order %28spare parts shipping department%29.Designer.cs">
-      <DependentUpon>Re-order %28spare parts shipping department%29.cs</DependentUpon>
+    <Compile Include="Re-StockCheck.Designer.cs">
+      <DependentUpon>Re-StockCheck.cs</DependentUpon>
     </Compile>
-    <Compile Include="Re-Order%28purchasing department%29.cs">
+    <Compile Include="Re-Stock.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Re-Order%28purchasing department%29.Designer.cs">
-      <DependentUpon>Re-Order%28purchasing department%29.cs</DependentUpon>
+    <Compile Include="Re-Stock.Designer.cs">
+      <DependentUpon>Re-Stock.cs</DependentUpon>
     </Compile>
     <Compile Include="Report.cs">
       <SubType>Form</SubType>
@@ -281,11 +281,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Re-order %28spare parts shipping department%29.resx">
-      <DependentUpon>Re-order %28spare parts shipping department%29.cs</DependentUpon>
+    <EmbeddedResource Include="Re-StockCheck.resx">
+      <DependentUpon>Re-StockCheck.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Re-Order%28purchasing department%29.resx">
-      <DependentUpon>Re-Order%28purchasing department%29.cs</DependentUpon>
+    <EmbeddedResource Include="Re-Stock.resx">
+      <DependentUpon>Re-Stock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report.resx">
       <DependentUpon>Report.cs</DependentUpon>

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class frmReorderSparePartsShippingDepartment : Form
+    public partial class frmReStock : Form
     {
-        public frmReorderSparePartsShippingDepartment()
+        public frmReStock()
         {
             InitializeComponent();
+        }
+
+        private void lblFollowingROL_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
