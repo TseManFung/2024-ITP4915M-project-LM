@@ -34,28 +34,22 @@
             this.lblReOrder = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBoxAddNewProduct = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBoxCheckOrder = new System.Windows.Forms.PictureBox();
             this.lblCheckOrder = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblPlaceOrder = new System.Windows.Forms.Label();
-            this.pictureBoxPlaceOrder = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBoxOrderStatus = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBoxReOrder = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBoxLogout = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
@@ -66,29 +60,35 @@
             this.label9 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.lblInvoice = new System.Windows.Forms.Label();
+            this.pictureBoxAddNewProduct = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCheckOrder = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPlaceOrder = new System.Windows.Forms.PictureBox();
+            this.pictureBoxOrderStatus = new System.Windows.Forms.PictureBox();
+            this.pictureBoxReOrder = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLogout = new System.Windows.Forms.PictureBox();
             this.pictureBoxLenguage = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAddNewProduct)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCheckOrder)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlaceOrder)).BeginInit();
             this.tableLayoutPanel8.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOrderStatus)).BeginInit();
             this.tableLayoutPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReOrder)).BeginInit();
             this.tableLayoutPanel10.SuspendLayout();
             this.tableLayoutPanel13.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
             this.tableLayoutPanel15.SuspendLayout();
             this.tableLayoutPanel16.SuspendLayout();
             this.tableLayoutPanel14.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAddNewProduct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCheckOrder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlaceOrder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOrderStatus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReOrder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLenguage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -142,8 +142,8 @@
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel7);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel15);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel16);
-            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel14);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel11);
+            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel14);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel4);
             this.flowLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -169,20 +169,6 @@
             this.tableLayoutPanel3.TabIndex = 25;
             this.tableLayoutPanel3.Click += new System.EventHandler(this.tableLayoutPanel3_Click);
             // 
-            // pictureBoxAddNewProduct
-            // 
-            this.pictureBoxAddNewProduct.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxAddNewProduct.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxAddNewProduct.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAddNewProduct.Image")));
-            this.pictureBoxAddNewProduct.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAddNewProduct.InitialImage")));
-            this.pictureBoxAddNewProduct.Location = new System.Drawing.Point(3, 6);
-            this.pictureBoxAddNewProduct.Name = "pictureBoxAddNewProduct";
-            this.pictureBoxAddNewProduct.Size = new System.Drawing.Size(186, 108);
-            this.pictureBoxAddNewProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxAddNewProduct.TabIndex = 15;
-            this.pictureBoxAddNewProduct.TabStop = false;
-            this.pictureBoxAddNewProduct.Click += new System.EventHandler(this.tableLayoutPanel3_Click);
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
@@ -199,19 +185,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel2.TabIndex = 24;
             this.tableLayoutPanel2.Click += new System.EventHandler(this.pictureBoxCheckOrder_Click);
-            // 
-            // pictureBoxCheckOrder
-            // 
-            this.pictureBoxCheckOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxCheckOrder.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxCheckOrder.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxCheckOrder.Image")));
-            this.pictureBoxCheckOrder.Location = new System.Drawing.Point(3, 6);
-            this.pictureBoxCheckOrder.Name = "pictureBoxCheckOrder";
-            this.pictureBoxCheckOrder.Size = new System.Drawing.Size(186, 108);
-            this.pictureBoxCheckOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxCheckOrder.TabIndex = 2;
-            this.pictureBoxCheckOrder.TabStop = false;
-            this.pictureBoxCheckOrder.Click += new System.EventHandler(this.pictureBoxCheckOrder_Click);
             // 
             // lblCheckOrder
             // 
@@ -253,21 +226,6 @@
             this.lblPlaceOrder.TabIndex = 11;
             this.lblPlaceOrder.Text = "Place Order";
             this.lblPlaceOrder.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
-            // 
-            // pictureBoxPlaceOrder
-            // 
-            this.pictureBoxPlaceOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxPlaceOrder.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBoxPlaceOrder.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxPlaceOrder.Enabled = false;
-            this.pictureBoxPlaceOrder.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPlaceOrder.Image")));
-            this.pictureBoxPlaceOrder.Location = new System.Drawing.Point(3, 6);
-            this.pictureBoxPlaceOrder.Name = "pictureBoxPlaceOrder";
-            this.pictureBoxPlaceOrder.Size = new System.Drawing.Size(186, 108);
-            this.pictureBoxPlaceOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxPlaceOrder.TabIndex = 0;
-            this.pictureBoxPlaceOrder.TabStop = false;
-            this.pictureBoxPlaceOrder.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
             // 
             // tableLayoutPanel8
             // 
@@ -352,19 +310,6 @@
             this.label3.Text = "Report";
             this.label3.Click += new System.EventHandler(this.tableLayoutPanel5_Click);
             // 
-            // pictureBoxOrderStatus
-            // 
-            this.pictureBoxOrderStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxOrderStatus.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxOrderStatus.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxOrderStatus.Image")));
-            this.pictureBoxOrderStatus.Location = new System.Drawing.Point(3, 6);
-            this.pictureBoxOrderStatus.Name = "pictureBoxOrderStatus";
-            this.pictureBoxOrderStatus.Size = new System.Drawing.Size(186, 108);
-            this.pictureBoxOrderStatus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxOrderStatus.TabIndex = 17;
-            this.pictureBoxOrderStatus.TabStop = false;
-            this.pictureBoxOrderStatus.Click += new System.EventHandler(this.tableLayoutPanel5_Click);
-            // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 1;
@@ -381,19 +326,6 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel6.TabIndex = 28;
             this.tableLayoutPanel6.Click += new System.EventHandler(this.pictureBoxReOrder_Click);
-            // 
-            // pictureBoxReOrder
-            // 
-            this.pictureBoxReOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxReOrder.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxReOrder.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxReOrder.Image")));
-            this.pictureBoxReOrder.Location = new System.Drawing.Point(3, 6);
-            this.pictureBoxReOrder.Name = "pictureBoxReOrder";
-            this.pictureBoxReOrder.Size = new System.Drawing.Size(186, 108);
-            this.pictureBoxReOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxReOrder.TabIndex = 19;
-            this.pictureBoxReOrder.TabStop = false;
-            this.pictureBoxReOrder.Click += new System.EventHandler(this.pictureBoxReOrder_Click);
             // 
             // tableLayoutPanel10
             // 
@@ -468,19 +400,6 @@
             this.tableLayoutPanel7.TabIndex = 29;
             this.tableLayoutPanel7.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel7_Click);
             // 
-            // pictureBoxLogout
-            // 
-            this.pictureBoxLogout.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxLogout.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogout.Image")));
-            this.pictureBoxLogout.Location = new System.Drawing.Point(3, 6);
-            this.pictureBoxLogout.Name = "pictureBoxLogout";
-            this.pictureBoxLogout.Size = new System.Drawing.Size(186, 108);
-            this.pictureBoxLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogout.TabIndex = 4;
-            this.pictureBoxLogout.TabStop = false;
-            this.pictureBoxLogout.Click += new System.EventHandler(this.tableLayoutPanel7_Click);
-            // 
             // tableLayoutPanel15
             // 
             this.tableLayoutPanel15.ColumnCount = 1;
@@ -543,7 +462,7 @@
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel14.Controls.Add(this.label5, 0, 1);
             this.tableLayoutPanel14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tableLayoutPanel14.Location = new System.Drawing.Point(399, 315);
+            this.tableLayoutPanel14.Location = new System.Drawing.Point(597, 315);
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 2;
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
@@ -569,7 +488,7 @@
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel11.Controls.Add(this.label9, 0, 1);
             this.tableLayoutPanel11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(597, 315);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(399, 315);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 2;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
@@ -577,6 +496,7 @@
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel11.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel11.TabIndex = 37;
+            this.tableLayoutPanel11.Click += new System.EventHandler(this.tableLayoutPanel11_Click);
             // 
             // label9
             // 
@@ -588,6 +508,7 @@
             this.label9.Size = new System.Drawing.Size(54, 12);
             this.label9.TabIndex = 20;
             this.label9.Text = "Order Edit";
+            this.label9.Click += new System.EventHandler(this.tableLayoutPanel11_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -615,6 +536,87 @@
             this.lblInvoice.TabIndex = 21;
             this.lblInvoice.Text = "Invoice";
             // 
+            // pictureBoxAddNewProduct
+            // 
+            this.pictureBoxAddNewProduct.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxAddNewProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxAddNewProduct.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAddNewProduct.Image")));
+            this.pictureBoxAddNewProduct.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAddNewProduct.InitialImage")));
+            this.pictureBoxAddNewProduct.Location = new System.Drawing.Point(3, 6);
+            this.pictureBoxAddNewProduct.Name = "pictureBoxAddNewProduct";
+            this.pictureBoxAddNewProduct.Size = new System.Drawing.Size(186, 108);
+            this.pictureBoxAddNewProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAddNewProduct.TabIndex = 15;
+            this.pictureBoxAddNewProduct.TabStop = false;
+            this.pictureBoxAddNewProduct.Click += new System.EventHandler(this.tableLayoutPanel3_Click);
+            // 
+            // pictureBoxCheckOrder
+            // 
+            this.pictureBoxCheckOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxCheckOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxCheckOrder.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxCheckOrder.Image")));
+            this.pictureBoxCheckOrder.Location = new System.Drawing.Point(3, 6);
+            this.pictureBoxCheckOrder.Name = "pictureBoxCheckOrder";
+            this.pictureBoxCheckOrder.Size = new System.Drawing.Size(186, 108);
+            this.pictureBoxCheckOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCheckOrder.TabIndex = 2;
+            this.pictureBoxCheckOrder.TabStop = false;
+            this.pictureBoxCheckOrder.Click += new System.EventHandler(this.pictureBoxCheckOrder_Click);
+            // 
+            // pictureBoxPlaceOrder
+            // 
+            this.pictureBoxPlaceOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxPlaceOrder.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBoxPlaceOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxPlaceOrder.Enabled = false;
+            this.pictureBoxPlaceOrder.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPlaceOrder.Image")));
+            this.pictureBoxPlaceOrder.Location = new System.Drawing.Point(3, 6);
+            this.pictureBoxPlaceOrder.Name = "pictureBoxPlaceOrder";
+            this.pictureBoxPlaceOrder.Size = new System.Drawing.Size(186, 108);
+            this.pictureBoxPlaceOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxPlaceOrder.TabIndex = 0;
+            this.pictureBoxPlaceOrder.TabStop = false;
+            this.pictureBoxPlaceOrder.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
+            // 
+            // pictureBoxOrderStatus
+            // 
+            this.pictureBoxOrderStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxOrderStatus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxOrderStatus.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxOrderStatus.Image")));
+            this.pictureBoxOrderStatus.Location = new System.Drawing.Point(3, 6);
+            this.pictureBoxOrderStatus.Name = "pictureBoxOrderStatus";
+            this.pictureBoxOrderStatus.Size = new System.Drawing.Size(186, 108);
+            this.pictureBoxOrderStatus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxOrderStatus.TabIndex = 17;
+            this.pictureBoxOrderStatus.TabStop = false;
+            this.pictureBoxOrderStatus.Click += new System.EventHandler(this.tableLayoutPanel5_Click);
+            // 
+            // pictureBoxReOrder
+            // 
+            this.pictureBoxReOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxReOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxReOrder.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxReOrder.Image")));
+            this.pictureBoxReOrder.Location = new System.Drawing.Point(3, 6);
+            this.pictureBoxReOrder.Name = "pictureBoxReOrder";
+            this.pictureBoxReOrder.Size = new System.Drawing.Size(186, 108);
+            this.pictureBoxReOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxReOrder.TabIndex = 19;
+            this.pictureBoxReOrder.TabStop = false;
+            this.pictureBoxReOrder.Click += new System.EventHandler(this.pictureBoxReOrder_Click);
+            // 
+            // pictureBoxLogout
+            // 
+            this.pictureBoxLogout.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxLogout.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogout.Image")));
+            this.pictureBoxLogout.Location = new System.Drawing.Point(3, 6);
+            this.pictureBoxLogout.Name = "pictureBoxLogout";
+            this.pictureBoxLogout.Size = new System.Drawing.Size(186, 108);
+            this.pictureBoxLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogout.TabIndex = 4;
+            this.pictureBoxLogout.TabStop = false;
+            this.pictureBoxLogout.Click += new System.EventHandler(this.tableLayoutPanel7_Click);
+            // 
             // pictureBoxLenguage
             // 
             this.pictureBoxLenguage.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -641,30 +643,24 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAddNewProduct)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCheckOrder)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlaceOrder)).EndInit();
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOrderStatus)).EndInit();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReOrder)).EndInit();
             this.tableLayoutPanel10.ResumeLayout(false);
             this.tableLayoutPanel10.PerformLayout();
             this.tableLayoutPanel13.ResumeLayout(false);
             this.tableLayoutPanel13.PerformLayout();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).EndInit();
             this.tableLayoutPanel15.ResumeLayout(false);
             this.tableLayoutPanel15.PerformLayout();
             this.tableLayoutPanel16.ResumeLayout(false);
@@ -675,6 +671,12 @@
             this.tableLayoutPanel11.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAddNewProduct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCheckOrder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlaceOrder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOrderStatus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReOrder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLenguage)).EndInit();
             this.ResumeLayout(false);
 

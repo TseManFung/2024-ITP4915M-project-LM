@@ -91,5 +91,10 @@ namespace WindowsFormsApp
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmCollectSpare));
         }
+
+        private void tableLayoutPanel11_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmEditOrder));
+        }
     }
 }
