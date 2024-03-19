@@ -35,5 +35,15 @@ namespace WindowsFormsApp
             flow.Controls.Add(frm2);
             frm2.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmDISet));
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmInvoice));
+        }
     }
 }

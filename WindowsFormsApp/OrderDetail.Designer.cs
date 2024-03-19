@@ -33,10 +33,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblSpareID = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.flow = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -64,6 +65,7 @@
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lblSpareID, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.button1, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.button2, 2, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 18);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -82,7 +84,7 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Top;
             this.label2.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(3, 96);
+            this.label2.Location = new System.Drawing.Point(3, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(365, 32);
             this.label2.TabIndex = 23;
@@ -96,7 +98,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(3, 48);
+            this.label1.Location = new System.Drawing.Point(3, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(365, 32);
             this.label1.TabIndex = 22;
@@ -116,6 +118,17 @@
             this.lblSpareID.TabIndex = 21;
             this.lblSpareID.Text = "Order No. :";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("新細明體", 24F);
+            this.button1.Location = new System.Drawing.Point(992, 97);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(242, 42);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Invoice";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.flow);
@@ -129,6 +142,7 @@
             // 
             // flow
             // 
+            this.flow.AutoScroll = true;
             this.flow.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flow.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flow.Location = new System.Drawing.Point(3, 18);
@@ -152,15 +166,16 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1249, 572);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
-            // button1
+            // button2
             // 
-            this.button1.Font = new System.Drawing.Font("新細明體", 24F);
-            this.button1.Location = new System.Drawing.Point(992, 99);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(242, 42);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "All Invoices (pdf)";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button2.Font = new System.Drawing.Font("新細明體", 24F);
+            this.button2.Location = new System.Drawing.Point(992, 50);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(242, 41);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "DI set";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // frmOrderDetail
             // 
@@ -191,5 +206,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

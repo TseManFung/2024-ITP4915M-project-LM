@@ -77,6 +77,12 @@
     <Compile Include="AccountManagement.Designer.cs">
       <DependentUpon>AccountManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddSaleAreaDepartmentWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSaleAreaDepartmentWarehouse.Designer.cs">
+      <DependentUpon>AddSaleAreaDepartmentWarehouse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,12 @@
     </Compile>
     <Compile Include="DeliveryStatusandProductDetails.Designer.cs">
       <DependentUpon>DeliveryStatusandProductDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DID.Designer.cs">
+      <DependentUpon>DID.cs</DependentUpon>
     </Compile>
     <Compile Include="DISet.cs">
       <SubType>Form</SubType>
@@ -217,6 +229,18 @@
     <Compile Include="Scrap.Designer.cs">
       <DependentUpon>Scrap.cs</DependentUpon>
     </Compile>
+    <Compile Include="SetStockLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetStockLevel.Designer.cs">
+      <DependentUpon>SetStockLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signature.Designer.cs">
+      <DependentUpon>Signature.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserAndAccountCreate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeliveryStatusandProductDetails.resx">
       <DependentUpon>DeliveryStatusandProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DID.resx">
+      <DependentUpon>DID.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DISet.resx">
       <DependentUpon>DISet.cs</DependentUpon>
@@ -310,6 +337,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Scrap.resx">
       <DependentUpon>Scrap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetStockLevel.resx">
+      <DependentUpon>SetStockLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signature.resx">
+      <DependentUpon>Signature.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserAndAccountCreate.resx">
       <DependentUpon>UserAndAccountCreate.cs</DependentUpon>

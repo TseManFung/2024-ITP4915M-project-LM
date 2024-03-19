@@ -19,7 +19,22 @@ namespace WindowsFormsApp
 
         private void frmDISet_Load(object sender, EventArgs e)
         {
-
+            frmDID frm = new frmDID();
+            frm.TopLevel = false;
+            frm.TopMost = true;
+            frm.Anchor = AnchorStyles.None;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            flowLayoutPanel1.Controls.Add(frm);
+            frm.Show();
+            frmDID frm2 = new frmDID();
+            frm2.TopLevel = false;
+            frm2.TopMost = true;
+            frm2.Anchor = AnchorStyles.None;
+            frm2.FormBorderStyle = FormBorderStyle.None;
+            flowLayoutPanel1.Controls.Add(frm2);
+            frm2.Show();
         }
+
+
     }
 }

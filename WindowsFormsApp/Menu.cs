@@ -96,5 +96,10 @@ namespace WindowsFormsApp
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmEditOrder));
         }
+
+        private void tableLayoutPanel18_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmSetStockLevel));
+        }
     }
 }

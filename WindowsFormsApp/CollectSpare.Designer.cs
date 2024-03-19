@@ -33,17 +33,17 @@
             this.btnscanner = new System.Windows.Forms.Button();
             this.dataGridViewItemHaveArrivedInROL = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblSpareType = new System.Windows.Forms.Label();
-            this.comboBoxSpareType = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.txtSpareName = new System.Windows.Forms.TextBox();
             this.lblSpareName = new System.Windows.Forms.Label();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblSpareType = new System.Windows.Forms.Label();
+            this.comboBoxSpareType = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItemHaveArrivedInROL)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -117,6 +117,45 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(789, 118);
             this.tableLayoutPanel2.TabIndex = 77;
             // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Controls.Add(this.txtSpareName, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lblSpareName, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(397, 3);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(389, 101);
+            this.tableLayoutPanel4.TabIndex = 85;
+            // 
+            // txtSpareName
+            // 
+            this.txtSpareName.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtSpareName.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtSpareName.Location = new System.Drawing.Point(3, 53);
+            this.txtSpareName.Multiline = true;
+            this.txtSpareName.Name = "txtSpareName";
+            this.txtSpareName.Size = new System.Drawing.Size(383, 45);
+            this.txtSpareName.TabIndex = 47;
+            // 
+            // lblSpareName
+            // 
+            this.lblSpareName.AutoSize = true;
+            this.lblSpareName.BackColor = System.Drawing.SystemColors.Control;
+            this.lblSpareName.CausesValidation = false;
+            this.lblSpareName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblSpareName.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSpareName.Location = new System.Drawing.Point(3, 0);
+            this.lblSpareName.Name = "lblSpareName";
+            this.lblSpareName.Size = new System.Drawing.Size(383, 50);
+            this.lblSpareName.TabIndex = 50;
+            this.lblSpareName.Text = "Number of Bundles:";
+            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
@@ -157,45 +196,6 @@
             this.comboBoxSpareType.Size = new System.Drawing.Size(382, 41);
             this.comboBoxSpareType.TabIndex = 45;
             // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Controls.Add(this.txtSpareName, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.lblSpareName, 0, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(397, 3);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(389, 101);
-            this.tableLayoutPanel4.TabIndex = 85;
-            // 
-            // txtSpareName
-            // 
-            this.txtSpareName.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtSpareName.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtSpareName.Location = new System.Drawing.Point(3, 53);
-            this.txtSpareName.Multiline = true;
-            this.txtSpareName.Name = "txtSpareName";
-            this.txtSpareName.Size = new System.Drawing.Size(383, 45);
-            this.txtSpareName.TabIndex = 47;
-            // 
-            // lblSpareName
-            // 
-            this.lblSpareName.AutoSize = true;
-            this.lblSpareName.BackColor = System.Drawing.SystemColors.Control;
-            this.lblSpareName.CausesValidation = false;
-            this.lblSpareName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareName.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblSpareName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSpareName.Location = new System.Drawing.Point(3, 0);
-            this.lblSpareName.Name = "lblSpareName";
-            this.lblSpareName.Size = new System.Drawing.Size(383, 50);
-            this.lblSpareName.TabIndex = 50;
-            this.lblSpareName.Text = "Number of Bundles:";
-            // 
             // frmCollectSpare
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -208,10 +208,10 @@
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItemHaveArrivedInROL)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }

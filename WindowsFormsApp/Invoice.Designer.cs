@@ -28,506 +28,487 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
-            this.pictureBoxBack = new System.Windows.Forms.PictureBox();
-            this.pictureBoxLanguage = new System.Windows.Forms.PictureBox();
-            this.lblInvoice = new System.Windows.Forms.Label();
-            this.lblLM = new System.Windows.Forms.Label();
-            this.lblSMLC = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtSpareName = new System.Windows.Forms.TextBox();
+            this.lblSpareName = new System.Windows.Forms.Label();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblINVOICEADDRESS = new System.Windows.Forms.Label();
-            this.lblDeliveryAddress = new System.Windows.Forms.Label();
-            this.lblDATE = new System.Windows.Forms.Label();
-            this.lblOURORDERTO = new System.Windows.Forms.Label();
-            this.lblYOUROrderNO = new System.Windows.Forms.Label();
-            this.lBLDEALERCODE = new System.Windows.Forms.Label();
-            this.lblNoOfBundles = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.lblPartNo = new System.Windows.Forms.Label();
-            this.lblQuantityToFollow = new System.Windows.Forms.Label();
-            this.lblQtyUnderDelivered = new System.Windows.Forms.Label();
-            this.lblQuantityDelivered = new System.Windows.Forms.Label();
-            this.lblDespatchForeman = new System.Windows.Forms.Label();
-            this.lblReceivedInGoodOrder = new System.Windows.Forms.Label();
-            this.lblSignature = new System.Windows.Forms.Label();
-            this.lblTotalWeight = new System.Windows.Forms.Label();
-            this.lblSignDate = new System.Windows.Forms.Label();
-            this.txtINVOICEADDRESS = new System.Windows.Forms.TextBox();
-            this.txtDeliveryAddress = new System.Windows.Forms.TextBox();
-            this.txtDATE = new System.Windows.Forms.TextBox();
-            this.txtYOUROrderNO = new System.Windows.Forms.TextBox();
-            this.txtOURORDERTO = new System.Windows.Forms.TextBox();
-            this.txtDealerCode = new System.Windows.Forms.TextBox();
-            this.txtQtyUnderDelivered = new System.Windows.Forms.TextBox();
-            this.txtQuantityToFollow = new System.Windows.Forms.TextBox();
-            this.txtQuantityDelivered = new System.Windows.Forms.TextBox();
-            this.txtDespatchForeman = new System.Windows.Forms.TextBox();
-            this.txtSignature = new System.Windows.Forms.TextBox();
-            this.txtPartNo = new System.Windows.Forms.TextBox();
-            this.txtTotalWeight = new System.Windows.Forms.TextBox();
-            this.txtNoOfBundles = new System.Windows.Forms.TextBox();
-            this.txtSignDate = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).BeginInit();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel9.SuspendLayout();
+            this.tableLayoutPanel8.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBoxLogo
+            // tableLayoutPanel1
             // 
-            this.pictureBoxLogo.Image = global::WindowsFormsApp.Properties.Resources.LoGoLeGend;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(722, 0);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(163, 130);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxLogo.TabIndex = 75;
-            this.pictureBoxLogo.TabStop = false;
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel9, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel8, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel7, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.button1, 3, 4);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 5;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1678, 513);
+            this.tableLayoutPanel1.TabIndex = 115;
             // 
-            // pictureBoxBack
+            // tableLayoutPanel9
             // 
-            this.pictureBoxBack.Image = global::WindowsFormsApp.Properties.Resources.back;
-            this.pictureBoxBack.Location = new System.Drawing.Point(2, 0);
-            this.pictureBoxBack.Name = "pictureBoxBack";
-            this.pictureBoxBack.Size = new System.Drawing.Size(138, 130);
-            this.pictureBoxBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxBack.TabIndex = 77;
-            this.pictureBoxBack.TabStop = false;
+            this.tableLayoutPanel9.ColumnCount = 1;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel9.Controls.Add(this.textBox7, 0, 1);
+            this.tableLayoutPanel9.Controls.Add(this.label7, 0, 0);
+            this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(422, 411);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.RowCount = 2;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(413, 99);
+            this.tableLayoutPanel9.TabIndex = 92;
             // 
-            // pictureBoxLanguage
+            // textBox7
             // 
-            this.pictureBoxLanguage.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBoxLanguage.Image = global::WindowsFormsApp.Properties.Resources.languageimage;
-            this.pictureBoxLanguage.Location = new System.Drawing.Point(1759, 0);
-            this.pictureBoxLanguage.Name = "pictureBoxLanguage";
-            this.pictureBoxLanguage.Size = new System.Drawing.Size(144, 130);
-            this.pictureBoxLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxLanguage.TabIndex = 78;
-            this.pictureBoxLanguage.TabStop = false;
+            this.textBox7.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBox7.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox7.Location = new System.Drawing.Point(3, 52);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
+            this.textBox7.Size = new System.Drawing.Size(407, 44);
+            this.textBox7.TabIndex = 47;
             // 
-            // lblInvoice
+            // label7
             // 
-            this.lblInvoice.AutoSize = true;
-            this.lblInvoice.Font = new System.Drawing.Font("新細明體", 72F);
-            this.lblInvoice.Location = new System.Drawing.Point(936, 19);
-            this.lblInvoice.Name = "lblInvoice";
-            this.lblInvoice.Size = new System.Drawing.Size(310, 96);
-            this.lblInvoice.TabIndex = 79;
-            this.lblInvoice.Text = "Invoice";
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.SystemColors.Control;
+            this.label7.CausesValidation = false;
+            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label7.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(3, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(407, 49);
+            this.label7.TabIndex = 50;
+            this.label7.Text = "Despatch Foreman:";
             // 
-            // lblLM
+            // tableLayoutPanel8
             // 
-            this.lblLM.AutoSize = true;
-            this.lblLM.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblLM.Location = new System.Drawing.Point(156, 147);
-            this.lblLM.Name = "lblLM";
-            this.lblLM.Size = new System.Drawing.Size(349, 32);
-            this.lblLM.TabIndex = 80;
-            this.lblLM.Text = "Legend MOTOR Co. Ltd.";
+            this.tableLayoutPanel8.ColumnCount = 1;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel8.Controls.Add(this.textBox6, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.label6, 0, 0);
+            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 411);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 2;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(413, 99);
+            this.tableLayoutPanel8.TabIndex = 91;
             // 
-            // lblSMLC
+            // textBox6
             // 
-            this.lblSMLC.AutoSize = true;
-            this.lblSMLC.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblSMLC.Location = new System.Drawing.Point(248, 197);
-            this.lblSMLC.Name = "lblSMLC";
-            this.lblSMLC.Size = new System.Drawing.Size(470, 32);
-            this.lblSMLC.TabIndex = 81;
-            this.lblSMLC.Text = "SMLC District, Tienhou, Guangzhou.";
+            this.textBox6.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBox6.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox6.Location = new System.Drawing.Point(3, 52);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(407, 44);
+            this.textBox6.TabIndex = 47;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.Control;
+            this.label6.CausesValidation = false;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(3, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(407, 49);
+            this.label6.TabIndex = 50;
+            this.label6.Text = "Total weight:";
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Controls.Add(this.txtSpareName, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lblSpareName, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(413, 96);
+            this.tableLayoutPanel4.TabIndex = 85;
+            // 
+            // txtSpareName
+            // 
+            this.txtSpareName.BackColor = System.Drawing.SystemColors.Info;
+            this.txtSpareName.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtSpareName.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtSpareName.Location = new System.Drawing.Point(3, 51);
+            this.txtSpareName.Multiline = true;
+            this.txtSpareName.Name = "txtSpareName";
+            this.txtSpareName.ReadOnly = true;
+            this.txtSpareName.Size = new System.Drawing.Size(407, 42);
+            this.txtSpareName.TabIndex = 47;
+            // 
+            // lblSpareName
+            // 
+            this.lblSpareName.AutoSize = true;
+            this.lblSpareName.BackColor = System.Drawing.SystemColors.Control;
+            this.lblSpareName.CausesValidation = false;
+            this.lblSpareName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblSpareName.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSpareName.Location = new System.Drawing.Point(3, 0);
+            this.lblSpareName.Name = "lblSpareName";
+            this.lblSpareName.Size = new System.Drawing.Size(407, 48);
+            this.lblSpareName.TabIndex = 50;
+            this.lblSpareName.Text = "INVOICE ADDRESS:";
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.textBox1, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(841, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(413, 96);
+            this.tableLayoutPanel2.TabIndex = 86;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBox1.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox1.Location = new System.Drawing.Point(3, 51);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(407, 42);
+            this.textBox1.TabIndex = 47;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("新細明體", 24F);
-            this.label1.Location = new System.Drawing.Point(248, 248);
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.CausesValidation = false;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(562, 32);
-            this.label1.TabIndex = 82;
-            this.label1.Text = "Tel: 133 808 12345          Grams: LegendMC\r\n";
-            // 
-            // lblINVOICEADDRESS
-            // 
-            this.lblINVOICEADDRESS.AutoSize = true;
-            this.lblINVOICEADDRESS.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblINVOICEADDRESS.Location = new System.Drawing.Point(156, 298);
-            this.lblINVOICEADDRESS.Name = "lblINVOICEADDRESS";
-            this.lblINVOICEADDRESS.Size = new System.Drawing.Size(292, 32);
-            this.lblINVOICEADDRESS.TabIndex = 83;
-            this.lblINVOICEADDRESS.Text = "INVOICE ADDRESS:";
-            // 
-            // lblDeliveryAddress
-            // 
-            this.lblDeliveryAddress.AutoSize = true;
-            this.lblDeliveryAddress.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblDeliveryAddress.Location = new System.Drawing.Point(1009, 298);
-            this.lblDeliveryAddress.Name = "lblDeliveryAddress";
-            this.lblDeliveryAddress.Size = new System.Drawing.Size(626, 32);
-            this.lblDeliveryAddress.TabIndex = 84;
-            this.lblDeliveryAddress.Text = "DELIVERY ADDRESS (IF DIFFERENT) (PER):";
-            // 
-            // lblDATE
-            // 
-            this.lblDATE.AutoSize = true;
-            this.lblDATE.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblDATE.Location = new System.Drawing.Point(156, 425);
-            this.lblDATE.Name = "lblDATE";
-            this.lblDATE.Size = new System.Drawing.Size(102, 32);
-            this.lblDATE.TabIndex = 85;
-            this.lblDATE.Text = "DATE:";
-            // 
-            // lblOURORDERTO
-            // 
-            this.lblOURORDERTO.AutoSize = true;
-            this.lblOURORDERTO.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblOURORDERTO.Location = new System.Drawing.Point(703, 425);
-            this.lblOURORDERTO.Name = "lblOURORDERTO";
-            this.lblOURORDERTO.Size = new System.Drawing.Size(244, 32);
-            this.lblOURORDERTO.TabIndex = 86;
-            this.lblOURORDERTO.Text = "OUR ORDER TO:";
-            // 
-            // lblYOUROrderNO
-            // 
-            this.lblYOUROrderNO.AutoSize = true;
-            this.lblYOUROrderNO.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblYOUROrderNO.Location = new System.Drawing.Point(363, 425);
-            this.lblYOUROrderNO.Name = "lblYOUROrderNO";
-            this.lblYOUROrderNO.Size = new System.Drawing.Size(270, 32);
-            this.lblYOUROrderNO.TabIndex = 87;
-            this.lblYOUROrderNO.Text = "YOUR ORDER NO:";
-            // 
-            // lBLDEALERCODE
-            // 
-            this.lBLDEALERCODE.AutoSize = true;
-            this.lBLDEALERCODE.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lBLDEALERCODE.Location = new System.Drawing.Point(1025, 425);
-            this.lBLDEALERCODE.Name = "lBLDEALERCODE";
-            this.lBLDEALERCODE.Size = new System.Drawing.Size(230, 32);
-            this.lBLDEALERCODE.TabIndex = 88;
-            this.lBLDEALERCODE.Text = "DEALER CODE:";
-            // 
-            // lblNoOfBundles
-            // 
-            this.lblNoOfBundles.AutoSize = true;
-            this.lblNoOfBundles.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblNoOfBundles.Location = new System.Drawing.Point(135, 584);
-            this.lblNoOfBundles.Name = "lblNoOfBundles";
-            this.lblNoOfBundles.Size = new System.Drawing.Size(201, 32);
-            this.lblNoOfBundles.TabIndex = 89;
-            this.lblNoOfBundles.Text = "No. of bundles:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("新細明體", 24F);
-            this.label9.Location = new System.Drawing.Point(1025, 570);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 32);
-            this.label9.TabIndex = 90;
-            // 
-            // lblPartNo
-            // 
-            this.lblPartNo.AutoSize = true;
-            this.lblPartNo.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblPartNo.Location = new System.Drawing.Point(417, 584);
-            this.lblPartNo.Name = "lblPartNo";
-            this.lblPartNo.Size = new System.Drawing.Size(115, 32);
-            this.lblPartNo.TabIndex = 91;
-            this.lblPartNo.Text = "Part No:";
-            // 
-            // lblQuantityToFollow
-            // 
-            this.lblQuantityToFollow.AutoSize = true;
-            this.lblQuantityToFollow.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblQuantityToFollow.Location = new System.Drawing.Point(1025, 584);
-            this.lblQuantityToFollow.Name = "lblQuantityToFollow";
-            this.lblQuantityToFollow.Size = new System.Drawing.Size(243, 32);
-            this.lblQuantityToFollow.TabIndex = 92;
-            this.lblQuantityToFollow.Text = "Quantity to follow:";
-            // 
-            // lblQtyUnderDelivered
-            // 
-            this.lblQtyUnderDelivered.AutoSize = true;
-            this.lblQtyUnderDelivered.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblQtyUnderDelivered.Location = new System.Drawing.Point(629, 584);
-            this.lblQtyUnderDelivered.Name = "lblQtyUnderDelivered";
-            this.lblQtyUnderDelivered.Size = new System.Drawing.Size(340, 32);
-            this.lblQtyUnderDelivered.TabIndex = 93;
-            this.lblQtyUnderDelivered.Text = "Prev. Qty. under delivered:";
-            // 
-            // lblQuantityDelivered
-            // 
-            this.lblQuantityDelivered.AutoSize = true;
-            this.lblQuantityDelivered.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblQuantityDelivered.Location = new System.Drawing.Point(1320, 584);
-            this.lblQuantityDelivered.Name = "lblQuantityDelivered";
-            this.lblQuantityDelivered.Size = new System.Drawing.Size(244, 32);
-            this.lblQuantityDelivered.TabIndex = 94;
-            this.lblQuantityDelivered.Text = "Quantity delivered:";
-            // 
-            // lblDespatchForeman
-            // 
-            this.lblDespatchForeman.AutoSize = true;
-            this.lblDespatchForeman.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblDespatchForeman.Location = new System.Drawing.Point(930, 750);
-            this.lblDespatchForeman.Name = "lblDespatchForeman";
-            this.lblDespatchForeman.Size = new System.Drawing.Size(247, 32);
-            this.lblDespatchForeman.TabIndex = 95;
-            this.lblDespatchForeman.Text = "Despatch Foreman:";
-            this.lblDespatchForeman.Click += new System.EventHandler(this.lblDespatchForeman_Click);
-            // 
-            // lblReceivedInGoodOrder
-            // 
-            this.lblReceivedInGoodOrder.AutoSize = true;
-            this.lblReceivedInGoodOrder.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblReceivedInGoodOrder.Location = new System.Drawing.Point(591, 881);
-            this.lblReceivedInGoodOrder.Name = "lblReceivedInGoodOrder";
-            this.lblReceivedInGoodOrder.Size = new System.Drawing.Size(294, 32);
-            this.lblReceivedInGoodOrder.TabIndex = 96;
-            this.lblReceivedInGoodOrder.Text = "Received in good order";
-            // 
-            // lblSignature
-            // 
-            this.lblSignature.AutoSize = true;
-            this.lblSignature.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblSignature.Location = new System.Drawing.Point(674, 978);
-            this.lblSignature.Name = "lblSignature";
-            this.lblSignature.Size = new System.Drawing.Size(136, 32);
-            this.lblSignature.TabIndex = 97;
-            this.lblSignature.Text = "Signature:";
-            // 
-            // lblTotalWeight
-            // 
-            this.lblTotalWeight.AutoSize = true;
-            this.lblTotalWeight.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblTotalWeight.Location = new System.Drawing.Point(377, 750);
-            this.lblTotalWeight.Name = "lblTotalWeight";
-            this.lblTotalWeight.Size = new System.Drawing.Size(173, 32);
-            this.lblTotalWeight.TabIndex = 98;
-            this.lblTotalWeight.Text = "Total weight:";
-            // 
-            // lblSignDate
-            // 
-            this.lblSignDate.AutoSize = true;
-            this.lblSignDate.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblSignDate.Location = new System.Drawing.Point(318, 978);
-            this.lblSignDate.Name = "lblSignDate";
-            this.lblSignDate.Size = new System.Drawing.Size(102, 32);
-            this.lblSignDate.TabIndex = 99;
-            this.lblSignDate.Text = "DATE:";
-            // 
-            // txtINVOICEADDRESS
-            // 
-            this.txtINVOICEADDRESS.Font = new System.Drawing.Font("新細明體", 24F);
-            this.txtINVOICEADDRESS.Location = new System.Drawing.Point(195, 366);
-            this.txtINVOICEADDRESS.Name = "txtINVOICEADDRESS";
-            this.txtINVOICEADDRESS.Size = new System.Drawing.Size(207, 46);
-            this.txtINVOICEADDRESS.TabIndex = 100;
-            // 
-            // txtDeliveryAddress
-            // 
-            this.txtDeliveryAddress.Font = new System.Drawing.Font("新細明體", 24F);
-            this.txtDeliveryAddress.Location = new System.Drawing.Point(1128, 355);
-            this.txtDeliveryAddress.Name = "txtDeliveryAddress";
-            this.txtDeliveryAddress.Size = new System.Drawing.Size(376, 46);
-            this.txtDeliveryAddress.TabIndex = 101;
-            // 
-            // txtDATE
-            // 
-            this.txtDATE.Font = new System.Drawing.Font("新細明體", 24F);
-            this.txtDATE.Location = new System.Drawing.Point(128, 505);
-            this.txtDATE.Name = "txtDATE";
-            this.txtDATE.Size = new System.Drawing.Size(147, 46);
-            this.txtDATE.TabIndex = 102;
-            // 
-            // txtYOUROrderNO
-            // 
-            this.txtYOUROrderNO.Font = new System.Drawing.Font("新細明體", 24F);
-            this.txtYOUROrderNO.Location = new System.Drawing.Point(383, 505);
-            this.txtYOUROrderNO.Name = "txtYOUROrderNO";
-            this.txtYOUROrderNO.Size = new System.Drawing.Size(207, 46);
-            this.txtYOUROrderNO.TabIndex = 103;
-            // 
-            // txtOURORDERTO
-            // 
-            this.txtOURORDERTO.Font = new System.Drawing.Font("新細明體", 24F);
-            this.txtOURORDERTO.Location = new System.Drawing.Point(722, 505);
-            this.txtOURORDERTO.Name = "txtOURORDERTO";
-            this.txtOURORDERTO.Size = new System.Drawing.Size(207, 46);
-            this.txtOURORDERTO.TabIndex = 104;
-            // 
-            // txtDealerCode
-            // 
-            this.txtDealerCode.Font = new System.Drawing.Font("新細明體", 24F);
-            this.txtDealerCode.Location = new System.Drawing.Point(1039, 505);
-            this.txtDealerCode.Name = "txtDealerCode";
-            this.txtDealerCode.Size = new System.Drawing.Size(207, 46);
-            this.txtDealerCode.TabIndex = 105;
-            // 
-            // txtQtyUnderDelivered
-            // 
-            this.txtQtyUnderDelivered.Font = new System.Drawing.Font("新細明體", 24F);
-            this.txtQtyUnderDelivered.Location = new System.Drawing.Point(680, 658);
-            this.txtQtyUnderDelivered.Name = "txtQtyUnderDelivered";
-            this.txtQtyUnderDelivered.Size = new System.Drawing.Size(207, 46);
-            this.txtQtyUnderDelivered.TabIndex = 106;
-            // 
-            // txtQuantityToFollow
-            // 
-            this.txtQuantityToFollow.Font = new System.Drawing.Font("新細明體", 24F);
-            this.txtQuantityToFollow.Location = new System.Drawing.Point(1015, 658);
-            this.txtQuantityToFollow.Name = "txtQuantityToFollow";
-            this.txtQuantityToFollow.Size = new System.Drawing.Size(207, 46);
-            this.txtQuantityToFollow.TabIndex = 107;
-            // 
-            // txtQuantityDelivered
-            // 
-            this.txtQuantityDelivered.Font = new System.Drawing.Font("新細明體", 24F);
-            this.txtQuantityDelivered.Location = new System.Drawing.Point(1326, 658);
-            this.txtQuantityDelivered.Name = "txtQuantityDelivered";
-            this.txtQuantityDelivered.Size = new System.Drawing.Size(207, 46);
-            this.txtQuantityDelivered.TabIndex = 108;
-            // 
-            // txtDespatchForeman
-            // 
-            this.txtDespatchForeman.Font = new System.Drawing.Font("新細明體", 24F);
-            this.txtDespatchForeman.Location = new System.Drawing.Point(952, 813);
-            this.txtDespatchForeman.Name = "txtDespatchForeman";
-            this.txtDespatchForeman.Size = new System.Drawing.Size(207, 46);
-            this.txtDespatchForeman.TabIndex = 109;
-            // 
-            // txtSignature
-            // 
-            this.txtSignature.Font = new System.Drawing.Font("新細明體", 24F);
-            this.txtSignature.Location = new System.Drawing.Point(834, 972);
-            this.txtSignature.Name = "txtSignature";
-            this.txtSignature.Size = new System.Drawing.Size(207, 46);
-            this.txtSignature.TabIndex = 110;
-            // 
-            // txtPartNo
-            // 
-            this.txtPartNo.Font = new System.Drawing.Font("新細明體", 24F);
-            this.txtPartNo.Location = new System.Drawing.Point(383, 658);
-            this.txtPartNo.Name = "txtPartNo";
-            this.txtPartNo.Size = new System.Drawing.Size(207, 46);
-            this.txtPartNo.TabIndex = 111;
-            // 
-            // txtTotalWeight
-            // 
-            this.txtTotalWeight.Font = new System.Drawing.Font("新細明體", 24F);
-            this.txtTotalWeight.Location = new System.Drawing.Point(369, 813);
-            this.txtTotalWeight.Name = "txtTotalWeight";
-            this.txtTotalWeight.Size = new System.Drawing.Size(207, 46);
-            this.txtTotalWeight.TabIndex = 112;
-            // 
-            // txtNoOfBundles
-            // 
-            this.txtNoOfBundles.Font = new System.Drawing.Font("新細明體", 24F);
-            this.txtNoOfBundles.Location = new System.Drawing.Point(128, 658);
-            this.txtNoOfBundles.Name = "txtNoOfBundles";
-            this.txtNoOfBundles.Size = new System.Drawing.Size(207, 46);
-            this.txtNoOfBundles.TabIndex = 113;
-            // 
-            // txtSignDate
-            // 
-            this.txtSignDate.Font = new System.Drawing.Font("新細明體", 24F);
-            this.txtSignDate.Location = new System.Drawing.Point(436, 964);
-            this.txtSignDate.Name = "txtSignDate";
-            this.txtSignDate.Size = new System.Drawing.Size(207, 46);
-            this.txtSignDate.TabIndex = 114;
+            this.label1.Size = new System.Drawing.Size(407, 48);
+            this.label1.TabIndex = 50;
+            this.label1.Text = "DELIVERY ADDRESS (IF DIFFERENT) (PER):";
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Controls.Add(this.textBox2, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 105);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(413, 96);
+            this.tableLayoutPanel3.TabIndex = 87;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBox2.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox2.Location = new System.Drawing.Point(3, 51);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(407, 42);
+            this.textBox2.TabIndex = 47;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
+            this.label2.CausesValidation = false;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(3, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(407, 48);
+            this.label2.TabIndex = 50;
+            this.label2.Text = "DATE:";
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 1;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.Controls.Add(this.textBox3, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.label3, 0, 0);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(422, 105);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 2;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(413, 96);
+            this.tableLayoutPanel5.TabIndex = 88;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBox3.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox3.Location = new System.Drawing.Point(3, 51);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(407, 42);
+            this.textBox3.TabIndex = 47;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.Control;
+            this.label3.CausesValidation = false;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(407, 48);
+            this.label3.TabIndex = 50;
+            this.label3.Text = "YOUR ORDER NO:";
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 1;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel6.Controls.Add(this.textBox4, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.label4, 0, 0);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(841, 105);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 2;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(413, 96);
+            this.tableLayoutPanel6.TabIndex = 89;
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBox4.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox4.Location = new System.Drawing.Point(3, 51);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(407, 42);
+            this.textBox4.TabIndex = 47;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.Control;
+            this.label4.CausesValidation = false;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(407, 48);
+            this.label4.TabIndex = 50;
+            this.label4.Text = "OUR ORDER TO:";
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.ColumnCount = 1;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel7.Controls.Add(this.textBox5, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.label5, 0, 0);
+            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(1260, 105);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 2;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(415, 96);
+            this.tableLayoutPanel7.TabIndex = 90;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBox5.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox5.Location = new System.Drawing.Point(3, 51);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(409, 42);
+            this.textBox5.TabIndex = 47;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.Control;
+            this.label5.CausesValidation = false;
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(3, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(409, 48);
+            this.label5.TabIndex = 50;
+            this.label5.Text = "DEALER CODE:";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel1.SetColumnSpan(this.dataGridView1, 4);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 207);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.tableLayoutPanel1.SetRowSpan(this.dataGridView1, 2);
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1672, 198);
+            this.dataGridView1.TabIndex = 93;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.Font = new System.Drawing.Font("新細明體", 24F);
+            this.button1.Location = new System.Drawing.Point(1260, 411);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(415, 99);
+            this.button1.TabIndex = 94;
+            this.button1.Text = "Sign Here";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.txtSignDate);
-            this.Controls.Add(this.txtNoOfBundles);
-            this.Controls.Add(this.txtTotalWeight);
-            this.Controls.Add(this.txtPartNo);
-            this.Controls.Add(this.txtSignature);
-            this.Controls.Add(this.txtDespatchForeman);
-            this.Controls.Add(this.txtQuantityDelivered);
-            this.Controls.Add(this.txtQuantityToFollow);
-            this.Controls.Add(this.txtQtyUnderDelivered);
-            this.Controls.Add(this.txtDealerCode);
-            this.Controls.Add(this.txtOURORDERTO);
-            this.Controls.Add(this.txtYOUROrderNO);
-            this.Controls.Add(this.txtDATE);
-            this.Controls.Add(this.txtDeliveryAddress);
-            this.Controls.Add(this.txtINVOICEADDRESS);
-            this.Controls.Add(this.lblSignDate);
-            this.Controls.Add(this.lblTotalWeight);
-            this.Controls.Add(this.lblSignature);
-            this.Controls.Add(this.lblReceivedInGoodOrder);
-            this.Controls.Add(this.lblDespatchForeman);
-            this.Controls.Add(this.lblQuantityDelivered);
-            this.Controls.Add(this.lblQtyUnderDelivered);
-            this.Controls.Add(this.lblQuantityToFollow);
-            this.Controls.Add(this.lblPartNo);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.lblNoOfBundles);
-            this.Controls.Add(this.lBLDEALERCODE);
-            this.Controls.Add(this.lblYOUROrderNO);
-            this.Controls.Add(this.lblOURORDERTO);
-            this.Controls.Add(this.lblDATE);
-            this.Controls.Add(this.lblDeliveryAddress);
-            this.Controls.Add(this.lblINVOICEADDRESS);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblSMLC);
-            this.Controls.Add(this.lblLM);
-            this.Controls.Add(this.lblInvoice);
-            this.Controls.Add(this.pictureBoxLanguage);
-            this.Controls.Add(this.pictureBoxBack);
-            this.Controls.Add(this.pictureBoxLogo);
+            this.ClientSize = new System.Drawing.Size(1678, 513);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmInvoice";
             this.Text = "Invoice";
-            this.Load += new System.EventHandler(this.lblQuantityDelivered_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBack)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLanguage)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel9.ResumeLayout(false);
+            this.tableLayoutPanel9.PerformLayout();
+            this.tableLayoutPanel8.ResumeLayout(false);
+            this.tableLayoutPanel8.PerformLayout();
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBoxLogo;
-        private System.Windows.Forms.PictureBox pictureBoxBack;
-        private System.Windows.Forms.PictureBox pictureBoxLanguage;
-        private System.Windows.Forms.Label lblInvoice;
-        private System.Windows.Forms.Label lblLM;
-        private System.Windows.Forms.Label lblSMLC;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.TextBox txtSpareName;
+        private System.Windows.Forms.Label lblSpareName;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblINVOICEADDRESS;
-        private System.Windows.Forms.Label lblDeliveryAddress;
-        private System.Windows.Forms.Label lblDATE;
-        private System.Windows.Forms.Label lblOURORDERTO;
-        private System.Windows.Forms.Label lblYOUROrderNO;
-        private System.Windows.Forms.Label lBLDEALERCODE;
-        private System.Windows.Forms.Label lblNoOfBundles;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label lblPartNo;
-        private System.Windows.Forms.Label lblQuantityToFollow;
-        private System.Windows.Forms.Label lblQtyUnderDelivered;
-        private System.Windows.Forms.Label lblQuantityDelivered;
-        private System.Windows.Forms.Label lblDespatchForeman;
-        private System.Windows.Forms.Label lblReceivedInGoodOrder;
-        private System.Windows.Forms.Label lblSignature;
-        private System.Windows.Forms.Label lblTotalWeight;
-        private System.Windows.Forms.Label lblSignDate;
-        private System.Windows.Forms.TextBox txtINVOICEADDRESS;
-        private System.Windows.Forms.TextBox txtDeliveryAddress;
-        private System.Windows.Forms.TextBox txtDATE;
-        private System.Windows.Forms.TextBox txtYOUROrderNO;
-        private System.Windows.Forms.TextBox txtOURORDERTO;
-        private System.Windows.Forms.TextBox txtDealerCode;
-        private System.Windows.Forms.TextBox txtQtyUnderDelivered;
-        private System.Windows.Forms.TextBox txtQuantityToFollow;
-        private System.Windows.Forms.TextBox txtQuantityDelivered;
-        private System.Windows.Forms.TextBox txtDespatchForeman;
-        private System.Windows.Forms.TextBox txtSignature;
-        private System.Windows.Forms.TextBox txtPartNo;
-        private System.Windows.Forms.TextBox txtTotalWeight;
-        private System.Windows.Forms.TextBox txtNoOfBundles;
-        private System.Windows.Forms.TextBox txtSignDate;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
     }
 }

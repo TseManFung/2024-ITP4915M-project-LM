@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class frmEditOrder : Form
+    public partial class frmSetStockLevel : Form
     {
-        public frmEditOrder()
+        public frmSetStockLevel()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            tableLayoutPanel1.Visible = true;
         }
     }
 }
