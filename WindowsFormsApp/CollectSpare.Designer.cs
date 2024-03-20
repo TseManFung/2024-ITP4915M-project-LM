@@ -203,7 +203,7 @@
             this.ClientSize = new System.Drawing.Size(1136, 621);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmCollectSpare";
-            this.Text = "CollectSpare";
+            this.Text = "Collect Spare";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItemHaveArrivedInROL)).EndInit();

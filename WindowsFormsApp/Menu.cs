@@ -17,89 +17,82 @@ namespace WindowsFormsApp
             InitializeComponent();
         }
 
-        private void pictureBoxLogo_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void FrmDirectory_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void tableLayoutPanel8_MouseClick(object sender, MouseEventArgs e)
-        {
-            (this.ParentForm as Main)?.Change_pContent(typeof(frmEditItem));
-        }
 
 
 
-        private void tableLayoutPanel3_Click(object sender, EventArgs e)
+
+        private void CAddNewItem(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmAddNewItem));
         }
 
-        private void tableLayoutPanel9_Click(object sender, EventArgs e)
+        private void CUserManagementAndAccountManagement(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmUserManagementAndAccountManagement));
         }
 
-        private void tableLayoutPanel1_Click(object sender, EventArgs e)
+        private void CPlacingOrder(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmPlacingOrder));
         }
 
-        private void pictureBoxCheckOrder_Click(object sender, EventArgs e)
+        private void COrderRecord(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmOrderRecord));
         }
 
-        private void tableLayoutPanel13_Click(object sender, EventArgs e)
+        private void CScrap(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmScrap));
         }
 
-        private void tableLayoutPanel5_Click(object sender, EventArgs e)
+        private void CReport(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmReport));
         }
 
-        private void tableLayoutPanel15_Click(object sender, EventArgs e)
+        private void CNewSupplier(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmNewSupplier));
         }
 
-        private void tableLayoutPanel10_Click(object sender, EventArgs e)
+        private void CReStockCheck(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmReStockCheck));
         }
 
-        private void pictureBoxReOrder_Click(object sender, EventArgs e)
+        private void CReStock(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmReStock));
         }
 
-        private void tableLayoutPanel16_Click(object sender, EventArgs e)
+        private void CCollectSpare(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmCollectSpare));
         }
 
-        private void tableLayoutPanel11_Click(object sender, EventArgs e)
+        private void CEditOrder(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmEditOrder));
         }
 
-        private void tableLayoutPanel18_Click(object sender, EventArgs e)
+        private void CSetStockLevel(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmSetStockLevel));
         }
 
-        private void pictureBoxLogout_Click(object sender, EventArgs e)
+        private void CLogin(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmLogin));
         }
 
-        private void label10_Click(object sender, EventArgs e)
+        private void CAddSaleArea(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmAddSaleArea));
         }
@@ -109,26 +102,29 @@ namespace WindowsFormsApp
             (this.ParentForm as Main)?.Change_pContent(typeof(frmEditSaleArea));
         }
 
-        private void tableLayoutPanel4_Click(object sender, EventArgs e)
+        private void CAddDepartment(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmAddDepartment));
         }
 
-        private void label13_Click(object sender, EventArgs e)
+        private void CAddWarehouse(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmAddWarehouse));
         }
 
-        private void tableLayoutPanel19_Click(object sender, EventArgs e)
+        private void CEditDepartment(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmEditDepartment));
         }
 
-        private void tableLayoutPanel20_Click(object sender, EventArgs e)
+        private void CEditWarehouse(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmEditWarehouse));
         }
 
-
+        private void CEditSpare(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmEditItem));
+        }
     }
 }

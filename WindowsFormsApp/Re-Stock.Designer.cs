@@ -165,7 +165,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.btnConfirm);
             this.Name = "frmReStock";
-            this.Text = "Re-Stock";
+            this.Text = "Re-stock";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItemFollowingROL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRestock)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);

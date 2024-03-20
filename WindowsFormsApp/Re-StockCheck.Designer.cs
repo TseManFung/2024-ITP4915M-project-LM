@@ -95,7 +95,7 @@
             this.ClientSize = new System.Drawing.Size(1241, 584);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmReStockCheck";
-            this.Text = "ReStockCheck";
+            this.Text = "Re-stock Check";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItemHaveArrivedInROL)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

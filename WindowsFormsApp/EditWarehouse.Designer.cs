@@ -226,7 +226,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Name = "frmEditWarehouse";
-            this.Text = "EditWarehouse";
+            this.Text = "Edit Warehouse";
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();

@@ -274,7 +274,7 @@
             this.ClientSize = new System.Drawing.Size(1190, 601);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Name = "frmEditSaleArea";
-            this.Text = "EditSaleArea";
+            this.Text = "Edit SaleArea";
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();

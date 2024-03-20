@@ -36,10 +36,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblSpareType = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -181,18 +181,6 @@
             this.tableLayoutPanel1.TabIndex = 80;
             this.tableLayoutPanel1.Visible = false;
             // 
-            // btnSave
-            // 
-            this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSave.Font = new System.Drawing.Font("新細明體", 32F);
-            this.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSave.Location = new System.Drawing.Point(435, 189);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(210, 58);
-            this.btnSave.TabIndex = 51;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
@@ -231,6 +219,18 @@
             this.lblSpareType.Size = new System.Drawing.Size(204, 80);
             this.lblSpareType.TabIndex = 48;
             this.lblSpareType.Text = "Name:";
+            // 
+            // btnSave
+            // 
+            this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSave.Font = new System.Drawing.Font("新細明體", 32F);
+            this.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnSave.Location = new System.Drawing.Point(435, 189);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(210, 58);
+            this.btnSave.TabIndex = 51;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel4
             // 
@@ -360,7 +360,7 @@
             this.ClientSize = new System.Drawing.Size(1087, 640);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Name = "frmEditSupplier";
-            this.Text = "EditSupplier";
+            this.Text = "Edit Supplier";
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();
