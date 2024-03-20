@@ -128,5 +128,7 @@ namespace WindowsFormsApp
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmEditWarehouse));
         }
+
+
     }
 }
