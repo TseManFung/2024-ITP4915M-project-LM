@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class AddSaleAreaDepartmentWarehouse : Form
+    public partial class frmEditWarehouse : Form
     {
-        public AddSaleAreaDepartmentWarehouse()
+        public frmEditWarehouse()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tableLayoutPanel1.Visible = true;
         }
     }
 }

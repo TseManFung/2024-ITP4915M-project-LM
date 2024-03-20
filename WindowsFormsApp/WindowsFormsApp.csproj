@@ -77,11 +77,23 @@
     <Compile Include="AccountManagement.Designer.cs">
       <DependentUpon>AccountManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddSaleAreaDepartmentWarehouse.cs">
+    <Compile Include="AddDepartment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddSaleAreaDepartmentWarehouse.Designer.cs">
-      <DependentUpon>AddSaleAreaDepartmentWarehouse.cs</DependentUpon>
+    <Compile Include="AddDepartment.Designer.cs">
+      <DependentUpon>AddDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSaleArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSaleArea.Designer.cs">
+      <DependentUpon>AddSaleArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWarehouse.Designer.cs">
+      <DependentUpon>AddWarehouse.cs</DependentUpon>
     </Compile>
     <Compile Include="Cart.cs">
       <SubType>Form</SubType>
@@ -113,6 +125,12 @@
     <Compile Include="DISet.Designer.cs">
       <DependentUpon>DISet.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDepartment.Designer.cs">
+      <DependentUpon>EditDepartment.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditItem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,11 +143,23 @@
     <Compile Include="EditOrder.Designer.cs">
       <DependentUpon>EditOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditSaleArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditSaleArea.Designer.cs">
+      <DependentUpon>EditSaleArea.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditSupplier.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditSupplier.Designer.cs">
       <DependentUpon>EditSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditWarehouse.Designer.cs">
+      <DependentUpon>EditWarehouse.cs</DependentUpon>
     </Compile>
     <Compile Include="language.cs">
       <SubType>Form</SubType>
@@ -256,6 +286,15 @@
     <EmbeddedResource Include="AccountManagement.resx">
       <DependentUpon>AccountManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddDepartment.resx">
+      <DependentUpon>AddDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSaleArea.resx">
+      <DependentUpon>AddSaleArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWarehouse.resx">
+      <DependentUpon>AddWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cart.resx">
       <DependentUpon>Cart.cs</DependentUpon>
     </EmbeddedResource>
@@ -271,14 +310,23 @@
     <EmbeddedResource Include="DISet.resx">
       <DependentUpon>DISet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditDepartment.resx">
+      <DependentUpon>EditDepartment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditItem.resx">
       <DependentUpon>EditItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditOrder.resx">
       <DependentUpon>EditOrder.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditSaleArea.resx">
+      <DependentUpon>EditSaleArea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditSupplier.resx">
       <DependentUpon>EditSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditWarehouse.resx">
+      <DependentUpon>EditWarehouse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="language.resx">
       <DependentUpon>language.cs</DependentUpon>

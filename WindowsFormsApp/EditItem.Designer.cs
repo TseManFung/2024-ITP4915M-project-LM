@@ -53,9 +53,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
@@ -422,6 +422,17 @@
             this.tableLayoutPanel12.Size = new System.Drawing.Size(316, 116);
             this.tableLayoutPanel12.TabIndex = 86;
             // 
+            // comboBox2
+            // 
+            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBox2.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(3, 61);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(310, 41);
+            this.comboBox2.TabIndex = 74;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -445,17 +456,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1605, 362);
             this.panel1.TabIndex = 0;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBox2.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(3, 61);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(310, 41);
-            this.comboBox2.TabIndex = 74;
             // 
             // frmEditItem
             // 

@@ -34,64 +34,76 @@
             this.lblReOrder = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBoxAddNewProduct = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBoxCheckOrder = new System.Windows.Forms.PictureBox();
             this.lblCheckOrder = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblPlaceOrder = new System.Windows.Forms.Label();
+            this.pictureBoxPlaceOrder = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBoxOrderStatus = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBoxReOrder = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBoxLogout = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.label9 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
+            this.label12 = new System.Windows.Forms.Label();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.label10 = new System.Windows.Forms.Label();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.label11 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.pictureBoxAddNewProduct = new System.Windows.Forms.PictureBox();
-            this.pictureBoxCheckOrder = new System.Windows.Forms.PictureBox();
-            this.pictureBoxPlaceOrder = new System.Windows.Forms.PictureBox();
-            this.pictureBoxOrderStatus = new System.Windows.Forms.PictureBox();
-            this.pictureBoxReOrder = new System.Windows.Forms.PictureBox();
-            this.pictureBoxLogout = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
+            this.label15 = new System.Windows.Forms.Label();
             this.pictureBoxLenguage = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAddNewProduct)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCheckOrder)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlaceOrder)).BeginInit();
             this.tableLayoutPanel8.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOrderStatus)).BeginInit();
             this.tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReOrder)).BeginInit();
             this.tableLayoutPanel10.SuspendLayout();
             this.tableLayoutPanel13.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
             this.tableLayoutPanel15.SuspendLayout();
             this.tableLayoutPanel16.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
+            this.tableLayoutPanel18.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
             this.tableLayoutPanel17.SuspendLayout();
-            this.tableLayoutPanel18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAddNewProduct)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCheckOrder)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlaceOrder)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOrderStatus)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReOrder)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel14.SuspendLayout();
+            this.tableLayoutPanel19.SuspendLayout();
+            this.tableLayoutPanel20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLenguage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,7 +117,7 @@
             this.lblLogout.Size = new System.Drawing.Size(39, 12);
             this.lblLogout.TabIndex = 14;
             this.lblLogout.Text = "Logout";
-            this.lblLogout.Click += new System.EventHandler(this.tableLayoutPanel7_Click);
+            this.lblLogout.Click += new System.EventHandler(this.pictureBoxLogout_Click);
             // 
             // lblAddNewProduct
             // 
@@ -133,6 +145,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel3);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel2);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel1);
@@ -149,6 +162,10 @@
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel18);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel12);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel17);
+            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel4);
+            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel14);
+            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel19);
+            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel20);
             this.flowLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -173,6 +190,20 @@
             this.tableLayoutPanel3.TabIndex = 25;
             this.tableLayoutPanel3.Click += new System.EventHandler(this.tableLayoutPanel3_Click);
             // 
+            // pictureBoxAddNewProduct
+            // 
+            this.pictureBoxAddNewProduct.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxAddNewProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxAddNewProduct.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAddNewProduct.Image")));
+            this.pictureBoxAddNewProduct.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAddNewProduct.InitialImage")));
+            this.pictureBoxAddNewProduct.Location = new System.Drawing.Point(3, 6);
+            this.pictureBoxAddNewProduct.Name = "pictureBoxAddNewProduct";
+            this.pictureBoxAddNewProduct.Size = new System.Drawing.Size(186, 108);
+            this.pictureBoxAddNewProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAddNewProduct.TabIndex = 15;
+            this.pictureBoxAddNewProduct.TabStop = false;
+            this.pictureBoxAddNewProduct.Click += new System.EventHandler(this.tableLayoutPanel3_Click);
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
@@ -189,6 +220,19 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel2.TabIndex = 24;
             this.tableLayoutPanel2.Click += new System.EventHandler(this.pictureBoxCheckOrder_Click);
+            // 
+            // pictureBoxCheckOrder
+            // 
+            this.pictureBoxCheckOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxCheckOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxCheckOrder.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxCheckOrder.Image")));
+            this.pictureBoxCheckOrder.Location = new System.Drawing.Point(3, 6);
+            this.pictureBoxCheckOrder.Name = "pictureBoxCheckOrder";
+            this.pictureBoxCheckOrder.Size = new System.Drawing.Size(186, 108);
+            this.pictureBoxCheckOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCheckOrder.TabIndex = 2;
+            this.pictureBoxCheckOrder.TabStop = false;
+            this.pictureBoxCheckOrder.Click += new System.EventHandler(this.pictureBoxCheckOrder_Click);
             // 
             // lblCheckOrder
             // 
@@ -230,6 +274,21 @@
             this.lblPlaceOrder.TabIndex = 11;
             this.lblPlaceOrder.Text = "Place Order";
             this.lblPlaceOrder.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
+            // 
+            // pictureBoxPlaceOrder
+            // 
+            this.pictureBoxPlaceOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxPlaceOrder.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBoxPlaceOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxPlaceOrder.Enabled = false;
+            this.pictureBoxPlaceOrder.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPlaceOrder.Image")));
+            this.pictureBoxPlaceOrder.Location = new System.Drawing.Point(3, 6);
+            this.pictureBoxPlaceOrder.Name = "pictureBoxPlaceOrder";
+            this.pictureBoxPlaceOrder.Size = new System.Drawing.Size(186, 108);
+            this.pictureBoxPlaceOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxPlaceOrder.TabIndex = 0;
+            this.pictureBoxPlaceOrder.TabStop = false;
+            this.pictureBoxPlaceOrder.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
             // 
             // tableLayoutPanel8
             // 
@@ -314,6 +373,19 @@
             this.label3.Text = "Report";
             this.label3.Click += new System.EventHandler(this.tableLayoutPanel5_Click);
             // 
+            // pictureBoxOrderStatus
+            // 
+            this.pictureBoxOrderStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxOrderStatus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxOrderStatus.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxOrderStatus.Image")));
+            this.pictureBoxOrderStatus.Location = new System.Drawing.Point(3, 6);
+            this.pictureBoxOrderStatus.Name = "pictureBoxOrderStatus";
+            this.pictureBoxOrderStatus.Size = new System.Drawing.Size(186, 108);
+            this.pictureBoxOrderStatus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxOrderStatus.TabIndex = 17;
+            this.pictureBoxOrderStatus.TabStop = false;
+            this.pictureBoxOrderStatus.Click += new System.EventHandler(this.tableLayoutPanel5_Click);
+            // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 1;
@@ -330,6 +402,19 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel6.TabIndex = 28;
             this.tableLayoutPanel6.Click += new System.EventHandler(this.pictureBoxReOrder_Click);
+            // 
+            // pictureBoxReOrder
+            // 
+            this.pictureBoxReOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxReOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxReOrder.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxReOrder.Image")));
+            this.pictureBoxReOrder.Location = new System.Drawing.Point(3, 6);
+            this.pictureBoxReOrder.Name = "pictureBoxReOrder";
+            this.pictureBoxReOrder.Size = new System.Drawing.Size(186, 108);
+            this.pictureBoxReOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxReOrder.TabIndex = 19;
+            this.pictureBoxReOrder.TabStop = false;
+            this.pictureBoxReOrder.Click += new System.EventHandler(this.pictureBoxReOrder_Click);
             // 
             // tableLayoutPanel10
             // 
@@ -402,7 +487,20 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel7.TabIndex = 29;
-            this.tableLayoutPanel7.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel7_Click);
+            this.tableLayoutPanel7.Click += new System.EventHandler(this.pictureBoxLogout_Click);
+            // 
+            // pictureBoxLogout
+            // 
+            this.pictureBoxLogout.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxLogout.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogout.Image")));
+            this.pictureBoxLogout.Location = new System.Drawing.Point(3, 6);
+            this.pictureBoxLogout.Name = "pictureBoxLogout";
+            this.pictureBoxLogout.Size = new System.Drawing.Size(186, 108);
+            this.pictureBoxLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogout.TabIndex = 4;
+            this.pictureBoxLogout.TabStop = false;
+            this.pictureBoxLogout.Click += new System.EventHandler(this.pictureBoxLogout_Click);
             // 
             // tableLayoutPanel15
             // 
@@ -488,58 +586,6 @@
             this.label9.Text = "Order Edit";
             this.label9.Click += new System.EventHandler(this.tableLayoutPanel11_Click);
             // 
-            // tableLayoutPanel12
-            // 
-            this.tableLayoutPanel12.ColumnCount = 1;
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel12.Controls.Add(this.label10, 0, 1);
-            this.tableLayoutPanel12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(399, 315);
-            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
-            this.tableLayoutPanel12.RowCount = 2;
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(192, 150);
-            this.tableLayoutPanel12.TabIndex = 38;
-            // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label10.AutoSize = true;
-            this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label10.Location = new System.Drawing.Point(5, 129);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(181, 12);
-            this.label10.TabIndex = 21;
-            this.label10.Text = "Add SaleArea/Department/Warehouse";
-            // 
-            // tableLayoutPanel17
-            // 
-            this.tableLayoutPanel17.ColumnCount = 1;
-            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel17.Controls.Add(this.label11, 0, 1);
-            this.tableLayoutPanel17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tableLayoutPanel17.Location = new System.Drawing.Point(597, 315);
-            this.tableLayoutPanel17.Name = "tableLayoutPanel17";
-            this.tableLayoutPanel17.RowCount = 2;
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel17.Size = new System.Drawing.Size(192, 150);
-            this.tableLayoutPanel17.TabIndex = 39;
-            // 
-            // label11
-            // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label11.AutoSize = true;
-            this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label11.Location = new System.Drawing.Point(6, 129);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(180, 12);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "Edit SaleArea/Department/Warehouse";
-            // 
             // tableLayoutPanel18
             // 
             this.tableLayoutPanel18.ColumnCount = 1;
@@ -568,86 +614,173 @@
             this.label12.Text = "set stock level";
             this.label12.Click += new System.EventHandler(this.tableLayoutPanel18_Click);
             // 
-            // pictureBoxAddNewProduct
+            // tableLayoutPanel12
             // 
-            this.pictureBoxAddNewProduct.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxAddNewProduct.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxAddNewProduct.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAddNewProduct.Image")));
-            this.pictureBoxAddNewProduct.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAddNewProduct.InitialImage")));
-            this.pictureBoxAddNewProduct.Location = new System.Drawing.Point(3, 6);
-            this.pictureBoxAddNewProduct.Name = "pictureBoxAddNewProduct";
-            this.pictureBoxAddNewProduct.Size = new System.Drawing.Size(186, 108);
-            this.pictureBoxAddNewProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxAddNewProduct.TabIndex = 15;
-            this.pictureBoxAddNewProduct.TabStop = false;
-            this.pictureBoxAddNewProduct.Click += new System.EventHandler(this.tableLayoutPanel3_Click);
+            this.tableLayoutPanel12.ColumnCount = 1;
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel12.Controls.Add(this.label10, 0, 1);
+            this.tableLayoutPanel12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(399, 315);
+            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
+            this.tableLayoutPanel12.RowCount = 2;
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(192, 150);
+            this.tableLayoutPanel12.TabIndex = 38;
+            this.tableLayoutPanel12.Click += new System.EventHandler(this.label10_Click);
             // 
-            // pictureBoxCheckOrder
+            // label10
             // 
-            this.pictureBoxCheckOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxCheckOrder.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxCheckOrder.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxCheckOrder.Image")));
-            this.pictureBoxCheckOrder.Location = new System.Drawing.Point(3, 6);
-            this.pictureBoxCheckOrder.Name = "pictureBoxCheckOrder";
-            this.pictureBoxCheckOrder.Size = new System.Drawing.Size(186, 108);
-            this.pictureBoxCheckOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxCheckOrder.TabIndex = 2;
-            this.pictureBoxCheckOrder.TabStop = false;
-            this.pictureBoxCheckOrder.Click += new System.EventHandler(this.pictureBoxCheckOrder_Click);
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label10.AutoSize = true;
+            this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label10.Location = new System.Drawing.Point(61, 129);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(69, 12);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "Add SaleArea";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // pictureBoxPlaceOrder
+            // tableLayoutPanel17
             // 
-            this.pictureBoxPlaceOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxPlaceOrder.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBoxPlaceOrder.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxPlaceOrder.Enabled = false;
-            this.pictureBoxPlaceOrder.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPlaceOrder.Image")));
-            this.pictureBoxPlaceOrder.Location = new System.Drawing.Point(3, 6);
-            this.pictureBoxPlaceOrder.Name = "pictureBoxPlaceOrder";
-            this.pictureBoxPlaceOrder.Size = new System.Drawing.Size(186, 108);
-            this.pictureBoxPlaceOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxPlaceOrder.TabIndex = 0;
-            this.pictureBoxPlaceOrder.TabStop = false;
-            this.pictureBoxPlaceOrder.Click += new System.EventHandler(this.tableLayoutPanel1_Click);
+            this.tableLayoutPanel17.ColumnCount = 1;
+            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel17.Controls.Add(this.label11, 0, 1);
+            this.tableLayoutPanel17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tableLayoutPanel17.Location = new System.Drawing.Point(597, 315);
+            this.tableLayoutPanel17.Name = "tableLayoutPanel17";
+            this.tableLayoutPanel17.RowCount = 2;
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel17.Size = new System.Drawing.Size(192, 150);
+            this.tableLayoutPanel17.TabIndex = 39;
+            this.tableLayoutPanel17.Click += new System.EventHandler(this.CEditSaleArea);
             // 
-            // pictureBoxOrderStatus
+            // label11
             // 
-            this.pictureBoxOrderStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxOrderStatus.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxOrderStatus.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxOrderStatus.Image")));
-            this.pictureBoxOrderStatus.Location = new System.Drawing.Point(3, 6);
-            this.pictureBoxOrderStatus.Name = "pictureBoxOrderStatus";
-            this.pictureBoxOrderStatus.Size = new System.Drawing.Size(186, 108);
-            this.pictureBoxOrderStatus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxOrderStatus.TabIndex = 17;
-            this.pictureBoxOrderStatus.TabStop = false;
-            this.pictureBoxOrderStatus.Click += new System.EventHandler(this.tableLayoutPanel5_Click);
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label11.AutoSize = true;
+            this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label11.Location = new System.Drawing.Point(62, 129);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(68, 12);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "Edit SaleArea";
+            this.label11.Click += new System.EventHandler(this.CEditSaleArea);
             // 
-            // pictureBoxReOrder
+            // tableLayoutPanel4
             // 
-            this.pictureBoxReOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxReOrder.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxReOrder.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxReOrder.Image")));
-            this.pictureBoxReOrder.Location = new System.Drawing.Point(3, 6);
-            this.pictureBoxReOrder.Name = "pictureBoxReOrder";
-            this.pictureBoxReOrder.Size = new System.Drawing.Size(186, 108);
-            this.pictureBoxReOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxReOrder.TabIndex = 19;
-            this.pictureBoxReOrder.TabStop = false;
-            this.pictureBoxReOrder.Click += new System.EventHandler(this.pictureBoxReOrder_Click);
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Controls.Add(this.label5, 0, 1);
+            this.tableLayoutPanel4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(795, 315);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(192, 150);
+            this.tableLayoutPanel4.TabIndex = 41;
+            this.tableLayoutPanel4.Click += new System.EventHandler(this.tableLayoutPanel4_Click);
             // 
-            // pictureBoxLogout
+            // label5
             // 
-            this.pictureBoxLogout.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxLogout.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogout.Image")));
-            this.pictureBoxLogout.Location = new System.Drawing.Point(3, 6);
-            this.pictureBoxLogout.Name = "pictureBoxLogout";
-            this.pictureBoxLogout.Size = new System.Drawing.Size(186, 108);
-            this.pictureBoxLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogout.TabIndex = 4;
-            this.pictureBoxLogout.TabStop = false;
-            this.pictureBoxLogout.Click += new System.EventHandler(this.tableLayoutPanel7_Click);
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label5.Location = new System.Drawing.Point(55, 129);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(82, 12);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "Add Department";
+            this.label5.Click += new System.EventHandler(this.tableLayoutPanel4_Click);
+            // 
+            // tableLayoutPanel14
+            // 
+            this.tableLayoutPanel14.ColumnCount = 1;
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel14.Controls.Add(this.label13, 0, 1);
+            this.tableLayoutPanel14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tableLayoutPanel14.Location = new System.Drawing.Point(993, 315);
+            this.tableLayoutPanel14.Name = "tableLayoutPanel14";
+            this.tableLayoutPanel14.RowCount = 2;
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(192, 150);
+            this.tableLayoutPanel14.TabIndex = 42;
+            this.tableLayoutPanel14.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // label13
+            // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label13.AutoSize = true;
+            this.label13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label13.Location = new System.Drawing.Point(56, 129);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(80, 12);
+            this.label13.TabIndex = 21;
+            this.label13.Text = "Add Warehouse";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // tableLayoutPanel19
+            // 
+            this.tableLayoutPanel19.ColumnCount = 1;
+            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel19.Controls.Add(this.label14, 0, 1);
+            this.tableLayoutPanel19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tableLayoutPanel19.Location = new System.Drawing.Point(3, 471);
+            this.tableLayoutPanel19.Name = "tableLayoutPanel19";
+            this.tableLayoutPanel19.RowCount = 2;
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel19.Size = new System.Drawing.Size(192, 150);
+            this.tableLayoutPanel19.TabIndex = 43;
+            this.tableLayoutPanel19.Click += new System.EventHandler(this.tableLayoutPanel19_Click);
+            // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label14.AutoSize = true;
+            this.label14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label14.Location = new System.Drawing.Point(55, 129);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(81, 12);
+            this.label14.TabIndex = 21;
+            this.label14.Text = "Edit Department";
+            this.label14.Click += new System.EventHandler(this.tableLayoutPanel19_Click);
+            // 
+            // tableLayoutPanel20
+            // 
+            this.tableLayoutPanel20.ColumnCount = 1;
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel20.Controls.Add(this.label15, 0, 1);
+            this.tableLayoutPanel20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tableLayoutPanel20.Location = new System.Drawing.Point(201, 471);
+            this.tableLayoutPanel20.Name = "tableLayoutPanel20";
+            this.tableLayoutPanel20.RowCount = 2;
+            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel20.Size = new System.Drawing.Size(192, 150);
+            this.tableLayoutPanel20.TabIndex = 44;
+            this.tableLayoutPanel20.Click += new System.EventHandler(this.tableLayoutPanel20_Click);
+            // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label15.AutoSize = true;
+            this.label15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label15.Location = new System.Drawing.Point(56, 129);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(79, 12);
+            this.label15.TabIndex = 21;
+            this.label15.Text = "Edit Warehouse";
+            this.label15.Click += new System.EventHandler(this.tableLayoutPanel20_Click);
             // 
             // pictureBoxLenguage
             // 
@@ -675,42 +808,50 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAddNewProduct)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCheckOrder)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlaceOrder)).EndInit();
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOrderStatus)).EndInit();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReOrder)).EndInit();
             this.tableLayoutPanel10.ResumeLayout(false);
             this.tableLayoutPanel10.PerformLayout();
             this.tableLayoutPanel13.ResumeLayout(false);
             this.tableLayoutPanel13.PerformLayout();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).EndInit();
             this.tableLayoutPanel15.ResumeLayout(false);
             this.tableLayoutPanel15.PerformLayout();
             this.tableLayoutPanel16.ResumeLayout(false);
             this.tableLayoutPanel16.PerformLayout();
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel11.PerformLayout();
+            this.tableLayoutPanel18.ResumeLayout(false);
+            this.tableLayoutPanel18.PerformLayout();
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();
             this.tableLayoutPanel17.ResumeLayout(false);
             this.tableLayoutPanel17.PerformLayout();
-            this.tableLayoutPanel18.ResumeLayout(false);
-            this.tableLayoutPanel18.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAddNewProduct)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCheckOrder)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlaceOrder)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOrderStatus)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReOrder)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).EndInit();
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
+            this.tableLayoutPanel14.ResumeLayout(false);
+            this.tableLayoutPanel14.PerformLayout();
+            this.tableLayoutPanel19.ResumeLayout(false);
+            this.tableLayoutPanel19.PerformLayout();
+            this.tableLayoutPanel20.ResumeLayout(false);
+            this.tableLayoutPanel20.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLenguage)).EndInit();
             this.ResumeLayout(false);
 
@@ -757,6 +898,14 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel19;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel20;
+        private System.Windows.Forms.Label label15;
     }
 }
 

@@ -59,14 +59,6 @@ namespace WindowsFormsApp
             (this.ParentForm as Main)?.Change_pContent(typeof(frmScrap));
         }
 
-
-
-        private void tableLayoutPanel7_Click(object sender, EventArgs e)
-        {
-            //(this.ParentForm as Main)?.Change_pContent(typeof(frmLogin));
-            
-        }
-
         private void tableLayoutPanel5_Click(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmReport));
@@ -100,6 +92,41 @@ namespace WindowsFormsApp
         private void tableLayoutPanel18_Click(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmSetStockLevel));
+        }
+
+        private void pictureBoxLogout_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmLogin));
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmAddSaleArea));
+        }
+
+        private void CEditSaleArea(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmEditSaleArea));
+        }
+
+        private void tableLayoutPanel4_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmAddDepartment));
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmAddWarehouse));
+        }
+
+        private void tableLayoutPanel19_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmEditDepartment));
+        }
+
+        private void tableLayoutPanel20_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmEditWarehouse));
         }
     }
 }
