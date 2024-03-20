@@ -30,8 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.comboBoxCategoryType = new System.Windows.Forms.ComboBox();
-            this.txtSpareName = new System.Windows.Forms.TextBox();
-            this.txtSpareID = new System.Windows.Forms.TextBox();
             this.lblCategoryType = new System.Windows.Forms.Label();
             this.lblSpareName = new System.Windows.Forms.Label();
             this.lblSpareID = new System.Windows.Forms.Label();
@@ -48,6 +46,8 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -64,26 +64,6 @@
             this.comboBoxCategoryType.Name = "comboBoxCategoryType";
             this.comboBoxCategoryType.Size = new System.Drawing.Size(344, 47);
             this.comboBoxCategoryType.TabIndex = 25;
-            // 
-            // txtSpareName
-            // 
-            this.txtSpareName.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtSpareName.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtSpareName.Location = new System.Drawing.Point(352, 77);
-            this.txtSpareName.Multiline = true;
-            this.txtSpareName.Name = "txtSpareName";
-            this.txtSpareName.Size = new System.Drawing.Size(344, 32);
-            this.txtSpareName.TabIndex = 24;
-            // 
-            // txtSpareID
-            // 
-            this.txtSpareID.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtSpareID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtSpareID.Location = new System.Drawing.Point(352, 3);
-            this.txtSpareID.Multiline = true;
-            this.txtSpareID.Name = "txtSpareID";
-            this.txtSpareID.Size = new System.Drawing.Size(344, 32);
-            this.txtSpareID.TabIndex = 23;
             // 
             // lblCategoryType
             // 
@@ -266,10 +246,10 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.comboBox2, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.comboBox1, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.lblSpareID, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.txtSpareID, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblSpareName, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.txtSpareName, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.comboBoxCategoryType, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.lblCategoryType, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.button1, 0, 3);
@@ -281,6 +261,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(699, 297);
             this.tableLayoutPanel2.TabIndex = 37;
             // 
@@ -314,6 +295,28 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1410, 538);
             this.tableLayoutPanel3.TabIndex = 38;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBox1.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(352, 77);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(344, 47);
+            this.comboBox1.TabIndex = 27;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBox2.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(352, 3);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(344, 47);
+            this.comboBox2.TabIndex = 28;
+            // 
             // frmPlacingOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -334,8 +337,6 @@
 
         #endregion
         public System.Windows.Forms.ComboBox comboBoxCategoryType;
-        private System.Windows.Forms.TextBox txtSpareName;
-        private System.Windows.Forms.TextBox txtSpareID;
         private System.Windows.Forms.Label lblCategoryType;
         private System.Windows.Forms.Label lblSpareName;
         private System.Windows.Forms.Label lblSpareID;
@@ -352,5 +353,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.ComboBox comboBox2;
+        public System.Windows.Forms.ComboBox comboBox1;
     }
 }
