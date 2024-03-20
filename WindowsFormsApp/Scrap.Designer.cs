@@ -138,6 +138,7 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.button1, 2);
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.Font = new System.Drawing.Font("新細明體", 24F);
             this.button1.Location = new System.Drawing.Point(3, 216);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(431, 47);
