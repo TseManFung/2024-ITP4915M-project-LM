@@ -67,7 +67,7 @@
             this.btnOutputToPDF.Name = "btnOutputToPDF";
             this.btnOutputToPDF.Size = new System.Drawing.Size(367, 53);
             this.btnOutputToPDF.TabIndex = 76;
-            this.btnOutputToPDF.Text = "Output To PDF";
+            this.btnOutputToPDF.Text = "Received";
             this.btnOutputToPDF.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1

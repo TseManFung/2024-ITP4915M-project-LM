@@ -130,6 +130,7 @@
             // button2
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button2.Font = new System.Drawing.Font("新細明體", 24F);
             this.button2.Location = new System.Drawing.Point(718, 255);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(49, 50);
@@ -140,6 +141,7 @@
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.Font = new System.Drawing.Font("新細明體", 24F);
             this.button1.Location = new System.Drawing.Point(333, 255);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(49, 50);
@@ -150,6 +152,7 @@
             // button3
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button3.Font = new System.Drawing.Font("新細明體", 24F);
             this.button3.Location = new System.Drawing.Point(773, 507);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(324, 51);
