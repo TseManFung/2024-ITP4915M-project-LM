@@ -161,6 +161,12 @@
     <Compile Include="EditWarehouse.Designer.cs">
       <DependentUpon>EditWarehouse.cs</DependentUpon>
     </Compile>
+    <Compile Include="forgetPW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgetPW.Designer.cs">
+      <DependentUpon>forgetPW.cs</DependentUpon>
+    </Compile>
     <Compile Include="language.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -327,6 +333,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditWarehouse.resx">
       <DependentUpon>EditWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgetPW.resx">
+      <DependentUpon>forgetPW.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="language.resx">
       <DependentUpon>language.cs</DependentUpon>

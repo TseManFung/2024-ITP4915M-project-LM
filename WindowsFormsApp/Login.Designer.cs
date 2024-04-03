@@ -57,6 +57,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblForgotPassword.AutoSize = true;
+            this.lblForgotPassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblForgotPassword.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblForgotPassword.ForeColor = System.Drawing.Color.Red;
             this.lblForgotPassword.Location = new System.Drawing.Point(127, 523);
@@ -65,6 +66,7 @@
             this.lblForgotPassword.Size = new System.Drawing.Size(176, 22);
             this.lblForgotPassword.TabIndex = 19;
             this.lblForgotPassword.Text = "Forgot Password?";
+            this.lblForgotPassword.Click += new System.EventHandler(this.lblForgotPassword_Click);
             // 
             // lblWrongPassword
             // 
@@ -146,6 +148,7 @@
             this.textBox2.Location = new System.Drawing.Point(211, 363);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(116, 22);
             this.textBox2.TabIndex = 13;
             // 

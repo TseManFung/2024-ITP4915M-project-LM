@@ -32,5 +32,11 @@ namespace WindowsFormsApp
         {
  
         }
+
+        private void lblForgotPassword_Click(object sender, EventArgs e)
+        {
+            frmForgetPW f = new frmForgetPW();
+            f.ShowDialog();
+        }
     }
 }
