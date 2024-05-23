@@ -1,3 +1,5 @@
+use test;
+
 /*SaleArea*/
 INSERT INTO `SaleArea` (`AreaID`, `Location`, `remark`)
 VALUES 
