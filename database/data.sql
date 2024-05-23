@@ -100,28 +100,28 @@ VALUES
 ('000010', 'OS Ltd.', 30, '13111111119', 'os@qq.com', '貴陽市南明區廣場北路10號', '南京市鼓樓區中山北路8號');
 
 /*Staff*/
-INSERT INTO `Staff` (`StaffID`, `StaffName`, `SaleAreaID`, `DeptID`, `Position`, `PhoneNunber`, `Gender`)
+INSERT INTO Staff (StaffID, StaffName, SaleAreaID, DeptID, Position, PhoneNunber, Gender)
 VALUES 
-(1,	'Andy', 1, 18, 'wh001',	'storemen',	'13912345678', 'M'),
-(2,	'李小明', 2, 19, 'wh002', 'storemen', '15898765432', 'M'),
-(3,	'张三', 3, 20, 'wh003',	'storemen',	'13678901234',	'M'),
-(4,	'苹', 4, 21, 'wh004', 'storemen', '15056789012',	'M'),
-(5,	'ChanTomori', 1, 18, 'manag', 'manager', '13123456789', 'F'),
-(6,	'WongTaki', 1, 18, 'wh001', 'delivery worker', '15816444441', 'F'),
-(7,	'CheungSoyo', 2, 19, 'sale', 'LM officer', '19076550', 'F'),
-(8,	'AuAnon', 4, 21, 'wh004', 'Storemen', '58436029', 'F'),
-(9,	'陳大文', 4, 21, 'D0004', 'Accountant', '51493950', 'M'),
-(10, 'ORana', 1, 18, 'wh001', 'Warehouseclerk',	'49164576',	'F'),
-(11, 'AAA', 2, 19, 'wh002',	'Warehouseclerk', '50552739', 'F'),
-(12, 'CCC', 1, 18, 'wh001',	'manager',	'98931962',	'M'),
-(13, 'DDD', 2, 19, 'wh002', 'manager',	'23490946',	'F'),
-(14, 'Sam', 3, 20, 'wh003', 'manager',	'89774445',	'M'),
-(15, 'Apple', 4, 21, 'wh004', 'manager', '14564581', 'M'),
-(16, 'ORana', 3, 20, 'wh003', 'Warehouseclerk',	'16043681',	'F'),
-(17, '孫培玲', 4, 21, 'wh004',	'Warehouseclerk', '67468369',	'F'),
-(18, '望醉冬', 2, 19, 'wh002',	'delivery worker', '15816444441',	'F'),
-(19, '皇甫樂成', 3, 20,	'wh003', 'delivery worker', '15816444441', 'F'),
-(20, '山靜白', 4, 21, 'wh004', 'delivery worker', '15816444441', 'F');
+(1,    'Andy', 18, 'wh001',    'storemen',    '13912345678', 'M'),
+(2,    '李小明',19, 'wh002', 'storemen', '15898765432', 'M'),
+(3,    '张三',20, 'wh003',    'storemen',    '13678901234',    'M'),
+(4,    '苹',21, 'wh004', 'storemen', '15056789012',    'M'),
+(5,    'ChanTomori', 18, 'manag', 'manager', '13123456789', 'F'),
+(6,    'WongTaki', 18, 'wh001', 'delivery worker', '15816444441', 'F'),
+(7,    'CheungSoyo',  19, 'sale', 'LM officer', '19076550', 'F'),
+(8,    'AuAnon', 21, 'wh004', 'Storemen', '58436029', 'F'),
+(9,    '陳大文',  21, 'D0004', 'Accountant', '51493950', 'M'),
+(10, 'ORana',  18, 'wh001', 'Warehouseclerk',    '49164576',    'F'),
+(11, 'AAA',  19, 'wh002',    'Warehouseclerk', '50552739', 'F'),
+(12, 'CCC',  18, 'wh001',    'manager',    '98931962',    'M'),
+(13, 'DDD',  19, 'wh002', 'manager',    '23490946',    'F'),
+(14, 'Sam',  20, 'wh003', 'manager',    '89774445',    'M'),
+(15, 'Apple',  21, 'wh004', 'manager', '14564581', 'M'),
+(16, 'ORana',  20, 'wh003', 'Warehouseclerk',    '16043681',    'F'),
+(17, '孫培玲',  21, 'wh004',    'Warehouseclerk', '67468369',    'F'),
+(18, '望醉冬',  19, 'wh002',    'delivery worker', '15816444441','F'),
+(19, '皇甫樂成',  20,'wh003', 'delivery worker', '15816444441', 'F'),
+(20, '山靜白', 21, 'wh004', 'delivery worker', '15816444441', 'F');
 
 
 /*User*/
