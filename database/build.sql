@@ -121,7 +121,6 @@ CREATE TABLE `RestockOrder` (
   `RestockOrderID` int,
   `WarehouseID` int,
   `OrderDate` date NOT NULL,
-  `State` char(1) NOT NULL,
   `Remark` varchar(255),
   PRIMARY KEY (`RestockOrderID`, `WarehouseID`)
 );
@@ -130,6 +129,7 @@ CREATE TABLE `RestockItem` (
   `RestockOrderID` int,
   `ItemID` char(6),
   `Quantity` int NOT NULL DEFAULT 1,
+  `State` char(1) NOT NULL,
   PRIMARY KEY (`RestockOrderID`, `ItemID`)
 );
 
