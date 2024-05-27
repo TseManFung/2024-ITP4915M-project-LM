@@ -17,7 +17,9 @@ namespace WindowsFormsApp
         public frmLogin()
         {
             sshdatabase db = new sshdatabase();
+            db.closeAll();
             InitializeComponent();
+
         }
 
         //step to dnow
