@@ -121,8 +121,14 @@ VALUES
 (17, '望醉冬',  2, 'wh002',	'delivery worker', '25624059','F'),
 (18, '皇甫樂成',  3,'wh003', 'delivery worker', '82838532', 'F'),
 (19, '山靜白', 4, 'wh004', 'delivery worker', '23023829', 'F'),
-(20, '山小明',  1, 'wh001', 'Stock record clerk', '48193089', 'M');
-
+(20, '山小明',  1, 'wh001', 'Stock record clerk', '48193089', 'M'),
+(100, 'storeman', NULL, 'Hdt', 'manager', '98765432', 'M'),
+(101, 'LMcleck', NULL, 'Hdt', 'manager', '98765431', 'M'),
+(102, 'accountant', NULL, 'Hdt', 'manager', '98765430', 'M'),
+(103, 'manager', NULL, 'Hdt', 'manager', '98765429', 'M'),
+(104, 'delivery_worker', NULL, 'Hdt', 'manager', '98765428', 'M'),
+(105, 'Warehousecleak', NULL, 'Hdt', 'manager', '98765427', 'M'),
+(106, 'stockrecord', NULL, 'Hdt', 'manager', '98765426', 'M');
 
 /*User*/
 INSERT INTO `User` (`UserID`, `LoginName`, `Password`, `AccessLevel`, `DealerID`, `StaffID`)
@@ -146,7 +152,14 @@ VALUES
 (930790558, 'iKXQbJKpydqVkDDFohbC', 'U2FsdGVkX1/pMtE1n3ZUMujLnbOUFK2LqK9bMhNScmk=',10000,NULL,17),
 (960144875, 'ianWsRYLjsJhgTPdiwgy', 'U2FsdGVkX1/g5NMtejHcC3STOqBsOjb8g+4EsaetOw4=',10000,NULL,18),
 (989499192, 'HJfXjJbUrEwcnMvnXjos', 'U2FsdGVkX1/TFGSTM/TtNbf6Z5FL8mhYeBMfe8UjtyA=',10000,NULL,19),
-(987414555, 'mHMVNDcyDQVtkXDqRDma', 'U2FsdGVkX19vp3UexXBTMgS/vsUtWmlvh8io7ZK5Cpw=',10000,NULL,20);
+(987414555, 'mHMVNDcyDQVtkXDqRDma', 'U2FsdGVkX19vp3UexXBTMgS/vsUtWmlvh8io7ZK5Cpw=',10000,NULL,20),
+(1, 'storeman', '123', '400', NULL, 100),
+(2, 'LMcleck', '123', '200', NULL, 101),
+(3, 'accountant', '123', '300', NULL, 102),
+(4, 'manager', '123', '100', NULL, 103),
+(5, 'delivery_worker', '123', '700', NULL, 104),
+(6, 'Warehousecleak', '123', '600', NULL, 105),
+(7, 'stockrecord', '123', '500', NULL, 106);
 
 /*Spare*/
 INSERT INTO `Spare` (`SpareID`, `CategoryLetter`, `SpareName`, `Price`, `Description`, `Weight`, `SupplierID`)
