@@ -246,7 +246,7 @@ VALUES
   ('C10435', '2024-05-24 21:05', 20, 3, 'Tolerances for lighting fittings may be a few millimetres to a fraction of a millimetre');
 
 /*RestockOrder*/
-INSERT INTO `RestockOrder` (`RestockOrderID`, `WarehouseID`, `OrderDate`, `State`, `Remark`)
+INSERT INTO `RestockOrder` (`RestockOrderID`, `WarehouseID`, `OrderDate`, `Remark`)
 VALUES
   (123123, 3, '2024-05-24', null),
   (123789, 4, '2024-05-24', null),
