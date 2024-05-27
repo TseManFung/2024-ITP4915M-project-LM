@@ -34,6 +34,14 @@ VALUES
 (29, 'Changchun', NULL),
 (30, 'Guiyang', NULL);
 
+/*Warehouse*/
+INSERT INTO `Warehouse` (`WarehouseID`, `SaleAreaID`, `Location`)
+VALUES
+  (1, 18, '昆明市滇池路1310號雲南民族村東門'),
+  (2, 19, 'China, CN 辽宁省 大连市 甘井子区'),
+  (3, 20, '55WW+CX3, Changsha County, Changsha, Hunan, China, 410141'),
+  (4, 21, 'P4JJ+P9J, Kaiyuan Rd, Licheng District, Jinan, Jinan, Shandong, China, 250101');
+
 /*Department*/
 INSERT INTO `Department` (`DeptID`, `DeptEmail`, `DeptName`, `WarehouseID`)
 VALUES 
@@ -154,14 +162,6 @@ VALUES
 ('D62438', 'D', 'GGG Car USB Charger', 47.3, NULL, 44.8, 102),
 ('B25912', 'B', 'www cooling system', 47.87, NULL, 69.2, 106);
 
-/*Warehouse*/
-INSERT INTO `Warehouse` (`WarehouseID`, `SaleAreaID`, `Location`)
-VALUES
-  (1, 18, '昆明市滇池路1310號雲南民族村東門'),
-  (2, 19, 'China, CN 辽宁省 大连市 甘井子区'),
-  (3, 20, '55WW+CX3, Changsha County, Changsha, Hunan, China, 410141'),
-  (4, 21, 'P4JJ+P9J, Kaiyuan Rd, Licheng District, Jinan, Jinan, Shandong, China, 250101');
-
 /*Stock*/
 INSERT INTO `Stock` (`WarehouseID`, `SpareID`, `AutoRestork`, `quantity`)
 VALUES 
@@ -196,6 +196,7 @@ VALUES
   ('202405240900000001', 'A26130', 10, 38.7),
   ('202405240901000002', 'B22978', 10, 58.54),
   ('202405240902000003', 'C10435', 10, 36.26),
+  ('202405240902000003', 'D75438', 20, 70.64),
   ('202405240903000004', 'D75438', 10, 51.07),
   ('202405240904000005', 'C91177', 10, 27.13),
   ('202405240905000006', 'D52143', 10, 30.42),
@@ -211,7 +212,13 @@ VALUES
   ('202405240908000009', 'D62438', 10, 'W'),
   ('202405240909000010', 'B25912', 10, 'W');
 
+/*Invoice*/
+INSERT INTO `Invoice` (`InvoiceID`, `OrderSerial`, `DespatchForemanID`, `InvoiceDate`, `CompleteState`)
+VALUES
+  ('202405240000011', '202405240900000001', 6, '2024-05-24', 'C'),
+  ('202405240000021', '202405240901000002', 6, '2024-05-24', 'C');
 /*ActualQuantityDespatched*/
+
 INSERT INTO `ActualQuantityDespatched` (`WarehouseID`, `InvoiceID`, `ItemID`, `Quantity`, `BundlesNumber`)
 VALUES
   (1, '202405240000011', 'A26130', 10, 1),
@@ -238,11 +245,6 @@ VALUES
   (123789, 'D62438', 1000, 'C'),
   (123456, 'B25912', 1000, 'C');
 
-/*Invoice*/
-INSERT INTO `Invoice` (`InvoiceID`, `OrderSerial`, `DespatchForemanID`, `InvoiceDate`, `CompleteState`)
-VALUES
-  ('202405240000011', '202405240900000001', 6, '2024-05-24', 'C'),
-  ('202405240000021', '202405240901000002', 6, '2024-05-24', 'S');
 /*Truck*/
 INSERT INTO `Truck` (`TruckID`, `LicensePlate`, `SaleAreaID`)
 VALUES
