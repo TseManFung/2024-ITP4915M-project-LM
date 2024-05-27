@@ -122,13 +122,13 @@ VALUES
 (18, '皇甫樂成',  3,'wh003', 'delivery worker', '82838532', 'F'),
 (19, '山靜白', 4, 'wh004', 'delivery worker', '23023829', 'F'),
 (20, '山小明',  1, 'wh001', 'Stock record clerk', '48193089', 'M'),
-(100, 'storeman', NULL, 'Hdt', 'manager', '98765432', 'M'),
-(101, 'LMcleck', NULL, 'Hdt', 'manager', '98765431', 'M'),
-(102, 'accountant', NULL, 'Hdt', 'manager', '98765430', 'M'),
-(103, 'manager', NULL, 'Hdt', 'manager', '98765429', 'M'),
-(104, 'delivery_worker', NULL, 'Hdt', 'manager', '98765428', 'M'),
-(105, 'Warehousecleak', NULL, 'Hdt', 'manager', '98765427', 'M'),
-(106, 'stockrecord', NULL, 'Hdt', 'manager', '98765426', 'M');
+(100, 'storeman', wh001, 'Hdt', 'storeman', '98765432', 'M'),
+(101, 'LMcleck', NULL, 'Hdt', 'LMcleck', '98765431', 'M'),
+(102, 'accountant', NULL, 'Hdt', 'accountant', '98765430', 'M'),
+(103, 'manager', wh001, 'Hdt', 'manager', '98765429', 'M'),
+(104, 'delivery_worker', wh001, 'Hdt', 'delivery_worker', '98765428', 'M'),
+(105, 'Warehousecleak', wh001, 'Hdt', 'Warehousecleak', '98765427', 'M'),
+(106, 'stockrecord', wh001, 'Hdt', 'stockrecord', '98765426', 'M');
 
 /*User*/
 INSERT INTO `User` (`UserID`, `LoginName`, `Password`, `AccessLevel`, `DealerID`, `StaffID`)
