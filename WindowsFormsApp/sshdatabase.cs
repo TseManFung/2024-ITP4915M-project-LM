@@ -107,18 +107,25 @@ namespace WindowsFormsApp
 
         public int getUserID(string loginName,string pw){
             string sql = "SELECT `UserID` FROM `User` WHERE `LoginName` = @loginName AND `Password` = @pw";
-            MySqlCommand com = new MySqlCommand(sql, dbconnect);
-            com.Parameters.AddWithValue("@loginName", loginName);
-            com.Parameters.AddWithValue("@pw", 0+ComputeSha256Hash(pw));
-            
-            Console.WriteLine(0+ComputeSha256Hash(pw));
-            MySqlDataReader reader = com.ExecuteReader();
-            while(reader.Read())
+            using (MySqlCommand com = new MySqlCommand(sql, dbconnect))
             {
-                var id = reader["UserID"];
-                Console.WriteLine(id);
 
+                com.Parameters.AddWithValue("@loginName", loginName);
+                com.Parameters.AddWithValue("@pw", 0 + ComputeSha256Hash(pw));
+
+                Console.WriteLine(0 + ComputeSha256Hash(pw));
+                using (MySqlDataReader reader = com.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var id = reader["UserID"];
+                        Console.WriteLine(id);
+
+                    }
+                }
+                com.Parameters.Clear();
             }
+
 
             return 213;
         }
