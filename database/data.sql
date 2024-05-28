@@ -34,6 +34,14 @@ VALUES
 (29, 'Changchun', NULL),
 (30, 'Guiyang', NULL);
 
+/*Warehouse*/
+INSERT INTO `Warehouse` (`WarehouseID`, `SaleAreaID`, `Location`)
+VALUES
+  (1, 18, '昆明市滇池路1310號雲南民族村東門'),
+  (2, 19, 'China, CN 辽宁省 大连市 甘井子区'),
+  (3, 20, '55WW+CX3, Changsha County, Changsha, Hunan, China, 410141'),
+  (4, 21, 'P4JJ+P9J, Kaiyuan Rd, Licheng District, Jinan, Jinan, Shandong, China, 250101');
+
 /*Department*/
 INSERT INTO `Department` (`DeptID`, `DeptEmail`, `DeptName`, `WarehouseID`)
 VALUES 
@@ -113,32 +121,46 @@ VALUES
 (17, '望醉冬',  2, 'wh002',	'delivery worker', '25624059','F'),
 (18, '皇甫樂成',  3,'wh003', 'delivery worker', '82838532', 'F'),
 (19, '山靜白', 4, 'wh004', 'delivery worker', '23023829', 'F'),
-(20, '山小明',  1, 'wh001', 'Stock record clerk', '48193089', 'M');
-
+(20, '山小明',  1, 'wh001', 'Stock record clerk', '48193089', 'M'),
+(100, 'storeman', 1, 'wh001', 'storeman', '98765432', 'M'),
+(101, 'LMcleck', NULL, 'Hdt', 'LMcleck', '98765431', 'M'),
+(102, 'accountant', NULL, 'Hdt', 'accountant', '98765430', 'M'),
+(103, 'manager', 1, 'wh001', 'manager', '98765429', 'M'),
+(104, 'delivery_worker', 1, 'wh001', 'delivery_worker', '98765428', 'M'),
+(105, 'Warehousecleak', 1, 'wh001', 'Warehousecleak', '98765427', 'M'),
+(106, 'stockrecord', 1, 'wh001', 'stockrecord', '98765426', 'M');
 
 /*User*/
 INSERT INTO `User` (`UserID`, `LoginName`, `Password`, `AccessLevel`, `DealerID`, `StaffID`)
 VALUES 
-(451561235, 'ATL', '0625895fc35fb2c9369b79ebde04732e80092f17a3922a67d892e33edab60618a', 10000, NULL, 1),
-(894874213, 'kirito', '072832b58ffe173f2af8c7fb22cdb6e435f9b46734632416741a728c77ce57cdf', 10000, NULL, 2),
-(123456789, 'cusidina', '0025cdf51fb9524752eb3db667029ccece6cd2f69bd866e95b3665bf63328b973', 10000, NULL, 3),
-(987654321, 'kemono114', '!ea344b4943b025a75b2ade908b13adcfda77e2e89a42bb1f81b48232ee0a8c72', 10000, NULL, 4),
-(159753456, 'idkABC', '031f66325fd1605b099729dd640a0e4b59288df81c446e1815b1b212225aa5b15', 10000, NULL, 5),
-(426879513, 'asuna', '!7c58f352844615a5a0dfb37e586c1afca8da219b480196fcda7cdc1b070dc427', 10000, NULL, 6),
-(741852963, 'HAha123', '0234af95dfee7c0d505db92d419fd9338b20bfaa001d0c1f7c9d0f2b8e28480a2', 10000, NULL, 7),
-(369258147, 'happyCat', '0283e02af52d66ec50a9e7e20c75680652759bbb21aac9f5aab465dae80547984', 10000, NULL, 8),
-(789456123, 'wagananai', '0f0d3fe219039edf27a582767abe7ea9d0f557c046a650a50a3b1172238a9e947', 10000, NULL, 9),
-(987412365, 'ho', '0e7d8cfa6cb57754fc6e7c56700af4447cb05efafa1d7dc9080a740e298d967c1', 10000, NULL, 10),
-(754664656, 'zwYtJrViRPGcruemxwMd', 'U2FsdGVkX19+V9Qxu0T20242NQySMzYakm0MyBlbUPU=',10000,NULL,11),
-(784018973, 'cKCVYAvrPuwhRufZqnnH', 'U2FsdGVkX18IQ9maMtZtA3NxhpFf+KAp1k6VDZOrsy0=',10000,NULL,12),
-(813373290, 'ukdeZCKyEGPzanTMuiXC', 'U2FsdGVkX1/jOlGz5QziaX9YiMnWXKh7GKvaeDkeu7E=',10000,NULL,13),
-(842727607, 'DmozffipkaEvXUtxZfVV', 'U2FsdGVkX19xoZzvv84uVrI8ycn9fFuAEOZcL1FNATg=',10000,NULL,14),
-(872081924, 'zRmTpvAqEZhWaAZvWuQq', 'U2FsdGVkX1+DZY6aY+hgvr1G7qyK87th41tmidy0+pw=',10000,NULL,15),
-(901436241, 'PHkVKmwcfiTfmGhBaVgg', 'U2FsdGVkX18cqEn4b0NuIMsL/4c7tdb16KZQYd1fJoA=',10000,NULL,16),
-(930790558, 'iKXQbJKpydqVkDDFohbC', 'U2FsdGVkX1/pMtE1n3ZUMujLnbOUFK2LqK9bMhNScmk=',10000,NULL,17),
-(960144875, 'ianWsRYLjsJhgTPdiwgy', 'U2FsdGVkX1/g5NMtejHcC3STOqBsOjb8g+4EsaetOw4=',10000,NULL,18),
-(989499192, 'HJfXjJbUrEwcnMvnXjos', 'U2FsdGVkX1/TFGSTM/TtNbf6Z5FL8mhYeBMfe8UjtyA=',10000,NULL,19),
-(987414555, 'mHMVNDcyDQVtkXDqRDma', 'U2FsdGVkX19vp3UexXBTMgS/vsUtWmlvh8io7ZK5Cpw=',10000,NULL,20);
+(451561235, 'ATL', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 1),
+(894874213, 'kirito', '!a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 2),
+(123456789, 'cusidina', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 3),
+(987654321, 'kemono114', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 4),
+(159753456, 'idkABC', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 5),
+(426879513, 'asuna', '!a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 6),
+(741852963, 'HAha123', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 7),
+(369258147, 'happyCat', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 8),
+(789456123, 'wagananai', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 9),
+(987412365, 'ho', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 10),
+(754664656, 'zwYtJrViRPGcruemxwMd', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,11),
+(784018973, 'cKCVYAvrPuwhRufZqnnH', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,12),
+(813373290, 'ukdeZCKyEGPzanTMuiXC', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,13),
+(842727607, 'DmozffipkaEvXUtxZfVV', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,14),
+(872081924, 'zRmTpvAqEZhWaAZvWuQq', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,15),
+(901436241, 'PHkVKmwcfiTfmGhBaVgg', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,16),
+(930790558, 'iKXQbJKpydqVkDDFohbC', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,17),
+(960144875, 'ianWsRYLjsJhgTPdiwgy', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,18),
+(989499192, 'HJfXjJbUrEwcnMvnXjos', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,19),
+(987414555, 'mHMVNDcyDQVtkXDqRDma', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,20),
+(1, 'storeman', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '400', NULL, 100),
+(2, 'LMcleck', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '200', NULL, 101),
+(3, 'accountant', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '300', NULL, 102),
+(4, 'manager', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '100', NULL, 103),
+(5, 'delivery_worker', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '700', NULL, 104),
+(6, 'Warehousecleak', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '600', NULL, 105),
+(7, 'stockrecord', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '500', NULL, 106),
+(8, 'Dealer1', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '5000', '000001', NULL);
 
 /*Spare*/
 INSERT INTO `Spare` (`SpareID`, `CategoryLetter`, `SpareName`, `Price`, `Description`, `Weight`, `SupplierID`)
@@ -153,14 +175,6 @@ VALUES
 ('D31172', 'D', 'DDD Vehicle Air Cleaner', 15.7, NULL, 34.7, 106),
 ('D62438', 'D', 'GGG Car USB Charger', 47.3, NULL, 44.8, 102),
 ('B25912', 'B', 'www cooling system', 47.87, NULL, 69.2, 106);
-
-/*Warehouse*/
-INSERT INTO `Warehouse` (`WarehouseID`, `SaleAreaID`, `Location`)
-VALUES
-  (1, 18, '昆明市滇池路1310號雲南民族村東門'),
-  (2, 19, 'China, CN 辽宁省 大连市 甘井子区'),
-  (3, 20, '55WW+CX3, Changsha County, Changsha, Hunan, China, 410141'),
-  (4, 21, 'P4JJ+P9J, Kaiyuan Rd, Licheng District, Jinan, Jinan, Shandong, China, 250101');
 
 /*Stock*/
 INSERT INTO `Stock` (`WarehouseID`, `SpareID`, `AutoRestork`, `quantity`)
@@ -196,6 +210,7 @@ VALUES
   ('202405240900000001', 'A26130', 10, 38.7),
   ('202405240901000002', 'B22978', 10, 58.54),
   ('202405240902000003', 'C10435', 10, 36.26),
+  ('202405240902000003', 'D75438', 20, 70.64),
   ('202405240903000004', 'D75438', 10, 51.07),
   ('202405240904000005', 'C91177', 10, 27.13),
   ('202405240905000006', 'D52143', 10, 30.42),
@@ -211,7 +226,13 @@ VALUES
   ('202405240908000009', 'D62438', 10, 'W'),
   ('202405240909000010', 'B25912', 10, 'W');
 
+/*Invoice*/
+INSERT INTO `Invoice` (`InvoiceID`, `OrderSerial`, `DespatchForemanID`, `InvoiceDate`, `CompleteState`)
+VALUES
+  ('202405240000011', '202405240900000001', 6, '2024-05-24', 'C'),
+  ('202405240000021', '202405240901000002', 6, '2024-05-24', 'C');
 /*ActualQuantityDespatched*/
+
 INSERT INTO `ActualQuantityDespatched` (`WarehouseID`, `InvoiceID`, `ItemID`, `Quantity`, `BundlesNumber`)
 VALUES
   (1, '202405240000011', 'A26130', 10, 1),
@@ -225,7 +246,7 @@ VALUES
   ('C10435', '2024-05-24 21:05', 20, 3, 'Tolerances for lighting fittings may be a few millimetres to a fraction of a millimetre');
 
 /*RestockOrder*/
-INSERT INTO `RestockOrder` (`RestockOrderID`, `WarehouseID`, `OrderDate`, `State`, `Remark`)
+INSERT INTO `RestockOrder` (`RestockOrderID`, `WarehouseID`, `OrderDate`, `Remark`)
 VALUES
   (123123, 3, '2024-05-24', null),
   (123789, 4, '2024-05-24', null),
@@ -238,11 +259,6 @@ VALUES
   (123789, 'D62438', 1000, 'C'),
   (123456, 'B25912', 1000, 'C');
 
-/*Invoice*/
-INSERT INTO `Invoice` (`InvoiceID`, `OrderSerial`, `DespatchForemanID`, `InvoiceDate`, `CompleteState`)
-VALUES
-  ('202405240000011', '202405240900000001', 6, '2024-05-24', 'C'),
-  ('202405240000021', '202405240901000002', 6, '2024-05-24', 'S');
 /*Truck*/
 INSERT INTO `Truck` (`TruckID`, `LicensePlate`, `SaleAreaID`)
 VALUES
