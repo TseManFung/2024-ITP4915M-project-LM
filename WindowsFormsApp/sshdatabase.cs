@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using Renci.SshNet;
 using MySqlConnector;
 using System.Data.Common;
+using System.Security.Cryptography;
 
 namespace WindowsFormsApp
 {
@@ -90,6 +91,37 @@ namespace WindowsFormsApp
             return updateBySql(sql);
         }
 
+        private string ComputeSha256Hash(string raw)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(raw));
+                StringBuilder builder = new StringBuilder();
+                for(int i = 0;i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+                return builder.ToString();
+            }
+        }
+
+        public int getUserID(string loginName,string pw){
+            string sql = "SELECT `UserID` FROM `User` WHERE `LoginName` = @loginName AND `Password` = @pw";
+            MySqlCommand com = new MySqlCommand(sql, dbconnect);
+            com.Parameters.AddWithValue("@loginName", loginName);
+            com.Parameters.AddWithValue("@pw", 0+ComputeSha256Hash(pw));
+            
+            Console.WriteLine(0+ComputeSha256Hash(pw));
+            MySqlDataReader reader = com.ExecuteReader();
+            while(reader.Read())
+            {
+                var id = reader["UserID"];
+                Console.WriteLine(id);
+
+            }
+
+            return 213;
+        }
         public MySqlDataReader readBySql(String sql)
         {
             MySqlCommand com = new MySqlCommand(sql, dbconnect);

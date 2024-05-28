@@ -24,7 +24,8 @@ namespace WindowsFormsApp
         //step to dnow
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            
+            Main.db.getUserID(textBox1.Text, textBox2.Text);
+
             (this.ParentForm as Main)?.Change_pContent(typeof(frmMenu));
             (this.ParentForm as Main)?.SetIsLogin(true);
 
