@@ -35,7 +35,7 @@ CREATE TABLE `Department` (
 
 CREATE TABLE `User` (
   `UserID` int PRIMARY KEY,
-  `LoginName` varchar(255) UNIQUE NOT NULL,
+  `LoginName` varchar(248) UNIQUE NOT NULL,
   `Password` char(65) NOT NULL COMMENT 'the first char is the state of the account(such as ! mean bock)the next 64 char is sha256',
   `AccessLevel` int NOT NULL DEFAULT 10000 COMMENT '0 has the highest permission',
   `DealerID` char(6) COMMENT 'if it is null, mean this user is a staff of Dealer',
