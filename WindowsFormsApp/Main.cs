@@ -10,8 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
+    
     public partial class Main : Form
     {
+        public static sshdatabase db = new sshdatabase();
+
         bool isLogin = false;
         public void SetIsLogin(bool succ)
         {

@@ -13,7 +13,7 @@ using System.Data.Common;
 
 namespace WindowsFormsApp
 {
-    internal class sshdatabase
+    public class sshdatabase
     {
         SshClient client;
         MySqlConnection dbconnect;
@@ -22,41 +22,75 @@ namespace WindowsFormsApp
         {
             this.sshConnect();
             this.dbConnect();
-            this.test();
-           
-
-
-
         }
 
 
-
-        public void test()
+        public void insertBySql(String sql)
         {
-            var reader =this.read("SELECT * FROM Category;");
-            while (reader.Read())
+            MySqlCommand com = new MySqlCommand(sql, dbconnect);
+            com.ExecuteNonQuery();
+        }
+
+        public void insert(String table, String[] data)
+        {
+
+            String sql = $"INSERT INTO {table} VALUE (";
+            for (int i = 0; i < data.Length; i++)
             {
-                Console.WriteLine(reader[0] + " " + reader["Type"]);
-                Console.WriteLine(reader.GetString(0) + " " + reader.GetValue(1));
-                Console.WriteLine();
+                if (i == data.Length - 1)
+                {
+                    sql += "\"" + data[i] + "\"" + ");";
+                }
+                else
+                {
+                    sql += "\"" + data[i] + "\"" + ",";
+                }
+            }
+            insertBySql(sql);
+
+            //insert("OrderItem", new string[] { "202405240901000002", "C10435", "10", "12.3" });
+
+        }
+
+        //not done
+        public bool updateBySql(String sql)
+        {
+            try
+            {
+                MySqlCommand com = new MySqlCommand(sql, dbconnect);
+                com.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return false;
             }
         }
 
-        //not done
-        public void insert(String sql)
+        public bool update(String table, String[] field, String[] data, String condition)
         {
-            MySqlCommand com = new MySqlCommand(sql, dbconnect);
-            com.ExecuteNonQuery();
+            if (field.Length != data.Length)
+            {
+                return false;
+            }
+            String sql = $"UPDATE {table} SET ";
+            for (int i = 0; i < data.Length; i++)
+            {
+                if (i == data.Length - 1)
+                {
+                    sql += $"{field[i]}={data[i]} ";
+                }
+                else
+                {
+                    sql += $"{field[i]}={data[i]},";
+                }
+            }
+            sql += $"WHERE {condition};";
+            return updateBySql(sql);
         }
 
-        //not done
-        public void update(String sql)
-        {
-            MySqlCommand com = new MySqlCommand(sql, dbconnect);
-            com.ExecuteNonQuery();
-        }
-
-        public MySqlDataReader read(String sql)
+        public MySqlDataReader readBySql(String sql)
         {
             MySqlCommand com = new MySqlCommand(sql, dbconnect);
             MySqlDataReader reader = com.ExecuteReader();
@@ -67,6 +101,18 @@ namespace WindowsFormsApp
             //    Console.WriteLine(reader.GetString(0) + " " + reader.GetValue(1));
             //    Console.WriteLine();
             //}
+        }
+
+        public MySqlDataReader readWhere(String table, String condition)
+        {
+            String sql = $"SELECT * FROM {table} Where {condition};";
+            return this.readBySql(sql);
+        }
+
+        public MySqlDataReader readAll(String table)
+        {
+            String sql = $"SELECT * FROM {table};";
+            return this.readBySql(sql);
         }
 
         public void sshConnect()
@@ -94,7 +140,7 @@ namespace WindowsFormsApp
             }
         }
 
-         public void dbConnect()
+        public void dbConnect()
         {
             this.dbDisconnect();
             this.dbconnect = new MySqlConnection("server=127.0.0.1;port=3306;uid=mysqluser;pwd=P@$$w0rd;database=test;");
