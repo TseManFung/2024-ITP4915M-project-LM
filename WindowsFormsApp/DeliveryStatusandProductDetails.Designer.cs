@@ -28,136 +28,136 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanelDeliveryStatusandProductDetails = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBoxStatus = new System.Windows.Forms.GroupBox();
+            this.lblState = new System.Windows.Forms.Label();
+            this.dgvRelatedSpareItem = new System.Windows.Forms.DataGridView();
+            this.lblDelivery = new System.Windows.Forms.Label();
+            this.groupBoxDate = new System.Windows.Forms.GroupBox();
             this.lblDate = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblItems = new System.Windows.Forms.Label();
+            this.lblRelatedspare = new System.Windows.Forms.Label();
+            this.tableLayoutPanelDeliveryStatusandProductDetails.SuspendLayout();
+            this.groupBoxStatus.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRelatedSpareItem)).BeginInit();
+            this.groupBoxDate.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // tableLayoutPanelDeliveryStatusandProductDetails
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.groupBox2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 3);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(376, 412);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanelDeliveryStatusandProductDetails.ColumnCount = 1;
+            this.tableLayoutPanelDeliveryStatusandProductDetails.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanelDeliveryStatusandProductDetails.Controls.Add(this.groupBoxStatus, 0, 2);
+            this.tableLayoutPanelDeliveryStatusandProductDetails.Controls.Add(this.dgvRelatedSpareItem, 0, 4);
+            this.tableLayoutPanelDeliveryStatusandProductDetails.Controls.Add(this.lblDelivery, 0, 0);
+            this.tableLayoutPanelDeliveryStatusandProductDetails.Controls.Add(this.groupBoxDate, 0, 1);
+            this.tableLayoutPanelDeliveryStatusandProductDetails.Controls.Add(this.panel1, 0, 3);
+            this.tableLayoutPanelDeliveryStatusandProductDetails.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanelDeliveryStatusandProductDetails.Name = "tableLayoutPanelDeliveryStatusandProductDetails";
+            this.tableLayoutPanelDeliveryStatusandProductDetails.RowCount = 5;
+            this.tableLayoutPanelDeliveryStatusandProductDetails.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanelDeliveryStatusandProductDetails.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanelDeliveryStatusandProductDetails.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanelDeliveryStatusandProductDetails.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanelDeliveryStatusandProductDetails.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanelDeliveryStatusandProductDetails.Size = new System.Drawing.Size(376, 412);
+            this.tableLayoutPanelDeliveryStatusandProductDetails.TabIndex = 0;
             // 
-            // groupBox2
+            // groupBoxStatus
             // 
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(3, 126);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(370, 97);
-            this.groupBox2.TabIndex = 5;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Status";
+            this.groupBoxStatus.Controls.Add(this.lblState);
+            this.groupBoxStatus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxStatus.Location = new System.Drawing.Point(3, 126);
+            this.groupBoxStatus.Name = "groupBoxStatus";
+            this.groupBoxStatus.Size = new System.Drawing.Size(370, 97);
+            this.groupBoxStatus.TabIndex = 5;
+            this.groupBoxStatus.TabStop = false;
+            this.groupBoxStatus.Text = "Status";
             // 
-            // dataGridView1
+            // lblState
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 270);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(370, 139);
-            this.dataGridView1.TabIndex = 6;
+            this.lblState.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblState.AutoSize = true;
+            this.lblState.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblState.Location = new System.Drawing.Point(6, 18);
+            this.lblState.Name = "lblState";
+            this.lblState.Size = new System.Drawing.Size(73, 32);
+            this.lblState.TabIndex = 3;
+            this.lblState.Text = "State";
             // 
-            // label1
+            // dgvRelatedSpareItem
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(370, 12);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Delivery";
+            this.dgvRelatedSpareItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRelatedSpareItem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvRelatedSpareItem.Location = new System.Drawing.Point(3, 270);
+            this.dgvRelatedSpareItem.Name = "dgvRelatedSpareItem";
+            this.dgvRelatedSpareItem.RowTemplate.Height = 24;
+            this.dgvRelatedSpareItem.Size = new System.Drawing.Size(370, 139);
+            this.dgvRelatedSpareItem.TabIndex = 6;
             // 
-            // groupBox1
+            // lblDelivery
             // 
-            this.groupBox1.Controls.Add(this.lblDate);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(3, 44);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(370, 76);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Delivery date";
+            this.lblDelivery.AutoSize = true;
+            this.lblDelivery.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblDelivery.Location = new System.Drawing.Point(3, 0);
+            this.lblDelivery.Name = "lblDelivery";
+            this.lblDelivery.Size = new System.Drawing.Size(370, 12);
+            this.lblDelivery.TabIndex = 1;
+            this.lblDelivery.Text = "Delivery";
             // 
-            // panel1
+            // groupBoxDate
             // 
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 229);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(370, 35);
-            this.panel1.TabIndex = 6;
+            this.groupBoxDate.Controls.Add(this.lblDate);
+            this.groupBoxDate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxDate.Location = new System.Drawing.Point(3, 44);
+            this.groupBoxDate.Name = "groupBoxDate";
+            this.groupBoxDate.Size = new System.Drawing.Size(370, 76);
+            this.groupBoxDate.TabIndex = 4;
+            this.groupBoxDate.TabStop = false;
+            this.groupBoxDate.Text = "Delivery date";
             // 
             // lblDate
             // 
             this.lblDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblDate.Location = new System.Drawing.Point(6, 28);
+            this.lblDate.Location = new System.Drawing.Point(6, 29);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(120, 32);
             this.lblDate.TabIndex = 2;
             this.lblDate.Text = "1/1/1970";
             // 
-            // label3
+            // panel1
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 13);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 12);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Related Spare(s):";
+            this.panel1.Controls.Add(this.lblItems);
+            this.panel1.Controls.Add(this.lblRelatedspare);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 229);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(370, 35);
+            this.panel1.TabIndex = 6;
             // 
-            // label2
+            // lblItems
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(321, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 12);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "0 item(s)";
+            this.lblItems.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblItems.AutoSize = true;
+            this.lblItems.Location = new System.Drawing.Point(321, 13);
+            this.lblItems.Name = "lblItems";
+            this.lblItems.Size = new System.Drawing.Size(46, 12);
+            this.lblItems.TabIndex = 1;
+            this.lblItems.Text = "0 item(s)";
             // 
-            // label4
+            // lblRelatedspare
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label4.Location = new System.Drawing.Point(6, 18);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 32);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "State";
+            this.lblRelatedspare.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblRelatedspare.AutoSize = true;
+            this.lblRelatedspare.Location = new System.Drawing.Point(10, 13);
+            this.lblRelatedspare.Name = "lblRelatedspare";
+            this.lblRelatedspare.Size = new System.Drawing.Size(84, 12);
+            this.lblRelatedspare.TabIndex = 3;
+            this.lblRelatedspare.Text = "Related Spare(s):";
             // 
             // frmDeliveryStatusandProductDetails
             // 
@@ -165,16 +165,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(400, 435);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tableLayoutPanelDeliveryStatusandProductDetails);
             this.Name = "frmDeliveryStatusandProductDetails";
             this.Text = "DeliveryStatusandProductDetails";
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.tableLayoutPanelDeliveryStatusandProductDetails.ResumeLayout(false);
+            this.tableLayoutPanelDeliveryStatusandProductDetails.PerformLayout();
+            this.groupBoxStatus.ResumeLayout(false);
+            this.groupBoxStatus.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRelatedSpareItem)).EndInit();
+            this.groupBoxDate.ResumeLayout(false);
+            this.groupBoxDate.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -183,15 +183,15 @@
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelDeliveryStatusandProductDetails;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblDelivery;
         private System.Windows.Forms.Label lblDate;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblRelatedspare;
+        private System.Windows.Forms.GroupBox groupBoxDate;
+        private System.Windows.Forms.GroupBox groupBoxStatus;
+        private System.Windows.Forms.DataGridView dgvRelatedSpareItem;
+        private System.Windows.Forms.Label lblItems;
+        private System.Windows.Forms.Label lblState;
     }
 }

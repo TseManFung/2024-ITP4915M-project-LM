@@ -30,16 +30,16 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.txtLocation = new System.Windows.Forms.TextBox();
+            this.lblLocation = new System.Windows.Forms.Label();
+            this.btnClear = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblSpareType = new System.Windows.Forms.Label();
-            this.comboBoxSpareType = new System.Windows.Forms.ComboBox();
+            this.lblManager = new System.Windows.Forms.Label();
+            this.comboBoxManager = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.lblSupplierID = new System.Windows.Forms.Label();
+            this.comboBoxSaleArea = new System.Windows.Forms.ComboBox();
+            this.lblSaleArea = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -56,7 +56,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel11, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button5, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnClear, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnSave, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel7, 3, 0);
@@ -76,8 +76,8 @@
             this.tableLayoutPanel11.ColumnCount = 1;
             this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel11, 5);
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel11.Controls.Add(this.textBox1, 0, 1);
-            this.tableLayoutPanel11.Controls.Add(this.label3, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.txtLocation, 0, 1);
+            this.tableLayoutPanel11.Controls.Add(this.lblLocation, 0, 0);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 183);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
@@ -87,41 +87,41 @@
             this.tableLayoutPanel11.Size = new System.Drawing.Size(794, 101);
             this.tableLayoutPanel11.TabIndex = 91;
             // 
-            // textBox1
+            // txtLocation
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox1.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox1.Location = new System.Drawing.Point(3, 53);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(788, 45);
-            this.textBox1.TabIndex = 80;
+            this.txtLocation.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtLocation.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtLocation.Location = new System.Drawing.Point(3, 53);
+            this.txtLocation.Multiline = true;
+            this.txtLocation.Name = "txtLocation";
+            this.txtLocation.Size = new System.Drawing.Size(788, 45);
+            this.txtLocation.TabIndex = 80;
             // 
-            // label3
+            // lblLocation
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.Control;
-            this.label3.CausesValidation = false;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(788, 50);
-            this.label3.TabIndex = 81;
-            this.label3.Text = "Location:";
+            this.lblLocation.AutoSize = true;
+            this.lblLocation.BackColor = System.Drawing.SystemColors.Control;
+            this.lblLocation.CausesValidation = false;
+            this.lblLocation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblLocation.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblLocation.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblLocation.Location = new System.Drawing.Point(3, 0);
+            this.lblLocation.Name = "lblLocation";
+            this.lblLocation.Size = new System.Drawing.Size(788, 50);
+            this.lblLocation.TabIndex = 81;
+            this.lblLocation.Text = "Location:";
             // 
-            // button5
+            // btnClear
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.Font = new System.Drawing.Font("新細明體", 32F);
-            this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button5.Location = new System.Drawing.Point(483, 385);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(154, 62);
-            this.button5.TabIndex = 71;
-            this.button5.Text = "Clear";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnClear.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnClear.Font = new System.Drawing.Font("新細明體", 32F);
+            this.btnClear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClear.Location = new System.Drawing.Point(483, 385);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(154, 62);
+            this.btnClear.TabIndex = 71;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
             // 
             // btnSave
             // 
@@ -139,8 +139,8 @@
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.lblSpareType, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.comboBoxSpareType, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.lblManager, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.comboBoxManager, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(163, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -150,37 +150,37 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(154, 101);
             this.tableLayoutPanel3.TabIndex = 83;
             // 
-            // lblSpareType
+            // lblManager
             // 
-            this.lblSpareType.AutoSize = true;
-            this.lblSpareType.BackColor = System.Drawing.SystemColors.Control;
-            this.lblSpareType.CausesValidation = false;
-            this.lblSpareType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareType.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblSpareType.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSpareType.Location = new System.Drawing.Point(3, 0);
-            this.lblSpareType.Name = "lblSpareType";
-            this.lblSpareType.Size = new System.Drawing.Size(148, 50);
-            this.lblSpareType.TabIndex = 48;
-            this.lblSpareType.Text = "Manager:";
+            this.lblManager.AutoSize = true;
+            this.lblManager.BackColor = System.Drawing.SystemColors.Control;
+            this.lblManager.CausesValidation = false;
+            this.lblManager.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblManager.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblManager.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblManager.Location = new System.Drawing.Point(3, 0);
+            this.lblManager.Name = "lblManager";
+            this.lblManager.Size = new System.Drawing.Size(148, 50);
+            this.lblManager.TabIndex = 48;
+            this.lblManager.Text = "Manager:";
             // 
-            // comboBoxSpareType
+            // comboBoxManager
             // 
-            this.comboBoxSpareType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSpareType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBoxSpareType.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBoxSpareType.FormattingEnabled = true;
-            this.comboBoxSpareType.Location = new System.Drawing.Point(3, 53);
-            this.comboBoxSpareType.Name = "comboBoxSpareType";
-            this.comboBoxSpareType.Size = new System.Drawing.Size(148, 41);
-            this.comboBoxSpareType.TabIndex = 45;
+            this.comboBoxManager.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxManager.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxManager.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxManager.FormattingEnabled = true;
+            this.comboBoxManager.Location = new System.Drawing.Point(3, 53);
+            this.comboBoxManager.Name = "comboBoxManager";
+            this.comboBoxManager.Size = new System.Drawing.Size(148, 41);
+            this.comboBoxManager.TabIndex = 45;
             // 
             // tableLayoutPanel7
             // 
             this.tableLayoutPanel7.ColumnCount = 1;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.Controls.Add(this.comboBox1, 0, 1);
-            this.tableLayoutPanel7.Controls.Add(this.lblSupplierID, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.comboBoxSaleArea, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.lblSaleArea, 0, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(483, 3);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -190,30 +190,30 @@
             this.tableLayoutPanel7.Size = new System.Drawing.Size(154, 101);
             this.tableLayoutPanel7.TabIndex = 87;
             // 
-            // comboBox1
+            // comboBoxSaleArea
             // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBox1.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(3, 53);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(148, 41);
-            this.comboBox1.TabIndex = 61;
+            this.comboBoxSaleArea.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxSaleArea.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxSaleArea.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSaleArea.FormattingEnabled = true;
+            this.comboBoxSaleArea.Location = new System.Drawing.Point(3, 53);
+            this.comboBoxSaleArea.Name = "comboBoxSaleArea";
+            this.comboBoxSaleArea.Size = new System.Drawing.Size(148, 41);
+            this.comboBoxSaleArea.TabIndex = 61;
             // 
-            // lblSupplierID
+            // lblSaleArea
             // 
-            this.lblSupplierID.AutoSize = true;
-            this.lblSupplierID.BackColor = System.Drawing.SystemColors.Control;
-            this.lblSupplierID.CausesValidation = false;
-            this.lblSupplierID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSupplierID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblSupplierID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSupplierID.Location = new System.Drawing.Point(3, 0);
-            this.lblSupplierID.Name = "lblSupplierID";
-            this.lblSupplierID.Size = new System.Drawing.Size(148, 50);
-            this.lblSupplierID.TabIndex = 60;
-            this.lblSupplierID.Text = "SaleArea:";
+            this.lblSaleArea.AutoSize = true;
+            this.lblSaleArea.BackColor = System.Drawing.SystemColors.Control;
+            this.lblSaleArea.CausesValidation = false;
+            this.lblSaleArea.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblSaleArea.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSaleArea.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSaleArea.Location = new System.Drawing.Point(3, 0);
+            this.lblSaleArea.Name = "lblSaleArea";
+            this.lblSaleArea.Size = new System.Drawing.Size(148, 50);
+            this.lblSaleArea.TabIndex = 60;
+            this.lblSaleArea.Text = "SaleArea:";
             // 
             // frmAddWarehouse
             // 
@@ -238,15 +238,15 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox txtLocation;
+        private System.Windows.Forms.Label lblLocation;
+        public System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Label lblSpareType;
-        public System.Windows.Forms.ComboBox comboBoxSpareType;
+        private System.Windows.Forms.Label lblManager;
+        public System.Windows.Forms.ComboBox comboBoxManager;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        public System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label lblSupplierID;
+        public System.Windows.Forms.ComboBox comboBoxSaleArea;
+        private System.Windows.Forms.Label lblSaleArea;
     }
 }

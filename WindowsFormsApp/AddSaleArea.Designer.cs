@@ -30,12 +30,12 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txtRemark = new System.Windows.Forms.TextBox();
+            this.lblRemark = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.lblSpareType = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.txtLocation = new System.Windows.Forms.TextBox();
+            this.lblSpareLocation = new System.Windows.Forms.Label();
+            this.btnClear = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
@@ -53,7 +53,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel11, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button5, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnClear, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnSave, 1, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -71,8 +71,8 @@
             this.tableLayoutPanel11.ColumnCount = 1;
             this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel11, 5);
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel11.Controls.Add(this.textBox1, 0, 1);
-            this.tableLayoutPanel11.Controls.Add(this.label3, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.txtRemark, 0, 1);
+            this.tableLayoutPanel11.Controls.Add(this.lblRemark, 0, 0);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 183);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
@@ -82,37 +82,37 @@
             this.tableLayoutPanel11.Size = new System.Drawing.Size(794, 101);
             this.tableLayoutPanel11.TabIndex = 91;
             // 
-            // textBox1
+            // txtRemark
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox1.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox1.Location = new System.Drawing.Point(3, 53);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(788, 45);
-            this.textBox1.TabIndex = 80;
+            this.txtRemark.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtRemark.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtRemark.Location = new System.Drawing.Point(3, 53);
+            this.txtRemark.Multiline = true;
+            this.txtRemark.Name = "txtRemark";
+            this.txtRemark.Size = new System.Drawing.Size(788, 45);
+            this.txtRemark.TabIndex = 80;
             // 
-            // label3
+            // lblRemark
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.Control;
-            this.label3.CausesValidation = false;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(788, 50);
-            this.label3.TabIndex = 81;
-            this.label3.Text = "remark:";
+            this.lblRemark.AutoSize = true;
+            this.lblRemark.BackColor = System.Drawing.SystemColors.Control;
+            this.lblRemark.CausesValidation = false;
+            this.lblRemark.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblRemark.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblRemark.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblRemark.Location = new System.Drawing.Point(3, 0);
+            this.lblRemark.Name = "lblRemark";
+            this.lblRemark.Size = new System.Drawing.Size(788, 50);
+            this.lblRemark.TabIndex = 81;
+            this.lblRemark.Text = "Remark:";
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel3, 5);
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.textBox2, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.lblSpareType, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.txtLocation, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.lblSpareLocation, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -122,41 +122,41 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(794, 101);
             this.tableLayoutPanel3.TabIndex = 83;
             // 
-            // textBox2
+            // txtLocation
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox2.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox2.Location = new System.Drawing.Point(3, 53);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(788, 45);
-            this.textBox2.TabIndex = 81;
+            this.txtLocation.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtLocation.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtLocation.Location = new System.Drawing.Point(3, 53);
+            this.txtLocation.Multiline = true;
+            this.txtLocation.Name = "txtLocation";
+            this.txtLocation.Size = new System.Drawing.Size(788, 45);
+            this.txtLocation.TabIndex = 81;
             // 
-            // lblSpareType
+            // lblSpareLocation
             // 
-            this.lblSpareType.AutoSize = true;
-            this.lblSpareType.BackColor = System.Drawing.SystemColors.Control;
-            this.lblSpareType.CausesValidation = false;
-            this.lblSpareType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareType.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblSpareType.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSpareType.Location = new System.Drawing.Point(3, 0);
-            this.lblSpareType.Name = "lblSpareType";
-            this.lblSpareType.Size = new System.Drawing.Size(788, 50);
-            this.lblSpareType.TabIndex = 48;
-            this.lblSpareType.Text = "Location:";
+            this.lblSpareLocation.AutoSize = true;
+            this.lblSpareLocation.BackColor = System.Drawing.SystemColors.Control;
+            this.lblSpareLocation.CausesValidation = false;
+            this.lblSpareLocation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblSpareLocation.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareLocation.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSpareLocation.Location = new System.Drawing.Point(3, 0);
+            this.lblSpareLocation.Name = "lblSpareLocation";
+            this.lblSpareLocation.Size = new System.Drawing.Size(788, 50);
+            this.lblSpareLocation.TabIndex = 48;
+            this.lblSpareLocation.Text = "Location:";
             // 
-            // button5
+            // btnClear
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.Font = new System.Drawing.Font("新細明體", 32F);
-            this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button5.Location = new System.Drawing.Point(483, 385);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(154, 62);
-            this.button5.TabIndex = 71;
-            this.button5.Text = "Clear";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnClear.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnClear.Font = new System.Drawing.Font("新細明體", 32F);
+            this.btnClear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClear.Location = new System.Drawing.Point(483, 385);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(154, 62);
+            this.btnClear.TabIndex = 71;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
             // 
             // btnSave
             // 
@@ -191,12 +191,12 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtRemark;
+        private System.Windows.Forms.Label lblRemark;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Label lblSpareType;
-        public System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label lblSpareLocation;
+        public System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtLocation;
     }
 }
