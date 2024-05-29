@@ -58,7 +58,7 @@ namespace WindowsFormsApp
 
         }
 
-        //not done
+
         public bool updateBySql(String sql)
         {
             try
@@ -156,7 +156,7 @@ namespace WindowsFormsApp
             //}
         }
 
-        public MySqlDataReader readWhere(String table, String condition)
+        public MySqlDataReader readAll(String table, String condition)
         {
             String sql = $"SELECT * FROM {table} Where {condition};";
             return this.readBySql(sql);
