@@ -79,9 +79,10 @@
             this.lblWrongPassword.Location = new System.Drawing.Point(79, 404);
             this.lblWrongPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWrongPassword.Name = "lblWrongPassword";
-            this.lblWrongPassword.Size = new System.Drawing.Size(114, 15);
+            this.lblWrongPassword.Size = new System.Drawing.Size(223, 15);
             this.lblWrongPassword.TabIndex = 18;
-            this.lblWrongPassword.Text = "wrong password";
+            this.lblWrongPassword.Text = "Login name or password is wrong";
+            this.lblWrongPassword.Visible = false;
             // 
             // lblLogInAccount
             // 

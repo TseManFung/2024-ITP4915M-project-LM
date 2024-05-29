@@ -16,9 +16,11 @@ namespace WindowsFormsApp
         public static sshdatabase db = new sshdatabase();
 
         bool isLogin = false;
-        public void SetIsLogin(bool succ)
+        int userID;
+        public void SetIsLogin(int id)
         {
-            this.isLogin = succ;
+            this.isLogin = true;
+            this.userID  = id;
         }
         public Main()
         {
