@@ -18,10 +18,6 @@ namespace WindowsFormsApp
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            ForTest = !ForTest;
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -29,5 +25,7 @@ namespace WindowsFormsApp
             tableLayoutPanel6.Visible = tableLayoutPanel7.Visible = ForTest;
             tableLayoutPanel9.Visible = tableLayoutPanel10.Visible = tableLayoutPanel11.Visible = tableLayoutPanel13.Visible = !ForTest;
         }
+
+
     }
 }
