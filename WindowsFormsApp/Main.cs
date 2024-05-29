@@ -46,6 +46,17 @@ namespace WindowsFormsApp
             pContent.Controls.Add(frm);
             frm.Show();
             lblTitle.Text = frm.Text;
+
+            if (lblTitle.Text == "Login" || lblTitle.Text == "Main Menu")
+            {
+                pictureBoxBack.Visible = false;
+                lblTitle.Cursor = Cursors.Arrow;
+            }
+            else
+            {
+
+                pictureBoxBack.Visible = true;
+                lblTitle.Cursor = Cursors.Hand;}
         }
 
 
@@ -57,9 +68,13 @@ namespace WindowsFormsApp
 
         private void lblTitle_Click_1(object sender, EventArgs e) { 
         
-            //if(this.isLogin){
+            if (lblTitle.Text == "Login" || lblTitle.Text == "Main Menu")
+            {
+                return;
+            }
+            if(this.isLogin){
                 this.Change_pContent(typeof(frmMenu));
-            //}
+            }
         }
 
         private void pictureBoxLanguage_Click(object sender, EventArgs e)
