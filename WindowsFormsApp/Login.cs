@@ -26,8 +26,9 @@ namespace WindowsFormsApp
         {
             try{
                  int id =Main.db.getUserID(textBox1.Text, textBox2.Text);
-                (this.ParentForm as Main)?.Change_pContent(typeof(frmMenu));
                 (this.ParentForm as Main)?.SetIsLogin(id);
+                (this.ParentForm as Main)?.Change_pContent(typeof(frmMenu));
+
             }
             catch (Exception ex)
             {
