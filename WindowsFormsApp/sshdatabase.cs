@@ -25,6 +25,11 @@ namespace WindowsFormsApp
             this.dbConnect();
         }
 
+        public MySqlConnection get_dbconnect()
+        {
+            return dbconnect;
+        }
+
 
         public void insertBySql(String sql)
         {
@@ -97,7 +102,7 @@ namespace WindowsFormsApp
             {
                 byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(raw));
                 StringBuilder builder = new StringBuilder();
-                for(int i = 0;i < bytes.Length; i++)
+                for (int i = 0; i < bytes.Length; i++)
                 {
                     builder.Append(bytes[i].ToString("x2"));
                 }
@@ -105,7 +110,8 @@ namespace WindowsFormsApp
             }
         }
 
-        public int getUserID(string loginName,string pw){
+        public int getUserID(string loginName, string pw)
+        {
             string sql = "SELECT `UserID` FROM `User` WHERE `LoginName` = @loginName AND `Password` = @pw";
             int count = 0;
             int id = 0;
@@ -120,7 +126,7 @@ namespace WindowsFormsApp
                     while (reader.Read())
                     {
                         count++;
-                        id = (int) reader["UserID"];
+                        id = (int)reader["UserID"];
 
                     }
                 }
