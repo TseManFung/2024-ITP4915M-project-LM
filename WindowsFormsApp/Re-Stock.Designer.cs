@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridViewItemFollowingROL = new System.Windows.Forms.DataGridView();
+            this.dgvItemFollowingROL = new System.Windows.Forms.DataGridView();
             this.lblItemFollowingROL = new System.Windows.Forms.Label();
             this.lblReStock = new System.Windows.Forms.Label();
-            this.dataGridViewRestock = new System.Windows.Forms.DataGridView();
+            this.dgvRestock = new System.Windows.Forms.DataGridView();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItemFollowingROL)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRestock)).BeginInit();
+            this.btnMovedown = new System.Windows.Forms.Button();
+            this.btnMoveUp = new System.Windows.Forms.Button();
+            this.btnReStockConfirm = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItemFollowingROL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRestock)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridViewItemFollowingROL
+            // dgvItemFollowingROL
             // 
-            this.dataGridViewItemFollowingROL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel1.SetColumnSpan(this.dataGridViewItemFollowingROL, 5);
-            this.dataGridViewItemFollowingROL.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewItemFollowingROL.Location = new System.Drawing.Point(3, 31);
-            this.dataGridViewItemFollowingROL.Name = "dataGridViewItemFollowingROL";
-            this.dataGridViewItemFollowingROL.RowTemplate.Height = 24;
-            this.dataGridViewItemFollowingROL.Size = new System.Drawing.Size(1094, 218);
-            this.dataGridViewItemFollowingROL.TabIndex = 72;
+            this.dgvItemFollowingROL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel1.SetColumnSpan(this.dgvItemFollowingROL, 5);
+            this.dgvItemFollowingROL.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvItemFollowingROL.Location = new System.Drawing.Point(3, 31);
+            this.dgvItemFollowingROL.Name = "dgvItemFollowingROL";
+            this.dgvItemFollowingROL.RowTemplate.Height = 24;
+            this.dgvItemFollowingROL.Size = new System.Drawing.Size(1094, 218);
+            this.dgvItemFollowingROL.TabIndex = 72;
             // 
             // lblItemFollowingROL
             // 
@@ -78,16 +78,16 @@
             this.lblReStock.TabIndex = 74;
             this.lblReStock.Text = "Restock:";
             // 
-            // dataGridViewRestock
+            // dgvRestock
             // 
-            this.dataGridViewRestock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel1.SetColumnSpan(this.dataGridViewRestock, 5);
-            this.dataGridViewRestock.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewRestock.Location = new System.Drawing.Point(3, 339);
-            this.dataGridViewRestock.Name = "dataGridViewRestock";
-            this.dataGridViewRestock.RowTemplate.Height = 24;
-            this.dataGridViewRestock.Size = new System.Drawing.Size(1094, 162);
-            this.dataGridViewRestock.TabIndex = 75;
+            this.dgvRestock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel1.SetColumnSpan(this.dgvRestock, 5);
+            this.dgvRestock.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvRestock.Location = new System.Drawing.Point(3, 339);
+            this.dgvRestock.Name = "dgvRestock";
+            this.dgvRestock.RowTemplate.Height = 24;
+            this.dgvRestock.Size = new System.Drawing.Size(1094, 162);
+            this.dgvRestock.TabIndex = 75;
             // 
             // btnConfirm
             // 
@@ -107,13 +107,13 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.Controls.Add(this.button2, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnMovedown, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.lblItemFollowingROL, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.dataGridViewItemFollowingROL, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.dataGridViewRestock, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.btnMoveUp, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.dgvItemFollowingROL, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.dgvRestock, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.lblReStock, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 4, 5);
+            this.tableLayoutPanel1.Controls.Add(this.btnReStockConfirm, 4, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -127,38 +127,38 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1100, 561);
             this.tableLayoutPanel1.TabIndex = 77;
             // 
-            // button2
+            // btnMovedown
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("新細明體", 24F);
-            this.button2.Location = new System.Drawing.Point(718, 255);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(49, 50);
-            this.button2.TabIndex = 79;
-            this.button2.Text = "↓";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnMovedown.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMovedown.Font = new System.Drawing.Font("新細明體", 24F);
+            this.btnMovedown.Location = new System.Drawing.Point(718, 255);
+            this.btnMovedown.Name = "btnMovedown";
+            this.btnMovedown.Size = new System.Drawing.Size(49, 50);
+            this.btnMovedown.TabIndex = 79;
+            this.btnMovedown.Text = "↓";
+            this.btnMovedown.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnMoveUp
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("新細明體", 24F);
-            this.button1.Location = new System.Drawing.Point(333, 255);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(49, 50);
-            this.button1.TabIndex = 78;
-            this.button1.Text = "↑";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnMoveUp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMoveUp.Font = new System.Drawing.Font("新細明體", 24F);
+            this.btnMoveUp.Location = new System.Drawing.Point(333, 255);
+            this.btnMoveUp.Name = "btnMoveUp";
+            this.btnMoveUp.Size = new System.Drawing.Size(49, 50);
+            this.btnMoveUp.TabIndex = 78;
+            this.btnMoveUp.Text = "↑";
+            this.btnMoveUp.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnReStockConfirm
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Font = new System.Drawing.Font("新細明體", 24F);
-            this.button3.Location = new System.Drawing.Point(773, 507);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(324, 51);
-            this.button3.TabIndex = 80;
-            this.button3.Text = "Confirm";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnReStockConfirm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnReStockConfirm.Font = new System.Drawing.Font("新細明體", 24F);
+            this.btnReStockConfirm.Location = new System.Drawing.Point(773, 507);
+            this.btnReStockConfirm.Name = "btnReStockConfirm";
+            this.btnReStockConfirm.Size = new System.Drawing.Size(324, 51);
+            this.btnReStockConfirm.TabIndex = 80;
+            this.btnReStockConfirm.Text = "Confirm";
+            this.btnReStockConfirm.UseVisualStyleBackColor = true;
             // 
             // frmReStock
             // 
@@ -169,8 +169,8 @@
             this.Controls.Add(this.btnConfirm);
             this.Name = "frmReStock";
             this.Text = "Re-stock";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItemFollowingROL)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRestock)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItemFollowingROL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRestock)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -178,14 +178,14 @@
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridViewItemFollowingROL;
+        private System.Windows.Forms.DataGridView dgvItemFollowingROL;
         private System.Windows.Forms.Label lblItemFollowingROL;
         private System.Windows.Forms.Label lblReStock;
-        private System.Windows.Forms.DataGridView dataGridViewRestock;
+        private System.Windows.Forms.DataGridView dgvRestock;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnMoveUp;
+        private System.Windows.Forms.Button btnMovedown;
+        private System.Windows.Forms.Button btnReStockConfirm;
     }
 }

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCamera = new System.Windows.Forms.Label();
             this.cboCamera = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.picCamera = new System.Windows.Forms.PictureBox();
@@ -36,17 +36,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.picCamera)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblCamera
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 90);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Camera:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.lblCamera.AutoSize = true;
+            this.lblCamera.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCamera.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblCamera.Location = new System.Drawing.Point(3, 0);
+            this.lblCamera.Name = "lblCamera";
+            this.lblCamera.Size = new System.Drawing.Size(129, 90);
+            this.lblCamera.TabIndex = 0;
+            this.lblCamera.Text = "Camera:";
+            this.lblCamera.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // cboCamera
             // 
@@ -68,7 +68,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.Controls.Add(this.picCamera, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.cboCamera, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblCamera, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -109,7 +109,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCamera;
         private System.Windows.Forms.ComboBox cboCamera;
         private System.Windows.Forms.PictureBox picCamera;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;

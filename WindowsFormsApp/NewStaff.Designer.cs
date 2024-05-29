@@ -30,36 +30,36 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblReOrderLevel = new System.Windows.Forms.Label();
+            this.lblGender = new System.Windows.Forms.Label();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbMale = new System.Windows.Forms.RadioButton();
+            this.rbFemale = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.lblSupplierID = new System.Windows.Forms.Label();
             this.txtSupplierID = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.lblSpareWeight = new System.Windows.Forms.Label();
+            this.comboBoxDepartment = new System.Windows.Forms.ComboBox();
+            this.lblDepartment = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.lblPrice = new System.Windows.Forms.Label();
+            this.comboBoxSaleArea = new System.Windows.Forms.ComboBox();
+            this.lblSaleArea = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.txtSpareName = new System.Windows.Forms.TextBox();
             this.lblSpareName = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblSpareType = new System.Windows.Forms.Label();
-            this.comboBoxSpareType = new System.Windows.Forms.ComboBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.lblPosition = new System.Windows.Forms.Label();
+            this.comboBoxPosition = new System.Windows.Forms.ComboBox();
+            this.btnClear = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblAreYouNewStaff = new System.Windows.Forms.Label();
             this.radYes = new System.Windows.Forms.RadioButton();
             this.radNo = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.comboBoxStaffID = new System.Windows.Forms.ComboBox();
+            this.lblStaffID = new System.Windows.Forms.Label();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.tableLayoutPanel13.SuspendLayout();
@@ -103,7 +103,7 @@
             // 
             this.tableLayoutPanel8.ColumnCount = 1;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.Controls.Add(this.lblReOrderLevel, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.lblGender, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.tableLayoutPanel13, 0, 1);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 160);
@@ -114,27 +114,27 @@
             this.tableLayoutPanel8.Size = new System.Drawing.Size(367, 101);
             this.tableLayoutPanel8.TabIndex = 88;
             // 
-            // lblReOrderLevel
+            // lblGender
             // 
-            this.lblReOrderLevel.AutoSize = true;
-            this.lblReOrderLevel.BackColor = System.Drawing.SystemColors.Control;
-            this.lblReOrderLevel.CausesValidation = false;
-            this.lblReOrderLevel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblReOrderLevel.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblReOrderLevel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblReOrderLevel.Location = new System.Drawing.Point(3, 0);
-            this.lblReOrderLevel.Name = "lblReOrderLevel";
-            this.lblReOrderLevel.Size = new System.Drawing.Size(361, 50);
-            this.lblReOrderLevel.TabIndex = 69;
-            this.lblReOrderLevel.Text = "Gender:";
+            this.lblGender.AutoSize = true;
+            this.lblGender.BackColor = System.Drawing.SystemColors.Control;
+            this.lblGender.CausesValidation = false;
+            this.lblGender.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblGender.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblGender.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblGender.Location = new System.Drawing.Point(3, 0);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(361, 50);
+            this.lblGender.TabIndex = 69;
+            this.lblGender.Text = "Gender:";
             // 
             // tableLayoutPanel13
             // 
             this.tableLayoutPanel13.ColumnCount = 2;
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel13.Controls.Add(this.radioButton1, 0, 0);
-            this.tableLayoutPanel13.Controls.Add(this.radioButton2, 1, 0);
+            this.tableLayoutPanel13.Controls.Add(this.rbMale, 0, 0);
+            this.tableLayoutPanel13.Controls.Add(this.rbFemale, 1, 0);
             this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel13.Location = new System.Drawing.Point(3, 53);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
@@ -144,29 +144,29 @@
             this.tableLayoutPanel13.Size = new System.Drawing.Size(361, 45);
             this.tableLayoutPanel13.TabIndex = 70;
             // 
-            // radioButton1
+            // rbMale
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("新細明體", 20.25F);
-            this.radioButton1.Location = new System.Drawing.Point(3, 3);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(82, 31);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbMale.AutoSize = true;
+            this.rbMale.Font = new System.Drawing.Font("新細明體", 20.25F);
+            this.rbMale.Location = new System.Drawing.Point(3, 3);
+            this.rbMale.Name = "rbMale";
+            this.rbMale.Size = new System.Drawing.Size(82, 31);
+            this.rbMale.TabIndex = 0;
+            this.rbMale.TabStop = true;
+            this.rbMale.Text = "Male";
+            this.rbMale.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbFemale
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("新細明體", 20.25F);
-            this.radioButton2.Location = new System.Drawing.Point(183, 3);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(104, 31);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbFemale.AutoSize = true;
+            this.rbFemale.Font = new System.Drawing.Font("新細明體", 20.25F);
+            this.rbFemale.Location = new System.Drawing.Point(183, 3);
+            this.rbFemale.Name = "rbFemale";
+            this.rbFemale.Size = new System.Drawing.Size(104, 31);
+            this.rbFemale.TabIndex = 1;
+            this.rbFemale.TabStop = true;
+            this.rbFemale.Text = "Female";
+            this.rbFemale.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel7
             // 
@@ -211,8 +211,8 @@
             // 
             this.tableLayoutPanel6.ColumnCount = 1;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Controls.Add(this.comboBox2, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.lblSpareWeight, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.comboBoxDepartment, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.lblDepartment, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(1122, 3);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -222,37 +222,37 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(367, 101);
             this.tableLayoutPanel6.TabIndex = 86;
             // 
-            // comboBox2
+            // comboBoxDepartment
             // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBox2.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(3, 53);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(361, 41);
-            this.comboBox2.TabIndex = 75;
+            this.comboBoxDepartment.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxDepartment.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxDepartment.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxDepartment.FormattingEnabled = true;
+            this.comboBoxDepartment.Location = new System.Drawing.Point(3, 53);
+            this.comboBoxDepartment.Name = "comboBoxDepartment";
+            this.comboBoxDepartment.Size = new System.Drawing.Size(361, 41);
+            this.comboBoxDepartment.TabIndex = 75;
             // 
-            // lblSpareWeight
+            // lblDepartment
             // 
-            this.lblSpareWeight.AutoSize = true;
-            this.lblSpareWeight.BackColor = System.Drawing.SystemColors.Control;
-            this.lblSpareWeight.CausesValidation = false;
-            this.lblSpareWeight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareWeight.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblSpareWeight.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSpareWeight.Location = new System.Drawing.Point(3, 0);
-            this.lblSpareWeight.Name = "lblSpareWeight";
-            this.lblSpareWeight.Size = new System.Drawing.Size(361, 50);
-            this.lblSpareWeight.TabIndex = 58;
-            this.lblSpareWeight.Text = "Department:";
+            this.lblDepartment.AutoSize = true;
+            this.lblDepartment.BackColor = System.Drawing.SystemColors.Control;
+            this.lblDepartment.CausesValidation = false;
+            this.lblDepartment.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDepartment.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblDepartment.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblDepartment.Location = new System.Drawing.Point(3, 0);
+            this.lblDepartment.Name = "lblDepartment";
+            this.lblDepartment.Size = new System.Drawing.Size(361, 50);
+            this.lblDepartment.TabIndex = 58;
+            this.lblDepartment.Text = "Department:";
             // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Controls.Add(this.comboBox1, 0, 1);
-            this.tableLayoutPanel5.Controls.Add(this.lblPrice, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.comboBoxSaleArea, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.lblSaleArea, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(749, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -262,30 +262,30 @@
             this.tableLayoutPanel5.Size = new System.Drawing.Size(367, 101);
             this.tableLayoutPanel5.TabIndex = 85;
             // 
-            // comboBox1
+            // comboBoxSaleArea
             // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBox1.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(3, 53);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(361, 41);
-            this.comboBox1.TabIndex = 74;
+            this.comboBoxSaleArea.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxSaleArea.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxSaleArea.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSaleArea.FormattingEnabled = true;
+            this.comboBoxSaleArea.Location = new System.Drawing.Point(3, 53);
+            this.comboBoxSaleArea.Name = "comboBoxSaleArea";
+            this.comboBoxSaleArea.Size = new System.Drawing.Size(361, 41);
+            this.comboBoxSaleArea.TabIndex = 74;
             // 
-            // lblPrice
+            // lblSaleArea
             // 
-            this.lblPrice.AutoSize = true;
-            this.lblPrice.BackColor = System.Drawing.SystemColors.Control;
-            this.lblPrice.CausesValidation = false;
-            this.lblPrice.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblPrice.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblPrice.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPrice.Location = new System.Drawing.Point(3, 0);
-            this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(361, 50);
-            this.lblPrice.TabIndex = 73;
-            this.lblPrice.Text = "SaleArea:";
+            this.lblSaleArea.AutoSize = true;
+            this.lblSaleArea.BackColor = System.Drawing.SystemColors.Control;
+            this.lblSaleArea.CausesValidation = false;
+            this.lblSaleArea.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblSaleArea.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSaleArea.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSaleArea.Location = new System.Drawing.Point(3, 0);
+            this.lblSaleArea.Name = "lblSaleArea";
+            this.lblSaleArea.Size = new System.Drawing.Size(361, 50);
+            this.lblSaleArea.TabIndex = 73;
+            this.lblSaleArea.Text = "SaleArea:";
             // 
             // tableLayoutPanel4
             // 
@@ -330,8 +330,8 @@
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.lblSpareType, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.comboBoxSpareType, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.lblPosition, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.comboBoxPosition, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -341,42 +341,42 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(367, 101);
             this.tableLayoutPanel3.TabIndex = 83;
             // 
-            // lblSpareType
+            // lblPosition
             // 
-            this.lblSpareType.AutoSize = true;
-            this.lblSpareType.BackColor = System.Drawing.SystemColors.Control;
-            this.lblSpareType.CausesValidation = false;
-            this.lblSpareType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareType.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblSpareType.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSpareType.Location = new System.Drawing.Point(3, 0);
-            this.lblSpareType.Name = "lblSpareType";
-            this.lblSpareType.Size = new System.Drawing.Size(361, 50);
-            this.lblSpareType.TabIndex = 48;
-            this.lblSpareType.Text = "Position:";
+            this.lblPosition.AutoSize = true;
+            this.lblPosition.BackColor = System.Drawing.SystemColors.Control;
+            this.lblPosition.CausesValidation = false;
+            this.lblPosition.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPosition.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblPosition.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblPosition.Location = new System.Drawing.Point(3, 0);
+            this.lblPosition.Name = "lblPosition";
+            this.lblPosition.Size = new System.Drawing.Size(361, 50);
+            this.lblPosition.TabIndex = 48;
+            this.lblPosition.Text = "Position:";
             // 
-            // comboBoxSpareType
+            // comboBoxPosition
             // 
-            this.comboBoxSpareType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSpareType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBoxSpareType.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBoxSpareType.FormattingEnabled = true;
-            this.comboBoxSpareType.Location = new System.Drawing.Point(3, 53);
-            this.comboBoxSpareType.Name = "comboBoxSpareType";
-            this.comboBoxSpareType.Size = new System.Drawing.Size(361, 41);
-            this.comboBoxSpareType.TabIndex = 45;
+            this.comboBoxPosition.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxPosition.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxPosition.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxPosition.FormattingEnabled = true;
+            this.comboBoxPosition.Location = new System.Drawing.Point(3, 53);
+            this.comboBoxPosition.Name = "comboBoxPosition";
+            this.comboBoxPosition.Size = new System.Drawing.Size(361, 41);
+            this.comboBoxPosition.TabIndex = 45;
             // 
-            // button5
+            // btnClear
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.Font = new System.Drawing.Font("新細明體", 32F);
-            this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button5.Location = new System.Drawing.Point(1122, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(367, 47);
-            this.button5.TabIndex = 71;
-            this.button5.Text = "Clear";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnClear.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnClear.Font = new System.Drawing.Font("新細明體", 32F);
+            this.btnClear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClear.Location = new System.Drawing.Point(1122, 3);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(367, 47);
+            this.btnClear.TabIndex = 71;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
             // 
             // btnSave
             // 
@@ -395,7 +395,7 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lblAreYouNewStaff, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.radYes, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.radNo, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -407,18 +407,18 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1865, 107);
             this.tableLayoutPanel2.TabIndex = 93;
             // 
-            // label1
+            // lblAreYouNewStaff
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.tableLayoutPanel2.SetRowSpan(this.label1, 2);
-            this.label1.Size = new System.Drawing.Size(926, 107);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Are you new staff?";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblAreYouNewStaff.AutoSize = true;
+            this.lblAreYouNewStaff.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblAreYouNewStaff.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold);
+            this.lblAreYouNewStaff.Location = new System.Drawing.Point(3, 0);
+            this.lblAreYouNewStaff.Name = "lblAreYouNewStaff";
+            this.tableLayoutPanel2.SetRowSpan(this.lblAreYouNewStaff, 2);
+            this.lblAreYouNewStaff.Size = new System.Drawing.Size(926, 107);
+            this.lblAreYouNewStaff.TabIndex = 0;
+            this.lblAreYouNewStaff.Text = "Are you new staff?";
+            this.lblAreYouNewStaff.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // radYes
             // 
@@ -471,8 +471,8 @@
             this.tableLayoutPanel12.ColumnCount = 2;
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Controls.Add(this.comboBox3, 0, 0);
-            this.tableLayoutPanel12.Controls.Add(this.label4, 0, 0);
+            this.tableLayoutPanel12.Controls.Add(this.comboBoxStaffID, 0, 0);
+            this.tableLayoutPanel12.Controls.Add(this.lblStaffID, 0, 0);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel12.Location = new System.Drawing.Point(3, 116);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
@@ -483,17 +483,28 @@
             this.tableLayoutPanel12.TabIndex = 94;
             this.tableLayoutPanel12.Visible = false;
             // 
-            // label4
+            // comboBoxStaffID
             // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(926, 107);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Staff ID:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.comboBoxStaffID.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBoxStaffID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxStaffID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxStaffID.FormattingEnabled = true;
+            this.comboBoxStaffID.Location = new System.Drawing.Point(935, 33);
+            this.comboBoxStaffID.Name = "comboBoxStaffID";
+            this.comboBoxStaffID.Size = new System.Drawing.Size(226, 41);
+            this.comboBoxStaffID.TabIndex = 75;
+            // 
+            // lblStaffID
+            // 
+            this.lblStaffID.AutoSize = true;
+            this.lblStaffID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblStaffID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold);
+            this.lblStaffID.Location = new System.Drawing.Point(3, 0);
+            this.lblStaffID.Name = "lblStaffID";
+            this.lblStaffID.Size = new System.Drawing.Size(926, 107);
+            this.lblStaffID.TabIndex = 1;
+            this.lblStaffID.Text = "Staff ID:";
+            this.lblStaffID.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // tableLayoutPanel9
             // 
@@ -504,7 +515,7 @@
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel9.Controls.Add(this.btnSave, 1, 0);
-            this.tableLayoutPanel9.Controls.Add(this.button5, 3, 0);
+            this.tableLayoutPanel9.Controls.Add(this.btnClear, 3, 0);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 570);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
@@ -513,17 +524,6 @@
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel9.Size = new System.Drawing.Size(1865, 53);
             this.tableLayoutPanel9.TabIndex = 95;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBox3.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(935, 33);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(226, 41);
-            this.comboBox3.TabIndex = 75;
             // 
             // frmNewStaff
             // 
@@ -563,35 +563,35 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.Label lblReOrderLevel;
+        private System.Windows.Forms.Label lblGender;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label lblSupplierID;
         private System.Windows.Forms.TextBox txtSupplierID;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Label lblSpareWeight;
+        private System.Windows.Forms.Label lblDepartment;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.Label lblSaleArea;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TextBox txtSpareName;
         private System.Windows.Forms.Label lblSpareName;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Label lblSpareType;
-        public System.Windows.Forms.ComboBox comboBoxSpareType;
-        public System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label lblPosition;
+        public System.Windows.Forms.ComboBox comboBoxPosition;
+        public System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblAreYouNewStaff;
         private System.Windows.Forms.RadioButton radYes;
         private System.Windows.Forms.RadioButton radNo;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblStaffID;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        public System.Windows.Forms.ComboBox comboBox2;
-        public System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.RadioButton rbMale;
+        private System.Windows.Forms.RadioButton rbFemale;
+        public System.Windows.Forms.ComboBox comboBoxDepartment;
+        public System.Windows.Forms.ComboBox comboBoxSaleArea;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
-        public System.Windows.Forms.ComboBox comboBox3;
+        public System.Windows.Forms.ComboBox comboBoxStaffID;
     }
 }

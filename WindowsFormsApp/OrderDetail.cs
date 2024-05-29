@@ -25,14 +25,14 @@ namespace WindowsFormsApp
             frm.TopMost = true;
             frm.Anchor = AnchorStyles.None;
             frm.FormBorderStyle = FormBorderStyle.None;
-            flow.Controls.Add(frm);
+            flowDeliveryStatusandProductDetails.Controls.Add(frm);
             frm.Show();
             frmDeliveryStatusandProductDetails frm2 = new frmDeliveryStatusandProductDetails();
             frm2.TopLevel = false;
             frm2.TopMost = true;
             frm2.Anchor = AnchorStyles.None;
             frm2.FormBorderStyle = FormBorderStyle.None;
-            flow.Controls.Add(frm2);
+            flowDeliveryStatusandProductDetails.Controls.Add(frm2);
             frm2.Show();
         }
 

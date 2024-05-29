@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEditYourOrderNumber = new System.Windows.Forms.Button();
+            this.btnEditOrderItem = new System.Windows.Forms.Button();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.comboBoxOrderSerial = new System.Windows.Forms.ComboBox();
+            this.lblOrderSerial = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblSpareID = new System.Windows.Forms.Label();
+            this.txtSpareID = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.lblPrice = new System.Windows.Forms.Label();
+            this.lblYourOrderNumber = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblReOrderLevel = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.lblQuantity = new System.Windows.Forms.Label();
+            this.numericUpDownQuantity = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblSpareType = new System.Windows.Forms.Label();
-            this.comboBoxSpareType = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.lblSpareName = new System.Windows.Forms.Label();
+            this.comboBoxSpareName = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -56,7 +56,7 @@
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQuantity)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,8 +68,8 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.Controls.Add(this.button2, 3, 1);
-            this.tableLayoutPanel2.Controls.Add(this.button1, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.btnEditYourOrderNumber, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.btnEditOrderItem, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel12, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 3);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -84,38 +84,38 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1321, 605);
             this.tableLayoutPanel2.TabIndex = 82;
             // 
-            // button2
+            // btnEditYourOrderNumber
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(795, 124);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(258, 54);
-            this.button2.TabIndex = 88;
-            this.button2.Text = "Edit your order number";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnEditYourOrderNumber.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnEditYourOrderNumber.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditYourOrderNumber.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnEditYourOrderNumber.Location = new System.Drawing.Point(795, 124);
+            this.btnEditYourOrderNumber.Name = "btnEditYourOrderNumber";
+            this.btnEditYourOrderNumber.Size = new System.Drawing.Size(258, 54);
+            this.btnEditYourOrderNumber.TabIndex = 88;
+            this.btnEditYourOrderNumber.Text = "Edit your order number";
+            this.btnEditYourOrderNumber.UseVisualStyleBackColor = true;
+            this.btnEditYourOrderNumber.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // btnEditOrderItem
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(267, 124);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(258, 54);
-            this.button1.TabIndex = 87;
-            this.button1.Text = "Edit order item";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnEditOrderItem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnEditOrderItem.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditOrderItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnEditOrderItem.Location = new System.Drawing.Point(267, 124);
+            this.btnEditOrderItem.Name = "btnEditOrderItem";
+            this.btnEditOrderItem.Size = new System.Drawing.Size(258, 54);
+            this.btnEditOrderItem.TabIndex = 87;
+            this.btnEditOrderItem.Text = "Edit order item";
+            this.btnEditOrderItem.UseVisualStyleBackColor = true;
+            this.btnEditOrderItem.Click += new System.EventHandler(this.button1_Click);
             // 
             // tableLayoutPanel12
             // 
             this.tableLayoutPanel12.ColumnCount = 1;
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel12.Controls.Add(this.comboBox2, 0, 1);
-            this.tableLayoutPanel12.Controls.Add(this.label4, 0, 0);
+            this.tableLayoutPanel12.Controls.Add(this.comboBoxOrderSerial, 0, 1);
+            this.tableLayoutPanel12.Controls.Add(this.lblOrderSerial, 0, 0);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel12.Location = new System.Drawing.Point(531, 3);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
@@ -125,19 +125,30 @@
             this.tableLayoutPanel12.Size = new System.Drawing.Size(258, 115);
             this.tableLayoutPanel12.TabIndex = 86;
             // 
-            // label4
+            // comboBoxOrderSerial
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.Control;
-            this.label4.CausesValidation = false;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(252, 57);
-            this.label4.TabIndex = 73;
-            this.label4.Text = "Order Serial:";
+            this.comboBoxOrderSerial.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxOrderSerial.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxOrderSerial.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxOrderSerial.FormattingEnabled = true;
+            this.comboBoxOrderSerial.Location = new System.Drawing.Point(3, 60);
+            this.comboBoxOrderSerial.Name = "comboBoxOrderSerial";
+            this.comboBoxOrderSerial.Size = new System.Drawing.Size(252, 41);
+            this.comboBoxOrderSerial.TabIndex = 75;
+            // 
+            // lblOrderSerial
+            // 
+            this.lblOrderSerial.AutoSize = true;
+            this.lblOrderSerial.BackColor = System.Drawing.SystemColors.Control;
+            this.lblOrderSerial.CausesValidation = false;
+            this.lblOrderSerial.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOrderSerial.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblOrderSerial.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblOrderSerial.Location = new System.Drawing.Point(3, 0);
+            this.lblOrderSerial.Name = "lblOrderSerial";
+            this.lblOrderSerial.Size = new System.Drawing.Size(252, 57);
+            this.lblOrderSerial.TabIndex = 73;
+            this.lblOrderSerial.Text = "Order Serial:";
             // 
             // panel1
             // 
@@ -178,8 +189,8 @@
             // 
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.textBox1, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lblSpareID, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.txtSpareID, 0, 1);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(266, 146);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
@@ -190,38 +201,38 @@
             this.tableLayoutPanel4.TabIndex = 89;
             this.tableLayoutPanel4.Visible = false;
             // 
-            // label1
+            // lblSpareID
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.CausesValidation = false;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 68);
-            this.label1.TabIndex = 69;
-            this.label1.Text = "Spare ID:";
+            this.lblSpareID.AutoSize = true;
+            this.lblSpareID.BackColor = System.Drawing.SystemColors.Control;
+            this.lblSpareID.CausesValidation = false;
+            this.lblSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblSpareID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSpareID.Location = new System.Drawing.Point(3, 0);
+            this.lblSpareID.Name = "lblSpareID";
+            this.lblSpareID.Size = new System.Drawing.Size(251, 68);
+            this.lblSpareID.TabIndex = 69;
+            this.lblSpareID.Text = "Spare ID:";
             // 
-            // textBox1
+            // txtSpareID
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox1.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox1.Location = new System.Drawing.Point(3, 71);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(251, 41);
-            this.textBox1.TabIndex = 68;
+            this.txtSpareID.BackColor = System.Drawing.SystemColors.Info;
+            this.txtSpareID.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtSpareID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtSpareID.Location = new System.Drawing.Point(3, 71);
+            this.txtSpareID.Multiline = true;
+            this.txtSpareID.Name = "txtSpareID";
+            this.txtSpareID.ReadOnly = true;
+            this.txtSpareID.Size = new System.Drawing.Size(251, 41);
+            this.txtSpareID.TabIndex = 68;
             // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.Controls.Add(this.textBox4, 0, 1);
-            this.tableLayoutPanel5.Controls.Add(this.lblPrice, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.lblYourOrderNumber, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(529, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -242,19 +253,19 @@
             this.textBox4.Size = new System.Drawing.Size(251, 41);
             this.textBox4.TabIndex = 72;
             // 
-            // lblPrice
+            // lblYourOrderNumber
             // 
-            this.lblPrice.AutoSize = true;
-            this.lblPrice.BackColor = System.Drawing.SystemColors.Control;
-            this.lblPrice.CausesValidation = false;
-            this.lblPrice.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblPrice.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblPrice.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPrice.Location = new System.Drawing.Point(3, 0);
-            this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(251, 68);
-            this.lblPrice.TabIndex = 73;
-            this.lblPrice.Text = "Your order number:";
+            this.lblYourOrderNumber.AutoSize = true;
+            this.lblYourOrderNumber.BackColor = System.Drawing.SystemColors.Control;
+            this.lblYourOrderNumber.CausesValidation = false;
+            this.lblYourOrderNumber.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblYourOrderNumber.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblYourOrderNumber.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblYourOrderNumber.Location = new System.Drawing.Point(3, 0);
+            this.lblYourOrderNumber.Name = "lblYourOrderNumber";
+            this.lblYourOrderNumber.Size = new System.Drawing.Size(251, 68);
+            this.lblYourOrderNumber.TabIndex = 73;
+            this.lblYourOrderNumber.Text = "Your order number:";
             // 
             // btnSave
             // 
@@ -272,8 +283,8 @@
             // 
             this.tableLayoutPanel8.ColumnCount = 1;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.Controls.Add(this.lblReOrderLevel, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.numericUpDown1, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.lblQuantity, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.numericUpDownQuantity, 0, 1);
             this.tableLayoutPanel8.Location = new System.Drawing.Point(792, 146);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 3;
@@ -284,35 +295,35 @@
             this.tableLayoutPanel8.TabIndex = 88;
             this.tableLayoutPanel8.Visible = false;
             // 
-            // lblReOrderLevel
+            // lblQuantity
             // 
-            this.lblReOrderLevel.AutoSize = true;
-            this.lblReOrderLevel.BackColor = System.Drawing.SystemColors.Control;
-            this.lblReOrderLevel.CausesValidation = false;
-            this.lblReOrderLevel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblReOrderLevel.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblReOrderLevel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblReOrderLevel.Location = new System.Drawing.Point(3, 0);
-            this.lblReOrderLevel.Name = "lblReOrderLevel";
-            this.lblReOrderLevel.Size = new System.Drawing.Size(251, 58);
-            this.lblReOrderLevel.TabIndex = 69;
-            this.lblReOrderLevel.Text = "Quantity:";
+            this.lblQuantity.AutoSize = true;
+            this.lblQuantity.BackColor = System.Drawing.SystemColors.Control;
+            this.lblQuantity.CausesValidation = false;
+            this.lblQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblQuantity.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblQuantity.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblQuantity.Location = new System.Drawing.Point(3, 0);
+            this.lblQuantity.Name = "lblQuantity";
+            this.lblQuantity.Size = new System.Drawing.Size(251, 58);
+            this.lblQuantity.TabIndex = 69;
+            this.lblQuantity.Text = "Quantity:";
             // 
-            // numericUpDown1
+            // numericUpDownQuantity
             // 
-            this.numericUpDown1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.numericUpDown1.Font = new System.Drawing.Font("新細明體", 20.25F);
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 61);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(251, 40);
-            this.numericUpDown1.TabIndex = 70;
+            this.numericUpDownQuantity.Dock = System.Windows.Forms.DockStyle.Top;
+            this.numericUpDownQuantity.Font = new System.Drawing.Font("新細明體", 20.25F);
+            this.numericUpDownQuantity.Location = new System.Drawing.Point(3, 61);
+            this.numericUpDownQuantity.Name = "numericUpDownQuantity";
+            this.numericUpDownQuantity.Size = new System.Drawing.Size(251, 40);
+            this.numericUpDownQuantity.TabIndex = 70;
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.lblSpareType, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.comboBoxSpareType, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.lblSpareName, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.comboBoxSpareName, 0, 1);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 146);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
@@ -322,41 +333,30 @@
             this.tableLayoutPanel3.TabIndex = 83;
             this.tableLayoutPanel3.Visible = false;
             // 
-            // lblSpareType
+            // lblSpareName
             // 
-            this.lblSpareType.AutoSize = true;
-            this.lblSpareType.BackColor = System.Drawing.SystemColors.Control;
-            this.lblSpareType.CausesValidation = false;
-            this.lblSpareType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareType.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblSpareType.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSpareType.Location = new System.Drawing.Point(3, 0);
-            this.lblSpareType.Name = "lblSpareType";
-            this.lblSpareType.Size = new System.Drawing.Size(251, 68);
-            this.lblSpareType.TabIndex = 48;
-            this.lblSpareType.Text = "Spare Name:";
+            this.lblSpareName.AutoSize = true;
+            this.lblSpareName.BackColor = System.Drawing.SystemColors.Control;
+            this.lblSpareName.CausesValidation = false;
+            this.lblSpareName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblSpareName.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSpareName.Location = new System.Drawing.Point(3, 0);
+            this.lblSpareName.Name = "lblSpareName";
+            this.lblSpareName.Size = new System.Drawing.Size(251, 68);
+            this.lblSpareName.TabIndex = 48;
+            this.lblSpareName.Text = "Spare Name:";
             // 
-            // comboBoxSpareType
+            // comboBoxSpareName
             // 
-            this.comboBoxSpareType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSpareType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBoxSpareType.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBoxSpareType.FormattingEnabled = true;
-            this.comboBoxSpareType.Location = new System.Drawing.Point(3, 71);
-            this.comboBoxSpareType.Name = "comboBoxSpareType";
-            this.comboBoxSpareType.Size = new System.Drawing.Size(251, 41);
-            this.comboBoxSpareType.TabIndex = 45;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBox2.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(3, 60);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(252, 41);
-            this.comboBox2.TabIndex = 75;
+            this.comboBoxSpareName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxSpareName.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxSpareName.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSpareName.FormattingEnabled = true;
+            this.comboBoxSpareName.Location = new System.Drawing.Point(3, 71);
+            this.comboBoxSpareName.Name = "comboBoxSpareName";
+            this.comboBoxSpareName.Size = new System.Drawing.Size(251, 41);
+            this.comboBoxSpareName.TabIndex = 45;
             // 
             // frmEditOrder
             // 
@@ -377,7 +377,7 @@
             this.tableLayoutPanel5.PerformLayout();
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQuantity)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
@@ -387,25 +387,25 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEditOrderItem;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblOrderSerial;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.Label lblReOrderLevel;
+        private System.Windows.Forms.Label lblQuantity;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.Label lblYourOrderNumber;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Label lblSpareType;
-        public System.Windows.Forms.ComboBox comboBoxSpareType;
+        private System.Windows.Forms.Label lblSpareName;
+        public System.Windows.Forms.ComboBox comboBoxSpareName;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnEditYourOrderNumber;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        public System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label lblSpareID;
+        private System.Windows.Forms.TextBox txtSpareID;
+        private System.Windows.Forms.NumericUpDown numericUpDownQuantity;
+        public System.Windows.Forms.ComboBox comboBoxOrderSerial;
     }
 }

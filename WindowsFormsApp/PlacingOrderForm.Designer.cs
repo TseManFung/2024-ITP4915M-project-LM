@@ -38,18 +38,18 @@
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnReduce = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtSelectedSpareName = new System.Windows.Forms.TextBox();
+            this.lblSelectedSpareName = new System.Windows.Forms.Label();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
+            this.dgvPlacingOrder = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.comboBoxSpareID = new System.Windows.Forms.ComboBox();
+            this.comboBoxSpareName = new System.Windows.Forms.ComboBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPlacingOrder)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
@@ -165,11 +165,11 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txtSelectedSpareName, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lblSelectedSpareName, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txtQuantity, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnConfirm, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.dgvPlacingOrder, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnReduce, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnAdd, 4, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -185,56 +185,56 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(699, 424);
             this.tableLayoutPanel1.TabIndex = 35;
             // 
-            // textBox2
+            // txtSelectedSpareName
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox2.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox2.Location = new System.Drawing.Point(142, 255);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(133, 45);
-            this.textBox2.TabIndex = 52;
+            this.txtSelectedSpareName.BackColor = System.Drawing.SystemColors.Info;
+            this.txtSelectedSpareName.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtSelectedSpareName.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtSelectedSpareName.Location = new System.Drawing.Point(142, 255);
+            this.txtSelectedSpareName.Multiline = true;
+            this.txtSelectedSpareName.Name = "txtSelectedSpareName";
+            this.txtSelectedSpareName.ReadOnly = true;
+            this.txtSelectedSpareName.Size = new System.Drawing.Size(133, 45);
+            this.txtSelectedSpareName.TabIndex = 52;
             // 
-            // label1
+            // lblSelectedSpareName
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.CausesValidation = false;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(3, 252);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 84);
-            this.label1.TabIndex = 51;
-            this.label1.Text = "Selected Spare Name:";
+            this.lblSelectedSpareName.AutoSize = true;
+            this.lblSelectedSpareName.BackColor = System.Drawing.SystemColors.Control;
+            this.lblSelectedSpareName.CausesValidation = false;
+            this.lblSelectedSpareName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblSelectedSpareName.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSelectedSpareName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSelectedSpareName.Location = new System.Drawing.Point(3, 252);
+            this.lblSelectedSpareName.Name = "lblSelectedSpareName";
+            this.lblSelectedSpareName.Size = new System.Drawing.Size(133, 84);
+            this.lblSelectedSpareName.TabIndex = 51;
+            this.lblSelectedSpareName.Text = "Selected Spare Name:";
             // 
-            // textBox1
+            // txtQuantity
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox1.Font = new System.Drawing.Font("新細明體", 45F);
-            this.textBox1.Location = new System.Drawing.Point(420, 255);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(133, 79);
-            this.textBox1.TabIndex = 36;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtQuantity.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtQuantity.Font = new System.Drawing.Font("新細明體", 45F);
+            this.txtQuantity.Location = new System.Drawing.Point(420, 255);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(133, 79);
+            this.txtQuantity.TabIndex = 36;
+            this.txtQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // dataGridView1
+            // dgvPlacingOrder
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel1.SetColumnSpan(this.dataGridView1, 5);
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.tableLayoutPanel1.SetRowSpan(this.dataGridView1, 3);
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(693, 246);
-            this.dataGridView1.TabIndex = 37;
+            this.dgvPlacingOrder.AllowUserToAddRows = false;
+            this.dgvPlacingOrder.AllowUserToDeleteRows = false;
+            this.dgvPlacingOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel1.SetColumnSpan(this.dgvPlacingOrder, 5);
+            this.dgvPlacingOrder.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvPlacingOrder.Location = new System.Drawing.Point(3, 3);
+            this.dgvPlacingOrder.Name = "dgvPlacingOrder";
+            this.dgvPlacingOrder.ReadOnly = true;
+            this.tableLayoutPanel1.SetRowSpan(this.dgvPlacingOrder, 3);
+            this.dgvPlacingOrder.RowTemplate.Height = 24;
+            this.dgvPlacingOrder.Size = new System.Drawing.Size(693, 246);
+            this.dgvPlacingOrder.TabIndex = 37;
             // 
             // contextMenuStrip1
             // 
@@ -246,13 +246,13 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.comboBox2, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox1, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.comboBoxSpareID, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.comboBoxSpareName, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.lblSpareID, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblSpareName, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.comboBoxCategoryType, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.lblCategoryType, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.button1, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.btnSearch, 0, 3);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -265,39 +265,39 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(699, 297);
             this.tableLayoutPanel2.TabIndex = 37;
             // 
-            // comboBox2
+            // comboBoxSpareID
             // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBox2.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(352, 3);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(344, 47);
-            this.comboBox2.TabIndex = 28;
+            this.comboBoxSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxSpareID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxSpareID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSpareID.FormattingEnabled = true;
+            this.comboBoxSpareID.Location = new System.Drawing.Point(352, 3);
+            this.comboBoxSpareID.Name = "comboBoxSpareID";
+            this.comboBoxSpareID.Size = new System.Drawing.Size(344, 47);
+            this.comboBoxSpareID.TabIndex = 28;
             // 
-            // comboBox1
+            // comboBoxSpareName
             // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBox1.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(352, 77);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(344, 47);
-            this.comboBox1.TabIndex = 27;
+            this.comboBoxSpareName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxSpareName.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxSpareName.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSpareName.FormattingEnabled = true;
+            this.comboBoxSpareName.Location = new System.Drawing.Point(352, 77);
+            this.comboBoxSpareName.Name = "comboBoxSpareName";
+            this.comboBoxSpareName.Size = new System.Drawing.Size(344, 47);
+            this.comboBoxSpareName.TabIndex = 27;
             // 
-            // button1
+            // btnSearch
             // 
-            this.tableLayoutPanel2.SetColumnSpan(this.button1, 2);
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.Font = new System.Drawing.Font("新細明體", 24F);
-            this.button1.Location = new System.Drawing.Point(3, 225);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(693, 42);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
+            this.tableLayoutPanel2.SetColumnSpan(this.btnSearch, 2);
+            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSearch.Font = new System.Drawing.Font("新細明體", 24F);
+            this.btnSearch.Location = new System.Drawing.Point(3, 225);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(693, 42);
+            this.btnSearch.TabIndex = 26;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel3
             // 
@@ -327,7 +327,7 @@
             this.Text = "Placing Order";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPlacingOrder)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -345,15 +345,15 @@
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btnReduce;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtQuantity;
+        private System.Windows.Forms.DataGridView dgvPlacingOrder;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        public System.Windows.Forms.ComboBox comboBox2;
-        public System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblSelectedSpareName;
+        private System.Windows.Forms.TextBox txtSelectedSpareName;
+        public System.Windows.Forms.ComboBox comboBoxSpareID;
+        public System.Windows.Forms.ComboBox comboBoxSpareName;
     }
 }

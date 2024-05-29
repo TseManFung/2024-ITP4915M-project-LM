@@ -30,8 +30,8 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblSpareType = new System.Windows.Forms.Label();
-            this.comboBoxSpareType = new System.Windows.Forms.ComboBox();
+            this.lblSpareID = new System.Windows.Forms.Label();
+            this.comboBoxSpareID = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.txtSpareName = new System.Windows.Forms.TextBox();
             this.lblSpareName = new System.Windows.Forms.Label();
@@ -39,9 +39,9 @@
             this.lblReOrderLevel = new System.Windows.Forms.Label();
             this.txtReOrderLevel = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtcsl = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtCommonStockLevel = new System.Windows.Forms.TextBox();
+            this.lblCommonStockLevel = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -58,7 +58,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel8, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel9, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnSave, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -73,8 +73,8 @@
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.lblSpareType, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.comboBoxSpareType, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.lblSpareID, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.comboBoxSpareID, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -84,31 +84,31 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(394, 174);
             this.tableLayoutPanel3.TabIndex = 84;
             // 
-            // lblSpareType
+            // lblSpareID
             // 
-            this.lblSpareType.AutoSize = true;
-            this.lblSpareType.BackColor = System.Drawing.SystemColors.Control;
-            this.lblSpareType.CausesValidation = false;
-            this.lblSpareType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareType.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblSpareType.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSpareType.Location = new System.Drawing.Point(3, 0);
-            this.lblSpareType.Name = "lblSpareType";
-            this.lblSpareType.Size = new System.Drawing.Size(388, 87);
-            this.lblSpareType.TabIndex = 48;
-            this.lblSpareType.Text = "Spare ID:";
-            this.lblSpareType.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lblSpareID.AutoSize = true;
+            this.lblSpareID.BackColor = System.Drawing.SystemColors.Control;
+            this.lblSpareID.CausesValidation = false;
+            this.lblSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblSpareID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSpareID.Location = new System.Drawing.Point(3, 0);
+            this.lblSpareID.Name = "lblSpareID";
+            this.lblSpareID.Size = new System.Drawing.Size(388, 87);
+            this.lblSpareID.TabIndex = 48;
+            this.lblSpareID.Text = "Spare ID:";
+            this.lblSpareID.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // comboBoxSpareType
+            // comboBoxSpareID
             // 
-            this.comboBoxSpareType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSpareType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBoxSpareType.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBoxSpareType.FormattingEnabled = true;
-            this.comboBoxSpareType.Location = new System.Drawing.Point(3, 90);
-            this.comboBoxSpareType.Name = "comboBoxSpareType";
-            this.comboBoxSpareType.Size = new System.Drawing.Size(388, 41);
-            this.comboBoxSpareType.TabIndex = 45;
+            this.comboBoxSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxSpareID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxSpareID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSpareID.FormattingEnabled = true;
+            this.comboBoxSpareID.Location = new System.Drawing.Point(3, 90);
+            this.comboBoxSpareID.Name = "comboBoxSpareID";
+            this.comboBoxSpareID.Size = new System.Drawing.Size(388, 41);
+            this.comboBoxSpareID.TabIndex = 45;
             // 
             // tableLayoutPanel4
             // 
@@ -196,8 +196,8 @@
             // 
             this.tableLayoutPanel9.ColumnCount = 1;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel9.Controls.Add(this.txtcsl, 0, 1);
-            this.tableLayoutPanel9.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.txtCommonStockLevel, 0, 1);
+            this.tableLayoutPanel9.Controls.Add(this.lblCommonStockLevel, 0, 0);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel9.Location = new System.Drawing.Point(403, 183);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
@@ -207,41 +207,41 @@
             this.tableLayoutPanel9.Size = new System.Drawing.Size(394, 174);
             this.tableLayoutPanel9.TabIndex = 90;
             // 
-            // txtcsl
+            // txtCommonStockLevel
             // 
-            this.txtcsl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtcsl.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtcsl.Location = new System.Drawing.Point(3, 90);
-            this.txtcsl.Multiline = true;
-            this.txtcsl.Name = "txtcsl";
-            this.txtcsl.Size = new System.Drawing.Size(388, 41);
-            this.txtcsl.TabIndex = 77;
+            this.txtCommonStockLevel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtCommonStockLevel.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtCommonStockLevel.Location = new System.Drawing.Point(3, 90);
+            this.txtCommonStockLevel.Multiline = true;
+            this.txtCommonStockLevel.Name = "txtCommonStockLevel";
+            this.txtCommonStockLevel.Size = new System.Drawing.Size(388, 41);
+            this.txtCommonStockLevel.TabIndex = 77;
             // 
-            // label2
+            // lblCommonStockLevel
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Control;
-            this.label2.CausesValidation = false;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(388, 87);
-            this.label2.TabIndex = 78;
-            this.label2.Text = "Common Stock Level:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lblCommonStockLevel.AutoSize = true;
+            this.lblCommonStockLevel.BackColor = System.Drawing.SystemColors.Control;
+            this.lblCommonStockLevel.CausesValidation = false;
+            this.lblCommonStockLevel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCommonStockLevel.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblCommonStockLevel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCommonStockLevel.Location = new System.Drawing.Point(3, 0);
+            this.lblCommonStockLevel.Name = "lblCommonStockLevel";
+            this.lblCommonStockLevel.Size = new System.Drawing.Size(388, 87);
+            this.lblCommonStockLevel.TabIndex = 78;
+            this.lblCommonStockLevel.Text = "Common Stock Level:";
+            this.lblCommonStockLevel.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // button1
+            // btnSave
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("新細明體", 24F);
-            this.button1.Location = new System.Drawing.Point(403, 363);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(394, 84);
-            this.button1.TabIndex = 91;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSave.Font = new System.Drawing.Font("新細明體", 24F);
+            this.btnSave.Location = new System.Drawing.Point(403, 363);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(394, 84);
+            this.btnSave.TabIndex = 91;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
             // 
             // frmSetStockLevel
             // 
@@ -268,8 +268,8 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Label lblSpareType;
-        public System.Windows.Forms.ComboBox comboBoxSpareType;
+        private System.Windows.Forms.Label lblSpareID;
+        public System.Windows.Forms.ComboBox comboBoxSpareID;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TextBox txtSpareName;
         private System.Windows.Forms.Label lblSpareName;
@@ -277,8 +277,8 @@
         private System.Windows.Forms.Label lblReOrderLevel;
         private System.Windows.Forms.TextBox txtReOrderLevel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
-        private System.Windows.Forms.TextBox txtcsl;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtCommonStockLevel;
+        private System.Windows.Forms.Label lblCommonStockLevel;
+        private System.Windows.Forms.Button btnSave;
     }
 }

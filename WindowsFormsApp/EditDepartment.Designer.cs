@@ -44,7 +44,7 @@
             this.txtDepartmentEmail = new System.Windows.Forms.TextBox();
             this.lblDepartmentEmail = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBoxWarehouse = new System.Windows.Forms.ComboBox();
+            this.comboBoxSpareType = new System.Windows.Forms.ComboBox();
             this.lblWarehouse = new System.Windows.Forms.Label();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
@@ -271,7 +271,7 @@
             // 
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Controls.Add(this.comboBoxWarehouse, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.comboBoxSpareType, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.lblWarehouse, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(477, 3);
@@ -283,16 +283,16 @@
             this.tableLayoutPanel5.TabIndex = 88;
             this.tableLayoutPanel5.Visible = false;
             // 
-            // comboBoxWarehouse
+            // comboBoxSpareType
             // 
-            this.comboBoxWarehouse.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxWarehouse.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBoxWarehouse.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBoxWarehouse.FormattingEnabled = true;
-            this.comboBoxWarehouse.Location = new System.Drawing.Point(3, 53);
-            this.comboBoxWarehouse.Name = "comboBoxWarehouse";
-            this.comboBoxWarehouse.Size = new System.Drawing.Size(146, 41);
-            this.comboBoxWarehouse.TabIndex = 74;
+            this.comboBoxSpareType.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxSpareType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxSpareType.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSpareType.FormattingEnabled = true;
+            this.comboBoxSpareType.Location = new System.Drawing.Point(3, 53);
+            this.comboBoxSpareType.Name = "comboBoxSpareType";
+            this.comboBoxSpareType.Size = new System.Drawing.Size(146, 41);
+            this.comboBoxSpareType.TabIndex = 74;
             // 
             // lblWarehouse
             // 
@@ -349,7 +349,7 @@
         private System.Windows.Forms.TextBox txtDepartmentEmail;
         private System.Windows.Forms.Label lblDepartmentEmail;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        public System.Windows.Forms.ComboBox comboBoxWarehouse;
+        public System.Windows.Forms.ComboBox comboBoxSpareType;
         private System.Windows.Forms.Label lblWarehouse;
     }
 }

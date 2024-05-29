@@ -30,7 +30,7 @@
         {
             this.dataGridViewItemHaveArrivedInROL = new System.Windows.Forms.DataGridView();
             this.lblFollowingROL = new System.Windows.Forms.Label();
-            this.btnOutputToPDF = new System.Windows.Forms.Button();
+            this.btnReceived = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItemHaveArrivedInROL)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -59,16 +59,16 @@
             this.lblFollowingROL.TabIndex = 75;
             this.lblFollowingROL.Text = "The following items have arrived in ROL:";
             // 
-            // btnOutputToPDF
+            // btnReceived
             // 
-            this.btnOutputToPDF.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnOutputToPDF.Font = new System.Drawing.Font("新細明體", 24F);
-            this.btnOutputToPDF.Location = new System.Drawing.Point(871, 528);
-            this.btnOutputToPDF.Name = "btnOutputToPDF";
-            this.btnOutputToPDF.Size = new System.Drawing.Size(367, 53);
-            this.btnOutputToPDF.TabIndex = 76;
-            this.btnOutputToPDF.Text = "Received";
-            this.btnOutputToPDF.UseVisualStyleBackColor = true;
+            this.btnReceived.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnReceived.Font = new System.Drawing.Font("新細明體", 24F);
+            this.btnReceived.Location = new System.Drawing.Point(871, 528);
+            this.btnReceived.Name = "btnReceived";
+            this.btnReceived.Size = new System.Drawing.Size(367, 53);
+            this.btnReceived.TabIndex = 76;
+            this.btnReceived.Text = "Received";
+            this.btnReceived.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
             // 
@@ -76,7 +76,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.Controls.Add(this.lblFollowingROL, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnOutputToPDF, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnReceived, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.dataGridViewItemHaveArrivedInROL, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -106,7 +106,7 @@
         #endregion
         private System.Windows.Forms.DataGridView dataGridViewItemHaveArrivedInROL;
         private System.Windows.Forms.Label lblFollowingROL;
-        private System.Windows.Forms.Button btnOutputToPDF;
+        private System.Windows.Forms.Button btnReceived;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

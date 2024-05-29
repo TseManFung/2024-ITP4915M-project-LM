@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblSpareName = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxSpareID = new System.Windows.Forms.ComboBox();
+            this.txtDiscrepancy = new System.Windows.Forms.TextBox();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
+            this.lblDiscrepancy = new System.Windows.Forms.Label();
+            this.lblQuantity = new System.Windows.Forms.Label();
+            this.lblSpareID = new System.Windows.Forms.Label();
+            this.btnRecord = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,13 +45,13 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.comboBox2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.lblSpareName, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.comboBoxSpareID, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtDiscrepancy, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtQuantity, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lblDiscrepancy, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lblQuantity, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lblSpareID, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnRecord, 0, 3);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(60, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
@@ -63,90 +63,90 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(437, 266);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // textBox2
+            // comboBoxSpareID
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox2.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox2.Location = new System.Drawing.Point(221, 145);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(213, 45);
-            this.textBox2.TabIndex = 58;
+            this.comboBoxSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxSpareID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxSpareID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSpareID.FormattingEnabled = true;
+            this.comboBoxSpareID.Location = new System.Drawing.Point(221, 3);
+            this.comboBoxSpareID.Name = "comboBoxSpareID";
+            this.comboBoxSpareID.Size = new System.Drawing.Size(213, 47);
+            this.comboBoxSpareID.TabIndex = 60;
             // 
-            // textBox1
+            // txtDiscrepancy
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox1.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox1.Location = new System.Drawing.Point(221, 74);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(213, 45);
-            this.textBox1.TabIndex = 57;
+            this.txtDiscrepancy.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtDiscrepancy.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtDiscrepancy.Location = new System.Drawing.Point(221, 145);
+            this.txtDiscrepancy.Multiline = true;
+            this.txtDiscrepancy.Name = "txtDiscrepancy";
+            this.txtDiscrepancy.Size = new System.Drawing.Size(213, 45);
+            this.txtDiscrepancy.TabIndex = 58;
             // 
-            // label4
+            // txtQuantity
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.Control;
-            this.label4.CausesValidation = false;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(3, 142);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(212, 71);
-            this.label4.TabIndex = 55;
-            this.label4.Text = "Discrepancy:";
+            this.txtQuantity.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtQuantity.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtQuantity.Location = new System.Drawing.Point(221, 74);
+            this.txtQuantity.Multiline = true;
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(213, 45);
+            this.txtQuantity.TabIndex = 57;
             // 
-            // label2
+            // lblDiscrepancy
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Control;
-            this.label2.CausesValidation = false;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(3, 71);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(212, 71);
-            this.label2.TabIndex = 53;
-            this.label2.Text = "Quantity:";
+            this.lblDiscrepancy.AutoSize = true;
+            this.lblDiscrepancy.BackColor = System.Drawing.SystemColors.Control;
+            this.lblDiscrepancy.CausesValidation = false;
+            this.lblDiscrepancy.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDiscrepancy.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblDiscrepancy.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblDiscrepancy.Location = new System.Drawing.Point(3, 142);
+            this.lblDiscrepancy.Name = "lblDiscrepancy";
+            this.lblDiscrepancy.Size = new System.Drawing.Size(212, 71);
+            this.lblDiscrepancy.TabIndex = 55;
+            this.lblDiscrepancy.Text = "Discrepancy:";
             // 
-            // lblSpareName
+            // lblQuantity
             // 
-            this.lblSpareName.AutoSize = true;
-            this.lblSpareName.BackColor = System.Drawing.SystemColors.Control;
-            this.lblSpareName.CausesValidation = false;
-            this.lblSpareName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareName.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblSpareName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSpareName.Location = new System.Drawing.Point(3, 0);
-            this.lblSpareName.Name = "lblSpareName";
-            this.lblSpareName.Size = new System.Drawing.Size(212, 71);
-            this.lblSpareName.TabIndex = 51;
-            this.lblSpareName.Text = "Spare ID:";
+            this.lblQuantity.AutoSize = true;
+            this.lblQuantity.BackColor = System.Drawing.SystemColors.Control;
+            this.lblQuantity.CausesValidation = false;
+            this.lblQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblQuantity.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblQuantity.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblQuantity.Location = new System.Drawing.Point(3, 71);
+            this.lblQuantity.Name = "lblQuantity";
+            this.lblQuantity.Size = new System.Drawing.Size(212, 71);
+            this.lblQuantity.TabIndex = 53;
+            this.lblQuantity.Text = "Quantity:";
             // 
-            // button1
+            // lblSpareID
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.button1, 2);
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("新細明體", 24F);
-            this.button1.Location = new System.Drawing.Point(3, 216);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(431, 47);
-            this.button1.TabIndex = 59;
-            this.button1.Text = "Record";
-            this.button1.UseVisualStyleBackColor = true;
+            this.lblSpareID.AutoSize = true;
+            this.lblSpareID.BackColor = System.Drawing.SystemColors.Control;
+            this.lblSpareID.CausesValidation = false;
+            this.lblSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblSpareID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSpareID.Location = new System.Drawing.Point(3, 0);
+            this.lblSpareID.Name = "lblSpareID";
+            this.lblSpareID.Size = new System.Drawing.Size(212, 71);
+            this.lblSpareID.TabIndex = 51;
+            this.lblSpareID.Text = "Spare ID:";
             // 
-            // comboBox2
+            // btnRecord
             // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBox2.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(221, 3);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(213, 47);
-            this.comboBox2.TabIndex = 60;
+            this.tableLayoutPanel1.SetColumnSpan(this.btnRecord, 2);
+            this.btnRecord.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnRecord.Font = new System.Drawing.Font("新細明體", 24F);
+            this.btnRecord.Location = new System.Drawing.Point(3, 216);
+            this.btnRecord.Name = "btnRecord";
+            this.btnRecord.Size = new System.Drawing.Size(431, 47);
+            this.btnRecord.TabIndex = 59;
+            this.btnRecord.Text = "Record";
+            this.btnRecord.UseVisualStyleBackColor = true;
             // 
             // frmScrap
             // 
@@ -165,12 +165,12 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblSpareName;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        public System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label lblDiscrepancy;
+        private System.Windows.Forms.Label lblQuantity;
+        private System.Windows.Forms.Label lblSpareID;
+        private System.Windows.Forms.TextBox txtDiscrepancy;
+        private System.Windows.Forms.TextBox txtQuantity;
+        private System.Windows.Forms.Button btnRecord;
+        public System.Windows.Forms.ComboBox comboBoxSpareID;
     }
 }
