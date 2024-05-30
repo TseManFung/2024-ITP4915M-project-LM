@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -30,7 +31,7 @@ namespace WindowsFormsApp
         {
             this.isLogin = false;
             Main.userID = null;
-            AssessLevel =null;
+            AssessLevel = null;
         }
 
         public Main()

@@ -16,16 +16,23 @@ namespace WindowsFormsApp
 
         public frmLogin()
         {
-            
+
             InitializeComponent();
 
         }
 
-        //step to dnow
+
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            try{
-                 int id =Main.db.getUserID(txtLoginName.Text, txtPassword.Text);
+
+            login();
+        }
+
+        public void login()
+        {
+            try
+            {
+                int id = Main.db.getUserID(txtLoginName.Text, txtPassword.Text);
                 (this.ParentForm as Main)?.SetIsLogin(id);
                 (this.ParentForm as Main)?.Change_pContent(typeof(frmMenu));
 
@@ -34,14 +41,23 @@ namespace WindowsFormsApp
             {
                 lblWrongPassword.Show();
             }
+        }
 
+        public void Login_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
 
+                login();
+            }
 
+            else if (e.KeyChar == (char)27)
+                (this.ParentForm as Main)?.Close();
         }
 
         private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)
         {
- 
+
         }
 
         private void lblForgotPassword_Click(object sender, EventArgs e)

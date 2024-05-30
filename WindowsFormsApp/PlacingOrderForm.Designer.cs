@@ -56,13 +56,12 @@
             // 
             // comboBoxCategoryType
             // 
-            this.comboBoxCategoryType.Dock = System.Windows.Forms.DockStyle.Top;
-            this.comboBoxCategoryType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxCategoryType.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxCategoryType.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxCategoryType.FormattingEnabled = true;
-            this.comboBoxCategoryType.Location = new System.Drawing.Point(352, 151);
+            this.comboBoxCategoryType.Location = new System.Drawing.Point(247, 151);
             this.comboBoxCategoryType.Name = "comboBoxCategoryType";
-            this.comboBoxCategoryType.Size = new System.Drawing.Size(344, 47);
+            this.comboBoxCategoryType.Size = new System.Drawing.Size(449, 40);
             this.comboBoxCategoryType.TabIndex = 25;
             // 
             // lblCategoryType
@@ -75,7 +74,7 @@
             this.lblCategoryType.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblCategoryType.Location = new System.Drawing.Point(3, 148);
             this.lblCategoryType.Name = "lblCategoryType";
-            this.lblCategoryType.Size = new System.Drawing.Size(343, 32);
+            this.lblCategoryType.Size = new System.Drawing.Size(238, 32);
             this.lblCategoryType.TabIndex = 22;
             this.lblCategoryType.Text = "Category Type:";
             // 
@@ -89,7 +88,7 @@
             this.lblSpareName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareName.Location = new System.Drawing.Point(3, 74);
             this.lblSpareName.Name = "lblSpareName";
-            this.lblSpareName.Size = new System.Drawing.Size(343, 32);
+            this.lblSpareName.Size = new System.Drawing.Size(238, 32);
             this.lblSpareName.TabIndex = 21;
             this.lblSpareName.Text = "SpareName:";
             // 
@@ -103,7 +102,7 @@
             this.lblSpareID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareID.Location = new System.Drawing.Point(3, 0);
             this.lblSpareID.Name = "lblSpareID";
-            this.lblSpareID.Size = new System.Drawing.Size(343, 32);
+            this.lblSpareID.Size = new System.Drawing.Size(238, 32);
             this.lblSpareID.TabIndex = 20;
             this.lblSpareID.Text = "SpareID:";
             // 
@@ -244,8 +243,8 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65F));
             this.tableLayoutPanel2.Controls.Add(this.comboBoxSpareID, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.comboBoxSpareName, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.lblSpareID, 0, 0);
@@ -261,30 +260,28 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(699, 297);
             this.tableLayoutPanel2.TabIndex = 37;
             // 
             // comboBoxSpareID
             // 
             this.comboBoxSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSpareID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBoxSpareID.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSpareID.ForeColor = System.Drawing.SystemColors.WindowText;
             this.comboBoxSpareID.FormattingEnabled = true;
-            this.comboBoxSpareID.Location = new System.Drawing.Point(352, 3);
+            this.comboBoxSpareID.Location = new System.Drawing.Point(247, 3);
             this.comboBoxSpareID.Name = "comboBoxSpareID";
-            this.comboBoxSpareID.Size = new System.Drawing.Size(344, 47);
+            this.comboBoxSpareID.Size = new System.Drawing.Size(449, 40);
             this.comboBoxSpareID.TabIndex = 28;
             // 
             // comboBoxSpareName
             // 
             this.comboBoxSpareName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSpareName.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBoxSpareName.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareName.FormattingEnabled = true;
-            this.comboBoxSpareName.Location = new System.Drawing.Point(352, 77);
+            this.comboBoxSpareName.Location = new System.Drawing.Point(247, 77);
             this.comboBoxSpareName.Name = "comboBoxSpareName";
-            this.comboBoxSpareName.Size = new System.Drawing.Size(344, 47);
+            this.comboBoxSpareName.Size = new System.Drawing.Size(449, 40);
             this.comboBoxSpareName.TabIndex = 27;
             // 
             // btnSearch
