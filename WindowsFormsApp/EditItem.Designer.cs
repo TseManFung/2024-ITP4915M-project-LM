@@ -425,13 +425,13 @@
             // comboBoxSpareID
             // 
             this.comboBoxSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSpareID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBoxSpareID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareID.FormattingEnabled = true;
             this.comboBoxSpareID.Location = new System.Drawing.Point(3, 61);
             this.comboBoxSpareID.Name = "comboBoxSpareID";
-            this.comboBoxSpareID.Size = new System.Drawing.Size(310, 41);
+            this.comboBoxSpareID.Size = new System.Drawing.Size(310, 35);
             this.comboBoxSpareID.TabIndex = 74;
+            this.comboBoxSpareID.SelectedIndexChanged += new System.EventHandler(this.comboBoxSpareID_SelectedIndexChanged);
             // 
             // lblSpareID
             // 
@@ -465,6 +465,7 @@
             this.Controls.Add(this.tableLayoutPanel2);
             this.Name = "frmEditItem";
             this.Text = "Edit or Delete Spare";
+            this.Load += new System.EventHandler(this.frmEditItem_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel11.ResumeLayout(false);
