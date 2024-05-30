@@ -25,7 +25,12 @@ namespace WindowsFormsApp
         private void btnLogIn_Click(object sender, EventArgs e)
         {
             try{
+<<<<<<< HEAD
+                 int id =Main.db.getUserID(txtLoginName.Text, txtPassword.Text);
+                (this.ParentForm as Main)?.Change_pContent(typeof(frmMenu));
+=======
                  int id =Main.db.getUserID(textBox1.Text, textBox2.Text);
+>>>>>>> b1aff09f764aee34889737b45f048d3cf60dee48
                 (this.ParentForm as Main)?.SetIsLogin(id);
                 (this.ParentForm as Main)?.Change_pContent(typeof(frmMenu));
 

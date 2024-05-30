@@ -27,11 +27,11 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (accForD.Checked)
+            if (accForDealer.Checked)
             {
                 (this.ParentForm as Main)?.Change_pContent(typeof(frmNewDealer));
             }
-            if (accForS.Checked)
+            if (accForStaff.Checked)
             {
                 (this.ParentForm as Main)?.Change_pContent(typeof(frmNewStaff));
             }

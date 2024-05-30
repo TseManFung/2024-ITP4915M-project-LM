@@ -19,12 +19,12 @@ namespace WindowsFormsApp
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton2.Checked)
+            if (radioButtonYouAreLMStaff.Checked)
             {
-                label3.Text = "Your name:";
+                lblDelearName.Text = "Your name:";
             }else
             {
-                label3.Text = "Dealer name:";
+                lblDelearName.Text = "Dealer name:";
             }
         }
     }
