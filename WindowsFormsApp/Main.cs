@@ -14,14 +14,15 @@ namespace WindowsFormsApp
     public partial class Main : Form
     {
         public static sshdatabase db = new sshdatabase();
+        public static int userID;
+        public static int AssessLevel = 10001;
 
         bool isLogin = false;
-        int userID;
-        int AssessLevel = 10001;
+
         public void SetIsLogin(int id)
         {
             this.isLogin = true;
-            this.userID = id;
+            Main.userID = id;
         }
         public Main()
         {
@@ -58,7 +59,7 @@ namespace WindowsFormsApp
                     if (lblTitle.Text == "Main Menu" && AssessLevel > 10000)
                     {
 
-                        String sql = $"SELECT AccessLevel FROM User WHERE UserID = {this.userID};";
+                        String sql = $"SELECT AccessLevel FROM User WHERE UserID = {Main.userID};";
                         var reader = Main.db.readBySql(sql);
                         if (reader.HasRows)
                         {
