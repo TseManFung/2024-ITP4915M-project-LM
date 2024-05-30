@@ -16,6 +16,7 @@ namespace WindowsFormsApp
         public static sshdatabase db = new sshdatabase();
         public static int? userID;
         public static int? AssessLevel;
+        public static Type currfrm;
 
         bool isLogin = false;
 
@@ -59,12 +60,13 @@ namespace WindowsFormsApp
                 pContent.Controls.Add(frm);
                 frm.Show();
                 lblTitle.Text = frm.Text;
+                Main.currfrm = formType;
 
-                if (lblTitle.Text == "Login" || lblTitle.Text == "Main Menu")
+                if (formType == typeof(frmLogin) || formType == typeof(frmMenu))
                 {
                     pictureBoxBack.Visible = false;
                     lblTitle.Cursor = Cursors.Arrow;
-                    if (lblTitle.Text == "Main Menu" && AssessLevel > 10000)
+                    if (formType == typeof(frmMenu) && AssessLevel > 10000)
                     {
 
                         String sql = $"SELECT AccessLevel FROM User WHERE UserID = {Main.userID};";
@@ -100,7 +102,7 @@ namespace WindowsFormsApp
         private void lblTitle_Click_1(object sender, EventArgs e)
         {
 
-            if (lblTitle.Text == "Login" || lblTitle.Text == "Main Menu")
+            if (Main.currfrm == typeof(frmLogin) || Main.currfrm == typeof(frmMenu))
             {
                 return;
             }
