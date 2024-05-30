@@ -14,8 +14,8 @@ namespace WindowsFormsApp
     public partial class Main : Form
     {
         public static sshdatabase db = new sshdatabase();
-        public static int userID;
-        public static int AssessLevel = 10001;
+        public static int? userID;
+        public static int? AssessLevel;
 
         bool isLogin = false;
 
@@ -24,6 +24,14 @@ namespace WindowsFormsApp
             this.isLogin = true;
             Main.userID = id;
         }
+
+        public void SetLogout()
+        {
+            this.isLogin = false;
+            Main.userID = null;
+            AssessLevel =null;
+        }
+
         public Main()
         {
             InitializeComponent();
