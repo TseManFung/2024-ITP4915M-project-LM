@@ -59,7 +59,7 @@
             this.comboBoxCategoryType.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxCategoryType.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxCategoryType.FormattingEnabled = true;
-            this.comboBoxCategoryType.Location = new System.Drawing.Point(247, 151);
+            this.comboBoxCategoryType.Location = new System.Drawing.Point(247, 127);
             this.comboBoxCategoryType.Name = "comboBoxCategoryType";
             this.comboBoxCategoryType.Size = new System.Drawing.Size(449, 40);
             this.comboBoxCategoryType.TabIndex = 25;
@@ -72,7 +72,7 @@
             this.lblCategoryType.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblCategoryType.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold);
             this.lblCategoryType.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCategoryType.Location = new System.Drawing.Point(3, 148);
+            this.lblCategoryType.Location = new System.Drawing.Point(3, 124);
             this.lblCategoryType.Name = "lblCategoryType";
             this.lblCategoryType.Size = new System.Drawing.Size(238, 32);
             this.lblCategoryType.TabIndex = 22;
@@ -86,7 +86,7 @@
             this.lblSpareName.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblSpareName.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold);
             this.lblSpareName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSpareName.Location = new System.Drawing.Point(3, 74);
+            this.lblSpareName.Location = new System.Drawing.Point(3, 62);
             this.lblSpareName.Name = "lblSpareName";
             this.lblSpareName.Size = new System.Drawing.Size(238, 32);
             this.lblSpareName.TabIndex = 21;
@@ -260,7 +260,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(699, 297);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(699, 249);
             this.tableLayoutPanel2.TabIndex = 37;
             // 
             // comboBoxSpareID
@@ -283,7 +283,7 @@
             this.comboBoxSpareName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxSpareName.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareName.FormattingEnabled = true;
-            this.comboBoxSpareName.Location = new System.Drawing.Point(247, 77);
+            this.comboBoxSpareName.Location = new System.Drawing.Point(247, 65);
             this.comboBoxSpareName.Name = "comboBoxSpareName";
             this.comboBoxSpareName.Size = new System.Drawing.Size(449, 40);
             this.comboBoxSpareName.TabIndex = 27;
@@ -293,12 +293,13 @@
             this.tableLayoutPanel2.SetColumnSpan(this.btnSearch, 2);
             this.btnSearch.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSearch.Font = new System.Drawing.Font("PMingLiU", 24F);
-            this.btnSearch.Location = new System.Drawing.Point(3, 225);
+            this.btnSearch.Location = new System.Drawing.Point(3, 189);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(693, 42);
             this.btnSearch.TabIndex = 26;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // tableLayoutPanel3
             // 

@@ -57,5 +57,16 @@ namespace WindowsFormsApp
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmCart));
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string sid = comboBoxSpareID.Text, ct = comboBoxCategoryType.Text, sn = comboBoxSpareName.Text;
+
+            try
+            {
+                dgvPlacingOrder.DataSource = Spare.AsEnumerable().Where(x => (sid == "" || x["SpareID"].ToString() == sid) && (ct == "" || x["CategoryLetter"].ToString() == ct) && (sn == "" || x["SpareName"].ToString() == sn)).CopyToDataTable();
+            }
+            catch (DataException e) { MessageBox.Show("No data found"); }
+        }
     }
 }
