@@ -88,5 +88,16 @@ namespace WindowsFormsApp
             string input = txtPrice.Text;
             this.txtPrice.Text = string.Format("{0:#,##0.00}", Convert.ToDouble(input));
         }
+
+        private void txtSpareWeight_TextChanged(object sender, EventArgs e)
+        {
+            string input = txtSpareWeight.Text;
+            string pattern = @"^\d+$";
+            if (!string.IsNullOrEmpty(input) && !Regex.IsMatch(input, pattern))
+            {
+                txtSpareWeight.Text = string.Empty;
+                MessageBox.Show("only number!"); // Show error message
+            }
+        }
     }
 }

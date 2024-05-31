@@ -167,12 +167,11 @@
             // comboBoxSupplier
             // 
             this.comboBoxSupplier.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSupplier.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBoxSupplier.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSupplier.FormattingEnabled = true;
             this.comboBoxSupplier.Location = new System.Drawing.Point(3, 72);
             this.comboBoxSupplier.Name = "comboBoxSupplier";
-            this.comboBoxSupplier.Size = new System.Drawing.Size(309, 41);
+            this.comboBoxSupplier.Size = new System.Drawing.Size(309, 35);
             this.comboBoxSupplier.TabIndex = 61;
             // 
             // lblSupplier
@@ -213,6 +212,7 @@
             this.txtSpareWeight.Name = "txtSpareWeight";
             this.txtSpareWeight.Size = new System.Drawing.Size(309, 41);
             this.txtSpareWeight.TabIndex = 57;
+            this.txtSpareWeight.TextChanged += new System.EventHandler(this.txtSpareWeight_TextChanged);
             // 
             // lblSpareWeight
             // 
@@ -340,12 +340,11 @@
             // comboBoxSpareType
             // 
             this.comboBoxSpareType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSpareType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBoxSpareType.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareType.FormattingEnabled = true;
             this.comboBoxSpareType.Location = new System.Drawing.Point(3, 72);
             this.comboBoxSpareType.Name = "comboBoxSpareType";
-            this.comboBoxSpareType.Size = new System.Drawing.Size(309, 41);
+            this.comboBoxSpareType.Size = new System.Drawing.Size(309, 35);
             this.comboBoxSpareType.TabIndex = 45;
             // 
             // btnSave
