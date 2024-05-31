@@ -252,6 +252,7 @@
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(309, 41);
             this.txtPrice.TabIndex = 72;
+            this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
             // 
             // lblPrice
             // 
@@ -291,6 +292,7 @@
             this.txtSpareName.Name = "txtSpareName";
             this.txtSpareName.Size = new System.Drawing.Size(309, 41);
             this.txtSpareName.TabIndex = 47;
+            this.txtSpareName.TextChanged += new System.EventHandler(this.txtSpareName_TextChanged);
             // 
             // lblSpareName
             // 
