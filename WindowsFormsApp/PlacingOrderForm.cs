@@ -66,7 +66,7 @@ namespace WindowsFormsApp
             {
                 dgvPlacingOrder.DataSource = Spare.AsEnumerable().Where(x => (sid == "" || x["SpareID"].ToString() == sid) && (ct == "" || x["CategoryLetter"].ToString() == ct) && (sn == "" || x["SpareName"].ToString() == sn)).CopyToDataTable();
             }
-            catch (DataException e) { MessageBox.Show("No data found"); }
+            catch (InvalidOperationException ex) { MessageBox.Show("No data found"); }
         }
     }
 }
