@@ -186,7 +186,8 @@
             // 
             // txtSelectedSpareName
             // 
-            this.txtSelectedSpareName.BackColor = System.Drawing.SystemColors.Info;
+            this.txtSelectedSpareName.BackColor = System.Drawing.SystemColors.Control;
+            this.txtSelectedSpareName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSelectedSpareName.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtSelectedSpareName.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtSelectedSpareName.Location = new System.Drawing.Point(142, 255);
@@ -234,6 +235,7 @@
             this.dgvPlacingOrder.RowTemplate.Height = 24;
             this.dgvPlacingOrder.Size = new System.Drawing.Size(693, 246);
             this.dgvPlacingOrder.TabIndex = 37;
+            this.dgvPlacingOrder.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvPlacingOrder_CellMouseClick);
             // 
             // contextMenuStrip1
             // 

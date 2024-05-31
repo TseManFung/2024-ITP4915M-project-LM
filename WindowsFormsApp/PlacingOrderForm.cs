@@ -60,13 +60,23 @@ namespace WindowsFormsApp
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            string sid = comboBoxSpareID.Text, ct = comboBoxCategoryType.Text, sn = comboBoxSpareName.Text;
+            string sid = comboBoxSpareID.Text, ct = comboBoxCategoryType.Text, sn = comboBoxSpareName.Text.ToLower();
 
             try
             {
-                dgvPlacingOrder.DataSource = Spare.AsEnumerable().Where(x => (sid == "" || x["SpareID"].ToString() == sid) && (ct == "" || x["CategoryLetter"].ToString() == ct) && (sn == "" || x["SpareName"].ToString() == sn)).CopyToDataTable();
+                dgvPlacingOrder.DataSource = Spare.AsEnumerable().Where(x => (sid == "" || x["SpareID"].ToString() == sid) && (ct == "" || x["CategoryLetter"].ToString() == ct) && (x["SpareName"].ToString().ToLower().IndexOf(sn)>-1)).CopyToDataTable();
+                txtSelectedSpareName.Text = dgvPlacingOrder.Rows[0].Cells["SpareID"].Value.ToString();
             }
             catch (InvalidOperationException ex) { MessageBox.Show("No data found"); }
+        }
+
+        private void dgvPlacingOrder_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            string sid = dgvPlacingOrder.Rows[e.RowIndex].Cells["SpareID"].Value.ToString();
+            if (sid != txtSelectedSpareName.Text)
+            {
+                txtSelectedSpareName.Text = sid;
+            }
         }
     }
 }
