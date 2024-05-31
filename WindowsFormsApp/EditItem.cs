@@ -33,10 +33,12 @@ namespace WindowsFormsApp
         {
             List<string> SpareIDlist = new List<string>();
             String sql = $"SELECT SpareID FROM Spare;";
-            var reader = Main.db.readBySql(sql);
-            while (reader.Read())
+            using (var reader = Main.db.readBySql(sql))
             {
-                SpareIDlist.Add(reader.GetString(0));
+                while (reader.Read())
+                {
+                    SpareIDlist.Add(reader.GetString(0));
+                }
             }
             this.comboBoxSpareID.DataSource = SpareIDlist;
             this.comboBoxSpareID.DisplayMember = "SpareID";
