@@ -32,6 +32,16 @@ namespace WindowsFormsApp
                 da.Fill(Spare);
             }
 
+            using (var sid = Spare.Columns["SpareID"])
+            {
+                comboBoxSpareID.Items.Clear();
+                comboBoxSpareID.Items.AddRange(Spare.AsEnumerable().Select(x => x[sid].ToString()).ToArray());
+            }
+            using (var sn = Spare.Columns["SpareName"])
+            {
+                comboBoxSpareName.Items.Clear();
+                comboBoxSpareName.Items.AddRange(Spare.AsEnumerable().Select(x => x[sn].ToString()).ToArray());
+            }
             //comboBoxSpareID.DataSource = Spare;
             //comboBoxSpareID.DisplayMember = "SpareID"; 
             //comboBoxSpareID.ValueMember = "SpareID"; 
