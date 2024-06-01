@@ -18,7 +18,6 @@ namespace WindowsFormsApp
         public frmPlacingOrder()
         {
             InitializeComponent();
-            getData();
         }
 
         private void getData()
@@ -64,8 +63,14 @@ namespace WindowsFormsApp
 
             try
             {
-                dgvPlacingOrder.DataSource = Spare.AsEnumerable().Where(x => (sid == "" || x["SpareID"].ToString() == sid) && (ct == "" || x["CategoryLetter"].ToString() == ct) && (x["SpareName"].ToString().ToLower().IndexOf(sn)>-1)).CopyToDataTable();
+                dgvPlacingOrder.DataSource = Spare.AsEnumerable().Where(x =>
+                ((x["quantity"] as int?) > 0) &&
+                (sid == "" || x["SpareID"].ToString() == sid) &&
+                (ct == "" || x["CategoryLetter"].ToString() == ct) &&
+                (x["SpareName"].ToString().ToLower().IndexOf(sn) > -1)).CopyToDataTable();
                 txtSelectedSpareName.Text = dgvPlacingOrder.Rows[0].Cells["SpareID"].Value.ToString();
+                numQuantity.Value = 1;
+                tlpSelectSpace.Visible = true;
             }
             catch (InvalidOperationException ex) { MessageBox.Show("No data found"); }
         }
@@ -76,7 +81,38 @@ namespace WindowsFormsApp
             if (sid != txtSelectedSpareName.Text)
             {
                 txtSelectedSpareName.Text = sid;
+                numQuantity.Value=1;
             }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            change_qty(1);
+        }
+        private void btnReduce_Click(object sender, EventArgs e)
+        {
+            change_qty(-1);
+        }
+
+        private void change_qty(int change)
+        {
+            decimal qty = numQuantity.Value;
+                if (qty + change > 0){
+                numQuantity.Value = Math.Floor(qty + change);
+            }
+
+
+        }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmPlacingOrder_Load(object sender, EventArgs e)
+        {
+            numQuantity.Controls[0].Visible = false;
+            getData();
         }
     }
 }

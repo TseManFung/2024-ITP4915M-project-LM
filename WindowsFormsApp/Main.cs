@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+// Debug
+using System.Diagnostics;
 
 namespace WindowsFormsApp
 {
@@ -17,9 +20,10 @@ namespace WindowsFormsApp
         public static sshdatabase db = new sshdatabase();
         public static int? userID;
         public static int? AssessLevel;
-        public static Type currfrm;
+        public static Form currfrm = null;
 
         bool isLogin = false;
+        Stack<Form> frmStack = new Stack<Form>();
 
         public void SetIsLogin(int id)
         {
@@ -47,44 +51,50 @@ namespace WindowsFormsApp
             //this.Change_pContent(typeof(frmOrderDetail));
         }
 
+        private Form newForm(Type formType)
+        {
+            Form frm = (Form)Activator.CreateInstance(formType);
+            frm.TopLevel = false;
+            frm.TopMost = true;
+            frm.Anchor = AnchorStyles.None;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+            return frm;
+        }
+
         public void Change_pContent(Type formType)
+        {
+            // add current frm to stack
+            if (currfrm != null)
+            {
+                frmStack.Push(currfrm);
+
+                if (currfrm_equals(typeof(frmLogin)))
+                {
+                    clear_frmStack();
+
+                }
+            }
+            SwitchForm(newForm(formType));
+        }
+
+        private void SwitchForm(Form frm)
         {
             try
             {
                 pContent.Controls.Clear();
-                Form frm = (Form)Activator.CreateInstance(formType);
-                frm.TopLevel = false;
-                frm.TopMost = true;
-                frm.Anchor = AnchorStyles.None;
-                frm.FormBorderStyle = FormBorderStyle.None;
-                frm.Dock = DockStyle.Fill;
+
                 pContent.Controls.Add(frm);
                 frm.Show();
                 lblTitle.Text = frm.Text;
-                Main.currfrm = formType;
+                Main.currfrm = frm;
 
-                if (formType == typeof(frmLogin) || formType == typeof(frmMenu))
+                change_mainBar(frm.GetType());
+                // Debug
+                Debug.WriteLine("\nfrmStack contents: " + frmStack.Count);
+                foreach (var form in frmStack)
                 {
-                    pictureBoxBack.Visible = false;
-                    lblTitle.Cursor = Cursors.Arrow;
-                    if (formType == typeof(frmMenu) && AssessLevel > 10000)
-                    {
-
-                        String sql = $"SELECT AccessLevel FROM User WHERE UserID = {Main.userID};";
-                        var reader = Main.db.readBySql(sql);
-                        if (reader.HasRows)
-                        {
-                            reader.Read();
-                            AssessLevel = Convert.ToInt32(reader[0]);
-                        }
-
-                    }
-                }
-                else
-                {
-
-                    pictureBoxBack.Visible = true;
-                    lblTitle.Cursor = Cursors.Hand;
+                    Debug.WriteLine(form.GetType().Name);
                 }
             }
             catch (Exception ex)
@@ -93,6 +103,36 @@ namespace WindowsFormsApp
             }
         }
 
+        private void change_mainBar(Type formType)
+        {
+            if (formType == typeof(frmLogin) || formType == typeof(frmMenu))
+            {
+                pictureBoxBack.Visible = false;
+                lblTitle.Cursor = Cursors.Arrow;
+
+                if (formType == typeof(frmMenu) && AssessLevel > 10000)
+                {
+
+                    String sql = $"SELECT AccessLevel FROM User WHERE UserID = {Main.userID};";
+                    var reader = Main.db.readBySql(sql);
+                    if (reader.HasRows)
+                    {
+                        reader.Read();
+                        AssessLevel = Convert.ToInt32(reader[0]);
+                    }
+
+                }
+            }
+            else
+            {
+
+                pictureBoxBack.Visible = true;
+                lblTitle.Cursor = Cursors.Hand;
+
+            }
+        }
+
+
 
         private void pContent_Paint(object sender, PaintEventArgs e)
         {
@@ -100,23 +140,58 @@ namespace WindowsFormsApp
         }
 
 
+        public bool currfrm_equals(Type frmType)
+        {
+            return Main.currfrm.GetType() == frmType;
+        }
+
         private void lblTitle_Click_1(object sender, EventArgs e)
         {
 
-            if (Main.currfrm == typeof(frmLogin) || Main.currfrm == typeof(frmMenu))
+            if (currfrm_equals(typeof(frmLogin)) || currfrm_equals(typeof(frmMenu)))
             {
                 return;
             }
             if (this.isLogin)
             {
-                this.Change_pContent(typeof(frmMenu));
+                foreach (var form in frmStack)
+                {
+                    if (form.GetType() == typeof(frmMenu))
+                    {
+
+                        SwitchForm(form);
+                        continue;
+                    }
+
+                }
+                clear_frmStack();
             }
+        }
+
+        private void clear_frmStack()
+        {
+            foreach (var form in frmStack)
+            {
+                if (currfrm == form) { 
+                continue;
+                }
+                form.Close();
+            }
+            frmStack.Clear();
         }
 
         private void pictureBoxLanguage_Click(object sender, EventArgs e)
         {
             frmLanguage f = new frmLanguage();
             f.ShowDialog();
+        }
+
+        // 如果下一個frm是frmLogin, frmMenu 清空stack
+        private void pictureBoxBack_Click(object sender, EventArgs e)
+        {
+            currfrm.Close();
+
+            SwitchForm(frmStack.Pop());
         }
     }
 }

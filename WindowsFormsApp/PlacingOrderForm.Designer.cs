@@ -37,10 +37,9 @@
             this.btnViewCart = new System.Windows.Forms.Button();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnReduce = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpSelectSpace = new System.Windows.Forms.TableLayoutPanel();
             this.txtSelectedSpareName = new System.Windows.Forms.TextBox();
             this.lblSelectedSpareName = new System.Windows.Forms.Label();
-            this.txtQuantity = new System.Windows.Forms.TextBox();
             this.dgvPlacingOrder = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -48,10 +47,12 @@
             this.comboBoxSpareName = new System.Windows.Forms.ComboBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.numQuantity = new System.Windows.Forms.NumericUpDown();
+            this.tlpSelectSpace.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlacingOrder)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBoxCategoryType
@@ -117,6 +118,7 @@
             this.btnAdd.TabIndex = 29;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnViewCart
             // 
@@ -134,7 +136,7 @@
             // 
             // btnConfirm
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.btnConfirm, 5);
+            this.tlpSelectSpace.SetColumnSpan(this.btnConfirm, 5);
             this.btnConfirm.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnConfirm.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.btnConfirm.Location = new System.Drawing.Point(3, 339);
@@ -143,6 +145,7 @@
             this.btnConfirm.TabIndex = 33;
             this.btnConfirm.Text = "Add to Cart";
             this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // btnReduce
             // 
@@ -155,39 +158,42 @@
             this.btnReduce.TabIndex = 34;
             this.btnReduce.Text = "-";
             this.btnReduce.UseVisualStyleBackColor = true;
+            this.btnReduce.Click += new System.EventHandler(this.btnReduce_Click);
             // 
-            // tableLayoutPanel1
+            // tlpSelectSpace
             // 
-            this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.txtSelectedSpareName, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.lblSelectedSpareName, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.txtQuantity, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btnConfirm, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.dgvPlacingOrder, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnReduce, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btnAdd, 4, 3);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(708, 3);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(699, 424);
-            this.tableLayoutPanel1.TabIndex = 35;
+            this.tlpSelectSpace.ColumnCount = 5;
+            this.tlpSelectSpace.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpSelectSpace.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpSelectSpace.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpSelectSpace.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpSelectSpace.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpSelectSpace.Controls.Add(this.txtSelectedSpareName, 1, 3);
+            this.tlpSelectSpace.Controls.Add(this.lblSelectedSpareName, 0, 3);
+            this.tlpSelectSpace.Controls.Add(this.btnConfirm, 0, 4);
+            this.tlpSelectSpace.Controls.Add(this.dgvPlacingOrder, 0, 0);
+            this.tlpSelectSpace.Controls.Add(this.btnReduce, 2, 3);
+            this.tlpSelectSpace.Controls.Add(this.btnAdd, 4, 3);
+            this.tlpSelectSpace.Controls.Add(this.numQuantity, 3, 3);
+            this.tlpSelectSpace.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpSelectSpace.Location = new System.Drawing.Point(708, 3);
+            this.tlpSelectSpace.Name = "tlpSelectSpace";
+            this.tlpSelectSpace.RowCount = 5;
+            this.tlpSelectSpace.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpSelectSpace.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpSelectSpace.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpSelectSpace.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpSelectSpace.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpSelectSpace.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpSelectSpace.Size = new System.Drawing.Size(699, 424);
+            this.tlpSelectSpace.TabIndex = 35;
+            this.tlpSelectSpace.Visible = false;
             // 
             // txtSelectedSpareName
             // 
             this.txtSelectedSpareName.BackColor = System.Drawing.SystemColors.Control;
             this.txtSelectedSpareName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSelectedSpareName.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtSelectedSpareName.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtSelectedSpareName.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtSelectedSpareName.Location = new System.Drawing.Point(142, 255);
@@ -211,27 +217,17 @@
             this.lblSelectedSpareName.TabIndex = 51;
             this.lblSelectedSpareName.Text = "Selected Spare Name:";
             // 
-            // txtQuantity
-            // 
-            this.txtQuantity.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtQuantity.Font = new System.Drawing.Font("PMingLiU", 45F);
-            this.txtQuantity.Location = new System.Drawing.Point(420, 255);
-            this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(133, 79);
-            this.txtQuantity.TabIndex = 36;
-            this.txtQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // dgvPlacingOrder
             // 
             this.dgvPlacingOrder.AllowUserToAddRows = false;
             this.dgvPlacingOrder.AllowUserToDeleteRows = false;
             this.dgvPlacingOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel1.SetColumnSpan(this.dgvPlacingOrder, 5);
+            this.tlpSelectSpace.SetColumnSpan(this.dgvPlacingOrder, 5);
             this.dgvPlacingOrder.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPlacingOrder.Location = new System.Drawing.Point(3, 3);
             this.dgvPlacingOrder.Name = "dgvPlacingOrder";
             this.dgvPlacingOrder.ReadOnly = true;
-            this.tableLayoutPanel1.SetRowSpan(this.dgvPlacingOrder, 3);
+            this.tlpSelectSpace.SetRowSpan(this.dgvPlacingOrder, 3);
             this.dgvPlacingOrder.RowTemplate.Height = 24;
             this.dgvPlacingOrder.Size = new System.Drawing.Size(693, 246);
             this.dgvPlacingOrder.TabIndex = 37;
@@ -310,7 +306,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.btnViewCart, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel1, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.tlpSelectSpace, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -321,6 +317,15 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1410, 538);
             this.tableLayoutPanel3.TabIndex = 38;
             // 
+            // numQuantity
+            // 
+            this.numQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.numQuantity.Font = new System.Drawing.Font("PMingLiU", 45F);
+            this.numQuantity.Location = new System.Drawing.Point(420, 255);
+            this.numQuantity.Name = "numQuantity";
+            this.numQuantity.Size = new System.Drawing.Size(133, 79);
+            this.numQuantity.TabIndex = 0;
+            // 
             // frmPlacingOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -329,12 +334,14 @@
             this.Controls.Add(this.tableLayoutPanel3);
             this.Name = "frmPlacingOrder";
             this.Text = "Placing Order";
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.Load += new System.EventHandler(this.frmPlacingOrder_Load);
+            this.tlpSelectSpace.ResumeLayout(false);
+            this.tlpSelectSpace.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlacingOrder)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -348,8 +355,7 @@
         private System.Windows.Forms.Button btnViewCart;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btnReduce;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox txtQuantity;
+        private System.Windows.Forms.TableLayoutPanel tlpSelectSpace;
         private System.Windows.Forms.DataGridView dgvPlacingOrder;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
@@ -359,5 +365,6 @@
         private System.Windows.Forms.TextBox txtSelectedSpareName;
         public System.Windows.Forms.ComboBox comboBoxSpareID;
         public System.Windows.Forms.ComboBox comboBoxSpareName;
+        private System.Windows.Forms.NumericUpDown numQuantity;
     }
 }
