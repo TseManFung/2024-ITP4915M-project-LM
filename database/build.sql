@@ -1,7 +1,7 @@
 use test;
 
 CREATE TABLE `Dealer` (
-  `DealerID` char(6) PRIMARY KEY,
+  `DealerID` int PRIMARY KEY AUTO_INCREMENT,
   `DealerName` varchar(255) NOT NULL,
   `SaleAreaID` int NOT NULL,
   `ContantNumber` varchar(20) UNIQUE NOT NULL,
@@ -11,13 +11,13 @@ CREATE TABLE `Dealer` (
 );
 
 CREATE TABLE `SaleArea` (
-  `AreaID` int PRIMARY KEY,
+  `AreaID` int PRIMARY KEY AUTO_INCREMENT,
   `Location` varchar(255) NOT NULL,
   `remark` varchar(255)
 );
 
 CREATE TABLE `Staff` (
-  `StaffID` int PRIMARY KEY,
+  `StaffID` int PRIMARY KEY AUTO_INCREMENT,
   `StaffName` varchar(255),
   `SaleAreaID` int,
   `DeptID` varchar(5),
@@ -34,12 +34,19 @@ CREATE TABLE `Department` (
 );
 
 CREATE TABLE `User` (
-  `UserID` int PRIMARY KEY,
+  `UserID` int PRIMARY KEY AUTO_INCREMENT,
   `LoginName` varchar(248) UNIQUE NOT NULL,
   `Password` char(65) NOT NULL COMMENT 'the first char is the state of the account(such as ! mean bock)the next 64 char is sha256',
   `AccessLevel` int NOT NULL DEFAULT 10000 COMMENT '0 has the highest permission',
-  `DealerID` char(6) COMMENT 'if it is null, mean this user is a staff of Dealer',
+  `DealerID` int COMMENT 'if it is null, mean this user is a staff of Dealer',
   `StaffID` int
+);
+
+CREATE TABLE `Cart` (
+  `UserID` int,
+  `SpareID` char(6),
+  `Qty` int,
+  PRIMARY KEY (`UserID`, `SpareID`)
 );
 
 CREATE TABLE `Category` (
@@ -48,7 +55,7 @@ CREATE TABLE `Category` (
 );
 
 CREATE TABLE `Supplier` (
-  `SupplierID` int PRIMARY KEY,
+  `SupplierID` int PRIMARY KEY AUTO_INCREMENT,
   `Name` varchar(255) NOT NULL,
   `Address` varchar(255) NOT NULL,
   `ContantNumber` varchar(20) UNIQUE NOT NULL,
@@ -76,7 +83,7 @@ CREATE TABLE `Stock` (
 
 CREATE TABLE `Order` (
   `OrderSerial` char(20) PRIMARY KEY COMMENT 'Format: YYYYMMDD-hhmm-Dealer.DealerID',
-  `DealerID` char(6) NOT NULL,
+  `DealerID` int NOT NULL,
   `OrderDate` datetime NOT NULL DEFAULT (now()) COMMENT 'it can not use timestamp',
   `OrderNumberfromDealer` varchar(255),
   `State` char(1) NOT NULL COMMENT 'use a char to record the state(F = this order is finished, W = Waiting to finished, etc...)',
@@ -118,11 +125,10 @@ CREATE TABLE `ScrapItems` (
 );
 
 CREATE TABLE `RestockOrder` (
-  `RestockOrderID` int,
+  `RestockOrderID` int PRIMARY KEY AUTO_INCREMENT,
   `WarehouseID` int,
   `OrderDate` date NOT NULL,
-  `Remark` varchar(255),
-  PRIMARY KEY (`RestockOrderID`, `WarehouseID`)
+  `Remark` varchar(255)
 );
 
 CREATE TABLE `RestockItem` (
@@ -142,7 +148,7 @@ CREATE TABLE `Invoice` (
 );
 
 CREATE TABLE `Truck` (
-  `TruckID` int PRIMARY KEY,
+  `TruckID` int PRIMARY KEY AUTO_INCREMENT,
   `SaleAreaID` int,
   `LicensePlate` varchar(255)
 );
@@ -154,7 +160,7 @@ CREATE TABLE `TruckInvoice` (
 );
 
 CREATE TABLE `Warehouse` (
-  `WarehouseID` int PRIMARY KEY,
+  `WarehouseID` int PRIMARY KEY AUTO_INCREMENT,
   `SaleAreaID` int NOT NULL,
   `Location` varchar(255) NOT NULL
 );
@@ -167,9 +173,9 @@ CREATE TABLE `WarehouseStockLevel` (
   PRIMARY KEY (`WarehouseID`, `SpareID`)
 );
 
-ALTER TABLE `Category` COMMENT = 'A-Sheet Metal, B-Major Assemblies, C-Light Components and D-Accessories';
+ALTER TABLE `Cart` ADD FOREIGN KEY (`UserID`) REFERENCES `User` (`UserID`);
 
-ALTER TABLE `ScrapItems` COMMENT = '報銷';
+ALTER TABLE `Cart` ADD FOREIGN KEY (`SpareID`) REFERENCES `Spare` (`SpareID`);
 
 ALTER TABLE `Dealer` ADD FOREIGN KEY (`SaleAreaID`) REFERENCES `SaleArea` (`AreaID`);
 
