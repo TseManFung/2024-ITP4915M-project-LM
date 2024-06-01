@@ -88,16 +88,16 @@ VALUES
 /*Delear*/
 INSERT INTO `Dealer` (`DealerID`, `DealerName`, `SaleAreaID`, `ContantNumber`, `email`, `OfficeAddress`, `DeliveryAddress`)
 VALUES 
-('000001', 'FY Ltd.', 1, '13912345678', 'fy@qq.com', '北京市朝陽區建國路100號1樓', '北京市朝陽區建國路100號1樓'),
-('000002', 'Happy Ltd.', 1, '15898765432', 'happy@abc.com', '北京市海淀區西三旗街道1號', '北京市海淀區西三旗街道1號'),
-('000003', 'IT Ltd.', 1, '13678901234', 'it@qq.com', '北京市昌平區回龍觀東大街2號', '北京市昌平區回龍觀東大街2號'),
-('000004', 'SDP Ltd.', 1, '15056789012', 'sdp@qq.com', '北京市西城區西單北大街3號', '北京市西城區西單北大街3號'),
-('000005', 'OOT Ltd.', 2, '13123456789', 'oot@qq.com', '上海市浦東新區東方明珠廣場', '香港中環皇后大道中1號'),
-('000006', 'IMAD Ltd.', 4, '13123456759', 'imad@qq.com', '深圳市福田區華強北路5號', '廣州市天河區珠江新城華強路6號'),
-('000007', 'ITE Ltd.', 6, '23020831', 'ite@qq.com', '香港中環皇后大道中1號', '廣州市天河區珠江新城華強路6號'),
-('000008', 'DP Ltd.', 8, '90747203', 'dp@qq.com', '台北市信義區忠孝東路5段7號', '南京市鼓樓區中山北路8號'),
-('000009', 'SSD Ltd.', 15, '69400737', 'ssd@qq.com', '廈門市思明區鼓浪屿路9號', '香港中環皇后大道中1號'),
-('000010', 'OS Ltd.', 30, '31376030', 'os@qq.com', '貴陽市南明區廣場北路10號', '南京市鼓樓區中山北路8號');
+(1, 'FY Ltd.', 1, '13912345678', 'fy@qq.com', '北京市朝陽區建國路100號1樓', '北京市朝陽區建國路100號1樓'),
+(2, 'Happy Ltd.', 1, '15898765432', 'happy@abc.com', '北京市海淀區西三旗街道1號', '北京市海淀區西三旗街道1號'),
+(3, 'IT Ltd.', 1, '13678901234', 'it@qq.com', '北京市昌平區回龍觀東大街2號', '北京市昌平區回龍觀東大街2號'),
+(4, 'SDP Ltd.', 1, '15056789012', 'sdp@qq.com', '北京市西城區西單北大街3號', '北京市西城區西單北大街3號'),
+(5, 'OOT Ltd.', 2, '13123456789', 'oot@qq.com', '上海市浦東新區東方明珠廣場', '香港中環皇后大道中1號'),
+(6, 'IMAD Ltd.', 4, '13123456759', 'imad@qq.com', '深圳市福田區華強北路5號', '廣州市天河區珠江新城華強路6號'),
+(7, 'ITE Ltd.', 6, '23020831', 'ite@qq.com', '香港中環皇后大道中1號', '廣州市天河區珠江新城華強路6號'),
+(8, 'DP Ltd.', 8, '90747203', 'dp@qq.com', '台北市信義區忠孝東路5段7號', '南京市鼓樓區中山北路8號'),
+(9, 'SSD Ltd.', 15, '69400737', 'ssd@qq.com', '廈門市思明區鼓浪屿路9號', '香港中環皇后大道中1號'),
+(10, 'OS Ltd.', 30, '31376030', 'os@qq.com', '貴陽市南明區廣場北路10號', '南京市鼓樓區中山北路8號');
 
 /*Staff*/
 INSERT INTO `Staff` (`StaffID`, `StaffName`, `SaleAreaID`, `DeptID`, `Position`, `PhoneNunber`, `Gender`)
@@ -133,26 +133,26 @@ VALUES
 /*User*/
 INSERT INTO `User` (`UserID`, `LoginName`, `Password`, `AccessLevel`, `DealerID`, `StaffID`)
 VALUES 
-(451561235, 'ATL', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 1),
-(894874213, 'kirito', '!a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 2),
-(123456789, 'cusidina', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 3),
-(987654321, 'kemono114', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 4),
-(159753456, 'idkABC', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 5),
-(426879513, 'asuna', '!a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 6),
-(741852963, 'HAha123', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 7),
-(369258147, 'happyCat', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 8),
-(789456123, 'wagananai', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 9),
-(987412365, 'ho', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 10),
-(754664656, 'zwYtJrViRPGcruemxwMd', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,11),
-(784018973, 'cKCVYAvrPuwhRufZqnnH', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,12),
-(813373290, 'ukdeZCKyEGPzanTMuiXC', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,13),
-(842727607, 'DmozffipkaEvXUtxZfVV', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,14),
-(872081924, 'zRmTpvAqEZhWaAZvWuQq', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,15),
-(901436241, 'PHkVKmwcfiTfmGhBaVgg', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,16),
-(930790558, 'iKXQbJKpydqVkDDFohbC', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,17),
-(960144875, 'ianWsRYLjsJhgTPdiwgy', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,18),
-(989499192, 'HJfXjJbUrEwcnMvnXjos', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,19),
-(987414555, 'mHMVNDcyDQVtkXDqRDma', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,20),
+(9, 'ATL', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 1),
+(10, 'kirito', '!a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 2),
+(11, 'cusidina', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 3),
+(12, 'kemono114', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 4),
+(13, 'idkABC', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 5),
+(14, 'asuna', '!a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 6),
+(15, 'HAha123', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 7),
+(16, 'happyCat', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 8),
+(17, 'wagananai', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 9),
+(18, 'ho', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 10000, NULL, 10),
+(19, 'zwYtJrViRPGcruemxwMd', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,11),
+(20, 'cKCVYAvrPuwhRufZqnnH', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,12),
+(21, 'ukdeZCKyEGPzanTMuiXC', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,13),
+(22, 'DmozffipkaEvXUtxZfVV', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,14),
+(23, 'zRmTpvAqEZhWaAZvWuQq', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,15),
+(24, 'PHkVKmwcfiTfmGhBaVgg', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,16),
+(25, 'iKXQbJKpydqVkDDFohbC', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,17),
+(26, 'ianWsRYLjsJhgTPdiwgy', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,18),
+(27, 'HJfXjJbUrEwcnMvnXjos', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,19),
+(28, 'mHMVNDcyDQVtkXDqRDma', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,20),
 (1, 'storeman', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '400', NULL, 100),
 (2, 'LMcleck', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '200', NULL, 101),
 (3, 'accountant', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '300', NULL, 102),
@@ -160,7 +160,7 @@ VALUES
 (5, 'delivery_worker', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '700', NULL, 104),
 (6, 'Warehousecleak', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '600', NULL, 105),
 (7, 'stockrecord', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '500', NULL, 106),
-(8, 'Dealer1', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '5000', '000001', NULL);
+(8, 'Dealer1', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '5000', 1, NULL);
 
 /*Spare*/
 INSERT INTO `Spare` (`SpareID`, `CategoryLetter`, `SpareName`, `Price`, `Description`, `Weight`, `SupplierID`)
@@ -193,16 +193,16 @@ VALUES
 /*Order*/
 INSERT INTO `Order` (`OrderSerial`, `DealerID`, `OrderDate`, `OrderNumberfromDealer`, `State`, `remark`)
 VALUES
-  ('202405240900000001', '000001', '2024-05-24 09:00:00', null, 'F', null),
-  ('202405240901000002', '000002', '2024-05-24 09:01:00', null, 'F', null),
-  ('202405240902000003', '000003', '2024-05-24 09:02:00', null, 'P', null),
-  ('202405240903000004', '000004', '2024-05-24 09:03:00', null, 'P', null),
-  ('202405240904000005', '000005', '2024-05-24 09:04:00', null, 'P', null),
-  ('202405240905000006', '000006', '2024-05-24 09:05:00', null, 'P', null),
-  ('202405240906000007', '000007', '2024-05-24 09:06:00', null, 'P', null),
-  ('202405240907000008', '000008', '2024-05-24 09:07:00', null, 'W', null),
-  ('202405240908000009', '000009', '2024-05-24 09:08:00', null, 'W', null),
-  ('202405240909000010', '000010', '2024-05-24 09:09:00', null, 'W', null);
+  ('202405240900000001', 1, '2024-05-24 09:00:00', null, 'F', null),
+  ('202405240901000002', 2, '2024-05-24 09:01:00', null, 'F', null),
+  ('202405240902000003', 3, '2024-05-24 09:02:00', null, 'P', null),
+  ('202405240903000004', 4, '2024-05-24 09:03:00', null, 'P', null),
+  ('202405240904000005', 5, '2024-05-24 09:04:00', null, 'P', null),
+  ('202405240905000006', 6, '2024-05-24 09:05:00', null, 'P', null),
+  ('202405240906000007', 7, '2024-05-24 09:06:00', null, 'P', null),
+  ('202405240907000008', 8, '2024-05-24 09:07:00', null, 'W', null),
+  ('202405240908000009', 9, '2024-05-24 09:08:00', null, 'W', null),
+  ('202405240909000010', 10, '2024-05-24 09:09:00', null, 'W', null);
 
 /*OrderItem*/
 INSERT INTO `OrderItem` (`OrderSerial`, `ItemID`, `Quantity`, `PriceInOrder`)
