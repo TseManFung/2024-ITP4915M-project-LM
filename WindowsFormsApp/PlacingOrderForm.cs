@@ -20,9 +20,10 @@ namespace WindowsFormsApp
             InitializeComponent();
         }
 
+
         private void getData()
         {
-            string sql = "select s.SpareID as SpareID,CategoryLetter,SpareName,Price,Weight,quantity from Spare s inner join Stock on s.SpareID =Stock.SpareID;";
+            string sql = "SELECT s.SpareID as SpareID, CategoryLetter, SpareName, Price, Weight, SUM(quantity) as quantity FROM Spare s INNER JOIN Stock ON s.SpareID = Stock.SpareID GROUP BY s.SpareID, CategoryLetter, SpareName, Price, Weight;";
             var conn = Main.db.get_dbconnect();
             Spare = new DataTable();
 
@@ -64,7 +65,7 @@ namespace WindowsFormsApp
             try
             {
                 dgvPlacingOrder.DataSource = Spare.AsEnumerable().Where(x =>
-                ((x["quantity"] as int?) > 0) &&
+                (Convert.ToInt32(x["quantity"]) > 0) &&
                 (sid == "" || x["SpareID"].ToString() == sid) &&
                 (ct == "" || x["CategoryLetter"].ToString() == ct) &&
                 (x["SpareName"].ToString().ToLower().IndexOf(sn) > -1)).CopyToDataTable();
@@ -99,11 +100,12 @@ namespace WindowsFormsApp
 
         public int getStock(string sid)
         {
-            var rows = Spare.Select("SpareID = '" + txtSelectedSpareName.Text + "'");
+            var rows = Spare.Select("SpareID = '" + sid + "'");
             if (rows.Length > 0)
             {
                 var row = rows[0];
-                int stock = row.Field<int>("quantity");
+                int stock = Convert.ToInt32(row["quantity"]);
+                    //row.Field<int>("quantity");
                 return stock;
 
             }
@@ -113,8 +115,6 @@ namespace WindowsFormsApp
         private void change_qty(int change)
         {
             decimal qty = numQuantity.Value;
-            //get the quantity of the selected item
-            // 要優化 未完成
             try
             {
                 numQuantity.Value = Math.Floor(qty + change);
@@ -128,14 +128,16 @@ namespace WindowsFormsApp
                 MessageBox.Show(ex.Message);
             }
 
-
-
-
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            Main.db.insert("Cart", Main.userID, txtSelectedSpareName.Text, numQuantity.Value);
+            try{
+
+                Main.db.insert("Cart", Main.userID, txtSelectedSpareName.Text, numQuantity.Value); }catch(MySqlException ex)
+            {
+                MessageBox.Show($"Error: {txtSelectedSpareName.Text} is already in your shopping cart" ); 
+            }
         }
 
         private void frmPlacingOrder_Load(object sender, EventArgs e)

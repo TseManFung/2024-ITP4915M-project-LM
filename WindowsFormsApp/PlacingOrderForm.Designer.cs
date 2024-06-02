@@ -221,9 +221,12 @@
             // 
             this.dgvPlacingOrder.AllowUserToAddRows = false;
             this.dgvPlacingOrder.AllowUserToDeleteRows = false;
+            this.dgvPlacingOrder.AllowUserToResizeRows = false;
+            this.dgvPlacingOrder.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPlacingOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tlpSelectSpace.SetColumnSpan(this.dgvPlacingOrder, 5);
             this.dgvPlacingOrder.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvPlacingOrder.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvPlacingOrder.Location = new System.Drawing.Point(3, 3);
             this.dgvPlacingOrder.Name = "dgvPlacingOrder";
             this.dgvPlacingOrder.ReadOnly = true;

@@ -11,6 +11,7 @@ using Renci.SshNet;
 using MySqlConnector;
 using System.Data.Common;
 using System.Security.Cryptography;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace WindowsFormsApp
 {
@@ -28,6 +29,22 @@ namespace WindowsFormsApp
         public MySqlConnection get_dbconnect()
         {
             return dbconnect;
+        }
+
+        // debug
+        public void ShowDataTable(DataTable dt)
+        {
+            Console.WriteLine("DataTable:");
+            Console.WriteLine("-----------------");
+            foreach (DataRow row in dt.Rows)
+            {
+                foreach (DataColumn col in dt.Columns)
+                {
+                    Console.Write($"{col.ColumnName}: {row[col]} | ");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine("-----------------");
         }
 
 
