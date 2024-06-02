@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 // Debug
-using System.Diagnostics;
+//using System.Diagnostics;
 
 namespace WindowsFormsApp
 {
@@ -91,11 +91,11 @@ namespace WindowsFormsApp
 
                 change_mainBar(frm.GetType());
                 // Debug
-                Debug.WriteLine("\nfrmStack contents: " + frmStack.Count);
-                foreach (var form in frmStack)
-                {
-                    Debug.WriteLine(form.GetType().Name);
-                }
+                //Debug.WriteLine("\nfrmStack contents: " + frmStack.Count);
+                //foreach (var form in frmStack)
+                //{
+                //    Debug.WriteLine(form.GetType().Name);
+                //}
             }
             catch (Exception ex)
             {
@@ -186,7 +186,6 @@ namespace WindowsFormsApp
             f.ShowDialog();
         }
 
-        // 如果下一個frm是frmLogin, frmMenu 清空stack
         private void pictureBoxBack_Click(object sender, EventArgs e)
         {
             currfrm.Close();

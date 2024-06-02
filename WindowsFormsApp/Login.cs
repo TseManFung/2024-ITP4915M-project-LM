@@ -28,18 +28,19 @@ namespace WindowsFormsApp
             login();
         }
 
-        public void login()
+        public bool login()
         {
             try
             {
                 int id = Main.db.getUserID(txtLoginName.Text, txtPassword.Text);
                 (this.ParentForm as Main)?.SetIsLogin(id);
                 (this.ParentForm as Main)?.Change_pContent(typeof(frmMenu));
-
+                return true;
             }
             catch (Exception ex)
             {
                 lblWrongPassword.Show();
+                return false;
             }
         }
 
@@ -48,11 +49,18 @@ namespace WindowsFormsApp
             if (e.KeyChar == (char)13)
             {
 
-                login();
+                if (login())
+                {
+                    e.Handled = true;
+                }
+
             }
 
             else if (e.KeyChar == (char)27)
+            {
                 (this.ParentForm as Main)?.Close();
+                e.Handled = true;
+            }
         }
 
         private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)

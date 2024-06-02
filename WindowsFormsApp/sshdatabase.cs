@@ -114,7 +114,7 @@ namespace WindowsFormsApp
         {
             string sql = "SELECT `UserID` FROM `User` WHERE `LoginName` = @loginName AND `Password` = @pw";
             int count = 0;
-            int id = 0;
+            int id = -1;
             using (MySqlCommand com = new MySqlCommand(sql, dbconnect))
             {
 

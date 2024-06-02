@@ -41,18 +41,18 @@
             this.txtSelectedSpareName = new System.Windows.Forms.TextBox();
             this.lblSelectedSpareName = new System.Windows.Forms.Label();
             this.dgvPlacingOrder = new System.Windows.Forms.DataGridView();
+            this.numQuantity = new System.Windows.Forms.NumericUpDown();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.comboBoxSpareID = new System.Windows.Forms.ComboBox();
             this.comboBoxSpareName = new System.Windows.Forms.ComboBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.numQuantity = new System.Windows.Forms.NumericUpDown();
             this.tlpSelectSpace.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlacingOrder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBoxCategoryType
@@ -233,6 +233,15 @@
             this.dgvPlacingOrder.TabIndex = 37;
             this.dgvPlacingOrder.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvPlacingOrder_CellMouseClick);
             // 
+            // numQuantity
+            // 
+            this.numQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.numQuantity.Font = new System.Drawing.Font("PMingLiU", 45F);
+            this.numQuantity.Location = new System.Drawing.Point(420, 255);
+            this.numQuantity.Name = "numQuantity";
+            this.numQuantity.Size = new System.Drawing.Size(133, 79);
+            this.numQuantity.TabIndex = 0;
+            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
@@ -317,15 +326,6 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1410, 538);
             this.tableLayoutPanel3.TabIndex = 38;
             // 
-            // numQuantity
-            // 
-            this.numQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numQuantity.Font = new System.Drawing.Font("PMingLiU", 45F);
-            this.numQuantity.Location = new System.Drawing.Point(420, 255);
-            this.numQuantity.Name = "numQuantity";
-            this.numQuantity.Size = new System.Drawing.Size(133, 79);
-            this.numQuantity.TabIndex = 0;
-            // 
             // frmPlacingOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -338,10 +338,10 @@
             this.tlpSelectSpace.ResumeLayout(false);
             this.tlpSelectSpace.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlacingOrder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).EndInit();
             this.ResumeLayout(false);
 
         }
