@@ -21,5 +21,15 @@ namespace WindowsFormsApp
         {
 
         }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvSelectedSpareName_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

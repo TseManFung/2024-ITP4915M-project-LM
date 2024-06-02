@@ -96,6 +96,7 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1605, 362);
             this.tableLayoutPanel1.TabIndex = 80;
             this.tableLayoutPanel1.Visible = false;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // checkBoxAutoReStock
             // 
@@ -134,6 +135,7 @@
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(1272, 41);
             this.txtDescription.TabIndex = 80;
+            this.txtDescription.TextChanged += new System.EventHandler(this.txtDescription_TextChanged);
             // 
             // lblDescription
             // 
@@ -173,6 +175,7 @@
             this.comboBoxSupplier.Name = "comboBoxSupplier";
             this.comboBoxSupplier.Size = new System.Drawing.Size(309, 35);
             this.comboBoxSupplier.TabIndex = 61;
+            this.comboBoxSupplier.SelectedIndexChanged += new System.EventHandler(this.comboBoxSupplier_SelectedIndexChanged);
             // 
             // lblSupplier
             // 
@@ -346,6 +349,7 @@
             this.comboBoxSpareType.Name = "comboBoxSpareType";
             this.comboBoxSpareType.Size = new System.Drawing.Size(309, 35);
             this.comboBoxSpareType.TabIndex = 45;
+            this.comboBoxSpareType.SelectedIndexChanged += new System.EventHandler(this.comboBoxSpareType_SelectedIndexChanged);
             // 
             // btnSave
             // 
@@ -358,6 +362,7 @@
             this.btnSave.TabIndex = 51;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // tableLayoutPanel2
             // 

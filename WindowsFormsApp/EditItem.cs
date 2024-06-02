@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -98,6 +99,67 @@ namespace WindowsFormsApp
                 txtSpareWeight.Text = string.Empty;
                 MessageBox.Show("only number!"); // Show error message
             }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (comboBoxSpareID.SelectedItem != null &&
+                comboBoxSpareType.SelectedItem != null &&
+                !string.IsNullOrEmpty(txtSpareName.Text) &&
+                !string.IsNullOrEmpty(txtPrice.Text) &&
+                !string.IsNullOrEmpty(txtSpareWeight.Text) &&
+                comboBoxSupplier.SelectedItem != null)
+            {
+                string spareID = comboBoxSpareID.SelectedItem.ToString();
+                string CattegoryLetter = comboBoxSpareType.SelectedItem.ToString();
+                string SpareName = txtSpareName.Text;
+                decimal price = decimal.Parse(txtPrice.Text);
+                string Description = txtDescription.Text;
+                float weight = float.Parse(txtSpareWeight.Text);
+                string supplierName = comboBoxSupplier.SelectedItem.ToString(); ;
+                String sqlofsupplier = $"SELECT SupplierID FROM Supplier WHERE Name = '{supplierName}'";
+                int SupplierID = 0;
+                using (var reader = Main.db.readBySql(sqlofsupplier))
+                {
+                    while (reader.Read())
+                    {
+                        SupplierID = reader.GetInt32(0);
+                    }
+                }
+                string query = $"UPDATE Spare SET SpareName = '{SpareName}', CategoryLetter = '{CattegoryLetter}', Price = {price}, Description = '{Description}', Weight = {weight}, SupplierID = {SupplierID} WHERE SpareID = '{spareID}'";
+                Main.db.updateBySql(query);
+                MessageBox.Show("Successful editing");
+
+                txtSpareName.Text = "";
+                txtPrice.Text = "00.00";
+                txtSpareWeight.Text = "0";
+                txtDescription.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Please provide complete data");
+            }
+   
+        }
+
+        private void comboBoxSpareType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxSupplier_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDescription_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

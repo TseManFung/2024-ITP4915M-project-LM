@@ -58,6 +58,7 @@
             this.dgvSelectedSpareName.RowTemplate.Height = 24;
             this.dgvSelectedSpareName.Size = new System.Drawing.Size(1399, 294);
             this.dgvSelectedSpareName.TabIndex = 0;
+            this.dgvSelectedSpareName.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSelectedSpareName_CellContentClick);
             // 
             // btnClearAll
             // 
@@ -78,6 +79,7 @@
             this.btnConfirm.TabIndex = 5;
             this.btnConfirm.Text = "Confirm";
             this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // lblTotalQuantity
             // 
