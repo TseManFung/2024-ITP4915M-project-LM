@@ -37,25 +37,19 @@ namespace WindowsFormsApp
             com.ExecuteNonQuery();
         }
 
-        public void insert(String table, String[] data)
+        public void insert<T>(String table, params T[] data)
         {
-
-            String sql = $"INSERT INTO {table} VALUE (";
+            String sql = $"INSERT INTO {table} VALUES (";
             for (int i = 0; i < data.Length; i++)
             {
-                if (i == data.Length - 1)
+                sql += $"\"{data[i]}\"";
+                if (i != data.Length - 1)
                 {
-                    sql += "\"" + data[i] + "\"" + ");";
-                }
-                else
-                {
-                    sql += "\"" + data[i] + "\"" + ",";
+                    sql += ",";
                 }
             }
+            sql += ");";
             insertBySql(sql);
-
-            //insert("OrderItem", new string[] { "202405240901000002", "C10435", "10", "12.3" });
-
         }
 
 

@@ -70,6 +70,7 @@ namespace WindowsFormsApp
                 (x["SpareName"].ToString().ToLower().IndexOf(sn) > -1)).CopyToDataTable();
                 txtSelectedSpareName.Text = dgvPlacingOrder.Rows[0].Cells["SpareID"].Value.ToString();
                 numQuantity.Value = 1;
+                numQuantity.Maximum = getStock(txtSelectedSpareName.Text);
                 tlpSelectSpace.Visible = true;
             }
             catch (InvalidOperationException ex) { MessageBox.Show("No data found"); }
@@ -81,7 +82,9 @@ namespace WindowsFormsApp
             if (sid != txtSelectedSpareName.Text)
             {
                 txtSelectedSpareName.Text = sid;
-                numQuantity.Value=1;
+                numQuantity.Value = 1;
+                numQuantity.Maximum = getStock(txtSelectedSpareName.Text);
+
             }
         }
 
@@ -94,19 +97,48 @@ namespace WindowsFormsApp
             change_qty(-1);
         }
 
+        public int getStock(string sid)
+        {
+            var rows = Spare.Select("SpareID = '" + txtSelectedSpareName.Text + "'");
+            if (rows.Length > 0)
+            {
+                var row = rows[0];
+                int stock = row.Field<int>("quantity");
+                return stock;
+
+            }
+            throw new Exception("No stock found");
+        }
+
         private void change_qty(int change)
         {
             decimal qty = numQuantity.Value;
-                if (qty + change > 0){
+            //get the quantity of the selected item
+            // 要優化 未完成
+            try
+            {
                 numQuantity.Value = Math.Floor(qty + change);
             }
+            catch (ArgumentOutOfRangeException ex)
+            {
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
 
 
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-
+//UserID int PK
+//SpareID char(6) PK
+//Qty int
+           Main.db.insert("Cart",new )
         }
 
         private void frmPlacingOrder_Load(object sender, EventArgs e)

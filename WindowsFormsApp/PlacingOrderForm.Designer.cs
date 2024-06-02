@@ -238,9 +238,19 @@
             this.numQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numQuantity.Font = new System.Drawing.Font("PMingLiU", 45F);
             this.numQuantity.Location = new System.Drawing.Point(420, 255);
+            this.numQuantity.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numQuantity.Name = "numQuantity";
             this.numQuantity.Size = new System.Drawing.Size(133, 79);
             this.numQuantity.TabIndex = 0;
+            this.numQuantity.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // contextMenuStrip1
             // 
