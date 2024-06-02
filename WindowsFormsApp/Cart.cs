@@ -176,6 +176,7 @@ namespace WindowsFormsApp
 
         }
         // ---------------- Create Order ----------------
+        // upload修改的qty到資料庫
         private void btnConfirm_Click(object sender, EventArgs e)
         {
 
