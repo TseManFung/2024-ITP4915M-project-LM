@@ -37,7 +37,7 @@ namespace WindowsFormsApp
             com.ExecuteNonQuery();
         }
 
-        public void insert<T>(String table, params T[] data)
+        public void insert(String table, params object[] data)
         {
             String sql = $"INSERT INTO {table} VALUES (";
             for (int i = 0; i < data.Length; i++)

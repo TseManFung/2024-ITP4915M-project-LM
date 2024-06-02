@@ -135,10 +135,7 @@ namespace WindowsFormsApp
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-//UserID int PK
-//SpareID char(6) PK
-//Qty int
-           Main.db.insert("Cart",new )
+            Main.db.insert("Cart", Main.userID, txtSelectedSpareName.Text, numQuantity.Value);
         }
 
         private void frmPlacingOrder_Load(object sender, EventArgs e)
