@@ -88,15 +88,15 @@
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.lblReport = new System.Windows.Forms.Label();
             this.pictureBoxReport = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBoxChangePassword = new System.Windows.Forms.PictureBox();
+            this.lblChangePassword = new System.Windows.Forms.Label();
+            this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBoxModifyInformation = new System.Windows.Forms.PictureBox();
+            this.lblModifyInformation = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBoxLogout = new System.Windows.Forms.PictureBox();
             this.pictureBoxLenguage = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAddNewProduct)).BeginInit();
@@ -136,13 +136,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEditWarehouse)).BeginInit();
             this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReport)).BeginInit();
+            this.tableLayoutPanel21.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChangePassword)).BeginInit();
+            this.tableLayoutPanel22.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxModifyInformation)).BeginInit();
             this.tableLayoutPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLenguage)).BeginInit();
-            this.tableLayoutPanel21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tableLayoutPanel22.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblLogout
@@ -976,6 +976,84 @@
             this.pictureBoxReport.TabStop = false;
             this.pictureBoxReport.Click += new System.EventHandler(this.CReport);
             // 
+            // tableLayoutPanel21
+            // 
+            this.tableLayoutPanel21.ColumnCount = 1;
+            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel21.Controls.Add(this.pictureBoxChangePassword, 0, 0);
+            this.tableLayoutPanel21.Controls.Add(this.lblChangePassword, 0, 1);
+            this.tableLayoutPanel21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tableLayoutPanel21.Location = new System.Drawing.Point(201, 471);
+            this.tableLayoutPanel21.Name = "tableLayoutPanel21";
+            this.tableLayoutPanel21.RowCount = 2;
+            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel21.Size = new System.Drawing.Size(192, 150);
+            this.tableLayoutPanel21.TabIndex = 45;
+            // 
+            // pictureBoxChangePassword
+            // 
+            this.pictureBoxChangePassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxChangePassword.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxChangePassword.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxChangePassword.Image")));
+            this.pictureBoxChangePassword.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxChangePassword.Name = "pictureBoxChangePassword";
+            this.pictureBoxChangePassword.Size = new System.Drawing.Size(186, 114);
+            this.pictureBoxChangePassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxChangePassword.TabIndex = 4;
+            this.pictureBoxChangePassword.TabStop = false;
+            // 
+            // lblChangePassword
+            // 
+            this.lblChangePassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblChangePassword.AutoSize = true;
+            this.lblChangePassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblChangePassword.Location = new System.Drawing.Point(52, 129);
+            this.lblChangePassword.Name = "lblChangePassword";
+            this.lblChangePassword.Size = new System.Drawing.Size(87, 12);
+            this.lblChangePassword.TabIndex = 14;
+            this.lblChangePassword.Text = "Change Password";
+            // 
+            // tableLayoutPanel22
+            // 
+            this.tableLayoutPanel22.ColumnCount = 1;
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel22.Controls.Add(this.pictureBoxModifyInformation, 0, 0);
+            this.tableLayoutPanel22.Controls.Add(this.lblModifyInformation, 0, 1);
+            this.tableLayoutPanel22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tableLayoutPanel22.Location = new System.Drawing.Point(399, 471);
+            this.tableLayoutPanel22.Name = "tableLayoutPanel22";
+            this.tableLayoutPanel22.RowCount = 2;
+            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel22.Size = new System.Drawing.Size(192, 150);
+            this.tableLayoutPanel22.TabIndex = 46;
+            // 
+            // pictureBoxModifyInformation
+            // 
+            this.pictureBoxModifyInformation.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxModifyInformation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxModifyInformation.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxModifyInformation.Image")));
+            this.pictureBoxModifyInformation.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxModifyInformation.Name = "pictureBoxModifyInformation";
+            this.pictureBoxModifyInformation.Size = new System.Drawing.Size(186, 114);
+            this.pictureBoxModifyInformation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxModifyInformation.TabIndex = 4;
+            this.pictureBoxModifyInformation.TabStop = false;
+            // 
+            // lblModifyInformation
+            // 
+            this.lblModifyInformation.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblModifyInformation.AutoSize = true;
+            this.lblModifyInformation.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblModifyInformation.Location = new System.Drawing.Point(46, 129);
+            this.lblModifyInformation.Name = "lblModifyInformation";
+            this.lblModifyInformation.Size = new System.Drawing.Size(99, 12);
+            this.lblModifyInformation.TabIndex = 14;
+            this.lblModifyInformation.Text = "Modify Information";
+            // 
             // tableLayoutPanel7
             // 
             this.tableLayoutPanel7.ColumnCount = 1;
@@ -1016,84 +1094,6 @@
             this.pictureBoxLenguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxLenguage.TabIndex = 21;
             this.pictureBoxLenguage.TabStop = false;
-            // 
-            // tableLayoutPanel21
-            // 
-            this.tableLayoutPanel21.ColumnCount = 1;
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel21.Controls.Add(this.pictureBox1, 0, 0);
-            this.tableLayoutPanel21.Controls.Add(this.label1, 0, 1);
-            this.tableLayoutPanel21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tableLayoutPanel21.Location = new System.Drawing.Point(201, 471);
-            this.tableLayoutPanel21.Name = "tableLayoutPanel21";
-            this.tableLayoutPanel21.RowCount = 2;
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel21.Size = new System.Drawing.Size(192, 150);
-            this.tableLayoutPanel21.TabIndex = 45;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(186, 114);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.Location = new System.Drawing.Point(52, 129);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 12);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Change Password";
-            // 
-            // tableLayoutPanel22
-            // 
-            this.tableLayoutPanel22.ColumnCount = 1;
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel22.Controls.Add(this.pictureBox2, 0, 0);
-            this.tableLayoutPanel22.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tableLayoutPanel22.Location = new System.Drawing.Point(399, 471);
-            this.tableLayoutPanel22.Name = "tableLayoutPanel22";
-            this.tableLayoutPanel22.RowCount = 2;
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel22.Size = new System.Drawing.Size(192, 150);
-            this.tableLayoutPanel22.TabIndex = 46;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(186, 114);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Location = new System.Drawing.Point(48, 129);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 12);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Modify Infomation";
             // 
             // frmMenu
             // 
@@ -1165,16 +1165,16 @@
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReport)).EndInit();
+            this.tableLayoutPanel21.ResumeLayout(false);
+            this.tableLayoutPanel21.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChangePassword)).EndInit();
+            this.tableLayoutPanel22.ResumeLayout(false);
+            this.tableLayoutPanel22.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxModifyInformation)).EndInit();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLenguage)).EndInit();
-            this.tableLayoutPanel21.ResumeLayout(false);
-            this.tableLayoutPanel21.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tableLayoutPanel22.ResumeLayout(false);
-            this.tableLayoutPanel22.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1243,11 +1243,11 @@
         private System.Windows.Forms.PictureBox pictureBoxEditDepartment;
         private System.Windows.Forms.PictureBox pictureBoxEditWarehouse;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel21;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBoxChangePassword;
+        private System.Windows.Forms.Label lblChangePassword;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel22;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBoxModifyInformation;
+        private System.Windows.Forms.Label lblModifyInformation;
     }
 }
 
