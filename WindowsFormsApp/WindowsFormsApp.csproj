@@ -217,6 +217,18 @@
     <Compile Include="CollectSpare.Designer.cs">
       <DependentUpon>CollectSpare.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyInformation.Designer.cs">
+      <DependentUpon>ModifyInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="sshdatabase.cs" />
     <Compile Include="DeliveryStatusandProductDetails.cs">
       <SubType>Form</SubType>
@@ -448,6 +460,9 @@
     <EmbeddedResource Include="forgetPW.resx">
       <DependentUpon>forgetPW.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="language.resx">
       <DependentUpon>language.cs</DependentUpon>
     </EmbeddedResource>
@@ -456,6 +471,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyInformation.resx">
+      <DependentUpon>ModifyInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewSupplier.resx">
       <DependentUpon>NewSupplier.cs</DependentUpon>

@@ -160,6 +160,9 @@ namespace WindowsFormsApp
         }
         private void removeRow(int index)
         {
+            // get spare ID from txtSpareID
+            string sid = txtSpareID.Text;
+// remove from database
 
         }
         private void removeAllRow() { }

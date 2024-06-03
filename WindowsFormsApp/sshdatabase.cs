@@ -107,7 +107,7 @@ namespace WindowsFormsApp
             return updateBySql(sql);
         }
 
-        private string ComputeSha256Hash(string raw)
+        public string ComputeSha256Hash(string raw)
         {
             using (SHA256 sha256 = SHA256.Create())
             {
