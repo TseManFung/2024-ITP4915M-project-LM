@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class ModifyInformation : Form
+    public partial class frmModifyInformation : Form
     {
-        public ModifyInformation()
+        public frmModifyInformation()
         {
             InitializeComponent();
         }
