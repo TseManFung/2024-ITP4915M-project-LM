@@ -54,7 +54,7 @@ namespace WindowsFormsApp
         public int getStock(string sid)
         {
             string sql = $"SELECT SUM(quantity) as quantity FROM Stock WHERE SpareID = '{sid}';";
-            using(var reader = Main.db.readBySql(sql))
+            using (var reader = Main.db.readBySql(sql))
             {
                 if (reader.Read())
                 {
@@ -132,9 +132,6 @@ namespace WindowsFormsApp
                 selectedRows[0]["Qty"] = n;
             }
 
-
-
-            Main.db.ShowDataTable(Cart);
             cucalateTotal(Cart.DefaultView);
         }
 
@@ -162,7 +159,15 @@ namespace WindowsFormsApp
         {
             // get spare ID from txtSpareID
             string sid = txtSpareID.Text;
-// remove from database
+            // remove from database
+            if (ShowYesNoDialog("Are you sure you want to remove this item from your cart?"))
+            {
+                string sql = $"DELETE FROM Cart WHERE SpareID = '{sid}' AND UserID = {Main.userID};";
+                Main.db.updateBySql(sql);
+                // remove from DataTable
+                Cart.Rows.RemoveAt(index);
+                cucalateTotal(Cart.DefaultView);
+            }
 
         }
         private void removeAllRow() { }
@@ -182,6 +187,24 @@ namespace WindowsFormsApp
         // upload修改的qty到資料庫
         private void btnConfirm_Click(object sender, EventArgs e)
         {
+            uploadToDB();
+        }
+
+        private void uploadToDB()
+        {
+            foreach (DataRow row in Cart.Rows)
+            {
+                string sql = $"UPDATE Cart SET Qty = {row["Qty"]} WHERE SpareID = {row["SpareID"]} AND UserID = {Main.userID};";
+                Main.db.updateBySql(sql);
+            }
+        }
+
+        private void frmCart_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (Cart.Rows.Count <= 0)
+            { return; }
+
+            uploadToDB();
 
         }
     }

@@ -43,7 +43,16 @@ namespace WindowsFormsApp
             InitializeComponent();
         }
 
+        public static bool ShowYesNoDialog(string message)
+        {
+            var result = MessageBox.Show(message, "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            return result == DialogResult.Yes;
+        }
 
+        public static void ShowMessage(string message)
+        {
+            MessageBox.Show(message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
 
         private void Main_Load(object sender, EventArgs e)
         {

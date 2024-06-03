@@ -292,6 +292,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmCart";
             this.Text = "Cart";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCart_FormClosing);
             this.Load += new System.EventHandler(this.frmCart_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSelectedSpareName)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
