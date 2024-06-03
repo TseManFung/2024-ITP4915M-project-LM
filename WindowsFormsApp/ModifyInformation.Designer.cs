@@ -102,7 +102,7 @@
             this.lblYourOrderNumber.BackColor = System.Drawing.SystemColors.Control;
             this.lblYourOrderNumber.CausesValidation = false;
             this.lblYourOrderNumber.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblYourOrderNumber.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblYourOrderNumber.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.lblYourOrderNumber.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblYourOrderNumber.Location = new System.Drawing.Point(3, 0);
             this.lblYourOrderNumber.Name = "lblYourOrderNumber";
@@ -142,7 +142,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.CausesValidation = false;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
@@ -183,7 +183,7 @@
             this.label2.BackColor = System.Drawing.SystemColors.Control;
             this.label2.CausesValidation = false;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label2.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
@@ -224,7 +224,7 @@
             this.label3.BackColor = System.Drawing.SystemColors.Control;
             this.label3.CausesValidation = false;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label3.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(3, 0);
             this.label3.Name = "label3";
@@ -250,7 +250,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "ModifyInformation";
-            this.Text = "ModifyInformation";
+            this.Text = "Modify Information";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
