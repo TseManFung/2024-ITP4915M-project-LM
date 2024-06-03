@@ -43,7 +43,7 @@
             this.lblSelectedSpareName = new System.Windows.Forms.Label();
             this.lblTotalPrice = new System.Windows.Forms.Label();
             this.lblYourOrderNo = new System.Windows.Forms.Label();
-            this.txtTotalQuantity = new System.Windows.Forms.TextBox();
+            this.txtDorderNumber = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSelectedSpare)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -118,7 +118,7 @@
             this.tableLayoutPanel1.Controls.Add(this.dgvSelectedSpare, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblTotalQuantity, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblYourOrderNo, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.txtTotalQuantity, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtDorderNumber, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnClearAll, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -275,14 +275,14 @@
             this.lblYourOrderNo.TabIndex = 0;
             this.lblYourOrderNo.Text = "Your order no. (if any) :";
             // 
-            // txtTotalQuantity
+            // txtDorderNumber
             // 
-            this.txtTotalQuantity.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtTotalQuantity.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtTotalQuantity.Location = new System.Drawing.Point(846, 403);
-            this.txtTotalQuantity.Name = "txtTotalQuantity";
-            this.txtTotalQuantity.Size = new System.Drawing.Size(275, 46);
-            this.txtTotalQuantity.TabIndex = 86;
+            this.txtDorderNumber.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtDorderNumber.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtDorderNumber.Location = new System.Drawing.Point(846, 403);
+            this.txtDorderNumber.Name = "txtDorderNumber";
+            this.txtDorderNumber.Size = new System.Drawing.Size(275, 46);
+            this.txtDorderNumber.TabIndex = 86;
             // 
             // frmCart
             // 
@@ -320,7 +320,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label lblYourOrderNo;
-        private System.Windows.Forms.TextBox txtTotalQuantity;
+        private System.Windows.Forms.TextBox txtDorderNumber;
         private System.Windows.Forms.NumericUpDown number;
         private System.Windows.Forms.Button button1;
     }

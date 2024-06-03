@@ -56,7 +56,7 @@ namespace WindowsFormsApp
 
         public void insert(String table, params object[] data)
         {
-            String sql = $"INSERT INTO {table} VALUES (";
+            String sql = $"INSERT INTO `{table}` VALUES (";
             for (int i = 0; i < data.Length; i++)
             {
                 sql += $"\"{data[i]}\"";

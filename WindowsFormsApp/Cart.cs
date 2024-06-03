@@ -1,4 +1,5 @@
-﻿using MySqlConnector;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using MySqlConnector;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,10 +31,14 @@ namespace WindowsFormsApp
             getData();
             dgvSelectedSpare.DataSource = Cart;
             number.Controls[0].Visible = false;
-            txtSpareID.Text = dgvSelectedSpare.Rows[0].Cells["SpareID"].Value.ToString();
-            number.Value = Convert.ToInt32(dgvSelectedSpare.Rows[0].Cells["Qty"].Value);
+            if(Cart.Rows.Count > 0)
+            {
+                txtSpareID.Text = dgvSelectedSpare.Rows[0].Cells["SpareID"].Value.ToString();
+                number.Value = Convert.ToInt32(dgvSelectedSpare.Rows[0].Cells["Qty"].Value);
 
+            }
             cucalateTotal(Cart.DefaultView);
+
 
         }
 
@@ -49,6 +54,22 @@ namespace WindowsFormsApp
                 da.Fill(Cart);
             }
 
+            CheckQuantity();
+        }
+        private bool CheckQuantity()
+        { 
+            foreach (DataRow row in dgvSelectedSpare.Rows)
+            {
+                int qty = Convert.ToInt32(row["Qty"]);
+                int stock = Convert.ToInt32(row["quantity"]);
+                if (qty > stock)
+                {
+                    qty = stock;
+                    ((DataGridViewCell)row["Qty"]).Style.BackColor = Color.Yellow;
+                    return false;
+                }
+            }
+            return true;
         }
 
         public int getStock(string sid)
@@ -155,7 +176,7 @@ namespace WindowsFormsApp
             // get spare ID from index
             string sid = dgvSelectedSpare.Rows[index].Cells["SpareID"].Value.ToString(),
                 sn = dgvSelectedSpare.Rows[0].Cells["SpareName"].Value.ToString();
-            
+
             // remove from database
             if (Main.ShowYesNoDialog($"Are you sure you want to remove {sid}:{sn} from your cart?"))
             {
@@ -167,33 +188,120 @@ namespace WindowsFormsApp
             }
 
         }
-        private void removeAllRow() {
-            if(Main.ShowYesNoDialog("Are you sure you want to remove all items from your cart?"))
+        private void removeAllRow()
+        {
+            if (Main.ShowYesNoDialog("Are you sure you want to remove all items from your cart?"))
             {
-                string sql = $"DELETE FROM Cart WHERE UserID = {Main.userID};";
-                Main.db.updateBySql(sql);
-
-                Cart.Clear();
-                cucalateTotal(Cart.DefaultView);
+                ClearCart();
             }
         }
+        private void ClearCart()
+        {
+            string sql = $"DELETE FROM Cart WHERE UserID = {Main.userID};";
+            Main.db.updateBySql(sql);
 
+            Cart.Clear();
+            cucalateTotal(Cart.DefaultView);
+        }
 
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if (dgvSelectedSpare.CurrentCell == null)
+            {
+                return;
+            }
+            removeRow(dgvSelectedSpare.CurrentCell.RowIndex);
         }
 
         private void btnClearAll_Click(object sender, EventArgs e)
         {
-
+            removeAllRow();
         }
         // ---------------- Create Order ----------------
         // upload修改的qty到資料庫
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            uploadToDB();
+            if (Cart.Rows.Count <= 0)
+            { Main.ShowMessage("No item in cart");
+                return; }
+            int dealerID;
+            string orderID;
+            using (var reader = Main.db.readBySql($"SELECT DealerID FROM User WHERE UserID = {Main.userID};"))
+            {
+
+                dealerID = reader.Read() ? reader.GetInt32("DealerID") : throw new Exception("can not get dealer ID");
+                // yyyyMMdd-HHmm-a fixed length(6) for dealerID
+                // make sure is utf +8
+                orderID = DateTime.UtcNow.AddHours(8).ToString("yyyyMMdd-HHmm-") + dealerID.ToString().PadLeft(6, '0');
+                string DorderNumber = null;
+                if (txtDorderNumber.Text != "")
+                {
+                    DorderNumber = txtDorderNumber.Text;
+                }
+                reader.Close();
+                Main.db.insert("Order", orderID, dealerID, DateTime.UtcNow.AddHours(8).ToString("yyyy-MM-dd HH:MM:ss"), DorderNumber, "C", null);
+            }
+
+            foreach (DataRow row in Cart.Rows)
+            {
+                // get the current stock
+                string stockSQL = $"SELECT SUM(quantity) as quantity FROM Stock WHERE SpareID = '{row["SpareID"]}';";
+                int stock;
+                int qty = Convert.ToInt32(row["Qty"]);
+                using (var reader = Main.db.readBySql(stockSQL))
+                {
+                    stock = reader.Read() ? reader.GetInt32("quantity") : throw new Exception("can not get stock");
+                }
+                if (stock < qty)
+                {
+                    if (Main.ShowYesNoDialog($"Not enough stock for {row["SpareID"]}:{row["SpareName"]}\n Only can order {stock}\nStill placing order?"))
+                    {
+                        qty = stock;
+                    }
+                    else
+                    {
+                        // delete the order
+                        Main.db.updateBySql($"DELETE FROM OrderItem WHERE OrderID = '{orderID}';");
+                        Main.db.updateBySql($"DELETE FROM Order WHERE OrderID = '{orderID}';");
+                        getData();
+
+                        return;
+                    }
+                }
+
+                // get the current price
+                decimal price;
+
+                using (var reader = Main.db.readBySql($"SELECT Price FROM Spare WHERE SpareID = '{row["SpareID"]}';"))
+                {
+                    price = reader.Read() ? reader.GetDecimal("Price") : throw new Exception("can not get price");
+                }
+                if (price != (decimal)row["Price"])
+                {
+                    if (Main.ShowYesNoDialog($"The price of {row["SpareID"]}:{row["SpareName"]} has changed from {row["Price"]} to {price}\nStill placing order?"))
+                    {
+                        row["Price"] = price;
+                    }
+                    else
+                    {
+                        // delete the order
+                        Main.db.updateBySql($"DELETE FROM OrderItem WHERE OrderID = '{orderID}';");
+                        Main.db.updateBySql($"DELETE FROM Order WHERE OrderID = '{orderID}';");
+                        getData();
+
+                        return;
+
+                    }
+                }
+
+                    Main.db.insert("OrderItem", orderID, row["SpareID"], qty, row["Price"]);
+                
+            }
+            ClearCart();
+            txtSpareID.Text = "";
+            number.Value = 1;
+            Main.ShowMessage($"Order placed successfully, the order serial is {orderID}");
         }
 
         private void uploadToDB()
