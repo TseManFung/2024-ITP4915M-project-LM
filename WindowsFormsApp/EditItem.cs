@@ -71,6 +71,7 @@ namespace WindowsFormsApp
             this.comboBoxSpareID.DisplayMember = "SpareID";
             this.comboBoxSpareID.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             this.comboBoxSpareID.AutoCompleteSource = AutoCompleteSource.ListItems;
+
         }
 
         private void txtSpareName_TextChanged(object sender, EventArgs e)
@@ -87,7 +88,15 @@ namespace WindowsFormsApp
         private void txtPrice_TextChanged(object sender, EventArgs e)
         {
             string input = txtPrice.Text;
-            this.txtPrice.Text = string.Format("{0:#,##0.00}", Convert.ToDouble(input));
+            double inputValue;
+            if (double.TryParse(input, out inputValue))
+            {
+                this.txtPrice.Text = string.Format("{0:#,##0.00}", inputValue);
+            }
+            else
+            {
+                this.txtPrice.Text = "0.00";
+            }
         }
 
         private void txtSpareWeight_TextChanged(object sender, EventArgs e)
@@ -160,6 +169,10 @@ namespace WindowsFormsApp
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
         }
     }
 }

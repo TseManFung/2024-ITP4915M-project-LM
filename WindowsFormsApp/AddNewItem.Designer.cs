@@ -97,6 +97,7 @@
             this.txtSpareWeight.Name = "txtSpareWeight";
             this.txtSpareWeight.Size = new System.Drawing.Size(238, 45);
             this.txtSpareWeight.TabIndex = 57;
+            this.txtSpareWeight.TextChanged += new System.EventHandler(this.txtSpareWeight_TextChanged);
             // 
             // btnSave
             // 
@@ -109,6 +110,7 @@
             this.btnSave.TabIndex = 51;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // lblSpareName
             // 
@@ -147,17 +149,18 @@
             this.txtSpareName.Name = "txtSpareName";
             this.txtSpareName.Size = new System.Drawing.Size(238, 45);
             this.txtSpareName.TabIndex = 47;
+            this.txtSpareName.TextChanged += new System.EventHandler(this.txtSpareName_TextChanged);
             // 
             // comboBoxSpareType
             // 
             this.comboBoxSpareType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSpareType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBoxSpareType.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareType.FormattingEnabled = true;
             this.comboBoxSpareType.Location = new System.Drawing.Point(3, 53);
             this.comboBoxSpareType.Name = "comboBoxSpareType";
-            this.comboBoxSpareType.Size = new System.Drawing.Size(238, 41);
+            this.comboBoxSpareType.Size = new System.Drawing.Size(238, 35);
             this.comboBoxSpareType.TabIndex = 45;
+            this.comboBoxSpareType.SelectedIndexChanged += new System.EventHandler(this.comboBoxSpareType_SelectedIndexChanged);
             // 
             // lblDescription
             // 
@@ -203,6 +206,7 @@
             this.txtSparePrice.Name = "txtSparePrice";
             this.txtSparePrice.Size = new System.Drawing.Size(238, 45);
             this.txtSparePrice.TabIndex = 72;
+            this.txtSparePrice.TextChanged += new System.EventHandler(this.txtSparePrice_TextChanged);
             // 
             // btnClear
             // 
@@ -215,6 +219,7 @@
             this.btnClear.TabIndex = 71;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -269,6 +274,7 @@
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.Size = new System.Drawing.Size(1238, 45);
             this.textBoxDescription.TabIndex = 80;
+            this.textBoxDescription.TextChanged += new System.EventHandler(this.textBoxDescription_TextChanged);
             // 
             // labelDescription
             // 
@@ -302,12 +308,11 @@
             // comboBoxSupplier
             // 
             this.comboBoxSupplier.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSupplier.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBoxSupplier.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSupplier.FormattingEnabled = true;
             this.comboBoxSupplier.Location = new System.Drawing.Point(3, 53);
             this.comboBoxSupplier.Name = "comboBoxSupplier";
-            this.comboBoxSupplier.Size = new System.Drawing.Size(238, 41);
+            this.comboBoxSupplier.Size = new System.Drawing.Size(238, 35);
             this.comboBoxSupplier.TabIndex = 61;
             // 
             // tableLayoutPanel6
@@ -380,6 +385,7 @@
             this.Controls.Add(this.txtDescription);
             this.Name = "frmAddNewItem";
             this.Text = "Add New Spare";
+            this.Load += new System.EventHandler(this.frmAddNewItem_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel11.PerformLayout();
