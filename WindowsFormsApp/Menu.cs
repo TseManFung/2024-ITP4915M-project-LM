@@ -127,9 +127,14 @@ namespace WindowsFormsApp
             (this.ParentForm as Main)?.Change_pContent(typeof(frmEditItem));
         }
 
-        private void lblModifyInformation_Click(object sender, EventArgs e)
+        private void CModifyInformation(object sender, MouseEventArgs e)
         {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmModifyInformation));
+        }
 
+        private void CChangePassword(object sender, MouseEventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmChangePassword));
         }
     }
 }

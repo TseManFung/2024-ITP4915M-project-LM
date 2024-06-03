@@ -28,10 +28,10 @@ namespace WindowsFormsApp
         private void frmCart_Load(object sender, EventArgs e)
         {
             getData();
-            dgvSelectedSpareName.DataSource = Cart;
+            dgvSelectedSpare.DataSource = Cart;
             number.Controls[0].Visible = false;
-            txtSpareID.Text = dgvSelectedSpareName.Rows[0].Cells["SpareID"].Value.ToString();
-            number.Value = Convert.ToInt32(dgvSelectedSpareName.Rows[0].Cells["Qty"].Value);
+            txtSpareID.Text = dgvSelectedSpare.Rows[0].Cells["SpareID"].Value.ToString();
+            number.Value = Convert.ToInt32(dgvSelectedSpare.Rows[0].Cells["Qty"].Value);
 
             cucalateTotal(Cart.DefaultView);
 
@@ -66,12 +66,12 @@ namespace WindowsFormsApp
 
         private void dgvSelectedSpareName_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            string sid = dgvSelectedSpareName.Rows[e.RowIndex].Cells["SpareID"].Value.ToString();
+            string sid = dgvSelectedSpare.Rows[e.RowIndex].Cells["SpareID"].Value.ToString();
             if (sid != txtSpareID.Text)
             {
                 txtSpareID.Text = sid;
                 number.Maximum = getStock(sid);
-                number.Value = Convert.ToInt32(dgvSelectedSpareName.Rows[e.RowIndex].Cells["Qty"].Value);
+                number.Value = Convert.ToInt32(dgvSelectedSpare.Rows[e.RowIndex].Cells["Qty"].Value);
             }
         }
 
@@ -150,27 +150,33 @@ namespace WindowsFormsApp
 
         // ---------------- Remove with database record ----------------
 
-        private bool ShowYesNoDialog(string message)
-        {
-            var result = MessageBox.Show(message, "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            return result == DialogResult.Yes;
-        }
         private void removeRow(int index)
         {
-            // get spare ID from txtSpareID
-            string sid = txtSpareID.Text;
+            // get spare ID from index
+            string sid = dgvSelectedSpare.Rows[index].Cells["SpareID"].Value.ToString(),
+                sn = dgvSelectedSpare.Rows[0].Cells["SpareName"].Value.ToString();
+            
             // remove from database
-            if (ShowYesNoDialog("Are you sure you want to remove this item from your cart?"))
+            if (Main.ShowYesNoDialog($"Are you sure you want to remove {sid}:{sn} from your cart?"))
             {
                 string sql = $"DELETE FROM Cart WHERE SpareID = '{sid}' AND UserID = {Main.userID};";
                 Main.db.updateBySql(sql);
-                // remove from DataTable
+
                 Cart.Rows.RemoveAt(index);
                 cucalateTotal(Cart.DefaultView);
             }
 
         }
-        private void removeAllRow() { }
+        private void removeAllRow() {
+            if(Main.ShowYesNoDialog("Are you sure you want to remove all items from your cart?"))
+            {
+                string sql = $"DELETE FROM Cart WHERE UserID = {Main.userID};";
+                Main.db.updateBySql(sql);
+
+                Cart.Clear();
+                cucalateTotal(Cart.DefaultView);
+            }
+        }
 
 
 

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvSelectedSpareName = new System.Windows.Forms.DataGridView();
+            this.dgvSelectedSpare = new System.Windows.Forms.DataGridView();
             this.btnClearAll = new System.Windows.Forms.Button();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.lblTotalQuantity = new System.Windows.Forms.Label();
@@ -44,29 +44,29 @@
             this.lblTotalPrice = new System.Windows.Forms.Label();
             this.lblYourOrderNo = new System.Windows.Forms.Label();
             this.txtTotalQuantity = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSelectedSpareName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSelectedSpare)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.number)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvSelectedSpareName
+            // dgvSelectedSpare
             // 
-            this.dgvSelectedSpareName.AllowUserToAddRows = false;
-            this.dgvSelectedSpareName.AllowUserToDeleteRows = false;
-            this.dgvSelectedSpareName.AllowUserToResizeRows = false;
-            this.dgvSelectedSpareName.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvSelectedSpareName.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel1.SetColumnSpan(this.dgvSelectedSpareName, 5);
-            this.dgvSelectedSpareName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvSelectedSpareName.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvSelectedSpareName.Location = new System.Drawing.Point(3, 3);
-            this.dgvSelectedSpareName.Name = "dgvSelectedSpareName";
-            this.dgvSelectedSpareName.RowTemplate.Height = 24;
-            this.dgvSelectedSpareName.Size = new System.Drawing.Size(1399, 294);
-            this.dgvSelectedSpareName.TabIndex = 0;
-            this.dgvSelectedSpareName.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvSelectedSpareName_CellMouseClick);
+            this.dgvSelectedSpare.AllowUserToAddRows = false;
+            this.dgvSelectedSpare.AllowUserToDeleteRows = false;
+            this.dgvSelectedSpare.AllowUserToResizeRows = false;
+            this.dgvSelectedSpare.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvSelectedSpare.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel1.SetColumnSpan(this.dgvSelectedSpare, 5);
+            this.dgvSelectedSpare.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvSelectedSpare.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvSelectedSpare.Location = new System.Drawing.Point(3, 3);
+            this.dgvSelectedSpare.Name = "dgvSelectedSpare";
+            this.dgvSelectedSpare.RowTemplate.Height = 24;
+            this.dgvSelectedSpare.Size = new System.Drawing.Size(1399, 294);
+            this.dgvSelectedSpare.TabIndex = 0;
+            this.dgvSelectedSpare.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvSelectedSpareName_CellMouseClick);
             // 
             // btnClearAll
             // 
@@ -115,7 +115,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblTotalPrice, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnConfirm, 4, 2);
-            this.tableLayoutPanel1.Controls.Add(this.dgvSelectedSpareName, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.dgvSelectedSpare, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblTotalQuantity, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblYourOrderNo, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.txtTotalQuantity, 3, 2);
@@ -294,7 +294,7 @@
             this.Text = "Cart";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCart_FormClosing);
             this.Load += new System.EventHandler(this.frmCart_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSelectedSpareName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSelectedSpare)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -307,7 +307,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvSelectedSpareName;
+        private System.Windows.Forms.DataGridView dgvSelectedSpare;
         private System.Windows.Forms.Button btnClearAll;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Label lblTotalQuantity;

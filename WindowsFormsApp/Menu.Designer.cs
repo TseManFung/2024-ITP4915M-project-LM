@@ -991,6 +991,7 @@
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel21.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel21.TabIndex = 45;
+            this.tableLayoutPanel21.MouseClick += new System.Windows.Forms.MouseEventHandler(this.CChangePassword);
             // 
             // pictureBoxChangePassword
             // 
@@ -1003,6 +1004,7 @@
             this.pictureBoxChangePassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxChangePassword.TabIndex = 4;
             this.pictureBoxChangePassword.TabStop = false;
+            this.pictureBoxChangePassword.MouseClick += new System.Windows.Forms.MouseEventHandler(this.CChangePassword);
             // 
             // lblChangePassword
             // 
@@ -1014,6 +1016,7 @@
             this.lblChangePassword.Size = new System.Drawing.Size(87, 12);
             this.lblChangePassword.TabIndex = 14;
             this.lblChangePassword.Text = "Change Password";
+            this.lblChangePassword.MouseClick += new System.Windows.Forms.MouseEventHandler(this.CChangePassword);
             // 
             // tableLayoutPanel22
             // 
@@ -1030,6 +1033,7 @@
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel22.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel22.TabIndex = 46;
+            this.tableLayoutPanel22.MouseClick += new System.Windows.Forms.MouseEventHandler(this.CModifyInformation);
             // 
             // pictureBoxModifyInformation
             // 
@@ -1042,6 +1046,7 @@
             this.pictureBoxModifyInformation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxModifyInformation.TabIndex = 4;
             this.pictureBoxModifyInformation.TabStop = false;
+            this.pictureBoxModifyInformation.MouseClick += new System.Windows.Forms.MouseEventHandler(this.CModifyInformation);
             // 
             // lblModifyInformation
             // 
@@ -1053,7 +1058,7 @@
             this.lblModifyInformation.Size = new System.Drawing.Size(99, 12);
             this.lblModifyInformation.TabIndex = 14;
             this.lblModifyInformation.Text = "Modify Information";
-            this.lblModifyInformation.Click += new System.EventHandler(this.lblModifyInformation_Click);
+            this.lblModifyInformation.MouseClick += new System.Windows.Forms.MouseEventHandler(this.CModifyInformation);
             // 
             // tableLayoutPanel7
             // 

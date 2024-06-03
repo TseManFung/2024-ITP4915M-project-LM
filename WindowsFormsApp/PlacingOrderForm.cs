@@ -105,7 +105,7 @@ namespace WindowsFormsApp
             {
                 var row = rows[0];
                 int stock = Convert.ToInt32(row["quantity"]);
-                    //row.Field<int>("quantity");
+                //row.Field<int>("quantity");
                 return stock;
 
             }
@@ -132,11 +132,14 @@ namespace WindowsFormsApp
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            try{
-
-                Main.db.insert("Cart", Main.userID, txtSelectedSpareName.Text, numQuantity.Value); }catch(MySqlException ex)
+            try
             {
-                MessageBox.Show($"Error: {txtSelectedSpareName.Text} is already in your shopping cart" ); 
+
+                Main.db.insert("Cart", Main.userID, txtSelectedSpareName.Text, numQuantity.Value);
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show($"Error: {txtSelectedSpareName.Text} is already in your shopping cart");
             }
         }
 
