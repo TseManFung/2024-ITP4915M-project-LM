@@ -567,10 +567,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\add-product.png" />
+    <Content Include="Resources\file_9678002.png" />
     <Content Include="Resources\info.256x256.png" />
     <Content Include="Resources\order-status-1.png" />
     <Content Include="Resources\Screenshot 2024-03-04 221659.png" />
     <Content Include="Resources\Screenshot 2024-03-04 222818.png" />
+    <Content Include="Resources\security_13166299.png" />
     <Content Include="Resources\shopping-cart-icon.png" />
     <Content Include="Resources\vector60-5835-01.jpg" />
     <Content Include="Resources\vector60-5835-01.png" />

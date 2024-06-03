@@ -126,5 +126,10 @@ namespace WindowsFormsApp
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmEditItem));
         }
+
+        private void lblModifyInformation_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

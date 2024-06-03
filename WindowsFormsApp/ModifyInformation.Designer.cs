@@ -36,12 +36,14 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtOfficeAddress = new System.Windows.Forms.TextBox();
-            this.lblOfficeAddress = new System.Windows.Forms.Label();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.txtDeliveryAddress = new System.Windows.Forms.TextBox();
             this.lblDeliveryAddress = new System.Windows.Forms.Label();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btnConfirm = new System.Windows.Forms.Button();
+            this.txtOfficeAddress = new System.Windows.Forms.TextBox();
+            this.lblOfficeAddress = new System.Windows.Forms.Label();
+            this.lblOfficeAdress = new System.Windows.Forms.Label();
+            this.txtOfficeAdress = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -98,17 +100,17 @@
             // 
             // lblContactNumber
             // 
-            this.lblYourOrderNumber.AutoSize = true;
-            this.lblYourOrderNumber.BackColor = System.Drawing.SystemColors.Control;
-            this.lblYourOrderNumber.CausesValidation = false;
-            this.lblYourOrderNumber.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblYourOrderNumber.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblYourOrderNumber.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblYourOrderNumber.Location = new System.Drawing.Point(3, 0);
-            this.lblYourOrderNumber.Name = "lblYourOrderNumber";
-            this.lblYourOrderNumber.Size = new System.Drawing.Size(388, 47);
-            this.lblYourOrderNumber.TabIndex = 73;
-            this.lblYourOrderNumber.Text = "Your order number:";
+            this.lblContactNumber.AutoSize = true;
+            this.lblContactNumber.BackColor = System.Drawing.SystemColors.Control;
+            this.lblContactNumber.CausesValidation = false;
+            this.lblContactNumber.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblContactNumber.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblContactNumber.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblContactNumber.Location = new System.Drawing.Point(3, 0);
+            this.lblContactNumber.Name = "lblContactNumber";
+            this.lblContactNumber.Size = new System.Drawing.Size(388, 47);
+            this.lblContactNumber.TabIndex = 73;
+            this.lblContactNumber.Text = "Contact Number:";
             // 
             // tableLayoutPanel2
             // 
@@ -138,17 +140,58 @@
             // 
             // lblEmail
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.CausesValidation = false;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(388, 47);
-            this.label1.TabIndex = 73;
-            this.label1.Text = "Your order number:";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.SystemColors.Control;
+            this.lblEmail.CausesValidation = false;
+            this.lblEmail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblEmail.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblEmail.Location = new System.Drawing.Point(3, 0);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(388, 47);
+            this.lblEmail.TabIndex = 73;
+            this.lblEmail.Text = "Email:";
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel4, 2);
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Controls.Add(this.txtOfficeAdress, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lblOfficeAdress, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 103);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(794, 94);
+            this.tableLayoutPanel4.TabIndex = 90;
+            this.tableLayoutPanel4.Visible = false;
+            // 
+            // txtDeliveryAddress
+            // 
+            this.txtDeliveryAddress.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtDeliveryAddress.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtDeliveryAddress.Location = new System.Drawing.Point(3, 50);
+            this.txtDeliveryAddress.Multiline = true;
+            this.txtDeliveryAddress.Name = "txtDeliveryAddress";
+            this.txtDeliveryAddress.Size = new System.Drawing.Size(788, 36);
+            this.txtDeliveryAddress.TabIndex = 72;
+            // 
+            // lblDeliveryAddress
+            // 
+            this.lblDeliveryAddress.AutoSize = true;
+            this.lblDeliveryAddress.BackColor = System.Drawing.SystemColors.Control;
+            this.lblDeliveryAddress.CausesValidation = false;
+            this.lblDeliveryAddress.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDeliveryAddress.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblDeliveryAddress.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblDeliveryAddress.Location = new System.Drawing.Point(3, 0);
+            this.lblDeliveryAddress.Name = "lblDeliveryAddress";
+            this.lblDeliveryAddress.Size = new System.Drawing.Size(788, 47);
+            this.lblDeliveryAddress.TabIndex = 73;
+            this.lblDeliveryAddress.Text = "Delivery Address:";
             // 
             // tableLayoutPanel3
             // 
@@ -167,71 +210,6 @@
             this.tableLayoutPanel3.TabIndex = 89;
             this.tableLayoutPanel3.Visible = false;
             // 
-            // textBox2
-            // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox2.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox2.Location = new System.Drawing.Point(3, 50);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(788, 36);
-            this.textBox2.TabIndex = 72;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Control;
-            this.label2.CausesValidation = false;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(788, 47);
-            this.label2.TabIndex = 73;
-            this.label2.Text = "Your order number:";
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel4, 2);
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Controls.Add(this.textBox3, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.label3, 0, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 103);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(794, 94);
-            this.tableLayoutPanel4.TabIndex = 90;
-            this.tableLayoutPanel4.Visible = false;
-            // 
-            // textBox3
-            // 
-            this.txtDeliveryAddress.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtDeliveryAddress.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtDeliveryAddress.Location = new System.Drawing.Point(3, 50);
-            this.txtDeliveryAddress.Multiline = true;
-            this.txtDeliveryAddress.Name = "txtDeliveryAddress";
-            this.txtDeliveryAddress.Size = new System.Drawing.Size(788, 36);
-            this.txtDeliveryAddress.TabIndex = 72;
-            // 
-            // lblDeliveryAddress
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.Control;
-            this.label3.CausesValidation = false;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(788, 47);
-            this.label3.TabIndex = 73;
-            this.label3.Text = "Your order number:";
-            // 
             // btnConfirm
             // 
             this.btnConfirm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -243,13 +221,61 @@
             this.btnConfirm.Text = "Confirm";
             this.btnConfirm.UseVisualStyleBackColor = true;
             // 
+            // txtOfficeAddress
+            // 
+            this.txtOfficeAddress.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtOfficeAddress.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtOfficeAddress.Location = new System.Drawing.Point(3, 50);
+            this.txtOfficeAddress.Multiline = true;
+            this.txtOfficeAddress.Name = "txtOfficeAddress";
+            this.txtOfficeAddress.Size = new System.Drawing.Size(788, 36);
+            this.txtOfficeAddress.TabIndex = 72;
+            // 
+            // lblOfficeAddress
+            // 
+            this.lblOfficeAddress.AutoSize = true;
+            this.lblOfficeAddress.BackColor = System.Drawing.SystemColors.Control;
+            this.lblOfficeAddress.CausesValidation = false;
+            this.lblOfficeAddress.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOfficeAddress.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblOfficeAddress.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblOfficeAddress.Location = new System.Drawing.Point(3, 0);
+            this.lblOfficeAddress.Name = "lblOfficeAddress";
+            this.lblOfficeAddress.Size = new System.Drawing.Size(788, 47);
+            this.lblOfficeAddress.TabIndex = 73;
+            this.lblOfficeAddress.Text = "Your order number:";
+            // 
+            // lblOfficeAdress
+            // 
+            this.lblOfficeAdress.AutoSize = true;
+            this.lblOfficeAdress.BackColor = System.Drawing.SystemColors.Control;
+            this.lblOfficeAdress.CausesValidation = false;
+            this.lblOfficeAdress.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblOfficeAdress.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblOfficeAdress.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblOfficeAdress.Location = new System.Drawing.Point(3, 0);
+            this.lblOfficeAdress.Name = "lblOfficeAdress";
+            this.lblOfficeAdress.Size = new System.Drawing.Size(788, 47);
+            this.lblOfficeAdress.TabIndex = 74;
+            this.lblOfficeAdress.Text = "Office Address:";
+            // 
+            // txtOfficeAdress
+            // 
+            this.txtOfficeAdress.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtOfficeAdress.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtOfficeAdress.Location = new System.Drawing.Point(3, 50);
+            this.txtOfficeAdress.Multiline = true;
+            this.txtOfficeAdress.Name = "txtOfficeAdress";
+            this.txtOfficeAdress.Size = new System.Drawing.Size(788, 36);
+            this.txtOfficeAdress.TabIndex = 75;
+            // 
             // frmModifyInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "ModifyInformation";
+            this.Name = "frmModifyInformation";
             this.Text = "ModifyInformation";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
@@ -280,5 +306,7 @@
         private System.Windows.Forms.TextBox txtDeliveryAddress;
         private System.Windows.Forms.Label lblDeliveryAddress;
         private System.Windows.Forms.Button btnConfirm;
+        private System.Windows.Forms.TextBox txtOfficeAdress;
+        private System.Windows.Forms.Label lblOfficeAdress;
     }
 }

@@ -1053,6 +1053,7 @@
             this.lblModifyInformation.Size = new System.Drawing.Size(99, 12);
             this.lblModifyInformation.TabIndex = 14;
             this.lblModifyInformation.Text = "Modify Information";
+            this.lblModifyInformation.Click += new System.EventHandler(this.lblModifyInformation_Click);
             // 
             // tableLayoutPanel7
             // 
