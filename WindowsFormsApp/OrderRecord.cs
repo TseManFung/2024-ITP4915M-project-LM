@@ -29,7 +29,7 @@ namespace WindowsFormsApp
         {
             string sql = $"SELECT OrderSerial, OrderDate, OrderNumberfromDealer, State, remark FROM Order Where DealerID = {Main.dealerID}";
             DataTable dt = Main.db.GetDataTable(sql);
-            dgvOrderRecord.DataSource = dt;
+            //dgvOrderRecord.DataSource = dt;
         }
     }
 }
