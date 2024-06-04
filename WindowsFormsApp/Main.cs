@@ -65,15 +65,15 @@ namespace WindowsFormsApp
         private Form newForm(Type formType)
         {
             Form frm = (Form)Activator.CreateInstance(formType);
-            frm.TopLevel = false;
-            frm.TopMost = true;
-            frm.Anchor = AnchorStyles.None;
-            frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Dock = DockStyle.Fill;
             return frm;
         }
 
         public void Change_pContent(Type formType)
+        {
+            Change_pContent(newForm(formType));
+        }
+
+        public void Change_pContent(Form frm)
         {
             // add current frm to stack
             if (currfrm != null)
@@ -86,7 +86,12 @@ namespace WindowsFormsApp
 
                 }
             }
-            SwitchForm(newForm(formType));
+            frm.TopLevel = false;
+            frm.TopMost = true;
+            frm.Anchor = AnchorStyles.None;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+            SwitchForm(frm);
         }
 
         private void SwitchForm(Form frm)

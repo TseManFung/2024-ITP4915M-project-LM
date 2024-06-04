@@ -38,6 +38,9 @@
             this.groupBoxDeliveryStatusandProductDetails = new System.Windows.Forms.GroupBox();
             this.flowDeliveryStatusandProductDetails = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtSpareID = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBoxOrderOverview.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.groupBoxDeliveryStatusandProductDetails.SuspendLayout();
@@ -61,11 +64,14 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.Controls.Add(this.textBox2, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.lblPurchaseDateandTime, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.lblStatus, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lblOrderNo, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnInvoice, 2, 2);
             this.tableLayoutPanel2.Controls.Add(this.BtnDIset, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.txtSpareID, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.textBox1, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 18);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -82,7 +88,7 @@
             this.lblPurchaseDateandTime.BackColor = System.Drawing.SystemColors.Control;
             this.lblPurchaseDateandTime.CausesValidation = false;
             this.lblPurchaseDateandTime.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblPurchaseDateandTime.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblPurchaseDateandTime.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblPurchaseDateandTime.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblPurchaseDateandTime.Location = new System.Drawing.Point(3, 94);
             this.lblPurchaseDateandTime.Name = "lblPurchaseDateandTime";
@@ -96,7 +102,7 @@
             this.lblStatus.BackColor = System.Drawing.SystemColors.Control;
             this.lblStatus.CausesValidation = false;
             this.lblStatus.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblStatus.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblStatus.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblStatus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblStatus.Location = new System.Drawing.Point(3, 47);
             this.lblStatus.Name = "lblStatus";
@@ -110,7 +116,7 @@
             this.lblOrderNo.BackColor = System.Drawing.SystemColors.Control;
             this.lblOrderNo.CausesValidation = false;
             this.lblOrderNo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblOrderNo.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblOrderNo.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblOrderNo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblOrderNo.Location = new System.Drawing.Point(3, 0);
             this.lblOrderNo.Name = "lblOrderNo";
@@ -120,7 +126,7 @@
             // 
             // btnInvoice
             // 
-            this.btnInvoice.Font = new System.Drawing.Font("新細明體", 24F);
+            this.btnInvoice.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.btnInvoice.Location = new System.Drawing.Point(992, 97);
             this.btnInvoice.Name = "btnInvoice";
             this.btnInvoice.Size = new System.Drawing.Size(242, 42);
@@ -131,7 +137,7 @@
             // 
             // BtnDIset
             // 
-            this.BtnDIset.Font = new System.Drawing.Font("新細明體", 24F);
+            this.BtnDIset.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.BtnDIset.Location = new System.Drawing.Point(992, 50);
             this.BtnDIset.Name = "BtnDIset";
             this.BtnDIset.Size = new System.Drawing.Size(242, 41);
@@ -177,6 +183,48 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1249, 572);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
+            // txtSpareID
+            // 
+            this.txtSpareID.BackColor = System.Drawing.SystemColors.Control;
+            this.txtSpareID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSpareID.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.txtSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSpareID.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtSpareID.Location = new System.Drawing.Point(374, 3);
+            this.txtSpareID.Multiline = true;
+            this.txtSpareID.Name = "txtSpareID";
+            this.txtSpareID.ReadOnly = true;
+            this.txtSpareID.Size = new System.Drawing.Size(612, 41);
+            this.txtSpareID.TabIndex = 48;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox1.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox1.Location = new System.Drawing.Point(374, 50);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(612, 41);
+            this.textBox1.TabIndex = 49;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox2.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox2.Location = new System.Drawing.Point(374, 97);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(612, 44);
+            this.textBox2.TabIndex = 50;
+            // 
             // frmOrderDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -207,5 +255,8 @@
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Button btnInvoice;
         private System.Windows.Forms.Button BtnDIset;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtSpareID;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

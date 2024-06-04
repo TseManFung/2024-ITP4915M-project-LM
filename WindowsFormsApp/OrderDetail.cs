@@ -13,9 +13,15 @@ namespace WindowsFormsApp
 {
     public partial class frmOrderDetail : Form
     {
+        string OrderSerial;
         public frmOrderDetail()
         {
             InitializeComponent();
+        }
+        public frmOrderDetail(string OrderSerial)
+        {
+            InitializeComponent();
+            this.OrderSerial = OrderSerial;
         }
 
         private void frmOrderDetail_Load(object sender, EventArgs e)

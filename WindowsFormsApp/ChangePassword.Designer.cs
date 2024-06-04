@@ -41,6 +41,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.btnConfirm);
             this.groupBox1.Controls.Add(this.lblRepartNewPassword);
             this.groupBox1.Controls.Add(this.txtRepartNewPassword);

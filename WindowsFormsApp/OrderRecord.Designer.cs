@@ -103,8 +103,10 @@
             this.dgvComplete.Name = "dgvComplete";
             this.dgvComplete.ReadOnly = true;
             this.dgvComplete.RowTemplate.Height = 24;
+            this.dgvComplete.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvComplete.Size = new System.Drawing.Size(827, 259);
             this.dgvComplete.TabIndex = 9;
+            this.dgvComplete.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvProcessing_CellMouseDoubleClick);
             // 
             // groupBoxProcessing
             // 
@@ -130,8 +132,10 @@
             this.dgvProcessing.Name = "dgvProcessing";
             this.dgvProcessing.ReadOnly = true;
             this.dgvProcessing.RowTemplate.Height = 24;
+            this.dgvProcessing.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProcessing.Size = new System.Drawing.Size(827, 258);
             this.dgvProcessing.TabIndex = 8;
+            this.dgvProcessing.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvProcessing_CellMouseDoubleClick);
             // 
             // lblDoubleClickSeeMoreDetaill
             // 
