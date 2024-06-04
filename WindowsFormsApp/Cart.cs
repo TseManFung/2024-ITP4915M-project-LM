@@ -7,7 +7,6 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
@@ -29,7 +28,6 @@ namespace WindowsFormsApp
         private void frmCart_Load(object sender, EventArgs e)
         {
             getData();
-            dgvSelectedSpare.DataSource = Cart;
             number.Controls[0].Visible = false;
             if (Cart.Rows.Count > 0)
             {
@@ -47,19 +45,20 @@ namespace WindowsFormsApp
             // 
             string sql = $"SELECT c.SpareID, c.Qty, sp.SpareName, sp.Price, sp.Description, sp.Weight FROM Cart AS c JOIN Spare AS sp ON c.SpareID = sp.SpareID Where UserID = {Main.userID};";
             Cart = Main.db.GetDataTable(sql);
+            dgvSelectedSpare.DataSource = Cart;
 
             CheckQuantity();
         }
         private bool CheckQuantity()
         {
-            foreach (DataRow row in dgvSelectedSpare.Rows)
+            foreach (DataGridViewRow row in dgvSelectedSpare.Rows)
             {
-                int qty = Convert.ToInt32(row["Qty"]);
-                int stock = Convert.ToInt32(row["quantity"]);
+                int qty = Convert.ToInt32(row.Cells["Qty"].Value);
+                int stock = getStock(row.Cells["SpareID"].Value.ToString());
                 if (qty > stock)
                 {
                     qty = stock;
-                    ((DataGridViewCell)row["Qty"]).Style.BackColor = Color.Yellow;
+                    row.Cells["Qty"].Style.BackColor = Color.Yellow;
                     return false;
                 }
             }
@@ -84,9 +83,14 @@ namespace WindowsFormsApp
             string sid = dgvSelectedSpare.Rows[e.RowIndex].Cells["SpareID"].Value.ToString();
             if (sid != txtSpareID.Text)
             {
+                try{
                 txtSpareID.Text = sid;
                 number.Maximum = getStock(sid);
-                number.Value = Convert.ToInt32(dgvSelectedSpare.Rows[e.RowIndex].Cells["Qty"].Value);
+                    number.Value = Convert.ToInt32(dgvSelectedSpare.Rows[e.RowIndex].Cells["Qty"].Value); }catch(Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    number.Value = number.Maximum;
+                }
             }
         }
 
@@ -142,9 +146,13 @@ namespace WindowsFormsApp
         {
             int n = Convert.ToInt32(number.Value);
             var selectedRows = Cart.Select("SpareID = '" + txtSpareID.Text + "'");
-            if (selectedRows.Length > 0)
+            if (selectedRows.Length > 0 && n >=1 && n <=number.Maximum)
             {
                 selectedRows[0]["Qty"] = n;
+            }else if (n > number.Maximum)
+            {
+                number.Value = number.Maximum;
+
             }
 
             cucalateTotal(Cart.DefaultView);
@@ -257,10 +265,13 @@ namespace WindowsFormsApp
                     else
                     {
                         // delete the order
-                        Main.db.updateBySql($"DELETE FROM OrderItem WHERE OrderID = '{orderID}';");
-                        Main.db.updateBySql($"DELETE FROM Order WHERE OrderID = '{orderID}';");
-                        getData();
+                        Main.db.updateBySql($"DELETE FROM `OrderItem` WHERE `OrderSerial` = \"{orderID}\";");
 
+                        Main.db.updateBySql($"DELETE FROM `Order` WHERE `OrderSerial` = \"{orderID}\";");
+                        //update the database
+                        Main.db.updateBySql($"Update `Cart` set `Qty` = {stock} Where UserID = {Main.userID} and SpareID = \"{row["SpareID"]}\"");
+                        getData();
+                        number.Value = stock;
                         return;
                     }
                 }
@@ -281,8 +292,9 @@ namespace WindowsFormsApp
                     else
                     {
                         // delete the order
-                        Main.db.updateBySql($"DELETE FROM OrderItem WHERE OrderID = '{orderID}';");
-                        Main.db.updateBySql($"DELETE FROM Order WHERE OrderID = '{orderID}';");
+                        Main.db.updateBySql($"DELETE FROM OrderItem WHERE OrderSerial = '{orderID}';");
+
+                        Main.db.updateBySql($"DELETE FROM Order WHERE OrderSerial = '{orderID}';");
                         getData();
 
                         return;
@@ -308,10 +320,7 @@ namespace WindowsFormsApp
             }
         }
 
-        private void frmCart_FormClosed(object sender, FormClosedEventArgs e)
-        {
 
-        }
 
         private void frmCart_Leave(object sender, EventArgs e)
         {
