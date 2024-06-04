@@ -308,18 +308,22 @@ namespace WindowsFormsApp
         {
             foreach (DataRow row in Cart.Rows)
             {
-                string sql = $"UPDATE Cart SET Qty = {row["Qty"]} WHERE SpareID = {row["SpareID"]} AND UserID = {Main.userID};";
+                string sql = $"UPDATE Cart SET Qty = {row["Qty"]} WHERE SpareID = \"{row["SpareID"]}\" AND UserID = {Main.userID};";
                 Main.db.updateBySql(sql);
             }
         }
 
-        private void frmCart_FormClosing(object sender, FormClosingEventArgs e)
+        private void frmCart_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
+        }
+
+        private void frmCart_Leave(object sender, EventArgs e)
         {
             if (Cart.Rows.Count <= 0)
             { return; }
 
             uploadToDB();
-
         }
     }
 }

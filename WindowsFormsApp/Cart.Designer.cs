@@ -62,6 +62,7 @@
             this.dgvSelectedSpare.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvSelectedSpare.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvSelectedSpare.Location = new System.Drawing.Point(3, 3);
+            this.dgvSelectedSpare.MultiSelect = false;
             this.dgvSelectedSpare.Name = "dgvSelectedSpare";
             this.dgvSelectedSpare.RowTemplate.Height = 24;
             this.dgvSelectedSpare.Size = new System.Drawing.Size(1399, 294);
@@ -292,8 +293,8 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmCart";
             this.Text = "Cart";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCart_FormClosing);
             this.Load += new System.EventHandler(this.frmCart_Load);
+            this.Leave += new System.EventHandler(this.frmCart_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSelectedSpare)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

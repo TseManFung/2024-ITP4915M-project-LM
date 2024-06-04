@@ -68,7 +68,7 @@ namespace WindowsFormsApp
                 (Convert.ToInt32(x["quantity"]) > 0) &&
                 (sid == "" || x["SpareID"].ToString() == sid) &&
                 (ct == "" || x["CategoryLetter"].ToString() == ct) &&
-                (x["SpareName"].ToString().ToLower().IndexOf(sn) > -1)).CopyToDataTable();
+                (x["SpareName"].ToString().ToLower().Contains(sn))).CopyToDataTable();
                 txtSelectedSpareName.Text = dgvPlacingOrder.Rows[0].Cells["SpareID"].Value.ToString();
                 numQuantity.Value = 1;
                 numQuantity.Maximum = getStock(txtSelectedSpareName.Text);

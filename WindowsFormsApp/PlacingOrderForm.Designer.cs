@@ -228,6 +228,7 @@
             this.dgvPlacingOrder.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPlacingOrder.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvPlacingOrder.Location = new System.Drawing.Point(3, 3);
+            this.dgvPlacingOrder.MultiSelect = false;
             this.dgvPlacingOrder.Name = "dgvPlacingOrder";
             this.dgvPlacingOrder.ReadOnly = true;
             this.tlpSelectSpace.SetRowSpan(this.dgvPlacingOrder, 3);
