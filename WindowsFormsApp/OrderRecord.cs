@@ -17,9 +17,19 @@ namespace WindowsFormsApp
             InitializeComponent();
         }
 
+        List<string> ProcesingList = new List<string> {"C","P","W","T"},
+            CompleteList = new List<string> { "U","F"};
+
         private void frmOrderRecord_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void getData()
+        {
+            string sql = $"SELECT OrderSerial, OrderDate, OrderNumberfromDealer, State, remark FROM Order Where DealerID = {Main.dealerID}";
+            DataTable dt = Main.db.GetDataTable(sql);
+            dgvOrderRecord.DataSource = dt;
         }
     }
 }

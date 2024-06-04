@@ -24,13 +24,7 @@ namespace WindowsFormsApp
         private void getData()
         {
             string sql = "SELECT s.SpareID as SpareID, CategoryLetter, SpareName, Price, Weight, SUM(quantity) as quantity FROM Spare s INNER JOIN Stock ON s.SpareID = Stock.SpareID GROUP BY s.SpareID, CategoryLetter, SpareName, Price, Weight;";
-            var conn = Main.db.get_dbconnect();
-            Spare = new DataTable();
-
-            using (var da = new MySqlDataAdapter(sql, conn))
-            {
-                da.Fill(Spare);
-            }
+           Spare = Main.db.GetDataTable(sql);
 
             using (var sid = Spare.Columns["SpareID"])
             {

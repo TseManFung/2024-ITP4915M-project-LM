@@ -46,13 +46,7 @@ namespace WindowsFormsApp
         {
             // 
             string sql = $"SELECT c.SpareID, c.Qty, sp.SpareName, sp.Price, sp.Description, sp.Weight FROM Cart AS c JOIN Spare AS sp ON c.SpareID = sp.SpareID Where UserID = {Main.userID};";
-            var conn = Main.db.get_dbconnect();
-            Cart = new DataTable();
-
-            using (var da = new MySqlDataAdapter(sql, conn))
-            {
-                da.Fill(Cart);
-            }
+            Cart = Main.db.GetDataTable(sql);
 
             CheckQuantity();
         }

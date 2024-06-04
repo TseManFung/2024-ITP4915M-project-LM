@@ -225,6 +225,23 @@ namespace WindowsFormsApp
             this.dbDisconnect();
         }
 
+        public DataTable getTable(String table)
+        {
+            String sql = $"SELECT * FROM {table};";
+            return this.GetDataTable(sql);
+        }
+
+        public DataTable GetDataTable(String sql)
+        {
+            DataTable dt = new DataTable();
+            using (MySqlDataAdapter da = new MySqlDataAdapter(sql, dbconnect))
+            {
+                da.Fill(dt);
+            }
+            return dt;
+        }
+
+
     }
 
 
