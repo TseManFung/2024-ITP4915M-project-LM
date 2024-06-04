@@ -31,7 +31,7 @@ namespace WindowsFormsApp
             getData();
             dgvSelectedSpare.DataSource = Cart;
             number.Controls[0].Visible = false;
-            if(Cart.Rows.Count > 0)
+            if (Cart.Rows.Count > 0)
             {
                 txtSpareID.Text = dgvSelectedSpare.Rows[0].Cells["SpareID"].Value.ToString();
                 number.Value = Convert.ToInt32(dgvSelectedSpare.Rows[0].Cells["Qty"].Value);
@@ -57,7 +57,7 @@ namespace WindowsFormsApp
             CheckQuantity();
         }
         private bool CheckQuantity()
-        { 
+        {
             foreach (DataRow row in dgvSelectedSpare.Rows)
             {
                 int qty = Convert.ToInt32(row["Qty"]);
@@ -223,25 +223,26 @@ namespace WindowsFormsApp
         private void btnConfirm_Click(object sender, EventArgs e)
         {
             if (Cart.Rows.Count <= 0)
-            { Main.ShowMessage("No item in cart");
-                return; }
-            int dealerID;
-            string orderID;
-            using (var reader = Main.db.readBySql($"SELECT DealerID FROM User WHERE UserID = {Main.userID};"))
             {
-
-                dealerID = reader.Read() ? reader.GetInt32("DealerID") : throw new Exception("can not get dealer ID");
-                // yyyyMMdd-HHmm-a fixed length(6) for dealerID
-                // make sure is utf +8
-                orderID = DateTime.UtcNow.AddHours(8).ToString("yyyyMMdd-HHmm-") + dealerID.ToString().PadLeft(6, '0');
-                string DorderNumber = null;
-                if (txtDorderNumber.Text != "")
-                {
-                    DorderNumber = txtDorderNumber.Text;
-                }
-                reader.Close();
-                Main.db.insert("Order", orderID, dealerID, DateTime.UtcNow.AddHours(8).ToString("yyyy-MM-dd HH:MM:ss"), DorderNumber, "C", null);
+                Main.ShowMessage("No item in cart");
+                return;
             }
+            int? dealerID = Main.dealerID;
+            string orderID;
+
+
+
+            // yyyyMMdd-HHmm-a fixed length(6) for dealerID
+            // make sure is utf +8
+            orderID = DateTime.UtcNow.AddHours(8).ToString("yyyyMMdd-HHmm-") + dealerID.ToString().PadLeft(6, '0');
+            string DorderNumber = null;
+            if (txtDorderNumber.Text != "")
+            {
+                DorderNumber = txtDorderNumber.Text;
+            }
+
+            Main.db.insert("Order", orderID, dealerID, DateTime.UtcNow.AddHours(8).ToString("yyyy-MM-dd HH:MM:ss"), DorderNumber, "C", null);
+
 
             foreach (DataRow row in Cart.Rows)
             {
@@ -295,8 +296,8 @@ namespace WindowsFormsApp
                     }
                 }
 
-                    Main.db.insert("OrderItem", orderID, row["SpareID"], qty, row["Price"]);
-                
+                Main.db.insert("OrderItem", orderID, row["SpareID"], qty, row["Price"]);
+
             }
             ClearCart();
             txtSpareID.Text = "";

@@ -18,8 +18,7 @@ namespace WindowsFormsApp
     public partial class Main : Form
     {
         public static sshdatabase db = new sshdatabase();
-        public static int? userID;
-        public static int? AssessLevel;
+        public static int? userID, dealerID, staffID, AssessLevel;
         public static Form currfrm = null;
 
         bool isLogin = false;
@@ -29,13 +28,16 @@ namespace WindowsFormsApp
         {
             this.isLogin = true;
             Main.userID = id;
+            setDSID();
         }
 
         public void SetLogout()
         {
             this.isLogin = false;
             Main.userID = null;
-            AssessLevel = null;
+            Main.AssessLevel = null;
+            Main.dealerID = null;
+            Main.staffID = null;
         }
 
         public Main()
@@ -181,8 +183,9 @@ namespace WindowsFormsApp
         {
             foreach (var form in frmStack)
             {
-                if (currfrm == form) { 
-                continue;
+                if (currfrm == form)
+                {
+                    continue;
                 }
                 form.Close();
             }
@@ -200,6 +203,23 @@ namespace WindowsFormsApp
             currfrm.Close();
 
             SwitchForm(frmStack.Pop());
+        }
+
+        private void setDSID()
+        {
+            using (var reader = Main.db.readBySql($"SELECT DealerID,StaffID FROM User WHERE UserID = {Main.userID};"))
+            {
+                reader.Read();
+                if (!reader.IsDBNull(reader.GetOrdinal("DealerID")))
+                {
+                    Main.dealerID = reader.GetInt32(reader.GetOrdinal("DealerID"));
+                }
+
+                if (!reader.IsDBNull(reader.GetOrdinal("StaffID")))
+                {
+                    Main.staffID = reader.GetInt32(reader.GetOrdinal("StaffID"));
+                }
+            }
         }
     }
 }

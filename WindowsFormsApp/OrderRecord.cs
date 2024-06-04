@@ -16,5 +16,10 @@ namespace WindowsFormsApp
         {
             InitializeComponent();
         }
+
+        private void frmOrderRecord_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

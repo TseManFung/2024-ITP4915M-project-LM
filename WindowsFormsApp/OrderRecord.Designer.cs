@@ -45,7 +45,7 @@
             // 
             // btnSelect
             // 
-            this.btnSelect.Font = new System.Drawing.Font("新細明體", 24F);
+            this.btnSelect.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.btnSelect.Location = new System.Drawing.Point(1641, 96);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(143, 60);
@@ -94,9 +94,12 @@
             // 
             this.dgvComplete.AllowUserToAddRows = false;
             this.dgvComplete.AllowUserToDeleteRows = false;
+            this.dgvComplete.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvComplete.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvComplete.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvComplete.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvComplete.Location = new System.Drawing.Point(3, 18);
+            this.dgvComplete.MultiSelect = false;
             this.dgvComplete.Name = "dgvComplete";
             this.dgvComplete.ReadOnly = true;
             this.dgvComplete.RowTemplate.Height = 24;
@@ -118,9 +121,12 @@
             // 
             this.dgvProcessing.AllowUserToAddRows = false;
             this.dgvProcessing.AllowUserToDeleteRows = false;
+            this.dgvProcessing.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProcessing.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProcessing.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvProcessing.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvProcessing.Location = new System.Drawing.Point(3, 18);
+            this.dgvProcessing.MultiSelect = false;
             this.dgvProcessing.Name = "dgvProcessing";
             this.dgvProcessing.ReadOnly = true;
             this.dgvProcessing.RowTemplate.Height = 24;
@@ -131,7 +137,7 @@
             // 
             this.lblDoubleClickSeeMoreDetaill.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDoubleClickSeeMoreDetaill.AutoSize = true;
-            this.lblDoubleClickSeeMoreDetaill.Font = new System.Drawing.Font("新細明體", 24F);
+            this.lblDoubleClickSeeMoreDetaill.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.lblDoubleClickSeeMoreDetaill.Location = new System.Drawing.Point(173, 9);
             this.lblDoubleClickSeeMoreDetaill.Name = "lblDoubleClickSeeMoreDetaill";
             this.lblDoubleClickSeeMoreDetaill.Size = new System.Drawing.Size(492, 32);
@@ -149,6 +155,7 @@
             this.Controls.Add(this.btnSelect);
             this.Name = "frmOrderRecord";
             this.Text = "Order Record";
+            this.Load += new System.EventHandler(this.frmOrderRecord_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.groupBoxComplete.ResumeLayout(false);
