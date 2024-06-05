@@ -70,6 +70,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
             this.tableLayoutPanel1.TabIndex = 80;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // tableLayoutPanel11
             // 
@@ -96,6 +97,7 @@
             this.txtLocation.Name = "txtLocation";
             this.txtLocation.Size = new System.Drawing.Size(788, 45);
             this.txtLocation.TabIndex = 80;
+            this.txtLocation.TextChanged += new System.EventHandler(this.txtLocation_TextChanged);
             // 
             // lblLocation
             // 
@@ -122,6 +124,7 @@
             this.btnClear.TabIndex = 71;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSave
             // 
@@ -134,6 +137,7 @@
             this.btnSave.TabIndex = 51;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -167,13 +171,13 @@
             // comboBoxManager
             // 
             this.comboBoxManager.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxManager.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBoxManager.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxManager.FormattingEnabled = true;
             this.comboBoxManager.Location = new System.Drawing.Point(3, 53);
             this.comboBoxManager.Name = "comboBoxManager";
-            this.comboBoxManager.Size = new System.Drawing.Size(148, 41);
+            this.comboBoxManager.Size = new System.Drawing.Size(148, 35);
             this.comboBoxManager.TabIndex = 45;
+            this.comboBoxManager.SelectedIndexChanged += new System.EventHandler(this.comboBoxManager_SelectedIndexChanged);
             // 
             // tableLayoutPanel7
             // 
@@ -193,13 +197,13 @@
             // comboBoxSaleArea
             // 
             this.comboBoxSaleArea.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSaleArea.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBoxSaleArea.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSaleArea.FormattingEnabled = true;
             this.comboBoxSaleArea.Location = new System.Drawing.Point(3, 53);
             this.comboBoxSaleArea.Name = "comboBoxSaleArea";
-            this.comboBoxSaleArea.Size = new System.Drawing.Size(148, 41);
+            this.comboBoxSaleArea.Size = new System.Drawing.Size(148, 35);
             this.comboBoxSaleArea.TabIndex = 61;
+            this.comboBoxSaleArea.SelectedIndexChanged += new System.EventHandler(this.comboBoxSaleArea_SelectedIndexChanged);
             // 
             // lblSaleArea
             // 
@@ -223,6 +227,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmAddWarehouse";
             this.Text = "Add Warehouse";
+            this.Load += new System.EventHandler(this.frmAddWarehouse_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel11.PerformLayout();

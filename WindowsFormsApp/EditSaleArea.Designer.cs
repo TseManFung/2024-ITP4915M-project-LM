@@ -32,7 +32,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxSaleAreaLocation = new System.Windows.Forms.ComboBox();
             this.lblSaleArea = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -104,7 +104,7 @@
             // 
             this.tableLayoutPanel12.ColumnCount = 1;
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel12.Controls.Add(this.comboBox2, 0, 1);
+            this.tableLayoutPanel12.Controls.Add(this.comboBoxSaleAreaLocation, 0, 1);
             this.tableLayoutPanel12.Controls.Add(this.lblSaleArea, 0, 0);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel12.Location = new System.Drawing.Point(479, 3);
@@ -115,16 +115,16 @@
             this.tableLayoutPanel12.Size = new System.Drawing.Size(232, 114);
             this.tableLayoutPanel12.TabIndex = 86;
             // 
-            // comboBox2
+            // comboBoxSaleAreaLocation
             // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBox2.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(3, 60);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(226, 41);
-            this.comboBox2.TabIndex = 74;
+            this.comboBoxSaleAreaLocation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxSaleAreaLocation.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSaleAreaLocation.FormattingEnabled = true;
+            this.comboBoxSaleAreaLocation.Location = new System.Drawing.Point(3, 60);
+            this.comboBoxSaleAreaLocation.Name = "comboBoxSaleAreaLocation";
+            this.comboBoxSaleAreaLocation.Size = new System.Drawing.Size(226, 35);
+            this.comboBoxSaleAreaLocation.TabIndex = 74;
+            this.comboBoxSaleAreaLocation.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // lblSaleArea
             // 
@@ -200,6 +200,7 @@
             this.txtRemark.Name = "txtRemark";
             this.txtRemark.Size = new System.Drawing.Size(1172, 45);
             this.txtRemark.TabIndex = 80;
+            this.txtRemark.TextChanged += new System.EventHandler(this.txtRemark_TextChanged);
             // 
             // lblRemark
             // 
@@ -240,6 +241,7 @@
             this.txtLocation.Name = "txtLocation";
             this.txtLocation.Size = new System.Drawing.Size(1172, 45);
             this.txtLocation.TabIndex = 81;
+            this.txtLocation.TextChanged += new System.EventHandler(this.txtLocation_TextChanged);
             // 
             // lblLocation
             // 
@@ -266,6 +268,7 @@
             this.btnSave.TabIndex = 51;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // frmEditSaleArea
             // 
@@ -275,6 +278,7 @@
             this.Controls.Add(this.tableLayoutPanel2);
             this.Name = "frmEditSaleArea";
             this.Text = "Edit SaleArea";
+            this.Load += new System.EventHandler(this.frmEditSaleArea_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();
@@ -294,7 +298,7 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
-        public System.Windows.Forms.ComboBox comboBox2;
+        public System.Windows.Forms.ComboBox comboBoxSaleAreaLocation;
         private System.Windows.Forms.Label lblSaleArea;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
