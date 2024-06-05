@@ -74,5 +74,10 @@ namespace WindowsFormsApp
             frmForgetPW f = new frmForgetPW();
             f.ShowDialog();
         }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

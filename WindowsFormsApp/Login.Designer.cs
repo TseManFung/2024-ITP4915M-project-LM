@@ -112,8 +112,6 @@
             this.btnLogIn.Text = "Log In";
             this.btnLogIn.UseVisualStyleBackColor = true;
             this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
-            
-
             // 
             // lblPassword
             // 
@@ -154,6 +152,7 @@
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(116, 22);
             this.txtPassword.TabIndex = 13;
+            this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Login_KeyPress);
             // 
             // txtLoginName
             // 
@@ -165,6 +164,7 @@
             this.txtLoginName.Name = "txtLoginName";
             this.txtLoginName.Size = new System.Drawing.Size(116, 22);
             this.txtLoginName.TabIndex = 12;
+            this.txtLoginName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Login_KeyPress);
             // 
             // pictureBoxLogo
             // 
@@ -208,15 +208,12 @@
             this.Name = "frmLogin";
             this.Text = "Login";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmLogin_FormClosed);
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
-            this.txtLoginName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Login_KeyPress);
-            this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Login_KeyPress);
-
 
         }
 

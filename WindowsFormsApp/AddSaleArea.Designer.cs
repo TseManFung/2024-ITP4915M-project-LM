@@ -65,6 +65,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
             this.tableLayoutPanel1.TabIndex = 80;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // tableLayoutPanel11
             // 
@@ -145,6 +146,7 @@
             this.lblSpareLocation.Size = new System.Drawing.Size(788, 50);
             this.lblSpareLocation.TabIndex = 48;
             this.lblSpareLocation.Text = "Location:";
+            this.lblSpareLocation.Click += new System.EventHandler(this.lblSpareLocation_Click);
             // 
             // btnClear
             // 
@@ -157,6 +159,7 @@
             this.btnClear.TabIndex = 71;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSave
             // 
@@ -169,6 +172,7 @@
             this.btnSave.TabIndex = 51;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // frmAddSaleArea
             // 
@@ -178,6 +182,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmAddSaleArea";
             this.Text = "Add SaleArea";
+            this.Load += new System.EventHandler(this.frmAddSaleArea_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel11.PerformLayout();
