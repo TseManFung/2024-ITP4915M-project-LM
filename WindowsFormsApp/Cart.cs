@@ -242,8 +242,14 @@ namespace WindowsFormsApp
             {
                 DorderNumber = txtDorderNumber.Text;
             }
-
-            Main.db.insert("Order", orderID, dealerID, DateTime.UtcNow.AddHours(8).ToString("yyyy-MM-dd HH:MM:ss"), DorderNumber, "C", null);
+            try
+            {
+                Main.db.insert("Order", orderID, dealerID, DateTime.UtcNow.AddHours(8).ToString("yyyy-MM-dd HH:mm:ss"), DorderNumber, "C", null);
+            }
+            catch (Exception ex) {
+                Main.ShowMessage("System is busy please try again later");
+                return;
+            }
 
 
             foreach (DataRow row in Cart.Rows)

@@ -12,27 +12,112 @@ namespace WindowsFormsApp
 {
     public partial class frmEditOrder : Form
     {
-        string orderserial;
+        string orderSerial;
+        DataTable orderItem;
         public frmEditOrder()
         {
             InitializeComponent();
+            comboBoxOrderSerial.Items.Clear();
+            string sql = $"select OrderSerial from `Order` where DealerID = {Main.dealerID} Order by OrderDate DESC";
+            using (var reader = Main.db.readBySql(sql))
+            {
+                while (reader.Read())
+                {
+                    comboBoxOrderSerial.Items.Add(reader[0].ToString());
+                }
+            }
+        }
+        public frmEditOrder(string orderSerial)
+        {
+            InitializeComponent();
+            this.orderSerial = orderSerial;
+            comboBoxOrderSerial.Items.Clear();
+            comboBoxOrderSerial.Items.Add(orderSerial);
+            comboBoxOrderSerial.SelectedIndex = 0;
+            comboBoxOrderSerial.Enabled = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnOrderItem_Click(object sender, EventArgs e)
         {
+
+            if (comboBoxOrderSerial.SelectedItem == null)
+            {
+                Main.ShowMessage("Please select a Order");
+                return;
+            }
+            string sql = $"SELECT ItemID,SpareName,Quantity FROM OrderItem join Spare on itemID = SpareID where OrderSerial = '{this.orderSerial}';";
+            orderItem = Main.db.GetDataTable(sql);
+            comboBoxSpareName.Items.Clear();
+            comboBoxSpareName.Items.AddRange(orderItem.AsEnumerable().Select(x => x["SpareName"].ToString()).ToArray());
+
+
             tableLayoutPanel3.Visible = tableLayoutPanel4.Visible = tableLayoutPanel8.Visible = true;
             tableLayoutPanel5.Visible = false;
+            btnSave.Visible = true;
+
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void bunOrderNumber_Click(object sender, EventArgs e)
         {
+            if (comboBoxOrderSerial.SelectedItem == null)
+            {
+                Main.ShowMessage("Please select a Order");
+                return;
+            }
+            string sql = $"select OrderNumberfromDealer from `Order` where OrderSerial = '{this.orderSerial}'";
+            using (var reader = Main.db.readBySql(sql))
+            {
+                while(reader.Read()){
+                    txtOrderNumber.Text = reader[0].ToString();
+                }
+
+            }
+
+
+
             tableLayoutPanel3.Visible = tableLayoutPanel4.Visible = tableLayoutPanel8.Visible = false;
             tableLayoutPanel5.Visible = true;
+            btnSave.Visible = true;
+
         }
 
         private void frmEditOrder_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            string sql;
+            if (tableLayoutPanel5.Visible)
+            {
+                sql = $"update `Order` set OrderNumberfromDealer ='{txtOrderNumber.Text}' where OrderSerial = '{this.orderSerial}'";
+
+            }else 
+            {
+                sql = $"update OrderItem set Quantity = {numericUpDownQuantity.Value} where OrderSerial = '{this.orderSerial}' and ItemID = '{txtSpareID.Text}'";
+            }
+            Main.db.updateBySql(sql);
+            Main.ShowMessage("Saved");
+        }
+
+
+        private void comboBoxSpareName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxOrderSerial_SelectedValueChanged(object sender, EventArgs e)
+        {
+            btnSave.Visible = tableLayoutPanel3.Visible = tableLayoutPanel4.Visible = tableLayoutPanel8.Visible = tableLayoutPanel5.Visible = false;
+            this.orderSerial = comboBoxOrderSerial.SelectedItem.ToString();
+        }
+
+        private void comboBoxSpareName_SelectedValueChanged(object sender, EventArgs e)
+        {
+            txtSpareID.Text = orderItem.Select($"SpareName = '{comboBoxSpareName.SelectedItem}'")[0]["ItemID"].ToString();
+            int quantity = Convert.ToInt32(orderItem.Select($"SpareName = '{comboBoxSpareName.SelectedItem}'")[0]["Quantity"]);
+            numericUpDownQuantity.Maximum = numericUpDownQuantity.Value = quantity;
         }
     }
 }

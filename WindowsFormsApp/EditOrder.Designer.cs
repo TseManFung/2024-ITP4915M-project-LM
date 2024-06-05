@@ -40,7 +40,7 @@
             this.lblSpareID = new System.Windows.Forms.Label();
             this.txtSpareID = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtOrderNumber = new System.Windows.Forms.TextBox();
             this.lblYourOrderNumber = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
@@ -87,7 +87,7 @@
             // btnEditYourOrderNumber
             // 
             this.btnEditYourOrderNumber.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEditYourOrderNumber.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditYourOrderNumber.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditYourOrderNumber.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnEditYourOrderNumber.Location = new System.Drawing.Point(795, 124);
             this.btnEditYourOrderNumber.Name = "btnEditYourOrderNumber";
@@ -95,12 +95,12 @@
             this.btnEditYourOrderNumber.TabIndex = 88;
             this.btnEditYourOrderNumber.Text = "Edit your order number";
             this.btnEditYourOrderNumber.UseVisualStyleBackColor = true;
-            this.btnEditYourOrderNumber.Click += new System.EventHandler(this.button2_Click);
+            this.btnEditYourOrderNumber.Click += new System.EventHandler(this.bunOrderNumber_Click);
             // 
             // btnEditOrderItem
             // 
             this.btnEditOrderItem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEditOrderItem.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditOrderItem.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditOrderItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnEditOrderItem.Location = new System.Drawing.Point(267, 124);
             this.btnEditOrderItem.Name = "btnEditOrderItem";
@@ -108,7 +108,7 @@
             this.btnEditOrderItem.TabIndex = 87;
             this.btnEditOrderItem.Text = "Edit order item";
             this.btnEditOrderItem.UseVisualStyleBackColor = true;
-            this.btnEditOrderItem.Click += new System.EventHandler(this.button1_Click);
+            this.btnEditOrderItem.Click += new System.EventHandler(this.btnOrderItem_Click);
             // 
             // tableLayoutPanel12
             // 
@@ -128,13 +128,15 @@
             // comboBoxOrderSerial
             // 
             this.comboBoxOrderSerial.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxOrderSerial.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBoxOrderSerial.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxOrderSerial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxOrderSerial.Font = new System.Drawing.Font("PMingLiU", 18F);
             this.comboBoxOrderSerial.FormattingEnabled = true;
+            this.comboBoxOrderSerial.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.comboBoxOrderSerial.Location = new System.Drawing.Point(3, 60);
             this.comboBoxOrderSerial.Name = "comboBoxOrderSerial";
-            this.comboBoxOrderSerial.Size = new System.Drawing.Size(252, 41);
+            this.comboBoxOrderSerial.Size = new System.Drawing.Size(252, 32);
             this.comboBoxOrderSerial.TabIndex = 75;
+            this.comboBoxOrderSerial.SelectedValueChanged += new System.EventHandler(this.comboBoxOrderSerial_SelectedValueChanged);
             // 
             // lblOrderSerial
             // 
@@ -142,7 +144,7 @@
             this.lblOrderSerial.BackColor = System.Drawing.SystemColors.Control;
             this.lblOrderSerial.CausesValidation = false;
             this.lblOrderSerial.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblOrderSerial.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblOrderSerial.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblOrderSerial.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblOrderSerial.Location = new System.Drawing.Point(3, 0);
             this.lblOrderSerial.Name = "lblOrderSerial";
@@ -207,7 +209,7 @@
             this.lblSpareID.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareID.CausesValidation = false;
             this.lblSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareID.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareID.Location = new System.Drawing.Point(3, 0);
             this.lblSpareID.Name = "lblSpareID";
@@ -217,9 +219,11 @@
             // 
             // txtSpareID
             // 
-            this.txtSpareID.BackColor = System.Drawing.SystemColors.Info;
+            this.txtSpareID.BackColor = System.Drawing.SystemColors.Control;
+            this.txtSpareID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSpareID.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtSpareID.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtSpareID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtSpareID.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtSpareID.Location = new System.Drawing.Point(3, 71);
             this.txtSpareID.Multiline = true;
             this.txtSpareID.Name = "txtSpareID";
@@ -231,7 +235,7 @@
             // 
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Controls.Add(this.textBox4, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.txtOrderNumber, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.lblYourOrderNumber, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(529, 3);
@@ -243,15 +247,15 @@
             this.tableLayoutPanel5.TabIndex = 85;
             this.tableLayoutPanel5.Visible = false;
             // 
-            // textBox4
+            // txtOrderNumber
             // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox4.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox4.Location = new System.Drawing.Point(3, 71);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(251, 41);
-            this.textBox4.TabIndex = 72;
+            this.txtOrderNumber.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtOrderNumber.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtOrderNumber.Location = new System.Drawing.Point(3, 71);
+            this.txtOrderNumber.Multiline = true;
+            this.txtOrderNumber.Name = "txtOrderNumber";
+            this.txtOrderNumber.Size = new System.Drawing.Size(251, 41);
+            this.txtOrderNumber.TabIndex = 72;
             // 
             // lblYourOrderNumber
             // 
@@ -259,7 +263,7 @@
             this.lblYourOrderNumber.BackColor = System.Drawing.SystemColors.Control;
             this.lblYourOrderNumber.CausesValidation = false;
             this.lblYourOrderNumber.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblYourOrderNumber.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblYourOrderNumber.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblYourOrderNumber.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblYourOrderNumber.Location = new System.Drawing.Point(3, 0);
             this.lblYourOrderNumber.Name = "lblYourOrderNumber";
@@ -270,7 +274,7 @@
             // btnSave
             // 
             this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSave.Font = new System.Drawing.Font("新細明體", 32F);
+            this.btnSave.Font = new System.Drawing.Font("PMingLiU", 32F);
             this.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSave.Location = new System.Drawing.Point(529, 306);
             this.btnSave.Name = "btnSave";
@@ -278,6 +282,8 @@
             this.btnSave.TabIndex = 51;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Visible = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // tableLayoutPanel8
             // 
@@ -301,7 +307,7 @@
             this.lblQuantity.BackColor = System.Drawing.SystemColors.Control;
             this.lblQuantity.CausesValidation = false;
             this.lblQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblQuantity.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblQuantity.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblQuantity.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblQuantity.Location = new System.Drawing.Point(3, 0);
             this.lblQuantity.Name = "lblQuantity";
@@ -312,7 +318,7 @@
             // numericUpDownQuantity
             // 
             this.numericUpDownQuantity.Dock = System.Windows.Forms.DockStyle.Top;
-            this.numericUpDownQuantity.Font = new System.Drawing.Font("新細明體", 20.25F);
+            this.numericUpDownQuantity.Font = new System.Drawing.Font("PMingLiU", 20.25F);
             this.numericUpDownQuantity.Location = new System.Drawing.Point(3, 61);
             this.numericUpDownQuantity.Name = "numericUpDownQuantity";
             this.numericUpDownQuantity.Size = new System.Drawing.Size(251, 40);
@@ -339,7 +345,7 @@
             this.lblSpareName.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareName.CausesValidation = false;
             this.lblSpareName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareName.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareName.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareName.Location = new System.Drawing.Point(3, 0);
             this.lblSpareName.Name = "lblSpareName";
@@ -350,13 +356,14 @@
             // comboBoxSpareName
             // 
             this.comboBoxSpareName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSpareName.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBoxSpareName.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSpareName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxSpareName.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareName.FormattingEnabled = true;
             this.comboBoxSpareName.Location = new System.Drawing.Point(3, 71);
             this.comboBoxSpareName.Name = "comboBoxSpareName";
-            this.comboBoxSpareName.Size = new System.Drawing.Size(251, 41);
+            this.comboBoxSpareName.Size = new System.Drawing.Size(251, 35);
             this.comboBoxSpareName.TabIndex = 45;
+            this.comboBoxSpareName.SelectedValueChanged += new System.EventHandler(this.comboBoxSpareName_SelectedValueChanged);
             // 
             // frmEditOrder
             // 
@@ -396,7 +403,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.Label lblQuantity;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtOrderNumber;
         private System.Windows.Forms.Label lblYourOrderNumber;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label lblSpareName;

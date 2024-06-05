@@ -34,14 +34,14 @@
             this.lblPurchaseDateandTime = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
             this.lblOrderNo = new System.Windows.Forms.Label();
-            this.btnItem = new System.Windows.Forms.Button();
             this.BtnDIset = new System.Windows.Forms.Button();
             this.txtOrderID = new System.Windows.Forms.TextBox();
             this.txtStatus = new System.Windows.Forms.TextBox();
+            this.btnItem = new System.Windows.Forms.Button();
+            this.btnInvoice = new System.Windows.Forms.Button();
             this.groupBoxDeliveryStatusandProductDetails = new System.Windows.Forms.GroupBox();
             this.flowDeliveryStatusandProductDetails = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnInvoice = new System.Windows.Forms.Button();
             this.groupBoxOrderOverview.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.groupBoxDeliveryStatusandProductDetails.SuspendLayout();
@@ -91,7 +91,7 @@
             this.txtDateTime.BackColor = System.Drawing.SystemColors.Control;
             this.txtDateTime.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDateTime.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.txtDateTime.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtDateTime.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.txtDateTime.Location = new System.Drawing.Point(374, 97);
             this.txtDateTime.Multiline = true;
             this.txtDateTime.Name = "txtDateTime";
@@ -101,13 +101,13 @@
             // 
             // lblPurchaseDateandTime
             // 
-            this.lblPurchaseDateandTime.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblPurchaseDateandTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPurchaseDateandTime.AutoSize = true;
             this.lblPurchaseDateandTime.BackColor = System.Drawing.SystemColors.Control;
             this.lblPurchaseDateandTime.CausesValidation = false;
-            this.lblPurchaseDateandTime.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblPurchaseDateandTime.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblPurchaseDateandTime.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPurchaseDateandTime.Location = new System.Drawing.Point(38, 103);
+            this.lblPurchaseDateandTime.Location = new System.Drawing.Point(38, 94);
             this.lblPurchaseDateandTime.Name = "lblPurchaseDateandTime";
             this.lblPurchaseDateandTime.Size = new System.Drawing.Size(330, 32);
             this.lblPurchaseDateandTime.TabIndex = 23;
@@ -115,13 +115,13 @@
             // 
             // lblStatus
             // 
-            this.lblStatus.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStatus.AutoSize = true;
             this.lblStatus.BackColor = System.Drawing.SystemColors.Control;
             this.lblStatus.CausesValidation = false;
-            this.lblStatus.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblStatus.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblStatus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblStatus.Location = new System.Drawing.Point(257, 54);
+            this.lblStatus.Location = new System.Drawing.Point(257, 47);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(111, 32);
             this.lblStatus.TabIndex = 22;
@@ -129,34 +129,22 @@
             // 
             // lblOrderNo
             // 
-            this.lblOrderNo.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblOrderNo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblOrderNo.AutoSize = true;
             this.lblOrderNo.BackColor = System.Drawing.SystemColors.Control;
             this.lblOrderNo.CausesValidation = false;
-            this.lblOrderNo.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblOrderNo.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblOrderNo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblOrderNo.Location = new System.Drawing.Point(204, 7);
+            this.lblOrderNo.Location = new System.Drawing.Point(204, 0);
             this.lblOrderNo.Name = "lblOrderNo";
             this.lblOrderNo.Size = new System.Drawing.Size(164, 32);
             this.lblOrderNo.TabIndex = 21;
             this.lblOrderNo.Text = "Order No. :";
             // 
-            // btnItem
-            // 
-            this.btnItem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnItem.Font = new System.Drawing.Font("新細明體", 24F);
-            this.btnItem.Location = new System.Drawing.Point(992, 3);
-            this.btnItem.Name = "btnItem";
-            this.btnItem.Size = new System.Drawing.Size(242, 41);
-            this.btnItem.TabIndex = 24;
-            this.btnItem.Text = "Item Detail";
-            this.btnItem.UseVisualStyleBackColor = true;
-            this.btnItem.Click += new System.EventHandler(this.button1_Click);
-            // 
             // BtnDIset
             // 
             this.BtnDIset.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnDIset.Font = new System.Drawing.Font("新細明體", 24F);
+            this.BtnDIset.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.BtnDIset.Location = new System.Drawing.Point(992, 50);
             this.BtnDIset.Name = "BtnDIset";
             this.BtnDIset.Size = new System.Drawing.Size(242, 41);
@@ -171,7 +159,7 @@
             this.txtOrderID.BackColor = System.Drawing.SystemColors.Control;
             this.txtOrderID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOrderID.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.txtOrderID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtOrderID.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.txtOrderID.Location = new System.Drawing.Point(374, 3);
             this.txtOrderID.Multiline = true;
             this.txtOrderID.Name = "txtOrderID";
@@ -185,13 +173,37 @@
             this.txtStatus.BackColor = System.Drawing.SystemColors.Control;
             this.txtStatus.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtStatus.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.txtStatus.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtStatus.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.txtStatus.Location = new System.Drawing.Point(374, 50);
             this.txtStatus.Multiline = true;
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.ReadOnly = true;
             this.txtStatus.Size = new System.Drawing.Size(612, 41);
             this.txtStatus.TabIndex = 49;
+            // 
+            // btnItem
+            // 
+            this.btnItem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnItem.Font = new System.Drawing.Font("PMingLiU", 24F);
+            this.btnItem.Location = new System.Drawing.Point(992, 3);
+            this.btnItem.Name = "btnItem";
+            this.btnItem.Size = new System.Drawing.Size(242, 41);
+            this.btnItem.TabIndex = 24;
+            this.btnItem.Text = "Item Detail";
+            this.btnItem.UseVisualStyleBackColor = true;
+            this.btnItem.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnInvoice
+            // 
+            this.btnInvoice.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnInvoice.Font = new System.Drawing.Font("PMingLiU", 24F);
+            this.btnInvoice.Location = new System.Drawing.Point(992, 97);
+            this.btnInvoice.Name = "btnInvoice";
+            this.btnInvoice.Size = new System.Drawing.Size(242, 44);
+            this.btnInvoice.TabIndex = 51;
+            this.btnInvoice.Text = "Invoice";
+            this.btnInvoice.UseVisualStyleBackColor = true;
+            this.btnInvoice.Click += new System.EventHandler(this.btnInvoice_Click);
             // 
             // groupBoxDeliveryStatusandProductDetails
             // 
@@ -229,18 +241,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1249, 572);
             this.tableLayoutPanel1.TabIndex = 2;
-            // 
-            // btnInvoice
-            // 
-            this.btnInvoice.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnInvoice.Font = new System.Drawing.Font("新細明體", 24F);
-            this.btnInvoice.Location = new System.Drawing.Point(992, 97);
-            this.btnInvoice.Name = "btnInvoice";
-            this.btnInvoice.Size = new System.Drawing.Size(242, 44);
-            this.btnInvoice.TabIndex = 51;
-            this.btnInvoice.Text = "Invoice";
-            this.btnInvoice.UseVisualStyleBackColor = true;
-            this.btnInvoice.Click += new System.EventHandler(this.btnInvoice_Click);
             // 
             // frmOrderDetail
             // 
