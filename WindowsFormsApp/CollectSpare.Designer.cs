@@ -32,8 +32,8 @@
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.txtActualQuantity = new System.Windows.Forms.TextBox();
             this.lblActualQuantity = new System.Windows.Forms.Label();
-            this.lblFollowingROL = new System.Windows.Forms.Label();
-            this.dgvItemHaveArrivedInROL = new System.Windows.Forms.DataGridView();
+            this.lblFollowingCollect = new System.Windows.Forms.Label();
+            this.dgvCollect = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.txtSpareNumberofBundles = new System.Windows.Forms.TextBox();
@@ -46,7 +46,7 @@
             this.btnConfirm = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvItemHaveArrivedInROL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCollect)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -59,8 +59,8 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.lblFollowingROL, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.dgvItemHaveArrivedInROL, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lblFollowingCollect, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.dgvCollect, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnConfirm, 1, 3);
@@ -94,7 +94,7 @@
             // txtActualQuantity
             // 
             this.txtActualQuantity.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtActualQuantity.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtActualQuantity.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtActualQuantity.Location = new System.Drawing.Point(3, 53);
             this.txtActualQuantity.Multiline = true;
             this.txtActualQuantity.Name = "txtActualQuantity";
@@ -107,7 +107,7 @@
             this.lblActualQuantity.BackColor = System.Drawing.SystemColors.Control;
             this.lblActualQuantity.CausesValidation = false;
             this.lblActualQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblActualQuantity.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblActualQuantity.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblActualQuantity.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblActualQuantity.Location = new System.Drawing.Point(3, 0);
             this.lblActualQuantity.Name = "lblActualQuantity";
@@ -115,28 +115,28 @@
             this.lblActualQuantity.TabIndex = 50;
             this.lblActualQuantity.Text = "Actual Quantity:";
             // 
-            // lblFollowingROL
+            // lblFollowingCollect
             // 
-            this.lblFollowingROL.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.lblFollowingROL, 2);
-            this.lblFollowingROL.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblFollowingROL.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblFollowingROL.Location = new System.Drawing.Point(3, 0);
-            this.lblFollowingROL.Name = "lblFollowingROL";
-            this.lblFollowingROL.Size = new System.Drawing.Size(1130, 31);
-            this.lblFollowingROL.TabIndex = 75;
-            this.lblFollowingROL.Text = "The following items have need to collect:";
+            this.lblFollowingCollect.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.lblFollowingCollect, 2);
+            this.lblFollowingCollect.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblFollowingCollect.Font = new System.Drawing.Font("PMingLiU", 24F);
+            this.lblFollowingCollect.Location = new System.Drawing.Point(3, 0);
+            this.lblFollowingCollect.Name = "lblFollowingCollect";
+            this.lblFollowingCollect.Size = new System.Drawing.Size(1130, 31);
+            this.lblFollowingCollect.TabIndex = 75;
+            this.lblFollowingCollect.Text = "The following items have need to collect:";
             // 
-            // dgvItemHaveArrivedInROL
+            // dgvCollect
             // 
-            this.dgvItemHaveArrivedInROL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel1.SetColumnSpan(this.dgvItemHaveArrivedInROL, 2);
-            this.dgvItemHaveArrivedInROL.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvItemHaveArrivedInROL.Location = new System.Drawing.Point(3, 34);
-            this.dgvItemHaveArrivedInROL.Name = "dgvItemHaveArrivedInROL";
-            this.dgvItemHaveArrivedInROL.RowTemplate.Height = 24;
-            this.dgvItemHaveArrivedInROL.Size = new System.Drawing.Size(1130, 397);
-            this.dgvItemHaveArrivedInROL.TabIndex = 74;
+            this.dgvCollect.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel1.SetColumnSpan(this.dgvCollect, 2);
+            this.dgvCollect.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvCollect.Location = new System.Drawing.Point(3, 34);
+            this.dgvCollect.Name = "dgvCollect";
+            this.dgvCollect.RowTemplate.Height = 24;
+            this.dgvCollect.Size = new System.Drawing.Size(1130, 397);
+            this.dgvCollect.TabIndex = 74;
             // 
             // tableLayoutPanel2
             // 
@@ -173,7 +173,7 @@
             // txtSpareNumberofBundles
             // 
             this.txtSpareNumberofBundles.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtSpareNumberofBundles.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtSpareNumberofBundles.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtSpareNumberofBundles.Location = new System.Drawing.Point(3, 53);
             this.txtSpareNumberofBundles.Multiline = true;
             this.txtSpareNumberofBundles.Name = "txtSpareNumberofBundles";
@@ -186,7 +186,7 @@
             this.lblSpareNumberofBundles.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareNumberofBundles.CausesValidation = false;
             this.lblSpareNumberofBundles.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareNumberofBundles.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareNumberofBundles.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareNumberofBundles.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareNumberofBundles.Location = new System.Drawing.Point(3, 0);
             this.lblSpareNumberofBundles.Name = "lblSpareNumberofBundles";
@@ -215,7 +215,7 @@
             this.lblSpareID.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareID.CausesValidation = false;
             this.lblSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareID.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareID.Location = new System.Drawing.Point(3, 0);
             this.lblSpareID.Name = "lblSpareID";
@@ -227,7 +227,7 @@
             // 
             this.comboBoxSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxSpareID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBoxSpareID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSpareID.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareID.FormattingEnabled = true;
             this.comboBoxSpareID.Location = new System.Drawing.Point(3, 53);
             this.comboBoxSpareID.Name = "comboBoxSpareID";
@@ -252,7 +252,7 @@
             // btnTurnOnScanner
             // 
             this.btnTurnOnScanner.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnTurnOnScanner.Font = new System.Drawing.Font("新細明體", 24F);
+            this.btnTurnOnScanner.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.btnTurnOnScanner.Location = new System.Drawing.Point(3, 3);
             this.btnTurnOnScanner.Name = "btnTurnOnScanner";
             this.btnTurnOnScanner.Size = new System.Drawing.Size(388, 51);
@@ -264,7 +264,7 @@
             // btnConfirm
             // 
             this.btnConfirm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnConfirm.Font = new System.Drawing.Font("新細明體", 24F);
+            this.btnConfirm.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.btnConfirm.Location = new System.Drawing.Point(798, 561);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(335, 57);
@@ -280,11 +280,12 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmCollectSpare";
             this.Text = "Collect Spare";
+            this.Load += new System.EventHandler(this.frmCollectSpare_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvItemHaveArrivedInROL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCollect)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
@@ -298,9 +299,9 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label lblFollowingROL;
+        private System.Windows.Forms.Label lblFollowingCollect;
         private System.Windows.Forms.Button btnTurnOnScanner;
-        private System.Windows.Forms.DataGridView dgvItemHaveArrivedInROL;
+        private System.Windows.Forms.DataGridView dgvCollect;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label lblSpareID;

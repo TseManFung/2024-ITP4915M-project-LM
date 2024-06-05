@@ -12,6 +12,7 @@ namespace WindowsFormsApp
 {
     public partial class frmCollectSpare : Form
     {
+        
         public frmCollectSpare()
         {
             InitializeComponent();
@@ -19,8 +20,18 @@ namespace WindowsFormsApp
 
         private void btnscanner_Click(object sender, EventArgs e)
         {
-            frmWebcam webcam = new frmWebcam();
-            webcam.ShowDialog();
+            using(frmWebcam webcam = new frmWebcam())
+            {
+                webcam.ShowDialog();
+                string code = webcam.scanCode;
+                Console.WriteLine(code);
+            }
+
+        }
+
+        private void frmCollectSpare_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

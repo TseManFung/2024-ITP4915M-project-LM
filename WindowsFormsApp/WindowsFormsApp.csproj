@@ -127,6 +127,11 @@
     <Reference Include="MySqlConnector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
       <HintPath>..\packages\MySqlConnector.2.3.7\lib\net48\MySqlConnector.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.5.1.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.5.1\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
     <Reference Include="Renci.SshNet, Version=2024.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
       <HintPath>..\packages\SSH.NET.2024.0.0\lib\net462\Renci.SshNet.dll</HintPath>
     </Reference>
@@ -176,8 +181,15 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
     <Reference Include="ZstdSharp, Version=0.8.1.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
       <HintPath>..\packages\ZstdSharp.Port.0.8.1\lib\net462\ZstdSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.9\lib\net48\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.9\lib\net48\zxing.presentation.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -228,6 +240,12 @@
     </Compile>
     <Compile Include="ModifyInformation.Designer.cs">
       <DependentUpon>ModifyInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpareQRCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpareQRCode.Designer.cs">
+      <DependentUpon>SpareQRCode.cs</DependentUpon>
     </Compile>
     <Compile Include="sshdatabase.cs" />
     <Compile Include="DeliveryStatusandProductDetails.cs">
@@ -529,6 +547,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Signature.resx">
       <DependentUpon>Signature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpareQRCode.resx">
+      <DependentUpon>SpareQRCode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserAndAccountCreate.resx">
       <DependentUpon>UserAndAccountCreate.cs</DependentUpon>

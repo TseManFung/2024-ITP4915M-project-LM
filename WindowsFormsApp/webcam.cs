@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AForge.Video;
 using AForge.Video.DirectShow;
+using ZXing;
 
 namespace WindowsFormsApp
 {
@@ -20,6 +21,8 @@ namespace WindowsFormsApp
         }
         FilterInfoCollection FInfoC;
         VideoCaptureDevice cam;
+
+        public string scanCode { get; set; }
 
 
         private void cam_NewFrame(object sender, NewFrameEventArgs e)
@@ -43,6 +46,10 @@ namespace WindowsFormsApp
 
         private void frmWebcam_FormClosing(object sender, FormClosingEventArgs e)
         {
+            if(timer.Enabled)
+            {
+                timer.Stop();
+            }
             if (cam.IsRunning) { 
                 cam.Stop();
             }
@@ -57,6 +64,23 @@ namespace WindowsFormsApp
             cam = new VideoCaptureDevice(FInfoC[cboCamera.SelectedIndex].MonikerString);
             cam.NewFrame += cam_NewFrame;
             cam.Start();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            if (picCamera.Image != null) { 
+                BarcodeReader Reader = new BarcodeReader();
+                Result result = Reader.Decode((Bitmap)picCamera.Image);
+                try
+                {
+                    string decoded = result.ToString().Trim();
+                    lblCode.Text = this.scanCode =  decoded;
+                }
+                catch (Exception ex)
+                {
+                    lblCode.Text = "Scanning...";
+                }
+            }
         }
     }
 }

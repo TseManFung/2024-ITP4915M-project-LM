@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Metrics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace WindowsFormsApp
 {
     public partial class frmOrderRecord : Form
     {
+        int count = 1;
         public frmOrderRecord()
         {
             InitializeComponent();
@@ -28,14 +30,21 @@ namespace WindowsFormsApp
 
         private void getData()
         {
+            getData(count, count+999);
+        }
+
+
+        // include the start and end
+        private void getData(int start,int end)
+        {
             string sql;
             if (Main.dealerID != null)
             {
-                sql = $"SELECT OrderSerial, OrderDate, OrderNumberfromDealer, State, remark FROM `Order` Where DealerID = {Main.dealerID};";
+                sql = $"SELECT OrderSerial, OrderDate, OrderNumberfromDealer, State, remark FROM `Order` Where DealerID = {Main.dealerID} limit {start},{end};";
             }
             else if (Main.staffID != null)
             {
-                sql = $"SELECT OrderSerial, OrderDate, OrderNumberfromDealer, State, remark FROM `Order`;";
+                sql = $"SELECT OrderSerial, OrderDate, OrderNumberfromDealer, State, remark FROM `Order` limit {start},{end};";
             }
             else { throw new Exception("No DealerID or StaffID"); }
 
@@ -71,6 +80,28 @@ namespace WindowsFormsApp
                 {
                     dgvComplete.Rows.Add(row["OrderSerial"], row["OrderDate"], row["OrderNumberfromDealer"], row["State"], row["remark"]);
                 }
+            }
+            count = end + 1;
+        }
+
+        private void dgvProcessing_Scroll(object sender, ScrollEventArgs e)
+        {
+            VScrollBar vs = dgvProcessing.Controls.OfType<VScrollBar>().First();
+
+            if (e.NewValue >= (vs.Maximum - vs.LargeChange )/20 - 1)
+            {
+                getData();
+                Console.WriteLine("Processing");
+            }
+        }
+
+        private void dgvComplete_Scroll(object sender, ScrollEventArgs e)
+        {
+            VScrollBar vs = dgvComplete.Controls.OfType<VScrollBar>().First();
+
+            if (e.NewValue >= (vs.Maximum - vs.LargeChange) / 20 - 1)
+            {
+                getData();
             }
         }
 
