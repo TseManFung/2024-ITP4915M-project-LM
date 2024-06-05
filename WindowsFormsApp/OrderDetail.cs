@@ -13,16 +13,35 @@ namespace WindowsFormsApp
 {
     public partial class frmOrderDetail : Form
     {
-        string OrderSerial;
-        public frmOrderDetail()
-        {
-            InitializeComponent();
-        }
+        string OrderSerial, dateTime, State;
+
+        Dictionary<string, string> dictState = new Dictionary<string, string>() {
+            { "C", "Order Create" } ,
+            { "P", "Processing" } ,
+            { "W", "Waiting" } ,
+            { "U", "Unavailable" } ,
+            { "T", "In transit" },
+            { "F", "this order is finfshed" }
+        };
         public frmOrderDetail(string OrderSerial)
         {
             InitializeComponent();
             this.OrderSerial = OrderSerial;
+            txtOrderID.Text = OrderSerial;
+
+
+            string sql = $"select * from `Order` where OrderSerial = '{OrderSerial}';";
+            var reader = Main.db.readBySql(sql);
+            reader.Read();
+
+            State = Convert.ToString(reader["State"]);
+            txtStatus.Text = dictState[State];
+
+            txtDateTime.Text = reader["OrderDate"].ToString();
+
+            reader.Close();
         }
+
 
         private void frmOrderDetail_Load(object sender, EventArgs e)
         {
@@ -42,6 +61,11 @@ namespace WindowsFormsApp
             frm2.Show();
         }
 
+        private void btnInvoice_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmInvoice));
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmDISet));
@@ -49,7 +73,7 @@ namespace WindowsFormsApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            (this.ParentForm as Main)?.Change_pContent(typeof(frmInvoice));
+           
         }
     }
 }

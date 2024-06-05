@@ -40,6 +40,7 @@ namespace WindowsFormsApp
             catch (Exception ex)
             {
                 lblWrongPassword.Show();
+                txtLoginName.Text = txtPassword.Text = "";
                 return false;
             }
         }

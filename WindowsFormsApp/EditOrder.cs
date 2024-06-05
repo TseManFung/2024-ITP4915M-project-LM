@@ -12,6 +12,7 @@ namespace WindowsFormsApp
 {
     public partial class frmEditOrder : Form
     {
+        string orderserial;
         public frmEditOrder()
         {
             InitializeComponent();
@@ -27,6 +28,11 @@ namespace WindowsFormsApp
         {
             tableLayoutPanel3.Visible = tableLayoutPanel4.Visible = tableLayoutPanel8.Visible = false;
             tableLayoutPanel5.Visible = true;
+        }
+
+        private void frmEditOrder_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
