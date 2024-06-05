@@ -41,6 +41,7 @@ namespace WindowsFormsApp
                 cboCamera.Items.Add(FInfo.Name);
             }
             cboCamera.SelectedIndex = 0;
+            timer.Start();
             
         }
 
@@ -73,12 +74,19 @@ namespace WindowsFormsApp
                 Result result = Reader.Decode((Bitmap)picCamera.Image);
                 try
                 {
-                    string decoded = result.ToString().Trim();
-                    lblCode.Text = this.scanCode =  decoded;
+                    if (result != null)
+                    {
+                        string decoded = result.ToString().Trim();
+                        lblCode.Text = this.scanCode = decoded;
+                    }
+                    else {
+                        lblCode.Text = "Scanning...";
+                    }
                 }
                 catch (Exception ex)
                 {
-                    lblCode.Text = "Scanning...";
+                    
+                    Console.WriteLine(ex.Message);
                 }
             }
         }

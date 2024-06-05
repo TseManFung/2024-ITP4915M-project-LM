@@ -33,8 +33,8 @@
             this.cboCamera = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.picCamera = new System.Windows.Forms.PictureBox();
-            this.timer = new System.Windows.Forms.Timer(this.components);
             this.lblCode = new System.Windows.Forms.Label();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCamera)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +72,7 @@
             this.tableLayoutPanel1.Controls.Add(this.picCamera, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.cboCamera, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblCamera, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lblCode, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lblCode, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -94,21 +94,23 @@
             this.picCamera.TabIndex = 2;
             this.picCamera.TabStop = false;
             // 
+            // lblCode
+            // 
+            this.lblCode.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.lblCode, 3);
+            this.lblCode.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCode.Font = new System.Drawing.Font("PMingLiU", 24F);
+            this.lblCode.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.lblCode.Location = new System.Drawing.Point(3, 361);
+            this.lblCode.Name = "lblCode";
+            this.lblCode.Size = new System.Drawing.Size(399, 91);
+            this.lblCode.TabIndex = 3;
+            this.lblCode.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // timer
             // 
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
-            // 
-            // lblCode
-            // 
-            this.lblCode.AutoSize = true;
-            this.lblCode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCode.Location = new System.Drawing.Point(138, 361);
-            this.lblCode.Name = "lblCode";
-            this.lblCode.Size = new System.Drawing.Size(129, 91);
-            this.lblCode.TabIndex = 3;
-            this.lblCode.Text = "label1";
-            this.lblCode.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // frmWebcam
             // 

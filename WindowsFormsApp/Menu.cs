@@ -136,5 +136,10 @@ namespace WindowsFormsApp
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmChangePassword));
         }
+
+        private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmSpareQRCode));
+        }
     }
 }

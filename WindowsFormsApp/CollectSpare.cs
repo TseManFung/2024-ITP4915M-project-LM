@@ -25,6 +25,8 @@ namespace WindowsFormsApp
                 webcam.ShowDialog();
                 string code = webcam.scanCode;
                 Console.WriteLine(code);
+                //if can not find the code in the collect list
+                //Show message saying the code is not in the list
             }
 
         }
