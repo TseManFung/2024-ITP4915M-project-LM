@@ -42,8 +42,7 @@ namespace WindowsFormsApp
             reader.Close();
         }
 
-
-        private void frmOrderDetail_Load(object sender, EventArgs e)
+        private void CreateDelivaryDetail()
         {
             frmDeliveryStatusandProductDetails frm = new frmDeliveryStatusandProductDetails();
             frm.TopLevel = false;
@@ -52,13 +51,11 @@ namespace WindowsFormsApp
             frm.FormBorderStyle = FormBorderStyle.None;
             flowDeliveryStatusandProductDetails.Controls.Add(frm);
             frm.Show();
-            frmDeliveryStatusandProductDetails frm2 = new frmDeliveryStatusandProductDetails();
-            frm2.TopLevel = false;
-            frm2.TopMost = true;
-            frm2.Anchor = AnchorStyles.None;
-            frm2.FormBorderStyle = FormBorderStyle.None;
-            flowDeliveryStatusandProductDetails.Controls.Add(frm2);
-            frm2.Show();
+        }
+
+        private void frmOrderDetail_Load(object sender, EventArgs e)
+        {
+            CreateDelivaryDetail();
         }
 
         private void btnInvoice_Click(object sender, EventArgs e)

@@ -94,6 +94,7 @@
             this.txtRepartNewPassword.PasswordChar = '*';
             this.txtRepartNewPassword.Size = new System.Drawing.Size(116, 22);
             this.txtRepartNewPassword.TabIndex = 27;
+            this.txtRepartNewPassword.UseSystemPasswordChar = true;
             // 
             // lblNewPassword
             // 
@@ -120,6 +121,7 @@
             this.txtNewPassword.PasswordChar = '*';
             this.txtNewPassword.Size = new System.Drawing.Size(116, 22);
             this.txtNewPassword.TabIndex = 25;
+            this.txtNewPassword.UseSystemPasswordChar = true;
             // 
             // lblOldPassword
             // 
@@ -146,6 +148,7 @@
             this.txtOldPassword.PasswordChar = '*';
             this.txtOldPassword.Size = new System.Drawing.Size(116, 22);
             this.txtOldPassword.TabIndex = 23;
+            this.txtOldPassword.UseSystemPasswordChar = true;
             // 
             // frmChangePassword
             // 
