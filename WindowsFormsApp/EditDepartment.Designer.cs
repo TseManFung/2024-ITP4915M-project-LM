@@ -44,7 +44,7 @@
             this.txtDepartmentEmail = new System.Windows.Forms.TextBox();
             this.lblDepartmentEmail = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBoxSpareType = new System.Windows.Forms.ComboBox();
+            this.comboBoxWarehouseID = new System.Windows.Forms.ComboBox();
             this.lblWarehouse = new System.Windows.Forms.Label();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
@@ -121,13 +121,13 @@
             // comboBoxDepartment
             // 
             this.comboBoxDepartment.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxDepartment.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.comboBoxDepartment.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxDepartment.FormattingEnabled = true;
             this.comboBoxDepartment.Location = new System.Drawing.Point(3, 59);
             this.comboBoxDepartment.Name = "comboBoxDepartment";
-            this.comboBoxDepartment.Size = new System.Drawing.Size(148, 41);
+            this.comboBoxDepartment.Size = new System.Drawing.Size(148, 35);
             this.comboBoxDepartment.TabIndex = 74;
+            this.comboBoxDepartment.SelectedIndexChanged += new System.EventHandler(this.comboBoxDepartment_SelectedIndexChanged);
             // 
             // lblDepartment
             // 
@@ -188,6 +188,7 @@
             this.btnSave.TabIndex = 51;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -213,6 +214,7 @@
             this.txtDepartmentName.Name = "txtDepartmentName";
             this.txtDepartmentName.Size = new System.Drawing.Size(146, 45);
             this.txtDepartmentName.TabIndex = 47;
+            this.txtDepartmentName.TextChanged += new System.EventHandler(this.txtDepartmentName_TextChanged);
             // 
             // lblDepartmentName
             // 
@@ -252,6 +254,7 @@
             this.txtDepartmentEmail.Name = "txtDepartmentEmail";
             this.txtDepartmentEmail.Size = new System.Drawing.Size(146, 45);
             this.txtDepartmentEmail.TabIndex = 57;
+            this.txtDepartmentEmail.TextChanged += new System.EventHandler(this.txtDepartmentEmail_TextChanged);
             // 
             // lblDepartmentEmail
             // 
@@ -271,7 +274,7 @@
             // 
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Controls.Add(this.comboBoxSpareType, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.comboBoxWarehouseID, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.lblWarehouse, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(477, 3);
@@ -283,16 +286,17 @@
             this.tableLayoutPanel5.TabIndex = 88;
             this.tableLayoutPanel5.Visible = false;
             // 
-            // comboBoxSpareType
+            // comboBoxWarehouseID
             // 
-            this.comboBoxSpareType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSpareType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBoxSpareType.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBoxSpareType.FormattingEnabled = true;
-            this.comboBoxSpareType.Location = new System.Drawing.Point(3, 53);
-            this.comboBoxSpareType.Name = "comboBoxSpareType";
-            this.comboBoxSpareType.Size = new System.Drawing.Size(146, 41);
-            this.comboBoxSpareType.TabIndex = 74;
+            this.comboBoxWarehouseID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxWarehouseID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxWarehouseID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxWarehouseID.FormattingEnabled = true;
+            this.comboBoxWarehouseID.Location = new System.Drawing.Point(3, 53);
+            this.comboBoxWarehouseID.Name = "comboBoxWarehouseID";
+            this.comboBoxWarehouseID.Size = new System.Drawing.Size(146, 41);
+            this.comboBoxWarehouseID.TabIndex = 74;
+            this.comboBoxWarehouseID.SelectedIndexChanged += new System.EventHandler(this.comboBoxSpareType_SelectedIndexChanged);
             // 
             // lblWarehouse
             // 
@@ -316,6 +320,7 @@
             this.Controls.Add(this.tableLayoutPanel2);
             this.Name = "frmEditDepartment";
             this.Text = "Edit Department";
+            this.Load += new System.EventHandler(this.frmEditDepartment_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();
@@ -349,7 +354,7 @@
         private System.Windows.Forms.TextBox txtDepartmentEmail;
         private System.Windows.Forms.Label lblDepartmentEmail;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        public System.Windows.Forms.ComboBox comboBoxSpareType;
+        public System.Windows.Forms.ComboBox comboBoxWarehouseID;
         private System.Windows.Forms.Label lblWarehouse;
     }
 }
