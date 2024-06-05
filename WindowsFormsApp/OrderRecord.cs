@@ -17,18 +17,28 @@ namespace WindowsFormsApp
             InitializeComponent();
         }
 
-        List<string> ProcesingList = new List<string> {"C","P","W","T"},
-            CompleteList = new List<string> { "U","F"};
+        List<string> ProcesingList = new List<string> { "C", "P", "W", "T" },
+            CompleteList = new List<string> { "U", "F" };
 
         private void frmOrderRecord_Load(object sender, EventArgs e)
         {
             getData();
-            
+
         }
 
         private void getData()
         {
-            string sql = $"SELECT OrderSerial, OrderDate, OrderNumberfromDealer, State, remark FROM `Order` Where DealerID = {Main.dealerID};";
+            string sql;
+            if (Main.dealerID != null)
+            {
+                sql = $"SELECT OrderSerial, OrderDate, OrderNumberfromDealer, State, remark FROM `Order` Where DealerID = {Main.dealerID};";
+            }
+            else if (Main.staffID != null)
+            {
+                sql = $"SELECT OrderSerial, OrderDate, OrderNumberfromDealer, State, remark FROM `Order`;";
+            }
+            else { throw new Exception("No DealerID or StaffID"); }
+
             DataTable dt = Main.db.GetDataTable(sql);
 
             // Add columns to the DataGridView controls if they don't exist

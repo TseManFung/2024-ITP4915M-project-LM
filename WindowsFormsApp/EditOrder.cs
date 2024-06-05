@@ -93,9 +93,12 @@ namespace WindowsFormsApp
             {
                 sql = $"update `Order` set OrderNumberfromDealer ='{txtOrderNumber.Text}' where OrderSerial = '{this.orderSerial}'";
 
-            }else 
+            }else if (tableLayoutPanel3.Visible)
             {
                 sql = $"update OrderItem set Quantity = {numericUpDownQuantity.Value} where OrderSerial = '{this.orderSerial}' and ItemID = '{txtSpareID.Text}'";
+            }else
+            {
+                throw new Exception("No data to save");
             }
             Main.db.updateBySql(sql);
             Main.ShowMessage("Saved");
