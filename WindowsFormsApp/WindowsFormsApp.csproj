@@ -589,6 +589,7 @@
   <ItemGroup>
     <Content Include="Resources\add-product.png" />
     <Content Include="Resources\file_9678002.png" />
+    <Content Include="Resources\Genarete Spare QR-code.png" />
     <Content Include="Resources\info.256x256.png" />
     <Content Include="Resources\order-status-1.png" />
     <Content Include="Resources\printing-document_72649.png" />

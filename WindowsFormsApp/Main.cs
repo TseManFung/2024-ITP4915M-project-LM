@@ -197,6 +197,55 @@ namespace WindowsFormsApp
             frmStack.Clear();
         }
 
+
+        public void ResizeControlsFont(Control container)
+        {
+            float formWidth = container.Width;
+            float formHeight = container.Height;
+
+            // Adjust font size for all controls in the container
+            foreach (Control control in container.Controls)
+            {
+                // no control is DataGridView
+                //if (control is Label || control is Button || control is TextBox || control is ComboBox  || control is CheckBox || control is RadioButton){
+                    ResizeControlFont(control, formWidth, formHeight);
+                //}
+            }
+        }
+
+        private void ResizeControlFont(Control control, float formWidth, float formHeight)
+        {
+            control.Font = new Font(control.Font.FontFamily, (formWidth + formHeight) / 100, control.Font.Style);
+
+            ResizeControlText(control);
+
+            // Recursively adjust font size for child controls if applicable
+            if (control.HasChildren)
+            {
+                foreach (Control childControl in control.Controls)
+                {
+                    ResizeControlFont(childControl, formWidth, formHeight);
+                }
+            }
+        }
+
+        private void ResizeControlText(Control control)
+        {
+            using (Graphics graphics = control.CreateGraphics())
+            {
+                SizeF textSize = graphics.MeasureString(control.Text, control.Font);
+                while (textSize.Width > control.Width || textSize.Height > control.Height)
+                {
+                    float newSize = control.Font.Size - 0.5f;
+                    if (newSize < 8)
+                        break;
+
+                    control.Font = new Font(control.Font.FontFamily, newSize, control.Font.Style);
+                    textSize = graphics.MeasureString(control.Text, control.Font);
+                }
+            }
+        }
+
         private void pictureBoxLanguage_Click(object sender, EventArgs e)
         {
             frmLanguage f = new frmLanguage();
