@@ -181,6 +181,7 @@ CREATE TABLE `WarehouseStockLevel` (
   `WarehouseID` int,
   `SpareID` char(6),
   `ROL` int NOT NULL DEFAULT 0,
+  `DL` int NOT NULL DEFAULT 0,
   `CSL` int NOT NULL DEFAULT (ROL*1.2) COMMENT '如果短期內多次到達ROL, 則CSL會變大',
   PRIMARY KEY (`WarehouseID`, `SpareID`)
 );
