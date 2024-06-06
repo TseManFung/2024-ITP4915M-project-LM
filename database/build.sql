@@ -1,5 +1,4 @@
 use test;
-
 CREATE TABLE `Dealer` (
   `DealerID` int PRIMARY KEY AUTO_INCREMENT,
   `DealerName` varchar(255) NOT NULL,
@@ -81,6 +80,13 @@ CREATE TABLE `Stock` (
   PRIMARY KEY (`WarehouseID`, `SpareID`)
 );
 
+CREATE TABLE `ActualStock` (
+  `WarehouseID` int,
+  `SpareID` char(6),
+  `quantity` int NOT NULL,
+  PRIMARY KEY (`WarehouseID`, `SpareID`)
+);
+
 CREATE TABLE `Order` (
   `OrderSerial` char(20) PRIMARY KEY COMMENT 'Format: YYYYMMDD-hhmm-Dealer.DealerID',
   `DealerID` int NOT NULL,
@@ -147,6 +153,12 @@ CREATE TABLE `Invoice` (
   `CompleteState` char(1) NOT NULL DEFAULT 'C'
 );
 
+CREATE TABLE `Signture` (
+  `InvoiceID` char(15) PRIMARY KEY,
+  `SigntureDate` datetime NOT NULL,
+  `Sign` longtext NOT NULL
+);
+
 CREATE TABLE `Truck` (
   `TruckID` int PRIMARY KEY AUTO_INCREMENT,
   `SaleAreaID` int,
@@ -172,6 +184,12 @@ CREATE TABLE `WarehouseStockLevel` (
   `CSL` int NOT NULL DEFAULT (ROL*1.2) COMMENT '如果短期內多次到達ROL, 則CSL會變大',
   PRIMARY KEY (`WarehouseID`, `SpareID`)
 );
+
+ALTER TABLE `ActualStock` ADD FOREIGN KEY (`WarehouseID`) REFERENCES `Warehouse` (`WarehouseID`);
+
+ALTER TABLE `ActualStock` ADD FOREIGN KEY (`SpareID`) REFERENCES `Spare` (`SpareID`);
+
+ALTER TABLE `Signture` ADD FOREIGN KEY (`InvoiceID`) REFERENCES `Invoice` (`InvoiceID`);
 
 ALTER TABLE `Cart` ADD FOREIGN KEY (`UserID`) REFERENCES `User` (`UserID`);
 
