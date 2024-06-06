@@ -30,8 +30,6 @@ namespace WindowsFormsApp
             }
             this.comboBoxSaleArea.DataSource = Locationlist;
             this.comboBoxSaleArea.DisplayMember = "Location";
-            this.comboBoxSaleArea.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            this.comboBoxSaleArea.AutoCompleteSource = AutoCompleteSource.ListItems;
             List<string> StaffNamelist = new List<string>();
             string sql2 = "SELECT StaffName FROM Staff WHERE position = 'manager'";
             using (var reader = Main.db.readBySql(sql2))
@@ -58,8 +56,7 @@ namespace WindowsFormsApp
             }
             this.comboBoxManager.DataSource = StaffNamelist;
             this.comboBoxManager.DisplayMember = "StaffName";
-            this.comboBoxManager.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            this.comboBoxManager.AutoCompleteSource = AutoCompleteSource.ListItems;
+
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)

@@ -154,6 +154,7 @@
             // comboBoxSpareType
             // 
             this.comboBoxSpareType.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxSpareType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSpareType.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareType.FormattingEnabled = true;
             this.comboBoxSpareType.Location = new System.Drawing.Point(3, 53);
@@ -308,12 +309,14 @@
             // comboBoxSupplier
             // 
             this.comboBoxSupplier.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxSupplier.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSupplier.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSupplier.FormattingEnabled = true;
             this.comboBoxSupplier.Location = new System.Drawing.Point(3, 53);
             this.comboBoxSupplier.Name = "comboBoxSupplier";
             this.comboBoxSupplier.Size = new System.Drawing.Size(238, 35);
             this.comboBoxSupplier.TabIndex = 61;
+            this.comboBoxSupplier.SelectedIndexChanged += new System.EventHandler(this.comboBoxSupplier_SelectedIndexChanged);
             // 
             // tableLayoutPanel6
             // 

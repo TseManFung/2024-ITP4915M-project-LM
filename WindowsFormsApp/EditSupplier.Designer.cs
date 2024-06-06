@@ -125,13 +125,14 @@
             // comboBoxSupplierID
             // 
             this.comboBoxSupplierID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSupplierID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxSupplierID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSupplierID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSupplierID.FormattingEnabled = true;
             this.comboBoxSupplierID.Location = new System.Drawing.Point(3, 96);
             this.comboBoxSupplierID.Name = "comboBoxSupplierID";
-            this.comboBoxSupplierID.Size = new System.Drawing.Size(205, 41);
+            this.comboBoxSupplierID.Size = new System.Drawing.Size(205, 35);
             this.comboBoxSupplierID.TabIndex = 75;
+            this.comboBoxSupplierID.SelectedIndexChanged += new System.EventHandler(this.comboBoxSupplierID_SelectedIndexChanged);
             // 
             // lblSupplierID
             // 
@@ -206,6 +207,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(204, 45);
             this.txtName.TabIndex = 49;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // lblName
             // 
@@ -232,6 +234,7 @@
             this.btnSave.TabIndex = 51;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -258,6 +261,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(204, 45);
             this.txtEmail.TabIndex = 49;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // lblEmail
             // 
@@ -298,6 +302,7 @@
             this.txtContantNumber.Name = "txtContantNumber";
             this.txtContantNumber.Size = new System.Drawing.Size(204, 45);
             this.txtContantNumber.TabIndex = 49;
+            this.txtContantNumber.TextChanged += new System.EventHandler(this.txtContantNumber_TextChanged);
             // 
             // lblContantNumber
             // 
@@ -339,6 +344,7 @@
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(421, 45);
             this.txtAddress.TabIndex = 49;
+            this.txtAddress.TextChanged += new System.EventHandler(this.txtAddress_TextChanged);
             // 
             // lblAddress
             // 
@@ -362,6 +368,7 @@
             this.Controls.Add(this.tableLayoutPanel2);
             this.Name = "frmEditSupplier";
             this.Text = "Edit Supplier";
+            this.Load += new System.EventHandler(this.frmEditSupplier_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();

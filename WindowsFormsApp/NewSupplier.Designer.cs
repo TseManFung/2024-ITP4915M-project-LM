@@ -102,6 +102,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(255, 45);
             this.txtEmail.TabIndex = 47;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // lblEmail
             // 
@@ -142,6 +143,7 @@
             this.txtContantNumber.Name = "txtContantNumber";
             this.txtContantNumber.Size = new System.Drawing.Size(255, 45);
             this.txtContantNumber.TabIndex = 47;
+            this.txtContantNumber.TextChanged += new System.EventHandler(this.txtContantNumber_TextChanged);
             // 
             // lblContantNumber
             // 
@@ -196,6 +198,7 @@
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(524, 45);
             this.txtAddress.TabIndex = 47;
+            this.txtAddress.TextChanged += new System.EventHandler(this.txtAddress_TextChanged);
             // 
             // lblAddress
             // 
@@ -235,6 +238,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(255, 45);
             this.txtName.TabIndex = 49;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // lblName
             // 
@@ -279,6 +283,7 @@
             this.btnCreateNewSupplier.TabIndex = 52;
             this.btnCreateNewSupplier.Text = "Create a new supplier";
             this.btnCreateNewSupplier.UseVisualStyleBackColor = true;
+            this.btnCreateNewSupplier.Click += new System.EventHandler(this.btnCreateNewSupplier_Click);
             // 
             // btnClear
             // 
@@ -291,6 +296,7 @@
             this.btnClear.TabIndex = 72;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // frmNewSupplier
             // 
@@ -300,6 +306,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmNewSupplier";
             this.Text = "New Supplier";
+            this.Load += new System.EventHandler(this.frmNewSupplier_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();

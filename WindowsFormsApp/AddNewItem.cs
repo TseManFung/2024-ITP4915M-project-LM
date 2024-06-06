@@ -145,10 +145,15 @@ namespace WindowsFormsApp
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            txtSpareName.Text = "";
+            txtSpareName.Text = String.Empty;
             txtSparePrice.Text = "00.00";
             txtSpareWeight.Text = "0";
-            textBoxDescription.Text = "";
+            textBoxDescription.Text = String.Empty;
+        }
+
+        private void comboBoxSupplier_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

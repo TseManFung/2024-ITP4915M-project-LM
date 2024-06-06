@@ -286,6 +286,8 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmAddDepartment";
             this.Text = "Add Department";
+            this.Load += new System.EventHandler(this.frmAddDepartment_Load);
+            this.Resize += new System.EventHandler(this.frmAddDepartment_Resize);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();

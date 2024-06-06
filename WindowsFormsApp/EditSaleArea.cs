@@ -35,8 +35,6 @@ namespace WindowsFormsApp
             }
             this.comboBoxSaleAreaLocation.DataSource = SaleAreaLocationlist;
             this.comboBoxSaleAreaLocation.DisplayMember = "DeptID";
-            this.comboBoxSaleAreaLocation.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            this.comboBoxSaleAreaLocation.AutoCompleteSource = AutoCompleteSource.ListItems;
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -46,38 +44,42 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtLocation.Text))
+            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
             {
 
-                string Location = txtLocation.Text;
-                string Remark = txtRemark.Text;
-                string selectLocation = comboBoxSaleAreaLocation.SelectedItem.ToString(); ;
-                String sqlofsupplier = $"SELECT AreaID FROM SaleArea WHERE Location = '{selectLocation}'";
-                int AreaID = 0;
-                using (var reader = Main.db.readBySql(sqlofsupplier))
+                if (!string.IsNullOrEmpty(txtLocation.Text))
                 {
-                    while (reader.Read())
+
+                    string Location = txtLocation.Text;
+                    string Remark = txtRemark.Text;
+                    string selectLocation = comboBoxSaleAreaLocation.SelectedItem.ToString(); ;
+                    String sqlofsupplier = $"SELECT AreaID FROM SaleArea WHERE Location = '{selectLocation}'";
+                    int AreaID = 0;
+                    using (var reader = Main.db.readBySql(sqlofsupplier))
                     {
-                        AreaID = reader.GetInt32(0);
+                        while (reader.Read())
+                        {
+                            AreaID = reader.GetInt32(0);
+                        }
                     }
-                }
-                string query;
-                if (!string.IsNullOrEmpty(Remark))
-                {
-                    query = $"UPDATE SaleArea SET Location = '{Location}', Remark = '{Remark}' WHERE AreaID = '{AreaID}'";
+                    string query;
+                    if (!string.IsNullOrEmpty(Remark))
+                    {
+                        query = $"UPDATE SaleArea SET Location = '{Location}', Remark = '{Remark}' WHERE AreaID = '{AreaID}'";
+                    }
+                    else
+                    {
+                        query = $"UPDATE SaleArea SET Location = '{Location}' WHERE AreaID = '{AreaID}'";
+                    }
+                    Main.db.updateBySql(query);
+                    MessageBox.Show("Successful editing");
+                    txtLocation.Text = "";
+                    txtRemark.Text = "";
                 }
                 else
                 {
-                    query = $"UPDATE SaleArea SET Location = '{Location}' WHERE AreaID = '{AreaID}'";
+                    MessageBox.Show("Please provide Location!");
                 }
-                Main.db.updateBySql(query);
-                MessageBox.Show("Successful editing");
-                txtLocation.Text = "";
-                txtRemark.Text = "";
-            }
-            else
-            {
-                MessageBox.Show("Please provide Location!");
             }
         }
 
