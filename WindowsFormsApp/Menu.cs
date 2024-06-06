@@ -17,6 +17,37 @@ namespace WindowsFormsApp
             InitializeComponent();
         }
 
+        Dictionary<int, string> smallaccessMap = new Dictionary<int, string>() {
+                {10000, "Order Record" },
+                {200, "Add New Spare" },
+                {200, "Edit Spare" },
+                {200, "Add Sale Area" },
+                {200, "Edit Sale Area" },
+                {200, "Add Department" },
+                {200, "Edit Department" },
+                {200, "Add Warehouse" },
+                {200, "Edit Warehouse" },
+                {200, "Supplier Managemenet" },
+                {200, "User Management" },
+                {600, "Generate Spare QR-code" }
+            };
+
+        Dictionary<int, string> equalaccessMap = new Dictionary<int, string>() {
+                {500, "Set Stock Level" },
+                {400, "Collect Spare" },
+                {500, "Re-Stock" },
+                {500, "Scrap" },
+                {500, "Re-Stock Record" },
+                {600, "Order Edit" },
+                {300, "Report" }
+            };
+
+        Dictionary<int, string> bigaccessMap = new Dictionary<int, string>() {
+                {5000, "Placing Order" },
+                {5000, "Order Edit" },
+                {5000, "Modify Information" }
+            };
+
 
         private void FrmDirectory_Load(object sender, EventArgs e)
         {

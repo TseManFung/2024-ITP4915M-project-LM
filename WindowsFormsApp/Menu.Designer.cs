@@ -234,6 +234,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel3.TabIndex = 25;
+            this.tableLayoutPanel3.Visible = false;
             this.tableLayoutPanel3.Click += new System.EventHandler(this.CAddNewItem);
             // 
             // pictureBoxAddNewProduct
@@ -265,6 +266,7 @@
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel8.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel8.TabIndex = 30;
+            this.tableLayoutPanel8.Visible = false;
             this.tableLayoutPanel8.Click += new System.EventHandler(this.CEditSpare);
             // 
             // lblEditSpare
@@ -306,6 +308,7 @@
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel13.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel13.TabIndex = 32;
+            this.tableLayoutPanel13.Visible = false;
             this.tableLayoutPanel13.Click += new System.EventHandler(this.CScrap);
             // 
             // lblScrap
@@ -347,6 +350,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel1.TabIndex = 23;
+            this.tableLayoutPanel1.Visible = false;
             this.tableLayoutPanel1.Click += new System.EventHandler(this.CPlacingOrder);
             // 
             // lblPlaceOrder
@@ -391,6 +395,7 @@
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel11.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel11.TabIndex = 37;
+            this.tableLayoutPanel11.Visible = false;
             this.tableLayoutPanel11.Click += new System.EventHandler(this.CEditOrder);
             // 
             // lblOrderEdit
@@ -432,6 +437,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel2.TabIndex = 24;
+            this.tableLayoutPanel2.Visible = false;
             this.tableLayoutPanel2.Click += new System.EventHandler(this.COrderRecord);
             // 
             // pictureBoxOrderRecord
@@ -474,6 +480,7 @@
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel16.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel16.TabIndex = 35;
+            this.tableLayoutPanel16.Visible = false;
             this.tableLayoutPanel16.Click += new System.EventHandler(this.CCollectSpare);
             // 
             // lblCollectSpare
@@ -515,6 +522,7 @@
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel18.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel18.TabIndex = 40;
+            this.tableLayoutPanel18.Visible = false;
             this.tableLayoutPanel18.Click += new System.EventHandler(this.CSetStockLevel);
             // 
             // lblSetStockLevel
@@ -556,6 +564,7 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel6.TabIndex = 28;
+            this.tableLayoutPanel6.Visible = false;
             this.tableLayoutPanel6.Click += new System.EventHandler(this.CReStock);
             // 
             // pictureBoxReStock
@@ -586,6 +595,7 @@
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel10.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel10.TabIndex = 36;
+            this.tableLayoutPanel10.Visible = false;
             this.tableLayoutPanel10.Click += new System.EventHandler(this.CReStockCheck);
             // 
             // lblReStockRecord
@@ -627,6 +637,7 @@
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel15.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel15.TabIndex = 34;
+            this.tableLayoutPanel15.Visible = false;
             this.tableLayoutPanel15.Click += new System.EventHandler(this.CNewSupplier);
             // 
             // lblSupplierManagement
@@ -668,6 +679,7 @@
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel9.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel9.TabIndex = 31;
+            this.tableLayoutPanel9.Visible = false;
             this.tableLayoutPanel9.Click += new System.EventHandler(this.CUserManagementAndAccountManagement);
             // 
             // lblUserManagement
@@ -709,6 +721,7 @@
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel12.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel12.TabIndex = 38;
+            this.tableLayoutPanel12.Visible = false;
             this.tableLayoutPanel12.Click += new System.EventHandler(this.CAddSaleArea);
             // 
             // lblAddSaleArea
@@ -750,6 +763,7 @@
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel17.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel17.TabIndex = 39;
+            this.tableLayoutPanel17.Visible = false;
             this.tableLayoutPanel17.Click += new System.EventHandler(this.CEditSaleArea);
             // 
             // lblEditSaleArea
@@ -791,6 +805,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel4.TabIndex = 41;
+            this.tableLayoutPanel4.Visible = false;
             this.tableLayoutPanel4.Click += new System.EventHandler(this.CAddDepartment);
             // 
             // lblAddDepartment
@@ -832,6 +847,7 @@
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel19.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel19.TabIndex = 43;
+            this.tableLayoutPanel19.Visible = false;
             this.tableLayoutPanel19.Click += new System.EventHandler(this.CEditDepartment);
             // 
             // lblEditDepartment
@@ -873,6 +889,7 @@
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel14.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel14.TabIndex = 42;
+            this.tableLayoutPanel14.Visible = false;
             this.tableLayoutPanel14.Click += new System.EventHandler(this.CAddWarehouse);
             // 
             // lblAddWarehouse
@@ -914,6 +931,7 @@
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel20.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel20.TabIndex = 44;
+            this.tableLayoutPanel20.Visible = false;
             this.tableLayoutPanel20.Click += new System.EventHandler(this.CEditWarehouse);
             // 
             // lblEditWarehouse
@@ -955,6 +973,7 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel5.TabIndex = 27;
+            this.tableLayoutPanel5.Visible = false;
             this.tableLayoutPanel5.Click += new System.EventHandler(this.CReport);
             // 
             // lblReport
@@ -1039,6 +1058,7 @@
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel22.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel22.TabIndex = 46;
+            this.tableLayoutPanel22.Visible = false;
             this.tableLayoutPanel22.MouseClick += new System.Windows.Forms.MouseEventHandler(this.CModifyInformation);
             // 
             // pictureBoxModifyInformation
@@ -1111,6 +1131,7 @@
             this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel23.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel23.TabIndex = 47;
+            this.tableLayoutPanel23.Visible = false;
             this.tableLayoutPanel23.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseClick);
             // 
             // pictureBox1
@@ -1135,7 +1156,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 12);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Genarete Spare QR-code";
+            this.label1.Text = "Generete Spare QR-code";
             this.label1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseClick);
             // 
             // pictureBoxLenguage
