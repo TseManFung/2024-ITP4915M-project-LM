@@ -126,18 +126,7 @@ namespace WindowsFormsApp
                 pictureBoxBack.Visible = false;
                 lblTitle.Cursor = Cursors.Arrow;
 
-                if (formType == typeof(frmMenu) && AssessLevel > 10000)
-                {
 
-                    String sql = $"SELECT AccessLevel FROM User WHERE UserID = {Main.userID};";
-                    var reader = Main.db.readBySql(sql);
-                    if (reader.HasRows)
-                    {
-                        reader.Read();
-                        AssessLevel = Convert.ToInt32(reader[0]);
-                    }
-
-                }
             }
             else
             {

@@ -41,6 +41,7 @@ namespace WindowsFormsApp
             {
                 lblWrongPassword.Show();
                 txtLoginName.Text = txtPassword.Text = "";
+                Console.WriteLine(ex.Message);
                 return false;
             }
         }
