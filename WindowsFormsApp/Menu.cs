@@ -173,7 +173,7 @@ namespace WindowsFormsApp
             (this.ParentForm as Main)?.Change_pContent(typeof(frmSetStockLevel));
         }
 
-        private void CLogin(object sender, EventArgs e)
+        private void CLogout(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.SetLogout();
             (this.ParentForm as Main)?.Change_pContent(typeof(frmLogin));
@@ -214,23 +214,20 @@ namespace WindowsFormsApp
             (this.ParentForm as Main)?.Change_pContent(typeof(frmEditItem));
         }
 
-        private void CModifyInformation(object sender, MouseEventArgs e)
+        private void CModifyInformation(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmModifyInformation));
         }
 
-        private void CChangePassword(object sender, MouseEventArgs e)
+        private void CChangePassword(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmChangePassword));
+
         }
 
-        private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
+        private void CSpareQRcode(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmSpareQRCode));
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
 
         }
     }
