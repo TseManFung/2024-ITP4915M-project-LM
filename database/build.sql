@@ -155,6 +155,7 @@ CREATE TABLE `Invoice` (
 
 CREATE TABLE `Signture` (
   `InvoiceID` char(15) PRIMARY KEY,
+  `Name` varchar NOT NULL,
   `SigntureDate` datetime NOT NULL,
   `Sign` longtext NOT NULL
 );
