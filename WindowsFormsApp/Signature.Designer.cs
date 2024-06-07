@@ -32,12 +32,15 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
+            this.PSign = new System.Windows.Forms.Panel();
+            this.groupBoxPleaseSignBelow.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxPleaseSignBelow
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.groupBoxPleaseSignBelow, 3);
+            this.groupBoxPleaseSignBelow.Controls.Add(this.PSign);
             this.groupBoxPleaseSignBelow.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBoxPleaseSignBelow.Font = new System.Drawing.Font("新細明體", 24F);
             this.groupBoxPleaseSignBelow.Location = new System.Drawing.Point(3, 3);
@@ -86,6 +89,15 @@
             this.btnClear.TabIndex = 95;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // PSign
+            // 
+            this.PSign.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PSign.Location = new System.Drawing.Point(3, 42);
+            this.PSign.Name = "PSign";
+            this.PSign.Size = new System.Drawing.Size(788, 309);
+            this.PSign.TabIndex = 0;
             // 
             // frmSignature
             // 
@@ -95,6 +107,8 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmSignature";
             this.Text = "Signature";
+            this.Load += new System.EventHandler(this.frmSignature_Load);
+            this.groupBoxPleaseSignBelow.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -106,5 +120,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Panel PSign;
     }
 }

@@ -17,7 +17,7 @@ namespace WindowsFormsApp
 
     public partial class Main : Form
     {
-        public static sshdatabase db = new sshdatabase();
+        public static sshdatabase db;
         public static int? userID, dealerID, staffID, AssessLevel;
         public static Form currfrm = null;
 
@@ -58,7 +58,20 @@ namespace WindowsFormsApp
 
         private void Main_Load(object sender, EventArgs e)
         {
-            this.Change_pContent(typeof(frmLogin));
+            try
+            {
+                Main.db = new sshdatabase();
+                this.Change_pContent(typeof(frmLogin));
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);  
+                Main.ShowMessage("Error: Can not connect server\nPlease call technician for help.");
+                Application.Exit();
+                this.Close();
+                return;
+            }
             //this.Change_pContent(typeof(frmOrderDetail));
         }
 
@@ -197,7 +210,7 @@ namespace WindowsFormsApp
             {
                 // no control is DataGridView
                 //if (control is Label || control is Button || control is TextBox || control is ComboBox  || control is CheckBox || control is RadioButton){
-                    ResizeControlFont(control, formWidth, formHeight);
+                ResizeControlFont(control, formWidth, formHeight);
                 //}
             }
         }

@@ -18,8 +18,8 @@ namespace WindowsFormsApp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new Main());
-            //Application.Run(new frmWebcam());
+                Application.Run(new Main());
+
 
         }
     }
