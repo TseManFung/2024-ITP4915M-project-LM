@@ -21,5 +21,15 @@ namespace WindowsFormsApp
         {
             tableLayoutPanel5.Visible = radYes.Checked;
         }
+
+        private void frmAddDepartment_Resize(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.ResizeControlsFont(this);
+        }
+
+        private void frmAddDepartment_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

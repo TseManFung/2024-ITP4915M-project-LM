@@ -32,7 +32,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.lblEdit = new System.Windows.Forms.Button();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxWarehouse = new System.Windows.Forms.ComboBox();
             this.lblWarehouse = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -69,6 +69,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.36842F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(800, 450);
             this.tableLayoutPanel2.TabIndex = 83;
+            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // btnDelete
             // 
@@ -99,7 +100,7 @@
             // 
             this.tableLayoutPanel12.ColumnCount = 1;
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel12.Controls.Add(this.comboBox2, 0, 1);
+            this.tableLayoutPanel12.Controls.Add(this.comboBoxWarehouse, 0, 1);
             this.tableLayoutPanel12.Controls.Add(this.lblWarehouse, 0, 0);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel12.Location = new System.Drawing.Point(323, 3);
@@ -110,16 +111,17 @@
             this.tableLayoutPanel12.Size = new System.Drawing.Size(154, 112);
             this.tableLayoutPanel12.TabIndex = 86;
             // 
-            // comboBox2
+            // comboBoxWarehouse
             // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBox2.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(3, 59);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(148, 41);
-            this.comboBox2.TabIndex = 74;
+            this.comboBoxWarehouse.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxWarehouse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxWarehouse.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxWarehouse.FormattingEnabled = true;
+            this.comboBoxWarehouse.Location = new System.Drawing.Point(3, 59);
+            this.comboBoxWarehouse.Name = "comboBoxWarehouse";
+            this.comboBoxWarehouse.Size = new System.Drawing.Size(148, 35);
+            this.comboBoxWarehouse.TabIndex = 74;
+            this.comboBoxWarehouse.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // lblWarehouse
             // 
@@ -218,6 +220,7 @@
             this.btnSave.TabIndex = 51;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // frmEditWarehouse
             // 
@@ -227,6 +230,7 @@
             this.Controls.Add(this.tableLayoutPanel2);
             this.Name = "frmEditWarehouse";
             this.Text = "Edit Warehouse";
+            this.Load += new System.EventHandler(this.frmEditWarehouse_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();
@@ -244,7 +248,7 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button lblEdit;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
-        public System.Windows.Forms.ComboBox comboBox2;
+        public System.Windows.Forms.ComboBox comboBoxWarehouse;
         private System.Windows.Forms.Label lblWarehouse;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;

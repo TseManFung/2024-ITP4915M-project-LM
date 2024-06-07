@@ -46,8 +46,8 @@ namespace WindowsFormsApp
                 }
                 Main.db.insertBySql(query);
                 MessageBox.Show("Successful add!");
-                txtLocation.Text = "";
-                txtRemark.Text = "";
+                txtLocation.Text = String.Empty;
+                txtRemark.Text = String.Empty;
             }
             else
             {
@@ -57,8 +57,8 @@ namespace WindowsFormsApp
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            txtLocation.Text = "";
-            txtRemark.Text = "";
+            txtLocation.Text = String.Empty;
+            txtRemark.Text = String.Empty;
         }
 
         private void lblSpareLocation_Click(object sender, EventArgs e)
