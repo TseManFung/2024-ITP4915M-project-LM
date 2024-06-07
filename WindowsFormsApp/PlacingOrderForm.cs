@@ -142,5 +142,25 @@ namespace WindowsFormsApp
             numQuantity.Controls[0].Visible = false;
             getData();
         }
+
+        private void txtSelectedSpareName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSelectedSpareName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvPlacingOrder_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void comboBoxSpareName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -44,6 +44,7 @@
             // 
             // dgvItemFollowingROL
             // 
+            this.dgvItemFollowingROL.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvItemFollowingROL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel1.SetColumnSpan(this.dgvItemFollowingROL, 5);
             this.dgvItemFollowingROL.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -170,6 +171,7 @@
             this.Controls.Add(this.btnConfirm);
             this.Name = "frmReStock";
             this.Text = "Re-stock";
+            this.Load += new System.EventHandler(this.frmReStock_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvItemFollowingROL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRestock)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
