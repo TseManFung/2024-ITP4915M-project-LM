@@ -12,6 +12,8 @@ namespace WindowsFormsApp
 {
     public partial class frmUserManagementAndAccountManagement : Form
     {
+        public static string GlobalLoginNameForCreate;
+        public static int GlobalAccessLevelForCreate;
         public frmUserManagementAndAccountManagement()
         {
             InitializeComponent();
@@ -27,14 +29,71 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (accForDealer.Checked)
+            if (Main.ShowYesNoDialog("Are you going to the next page?"))
             {
-                (this.ParentForm as Main)?.Change_pContent(typeof(frmNewDealer));
+
+                if (!string.IsNullOrEmpty(txtAccessLevel.Text) && !string.IsNullOrEmpty(txtLoginName.Text))
+                {
+                    GlobalLoginNameForCreate = txtLoginName.Text;
+                    if (accForDealer.Checked)
+                    {
+                        (this.ParentForm as Main)?.Change_pContent(typeof(frmNewDealer));
+                    }
+                    else if (accForStaff.Checked)
+                    {
+                        (this.ParentForm as Main)?.Change_pContent(typeof(frmNewStaff));
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please select an account option!");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Login name or Access level has not been entered.");
+                    txtLoginName.Text = String.Empty;
+                    txtAccessLevel.Text = "0";
+                }
             }
-            if (accForStaff.Checked)
+
+        }
+
+        private void frmUserManagementAndAccountManagement_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLoginName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAccessLevel_TextChanged(object sender, EventArgs e)
+        {
+            if (int.TryParse(txtAccessLevel.Text.TrimStart('0'), out int accessLevel))
             {
-                (this.ParentForm as Main)?.Change_pContent(typeof(frmNewStaff));
+                if (accessLevel >= 0 && accessLevel <= 10000)
+                {
+                    GlobalAccessLevelForCreate = accessLevel;
+                }
+                else
+                {
+                    MessageBox.Show("Access level must be between 0 and 10000.");
+                    txtAccessLevel.Text = "0";
+                }
             }
+            else
+            {
+                MessageBox.Show("Invalid access level. Please enter a valid integer value.");
+                txtAccessLevel.Text = "0";
+            }
+        }
+
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtLoginName.Text = String.Empty;
+            txtAccessLevel.Text = "0";
         }
     }
 }

@@ -193,6 +193,7 @@
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(361, 45);
             this.txtPhoneNumber.TabIndex = 59;
+            this.txtPhoneNumber.TextChanged += new System.EventHandler(this.txtPhoneNumber_TextChanged);
             // 
             // tableLayoutPanel8
             // 
@@ -291,13 +292,14 @@
             // comboBoxSaleArea
             // 
             this.comboBoxSaleArea.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSaleArea.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxSaleArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSaleArea.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSaleArea.FormattingEnabled = true;
             this.comboBoxSaleArea.Location = new System.Drawing.Point(3, 53);
             this.comboBoxSaleArea.Name = "comboBoxSaleArea";
-            this.comboBoxSaleArea.Size = new System.Drawing.Size(361, 41);
+            this.comboBoxSaleArea.Size = new System.Drawing.Size(361, 35);
             this.comboBoxSaleArea.TabIndex = 74;
+            this.comboBoxSaleArea.SelectedIndexChanged += new System.EventHandler(this.comboBoxSaleArea_SelectedIndexChanged);
             // 
             // lblSaleArea
             // 
@@ -337,6 +339,7 @@
             this.txtDealerName.Name = "txtDealerName";
             this.txtDealerName.Size = new System.Drawing.Size(361, 45);
             this.txtDealerName.TabIndex = 49;
+            this.txtDealerName.TextChanged += new System.EventHandler(this.txtDealerName_TextChanged);
             // 
             // lblDealerName
             // 
@@ -395,6 +398,7 @@
             this.radYes.TabStop = true;
             this.radYes.Text = "Yes";
             this.radYes.UseVisualStyleBackColor = true;
+            this.radYes.CheckedChanged += new System.EventHandler(this.radYes_CheckedChanged);
             // 
             // radNo
             // 
@@ -429,12 +433,12 @@
             // comboBoxDealerID
             // 
             this.comboBoxDealerID.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBoxDealerID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxDealerID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDealerID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxDealerID.FormattingEnabled = true;
-            this.comboBoxDealerID.Location = new System.Drawing.Point(935, 33);
+            this.comboBoxDealerID.Location = new System.Drawing.Point(935, 36);
             this.comboBoxDealerID.Name = "comboBoxDealerID";
-            this.comboBoxDealerID.Size = new System.Drawing.Size(226, 41);
+            this.comboBoxDealerID.Size = new System.Drawing.Size(226, 35);
             this.comboBoxDealerID.TabIndex = 75;
             // 
             // lblDealerID
@@ -479,6 +483,7 @@
             this.btnSave.TabIndex = 51;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnClear
             // 
@@ -491,6 +496,7 @@
             this.btnClear.TabIndex = 71;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // frmNewDealer
             // 
@@ -500,6 +506,7 @@
             this.Controls.Add(this.tableLayoutPanel10);
             this.Name = "frmNewDealer";
             this.Text = "New Dealer";
+            this.Load += new System.EventHandler(this.frmNewDealer_Load);
             this.tableLayoutPanel10.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);

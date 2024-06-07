@@ -21,5 +21,10 @@ namespace WindowsFormsApp
         {
 
         }
+
+        private void dgvItemFollowingROL_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

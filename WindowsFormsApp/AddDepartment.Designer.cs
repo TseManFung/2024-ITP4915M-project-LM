@@ -140,6 +140,7 @@
             this.txtDepartmentName.Name = "txtDepartmentName";
             this.txtDepartmentName.Size = new System.Drawing.Size(148, 45);
             this.txtDepartmentName.TabIndex = 47;
+            this.txtDepartmentName.TextChanged += new System.EventHandler(this.txtDepartmentName_TextChanged);
             // 
             // lblDepartmentName
             // 
@@ -166,6 +167,7 @@
             this.btnClear.TabIndex = 71;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSave
             // 
@@ -178,6 +180,7 @@
             this.btnSave.TabIndex = 51;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -256,13 +259,14 @@
             // comboBoxWarehouse
             // 
             this.comboBoxWarehouse.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxWarehouse.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxWarehouse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxWarehouse.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxWarehouse.FormattingEnabled = true;
             this.comboBoxWarehouse.Location = new System.Drawing.Point(3, 53);
             this.comboBoxWarehouse.Name = "comboBoxWarehouse";
-            this.comboBoxWarehouse.Size = new System.Drawing.Size(148, 41);
+            this.comboBoxWarehouse.Size = new System.Drawing.Size(148, 35);
             this.comboBoxWarehouse.TabIndex = 74;
+            this.comboBoxWarehouse.SelectedIndexChanged += new System.EventHandler(this.comboBoxWarehouse_SelectedIndexChanged);
             // 
             // lblWareHouse
             // 

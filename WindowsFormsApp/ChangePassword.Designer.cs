@@ -68,6 +68,7 @@
             this.btnConfirm.TabIndex = 29;
             this.btnConfirm.Text = "Confirm";
             this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // lblRepartNewPassword
             // 
@@ -95,6 +96,7 @@
             this.txtRepartNewPassword.Size = new System.Drawing.Size(116, 22);
             this.txtRepartNewPassword.TabIndex = 27;
             this.txtRepartNewPassword.UseSystemPasswordChar = true;
+            this.txtRepartNewPassword.TextChanged += new System.EventHandler(this.txtRepartNewPassword_TextChanged);
             // 
             // lblNewPassword
             // 
@@ -122,6 +124,7 @@
             this.txtNewPassword.Size = new System.Drawing.Size(116, 22);
             this.txtNewPassword.TabIndex = 25;
             this.txtNewPassword.UseSystemPasswordChar = true;
+            this.txtNewPassword.TextChanged += new System.EventHandler(this.txtNewPassword_TextChanged);
             // 
             // lblOldPassword
             // 
@@ -149,6 +152,7 @@
             this.txtOldPassword.Size = new System.Drawing.Size(116, 22);
             this.txtOldPassword.TabIndex = 23;
             this.txtOldPassword.UseSystemPasswordChar = true;
+            this.txtOldPassword.TextChanged += new System.EventHandler(this.txtOldPassword_TextChanged);
             // 
             // frmChangePassword
             // 

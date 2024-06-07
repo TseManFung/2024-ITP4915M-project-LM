@@ -69,8 +69,7 @@ namespace WindowsFormsApp
             }
             this.comboBoxSpareID.DataSource = SpareIDlist;
             this.comboBoxSpareID.DisplayMember = "SpareID";
-            this.comboBoxSpareID.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            this.comboBoxSpareID.AutoCompleteSource = AutoCompleteSource.ListItems;
+
 
         }
 

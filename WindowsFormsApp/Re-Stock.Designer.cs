@@ -52,6 +52,7 @@
             this.dgvItemFollowingROL.RowTemplate.Height = 24;
             this.dgvItemFollowingROL.Size = new System.Drawing.Size(1094, 218);
             this.dgvItemFollowingROL.TabIndex = 72;
+            this.dgvItemFollowingROL.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItemFollowingROL_CellContentClick);
             // 
             // lblItemFollowingROL
             // 

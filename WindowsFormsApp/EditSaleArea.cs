@@ -34,7 +34,7 @@ namespace WindowsFormsApp
                 }
             }
             this.comboBoxSaleAreaLocation.DataSource = SaleAreaLocationlist;
-            this.comboBoxSaleAreaLocation.DisplayMember = "DeptID";
+            this.comboBoxSaleAreaLocation.DisplayMember = "SaleAreaID";
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)

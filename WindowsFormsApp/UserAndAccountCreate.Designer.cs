@@ -168,6 +168,7 @@
             this.txtAccessLevel.Name = "txtAccessLevel";
             this.txtAccessLevel.Size = new System.Drawing.Size(240, 45);
             this.txtAccessLevel.TabIndex = 47;
+            this.txtAccessLevel.TextChanged += new System.EventHandler(this.txtAccessLevel_TextChanged);
             // 
             // lblAccessLevel
             // 
@@ -207,6 +208,7 @@
             this.txtLoginName.Name = "txtLoginName";
             this.txtLoginName.Size = new System.Drawing.Size(240, 45);
             this.txtLoginName.TabIndex = 49;
+            this.txtLoginName.TextChanged += new System.EventHandler(this.txtLoginName_TextChanged);
             // 
             // lblLoginName
             // 
@@ -276,6 +278,7 @@
             this.btnClear.TabIndex = 72;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // frmUserManagementAndAccountManagement
             // 
@@ -285,6 +288,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmUserManagementAndAccountManagement";
             this.Text = "User  And Account Create";
+            this.Load += new System.EventHandler(this.frmUserManagementAndAccountManagement_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);

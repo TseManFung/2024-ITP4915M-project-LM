@@ -289,12 +289,12 @@
             // comboBoxWarehouseID
             // 
             this.comboBoxWarehouseID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxWarehouseID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxWarehouseID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxWarehouseID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxWarehouseID.FormattingEnabled = true;
             this.comboBoxWarehouseID.Location = new System.Drawing.Point(3, 53);
             this.comboBoxWarehouseID.Name = "comboBoxWarehouseID";
-            this.comboBoxWarehouseID.Size = new System.Drawing.Size(146, 41);
+            this.comboBoxWarehouseID.Size = new System.Drawing.Size(146, 35);
             this.comboBoxWarehouseID.TabIndex = 74;
             this.comboBoxWarehouseID.SelectedIndexChanged += new System.EventHandler(this.comboBoxSpareType_SelectedIndexChanged);
             // 

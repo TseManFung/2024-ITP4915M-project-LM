@@ -73,31 +73,35 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtDepartmentName.Text) && !string.IsNullOrEmpty(txtDepartmentEmail.Text))
+            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
             {
-                string DepartmentID = comboBoxDepartment.SelectedItem.ToString();
-                string DeptName = txtDepartmentName.Text;
-                string DeptEmail = txtDepartmentEmail.Text;
-                string WarehouseID = comboBoxWarehouseID.SelectedItem.ToString();
 
-                string query;
-                if (WarehouseID != "-1")
+                if (!string.IsNullOrEmpty(txtDepartmentName.Text) && !string.IsNullOrEmpty(txtDepartmentEmail.Text))
                 {
-                    query = $"UPDATE Department SET DeptEmail = '{DeptEmail}', DeptName = '{DeptName}', WarehouseID = '{WarehouseID}' WHERE DeptID = '{DepartmentID}'";
+                    string DepartmentID = comboBoxDepartment.SelectedItem.ToString();
+                    string DeptName = txtDepartmentName.Text;
+                    string DeptEmail = txtDepartmentEmail.Text;
+                    string WarehouseID = comboBoxWarehouseID.SelectedItem.ToString();
+
+                    string query;
+                    if (WarehouseID != "-1")
+                    {
+                        query = $"UPDATE Department SET DeptEmail = '{DeptEmail}', DeptName = '{DeptName}', WarehouseID = '{WarehouseID}' WHERE DeptID = '{DepartmentID}'";
+                    }
+                    else
+                    {
+                        query = $"UPDATE Department SET DeptEmail = '{DeptEmail}', DeptName = '{DeptName}',  WHERE DeptID = '{DepartmentID}'";
+                    }
+
+                    Main.db.updateBySql(query);
+                    MessageBox.Show("Successful editing");
+                    txtDepartmentName.Text = "";
+                    txtDepartmentEmail.Text = "";
                 }
                 else
                 {
-                    query = $"UPDATE Department SET DeptEmail = '{DeptEmail}', DeptName = '{DeptName}',  WHERE DeptID = '{DepartmentID}'";
+                    MessageBox.Show("Please provide Location!");
                 }
-
-                Main.db.updateBySql(query);
-                MessageBox.Show("Successful editing");
-                txtDepartmentName.Text = "";
-                txtDepartmentEmail.Text = "";
-            }
-            else
-            {
-                MessageBox.Show("Please provide Location!");
             }
         }
 
