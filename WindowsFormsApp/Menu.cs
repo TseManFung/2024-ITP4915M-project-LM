@@ -84,23 +84,23 @@ namespace WindowsFormsApp
                     if (Main.AssessLevel <= v)
                     {
                         tableLayoutPanel.Visible = true;
-                        continue;
+
                     }
                 }
-                else if (equalaccessMap.TryGetValue(label.Text, out v))
+                if (equalaccessMap.TryGetValue(label.Text, out v))
                 {
                     if (Main.AssessLevel == v)
                     {
                         tableLayoutPanel.Visible = true;
-                        continue;
+
                     }
                 }
-                else if (bigaccessMap.TryGetValue(label.Text, out v))
+                 if (bigaccessMap.TryGetValue(label.Text, out v))
                 {
                     if (Main.AssessLevel >= v)
                     {
                         tableLayoutPanel.Visible = true;
-                        continue;
+
                     }
                 }
 

@@ -73,6 +73,7 @@ namespace WindowsFormsApp
 
         private void dgvPlacingOrder_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
+            if(e.RowIndex < 0 ||e.ColumnIndex<0) { return; }
             string sid = dgvPlacingOrder.Rows[e.RowIndex].Cells["SpareID"].Value.ToString();
             if (sid != txtSelectedSpareName.Text)
             {

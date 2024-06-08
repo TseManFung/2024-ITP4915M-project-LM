@@ -13,7 +13,7 @@ namespace WindowsFormsApp
 {
     public partial class frmOrderRecord : Form
     {
-        int count = 1;
+        int count = 0;
         public frmOrderRecord()
         {
             InitializeComponent();
@@ -30,12 +30,12 @@ namespace WindowsFormsApp
 
         private void getData()
         {
-            getData(count, count+999);
+            getData(count, 100);
         }
 
 
         // include the start and end
-        private void getData(int start,int end)
+        private void getData(int start, int end)
         {
             string sql;
             if (Main.dealerID != null)
@@ -44,7 +44,21 @@ namespace WindowsFormsApp
             }
             else if (Main.staffID != null)
             {
-                sql = $"SELECT OrderSerial, OrderDate, OrderNumberfromDealer, State, remark FROM `Order` limit {start},{end};";
+                if (Main.AssessLevel == 400)
+                {
+                    sql = $"SELECT OrderSerial,DealerID, OrderDate, OrderNumberfromDealer, State, remark FROM `Order` where state = 'P' limit {start},{end};";
+
+                }
+                else if (Main.AssessLevel == 700)
+                {
+                    sql = $"SELECT OrderSerial,DealerID, OrderDate, OrderNumberfromDealer, State, remark FROM `Order` where state = 'T' limit {start},{end};";
+
+                }
+                else
+                {
+                    sql = $"SELECT OrderSerial,DealerID, OrderDate, OrderNumberfromDealer, State, remark FROM `Order` limit {start},{end};";
+
+                }
             }
             else { throw new Exception("No DealerID or StaffID"); }
 
@@ -54,6 +68,7 @@ namespace WindowsFormsApp
             if (dgvProcessing.Columns.Count == 0)
             {
                 dgvProcessing.Columns.Add("OrderSerial", "Order Serial");
+                if (Main.staffID == null) { dgvProcessing.Columns.Add("DealerID", "Dealer ID"); }
                 dgvProcessing.Columns.Add("OrderDate", "Order Date");
                 dgvProcessing.Columns.Add("OrderNumberfromDealer", "Order Number from Dealer");
                 dgvProcessing.Columns.Add("State", "State");
@@ -63,6 +78,7 @@ namespace WindowsFormsApp
             if (dgvComplete.Columns.Count == 0)
             {
                 dgvComplete.Columns.Add("OrderSerial", "Order Serial");
+                if (Main.staffID == null) { dgvComplete.Columns.Add("DealerID", "Dealer ID"); }
                 dgvComplete.Columns.Add("OrderDate", "Order Date");
                 dgvComplete.Columns.Add("OrderNumberfromDealer", "Order Number from Dealer");
                 dgvComplete.Columns.Add("State", "State");
@@ -70,25 +86,42 @@ namespace WindowsFormsApp
             }
 
             //State 在 ProcesingList 的就放入dgvProcessing，在否則就放入dgvComplete
-            foreach (DataRow row in dt.Rows)
+            if (Main.dealerID != null)
             {
-                if (ProcesingList.Contains(row["State"].ToString()))
+                foreach (DataRow row in dt.Rows)
                 {
-                    dgvProcessing.Rows.Add(row["OrderSerial"], row["OrderDate"], row["OrderNumberfromDealer"], row["State"], row["remark"]);
-                }
-                else if (CompleteList.Contains(row["State"].ToString()))
-                {
-                    dgvComplete.Rows.Add(row["OrderSerial"], row["OrderDate"], row["OrderNumberfromDealer"], row["State"], row["remark"]);
+                    if (ProcesingList.Contains(row["State"].ToString()))
+                    {
+                        dgvProcessing.Rows.Add(row["OrderSerial"], row["OrderDate"], row["OrderNumberfromDealer"], row["State"], row["remark"]);
+                    }
+                    else if (CompleteList.Contains(row["State"].ToString()))
+                    {
+                        dgvComplete.Rows.Add(row["OrderSerial"], row["OrderDate"], row["OrderNumberfromDealer"], row["State"], row["remark"]);
+                    }
                 }
             }
-            count = end + 1;
+            else if (Main.staffID != null)
+            {
+                foreach (DataRow row in dt.Rows)
+                {
+                    if (ProcesingList.Contains(row["State"].ToString()))
+                    {
+                        dgvProcessing.Rows.Add(row["OrderSerial"], row["DealerID"], row["OrderDate"], row["OrderNumberfromDealer"], row["State"], row["remark"]);
+                    }
+                    else if (CompleteList.Contains(row["State"].ToString()))
+                    {
+                        dgvComplete.Rows.Add(row["OrderSerial"], row["DealerID"], row["OrderDate"], row["OrderNumberfromDealer"], row["State"], row["remark"]);
+                    }
+                }
+            }
+            count += end;
         }
 
         private void dgvProcessing_Scroll(object sender, ScrollEventArgs e)
         {
             VScrollBar vs = dgvProcessing.Controls.OfType<VScrollBar>().First();
 
-            if (e.NewValue >= (vs.Maximum - vs.LargeChange )/20 - 1)
+            if (e.NewValue >= (vs.Maximum - vs.LargeChange) / 20 - 1)
             {
                 getData();
                 Console.WriteLine("Processing");
@@ -114,7 +147,6 @@ namespace WindowsFormsApp
                 (this.ParentForm as Main)?.Change_pContent(frm);
             }
         }
-
 
     }
 }
