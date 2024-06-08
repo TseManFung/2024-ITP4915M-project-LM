@@ -21,7 +21,7 @@ CREATE TABLE `Staff` (
   `SaleAreaID` int,
   `DeptID` varchar(5),
   `Position` varchar(255) NOT NULL COMMENT '下拉表單',
-  `PhoneNunber` varchar(20) UNIQUE NOT NULL,
+  `PhoneNunber` varchar(20) NOT NULL,
   `Gender` ENUM ('F', 'M') NOT NULL
 );
 
