@@ -178,33 +178,32 @@ VALUES
 ('B25912', 'B', 'www cooling system', 47.87, NULL, 69.2, 106);
 
 /*Stock*/
-INSERT INTO `Stock` (`WarehouseID`, `SpareID`, `AutoRestork`, `quantity`)
+INSERT INTO Stock (SpareID, quantity)
 VALUES 
-(1,	'A26130',	TRUE,	2000),
-(1,	'B22978',	TRUE,	1000),
-(1,	'C10435',	FALSE,	1000),
-(2,	'D75438',	FALSE,	1000),
-(2,	'C91177',	TRUE,	1000),
-(2,	'D52143',	TRUE,	1000),
-(3,	'A48880',	TRUE,	1000),
-(3,	'D31172',	TRUE,	90),
-(4,	'D62438',	TRUE,	90),
-(4,	'B25912',	TRUE,	90);
+('A26130', 2000),
+('B22978', 1000),
+('C10435', 1000),
+('D75438', 1000),
+('C91177', 1000),
+('D52143', 1000),
+('A48880', 1000),
+('D31172', 90),
+('D62438', 90),
+('B25912', 90);
   
-INSERT INTO `ActualStock` (`WarehouseID`, `SpareID`,`quantity`)
-VALUES
-(1,	'A26130',	1000),
-(1,	'B22978',	1000),
-(1,	'C10435',	1010),
-(2,	'A26130',	1000),
-(2,	'D75438',	1010),
-(2,	'C91177',	1010),
-(2,	'D52143',	1010),
-(3,	'A48880',	1010),
-(3,	'D31172',	90),
-(4,	'D62438',	90),
-(4,	'B25912',	90);
-
+INSERT INTO ActualStock (WarehouseID, SpareID, AutoRestork, quantity)
+VALUES 
+(1, 'A26130', TRUE, 1000),
+(1, 'B22978', TRUE, 1000),
+(1, 'C10435', FALSE, 1000),
+(2, 'A26130', FALSE, 1000),
+(2, 'D75438', FALSE, 1000),
+(2, 'C91177', TRUE, 1000),
+(2, 'D52143', TRUE, 1000),
+(3, 'A48880', TRUE, 1000),
+(3, 'D31172', TRUE, 90),
+(4, 'D62438', TRUE, 90),
+(4, 'B25912', TRUE, 90);
 
 
 /*Order*/
@@ -312,35 +311,6 @@ VALUES
   (4, 'B25912', 50, 100, 120);
 
 
-
-/*ActualStock*/
-INSERT INTO `ActualStock` (`WarehouseID`, `SpareID`,`quantity`)
-VALUES
-(1,	'A26130',	1000),
-(1,	'B22978',	1000),
-(1,	'C10435',	1010),
-(2,	'D75438',	1010),
-(2,	'C91177',	1010),
-(2,	'D52143',	1010),
-(3,	'A48880',	1010),
-(3,	'D31172',	90),
-(4,	'D62438',	90),
-(4,	'B25912',	90);
-
-
-INSERT INTO `Stock` (`WarehouseID`, `SpareID`, `AutoRestork`, `quantity`)
-VALUES 
-(1,	'A26130',	TRUE,	1000),
-(1,	'B22978',	TRUE,	1000),
-(1,	'C10435',	FALSE,	1000),
-(2,	'A26130',	FALSE,	1000),
-(2,	'D75438',	FALSE,	1000),
-(2,	'C91177',	TRUE,	1000),
-(2,	'D52143',	TRUE,	1000),
-(3,	'A48880',	TRUE,	1000),
-(3,	'D31172',	TRUE,	90),
-(4,	'D62438',	TRUE,	90),
-(4,	'B25912',	TRUE,	90);
 
 
 
