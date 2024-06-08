@@ -46,43 +46,63 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
+            if (!string.IsNullOrEmpty(txtDepartmentName.Text) && !string.IsNullOrEmpty(txtDepartmentEmail.Text) && !string.IsNullOrEmpty(txtDepartmentID.Text))
             {
-                if (!string.IsNullOrEmpty(txtDepartmentName.Text) && !string.IsNullOrEmpty(txtDepartmentEmail.Text))
+                string DepartmentID = txtDepartmentID.Text;
+                string DeptName = txtDepartmentName.Text;
+                string DeptEmail = txtDepartmentEmail.Text;
+                string WarehouseLocation = comboBoxWarehouse.SelectedItem.ToString();
+                int WarehouseID = 0;
+
+                // 检查是否存在重复的DeptID
+                string sql1 = "SELECT DeptID FROM Department;";
+                List<string> deptIDs = new List<string>();
+
+                using (var reader = Main.db.readBySql(sql1))
                 {
-                    string DepartmentID = comboBoxWarehouse.SelectedItem.ToString();
-                    string DeptName = txtDepartmentName.Text;
-                    string DeptEmail = txtDepartmentEmail.Text;
-                    string WarehouseLocation = comboBoxWarehouse.SelectedItem.ToString();
-                    int WarehouseID = 0;
-
-                    string query;
-                    if (radYes.Checked)
+                    while (reader.Read())
                     {
-                        string sql = $"SELECT WarehouseID FROM Warehouse WHERE Location = '{WarehouseLocation}';";
-                        using (var reader = Main.db.readBySql(sql))
+                        string deptID = reader.GetString(0);
+                        deptIDs.Add(deptID);
+                    }
+                }
+
+                if (deptIDs.Contains(DepartmentID))
+                {
+                    MessageBox.Show("Department ID already exists. Please choose a different ID.");
+                    txtDepartmentName.Text = String.Empty;
+                    txtDepartmentEmail.Text = String.Empty;
+                    txtDepartmentID.Text = String.Empty;
+                    return;
+                }
+
+                string query;
+                if (radYes.Checked)
+                {
+                    string sql = $"SELECT WarehouseID FROM Warehouse WHERE Location = '{WarehouseLocation}';";
+                    using (var reader = Main.db.readBySql(sql))
+                    {
+                        if (reader.Read())
                         {
-                            if (reader.Read())
-                            {
-                                WarehouseID = reader.GetInt32(0);
-                            }
+                            WarehouseID = reader.GetInt32(0);
                         }
-                        query = $"INSERT INTO Department (DeptEmail, DeptName, WarehouseID) VALUES ('{DeptEmail}', '{DeptName}', '{WarehouseID}')";
                     }
-                    else
-                    {
-                        query = $"INSERT INTO Department (DeptEmail, DeptName) VALUES ('{DeptEmail}', '{DeptName}')";
-                    }
-
-                    Main.db.insertBySql(query);
-                    MessageBox.Show("Successful editing");
-                    txtDepartmentName.Text = "";
-                    txtDepartmentEmail.Text = "";
+                    query = $"INSERT INTO Department (DeptID,DeptEmail, DeptName, WarehouseID) VALUES ('{DepartmentID}','{DeptEmail}', '{DeptName}', {WarehouseID})";
                 }
                 else
                 {
-                    MessageBox.Show("Please provide both Department Name and Department Email!");
+                    query = $"INSERT INTO Department (DeptID,DeptEmail, DeptName) VALUES ('{DepartmentID}','{DeptEmail}', '{DeptName}')";
                 }
+
+                Main.db.insertBySql(query);
+                MessageBox.Show("Successful adding!");
+                txtDepartmentName.Text = String.Empty;
+                txtDepartmentEmail.Text = String.Empty;
+                txtDepartmentID.Text = String.Empty;
+            }
+            else
+            {
+                MessageBox.Show("Please fill in all the required information!");
             }
         }
 
@@ -100,6 +120,18 @@ namespace WindowsFormsApp
         {
             txtDepartmentName.Text = String.Empty;
             txtDepartmentEmail.Text = String.Empty;
+        }
+
+        private void txtDepartmentID_TextChanged(object sender, EventArgs e)
+        {
+            string departmentID = txtDepartmentID.Text;
+
+            if (departmentID.Length > 5)
+            {
+                MessageBox.Show("Department ID cannot exceed 5 characters. Please re-enter.");
+                txtDepartmentID.Text = string.Empty;
+                txtDepartmentID.SelectionStart = txtDepartmentID.Text.Length;
+            }
         }
     }
 }
