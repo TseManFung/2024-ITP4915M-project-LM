@@ -151,10 +151,10 @@ CREATE TABLE `Invoice` (
   `CompleteState` char(1) NOT NULL DEFAULT 'C'
 );
 
-CREATE TABLE `Signture` (
+CREATE TABLE `Signature` (
   `InvoiceID` char(15) PRIMARY KEY,
   `Name` varchar(255) NOT NULL,
-  `SigntureDate` datetime NOT NULL,
+  `SignatureDate` datetime NOT NULL,
   `Sign` LONGBLOB NOT NULL
 );
 
@@ -189,7 +189,7 @@ ALTER TABLE `ActualStock` ADD FOREIGN KEY (`WarehouseID`) REFERENCES `Warehouse`
 
 ALTER TABLE `ActualStock` ADD FOREIGN KEY (`SpareID`) REFERENCES `Spare` (`SpareID`);
 
-ALTER TABLE `Signture` ADD FOREIGN KEY (`InvoiceID`) REFERENCES `Invoice` (`InvoiceID`);
+ALTER TABLE `Signature` ADD FOREIGN KEY (`InvoiceID`) REFERENCES `Invoice` (`InvoiceID`);
 
 ALTER TABLE `Cart` ADD FOREIGN KEY (`UserID`) REFERENCES `User` (`UserID`);
 
