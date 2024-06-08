@@ -60,62 +60,56 @@ namespace WindowsFormsApp
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
-            {
-                if (
-                    !string.IsNullOrEmpty(txtOldPassword.Text) &&
-                    !string.IsNullOrEmpty(txtNewPassword.Text) &&
-                    !string.IsNullOrEmpty(txtRepartNewPassword.Text))
-                {
-                    String OldPassword = txtOldPassword.Text;
-                    OldPassword = Main.db.ComputeSha256Hash(OldPassword);
-                    OldPassword = "0" + OldPassword;
-                    string dbOldPassword = string.Empty;
-                    string sql = $"SELECT Password FROM `User` WHERE UserID = {Main.userID};";
-                    using (var reader = Main.db.readBySql(sql))
-                    {
-                        while (reader.Read())
-                        {
-                            dbOldPassword = reader.GetString(0);
-                        }
-                    }
 
-                    if (OldPassword == dbOldPassword)
-                    {
-                        if (txtNewPassword.Text == txtRepartNewPassword.Text)
-                        {
-                            String newpasswd = "0" + Main.db.ComputeSha256Hash(txtRepartNewPassword.Text);
-                            String query = $"UPDATE User SET Password = '{newpasswd}' Where UserID = {Main.userID};";
-                            Main.db.updateBySql(query);
-                            MessageBox.Show("Successful reset password");
-                            txtOldPassword.Text = String.Empty;
-                            txtNewPassword.Text = String.Empty;
-                            txtRepartNewPassword.Text = String.Empty;
-                        }
-                        else
-                        {
-                            MessageBox.Show("The password entered twice is different, please re-enter!");
-                            txtOldPassword.Text = String.Empty;
-                            txtNewPassword.Text = String.Empty;
-                            txtRepartNewPassword.Text = String.Empty;
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("The old password does not match, please re-enter!");
-                        txtOldPassword.Text = String.Empty;
-                        txtNewPassword.Text = String.Empty;
-                        txtRepartNewPassword.Text = String.Empty;
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Please fill in all the required information!");
-                    txtOldPassword.Text = String.Empty;
-                    txtNewPassword.Text = String.Empty;
-                    txtRepartNewPassword.Text = String.Empty;
-                }
+            if (string.IsNullOrEmpty(txtOldPassword.Text) ||
+                string.IsNullOrEmpty(txtNewPassword.Text) ||
+                string.IsNullOrEmpty(txtRepartNewPassword.Text))
+            {
+                Main.ShowMessage("Please fill in all the required information!");
+                return;
             }
+
+            String OldPassword = txtOldPassword.Text;
+            OldPassword = Main.db.ComputeSha256Hash(OldPassword);
+            OldPassword = "0" + OldPassword;
+            string dbOldPassword = string.Empty;
+
+            if (txtNewPassword.Text != txtRepartNewPassword.Text)
+            {
+                Main.ShowMessage("The password entered twice is different, please re-enter!");
+                claer();
+            }
+
+            string sql = $"SELECT Password FROM `User` WHERE UserID = {Main.userID};";
+            using (var reader = Main.db.readBySql(sql))
+            {
+                reader.Read();
+                dbOldPassword = reader.GetString(0);
+            }
+
+            if (OldPassword == dbOldPassword)
+            {
+                String newpasswd = "0" + Main.db.ComputeSha256Hash(txtRepartNewPassword.Text);
+                String query = $"UPDATE User SET Password = '{newpasswd}' Where UserID = {Main.userID};";
+                Main.db.updateBySql(query);
+                Main.ShowMessage("Successful reset password");
+                (this.ParentForm as Main)?.SetLogout();
+                (this.ParentForm as Main)?.Change_pContent(typeof(frmLogin));
+            }
+            else
+            {
+                Main.ShowMessage("The old password does not match, please re-enter!");
+                claer();
+            }
+
+
+        }
+
+        private void claer()
+        {
+            txtOldPassword.Text = String.Empty;
+            txtNewPassword.Text = String.Empty;
+            txtRepartNewPassword.Text = String.Empty;
         }
     }
 }

@@ -67,7 +67,7 @@ namespace WindowsFormsApp
 
         public int getStock(string sid)
         {
-            string sql = $"SELECT SUM(quantity) as quantity FROM Stock WHERE SpareID = '{sid}';";
+            string sql = $"SELECT quantity FROM Stock WHERE SpareID = '{sid}';";
             using (var reader = Main.db.readBySql(sql))
             {
                 if (reader.Read())
@@ -255,7 +255,7 @@ namespace WindowsFormsApp
             foreach (DataRow row in Cart.Rows)
             {
                 // get the current stock
-                string stockSQL = $"SELECT SUM(quantity) as quantity FROM Stock WHERE SpareID = '{row["SpareID"]}';";
+                string stockSQL = $"SELECT quantity FROM Stock WHERE SpareID = '{row["SpareID"]}';";
                 int stock;
                 int qty = Convert.ToInt32(row["Qty"]);
                 using (var reader = Main.db.readBySql(stockSQL))
@@ -309,6 +309,8 @@ namespace WindowsFormsApp
                 }
 
                 Main.db.insert("OrderItem", orderID, row["SpareID"], qty, row["Price"]);
+                // - the stock
+                Main.db.updateBySql($"UPDATE Stock SET quantity = quantity - {qty} WHERE SpareID = '{row["SpareID"]}';");
 
             }
             ClearCart();

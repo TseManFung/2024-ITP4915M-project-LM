@@ -48,6 +48,7 @@ namespace WindowsFormsApp
             frm.TopLevel = false;
             frm.TopMost = true;
             frm.Anchor = AnchorStyles.None;
+            //frm.Dock = DockStyle.Top;
             frm.FormBorderStyle = FormBorderStyle.None;
             flowDeliveryStatusandProductDetails.Controls.Add(frm);
             frm.Show();
@@ -55,12 +56,23 @@ namespace WindowsFormsApp
 
         private void frmOrderDetail_Load(object sender, EventArgs e)
         {
+            if(Main.AssessLevel == 700 || Main.AssessLevel<=300)
+            {
+                BtnDIset.Visible = true;
+            }
+            if (State == "T" || State == "F")
+            {
+               btnInvoice.Visible = true;
+            }
+
             CreateDelivaryDetail();
         }
 
         private void btnInvoice_Click(object sender, EventArgs e)
         {
+            // if staff click: show invoice
             (this.ParentForm as Main)?.Change_pContent(typeof(frmInvoice));
+            // if dealer click: print invoice
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -70,7 +82,8 @@ namespace WindowsFormsApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            // if text  = Item Detail: show item detail, change to text to Delivery Detail
+            // if text = Delivery Detail: show delivery detail, change to text to Item Detail
         }
     }
 }

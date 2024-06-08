@@ -234,6 +234,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(192, 150);
             this.tableLayoutPanel3.TabIndex = 25;
+            this.tableLayoutPanel3.Visible = false;
             this.tableLayoutPanel3.Click += new System.EventHandler(this.CAddNewItem);
             // 
             // pictureBoxAddNewProduct

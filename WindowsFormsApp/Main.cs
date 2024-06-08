@@ -40,6 +40,7 @@ namespace WindowsFormsApp
             Main.staffID = null;
         }
 
+
         public Main()
         {
             InitializeComponent();

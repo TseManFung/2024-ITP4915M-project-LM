@@ -40,8 +40,8 @@
             this.btnItem = new System.Windows.Forms.Button();
             this.btnInvoice = new System.Windows.Forms.Button();
             this.groupBoxDeliveryStatusandProductDetails = new System.Windows.Forms.GroupBox();
-            this.flowDeliveryStatusandProductDetails = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowDeliveryStatusandProductDetails = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBoxOrderOverview.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.groupBoxDeliveryStatusandProductDetails.SuspendLayout();
@@ -65,7 +65,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.Controls.Add(this.txtDateTime, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.txtDateTime, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.lblPurchaseDateandTime, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.lblStatus, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lblOrderNo, 0, 0);
@@ -151,6 +151,7 @@
             this.BtnDIset.TabIndex = 25;
             this.BtnDIset.Text = "DI set";
             this.BtnDIset.UseVisualStyleBackColor = true;
+            this.BtnDIset.Visible = false;
             this.BtnDIset.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtOrderID
@@ -203,6 +204,7 @@
             this.btnInvoice.TabIndex = 51;
             this.btnInvoice.Text = "Invoice";
             this.btnInvoice.UseVisualStyleBackColor = true;
+            this.btnInvoice.Visible = false;
             this.btnInvoice.Click += new System.EventHandler(this.btnInvoice_Click);
             // 
             // groupBoxDeliveryStatusandProductDetails
@@ -215,16 +217,6 @@
             this.groupBoxDeliveryStatusandProductDetails.TabIndex = 1;
             this.groupBoxDeliveryStatusandProductDetails.TabStop = false;
             this.groupBoxDeliveryStatusandProductDetails.Text = "Delivery Status and Product Details";
-            // 
-            // flowDeliveryStatusandProductDetails
-            // 
-            this.flowDeliveryStatusandProductDetails.AutoScroll = true;
-            this.flowDeliveryStatusandProductDetails.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowDeliveryStatusandProductDetails.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowDeliveryStatusandProductDetails.Location = new System.Drawing.Point(3, 18);
-            this.flowDeliveryStatusandProductDetails.Name = "flowDeliveryStatusandProductDetails";
-            this.flowDeliveryStatusandProductDetails.Size = new System.Drawing.Size(1237, 374);
-            this.flowDeliveryStatusandProductDetails.TabIndex = 0;
             // 
             // tableLayoutPanel1
             // 
@@ -241,6 +233,16 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1249, 572);
             this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // flowDeliveryStatusandProductDetails
+            // 
+            this.flowDeliveryStatusandProductDetails.AutoScroll = true;
+            this.flowDeliveryStatusandProductDetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowDeliveryStatusandProductDetails.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowDeliveryStatusandProductDetails.Location = new System.Drawing.Point(3, 18);
+            this.flowDeliveryStatusandProductDetails.Name = "flowDeliveryStatusandProductDetails";
+            this.flowDeliveryStatusandProductDetails.Size = new System.Drawing.Size(1237, 374);
+            this.flowDeliveryStatusandProductDetails.TabIndex = 0;
             // 
             // frmOrderDetail
             // 
@@ -264,7 +266,6 @@
 
         private System.Windows.Forms.GroupBox groupBoxOrderOverview;
         private System.Windows.Forms.GroupBox groupBoxDeliveryStatusandProductDetails;
-        private System.Windows.Forms.FlowLayoutPanel flowDeliveryStatusandProductDetails;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label lblOrderNo;
@@ -276,5 +277,6 @@
         private System.Windows.Forms.TextBox txtOrderID;
         private System.Windows.Forms.TextBox txtStatus;
         private System.Windows.Forms.Button btnInvoice;
+        private System.Windows.Forms.FlowLayoutPanel flowDeliveryStatusandProductDetails;
     }
 }
