@@ -101,7 +101,7 @@ namespace WindowsFormsApp
                 }
             else
             {
-                MessageBox.Show("Please provide complete data");
+                Main.ShowMessage("Please provide complete data");
             }
         }
 
@@ -136,7 +136,7 @@ namespace WindowsFormsApp
             if (!string.IsNullOrEmpty(input) && !Regex.IsMatch(input, pattern))
             {
                 txtSpareWeight.Text = string.Empty;
-                MessageBox.Show("only number!"); // Show error message
+                Main.ShowMessage("only number!"); // Show error message
             }
         }
 

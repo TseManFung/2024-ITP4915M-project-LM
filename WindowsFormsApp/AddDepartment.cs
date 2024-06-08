@@ -54,7 +54,6 @@ namespace WindowsFormsApp
                 string WarehouseLocation = comboBoxWarehouse.SelectedItem.ToString();
                 int WarehouseID = 0;
 
-                // 检查是否存在重复的DeptID
                 string sql1 = "SELECT DeptID FROM Department;";
                 List<string> deptIDs = new List<string>();
 
@@ -69,7 +68,7 @@ namespace WindowsFormsApp
 
                 if (deptIDs.Contains(DepartmentID))
                 {
-                    MessageBox.Show("Department ID already exists. Please choose a different ID.");
+                    Main.ShowMessage("Department ID already exists. Please choose a different ID.");
                     txtDepartmentName.Text = String.Empty;
                     txtDepartmentEmail.Text = String.Empty;
                     txtDepartmentID.Text = String.Empty;
@@ -95,14 +94,14 @@ namespace WindowsFormsApp
                 }
 
                 Main.db.insertBySql(query);
-                MessageBox.Show("Successful adding!");
+                Main.ShowMessage("Successful adding!");
                 txtDepartmentName.Text = String.Empty;
                 txtDepartmentEmail.Text = String.Empty;
                 txtDepartmentID.Text = String.Empty;
             }
             else
             {
-                MessageBox.Show("Please fill in all the required information!");
+                Main.ShowMessage("Please fill in all the required information!");
             }
         }
 
@@ -128,7 +127,7 @@ namespace WindowsFormsApp
 
             if (departmentID.Length > 5)
             {
-                MessageBox.Show("Department ID cannot exceed 5 characters. Please re-enter.");
+                Main.ShowMessage("Department ID cannot exceed 5 characters. Please re-enter.");
                 txtDepartmentID.Text = string.Empty;
                 txtDepartmentID.SelectionStart = txtDepartmentID.Text.Length;
             }

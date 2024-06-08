@@ -26,6 +26,30 @@ namespace WindowsFormsApp
             tableLayoutPanel9.Visible = tableLayoutPanel10.Visible = tableLayoutPanel11.Visible = tableLayoutPanel13.Visible = !ForTest;
         }
 
+        private void frmAccountManagement_Load(object sender, EventArgs e)
+        {
+            List<string> LoginNamelist = new List<string>();
+            String sql = $"SELECT LoginName FROM User;";
+            using (var reader = Main.db.readBySql(sql))
+            {
+                while (reader.Read())
+                {
+                    LoginNamelist.Add(reader.GetString(0));
+                }
+            }
+            this.comboBoxLoginName.DataSource = LoginNamelist;
+            this.comboBoxLoginName.DisplayMember = "LoginName";
 
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxLoginName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

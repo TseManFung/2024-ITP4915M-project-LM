@@ -40,8 +40,7 @@ namespace WindowsFormsApp
                 }
             }
             this.comboBoxWarehouseID.DataSource = WarehouseIDList;
-            this.comboBoxWarehouseID.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            this.comboBoxWarehouseID.AutoCompleteSource = AutoCompleteSource.ListItems;
+
         }
 
         private void frmEditDepartment_Load(object sender, EventArgs e)
@@ -57,8 +56,7 @@ namespace WindowsFormsApp
             }
             this.comboBoxDepartment.DataSource = Departmentlist;
             this.comboBoxDepartment.DisplayMember = "DeptID";
-            this.comboBoxDepartment.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            this.comboBoxDepartment.AutoCompleteSource = AutoCompleteSource.ListItems;
+
         }
 
         private void comboBoxDepartment_SelectedIndexChanged(object sender, EventArgs e)
@@ -94,13 +92,13 @@ namespace WindowsFormsApp
                     }
 
                     Main.db.updateBySql(query);
-                    MessageBox.Show("Successful editing");
+                    Main.ShowMessage("Successful editing");
                     txtDepartmentName.Text = "";
                     txtDepartmentEmail.Text = "";
                 }
                 else
                 {
-                    MessageBox.Show("Please provide Location!");
+                    Main.ShowMessage("Please provide Location!");
                 }
             }
         }

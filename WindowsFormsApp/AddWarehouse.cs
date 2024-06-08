@@ -52,7 +52,7 @@ namespace WindowsFormsApp
             }
             else
             {
-                MessageBox.Show("No manager");
+                Main.ShowMessage("No manager");
             }
             this.comboBoxManager.DataSource = StaffNamelist;
             this.comboBoxManager.DisplayMember = "StaffName";
@@ -112,12 +112,12 @@ namespace WindowsFormsApp
                 string WarehouseName = "wh" + WarehouseID;
                 string query2 = $"UPDATE Staff SET DeptID = '{WarehouseName}' WHERE StaffName = '{Manager}'";
                 Main.db.updateBySql(query2);
-                MessageBox.Show("Successful add!");
+                Main.ShowMessage("Successful add!");
                 txtLocation.Text = string.Empty;
             }
             else
             {
-                MessageBox.Show("Please provide Location!");
+                Main.ShowMessage("Please provide Location!");
             }
         }
 

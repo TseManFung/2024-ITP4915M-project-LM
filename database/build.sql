@@ -21,7 +21,7 @@ CREATE TABLE `Staff` (
   `SaleAreaID` int,
   `DeptID` varchar(5),
   `Position` varchar(255) NOT NULL COMMENT '下拉表單',
-  `PhoneNunber` varchar(20) UNIQUE NOT NULL,
+  `PhoneNunber` varchar(20) NOT NULL,
   `Gender` ENUM ('F', 'M') NOT NULL
 );
 
@@ -151,10 +151,10 @@ CREATE TABLE `Invoice` (
   `CompleteState` char(1) NOT NULL DEFAULT 'C'
 );
 
-CREATE TABLE `Signture` (
+CREATE TABLE `Signature` (
   `InvoiceID` char(15) PRIMARY KEY,
   `Name` varchar(255) NOT NULL,
-  `SigntureDate` datetime NOT NULL,
+  `SignatureDate` datetime NOT NULL,
   `Sign` LONGBLOB NOT NULL
 );
 
@@ -189,7 +189,7 @@ ALTER TABLE `ActualStock` ADD FOREIGN KEY (`WarehouseID`) REFERENCES `Warehouse`
 
 ALTER TABLE `ActualStock` ADD FOREIGN KEY (`SpareID`) REFERENCES `Spare` (`SpareID`);
 
-ALTER TABLE `Signture` ADD FOREIGN KEY (`InvoiceID`) REFERENCES `Invoice` (`InvoiceID`);
+ALTER TABLE `Signature` ADD FOREIGN KEY (`InvoiceID`) REFERENCES `Invoice` (`InvoiceID`);
 
 ALTER TABLE `Cart` ADD FOREIGN KEY (`UserID`) REFERENCES `User` (`UserID`);
 

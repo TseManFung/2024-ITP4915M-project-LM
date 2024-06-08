@@ -46,8 +46,7 @@ namespace WindowsFormsApp
             }
             this.comboBoxSupplier.DataSource = SupplierIDlist;
             this.comboBoxSupplier.DisplayMember = "Name";
-            this.comboBoxSupplier.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            this.comboBoxSupplier.AutoCompleteSource = AutoCompleteSource.ListItems;
+
 
         }
 
@@ -80,7 +79,7 @@ namespace WindowsFormsApp
             if (!string.IsNullOrEmpty(input) && !Regex.IsMatch(input, pattern))
             {
                 txtSpareName.Text = string.Empty;
-                MessageBox.Show("only space and letter!"); // Show error message
+                Main.ShowMessage("only space and letter!"); // Show error message
             }
         }
 
@@ -105,7 +104,7 @@ namespace WindowsFormsApp
             if (!string.IsNullOrEmpty(input) && !Regex.IsMatch(input, pattern))
             {
                 txtSpareWeight.Text = string.Empty;
-                MessageBox.Show("only number!"); // Show error message
+                Main.ShowMessage("only number!"); // Show error message
             }
         }
 
@@ -136,7 +135,7 @@ namespace WindowsFormsApp
                 }
                 string query = $"UPDATE Spare SET SpareName = '{SpareName}', CategoryLetter = '{CattegoryLetter}', Price = {price}, Description = '{Description}', Weight = {weight}, SupplierID = {SupplierID} WHERE SpareID = '{spareID}'";
                 Main.db.updateBySql(query);
-                MessageBox.Show("Successful editing");
+                Main.ShowMessage("Successful editing");
 
                 txtSpareName.Text = "";
                 txtPrice.Text = "00.00";
@@ -145,7 +144,7 @@ namespace WindowsFormsApp
             }
             else
             {
-                MessageBox.Show("Please provide complete data");
+                Main.ShowMessage("Please provide complete data");
             }
    
         }

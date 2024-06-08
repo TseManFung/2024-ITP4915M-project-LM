@@ -109,7 +109,7 @@ namespace WindowsFormsApp
                     }
                     else
                     {
-                        MessageBox.Show("Please provide both Department Name and Department Email!");
+                        Main.ShowMessage("Please provide both Department Name and Department Email!");
                     }
 
                 }
@@ -120,7 +120,7 @@ namespace WindowsFormsApp
                 query = $"INSERT INTO `User` (LoginName, Password, AccessLevel,DealerID) VALUES ('{loginName}', '{passwd}', {accessLevel}, {DealerID})";
 
                 Main.db.insertBySql(query);
-                MessageBox.Show($"Successful editing, your password is {randompasswd},  please change your password as soon as possible!");
+                Main.ShowMessage($"Successful editing, your password is {randompasswd},  please change your password as soon as possible!");
                 txtDealerName.Text = String.Empty;
                 txtDeliveryAddress.Text = String.Empty;
                 txtEmail.Text = String.Empty;
@@ -175,10 +175,15 @@ namespace WindowsFormsApp
             {
                 if (!int.TryParse(txtPhoneNumber.Text, out _))
                 {
-                    MessageBox.Show("Invalid input. Please enter a valid number.");
+                    Main.ShowMessage("Invalid input. Please enter a valid number.");
                     txtPhoneNumber.Text = string.Empty;
                 }
             }
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

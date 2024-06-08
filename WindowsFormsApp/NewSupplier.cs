@@ -53,7 +53,7 @@ namespace WindowsFormsApp
             {
                 if (!IsValidEmail(txtEmail.Text))
                 {
-                    MessageBox.Show("Please enter a valid email address!");
+                    Main.ShowMessage("Please enter a valid email address!");
                     txtEmail.Text = string.Empty;
                 }
             }
@@ -76,7 +76,7 @@ namespace WindowsFormsApp
                 }
                 else
                 {
-                    MessageBox.Show("请输入最大为 20 位的数字。");
+                    Main.ShowMessage("Please enter a maximum of 20 digits!");
                     txtContantNumber.Text = string.Empty;
                 }
             }

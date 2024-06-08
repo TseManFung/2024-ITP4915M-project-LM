@@ -29,7 +29,7 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Are you going to the next page?"))
+            if (Main.ShowYesNoDialog("Do you want to turn to the next page?"))
             {
 
                 if (!string.IsNullOrEmpty(txtAccessLevel.Text) && !string.IsNullOrEmpty(txtLoginName.Text))
