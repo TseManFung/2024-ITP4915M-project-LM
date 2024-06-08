@@ -72,13 +72,13 @@ namespace WindowsFormsApp
                         query = $"UPDATE SaleArea SET Location = '{Location}' WHERE AreaID = '{AreaID}'";
                     }
                     Main.db.updateBySql(query);
-                    MessageBox.Show("Successful editing");
+                    Main.ShowMessage("Successful editing");
                     txtLocation.Text = "";
                     txtRemark.Text = "";
                 }
                 else
                 {
-                    MessageBox.Show("Please provide Location!");
+                    Main.ShowMessage("Please provide Location!");
                 }
             }
         }

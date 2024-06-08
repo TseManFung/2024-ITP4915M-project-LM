@@ -118,7 +118,7 @@ namespace WindowsFormsApp
             {
                 if (!int.TryParse(txtContantNumber.Text, out _))
                 {
-                    MessageBox.Show("Invalid input. Please enter a valid number.");
+                    Main.ShowMessage("Invalid input. Please enter a valid number.");
                     txtContantNumber.Text = string.Empty;
                 }
             }

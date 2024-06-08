@@ -65,12 +65,12 @@ namespace WindowsFormsApp
                     String  query = $"UPDATE Warehouse SET Location = '{Location}' WHERE WarehouseID = '{WarehouseID}'";
                     
                     Main.db.updateBySql(query);
-                    MessageBox.Show("Successful editing");
+                    Main.ShowMessage("Successful editing");
                     txtLocation.Text = String.Empty;
                 }
                 else
                 {
-                    MessageBox.Show("Please provide Location!");
+                    Main.ShowMessage("Please provide Location!");
                 }
             }
         }

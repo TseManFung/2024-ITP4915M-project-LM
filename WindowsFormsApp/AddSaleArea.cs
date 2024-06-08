@@ -45,13 +45,13 @@ namespace WindowsFormsApp
                     query = $"INSERT INTO SaleArea (Location) VALUES ('{Location}')";
                 }
                 Main.db.insertBySql(query);
-                MessageBox.Show("Successful add!");
+                Main.ShowMessage("Successful add!");
                 txtLocation.Text = String.Empty;
                 txtRemark.Text = String.Empty;
             }
             else
             {
-                MessageBox.Show("Please provide Location!");
+                Main.ShowMessage("Please provide Location!");
             }
         }
 
