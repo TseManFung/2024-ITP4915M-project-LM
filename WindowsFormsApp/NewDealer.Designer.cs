@@ -273,6 +273,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(361, 45);
             this.txtEmail.TabIndex = 59;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // tableLayoutPanel5
             // 

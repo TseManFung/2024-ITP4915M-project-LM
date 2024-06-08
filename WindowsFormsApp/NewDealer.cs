@@ -180,5 +180,10 @@ namespace WindowsFormsApp
                 }
             }
         }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

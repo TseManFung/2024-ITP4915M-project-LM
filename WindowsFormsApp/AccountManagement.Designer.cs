@@ -150,13 +150,14 @@
             // comboBoxLoginName
             // 
             this.comboBoxLoginName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxLoginName.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxLoginName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxLoginName.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxLoginName.FormattingEnabled = true;
             this.comboBoxLoginName.Location = new System.Drawing.Point(3, 63);
             this.comboBoxLoginName.Name = "comboBoxLoginName";
-            this.comboBoxLoginName.Size = new System.Drawing.Size(248, 41);
+            this.comboBoxLoginName.Size = new System.Drawing.Size(248, 35);
             this.comboBoxLoginName.TabIndex = 75;
+            this.comboBoxLoginName.SelectedIndexChanged += new System.EventHandler(this.comboBoxLoginName_SelectedIndexChanged);
             // 
             // lblLogin
             // 
@@ -579,6 +580,7 @@
             this.btnSave.TabIndex = 51;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // tableLayoutPanel13
             // 
@@ -627,6 +629,7 @@
             this.Controls.Add(this.tableLayoutPanel2);
             this.Name = "frmAccountManagement";
             this.Text = "AccountManagement";
+            this.Load += new System.EventHandler(this.frmAccountManagement_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();
