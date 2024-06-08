@@ -81,7 +81,7 @@ CREATE TABLE `ActualStock` (
   `WarehouseID` int,
   `SpareID` char(6),
   `quantity` int NOT NULL,
-  `AutoRestork` bool NOT NULL DEFAULT true
+  `AutoRestork` bool NOT NULL DEFAULT true,
   PRIMARY KEY (`WarehouseID`, `SpareID`)
 );
 
