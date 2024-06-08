@@ -106,7 +106,7 @@
             this.dgvComplete.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvComplete.Size = new System.Drawing.Size(827, 259);
             this.dgvComplete.TabIndex = 9;
-            this.dgvComplete.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvProcessing_CellMouseDoubleClick);
+            this.dgvComplete.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvComplete_CellMouseDoubleClick);
             this.dgvComplete.Scroll += new System.Windows.Forms.ScrollEventHandler(this.dgvComplete_Scroll);
             // 
             // groupBoxProcessing

@@ -138,9 +138,19 @@ namespace WindowsFormsApp
             }
         }
 
+        private void dgvComplete_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0 || e.ColumnIndex >= 0)
+            {
+                string OrderSerial = dgvComplete.Rows[e.RowIndex].Cells["OrderSerial"].Value.ToString();
+                frmOrderDetail frm = new frmOrderDetail(OrderSerial);
+                (this.ParentForm as Main)?.Change_pContent(frm);
+            }
+        }
+
         private void dgvProcessing_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            if (e.RowIndex >= 0)
+            if (e.RowIndex >= 0 || e.ColumnIndex >= 0)
             {
                 string OrderSerial = dgvProcessing.Rows[e.RowIndex].Cells["OrderSerial"].Value.ToString();
                 frmOrderDetail frm = new frmOrderDetail(OrderSerial);
