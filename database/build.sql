@@ -73,11 +73,8 @@ Sometime it name part no.',
 );
 
 CREATE TABLE `Stock` (
-  `WarehouseID` int,
-  `SpareID` char(6),
-  `AutoRestork` bool NOT NULL DEFAULT true,
-  `quantity` int NOT NULL,
-  PRIMARY KEY (`WarehouseID`, `SpareID`)
+  `SpareID` char(6) PRIMARY KEY ,
+  `quantity` int NOT NULL COMMENT 'Total Stock of all warehouse'
 );
 
 CREATE TABLE `ActualStock` (
@@ -212,8 +209,6 @@ ALTER TABLE `User` ADD FOREIGN KEY (`StaffID`) REFERENCES `Staff` (`StaffID`);
 ALTER TABLE `Spare` ADD FOREIGN KEY (`CategoryLetter`) REFERENCES `Category` (`CategoryLetter`);
 
 ALTER TABLE `Spare` ADD FOREIGN KEY (`SupplierID`) REFERENCES `Supplier` (`SupplierID`);
-
-ALTER TABLE `Stock` ADD FOREIGN KEY (`WarehouseID`) REFERENCES `Warehouse` (`WarehouseID`);
 
 ALTER TABLE `Stock` ADD FOREIGN KEY (`SpareID`) REFERENCES `Spare` (`SpareID`);
 
