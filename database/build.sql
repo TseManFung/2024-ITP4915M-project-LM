@@ -155,7 +155,7 @@ CREATE TABLE `Signture` (
   `InvoiceID` char(15) PRIMARY KEY,
   `Name` varchar(255) NOT NULL,
   `SigntureDate` datetime NOT NULL,
-  `Sign` longtext NOT NULL
+  `Sign` LONGBLOB NOT NULL
 );
 
 CREATE TABLE `Truck` (
