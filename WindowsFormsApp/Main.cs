@@ -21,6 +21,7 @@ namespace WindowsFormsApp
         public static int? userID, dealerID, staffID, AssessLevel;
         public static Form currfrm = null;
 
+
         bool isLogin = false;
         Stack<Form> frmStack = new Stack<Form>();
 
@@ -67,7 +68,7 @@ namespace WindowsFormsApp
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);  
+                Console.WriteLine(ex.Message);
                 Main.ShowMessage("Error: Can not connect server\nPlease call technician for help.");
                 Application.Exit();
                 this.Close();
@@ -255,11 +256,15 @@ namespace WindowsFormsApp
             f.ShowDialog();
         }
 
-        private void pictureBoxBack_Click(object sender, EventArgs e)
+        public void goBack()
         {
             currfrm.Close();
-
             SwitchForm(frmStack.Pop());
+        }
+
+        private void pictureBoxBack_Click(object sender, EventArgs e)
+        {
+            goBack();
         }
 
         private void setDSID()

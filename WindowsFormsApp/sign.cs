@@ -12,16 +12,17 @@ namespace WindowsFormsApp
 {
     public partial class frmSign : Form
     {
-        Image signature;
+        public Image signature { get; set; }
         bool clicked = false;
         Point previousPoint;
 
         public frmSign()
         {
             this.SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.DoubleBuffer, true);
-            
+
             InitializeComponent();
         }
+
 
         private void frmSign_Load(object sender, EventArgs e)
         {
@@ -66,7 +67,9 @@ namespace WindowsFormsApp
             if (clicked)
             {
                 if (signature == null)
+                {
                     signature = new Bitmap(this.Width, this.Height);
+                }
                 using (Graphics g = Graphics.FromImage(signature))
                 {
                     g.DrawLine(Pens.Black, previousPoint, e.Location);

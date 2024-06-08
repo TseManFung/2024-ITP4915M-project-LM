@@ -3,16 +3,22 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySqlConnector;
+using Org.BouncyCastle.Asn1.Ocsp;
 
 namespace WindowsFormsApp
 {
     public partial class frmSignature : Form
     {
+        string InvoiceID = "202405240000011";
+
         public frmSignature()
         {
             InitializeComponent();
@@ -41,5 +47,44 @@ namespace WindowsFormsApp
             ((Form)PSign.Controls[0]).Close();
             load_sign_form();
         }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtName.Text))
+            {
+                Main.ShowMessage("Please enter your name");
+                return;
+            }
+            // Get the signature from the form
+            Image signature = ((frmSign)PSign.Controls[0]).signature;
+
+            // Convert the signature to a byte array
+            byte[] signatureBytes;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                signature.Save(ms, ImageFormat.Png);
+                signatureBytes = ms.ToArray();
+            }
+
+            // Insert the signature into the database
+
+            string query = "INSERT INTO Signature (InvoiceID, Name, SignatureDate, Sign) VALUES (@InvoiceID, @Name, @SignatureDate, @Sign)";
+            using (var command = new MySqlCommand(query, Main.db.get_dbconnect()))
+            {
+                command.Parameters.AddWithValue("@InvoiceID", InvoiceID);
+                command.Parameters.AddWithValue("@Name", txtName.Text);
+                command.Parameters.AddWithValue("@SignatureDate", DateTime.Now);
+                command.Parameters.AddWithValue("@Sign", signatureBytes);
+
+                command.ExecuteNonQuery();
+            }
+            string sql = $"UPDATE `Invoice` SET `CompleteState` = 'S' WHERE (`InvoiceID` = '{InvoiceID}');";
+            Main.db.updateBySql(sql);
+            Main.ShowMessage("success");
+            (this.ParentForm as Main)?.goBack();
+
+        }
+
+
     }
 }
