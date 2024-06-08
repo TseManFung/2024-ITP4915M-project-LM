@@ -87,7 +87,7 @@ namespace WindowsFormsApp
                 dbOldPassword = reader.GetString(0);
             }
 
-            if (OldPassword == dbOldPassword)
+            if (OldPassword == dbOldPassword && Main.ShowYesNoDialog("Are you sure you want to change your password?"))
             {
                 String newpasswd = "0" + Main.db.ComputeSha256Hash(txtRepartNewPassword.Text);
                 String query = $"UPDATE User SET Password = '{newpasswd}' Where UserID = {Main.userID};";
