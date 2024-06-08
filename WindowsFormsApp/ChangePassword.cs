@@ -20,17 +20,42 @@ namespace WindowsFormsApp
 
         private void txtOldPassword_TextChanged(object sender, EventArgs e)
         {
+            TextBox textBox = (TextBox)sender;
+            string text = textBox.Text;
 
+            if (text.Contains(" "))
+            {
+                text = text.Replace(" ", "");
+                textBox.Text = text;
+                textBox.SelectionStart = text.Length;
+            }
         }
 
         private void txtNewPassword_TextChanged(object sender, EventArgs e)
         {
+            TextBox textBox = (TextBox)sender;
+            string text = textBox.Text;
 
+            if (text.Contains(" "))
+            {
+                text = text.Replace(" ", "");
+                textBox.Text = text;
+                textBox.SelectionStart = text.Length;
+            }
         }
 
         private void txtRepartNewPassword_TextChanged(object sender, EventArgs e)
         {
+            TextBox textBox = (TextBox)sender;
+            string text = textBox.Text;
 
+            if (text.Contains(" "))
+            {
+
+                text = text.Replace(" ", "");
+                textBox.Text = text;
+                textBox.SelectionStart = text.Length;
+            }
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
