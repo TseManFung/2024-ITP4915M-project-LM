@@ -94,7 +94,7 @@ namespace WindowsFormsApp
                         }
                         else
                         {
-                            MessageBox.Show("New password is not the same, please re-enter!");
+                            MessageBox.Show("The password entered twice is different, please re-enter!");
                             txtOldPassword.Text = String.Empty;
                             txtNewPassword.Text = String.Empty;
                             txtRepartNewPassword.Text = String.Empty;
@@ -102,7 +102,7 @@ namespace WindowsFormsApp
                     }
                     else
                     {
-                        MessageBox.Show("Password is not the same, please re-enter!");
+                        MessageBox.Show("The old password does not match, please re-enter!");
                         txtOldPassword.Text = String.Empty;
                         txtNewPassword.Text = String.Empty;
                         txtRepartNewPassword.Text = String.Empty;
@@ -110,7 +110,7 @@ namespace WindowsFormsApp
                 }
                 else
                 {
-                    MessageBox.Show("Please complete all fences!");
+                    MessageBox.Show("Please fill in all the required information!");
                     txtOldPassword.Text = String.Empty;
                     txtNewPassword.Text = String.Empty;
                     txtRepartNewPassword.Text = String.Empty;
