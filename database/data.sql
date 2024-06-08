@@ -160,7 +160,8 @@ VALUES
 (5, 'delivery_worker', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '700', NULL, 104),
 (6, 'Warehousecleak', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '600', NULL, 105),
 (7, 'stockrecord', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '500', NULL, 106),
-(8, 'Dealer1', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '5000', 1, NULL);
+(8, 'Dealer1', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '5000', 1, NULL),
+(29, 'Dealer2', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '5000', 2, NULL);
 
 /*Spare*/
 INSERT INTO `Spare` (`SpareID`, `CategoryLetter`, `SpareName`, `Price`, `Description`, `Weight`, `SupplierID`)
@@ -179,7 +180,7 @@ VALUES
 /*Stock*/
 INSERT INTO `Stock` (`WarehouseID`, `SpareID`, `AutoRestork`, `quantity`)
 VALUES 
-(1,	'A26130',	TRUE,	1000),
+(1,	'A26130',	TRUE,	2000),
 (1,	'B22978',	TRUE,	1000),
 (1,	'C10435',	FALSE,	1000),
 (2,	'D75438',	FALSE,	1000),
@@ -189,6 +190,22 @@ VALUES
 (3,	'D31172',	TRUE,	90),
 (4,	'D62438',	TRUE,	90),
 (4,	'B25912',	TRUE,	90);
+  
+INSERT INTO `ActualStock` (`WarehouseID`, `SpareID`,`quantity`)
+VALUES
+(1,	'A26130',	1000),
+(1,	'B22978',	1000),
+(1,	'C10435',	1010),
+(2,	'A26130',	1000),
+(2,	'D75438',	1010),
+(2,	'C91177',	1010),
+(2,	'D52143',	1010),
+(3,	'A48880',	1010),
+(3,	'D31172',	90),
+(4,	'D62438',	90),
+(4,	'B25912',	90);
+
+
 
 /*Order*/
 INSERT INTO `Order` (`OrderSerial`, `DealerID`, `OrderDate`, `OrderNumberfromDealer`, `State`, `remark`)
@@ -311,7 +328,19 @@ VALUES
 (4,	'B25912',	90);
 
 
-
+INSERT INTO `Stock` (`WarehouseID`, `SpareID`, `AutoRestork`, `quantity`)
+VALUES 
+(1,	'A26130',	TRUE,	1000),
+(1,	'B22978',	TRUE,	1000),
+(1,	'C10435',	FALSE,	1000),
+(2,	'A26130',	FALSE,	1000),
+(2,	'D75438',	FALSE,	1000),
+(2,	'C91177',	TRUE,	1000),
+(2,	'D52143',	TRUE,	1000),
+(3,	'A48880',	TRUE,	1000),
+(3,	'D31172',	TRUE,	90),
+(4,	'D62438',	TRUE,	90),
+(4,	'B25912',	TRUE,	90);
 
 
 
