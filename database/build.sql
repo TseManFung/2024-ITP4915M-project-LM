@@ -69,7 +69,7 @@ Sometime it name part no.',
   `Price` DECIMAL(20,2) NOT NULL,
   `Description` varchar(255) DEFAULT 'none',
   `Weight` float NOT NULL COMMENT 'unit is g',
-  `State` char(1) NOT NULL DEFAULT 'N' COMMENT 'only N,D'
+  `State` char(1) NOT NULL DEFAULT 'N' COMMENT 'only N,D',
   `SupplierID` int NOT NULL
 );
 
