@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBoxAutoReStock = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.lblDescription = new System.Windows.Forms.Label();
@@ -77,7 +76,6 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.checkBoxAutoReStock, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel11, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel7, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 3, 0);
@@ -98,18 +96,6 @@
             this.tableLayoutPanel1.Visible = false;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // checkBoxAutoReStock
-            // 
-            this.checkBoxAutoReStock.AutoSize = true;
-            this.checkBoxAutoReStock.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBoxAutoReStock.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.checkBoxAutoReStock.Location = new System.Drawing.Point(1287, 147);
-            this.checkBoxAutoReStock.Name = "checkBoxAutoReStock";
-            this.checkBoxAutoReStock.Size = new System.Drawing.Size(315, 138);
-            this.checkBoxAutoReStock.TabIndex = 92;
-            this.checkBoxAutoReStock.Text = "Auto Re-stock";
-            this.checkBoxAutoReStock.UseVisualStyleBackColor = true;
-            // 
             // tableLayoutPanel11
             // 
             this.tableLayoutPanel11.ColumnCount = 1;
@@ -129,7 +115,7 @@
             // txtDescription
             // 
             this.txtDescription.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtDescription.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtDescription.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtDescription.Location = new System.Drawing.Point(3, 72);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
@@ -143,7 +129,7 @@
             this.lblDescription.BackColor = System.Drawing.SystemColors.Control;
             this.lblDescription.CausesValidation = false;
             this.lblDescription.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDescription.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblDescription.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblDescription.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDescription.Location = new System.Drawing.Point(3, 0);
             this.lblDescription.Name = "lblDescription";
@@ -170,7 +156,7 @@
             // 
             this.comboBoxSupplier.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxSupplier.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxSupplier.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSupplier.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSupplier.FormattingEnabled = true;
             this.comboBoxSupplier.Location = new System.Drawing.Point(3, 72);
             this.comboBoxSupplier.Name = "comboBoxSupplier";
@@ -184,7 +170,7 @@
             this.lblSupplier.BackColor = System.Drawing.SystemColors.Control;
             this.lblSupplier.CausesValidation = false;
             this.lblSupplier.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSupplier.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSupplier.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSupplier.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSupplier.Location = new System.Drawing.Point(3, 0);
             this.lblSupplier.Name = "lblSupplier";
@@ -210,7 +196,7 @@
             // txtSpareWeight
             // 
             this.txtSpareWeight.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtSpareWeight.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtSpareWeight.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtSpareWeight.Location = new System.Drawing.Point(3, 72);
             this.txtSpareWeight.Multiline = true;
             this.txtSpareWeight.Name = "txtSpareWeight";
@@ -224,7 +210,7 @@
             this.lblSpareWeight.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareWeight.CausesValidation = false;
             this.lblSpareWeight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareWeight.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareWeight.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareWeight.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareWeight.Location = new System.Drawing.Point(3, 0);
             this.lblSpareWeight.Name = "lblSpareWeight";
@@ -250,7 +236,7 @@
             // txtPrice
             // 
             this.txtPrice.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtPrice.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtPrice.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtPrice.Location = new System.Drawing.Point(3, 72);
             this.txtPrice.Multiline = true;
             this.txtPrice.Name = "txtPrice";
@@ -264,7 +250,7 @@
             this.lblPrice.BackColor = System.Drawing.SystemColors.Control;
             this.lblPrice.CausesValidation = false;
             this.lblPrice.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblPrice.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblPrice.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblPrice.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblPrice.Location = new System.Drawing.Point(3, 0);
             this.lblPrice.Name = "lblPrice";
@@ -290,7 +276,7 @@
             // txtSpareName
             // 
             this.txtSpareName.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtSpareName.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtSpareName.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtSpareName.Location = new System.Drawing.Point(3, 72);
             this.txtSpareName.Multiline = true;
             this.txtSpareName.Name = "txtSpareName";
@@ -304,7 +290,7 @@
             this.lblSpareName.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareName.CausesValidation = false;
             this.lblSpareName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareName.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareName.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareName.Location = new System.Drawing.Point(3, 0);
             this.lblSpareName.Name = "lblSpareName";
@@ -333,7 +319,7 @@
             this.lblSpareType.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareType.CausesValidation = false;
             this.lblSpareType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareType.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareType.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareType.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareType.Location = new System.Drawing.Point(3, 0);
             this.lblSpareType.Name = "lblSpareType";
@@ -345,7 +331,7 @@
             // 
             this.comboBoxSpareType.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxSpareType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxSpareType.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSpareType.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareType.FormattingEnabled = true;
             this.comboBoxSpareType.Location = new System.Drawing.Point(3, 72);
             this.comboBoxSpareType.Name = "comboBoxSpareType";
@@ -356,7 +342,7 @@
             // btnSave
             // 
             this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSave.Font = new System.Drawing.Font("新細明體", 32F);
+            this.btnSave.Font = new System.Drawing.Font("PMingLiU", 32F);
             this.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSave.Location = new System.Drawing.Point(645, 309);
             this.btnSave.Name = "btnSave";
@@ -393,7 +379,7 @@
             // btnDelete
             // 
             this.btnDelete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDelete.Font = new System.Drawing.Font("新細明體", 32F);
+            this.btnDelete.Font = new System.Drawing.Font("PMingLiU", 32F);
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDelete.Location = new System.Drawing.Point(969, 125);
             this.btnDelete.Name = "btnDelete";
@@ -406,7 +392,7 @@
             // btnEdit
             // 
             this.btnEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEdit.Font = new System.Drawing.Font("新細明體", 32F);
+            this.btnEdit.Font = new System.Drawing.Font("PMingLiU", 32F);
             this.btnEdit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnEdit.Location = new System.Drawing.Point(325, 125);
             this.btnEdit.Name = "btnEdit";
@@ -435,7 +421,7 @@
             // 
             this.comboBoxSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxSpareID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxSpareID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSpareID.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareID.FormattingEnabled = true;
             this.comboBoxSpareID.Location = new System.Drawing.Point(3, 61);
             this.comboBoxSpareID.Name = "comboBoxSpareID";
@@ -449,7 +435,7 @@
             this.lblSpareID.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareID.CausesValidation = false;
             this.lblSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareID.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareID.Location = new System.Drawing.Point(3, 0);
             this.lblSpareID.Name = "lblSpareID";
@@ -477,7 +463,6 @@
             this.Text = "Edit or Delete Spare";
             this.Load += new System.EventHandler(this.frmEditItem_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel11.PerformLayout();
             this.tableLayoutPanel7.ResumeLayout(false);
@@ -523,7 +508,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
         private System.Windows.Forms.Label lblSpareID;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.CheckBox checkBoxAutoReStock;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnDelete;
         public System.Windows.Forms.ComboBox comboBoxSupplier;
