@@ -40,8 +40,8 @@
             this.btnItem = new System.Windows.Forms.Button();
             this.btnInvoice = new System.Windows.Forms.Button();
             this.groupBoxDeliveryStatusandProductDetails = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowDeliveryStatusandProductDetails = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBoxOrderOverview.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.groupBoxDeliveryStatusandProductDetails.SuspendLayout();
@@ -218,6 +218,15 @@
             this.groupBoxDeliveryStatusandProductDetails.TabStop = false;
             this.groupBoxDeliveryStatusandProductDetails.Text = "Delivery Status and Product Details";
             // 
+            // flowDeliveryStatusandProductDetails
+            // 
+            this.flowDeliveryStatusandProductDetails.AutoScroll = true;
+            this.flowDeliveryStatusandProductDetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowDeliveryStatusandProductDetails.Location = new System.Drawing.Point(3, 18);
+            this.flowDeliveryStatusandProductDetails.Name = "flowDeliveryStatusandProductDetails";
+            this.flowDeliveryStatusandProductDetails.Size = new System.Drawing.Size(1237, 374);
+            this.flowDeliveryStatusandProductDetails.TabIndex = 0;
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
@@ -233,16 +242,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1249, 572);
             this.tableLayoutPanel1.TabIndex = 2;
-            // 
-            // flowDeliveryStatusandProductDetails
-            // 
-            this.flowDeliveryStatusandProductDetails.AutoScroll = true;
-            this.flowDeliveryStatusandProductDetails.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowDeliveryStatusandProductDetails.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowDeliveryStatusandProductDetails.Location = new System.Drawing.Point(3, 18);
-            this.flowDeliveryStatusandProductDetails.Name = "flowDeliveryStatusandProductDetails";
-            this.flowDeliveryStatusandProductDetails.Size = new System.Drawing.Size(1237, 374);
-            this.flowDeliveryStatusandProductDetails.TabIndex = 0;
             // 
             // frmOrderDetail
             // 

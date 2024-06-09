@@ -241,6 +241,12 @@
     <Compile Include="ModifyInformation.Designer.cs">
       <DependentUpon>ModifyInformation.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrderItemDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderItemDetail.Designer.cs">
+      <DependentUpon>OrderItemDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="sign.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -501,6 +507,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewSupplier.resx">
       <DependentUpon>NewSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderItemDetail.resx">
+      <DependentUpon>OrderItemDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrderRecord.resx">
       <DependentUpon>OrderRecord.cs</DependentUpon>
