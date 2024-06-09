@@ -102,13 +102,14 @@
             // comboBoxSpareID
             // 
             this.comboBoxSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSpareID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxSpareID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSpareID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareID.FormattingEnabled = true;
             this.comboBoxSpareID.Location = new System.Drawing.Point(3, 90);
             this.comboBoxSpareID.Name = "comboBoxSpareID";
-            this.comboBoxSpareID.Size = new System.Drawing.Size(388, 41);
+            this.comboBoxSpareID.Size = new System.Drawing.Size(388, 35);
             this.comboBoxSpareID.TabIndex = 45;
+            this.comboBoxSpareID.SelectedIndexChanged += new System.EventHandler(this.comboBoxSpareID_SelectedIndexChanged);
             // 
             // tableLayoutPanel4
             // 
@@ -136,6 +137,7 @@
             this.txtSpareName.ReadOnly = true;
             this.txtSpareName.Size = new System.Drawing.Size(388, 41);
             this.txtSpareName.TabIndex = 47;
+            this.txtSpareName.TextChanged += new System.EventHandler(this.txtSpareName_TextChanged);
             // 
             // lblSpareName
             // 
@@ -191,6 +193,7 @@
             this.txtReOrderLevel.Name = "txtReOrderLevel";
             this.txtReOrderLevel.Size = new System.Drawing.Size(388, 41);
             this.txtReOrderLevel.TabIndex = 68;
+            this.txtReOrderLevel.TextChanged += new System.EventHandler(this.txtReOrderLevel_TextChanged);
             // 
             // tableLayoutPanel9
             // 
@@ -216,6 +219,7 @@
             this.txtCommonStockLevel.Name = "txtCommonStockLevel";
             this.txtCommonStockLevel.Size = new System.Drawing.Size(388, 41);
             this.txtCommonStockLevel.TabIndex = 77;
+            this.txtCommonStockLevel.TextChanged += new System.EventHandler(this.txtCommonStockLevel_TextChanged);
             // 
             // lblCommonStockLevel
             // 
@@ -242,6 +246,7 @@
             this.btnSave.TabIndex = 91;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // frmSetStockLevel
             // 
@@ -251,6 +256,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmSetStockLevel";
             this.Text = "Set Stock Level";
+            this.Load += new System.EventHandler(this.frmSetStockLevel_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();

@@ -16,5 +16,15 @@ namespace WindowsFormsApp
         {
             InitializeComponent();
         }
+
+        private void btnRecord_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmScrap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

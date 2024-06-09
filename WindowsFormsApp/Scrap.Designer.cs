@@ -147,6 +147,7 @@
             this.btnRecord.TabIndex = 59;
             this.btnRecord.Text = "Record";
             this.btnRecord.UseVisualStyleBackColor = true;
+            this.btnRecord.Click += new System.EventHandler(this.btnRecord_Click);
             // 
             // frmScrap
             // 
@@ -156,6 +157,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmScrap";
             this.Text = "Scrap";
+            this.Load += new System.EventHandler(this.frmScrap_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
