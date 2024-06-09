@@ -35,14 +35,14 @@
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.txtSpareName = new System.Windows.Forms.TextBox();
             this.lblSpareName = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.checkBoxAutoReStock = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.lblReOrderLevel = new System.Windows.Forms.Label();
             this.txtReOrderLevel = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.txtCommonStockLevel = new System.Windows.Forms.TextBox();
             this.lblCommonStockLevel = new System.Windows.Forms.Label();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.checkBoxAutoReStock = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.txtDangerLevel = new System.Windows.Forms.TextBox();
             this.lblDangerLevel = new System.Windows.Forms.Label();
@@ -76,6 +76,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(970, 450);
             this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // tableLayoutPanel3
             // 
@@ -98,7 +99,7 @@
             this.lblSpareID.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareID.CausesValidation = false;
             this.lblSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareID.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareID.Location = new System.Drawing.Point(3, 0);
             this.lblSpareID.Name = "lblSpareID";
@@ -111,7 +112,7 @@
             // 
             this.comboBoxSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxSpareID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxSpareID.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSpareID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareID.FormattingEnabled = true;
             this.comboBoxSpareID.Location = new System.Drawing.Point(3, 90);
             this.comboBoxSpareID.Name = "comboBoxSpareID";
@@ -136,9 +137,10 @@
             // 
             // txtSpareName
             // 
-            this.txtSpareName.BackColor = System.Drawing.SystemColors.Info;
+            this.txtSpareName.BackColor = System.Drawing.SystemColors.Control;
+            this.txtSpareName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSpareName.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtSpareName.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtSpareName.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtSpareName.Location = new System.Drawing.Point(3, 90);
             this.txtSpareName.Multiline = true;
             this.txtSpareName.Name = "txtSpareName";
@@ -153,7 +155,7 @@
             this.lblSpareName.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareName.CausesValidation = false;
             this.lblSpareName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareName.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareName.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareName.Location = new System.Drawing.Point(3, 0);
             this.lblSpareName.Name = "lblSpareName";
@@ -161,6 +163,31 @@
             this.lblSpareName.TabIndex = 50;
             this.lblSpareName.Text = "Spare Name:";
             this.lblSpareName.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSave.Font = new System.Drawing.Font("新細明體", 24F);
+            this.btnSave.Location = new System.Drawing.Point(326, 363);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(317, 84);
+            this.btnSave.TabIndex = 91;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // checkBoxAutoReStock
+            // 
+            this.checkBoxAutoReStock.AutoSize = true;
+            this.checkBoxAutoReStock.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkBoxAutoReStock.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.checkBoxAutoReStock.Location = new System.Drawing.Point(649, 3);
+            this.checkBoxAutoReStock.Name = "checkBoxAutoReStock";
+            this.checkBoxAutoReStock.Size = new System.Drawing.Size(318, 174);
+            this.checkBoxAutoReStock.TabIndex = 93;
+            this.checkBoxAutoReStock.Text = "Auto Re-stock";
+            this.checkBoxAutoReStock.UseVisualStyleBackColor = true;
+            this.checkBoxAutoReStock.CheckedChanged += new System.EventHandler(this.checkBoxAutoReStock_CheckedChanged);
             // 
             // tableLayoutPanel8
             // 
@@ -182,7 +209,7 @@
             this.lblReOrderLevel.BackColor = System.Drawing.SystemColors.Control;
             this.lblReOrderLevel.CausesValidation = false;
             this.lblReOrderLevel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblReOrderLevel.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblReOrderLevel.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblReOrderLevel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblReOrderLevel.Location = new System.Drawing.Point(3, 0);
             this.lblReOrderLevel.Name = "lblReOrderLevel";
@@ -194,7 +221,7 @@
             // txtReOrderLevel
             // 
             this.txtReOrderLevel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtReOrderLevel.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtReOrderLevel.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtReOrderLevel.Location = new System.Drawing.Point(3, 90);
             this.txtReOrderLevel.Multiline = true;
             this.txtReOrderLevel.Name = "txtReOrderLevel";
@@ -219,7 +246,7 @@
             // txtCommonStockLevel
             // 
             this.txtCommonStockLevel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtCommonStockLevel.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtCommonStockLevel.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtCommonStockLevel.Location = new System.Drawing.Point(3, 90);
             this.txtCommonStockLevel.Multiline = true;
             this.txtCommonStockLevel.Name = "txtCommonStockLevel";
@@ -233,7 +260,7 @@
             this.lblCommonStockLevel.BackColor = System.Drawing.SystemColors.Control;
             this.lblCommonStockLevel.CausesValidation = false;
             this.lblCommonStockLevel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCommonStockLevel.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblCommonStockLevel.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblCommonStockLevel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblCommonStockLevel.Location = new System.Drawing.Point(3, 0);
             this.lblCommonStockLevel.Name = "lblCommonStockLevel";
@@ -241,30 +268,6 @@
             this.lblCommonStockLevel.TabIndex = 78;
             this.lblCommonStockLevel.Text = "Common Stock Level:";
             this.lblCommonStockLevel.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // btnSave
-            // 
-            this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSave.Font = new System.Drawing.Font("PMingLiU", 24F);
-            this.btnSave.Location = new System.Drawing.Point(326, 363);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(317, 84);
-            this.btnSave.TabIndex = 91;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // checkBoxAutoReStock
-            // 
-            this.checkBoxAutoReStock.AutoSize = true;
-            this.checkBoxAutoReStock.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBoxAutoReStock.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.checkBoxAutoReStock.Location = new System.Drawing.Point(649, 3);
-            this.checkBoxAutoReStock.Name = "checkBoxAutoReStock";
-            this.checkBoxAutoReStock.Size = new System.Drawing.Size(318, 174);
-            this.checkBoxAutoReStock.TabIndex = 93;
-            this.checkBoxAutoReStock.Text = "Auto Re-stock";
-            this.checkBoxAutoReStock.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel2
             // 
@@ -283,12 +286,13 @@
             // txtDangerLevel
             // 
             this.txtDangerLevel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtDangerLevel.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtDangerLevel.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtDangerLevel.Location = new System.Drawing.Point(3, 90);
             this.txtDangerLevel.Multiline = true;
             this.txtDangerLevel.Name = "txtDangerLevel";
             this.txtDangerLevel.Size = new System.Drawing.Size(311, 41);
             this.txtDangerLevel.TabIndex = 77;
+            this.txtDangerLevel.TextChanged += new System.EventHandler(this.txtDangerLevel_TextChanged);
             // 
             // lblDangerLevel
             // 
@@ -296,7 +300,7 @@
             this.lblDangerLevel.BackColor = System.Drawing.SystemColors.Control;
             this.lblDangerLevel.CausesValidation = false;
             this.lblDangerLevel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDangerLevel.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblDangerLevel.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblDangerLevel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDangerLevel.Location = new System.Drawing.Point(3, 0);
             this.lblDangerLevel.Name = "lblDangerLevel";
@@ -304,6 +308,7 @@
             this.lblDangerLevel.TabIndex = 78;
             this.lblDangerLevel.Text = "Danger Level:";
             this.lblDangerLevel.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lblDangerLevel.Click += new System.EventHandler(this.lblDangerLevel_Click);
             // 
             // frmSetStockLevel
             // 
