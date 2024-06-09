@@ -23,7 +23,7 @@ namespace WindowsFormsApp
 
         private void getData()
         {
-            string sql = "SELECT s.SpareID as SpareID, CategoryLetter, SpareName, Price, Weight, quantity FROM Spare s INNER JOIN Stock ON s.SpareID = Stock.SpareID GROUP BY s.SpareID, CategoryLetter, SpareName, Price, Weight;";
+            string sql = "SELECT s.SpareID as SpareID, CategoryLetter, SpareName, Price, Weight, quantity FROM Spare s INNER JOIN Stock ON s.SpareID = Stock.SpareID Where quantity > 0 and state = 'N' GROUP BY s.SpareID, CategoryLetter, SpareName, Price, Weight ;";
            Spare = Main.db.GetDataTable(sql);
 
             using (var sid = Spare.Columns["SpareID"])
