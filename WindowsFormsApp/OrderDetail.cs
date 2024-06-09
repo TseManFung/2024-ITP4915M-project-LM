@@ -82,8 +82,9 @@ namespace WindowsFormsApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // if text  = Item Detail: show item detail, change to text to Delivery Detail
-            // if text = Delivery Detail: show delivery detail, change to text to Item Detail
+            OrderItemDetail frm = new OrderItemDetail(OrderSerial);
+            frm.Text += $"{OrderSerial}";
+            (this.ParentForm as Main)?.Change_pContent(frm);
         }
     }
 }

@@ -45,7 +45,7 @@ namespace WindowsFormsApp
                 Main.ShowMessage("Please select a Order");
                 return;
             }
-            string sql = $"SELECT ItemID,SpareName,Quantity FROM OrderItem join Spare on itemID = SpareID where OrderSerial = '{this.orderSerial}';";
+            string sql = $"SELECT oi.ItemID,s.SpareName, oi.Quantity, IFNULL(sum(aqd.Quantity), 0) AS 'Processed Qty' FROM OrderItem oi LEFT JOIN Invoice i ON oi.OrderSerial = i.OrderSerial LEFT JOIN ActualQuantityDespatched aqd ON i.InvoiceID = aqd.InvoiceID AND oi.ItemID = aqd.ItemID inner join Spare s on oi.ItemID = s.SpareID WHERE oi.OrderSerial = '{this.orderSerial}' GROUP BY oi.ItemID;";
             orderItem = Main.db.GetDataTable(sql);
             comboBoxSpareName.Items.Clear();
             comboBoxSpareName.Items.AddRange(orderItem.AsEnumerable().Select(x => x["SpareName"].ToString()).ToArray());
@@ -121,6 +121,7 @@ namespace WindowsFormsApp
             txtSpareID.Text = orderItem.Select($"SpareName = '{comboBoxSpareName.SelectedItem}'")[0]["ItemID"].ToString();
             int quantity = Convert.ToInt32(orderItem.Select($"SpareName = '{comboBoxSpareName.SelectedItem}'")[0]["Quantity"]);
             numericUpDownQuantity.Maximum = numericUpDownQuantity.Value = quantity;
+            numericUpDownQuantity.Minimum = Convert.ToInt32(orderItem.Select($"SpareName = '{comboBoxSpareName.SelectedItem}'")[0]["Processed Qty"]);
         }
     }
 }

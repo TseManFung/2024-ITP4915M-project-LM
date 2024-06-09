@@ -59,12 +59,14 @@
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button1.Font = new System.Drawing.Font("PMingLiU", 22F);
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(76, 44);
+            this.button1.Size = new System.Drawing.Size(214, 44);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Edit this Order";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -85,11 +87,12 @@
             // button2
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button2.Font = new System.Drawing.Font("PMingLiU", 22F);
             this.button2.Location = new System.Drawing.Point(278, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(113, 38);
             this.button2.TabIndex = 0;
-            this.button2.Text = "button2";
+            this.button2.Text = "Search";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -108,6 +111,8 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel1.SetColumnSpan(this.dataGridView1, 2);
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -125,7 +130,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "OrderItemDetail";
-            this.Text = "OrderItemDetail";
+            this.Text = "Order: ";
+            this.Layout += new System.Windows.Forms.LayoutEventHandler(this.OrderItemDetail_Layout);
+            this.Leave += new System.EventHandler(this.OrderItemDetail_Leave);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
