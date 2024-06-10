@@ -133,5 +133,10 @@ namespace WindowsFormsApp
         {
 
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Main.ShowMessage("succeed!");
+        }
     }
 }
