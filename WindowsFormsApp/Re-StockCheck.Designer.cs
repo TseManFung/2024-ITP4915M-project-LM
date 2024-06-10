@@ -38,6 +38,10 @@
             // 
             // dataGridViewItemHaveArrivedInROL
             // 
+            this.dataGridViewItemHaveArrivedInROL.AllowUserToAddRows = false;
+            this.dataGridViewItemHaveArrivedInROL.AllowUserToOrderColumns = true;
+            this.dataGridViewItemHaveArrivedInROL.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewItemHaveArrivedInROL.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewItemHaveArrivedInROL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel1.SetColumnSpan(this.dataGridViewItemHaveArrivedInROL, 2);
             this.dataGridViewItemHaveArrivedInROL.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -46,6 +50,8 @@
             this.dataGridViewItemHaveArrivedInROL.RowTemplate.Height = 24;
             this.dataGridViewItemHaveArrivedInROL.Size = new System.Drawing.Size(1235, 490);
             this.dataGridViewItemHaveArrivedInROL.TabIndex = 74;
+            this.dataGridViewItemHaveArrivedInROL.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewItemHaveArrivedInROL_CellClick);
+            this.dataGridViewItemHaveArrivedInROL.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewItemHaveArrivedInROL_CellContentClick);
             // 
             // lblFollowingROL
             // 
@@ -57,7 +63,8 @@
             this.lblFollowingROL.Name = "lblFollowingROL";
             this.lblFollowingROL.Size = new System.Drawing.Size(1235, 29);
             this.lblFollowingROL.TabIndex = 75;
-            this.lblFollowingROL.Text = "The following items have arrived in ROL:";
+            this.lblFollowingROL.Text = "The following items should be received:";
+            this.lblFollowingROL.Click += new System.EventHandler(this.lblFollowingROL_Click);
             // 
             // btnReceived
             // 
@@ -69,6 +76,7 @@
             this.btnReceived.TabIndex = 76;
             this.btnReceived.Text = "Received";
             this.btnReceived.UseVisualStyleBackColor = true;
+            this.btnReceived.Click += new System.EventHandler(this.btnReceived_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -96,6 +104,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmReStockCheck";
             this.Text = "Re-stock Check";
+            this.Load += new System.EventHandler(this.frmReStockCheck_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItemHaveArrivedInROL)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

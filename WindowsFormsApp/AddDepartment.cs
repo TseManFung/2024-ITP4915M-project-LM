@@ -46,62 +46,66 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtDepartmentName.Text) && !string.IsNullOrEmpty(txtDepartmentEmail.Text) && !string.IsNullOrEmpty(txtDepartmentID.Text))
+            if (Main.ShowYesNoDialog("Do you want to turn to the next page?"))
             {
-                string DepartmentID = txtDepartmentID.Text;
-                string DeptName = txtDepartmentName.Text;
-                string DeptEmail = txtDepartmentEmail.Text;
-                string WarehouseLocation = comboBoxWarehouse.SelectedItem.ToString();
-                int WarehouseID = 0;
 
-                string sql1 = "SELECT DeptID FROM Department;";
-                List<string> deptIDs = new List<string>();
-
-                using (var reader = Main.db.readBySql(sql1))
+                if (!string.IsNullOrEmpty(txtDepartmentName.Text) && !string.IsNullOrEmpty(txtDepartmentEmail.Text) && !string.IsNullOrEmpty(txtDepartmentID.Text))
                 {
-                    while (reader.Read())
+                    string DepartmentID = txtDepartmentID.Text;
+                    string DeptName = txtDepartmentName.Text;
+                    string DeptEmail = txtDepartmentEmail.Text;
+                    string WarehouseLocation = comboBoxWarehouse.SelectedItem.ToString();
+                    int WarehouseID = 0;
+
+                    string sql1 = "SELECT DeptID FROM Department;";
+                    List<string> deptIDs = new List<string>();
+
+                    using (var reader = Main.db.readBySql(sql1))
                     {
-                        string deptID = reader.GetString(0);
-                        deptIDs.Add(deptID);
+                        while (reader.Read())
+                        {
+                            string deptID = reader.GetString(0);
+                            deptIDs.Add(deptID);
+                        }
                     }
-                }
 
-                if (deptIDs.Contains(DepartmentID))
-                {
-                    Main.ShowMessage("Department ID already exists. Please choose a different ID.");
+                    if (deptIDs.Contains(DepartmentID))
+                    {
+                        Main.ShowMessage("Department ID already exists. Please choose a different ID.");
+                        txtDepartmentName.Text = String.Empty;
+                        txtDepartmentEmail.Text = String.Empty;
+                        txtDepartmentID.Text = String.Empty;
+                        return;
+                    }
+
+                    string query;
+                    if (radYes.Checked)
+                    {
+                        string sql = $"SELECT WarehouseID FROM Warehouse WHERE Location = '{WarehouseLocation}';";
+                        using (var reader = Main.db.readBySql(sql))
+                        {
+                            if (reader.Read())
+                            {
+                                WarehouseID = reader.GetInt32(0);
+                            }
+                        }
+                        query = $"INSERT INTO Department (DeptID,DeptEmail, DeptName, WarehouseID) VALUES ('{DepartmentID}','{DeptEmail}', '{DeptName}', {WarehouseID})";
+                    }
+                    else
+                    {
+                        query = $"INSERT INTO Department (DeptID,DeptEmail, DeptName) VALUES ('{DepartmentID}','{DeptEmail}', '{DeptName}')";
+                    }
+
+                    Main.db.insertBySql(query);
+                    Main.ShowMessage("Successful adding!");
                     txtDepartmentName.Text = String.Empty;
                     txtDepartmentEmail.Text = String.Empty;
                     txtDepartmentID.Text = String.Empty;
-                    return;
-                }
-
-                string query;
-                if (radYes.Checked)
-                {
-                    string sql = $"SELECT WarehouseID FROM Warehouse WHERE Location = '{WarehouseLocation}';";
-                    using (var reader = Main.db.readBySql(sql))
-                    {
-                        if (reader.Read())
-                        {
-                            WarehouseID = reader.GetInt32(0);
-                        }
-                    }
-                    query = $"INSERT INTO Department (DeptID,DeptEmail, DeptName, WarehouseID) VALUES ('{DepartmentID}','{DeptEmail}', '{DeptName}', {WarehouseID})";
                 }
                 else
                 {
-                    query = $"INSERT INTO Department (DeptID,DeptEmail, DeptName) VALUES ('{DepartmentID}','{DeptEmail}', '{DeptName}')";
+                    Main.ShowMessage("Please fill in all the required information!");
                 }
-
-                Main.db.insertBySql(query);
-                Main.ShowMessage("Successful adding!");
-                txtDepartmentName.Text = String.Empty;
-                txtDepartmentEmail.Text = String.Empty;
-                txtDepartmentID.Text = String.Empty;
-            }
-            else
-            {
-                Main.ShowMessage("Please fill in all the required information!");
             }
         }
 
@@ -131,6 +135,11 @@ namespace WindowsFormsApp
                 txtDepartmentID.Text = string.Empty;
                 txtDepartmentID.SelectionStart = txtDepartmentID.Text.Length;
             }
+        }
+
+        private void txtDepartmentEmail_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

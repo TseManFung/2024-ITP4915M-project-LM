@@ -52,7 +52,12 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (
+            if (Main.ShowYesNoDialog("Do you want to turn to the next page?"))
+            {
+
+
+
+                if (
                 comboBoxSpareType.SelectedItem != null &&
                 !string.IsNullOrEmpty(txtSpareName.Text) &&
                 !string.IsNullOrEmpty(txtSparePrice.Text) &&
@@ -77,7 +82,7 @@ namespace WindowsFormsApp
                     String sqlofMaxNumOfCLetter = $"SELECT max(SpareID) FROM Spare Where  CategoryLetter = '{CattegoryLetter}';";
                     string MaxNumOfCLetter = "";
                     using (var reader = Main.db.readBySql(sqlofMaxNumOfCLetter))
-                        {
+                    {
                         while (reader.Read())
                         {
                             MaxNumOfCLetter = reader.GetString(0);
@@ -99,9 +104,10 @@ namespace WindowsFormsApp
                     txtSpareWeight.Text = "0";
                     textBoxDescription.Text = "";
                 }
-            else
-            {
-                Main.ShowMessage("Please provide complete data");
+                else
+                {
+                    Main.ShowMessage("Please provide complete data");
+                }
             }
         }
 

@@ -55,7 +55,7 @@
             this.comboBoxDepartment = new System.Windows.Forms.ComboBox();
             this.lblDepartment = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBoxSpareType = new System.Windows.Forms.ComboBox();
+            this.comboBoxSaleArea = new System.Windows.Forms.ComboBox();
             this.lblSaleArea = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.txtAccessLevel = new System.Windows.Forms.TextBox();
@@ -210,8 +210,8 @@
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.319149F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.89362F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1294, 376);
             this.tableLayoutPanel1.TabIndex = 80;
             this.tableLayoutPanel1.Visible = false;
@@ -240,6 +240,7 @@
             this.txtOfficeAddress.Name = "txtOfficeAddress";
             this.txtOfficeAddress.Size = new System.Drawing.Size(246, 41);
             this.txtOfficeAddress.TabIndex = 80;
+            this.txtOfficeAddress.TextChanged += new System.EventHandler(this.txtOfficeAddress_TextChanged);
             // 
             // lblOfficeAddress
             // 
@@ -279,6 +280,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(246, 41);
             this.txtEmail.TabIndex = 83;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // lblEmail
             // 
@@ -318,6 +320,7 @@
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(246, 41);
             this.txtPhoneNumber.TabIndex = 77;
+            this.txtPhoneNumber.TextChanged += new System.EventHandler(this.txtPhoneNumber_TextChanged);
             // 
             // lblPhoneNumber
             // 
@@ -371,6 +374,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(246, 41);
             this.txtName.TabIndex = 68;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // tableLayoutPanel7
             // 
@@ -390,13 +394,14 @@
             // comboBoxPosition
             // 
             this.comboBoxPosition.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxPosition.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxPosition.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxPosition.FormattingEnabled = true;
             this.comboBoxPosition.Location = new System.Drawing.Point(3, 75);
             this.comboBoxPosition.Name = "comboBoxPosition";
-            this.comboBoxPosition.Size = new System.Drawing.Size(250, 41);
+            this.comboBoxPosition.Size = new System.Drawing.Size(250, 35);
             this.comboBoxPosition.TabIndex = 61;
+            this.comboBoxPosition.SelectedIndexChanged += new System.EventHandler(this.comboBoxPosition_SelectedIndexChanged);
             // 
             // lblPosition
             // 
@@ -430,13 +435,14 @@
             // comboBoxDepartment
             // 
             this.comboBoxDepartment.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxDepartment.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxDepartment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDepartment.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxDepartment.FormattingEnabled = true;
             this.comboBoxDepartment.Location = new System.Drawing.Point(3, 75);
             this.comboBoxDepartment.Name = "comboBoxDepartment";
-            this.comboBoxDepartment.Size = new System.Drawing.Size(246, 41);
+            this.comboBoxDepartment.Size = new System.Drawing.Size(246, 35);
             this.comboBoxDepartment.TabIndex = 59;
+            this.comboBoxDepartment.SelectedIndexChanged += new System.EventHandler(this.comboBoxDepartment_SelectedIndexChanged);
             // 
             // lblDepartment
             // 
@@ -456,7 +462,7 @@
             // 
             this.tableLayoutPanel5.ColumnCount = 1;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Controls.Add(this.comboBoxSpareType, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.comboBoxSaleArea, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.lblSaleArea, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(519, 3);
@@ -467,16 +473,17 @@
             this.tableLayoutPanel5.Size = new System.Drawing.Size(252, 144);
             this.tableLayoutPanel5.TabIndex = 85;
             // 
-            // comboBoxSpareType
+            // comboBoxSaleArea
             // 
-            this.comboBoxSpareType.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSpareType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBoxSpareType.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.comboBoxSpareType.FormattingEnabled = true;
-            this.comboBoxSpareType.Location = new System.Drawing.Point(3, 75);
-            this.comboBoxSpareType.Name = "comboBoxSpareType";
-            this.comboBoxSpareType.Size = new System.Drawing.Size(246, 41);
-            this.comboBoxSpareType.TabIndex = 74;
+            this.comboBoxSaleArea.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxSaleArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxSaleArea.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSaleArea.FormattingEnabled = true;
+            this.comboBoxSaleArea.Location = new System.Drawing.Point(3, 75);
+            this.comboBoxSaleArea.Name = "comboBoxSaleArea";
+            this.comboBoxSaleArea.Size = new System.Drawing.Size(246, 35);
+            this.comboBoxSaleArea.TabIndex = 74;
+            this.comboBoxSaleArea.SelectedIndexChanged += new System.EventHandler(this.comboBoxSpareType_SelectedIndexChanged);
             // 
             // lblSaleArea
             // 
@@ -516,6 +523,7 @@
             this.txtAccessLevel.Name = "txtAccessLevel";
             this.txtAccessLevel.Size = new System.Drawing.Size(246, 41);
             this.txtAccessLevel.TabIndex = 47;
+            this.txtAccessLevel.TextChanged += new System.EventHandler(this.txtAccessLevel_TextChanged);
             // 
             // lblAccessLevel
             // 
@@ -555,6 +563,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(246, 41);
             this.txtPassword.TabIndex = 49;
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // lblPassword
             // 
@@ -575,9 +584,9 @@
             this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSave.Font = new System.Drawing.Font("新細明體", 32F);
             this.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSave.Location = new System.Drawing.Point(519, 321);
+            this.btnSave.Location = new System.Drawing.Point(519, 322);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(252, 52);
+            this.btnSave.Size = new System.Drawing.Size(252, 51);
             this.btnSave.TabIndex = 51;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -607,6 +616,7 @@
             this.txtDeliveryAddress.Name = "txtDeliveryAddress";
             this.txtDeliveryAddress.Size = new System.Drawing.Size(250, 41);
             this.txtDeliveryAddress.TabIndex = 80;
+            this.txtDeliveryAddress.TextChanged += new System.EventHandler(this.txtDeliveryAddress_TextChanged);
             // 
             // lblDeliveryAddress
             // 
@@ -696,7 +706,7 @@
         private System.Windows.Forms.TextBox txtPassword;
         public System.Windows.Forms.ComboBox comboBoxPosition;
         public System.Windows.Forms.ComboBox comboBoxDepartment;
-        public System.Windows.Forms.ComboBox comboBoxSpareType;
+        public System.Windows.Forms.ComboBox comboBoxSaleArea;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
         private System.Windows.Forms.TextBox txtDeliveryAddress;
         private System.Windows.Forms.Label lblDeliveryAddress;

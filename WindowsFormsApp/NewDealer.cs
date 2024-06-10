@@ -128,7 +128,18 @@ namespace WindowsFormsApp
                 txtOfficeAddress.Text = String.Empty;
             }
         }
-
+        private bool IsValidEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
+        }
         private void frmNewDealer_Load(object sender, EventArgs e)
         {
             List<string> SaleAreaLocationlist = new List<string>();
@@ -183,7 +194,14 @@ namespace WindowsFormsApp
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
         {
-
+            if (!string.IsNullOrEmpty(txtEmail.Text))
+            {
+                if (!IsValidEmail(txtEmail.Text))
+                {
+                    Main.ShowMessage("Please enter a valid email address!");
+                    txtEmail.Text = string.Empty;
+                }
+            }
         }
     }
 }

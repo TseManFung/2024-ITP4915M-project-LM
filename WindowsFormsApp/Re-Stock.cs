@@ -30,36 +30,33 @@ namespace WindowsFormsApp
         }
         private void getData()
         {
-            string table = "RestockOrder";
-            RestockOrder = Main.db.getTable(table);
+            int respent_warehouse = 0;
+            string sql_getwarehouse = $"SELECT d.WarehouseID FROM User u inner join Staff s on u.StaffID = s.StaffID inner join Department d on s.DeptID = d.DeptID  where u.UserID={Main.userID};";
+            using (var reader = Main.db.readBySql(sql_getwarehouse))
+            {
+                reader.Read();
+                respent_warehouse = reader.GetInt32(0);
+            }
+            string sql = $"SELECT ws.WarehouseID, ws.SpareID, a.quantity FROM WarehouseStockLevel ws JOIN ActualStock a ON ws.WarehouseID = a.WarehouseID AND ws.SpareID = a.SpareID WHERE a.quantity <= ws.ROL AND a.WarehouseID = {respent_warehouse};";
+            RestockOrder = Main.db.GetDataTable(sql);
 
         }
+
         private void frmReStock_Load(object sender, EventArgs e)
         {
+
             getData();
 
             if (RestockOrder == null)
             {
-                // 在此处进行 RestockOrder 数据源的初始化
-                // 或者根据您的需求，处理数据源为 null 的情况
-                // 例如，显示错误消息或执行其他操作
-                MessageBox.Show("RestockOrder 数据源为空。");
+
+                MessageBox.Show("No ROL item");
                 return;
             }
 
             try
             {
-                // 继续进行数据绑定操作
-                dgvItemFollowingROL.DataSource = RestockOrder.AsEnumerable()
-                    .Select(row =>
-                    {
-                        if (row["Remark"] == null || row["Remark"] == DBNull.Value)
-                        {
-                            row["Remark"] = "No Remark.";
-                        }
-                        return row;
-                    })
-                    .CopyToDataTable();
+                dgvItemFollowingROL.DataSource = RestockOrder.AsEnumerable().CopyToDataTable();
             }
             catch (InvalidOperationException ex)
             {

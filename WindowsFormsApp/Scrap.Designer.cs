@@ -66,12 +66,12 @@
             // comboBoxSpareID
             // 
             this.comboBoxSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSpareID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxSpareID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSpareID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareID.FormattingEnabled = true;
             this.comboBoxSpareID.Location = new System.Drawing.Point(221, 3);
             this.comboBoxSpareID.Name = "comboBoxSpareID";
-            this.comboBoxSpareID.Size = new System.Drawing.Size(213, 47);
+            this.comboBoxSpareID.Size = new System.Drawing.Size(213, 40);
             this.comboBoxSpareID.TabIndex = 60;
             // 
             // txtDiscrepancy
@@ -83,6 +83,7 @@
             this.txtDiscrepancy.Name = "txtDiscrepancy";
             this.txtDiscrepancy.Size = new System.Drawing.Size(213, 45);
             this.txtDiscrepancy.TabIndex = 58;
+            this.txtDiscrepancy.TextChanged += new System.EventHandler(this.txtDiscrepancy_TextChanged);
             // 
             // txtQuantity
             // 

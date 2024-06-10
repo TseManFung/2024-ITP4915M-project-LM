@@ -5,10 +5,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Media.Media3D;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp
@@ -112,7 +114,7 @@ namespace WindowsFormsApp
         private void frmEditItem_Load(object sender, EventArgs e)
         {
             List<string> SpareIDlist = new List<string>();
-            String sql = $"SELECT SpareID FROM Spare;";
+            string sql = $"SELECT SpareID FROM Spare WHERE state <> 'D';";
             using (var reader = Main.db.readBySql(sql))
             {
                 while (reader.Read())
@@ -122,7 +124,6 @@ namespace WindowsFormsApp
             }
             this.comboBoxSpareID.DataSource = SpareIDlist;
             this.comboBoxSpareID.DisplayMember = "SpareID";
-
 
         }
 
@@ -225,6 +226,9 @@ namespace WindowsFormsApp
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            string spareID = comboBoxSpareID.SelectedItem.ToString();
+            string query = $"UPDATE Spare SET State = 'D' WHERE SpareID = '{spareID}'";
+
         }
     }
 }
