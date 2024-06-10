@@ -228,6 +228,10 @@ namespace WindowsFormsApp
             {
                 foreach (Control childControl in control.Controls)
                 {
+                    if (childControl is DataGridView || childControl is TextBox)
+                    {
+                        continue;
+                    }
                     ResizeControlFont(childControl, formWidth, formHeight);
                 }
             }

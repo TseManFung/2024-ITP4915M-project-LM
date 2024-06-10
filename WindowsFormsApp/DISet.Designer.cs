@@ -77,11 +77,11 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1310, 587);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(836, 587);
             this.tableLayoutPanel1.TabIndex = 94;
             // 
             // tableLayoutPanel4
@@ -97,19 +97,19 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(321, 111);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(203, 82);
             this.tableLayoutPanel4.TabIndex = 86;
             // 
             // txtDate
             // 
             this.txtDate.BackColor = System.Drawing.SystemColors.Info;
             this.txtDate.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtDate.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtDate.Location = new System.Drawing.Point(3, 58);
+            this.txtDate.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtDate.Location = new System.Drawing.Point(3, 44);
             this.txtDate.Multiline = true;
             this.txtDate.Name = "txtDate";
             this.txtDate.ReadOnly = true;
-            this.txtDate.Size = new System.Drawing.Size(315, 45);
+            this.txtDate.Size = new System.Drawing.Size(197, 35);
             this.txtDate.TabIndex = 47;
             // 
             // lblDate
@@ -118,11 +118,11 @@
             this.lblDate.BackColor = System.Drawing.SystemColors.Control;
             this.lblDate.CausesValidation = false;
             this.lblDate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDate.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblDate.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblDate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDate.Location = new System.Drawing.Point(3, 0);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(315, 55);
+            this.lblDate.Size = new System.Drawing.Size(197, 41);
             this.lblDate.TabIndex = 50;
             this.lblDate.Text = "Date:";
             this.lblDate.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -134,24 +134,24 @@
             this.tableLayoutPanel2.Controls.Add(this.txtOrderSerial, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lblOrderSerial, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(330, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(212, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(321, 111);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(203, 82);
             this.tableLayoutPanel2.TabIndex = 87;
             // 
             // txtOrderSerial
             // 
             this.txtOrderSerial.BackColor = System.Drawing.SystemColors.Info;
             this.txtOrderSerial.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtOrderSerial.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtOrderSerial.Location = new System.Drawing.Point(3, 58);
+            this.txtOrderSerial.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtOrderSerial.Location = new System.Drawing.Point(3, 44);
             this.txtOrderSerial.Multiline = true;
             this.txtOrderSerial.Name = "txtOrderSerial";
             this.txtOrderSerial.ReadOnly = true;
-            this.txtOrderSerial.Size = new System.Drawing.Size(315, 45);
+            this.txtOrderSerial.Size = new System.Drawing.Size(197, 35);
             this.txtOrderSerial.TabIndex = 47;
             // 
             // lblOrderSerial
@@ -160,11 +160,11 @@
             this.lblOrderSerial.BackColor = System.Drawing.SystemColors.Control;
             this.lblOrderSerial.CausesValidation = false;
             this.lblOrderSerial.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblOrderSerial.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblOrderSerial.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblOrderSerial.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblOrderSerial.Location = new System.Drawing.Point(3, 0);
             this.lblOrderSerial.Name = "lblOrderSerial";
-            this.lblOrderSerial.Size = new System.Drawing.Size(315, 55);
+            this.lblOrderSerial.Size = new System.Drawing.Size(197, 41);
             this.lblOrderSerial.TabIndex = 50;
             this.lblOrderSerial.Text = "Order Serial:";
             this.lblOrderSerial.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -176,24 +176,24 @@
             this.tableLayoutPanel3.Controls.Add(this.txtDealerOrderNo, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.lblDealerOrderNo, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 120);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 91);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(321, 111);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(203, 82);
             this.tableLayoutPanel3.TabIndex = 88;
             // 
             // txtDealerOrderNo
             // 
             this.txtDealerOrderNo.BackColor = System.Drawing.SystemColors.Info;
             this.txtDealerOrderNo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtDealerOrderNo.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtDealerOrderNo.Location = new System.Drawing.Point(3, 58);
+            this.txtDealerOrderNo.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtDealerOrderNo.Location = new System.Drawing.Point(3, 44);
             this.txtDealerOrderNo.Multiline = true;
             this.txtDealerOrderNo.Name = "txtDealerOrderNo";
             this.txtDealerOrderNo.ReadOnly = true;
-            this.txtDealerOrderNo.Size = new System.Drawing.Size(315, 45);
+            this.txtDealerOrderNo.Size = new System.Drawing.Size(197, 35);
             this.txtDealerOrderNo.TabIndex = 47;
             // 
             // lblDealerOrderNo
@@ -202,11 +202,11 @@
             this.lblDealerOrderNo.BackColor = System.Drawing.SystemColors.Control;
             this.lblDealerOrderNo.CausesValidation = false;
             this.lblDealerOrderNo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDealerOrderNo.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblDealerOrderNo.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblDealerOrderNo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDealerOrderNo.Location = new System.Drawing.Point(3, 0);
             this.lblDealerOrderNo.Name = "lblDealerOrderNo";
-            this.lblDealerOrderNo.Size = new System.Drawing.Size(315, 55);
+            this.lblDealerOrderNo.Size = new System.Drawing.Size(197, 41);
             this.lblDealerOrderNo.TabIndex = 50;
             this.lblDealerOrderNo.Text = "Dealer Order No. :";
             this.lblDealerOrderNo.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -218,24 +218,24 @@
             this.tableLayoutPanel5.Controls.Add(this.txtInvoiceName, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.lblInvoiceName, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(330, 120);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(212, 91);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(321, 111);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(203, 82);
             this.tableLayoutPanel5.TabIndex = 89;
             // 
             // txtInvoiceName
             // 
             this.txtInvoiceName.BackColor = System.Drawing.SystemColors.Info;
             this.txtInvoiceName.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtInvoiceName.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtInvoiceName.Location = new System.Drawing.Point(3, 58);
+            this.txtInvoiceName.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtInvoiceName.Location = new System.Drawing.Point(3, 44);
             this.txtInvoiceName.Multiline = true;
             this.txtInvoiceName.Name = "txtInvoiceName";
             this.txtInvoiceName.ReadOnly = true;
-            this.txtInvoiceName.Size = new System.Drawing.Size(315, 45);
+            this.txtInvoiceName.Size = new System.Drawing.Size(197, 35);
             this.txtInvoiceName.TabIndex = 47;
             // 
             // lblInvoiceName
@@ -244,11 +244,11 @@
             this.lblInvoiceName.BackColor = System.Drawing.SystemColors.Control;
             this.lblInvoiceName.CausesValidation = false;
             this.lblInvoiceName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblInvoiceName.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblInvoiceName.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblInvoiceName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblInvoiceName.Location = new System.Drawing.Point(3, 0);
             this.lblInvoiceName.Name = "lblInvoiceName";
-            this.lblInvoiceName.Size = new System.Drawing.Size(315, 55);
+            this.lblInvoiceName.Size = new System.Drawing.Size(197, 41);
             this.lblInvoiceName.TabIndex = 50;
             this.lblInvoiceName.Text = "Invoice Name:";
             this.lblInvoiceName.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -261,24 +261,24 @@
             this.tableLayoutPanel6.Controls.Add(this.txtDeliveryAddress, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.lblDeliveryAddress, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(657, 3);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(421, 3);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(650, 111);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(412, 82);
             this.tableLayoutPanel6.TabIndex = 90;
             // 
             // txtDeliveryAddress
             // 
             this.txtDeliveryAddress.BackColor = System.Drawing.SystemColors.Info;
             this.txtDeliveryAddress.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtDeliveryAddress.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtDeliveryAddress.Location = new System.Drawing.Point(3, 58);
+            this.txtDeliveryAddress.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtDeliveryAddress.Location = new System.Drawing.Point(3, 44);
             this.txtDeliveryAddress.Multiline = true;
             this.txtDeliveryAddress.Name = "txtDeliveryAddress";
             this.txtDeliveryAddress.ReadOnly = true;
-            this.txtDeliveryAddress.Size = new System.Drawing.Size(644, 45);
+            this.txtDeliveryAddress.Size = new System.Drawing.Size(406, 35);
             this.txtDeliveryAddress.TabIndex = 47;
             // 
             // lblDeliveryAddress
@@ -287,11 +287,11 @@
             this.lblDeliveryAddress.BackColor = System.Drawing.SystemColors.Control;
             this.lblDeliveryAddress.CausesValidation = false;
             this.lblDeliveryAddress.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDeliveryAddress.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblDeliveryAddress.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblDeliveryAddress.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDeliveryAddress.Location = new System.Drawing.Point(3, 0);
             this.lblDeliveryAddress.Name = "lblDeliveryAddress";
-            this.lblDeliveryAddress.Size = new System.Drawing.Size(644, 55);
+            this.lblDeliveryAddress.Size = new System.Drawing.Size(406, 41);
             this.lblDeliveryAddress.TabIndex = 50;
             this.lblDeliveryAddress.Text = "Delivery Address:";
             this.lblDeliveryAddress.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -304,24 +304,24 @@
             this.tableLayoutPanel7.Controls.Add(this.txtInvoiceAddress, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.lblInvoiceAddress, 0, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(657, 120);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(421, 91);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(650, 111);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(412, 82);
             this.tableLayoutPanel7.TabIndex = 91;
             // 
             // txtInvoiceAddress
             // 
             this.txtInvoiceAddress.BackColor = System.Drawing.SystemColors.Info;
             this.txtInvoiceAddress.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtInvoiceAddress.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtInvoiceAddress.Location = new System.Drawing.Point(3, 58);
+            this.txtInvoiceAddress.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtInvoiceAddress.Location = new System.Drawing.Point(3, 44);
             this.txtInvoiceAddress.Multiline = true;
             this.txtInvoiceAddress.Name = "txtInvoiceAddress";
             this.txtInvoiceAddress.ReadOnly = true;
-            this.txtInvoiceAddress.Size = new System.Drawing.Size(644, 45);
+            this.txtInvoiceAddress.Size = new System.Drawing.Size(406, 35);
             this.txtInvoiceAddress.TabIndex = 47;
             // 
             // lblInvoiceAddress
@@ -330,11 +330,11 @@
             this.lblInvoiceAddress.BackColor = System.Drawing.SystemColors.Control;
             this.lblInvoiceAddress.CausesValidation = false;
             this.lblInvoiceAddress.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblInvoiceAddress.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblInvoiceAddress.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblInvoiceAddress.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblInvoiceAddress.Location = new System.Drawing.Point(3, 0);
             this.lblInvoiceAddress.Name = "lblInvoiceAddress";
-            this.lblInvoiceAddress.Size = new System.Drawing.Size(644, 55);
+            this.lblInvoiceAddress.Size = new System.Drawing.Size(406, 41);
             this.lblInvoiceAddress.TabIndex = 50;
             this.lblInvoiceAddress.Text = "Invoice Address:";
             this.lblInvoiceAddress.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -342,10 +342,10 @@
             // btnExportasPDF
             // 
             this.btnExportasPDF.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnExportasPDF.Font = new System.Drawing.Font("新細明體", 24F);
-            this.btnExportasPDF.Location = new System.Drawing.Point(984, 237);
+            this.btnExportasPDF.Font = new System.Drawing.Font("PMingLiU", 24F);
+            this.btnExportasPDF.Location = new System.Drawing.Point(630, 179);
             this.btnExportasPDF.Name = "btnExportasPDF";
-            this.btnExportasPDF.Size = new System.Drawing.Size(323, 52);
+            this.btnExportasPDF.Size = new System.Drawing.Size(203, 52);
             this.btnExportasPDF.TabIndex = 92;
             this.btnExportasPDF.Text = "Export as PDF";
             this.btnExportasPDF.UseVisualStyleBackColor = true;
@@ -355,16 +355,16 @@
             this.flowLayoutPanel1.AutoScroll = true;
             this.tableLayoutPanel1.SetColumnSpan(this.flowLayoutPanel1, 4);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 295);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 237);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1304, 289);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(830, 347);
             this.flowLayoutPanel1.TabIndex = 93;
             // 
             // frmDISet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1310, 587);
+            this.ClientSize = new System.Drawing.Size(836, 587);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmDISet";
             this.Text = "Despatch Instruction Set";

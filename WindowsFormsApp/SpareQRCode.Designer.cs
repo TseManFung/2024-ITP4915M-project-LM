@@ -85,7 +85,7 @@
             this.lblSpareName.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareName.CausesValidation = false;
             this.lblSpareName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareName.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareName.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareName.Location = new System.Drawing.Point(3, 0);
             this.lblSpareName.Name = "lblSpareName";
@@ -99,7 +99,7 @@
             this.comboBoxSpareName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBoxSpareName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxSpareName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSpareName.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSpareName.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareName.FormattingEnabled = true;
             this.comboBoxSpareName.Location = new System.Drawing.Point(3, 67);
             this.comboBoxSpareName.Name = "comboBoxSpareName";
@@ -127,7 +127,7 @@
             this.lblSpareID.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareID.CausesValidation = false;
             this.lblSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareID.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareID.Location = new System.Drawing.Point(3, 0);
             this.lblSpareID.Name = "lblSpareID";
@@ -141,7 +141,7 @@
             this.comboBoxSpareID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBoxSpareID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSpareID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSpareID.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareID.FormattingEnabled = true;
             this.comboBoxSpareID.Location = new System.Drawing.Point(3, 67);
             this.comboBoxSpareID.Name = "comboBoxSpareID";

@@ -13,7 +13,10 @@ namespace WindowsFormsApp
 {
     public partial class frmOrderDetail : Form
     {
-        string OrderSerial, dateTime, State;
+        string OrderSerial, dateTime, State,respent_InvoiceID;
+        int respent_warehouse;
+
+
 
         Dictionary<string, string> dictState = new Dictionary<string, string>() {
             { "C", "Order Create" } ,
@@ -60,9 +63,21 @@ namespace WindowsFormsApp
             {
                 BtnDIset.Visible = true;
             }
-            if (State == "T" || State == "F")
+            if (State == "T" && Main.AssessLevel == 700)
             {
                btnInvoice.Visible = true;
+                string sql_getwarehouse = $"SELECT d.WarehouseID FROM User u inner join Staff s on u.StaffID = s.StaffID inner join Department d on s.DeptID = d.DeptID  where u.UserID={Main.userID};";
+                using(var reader = Main.db.readBySql(sql_getwarehouse))
+                {
+                    reader.Read();
+                    respent_warehouse = reader.GetInt32(0);
+                }
+                string sql_getInvoiceID = $"SELECT max(i.InvoiceID) as IID,WarehouseID FROM Invoice i inner join ActualQuantityDespatched a on i.InvoiceID = a.InvoiceID where WarehouseID = {respent_warehouse} and OrderSerial = '{OrderSerial}' group by WarehouseID;";
+                using (var reader = Main.db.readBySql(sql_getInvoiceID))
+                {
+                    reader.Read();
+                    respent_InvoiceID = reader["IID"].ToString();
+                }
             }
 
             string sql = $"SELECT InvoiceID FROM Invoice where OrderSerial = '{OrderSerial}';";
@@ -82,14 +97,14 @@ namespace WindowsFormsApp
 
         private void btnInvoice_Click(object sender, EventArgs e)
         {
-            // if staff click: show invoice
-            (this.ParentForm as Main)?.Change_pContent(typeof(frmInvoice));
-            // if dealer click: print invoice
+            frmInvoice frm = new frmInvoice(respent_warehouse, respent_InvoiceID);
+            (this.ParentForm as Main)?.Change_pContent(frm);
         }
 
         private void btnDISet_Click(object sender, EventArgs e)
         {
-            (this.ParentForm as Main)?.Change_pContent(typeof(frmDISet));
+            frmDISet frm = new frmDISet(respent_warehouse,respent_InvoiceID);
+            (this.ParentForm as Main)?.Change_pContent(frm);
         }
 
         private void btnOrderItemDetail_Click(object sender, EventArgs e)

@@ -42,13 +42,13 @@
             this.txtDELIVERYADDRESS = new System.Windows.Forms.TextBox();
             this.lblDELIVERYADDRESS = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtDate = new System.Windows.Forms.TextBox();
             this.lblDATE = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.txtYOURORDERNO = new System.Windows.Forms.TextBox();
             this.lblYOURORDERNO = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtOURORDERTO = new System.Windows.Forms.TextBox();
+            this.txtOURORDERNO = new System.Windows.Forms.TextBox();
             this.lblOURORDERTO = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.txtDEALERCODE = new System.Windows.Forms.TextBox();
@@ -113,7 +113,9 @@
             // 
             // txtDespatchForeman
             // 
-            this.txtDespatchForeman.BackColor = System.Drawing.SystemColors.Info;
+            this.txtDespatchForeman.BackColor = System.Drawing.SystemColors.Control;
+            this.txtDespatchForeman.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDespatchForeman.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtDespatchForeman.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtDespatchForeman.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtDespatchForeman.Location = new System.Drawing.Point(3, 52);
@@ -154,7 +156,9 @@
             // 
             // txtTotalWeight
             // 
-            this.txtTotalWeight.BackColor = System.Drawing.SystemColors.Info;
+            this.txtTotalWeight.BackColor = System.Drawing.SystemColors.Control;
+            this.txtTotalWeight.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotalWeight.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtTotalWeight.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtTotalWeight.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtTotalWeight.Location = new System.Drawing.Point(3, 52);
@@ -181,6 +185,7 @@
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel4, 2);
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.Controls.Add(this.txtINVOICEADDRESS, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.lblINVOICEADDRESS, 0, 0);
@@ -190,19 +195,21 @@
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(413, 96);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(832, 96);
             this.tableLayoutPanel4.TabIndex = 85;
             // 
             // txtINVOICEADDRESS
             // 
-            this.txtINVOICEADDRESS.BackColor = System.Drawing.SystemColors.Info;
+            this.txtINVOICEADDRESS.BackColor = System.Drawing.SystemColors.Control;
+            this.txtINVOICEADDRESS.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtINVOICEADDRESS.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtINVOICEADDRESS.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtINVOICEADDRESS.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtINVOICEADDRESS.Location = new System.Drawing.Point(3, 51);
             this.txtINVOICEADDRESS.Multiline = true;
             this.txtINVOICEADDRESS.Name = "txtINVOICEADDRESS";
             this.txtINVOICEADDRESS.ReadOnly = true;
-            this.txtINVOICEADDRESS.Size = new System.Drawing.Size(407, 42);
+            this.txtINVOICEADDRESS.Size = new System.Drawing.Size(826, 42);
             this.txtINVOICEADDRESS.TabIndex = 47;
             // 
             // lblINVOICEADDRESS
@@ -215,13 +222,14 @@
             this.lblINVOICEADDRESS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblINVOICEADDRESS.Location = new System.Drawing.Point(3, 0);
             this.lblINVOICEADDRESS.Name = "lblINVOICEADDRESS";
-            this.lblINVOICEADDRESS.Size = new System.Drawing.Size(407, 48);
+            this.lblINVOICEADDRESS.Size = new System.Drawing.Size(826, 48);
             this.lblINVOICEADDRESS.TabIndex = 50;
             this.lblINVOICEADDRESS.Text = "INVOICE ADDRESS:";
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel2, 2);
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.txtDELIVERYADDRESS, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lblDELIVERYADDRESS, 0, 0);
@@ -231,19 +239,21 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(413, 96);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(834, 96);
             this.tableLayoutPanel2.TabIndex = 86;
             // 
             // txtDELIVERYADDRESS
             // 
-            this.txtDELIVERYADDRESS.BackColor = System.Drawing.SystemColors.Info;
+            this.txtDELIVERYADDRESS.BackColor = System.Drawing.SystemColors.Control;
+            this.txtDELIVERYADDRESS.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDELIVERYADDRESS.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtDELIVERYADDRESS.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtDELIVERYADDRESS.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtDELIVERYADDRESS.Location = new System.Drawing.Point(3, 51);
             this.txtDELIVERYADDRESS.Multiline = true;
             this.txtDELIVERYADDRESS.Name = "txtDELIVERYADDRESS";
             this.txtDELIVERYADDRESS.ReadOnly = true;
-            this.txtDELIVERYADDRESS.Size = new System.Drawing.Size(407, 42);
+            this.txtDELIVERYADDRESS.Size = new System.Drawing.Size(828, 42);
             this.txtDELIVERYADDRESS.TabIndex = 47;
             // 
             // lblDELIVERYADDRESS
@@ -256,7 +266,7 @@
             this.lblDELIVERYADDRESS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDELIVERYADDRESS.Location = new System.Drawing.Point(3, 0);
             this.lblDELIVERYADDRESS.Name = "lblDELIVERYADDRESS";
-            this.lblDELIVERYADDRESS.Size = new System.Drawing.Size(407, 48);
+            this.lblDELIVERYADDRESS.Size = new System.Drawing.Size(828, 48);
             this.lblDELIVERYADDRESS.TabIndex = 50;
             this.lblDELIVERYADDRESS.Text = "DELIVERY ADDRESS (IF DIFFERENT) (PER):";
             // 
@@ -264,7 +274,7 @@
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.textBox2, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.txtDate, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.lblDATE, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 105);
@@ -276,17 +286,19 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(413, 96);
             this.tableLayoutPanel3.TabIndex = 87;
             // 
-            // textBox2
+            // txtDate
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox2.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox2.Location = new System.Drawing.Point(3, 51);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(407, 42);
-            this.textBox2.TabIndex = 47;
+            this.txtDate.BackColor = System.Drawing.SystemColors.Control;
+            this.txtDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDate.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.txtDate.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtDate.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtDate.Location = new System.Drawing.Point(3, 51);
+            this.txtDate.Multiline = true;
+            this.txtDate.Name = "txtDate";
+            this.txtDate.ReadOnly = true;
+            this.txtDate.Size = new System.Drawing.Size(407, 42);
+            this.txtDate.TabIndex = 47;
             // 
             // lblDATE
             // 
@@ -319,7 +331,9 @@
             // 
             // txtYOURORDERNO
             // 
-            this.txtYOURORDERNO.BackColor = System.Drawing.SystemColors.Info;
+            this.txtYOURORDERNO.BackColor = System.Drawing.SystemColors.Control;
+            this.txtYOURORDERNO.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtYOURORDERNO.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtYOURORDERNO.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtYOURORDERNO.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtYOURORDERNO.Location = new System.Drawing.Point(3, 51);
@@ -347,7 +361,7 @@
             // 
             this.tableLayoutPanel6.ColumnCount = 1;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Controls.Add(this.txtOURORDERTO, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.txtOURORDERNO, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.lblOURORDERTO, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(841, 105);
@@ -358,17 +372,19 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(413, 96);
             this.tableLayoutPanel6.TabIndex = 89;
             // 
-            // txtOURORDERTO
+            // txtOURORDERNO
             // 
-            this.txtOURORDERTO.BackColor = System.Drawing.SystemColors.Info;
-            this.txtOURORDERTO.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtOURORDERTO.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtOURORDERTO.Location = new System.Drawing.Point(3, 51);
-            this.txtOURORDERTO.Multiline = true;
-            this.txtOURORDERTO.Name = "txtOURORDERTO";
-            this.txtOURORDERTO.ReadOnly = true;
-            this.txtOURORDERTO.Size = new System.Drawing.Size(407, 42);
-            this.txtOURORDERTO.TabIndex = 47;
+            this.txtOURORDERNO.BackColor = System.Drawing.SystemColors.Control;
+            this.txtOURORDERNO.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtOURORDERNO.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.txtOURORDERNO.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtOURORDERNO.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtOURORDERNO.Location = new System.Drawing.Point(3, 51);
+            this.txtOURORDERNO.Multiline = true;
+            this.txtOURORDERNO.Name = "txtOURORDERNO";
+            this.txtOURORDERNO.ReadOnly = true;
+            this.txtOURORDERNO.Size = new System.Drawing.Size(407, 42);
+            this.txtOURORDERNO.TabIndex = 47;
             // 
             // lblOURORDERTO
             // 
@@ -382,7 +398,7 @@
             this.lblOURORDERTO.Name = "lblOURORDERTO";
             this.lblOURORDERTO.Size = new System.Drawing.Size(407, 48);
             this.lblOURORDERTO.TabIndex = 50;
-            this.lblOURORDERTO.Text = "OUR ORDER TO:";
+            this.lblOURORDERTO.Text = "OUR ORDER NO:";
             // 
             // tableLayoutPanel7
             // 
@@ -401,7 +417,9 @@
             // 
             // txtDEALERCODE
             // 
-            this.txtDEALERCODE.BackColor = System.Drawing.SystemColors.Info;
+            this.txtDEALERCODE.BackColor = System.Drawing.SystemColors.Control;
+            this.txtDEALERCODE.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDEALERCODE.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtDEALERCODE.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtDEALERCODE.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtDEALERCODE.Location = new System.Drawing.Point(3, 51);
@@ -429,6 +447,9 @@
             // 
             this.dgvInvoice.AllowUserToAddRows = false;
             this.dgvInvoice.AllowUserToDeleteRows = false;
+            this.dgvInvoice.AllowUserToOrderColumns = true;
+            this.dgvInvoice.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvInvoice.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvInvoice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel1.SetColumnSpan(this.dgvInvoice, 4);
             this.dgvInvoice.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -499,13 +520,13 @@
         private System.Windows.Forms.TextBox txtDELIVERYADDRESS;
         private System.Windows.Forms.Label lblDELIVERYADDRESS;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDate;
         private System.Windows.Forms.Label lblDATE;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.TextBox txtYOURORDERNO;
         private System.Windows.Forms.Label lblYOURORDERNO;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.TextBox txtOURORDERTO;
+        private System.Windows.Forms.TextBox txtOURORDERNO;
         private System.Windows.Forms.Label lblOURORDERTO;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TextBox txtDEALERCODE;

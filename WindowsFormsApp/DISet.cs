@@ -12,8 +12,12 @@ namespace WindowsFormsApp
 {
     public partial class frmDISet : Form
     {
-        public frmDISet()
+        int warehouseID;
+        String InvoiceID;
+        public frmDISet(int respent_warehouse, String respent_InvoiceID)
         {
+            this.warehouseID = respent_warehouse;
+            this.InvoiceID = respent_InvoiceID;
             InitializeComponent();
         }
 

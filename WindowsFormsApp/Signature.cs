@@ -17,10 +17,12 @@ namespace WindowsFormsApp
 {
     public partial class frmSignature : Form
     {
-        string InvoiceID = "202405240000011";
+        string InvoiceID, OrderSerial;
 
-        public frmSignature()
+        public frmSignature(string InvoiceID, string OrderSerial)
         {
+            this.InvoiceID = InvoiceID;
+            this.OrderSerial = OrderSerial;
             InitializeComponent();
         }
 
@@ -80,6 +82,51 @@ namespace WindowsFormsApp
             }
             string sql = $"UPDATE `Invoice` SET `CompleteState` = 'S' WHERE (`InvoiceID` = '{InvoiceID}');";
             Main.db.updateBySql(sql);
+            // Check if any record in OrderItemToFollow table has OrderSerial equal to this.OrderSerial
+            List<string> Followingstates = new List<string>();
+
+            sql = $"SELECT State FROM OrderItemToFollow WHERE OrderSerial = '{OrderSerial}'";
+
+            using (var command = new MySqlCommand(sql, Main.db.get_dbconnect()))
+            {
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        string state = reader.GetString("State");
+                        Followingstates.Add(state);
+                    }
+                }
+            }
+            int shippingInvoice=0;
+            sql = $"SELECT COUNT(*) FROM Invoice WHERE CompleteState = 'C' AND OrderSerial = '{OrderSerial}'";
+            using (var command = new MySqlCommand(sql, Main.db.get_dbconnect()))
+            {
+                shippingInvoice = Convert.ToInt32(command.ExecuteScalar());
+            }
+
+            string updateState;
+            if (Followingstates.Count == 0 && shippingInvoice==0)
+            {
+                updateState = "F";
+            }
+            else if (shippingInvoice!=0) {
+                updateState = "T";
+            }
+            else if (Followingstates.Contains("W"))
+            {
+                updateState = "W";
+            }else if (Followingstates.Contains("U"))
+            {
+                updateState = "U";
+            }
+            else
+            {
+                throw new Exception("Unknown state");
+            }
+            sql = $"UPDATE `Order` SET `State` = '{updateState}' WHERE (`OrderSerial` = '{OrderSerial}');";
+            Main.db.updateBySql(sql);
+
             Main.ShowMessage("success");
             (this.ParentForm as Main)?.goBack();
 

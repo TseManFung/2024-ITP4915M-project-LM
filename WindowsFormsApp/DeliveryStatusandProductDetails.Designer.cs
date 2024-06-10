@@ -38,6 +38,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblItems = new System.Windows.Forms.Label();
             this.lblRelatedspare = new System.Windows.Forms.Label();
+            this.btnInvoice = new System.Windows.Forms.Button();
             this.tableLayoutPanelDeliveryStatusandProductDetails.SuspendLayout();
             this.groupBoxStatus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRelatedSpareItem)).BeginInit();
@@ -100,7 +101,6 @@
             this.dgvRelatedSpareItem.Name = "dgvRelatedSpareItem";
             this.dgvRelatedSpareItem.ReadOnly = true;
             this.dgvRelatedSpareItem.RowTemplate.Height = 24;
-            this.dgvRelatedSpareItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvRelatedSpareItem.ShowCellToolTips = false;
             this.dgvRelatedSpareItem.ShowEditingIcon = false;
             this.dgvRelatedSpareItem.Size = new System.Drawing.Size(370, 139);
@@ -168,12 +168,25 @@
             this.lblRelatedspare.TabIndex = 3;
             this.lblRelatedspare.Text = "Related Spare(s):";
             // 
+            // btnInvoice
+            // 
+            this.btnInvoice.Font = new System.Drawing.Font("PMingLiU", 24F);
+            this.btnInvoice.Location = new System.Drawing.Point(224, 430);
+            this.btnInvoice.Name = "btnInvoice";
+            this.btnInvoice.Size = new System.Drawing.Size(158, 44);
+            this.btnInvoice.TabIndex = 52;
+            this.btnInvoice.Text = "Invoice";
+            this.btnInvoice.UseVisualStyleBackColor = true;
+            this.btnInvoice.Visible = false;
+            this.btnInvoice.Click += new System.EventHandler(this.btnInvoice_Click);
+            // 
             // frmDeliveryStatusandProductDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(400, 435);
+            this.ClientSize = new System.Drawing.Size(400, 481);
+            this.Controls.Add(this.btnInvoice);
             this.Controls.Add(this.tableLayoutPanelDeliveryStatusandProductDetails);
             this.Name = "frmDeliveryStatusandProductDetails";
             this.Text = "DeliveryStatusandProductDetails";
@@ -203,5 +216,6 @@
         private System.Windows.Forms.DataGridView dgvRelatedSpareItem;
         private System.Windows.Forms.Label lblItems;
         private System.Windows.Forms.Label lblState;
+        private System.Windows.Forms.Button btnInvoice;
     }
 }
