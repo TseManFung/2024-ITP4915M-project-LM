@@ -80,7 +80,7 @@
             // 
             this.lblState.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblState.AutoSize = true;
-            this.lblState.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblState.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblState.Location = new System.Drawing.Point(6, 18);
             this.lblState.Name = "lblState";
             this.lblState.Size = new System.Drawing.Size(73, 32);
@@ -89,11 +89,20 @@
             // 
             // dgvRelatedSpareItem
             // 
+            this.dgvRelatedSpareItem.AllowUserToAddRows = false;
+            this.dgvRelatedSpareItem.AllowUserToDeleteRows = false;
+            this.dgvRelatedSpareItem.AllowUserToOrderColumns = true;
+            this.dgvRelatedSpareItem.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvRelatedSpareItem.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvRelatedSpareItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRelatedSpareItem.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvRelatedSpareItem.Location = new System.Drawing.Point(3, 270);
             this.dgvRelatedSpareItem.Name = "dgvRelatedSpareItem";
+            this.dgvRelatedSpareItem.ReadOnly = true;
             this.dgvRelatedSpareItem.RowTemplate.Height = 24;
+            this.dgvRelatedSpareItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvRelatedSpareItem.ShowCellToolTips = false;
+            this.dgvRelatedSpareItem.ShowEditingIcon = false;
             this.dgvRelatedSpareItem.Size = new System.Drawing.Size(370, 139);
             this.dgvRelatedSpareItem.TabIndex = 6;
             // 
@@ -122,7 +131,7 @@
             // 
             this.lblDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblDate.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblDate.Location = new System.Drawing.Point(6, 29);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(120, 32);
@@ -168,6 +177,7 @@
             this.Controls.Add(this.tableLayoutPanelDeliveryStatusandProductDetails);
             this.Name = "frmDeliveryStatusandProductDetails";
             this.Text = "DeliveryStatusandProductDetails";
+            this.Load += new System.EventHandler(this.frmDeliveryStatusandProductDetails_Load);
             this.tableLayoutPanelDeliveryStatusandProductDetails.ResumeLayout(false);
             this.tableLayoutPanelDeliveryStatusandProductDetails.PerformLayout();
             this.groupBoxStatus.ResumeLayout(false);

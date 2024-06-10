@@ -152,7 +152,7 @@
             this.BtnDIset.Text = "DI set";
             this.BtnDIset.UseVisualStyleBackColor = true;
             this.BtnDIset.Visible = false;
-            this.BtnDIset.Click += new System.EventHandler(this.button2_Click);
+            this.BtnDIset.Click += new System.EventHandler(this.btnDISet_Click);
             // 
             // txtOrderID
             // 
@@ -192,7 +192,7 @@
             this.btnItem.TabIndex = 24;
             this.btnItem.Text = "Item Detail";
             this.btnItem.UseVisualStyleBackColor = true;
-            this.btnItem.Click += new System.EventHandler(this.button1_Click);
+            this.btnItem.Click += new System.EventHandler(this.btnOrderItemDetail_Click);
             // 
             // btnInvoice
             // 

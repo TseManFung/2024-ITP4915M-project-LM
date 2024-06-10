@@ -42,9 +42,9 @@ namespace WindowsFormsApp
             reader.Close();
         }
 
-        private void CreateDelivaryDetail()
+        private void CreateDelivaryDetail(String InvoiceID)
         {
-            frmDeliveryStatusandProductDetails frm = new frmDeliveryStatusandProductDetails();
+            frmDeliveryStatusandProductDetails frm = new frmDeliveryStatusandProductDetails(InvoiceID, State);
             frm.TopLevel = false;
             frm.TopMost = true;
             frm.Anchor = AnchorStyles.None;
@@ -65,7 +65,19 @@ namespace WindowsFormsApp
                btnInvoice.Visible = true;
             }
 
-            CreateDelivaryDetail();
+            string sql = $"SELECT InvoiceID FROM Invoice where OrderSerial = '{OrderSerial}';";
+            List<string> ListInvoiceID = new List<string>();
+            using (var reader = Main.db.readBySql(sql))
+            {
+                while (reader.Read())
+                {
+                    ListInvoiceID.Add(reader["InvoiceID"].ToString());
+                }
+            }
+            foreach (var InvoiceID in ListInvoiceID)
+            {
+                CreateDelivaryDetail(InvoiceID);
+            }
         }
 
         private void btnInvoice_Click(object sender, EventArgs e)
@@ -75,12 +87,12 @@ namespace WindowsFormsApp
             // if dealer click: print invoice
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnDISet_Click(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmDISet));
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnOrderItemDetail_Click(object sender, EventArgs e)
         {
             OrderItemDetail frm = new OrderItemDetail(OrderSerial);
             frm.Text += $"{OrderSerial}";

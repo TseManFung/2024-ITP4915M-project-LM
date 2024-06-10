@@ -115,7 +115,7 @@
             // 
             this.txtDespatchForeman.BackColor = System.Drawing.SystemColors.Info;
             this.txtDespatchForeman.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtDespatchForeman.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtDespatchForeman.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtDespatchForeman.Location = new System.Drawing.Point(3, 52);
             this.txtDespatchForeman.Multiline = true;
             this.txtDespatchForeman.Name = "txtDespatchForeman";
@@ -129,7 +129,7 @@
             this.lblDespatchForeman.BackColor = System.Drawing.SystemColors.Control;
             this.lblDespatchForeman.CausesValidation = false;
             this.lblDespatchForeman.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDespatchForeman.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblDespatchForeman.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblDespatchForeman.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDespatchForeman.Location = new System.Drawing.Point(3, 0);
             this.lblDespatchForeman.Name = "lblDespatchForeman";
@@ -156,7 +156,7 @@
             // 
             this.txtTotalWeight.BackColor = System.Drawing.SystemColors.Info;
             this.txtTotalWeight.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtTotalWeight.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtTotalWeight.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtTotalWeight.Location = new System.Drawing.Point(3, 52);
             this.txtTotalWeight.Multiline = true;
             this.txtTotalWeight.Name = "txtTotalWeight";
@@ -170,7 +170,7 @@
             this.lblTotalWeight.BackColor = System.Drawing.SystemColors.Control;
             this.lblTotalWeight.CausesValidation = false;
             this.lblTotalWeight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTotalWeight.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblTotalWeight.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblTotalWeight.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblTotalWeight.Location = new System.Drawing.Point(3, 0);
             this.lblTotalWeight.Name = "lblTotalWeight";
@@ -197,7 +197,7 @@
             // 
             this.txtINVOICEADDRESS.BackColor = System.Drawing.SystemColors.Info;
             this.txtINVOICEADDRESS.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtINVOICEADDRESS.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtINVOICEADDRESS.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtINVOICEADDRESS.Location = new System.Drawing.Point(3, 51);
             this.txtINVOICEADDRESS.Multiline = true;
             this.txtINVOICEADDRESS.Name = "txtINVOICEADDRESS";
@@ -211,7 +211,7 @@
             this.lblINVOICEADDRESS.BackColor = System.Drawing.SystemColors.Control;
             this.lblINVOICEADDRESS.CausesValidation = false;
             this.lblINVOICEADDRESS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblINVOICEADDRESS.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblINVOICEADDRESS.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblINVOICEADDRESS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblINVOICEADDRESS.Location = new System.Drawing.Point(3, 0);
             this.lblINVOICEADDRESS.Name = "lblINVOICEADDRESS";
@@ -238,7 +238,7 @@
             // 
             this.txtDELIVERYADDRESS.BackColor = System.Drawing.SystemColors.Info;
             this.txtDELIVERYADDRESS.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtDELIVERYADDRESS.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtDELIVERYADDRESS.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtDELIVERYADDRESS.Location = new System.Drawing.Point(3, 51);
             this.txtDELIVERYADDRESS.Multiline = true;
             this.txtDELIVERYADDRESS.Name = "txtDELIVERYADDRESS";
@@ -252,7 +252,7 @@
             this.lblDELIVERYADDRESS.BackColor = System.Drawing.SystemColors.Control;
             this.lblDELIVERYADDRESS.CausesValidation = false;
             this.lblDELIVERYADDRESS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDELIVERYADDRESS.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblDELIVERYADDRESS.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblDELIVERYADDRESS.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDELIVERYADDRESS.Location = new System.Drawing.Point(3, 0);
             this.lblDELIVERYADDRESS.Name = "lblDELIVERYADDRESS";
@@ -280,7 +280,7 @@
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.Info;
             this.textBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox2.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox2.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.textBox2.Location = new System.Drawing.Point(3, 51);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -294,7 +294,7 @@
             this.lblDATE.BackColor = System.Drawing.SystemColors.Control;
             this.lblDATE.CausesValidation = false;
             this.lblDATE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDATE.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblDATE.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblDATE.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDATE.Location = new System.Drawing.Point(3, 0);
             this.lblDATE.Name = "lblDATE";
@@ -321,7 +321,7 @@
             // 
             this.txtYOURORDERNO.BackColor = System.Drawing.SystemColors.Info;
             this.txtYOURORDERNO.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtYOURORDERNO.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtYOURORDERNO.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtYOURORDERNO.Location = new System.Drawing.Point(3, 51);
             this.txtYOURORDERNO.Multiline = true;
             this.txtYOURORDERNO.Name = "txtYOURORDERNO";
@@ -335,7 +335,7 @@
             this.lblYOURORDERNO.BackColor = System.Drawing.SystemColors.Control;
             this.lblYOURORDERNO.CausesValidation = false;
             this.lblYOURORDERNO.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblYOURORDERNO.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblYOURORDERNO.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblYOURORDERNO.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblYOURORDERNO.Location = new System.Drawing.Point(3, 0);
             this.lblYOURORDERNO.Name = "lblYOURORDERNO";
@@ -362,7 +362,7 @@
             // 
             this.txtOURORDERTO.BackColor = System.Drawing.SystemColors.Info;
             this.txtOURORDERTO.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtOURORDERTO.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtOURORDERTO.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtOURORDERTO.Location = new System.Drawing.Point(3, 51);
             this.txtOURORDERTO.Multiline = true;
             this.txtOURORDERTO.Name = "txtOURORDERTO";
@@ -376,7 +376,7 @@
             this.lblOURORDERTO.BackColor = System.Drawing.SystemColors.Control;
             this.lblOURORDERTO.CausesValidation = false;
             this.lblOURORDERTO.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblOURORDERTO.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblOURORDERTO.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblOURORDERTO.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblOURORDERTO.Location = new System.Drawing.Point(3, 0);
             this.lblOURORDERTO.Name = "lblOURORDERTO";
@@ -403,7 +403,7 @@
             // 
             this.txtDEALERCODE.BackColor = System.Drawing.SystemColors.Info;
             this.txtDEALERCODE.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtDEALERCODE.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtDEALERCODE.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtDEALERCODE.Location = new System.Drawing.Point(3, 51);
             this.txtDEALERCODE.Multiline = true;
             this.txtDEALERCODE.Name = "txtDEALERCODE";
@@ -417,7 +417,7 @@
             this.lblDEALERCODE.BackColor = System.Drawing.SystemColors.Control;
             this.lblDEALERCODE.CausesValidation = false;
             this.lblDEALERCODE.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDEALERCODE.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblDEALERCODE.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblDEALERCODE.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDEALERCODE.Location = new System.Drawing.Point(3, 0);
             this.lblDEALERCODE.Name = "lblDEALERCODE";
@@ -443,7 +443,7 @@
             // btnSign
             // 
             this.btnSign.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSign.Font = new System.Drawing.Font("新細明體", 24F);
+            this.btnSign.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.btnSign.Location = new System.Drawing.Point(1260, 411);
             this.btnSign.Name = "btnSign";
             this.btnSign.Size = new System.Drawing.Size(415, 99);
@@ -460,6 +460,8 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmInvoice";
             this.Text = "Invoice";
+            this.Load += new System.EventHandler(this.frmInvoice_Load);
+            this.Resize += new System.EventHandler(this.frmInvoice_Resize);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();

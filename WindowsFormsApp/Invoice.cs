@@ -14,5 +14,15 @@ namespace WindowsFormsApp
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmSignature));
         }
+
+        private void frmInvoice_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmInvoice_Resize(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.ResizeControlsFont(this);
+        }
     }
 }
