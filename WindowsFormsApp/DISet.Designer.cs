@@ -349,6 +349,7 @@
             this.btnExportasPDF.TabIndex = 92;
             this.btnExportasPDF.Text = "Export as PDF";
             this.btnExportasPDF.UseVisualStyleBackColor = true;
+            this.btnExportasPDF.Click += new System.EventHandler(this.btnExportasPDF_Click);
             // 
             // flowLayoutPanel1
             // 

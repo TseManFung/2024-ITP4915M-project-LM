@@ -92,7 +92,7 @@ namespace WindowsFormsApp
 
             // Print SpareName and SpareID
             DataRowView drv = (DataRowView)comboBoxSpareID.SelectedItem;
-            string spareID = drv["SpareID"].ToString(),spareName = drv["SpareName"].ToString() ;
+            string spareID = drv["SpareID"].ToString(),spareName = drv["SpareName"].ToString();
 
             // Set the font and brush for drawing text
             Font font = new Font("Arial", 12, FontStyle.Regular);

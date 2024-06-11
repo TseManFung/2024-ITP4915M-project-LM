@@ -47,9 +47,6 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.txtOrderQuantity = new System.Windows.Forms.TextBox();
             this.lblOrderQuantity = new System.Windows.Forms.Label();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblTo = new System.Windows.Forms.Label();
-            this.lblFrom = new System.Windows.Forms.Label();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.txtPreviousOutstanding = new System.Windows.Forms.TextBox();
             this.lblPreviousOutstanding = new System.Windows.Forms.Label();
@@ -59,9 +56,6 @@
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.txtActualQuantityDespatched = new System.Windows.Forms.TextBox();
             this.lblActualQuantityDespatched = new System.Windows.Forms.Label();
-            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtOrderSerial2 = new System.Windows.Forms.TextBox();
-            this.lblOrderSerial2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.txtToFollow = new System.Windows.Forms.TextBox();
             this.lblToFollow = new System.Windows.Forms.Label();
@@ -78,11 +72,9 @@
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
-            this.tableLayoutPanel11.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
             this.tableLayoutPanel13.SuspendLayout();
             this.tableLayoutPanel14.SuspendLayout();
@@ -101,14 +93,12 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel7, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel8, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel9, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel10, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel11, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel12, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel13, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel14, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel9, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel13, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -138,9 +128,11 @@
             // 
             // txtWeight
             // 
-            this.txtWeight.BackColor = System.Drawing.SystemColors.Info;
+            this.txtWeight.BackColor = System.Drawing.SystemColors.Window;
+            this.txtWeight.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtWeight.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtWeight.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtWeight.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtWeight.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtWeight.Location = new System.Drawing.Point(3, 57);
             this.txtWeight.Multiline = true;
             this.txtWeight.Name = "txtWeight";
@@ -154,7 +146,7 @@
             this.lblWeight.BackColor = System.Drawing.SystemColors.Window;
             this.lblWeight.CausesValidation = false;
             this.lblWeight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblWeight.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblWeight.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblWeight.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblWeight.Location = new System.Drawing.Point(3, 0);
             this.lblWeight.Name = "lblWeight";
@@ -179,9 +171,11 @@
             // 
             // txtDate
             // 
-            this.txtDate.BackColor = System.Drawing.SystemColors.Info;
+            this.txtDate.BackColor = System.Drawing.SystemColors.Window;
+            this.txtDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDate.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtDate.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtDate.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtDate.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtDate.Location = new System.Drawing.Point(3, 56);
             this.txtDate.Multiline = true;
             this.txtDate.Name = "txtDate";
@@ -195,7 +189,7 @@
             this.lblDate.BackColor = System.Drawing.SystemColors.Window;
             this.lblDate.CausesValidation = false;
             this.lblDate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDate.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblDate.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblDate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDate.Location = new System.Drawing.Point(3, 0);
             this.lblDate.Name = "lblDate";
@@ -220,9 +214,11 @@
             // 
             // txtOrderSerial
             // 
-            this.txtOrderSerial.BackColor = System.Drawing.SystemColors.Info;
+            this.txtOrderSerial.BackColor = System.Drawing.SystemColors.Window;
+            this.txtOrderSerial.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtOrderSerial.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtOrderSerial.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtOrderSerial.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtOrderSerial.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtOrderSerial.Location = new System.Drawing.Point(3, 56);
             this.txtOrderSerial.Multiline = true;
             this.txtOrderSerial.Name = "txtOrderSerial";
@@ -236,7 +232,7 @@
             this.lblOrderSerial.BackColor = System.Drawing.SystemColors.Window;
             this.lblOrderSerial.CausesValidation = false;
             this.lblOrderSerial.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblOrderSerial.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblOrderSerial.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblOrderSerial.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblOrderSerial.Location = new System.Drawing.Point(3, 0);
             this.lblOrderSerial.Name = "lblOrderSerial";
@@ -261,9 +257,11 @@
             // 
             // txtDealerCode
             // 
-            this.txtDealerCode.BackColor = System.Drawing.SystemColors.Info;
+            this.txtDealerCode.BackColor = System.Drawing.SystemColors.Window;
+            this.txtDealerCode.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDealerCode.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtDealerCode.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtDealerCode.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtDealerCode.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtDealerCode.Location = new System.Drawing.Point(3, 56);
             this.txtDealerCode.Multiline = true;
             this.txtDealerCode.Name = "txtDealerCode";
@@ -277,7 +275,7 @@
             this.lblDealerCode.BackColor = System.Drawing.SystemColors.Window;
             this.lblDealerCode.CausesValidation = false;
             this.lblDealerCode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDealerCode.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblDealerCode.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblDealerCode.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDealerCode.Location = new System.Drawing.Point(3, 0);
             this.lblDealerCode.Name = "lblDealerCode";
@@ -302,9 +300,11 @@
             // 
             // txtPartNumber
             // 
-            this.txtPartNumber.BackColor = System.Drawing.SystemColors.Info;
+            this.txtPartNumber.BackColor = System.Drawing.SystemColors.Window;
+            this.txtPartNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPartNumber.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtPartNumber.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtPartNumber.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtPartNumber.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtPartNumber.Location = new System.Drawing.Point(3, 56);
             this.txtPartNumber.Multiline = true;
             this.txtPartNumber.Name = "txtPartNumber";
@@ -318,7 +318,7 @@
             this.lblPartNumber.BackColor = System.Drawing.SystemColors.Window;
             this.lblPartNumber.CausesValidation = false;
             this.lblPartNumber.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblPartNumber.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblPartNumber.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblPartNumber.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblPartNumber.Location = new System.Drawing.Point(3, 0);
             this.lblPartNumber.Name = "lblPartNumber";
@@ -343,9 +343,11 @@
             // 
             // txtOrderQuantity
             // 
-            this.txtOrderQuantity.BackColor = System.Drawing.SystemColors.Info;
+            this.txtOrderQuantity.BackColor = System.Drawing.SystemColors.Window;
+            this.txtOrderQuantity.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtOrderQuantity.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtOrderQuantity.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtOrderQuantity.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtOrderQuantity.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtOrderQuantity.Location = new System.Drawing.Point(3, 56);
             this.txtOrderQuantity.Multiline = true;
             this.txtOrderQuantity.Name = "txtOrderQuantity";
@@ -359,56 +361,13 @@
             this.lblOrderQuantity.BackColor = System.Drawing.SystemColors.Window;
             this.lblOrderQuantity.CausesValidation = false;
             this.lblOrderQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblOrderQuantity.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblOrderQuantity.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblOrderQuantity.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblOrderQuantity.Location = new System.Drawing.Point(3, 0);
             this.lblOrderQuantity.Name = "lblOrderQuantity";
             this.lblOrderQuantity.Size = new System.Drawing.Size(396, 53);
             this.lblOrderQuantity.TabIndex = 50;
             this.lblOrderQuantity.Text = "Order Quantity:";
-            // 
-            // tableLayoutPanel7
-            // 
-            this.tableLayoutPanel7.ColumnCount = 1;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.Controls.Add(this.lblTo, 0, 1);
-            this.tableLayoutPanel7.Controls.Add(this.lblFrom, 0, 0);
-            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(815, 3);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 2;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(402, 107);
-            this.tableLayoutPanel7.TabIndex = 90;
-            // 
-            // lblTo
-            // 
-            this.lblTo.AutoSize = true;
-            this.lblTo.BackColor = System.Drawing.SystemColors.Window;
-            this.lblTo.CausesValidation = false;
-            this.lblTo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTo.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblTo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTo.Location = new System.Drawing.Point(3, 53);
-            this.lblTo.Name = "lblTo";
-            this.lblTo.Size = new System.Drawing.Size(396, 54);
-            this.lblTo.TabIndex = 51;
-            this.lblTo.Text = "To: <<Spare Parts Stores>>";
-            // 
-            // lblFrom
-            // 
-            this.lblFrom.AutoSize = true;
-            this.lblFrom.BackColor = System.Drawing.SystemColors.Window;
-            this.lblFrom.CausesValidation = false;
-            this.lblFrom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblFrom.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblFrom.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblFrom.Location = new System.Drawing.Point(3, 0);
-            this.lblFrom.Name = "lblFrom";
-            this.lblFrom.Size = new System.Drawing.Size(396, 53);
-            this.lblFrom.TabIndex = 50;
-            this.lblFrom.Text = "From: Sales Office";
             // 
             // tableLayoutPanel8
             // 
@@ -427,9 +386,11 @@
             // 
             // txtPreviousOutstanding
             // 
-            this.txtPreviousOutstanding.BackColor = System.Drawing.SystemColors.Info;
+            this.txtPreviousOutstanding.BackColor = System.Drawing.SystemColors.Window;
+            this.txtPreviousOutstanding.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPreviousOutstanding.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtPreviousOutstanding.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtPreviousOutstanding.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtPreviousOutstanding.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtPreviousOutstanding.Location = new System.Drawing.Point(3, 56);
             this.txtPreviousOutstanding.Multiline = true;
             this.txtPreviousOutstanding.Name = "txtPreviousOutstanding";
@@ -443,7 +404,7 @@
             this.lblPreviousOutstanding.BackColor = System.Drawing.SystemColors.Window;
             this.lblPreviousOutstanding.CausesValidation = false;
             this.lblPreviousOutstanding.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblPreviousOutstanding.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblPreviousOutstanding.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblPreviousOutstanding.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblPreviousOutstanding.Location = new System.Drawing.Point(3, 0);
             this.lblPreviousOutstanding.Name = "lblPreviousOutstanding";
@@ -457,20 +418,22 @@
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel9.Controls.Add(this.txtTotaltoDespatach, 0, 1);
             this.tableLayoutPanel9.Controls.Add(this.lblTotaltoDespatach, 0, 0);
-            this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(409, 229);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(815, 455);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 2;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel9.Size = new System.Drawing.Size(400, 107);
             this.tableLayoutPanel9.TabIndex = 92;
+            this.tableLayoutPanel9.Visible = false;
             // 
             // txtTotaltoDespatach
             // 
-            this.txtTotaltoDespatach.BackColor = System.Drawing.SystemColors.Info;
+            this.txtTotaltoDespatach.BackColor = System.Drawing.SystemColors.Window;
+            this.txtTotaltoDespatach.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotaltoDespatach.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtTotaltoDespatach.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtTotaltoDespatach.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtTotaltoDespatach.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtTotaltoDespatach.Location = new System.Drawing.Point(3, 56);
             this.txtTotaltoDespatach.Multiline = true;
             this.txtTotaltoDespatach.Name = "txtTotaltoDespatach";
@@ -484,7 +447,7 @@
             this.lblTotaltoDespatach.BackColor = System.Drawing.SystemColors.Window;
             this.lblTotaltoDespatach.CausesValidation = false;
             this.lblTotaltoDespatach.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTotaltoDespatach.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblTotaltoDespatach.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblTotaltoDespatach.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblTotaltoDespatach.Location = new System.Drawing.Point(3, 0);
             this.lblTotaltoDespatach.Name = "lblTotaltoDespatach";
@@ -509,9 +472,11 @@
             // 
             // txtActualQuantityDespatched
             // 
-            this.txtActualQuantityDespatched.BackColor = System.Drawing.SystemColors.Info;
+            this.txtActualQuantityDespatched.BackColor = System.Drawing.SystemColors.Window;
+            this.txtActualQuantityDespatched.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtActualQuantityDespatched.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtActualQuantityDespatched.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtActualQuantityDespatched.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtActualQuantityDespatched.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtActualQuantityDespatched.Location = new System.Drawing.Point(3, 56);
             this.txtActualQuantityDespatched.Multiline = true;
             this.txtActualQuantityDespatched.Name = "txtActualQuantityDespatched";
@@ -525,54 +490,13 @@
             this.lblActualQuantityDespatched.BackColor = System.Drawing.SystemColors.Window;
             this.lblActualQuantityDespatched.CausesValidation = false;
             this.lblActualQuantityDespatched.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblActualQuantityDespatched.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblActualQuantityDespatched.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblActualQuantityDespatched.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblActualQuantityDespatched.Location = new System.Drawing.Point(3, 0);
             this.lblActualQuantityDespatched.Name = "lblActualQuantityDespatched";
             this.lblActualQuantityDespatched.Size = new System.Drawing.Size(396, 53);
             this.lblActualQuantityDespatched.TabIndex = 50;
             this.lblActualQuantityDespatched.Text = "Actual Quantity Despatched:";
-            // 
-            // tableLayoutPanel11
-            // 
-            this.tableLayoutPanel11.ColumnCount = 1;
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel11.Controls.Add(this.txtOrderSerial2, 0, 1);
-            this.tableLayoutPanel11.Controls.Add(this.lblOrderSerial2, 0, 0);
-            this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 342);
-            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
-            this.tableLayoutPanel11.RowCount = 2;
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(400, 107);
-            this.tableLayoutPanel11.TabIndex = 94;
-            // 
-            // txtOrderSerial2
-            // 
-            this.txtOrderSerial2.BackColor = System.Drawing.SystemColors.Info;
-            this.txtOrderSerial2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtOrderSerial2.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtOrderSerial2.Location = new System.Drawing.Point(3, 56);
-            this.txtOrderSerial2.Multiline = true;
-            this.txtOrderSerial2.Name = "txtOrderSerial2";
-            this.txtOrderSerial2.ReadOnly = true;
-            this.txtOrderSerial2.Size = new System.Drawing.Size(394, 41);
-            this.txtOrderSerial2.TabIndex = 47;
-            // 
-            // lblOrderSerial2
-            // 
-            this.lblOrderSerial2.AutoSize = true;
-            this.lblOrderSerial2.BackColor = System.Drawing.SystemColors.Window;
-            this.lblOrderSerial2.CausesValidation = false;
-            this.lblOrderSerial2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblOrderSerial2.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblOrderSerial2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblOrderSerial2.Location = new System.Drawing.Point(3, 0);
-            this.lblOrderSerial2.Name = "lblOrderSerial2";
-            this.lblOrderSerial2.Size = new System.Drawing.Size(394, 53);
-            this.lblOrderSerial2.TabIndex = 50;
-            this.lblOrderSerial2.Text = "Order Serial:";
             // 
             // tableLayoutPanel12
             // 
@@ -591,9 +515,11 @@
             // 
             // txtToFollow
             // 
-            this.txtToFollow.BackColor = System.Drawing.SystemColors.Info;
+            this.txtToFollow.BackColor = System.Drawing.SystemColors.Window;
+            this.txtToFollow.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtToFollow.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtToFollow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtToFollow.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtToFollow.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtToFollow.Location = new System.Drawing.Point(3, 56);
             this.txtToFollow.Multiline = true;
             this.txtToFollow.Name = "txtToFollow";
@@ -607,7 +533,7 @@
             this.lblToFollow.BackColor = System.Drawing.SystemColors.Window;
             this.lblToFollow.CausesValidation = false;
             this.lblToFollow.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblToFollow.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblToFollow.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblToFollow.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblToFollow.Location = new System.Drawing.Point(3, 0);
             this.lblToFollow.Name = "lblToFollow";
@@ -622,24 +548,26 @@
             this.tableLayoutPanel13.Controls.Add(this.txtNumberofBundles, 0, 1);
             this.tableLayoutPanel13.Controls.Add(this.lblNumberofBundles, 0, 0);
             this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(815, 342);
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(409, 229);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 2;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(402, 107);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(400, 107);
             this.tableLayoutPanel13.TabIndex = 96;
             // 
             // txtNumberofBundles
             // 
-            this.txtNumberofBundles.BackColor = System.Drawing.SystemColors.Info;
+            this.txtNumberofBundles.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNumberofBundles.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNumberofBundles.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtNumberofBundles.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtNumberofBundles.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtNumberofBundles.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtNumberofBundles.Location = new System.Drawing.Point(3, 56);
             this.txtNumberofBundles.Multiline = true;
             this.txtNumberofBundles.Name = "txtNumberofBundles";
             this.txtNumberofBundles.ReadOnly = true;
-            this.txtNumberofBundles.Size = new System.Drawing.Size(396, 41);
+            this.txtNumberofBundles.Size = new System.Drawing.Size(394, 41);
             this.txtNumberofBundles.TabIndex = 47;
             // 
             // lblNumberofBundles
@@ -648,11 +576,11 @@
             this.lblNumberofBundles.BackColor = System.Drawing.SystemColors.Window;
             this.lblNumberofBundles.CausesValidation = false;
             this.lblNumberofBundles.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblNumberofBundles.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblNumberofBundles.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblNumberofBundles.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblNumberofBundles.Location = new System.Drawing.Point(3, 0);
             this.lblNumberofBundles.Name = "lblNumberofBundles";
-            this.lblNumberofBundles.Size = new System.Drawing.Size(396, 53);
+            this.lblNumberofBundles.Size = new System.Drawing.Size(394, 53);
             this.lblNumberofBundles.TabIndex = 50;
             this.lblNumberofBundles.Text = "Number of Bundles:";
             // 
@@ -673,9 +601,11 @@
             // 
             // txtCarrier
             // 
-            this.txtCarrier.BackColor = System.Drawing.SystemColors.Info;
+            this.txtCarrier.BackColor = System.Drawing.SystemColors.Window;
+            this.txtCarrier.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCarrier.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtCarrier.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtCarrier.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtCarrier.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtCarrier.Location = new System.Drawing.Point(3, 57);
             this.txtCarrier.Multiline = true;
             this.txtCarrier.Name = "txtCarrier";
@@ -689,7 +619,7 @@
             this.lblCarrier.BackColor = System.Drawing.SystemColors.Window;
             this.lblCarrier.CausesValidation = false;
             this.lblCarrier.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCarrier.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblCarrier.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblCarrier.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblCarrier.Location = new System.Drawing.Point(3, 0);
             this.lblCarrier.Name = "lblCarrier";
@@ -706,6 +636,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmDID";
             this.Text = "DID";
+            this.Load += new System.EventHandler(this.frmDID_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel16.ResumeLayout(false);
             this.tableLayoutPanel16.PerformLayout();
@@ -719,16 +650,12 @@
             this.tableLayoutPanel6.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel7.PerformLayout();
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
             this.tableLayoutPanel10.ResumeLayout(false);
             this.tableLayoutPanel10.PerformLayout();
-            this.tableLayoutPanel11.ResumeLayout(false);
-            this.tableLayoutPanel11.PerformLayout();
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel12.PerformLayout();
             this.tableLayoutPanel13.ResumeLayout(false);
@@ -757,24 +684,18 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TextBox txtOrderQuantity;
         private System.Windows.Forms.Label lblOrderQuantity;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.Label lblFrom;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.TextBox txtPreviousOutstanding;
         private System.Windows.Forms.Label lblPreviousOutstanding;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
         private System.Windows.Forms.TextBox txtWeight;
         private System.Windows.Forms.Label lblWeight;
-        private System.Windows.Forms.Label lblTo;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.TextBox txtTotaltoDespatach;
         private System.Windows.Forms.Label lblTotaltoDespatach;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.TextBox txtActualQuantityDespatched;
         private System.Windows.Forms.Label lblActualQuantityDespatched;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
-        private System.Windows.Forms.TextBox txtOrderSerial2;
-        private System.Windows.Forms.Label lblOrderSerial2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
         private System.Windows.Forms.TextBox txtToFollow;
         private System.Windows.Forms.Label lblToFollow;
