@@ -21,6 +21,7 @@ namespace WindowsFormsApp
         private void button1_Click(object sender, EventArgs e)
         {
             tableLayoutPanel1.Visible = true;
+            tableLayoutPanel5.Visible = false;
 
             string DepartmentID = comboBoxDepartment.SelectedItem.ToString();
 
@@ -29,14 +30,14 @@ namespace WindowsFormsApp
                 tableLayoutPanel5.Visible = true;
             }
 
-            List<int> WarehouseIDList = new List<int>();
-            string sql = "SELECT WarehouseID FROM Warehouse;";
-            WarehouseIDList.Add(-1);
+            List<string> WarehouseIDList = new List<string>();
+            string sql = "SELECT Location FROM Warehouse;";
+            WarehouseIDList.Add("No Warehouse");
             using (var reader = Main.db.readBySql(sql))
             {
                 while (reader.Read())
                 {
-                    WarehouseIDList.Add(reader.GetInt32(0));
+                    WarehouseIDList.Add(reader.GetString(0));
                 }
             }
             this.comboBoxWarehouseID.DataSource = WarehouseIDList;
@@ -56,11 +57,32 @@ namespace WindowsFormsApp
             }
             this.comboBoxDepartment.DataSource = Departmentlist;
             this.comboBoxDepartment.DisplayMember = "DeptID";
-
+            
         }
 
         private void comboBoxDepartment_SelectedIndexChanged(object sender, EventArgs e)
         {
+            String Department = comboBoxDepartment.SelectedItem.ToString();
+            String DepartmentName = string.Empty;
+            String sql = $"SELECT DeptName FROM Department Where DeptID = '{Department}';";
+            using (var reader = Main.db.readBySql(sql))
+            {
+                while (reader.Read())
+                {
+                    DepartmentName=reader.GetString(0);
+                }
+            }
+            txtDepartmentName.Text = DepartmentName;
+            String DepartmentEmail = string.Empty;
+            sql = $"SELECT DeptEmail FROM Department Where DeptID = '{Department}';";
+            using (var reader = Main.db.readBySql(sql))
+            {
+                while (reader.Read())
+                {
+                    DepartmentEmail = reader.GetString(0);
+                }
+            }
+            txtDepartmentEmail.Text = DepartmentEmail;
 
         }
 

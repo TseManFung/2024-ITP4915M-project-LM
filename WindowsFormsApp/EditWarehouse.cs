@@ -24,7 +24,7 @@ namespace WindowsFormsApp
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            txtLocation.Text = comboBoxWarehouse.SelectedItem.ToString();
         }
 
         private void frmEditWarehouse_Load(object sender, EventArgs e)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Org.BouncyCastle.Utilities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,6 +41,17 @@ namespace WindowsFormsApp
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+            txtLocation.Text = comboBoxSaleAreaLocation.SelectedItem.ToString();
+            string Remark = null;
+            string sql = $"SELECT remark FROM SaleArea Where Location = '{comboBoxSaleAreaLocation.SelectedItem.ToString()}';";
+            using (var reader = Main.db.readBySql(sql))
+            {
+                while (reader.Read())
+                {
+                    Remark = reader.IsDBNull(0) ? "No remark" : reader.GetString(0);
+                }
+            }
+            txtRemark.Text = Remark ?? string.Empty;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
