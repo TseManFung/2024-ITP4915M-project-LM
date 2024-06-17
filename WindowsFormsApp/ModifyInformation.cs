@@ -29,14 +29,17 @@ namespace WindowsFormsApp
         {
             InitializeComponent();
         }
-
+        private bool IsNumeric(string input)
+        {
+            return long.TryParse(input, out _);
+        }
         private void txtContactNumber_TextChanged(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(txtContactNumber.Text))
             {
-                if (!int.TryParse(txtContactNumber.Text, out _))
+                if (txtContactNumber.Text.Length > 20 || !IsNumeric(txtContactNumber.Text))
                 {
-                    Main.ShowMessage("Invalid input. Please enter a valid number.");
+                    Main.ShowMessage("Invalid input. Please enter a valid number with up to 20 digits.");
                     txtContactNumber.Text = string.Empty;
                 }
             }
@@ -136,6 +139,59 @@ namespace WindowsFormsApp
         private void txtDeliveryAddress_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmModifyInformation_Load(object sender, EventArgs e)
+        {
+            string sql = $"select DealerID FROM User WHERE UserID = {Main.userID};";
+            int DealerID = 0;
+            using (var reader = Main.db.readBySql(sql))
+            {
+                if (reader.Read())
+                {
+                    DealerID = reader.GetInt32(0);
+                }
+            }
+            sql = $"select ContantNumber FROM Dealer WHERE DealerID = {DealerID};";
+            String ContactNumber = String.Empty;
+            using (var reader = Main.db.readBySql(sql))
+            {
+                if (reader.Read())
+                {
+                    ContactNumber = reader.GetString(0);
+                }
+            }
+            txtContactNumber.Text = ContactNumber;
+            sql = $"select email FROM Dealer WHERE DealerID = {DealerID};";
+            String Email = String.Empty;
+            using (var reader = Main.db.readBySql(sql))
+            {
+                if (reader.Read())
+                {
+                    Email = reader.GetString(0);
+                }
+            }
+            txtEmail.Text = Email;
+            sql = $"select OfficeAddress FROM Dealer WHERE DealerID = {DealerID};";
+            String OfficeAdress = String.Empty;
+            using (var reader = Main.db.readBySql(sql))
+            {
+                if (reader.Read())
+                {
+                    OfficeAdress = reader.GetString(0);
+                }
+            }
+            txtOfficeAdress.Text = OfficeAdress;
+            string DeliveryAddress = null;
+            sql = $"SELECT DeliveryAddress FROM Dealer WHERE DealerID = {DealerID};";
+            using (var reader = Main.db.readBySql(sql))
+            {
+                if (reader.Read())
+                {
+                    DeliveryAddress = reader.IsDBNull(0) ? "Delivery address not yet recorded." : reader.GetString(0);
+                }
+            }
+            txtDeliveryAddress.Text = DeliveryAddress ?? string.Empty;
         }
     }
 }
