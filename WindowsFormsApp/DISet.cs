@@ -15,10 +15,10 @@ namespace WindowsFormsApp
 {
     public partial class frmDISet : Form
     {
-        int warehouseID;
+        int? warehouseID;
         String InvoiceID, OrderSerial;
         List<Form> forms = new List<Form>() ;
-        public frmDISet(int respent_warehouse, String respent_InvoiceID)
+        public frmDISet(int? respent_warehouse, String respent_InvoiceID)
         {
             this.warehouseID = respent_warehouse;
             this.InvoiceID = respent_InvoiceID;

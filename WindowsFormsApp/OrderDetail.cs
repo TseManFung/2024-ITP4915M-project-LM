@@ -14,7 +14,7 @@ namespace WindowsFormsApp
     public partial class frmOrderDetail : Form
     {
         string OrderSerial, dateTime, State,respent_InvoiceID;
-        int respent_warehouse;
+        int? respent_warehouse;
 
 
 
@@ -62,16 +62,27 @@ namespace WindowsFormsApp
             string sql_getwarehouse = $"SELECT d.WarehouseID FROM User u inner join Staff s on u.StaffID = s.StaffID inner join Department d on s.DeptID = d.DeptID  where u.UserID={Main.userID};";
             using (var reader = Main.db.readBySql(sql_getwarehouse))
             {
-                reader.Read();
-                respent_warehouse = reader.GetInt32(0);
+                if (reader.HasRows)
+                {
+                    reader.Read();
+                    respent_warehouse = reader.GetInt32(0);
+                }
             }
-            string sql_getInvoiceID = $"SELECT max(i.InvoiceID) as IID,WarehouseID FROM Invoice i inner join ActualQuantityDespatched a on i.InvoiceID = a.InvoiceID where WarehouseID = {respent_warehouse} and OrderSerial = '{OrderSerial}' group by WarehouseID;";
-            using (var reader = Main.db.readBySql(sql_getInvoiceID))
+            if(respent_warehouse != null)
             {
-                reader.Read();
-                respent_InvoiceID = reader["IID"].ToString();
+                string sql_getInvoiceID = $"SELECT max(i.InvoiceID) as IID,WarehouseID FROM Invoice i inner join ActualQuantityDespatched a on i.InvoiceID = a.InvoiceID where WarehouseID = {respent_warehouse} and OrderSerial = '{OrderSerial}' group by WarehouseID;";
+                using (var reader = Main.db.readBySql(sql_getInvoiceID))
+                {
+                    if (reader.HasRows)
+                    {
+                        reader.Read();
+                        respent_InvoiceID = reader["IID"].ToString();
+                    }
+
+                }
             }
-            if (Main.AssessLevel == 700 || Main.AssessLevel<=300)
+
+            if ((Main.AssessLevel == 700 || Main.AssessLevel<=300) && (respent_InvoiceID != null)&&(State =="TKD"))
             {
                 BtnDIset.Visible = true;
             }

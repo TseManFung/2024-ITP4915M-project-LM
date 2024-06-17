@@ -6,9 +6,9 @@ namespace WindowsFormsApp
 {
     public partial class frmInvoice : Form
     {
-        int warehouseID;
+        int? warehouseID;
         String InvoiceID, OrderSerial;
-        public frmInvoice(int respent_warehouse, String respent_InvoiceID)
+        public frmInvoice(int? respent_warehouse, String respent_InvoiceID)
         {
             this.warehouseID = respent_warehouse;
             this.InvoiceID = respent_InvoiceID;
