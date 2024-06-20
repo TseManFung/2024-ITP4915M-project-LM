@@ -29,6 +29,7 @@ CREATE TABLE `Department` (
   `DeptID` varchar(5) PRIMARY KEY,
   `DeptEmail` varchar(255) NOT NULL,
   `DeptName` varchar(255) NOT NULL,
+  `State` char(1) NOT NULL DEFAULT 'N' COMMENT 'only N,D',
   `WarehouseID` int
 );
 
@@ -58,7 +59,8 @@ CREATE TABLE `Supplier` (
   `Name` varchar(255) NOT NULL,
   `Address` varchar(255) NOT NULL,
   `ContantNumber` varchar(20) UNIQUE NOT NULL,
-  `email` varchar(255) NOT NULL
+  `email` varchar(255) NOT NULL,
+  `State` char(1) NOT NULL DEFAULT 'N' COMMENT 'only N,D'
 );
 
 CREATE TABLE `Spare` (
