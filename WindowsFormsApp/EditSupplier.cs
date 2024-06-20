@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Org.BouncyCastle.Utilities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static QRCoder.PayloadGenerator;
@@ -116,9 +118,15 @@ namespace WindowsFormsApp
         {
             if (!string.IsNullOrEmpty(txtContantNumber.Text))
             {
-                if (!int.TryParse(txtContantNumber.Text, out _))
+                string contantNumber = txtContantNumber.Text;
+
+                if (Regex.IsMatch(contantNumber, @"^\d{1,20}$"))
                 {
-                    Main.ShowMessage("Invalid input. Please enter a valid number.");
+
+                }
+                else
+                {
+                    Main.ShowMessage("Please enter a maximum of 20 digits!");
                     txtContantNumber.Text = string.Empty;
                 }
             }
@@ -131,6 +139,47 @@ namespace WindowsFormsApp
 
         private void comboBoxSupplierID_SelectedIndexChanged(object sender, EventArgs e)
         {
+            txtName.Text = comboBoxSupplierID.Text;
+            string selectSupplier = comboBoxSupplierID.SelectedItem.ToString();
+            String sql = $"SELECT supplierID FROM Supplier WHERE Name = '{selectSupplier}'";
+            int supplierID = 0;
+            using (var reader = Main.db.readBySql(sql))
+            {
+                while (reader.Read())
+                {
+                    supplierID = reader.GetInt32(0);
+                }
+            }
+            string email = String.Empty;
+            sql = $"SELECT email FROM Supplier WHERE SupplierID = '{supplierID}'";
+            using (var reader = Main.db.readBySql(sql))
+            {
+                while (reader.Read())
+                {
+                    email = reader.GetString(0);
+                }
+            }
+            txtEmail.Text = email;
+            string ContantNumber = String.Empty;
+            sql = $"SELECT ContantNumber FROM Supplier WHERE SupplierID = '{supplierID}'";
+            using (var reader = Main.db.readBySql(sql))
+            {
+                while (reader.Read())
+                {
+                    ContantNumber = reader.GetString(0);
+                }
+            }
+            txtContantNumber.Text = ContantNumber;
+            string Address = String.Empty;
+            sql = $"SELECT Address FROM Supplier WHERE SupplierID = '{supplierID}'";
+            using (var reader = Main.db.readBySql(sql))
+            {
+                while (reader.Read())
+                {
+                    Address = reader.GetString(0);
+                }
+            }
+            txtAddress.Text = Address;
 
         }
 

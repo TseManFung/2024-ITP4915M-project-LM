@@ -70,7 +70,7 @@ namespace WindowsFormsApp
 
         private void txtAccessLevel_TextChanged(object sender, EventArgs e)
         {
-            if (int.TryParse(txtAccessLevel.Text.TrimStart('0'), out int accessLevel))
+            if (int.TryParse(txtAccessLevel.Text?.TrimStart('0'), out int accessLevel))
             {
                 if (accessLevel >= 0 && accessLevel <= 10000)
                 {
@@ -78,14 +78,28 @@ namespace WindowsFormsApp
                 }
                 else
                 {
-                    MessageBox.Show("Access level must be between 0 and 10000.");
-                    txtAccessLevel.Text = "0";
+                    ShowInvalidAccessLevelError();
                 }
             }
             else
             {
-                MessageBox.Show("Invalid access level. Please enter a valid integer value.");
-                txtAccessLevel.Text = "0";
+                if (txtAccessLevel.Text == null)
+                {
+                    txtAccessLevel.Text = "0";
+                }
+                else
+                {
+                    ShowInvalidAccessLevelError();
+                }
+            }
+
+            void ShowInvalidAccessLevelError()
+            {
+                if (txtAccessLevel.Text != null && txtAccessLevel.Text != "0")
+                {
+                    Main.ShowMessage("Invalid access level. Please enter a valid integer value between 0 and 10000.");
+                    txtAccessLevel.Text = "0";
+                }
             }
         }
 

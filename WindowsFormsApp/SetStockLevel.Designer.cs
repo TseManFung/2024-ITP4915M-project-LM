@@ -99,7 +99,7 @@
             this.lblSpareID.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareID.CausesValidation = false;
             this.lblSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareID.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareID.Location = new System.Drawing.Point(3, 0);
             this.lblSpareID.Name = "lblSpareID";
@@ -112,7 +112,7 @@
             // 
             this.comboBoxSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxSpareID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxSpareID.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSpareID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareID.FormattingEnabled = true;
             this.comboBoxSpareID.Location = new System.Drawing.Point(3, 90);
             this.comboBoxSpareID.Name = "comboBoxSpareID";
@@ -140,7 +140,7 @@
             this.txtSpareName.BackColor = System.Drawing.SystemColors.Control;
             this.txtSpareName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSpareName.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtSpareName.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtSpareName.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtSpareName.Location = new System.Drawing.Point(3, 90);
             this.txtSpareName.Multiline = true;
             this.txtSpareName.Name = "txtSpareName";
@@ -155,7 +155,7 @@
             this.lblSpareName.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareName.CausesValidation = false;
             this.lblSpareName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareName.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareName.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareName.Location = new System.Drawing.Point(3, 0);
             this.lblSpareName.Name = "lblSpareName";
@@ -167,7 +167,7 @@
             // btnSave
             // 
             this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSave.Font = new System.Drawing.Font("PMingLiU", 24F);
+            this.btnSave.Font = new System.Drawing.Font("新細明體", 24F);
             this.btnSave.Location = new System.Drawing.Point(326, 363);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(317, 84);
@@ -180,7 +180,7 @@
             // 
             this.checkBoxAutoReStock.AutoSize = true;
             this.checkBoxAutoReStock.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkBoxAutoReStock.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.checkBoxAutoReStock.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.checkBoxAutoReStock.Location = new System.Drawing.Point(649, 3);
             this.checkBoxAutoReStock.Name = "checkBoxAutoReStock";
             this.checkBoxAutoReStock.Size = new System.Drawing.Size(318, 174);
@@ -209,7 +209,7 @@
             this.lblReOrderLevel.BackColor = System.Drawing.SystemColors.Control;
             this.lblReOrderLevel.CausesValidation = false;
             this.lblReOrderLevel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblReOrderLevel.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblReOrderLevel.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblReOrderLevel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblReOrderLevel.Location = new System.Drawing.Point(3, 0);
             this.lblReOrderLevel.Name = "lblReOrderLevel";
@@ -221,7 +221,7 @@
             // txtReOrderLevel
             // 
             this.txtReOrderLevel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtReOrderLevel.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtReOrderLevel.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtReOrderLevel.Location = new System.Drawing.Point(3, 90);
             this.txtReOrderLevel.Multiline = true;
             this.txtReOrderLevel.Name = "txtReOrderLevel";
@@ -246,7 +246,7 @@
             // txtCommonStockLevel
             // 
             this.txtCommonStockLevel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtCommonStockLevel.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtCommonStockLevel.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtCommonStockLevel.Location = new System.Drawing.Point(3, 90);
             this.txtCommonStockLevel.Multiline = true;
             this.txtCommonStockLevel.Name = "txtCommonStockLevel";
@@ -260,7 +260,7 @@
             this.lblCommonStockLevel.BackColor = System.Drawing.SystemColors.Control;
             this.lblCommonStockLevel.CausesValidation = false;
             this.lblCommonStockLevel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCommonStockLevel.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblCommonStockLevel.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblCommonStockLevel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblCommonStockLevel.Location = new System.Drawing.Point(3, 0);
             this.lblCommonStockLevel.Name = "lblCommonStockLevel";
@@ -286,7 +286,7 @@
             // txtDangerLevel
             // 
             this.txtDangerLevel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtDangerLevel.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtDangerLevel.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtDangerLevel.Location = new System.Drawing.Point(3, 90);
             this.txtDangerLevel.Multiline = true;
             this.txtDangerLevel.Name = "txtDangerLevel";
@@ -300,7 +300,7 @@
             this.lblDangerLevel.BackColor = System.Drawing.SystemColors.Control;
             this.lblDangerLevel.CausesValidation = false;
             this.lblDangerLevel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDangerLevel.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblDangerLevel.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblDangerLevel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDangerLevel.Location = new System.Drawing.Point(3, 0);
             this.lblDangerLevel.Name = "lblDangerLevel";

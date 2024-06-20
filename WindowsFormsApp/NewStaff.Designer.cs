@@ -492,12 +492,12 @@
             // comboBoxStaffID
             // 
             this.comboBoxStaffID.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBoxStaffID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxStaffID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxStaffID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxStaffID.FormattingEnabled = true;
-            this.comboBoxStaffID.Location = new System.Drawing.Point(935, 33);
+            this.comboBoxStaffID.Location = new System.Drawing.Point(935, 36);
             this.comboBoxStaffID.Name = "comboBoxStaffID";
-            this.comboBoxStaffID.Size = new System.Drawing.Size(226, 41);
+            this.comboBoxStaffID.Size = new System.Drawing.Size(226, 35);
             this.comboBoxStaffID.TabIndex = 75;
             this.comboBoxStaffID.SelectedIndexChanged += new System.EventHandler(this.comboBoxStaffID_SelectedIndexChanged);
             // 
