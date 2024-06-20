@@ -430,6 +430,12 @@
     <Compile Include="Signature.Designer.cs">
       <DependentUpon>Signature.cs</DependentUpon>
     </Compile>
+    <Compile Include="TargetWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TargetWarehouse.Designer.cs">
+      <DependentUpon>TargetWarehouse.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserAndAccountCreate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -568,6 +574,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SpareQRCode.resx">
       <DependentUpon>SpareQRCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TargetWarehouse.resx">
+      <DependentUpon>TargetWarehouse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserAndAccountCreate.resx">
       <DependentUpon>UserAndAccountCreate.cs</DependentUpon>

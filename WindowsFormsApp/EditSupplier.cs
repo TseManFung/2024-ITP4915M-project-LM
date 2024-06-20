@@ -29,7 +29,7 @@ namespace WindowsFormsApp
         private void frmEditSupplier_Load(object sender, EventArgs e)
         {
             List<string> SupplierNamelist = new List<string>();
-            String sql = $"SELECT Name FROM Supplier;";
+            String sql = $"SELECT Name FROM Supplier WHERE State = 'N';";
             using (var reader = Main.db.readBySql(sql))
             {
                 while (reader.Read())
@@ -185,7 +185,22 @@ namespace WindowsFormsApp
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            Main.ShowMessage("succeed!");
+            if (Main.ShowYesNoDialog("Are you sure you want to delete the supplier?"))
+            {
+                string selectSupplier = comboBoxSupplierID.SelectedItem.ToString();
+                String sqlofsupplier = $"SELECT supplierID FROM Supplier WHERE Name = '{selectSupplier}'";
+                int supplierID = 0;
+                using (var reader = Main.db.readBySql(sqlofsupplier))
+                {
+                    while (reader.Read())
+                    {
+                        supplierID = reader.GetInt32(0);
+                    }
+                }
+                string sql = $"UPDATE Supplier SET State = 'D' Where  SupplierID = '{supplierID}';";
+                Main.db.updateBySql(sql);
+                Main.ShowMessage("succeed!");
+            }
         }
     }
 }

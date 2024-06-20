@@ -82,6 +82,12 @@ namespace WindowsFormsApp
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            TargetWarehouse input = new TargetWarehouse();
+            DialogResult dr = input.ShowDialog();
+            if (dr == DialogResult.OK)
+            {
+                MessageBox.Show(input.GetMsg());
+            }
             Main.ShowMessage("succeed!");
         }
     }

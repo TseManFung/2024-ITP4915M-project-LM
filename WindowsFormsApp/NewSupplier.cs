@@ -49,14 +49,7 @@ namespace WindowsFormsApp
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtEmail.Text))
-            {
-                if (!IsValidEmail(txtEmail.Text))
-                {
-                    Main.ShowMessage("Please enter a valid email address!");
-                    txtEmail.Text = string.Empty;
-                }
-            }
+
         }
 
         private void txtAddress_TextChanged(object sender, EventArgs e)
@@ -94,25 +87,40 @@ namespace WindowsFormsApp
 
         private void btnCreateNewSupplier_Click(object sender, EventArgs e)
         {
+
             if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
             {
-                if (!string.IsNullOrEmpty(txtName.Text) &&
-                    !string.IsNullOrEmpty(txtAddress.Text) &&
-                    !string.IsNullOrEmpty(txtContantNumber.Text) &&
-                    !string.IsNullOrEmpty(txtEmail.Text))
-                    {
-                    string Name = txtName.Text;
-                    string Address = txtAddress.Text;
-                    string Email = txtEmail.Text;
-                    string ContantNumber = txtContantNumber.Text;
-                    string query = $"INSERT INTO Supplier (Name, Address, ContantNumber, email) VALUES ('{Name}','{Address}', '{ContantNumber}', '{Email}')";
-                    Main.db.insertBySql(query);
-                    Main.ShowMessage("Successful creating");
-                }
-                else
+                if (!string.IsNullOrEmpty(txtEmail.Text))
                 {
-                    Main.ShowMessage("Please fill in all information");
+                    if (!IsValidEmail(txtEmail.Text))
+                    {
+                        Main.ShowMessage("Please enter a valid email address!");
+                        txtEmail.Text = string.Empty;
+                        return;
+                    }
                 }
+                    if (!string.IsNullOrEmpty(txtName.Text) &&
+                        !string.IsNullOrEmpty(txtAddress.Text) &&
+                        !string.IsNullOrEmpty(txtContantNumber.Text) &&
+                        !string.IsNullOrEmpty(txtEmail.Text))
+                    {
+                        string Name = txtName.Text;
+                        string Address = txtAddress.Text;
+                        string Email = txtEmail.Text;
+                        string ContantNumber = txtContantNumber.Text;
+                        string query = $"INSERT INTO Supplier (Name, Address, ContantNumber, email, State) VALUES ('{Name}','{Address}', '{ContantNumber}', '{Email}', 'N')";
+                        Main.db.insertBySql(query);
+                        txtName.Text = string.Empty;
+                        txtAddress.Text = string.Empty;
+                        txtContantNumber.Text = string.Empty;
+                        txtEmail.Text = string.Empty;
+                        Main.ShowMessage("Successful creating");
+                    }
+                    else
+                    {
+                        Main.ShowMessage("Please fill in all information");
+                    }
+                
             }
         }
     }
