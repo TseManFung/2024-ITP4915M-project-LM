@@ -82,6 +82,7 @@
             // 
             // dgvRestock
             // 
+            this.dgvRestock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvRestock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel1.SetColumnSpan(this.dgvRestock, 5);
             this.dgvRestock.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -139,6 +140,7 @@
             this.btnMovedown.TabIndex = 79;
             this.btnMovedown.Text = "↓";
             this.btnMovedown.UseVisualStyleBackColor = true;
+            this.btnMovedown.Click += new System.EventHandler(this.btnMovedown_Click);
             // 
             // btnMoveUp
             // 
@@ -150,6 +152,7 @@
             this.btnMoveUp.TabIndex = 78;
             this.btnMoveUp.Text = "↑";
             this.btnMoveUp.UseVisualStyleBackColor = true;
+            this.btnMoveUp.Click += new System.EventHandler(this.btnMoveUp_Click);
             // 
             // btnReStockConfirm
             // 
@@ -161,6 +164,7 @@
             this.btnReStockConfirm.TabIndex = 80;
             this.btnReStockConfirm.Text = "Confirm";
             this.btnReStockConfirm.UseVisualStyleBackColor = true;
+            this.btnReStockConfirm.Click += new System.EventHandler(this.btnReStockConfirm_Click);
             // 
             // frmReStock
             // 

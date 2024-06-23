@@ -13,12 +13,26 @@ namespace WindowsFormsApp
 
     public partial class frmReStock : Form
     {
+        private BindingSource restockBindingSource = new BindingSource();
+        private BindingSource followingROLBindingSource = new BindingSource();
         DataTable RestockOrder;
         public frmReStock()
         {
             InitializeComponent();
-        }
+            // 确保 DataGridView 允许整行选择
+            this.dgvItemFollowingROL.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            this.dgvRestock.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
+        }
+        private void InitializeDgvRestock()
+        {
+            // 初始化dgvRestock的列，與dgvItemFollowingROL列一致
+            dgvRestock.Columns.Clear();
+            foreach (DataGridViewColumn column in dgvItemFollowingROL.Columns)
+            {
+                dgvRestock.Columns.Add((DataGridViewColumn)column.Clone());
+            }
+        }
         private void lblFollowingROL_Click(object sender, EventArgs e)
         {
 
@@ -31,7 +45,7 @@ namespace WindowsFormsApp
         private void getData()
         {
             int respent_warehouse = 0;
-            string sql_getwarehouse = $"SELECT d.WarehouseID FROM User u inner join Staff s on u.StaffID = s.StaffID inner join Department d on s.DeptID = d.DeptID  where u.UserID={Main.userID};";
+            string sql_getwarehouse = $"SELECT d.WarehouseID FROM User u INNER JOIN Staff s ON u.StaffID = s.StaffID INNER JOIN Department d ON s.DeptID = d.DeptID WHERE u.UserID={Main.userID};";
             using (var reader = Main.db.readBySql(sql_getwarehouse))
             {
                 reader.Read();
@@ -47,20 +61,150 @@ namespace WindowsFormsApp
 
             getData();
 
-            if (RestockOrder == null)
+            if (RestockOrder == null || RestockOrder.Rows.Count == 0)
             {
-
-                MessageBox.Show("No ROL item");
+                Main.ShowMessage("No ROL item");
                 return;
             }
 
             try
             {
-                dgvItemFollowingROL.DataSource = RestockOrder.AsEnumerable().CopyToDataTable();
+                // 使用 BindingSource 進行數據綁定
+                followingROLBindingSource.DataSource = RestockOrder.Clone(); // 克隆一個空表給 followingROL
+                restockBindingSource.DataSource = RestockOrder;
+
+                dgvItemFollowingROL.DataSource = restockBindingSource;
+                dgvRestock.DataSource = followingROLBindingSource;
+
+                InitializeDgvRestock();
             }
             catch (InvalidOperationException ex)
             {
-                MessageBox.Show("No data found");
+                Main.ShowMessage("No data found");
+            }
+        }
+
+        private void btnMovedown_Click(object sender, EventArgs e)
+        {
+            if (dgvItemFollowingROL.Rows.Count == 0)
+            {
+                Main.ShowMessage("No rows available to move.");
+                return;
+            }
+
+            if (dgvItemFollowingROL.SelectedRows.Count == 0)
+            {
+                Main.ShowMessage("Please select a row to move.");
+                return;
+            }
+
+            int selectedIndex = dgvItemFollowingROL.SelectedRows[0].Index;
+
+            DataTable restockTable = (DataTable)restockBindingSource.DataSource;
+            DataTable followingROLTable = (DataTable)followingROLBindingSource.DataSource;
+
+            if (restockTable == null || followingROLTable == null)
+            {
+                Main.ShowMessage("Data sources are not properly initialized.");
+                return;
+            }
+
+            if (selectedIndex < 0 || selectedIndex >= restockTable.Rows.Count)
+            {
+                return;
+            }
+
+            DataRow rowToMove = restockTable.Rows[selectedIndex];
+            DataRow newRow = followingROLTable.NewRow();
+            newRow.ItemArray = rowToMove.ItemArray;
+
+            followingROLTable.Rows.Add(newRow);
+            restockTable.Rows.Remove(rowToMove);
+
+            // Refresh BindingSource
+            restockBindingSource.ResetBindings(false);
+            followingROLBindingSource.ResetBindings(false);
+        }
+
+        private void btnMoveUp_Click(object sender, EventArgs e)
+        {
+            if (dgvRestock.Rows.Count == 0)
+            {
+                Main.ShowMessage("No rows available to move.");
+                return;
+            }
+
+            if (dgvRestock.SelectedRows.Count == 0)
+            {
+                Main.ShowMessage("Please select a row to move.");
+                return;
+            }
+
+            int selectedIndex = dgvRestock.SelectedRows[0].Index;
+
+            DataTable restockTable = (DataTable)restockBindingSource.DataSource;
+            DataTable followingROLTable = (DataTable)followingROLBindingSource.DataSource;
+
+            if (restockTable == null || followingROLTable == null)
+            {
+                Main.ShowMessage("Data sources are not properly initialized.");
+                return;
+            }
+
+            if (selectedIndex < 0 || selectedIndex >= followingROLTable.Rows.Count)
+            {
+                return;
+            }
+
+            DataRow rowToMove = followingROLTable.Rows[selectedIndex];
+            DataRow newRow = restockTable.NewRow();
+            newRow.ItemArray = rowToMove.ItemArray;
+
+            restockTable.Rows.Add(newRow);
+            followingROLTable.Rows.Remove(rowToMove);
+
+            // Refresh BindingSource
+            restockBindingSource.ResetBindings(false);
+            followingROLBindingSource.ResetBindings(false);
+        }
+
+        private void btnReStockConfirm_Click(object sender, EventArgs e)
+        {
+            // 確保 DataGridView 有行可供處理
+            if (dgvRestock.Rows.Count == 0)
+            {
+                MessageBox.Show("No rows available in the restock list.");
+                return;
+            }
+
+            bool rowsProcessed = false;
+            string processedRowsDetails = string.Empty;
+
+            // 遍歷 DataGridView 中的所有行
+            foreach (DataGridViewRow row in dgvRestock.Rows)
+            {
+                // 跳過新的行佔位符（如果有）
+                if (row.IsNewRow) continue;
+
+                // 使用列名獲取特定列中的數據
+                var warehouseID = row.Cells["WarehouseID"].Value;
+                var spareID = row.Cells["SpareID"].Value;
+                var quantity = row.Cells["quantity"].Value;
+
+                // 處理數據並構建詳細信息字符串
+                processedRowsDetails += $"WarehouseID: {warehouseID}, SpareID: {spareID}, Quantity: {quantity}\n";
+
+                rowsProcessed = true; // 設置標誌，表明至少有一行被處理
+            }
+
+            // 顯示處理的行的詳細信息或沒有行的消息
+            if (rowsProcessed)
+            {
+                MessageBox.Show($"Processed Rows:\n{processedRowsDetails}");
+            }
+            else
+            {
+                MessageBox.Show("No rows were processed.");
             }
         }
     }
