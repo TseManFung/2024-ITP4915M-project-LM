@@ -109,6 +109,7 @@ CREATE TABLE `OrderItemToFollow` (
   `OrderSerial` char(20),
   `ItemID` char(6),
   `Quantity` int NOT NULL DEFAULT 1,
+  `Assgin` int DEFAULT NULL,
   `State` char(1) NOT NULL COMMENT 'use a char to record the state(D = Dnoe, W = Wait, etc...)',
   PRIMARY KEY (`OrderSerial`, `ItemID`)
 );
@@ -259,3 +260,5 @@ ALTER TABLE `Warehouse` ADD FOREIGN KEY (`SaleAreaID`) REFERENCES `SaleArea` (`A
 ALTER TABLE `WarehouseStockLevel` ADD FOREIGN KEY (`WarehouseID`) REFERENCES `Warehouse` (`WarehouseID`);
 
 ALTER TABLE `WarehouseStockLevel` ADD FOREIGN KEY (`SpareID`) REFERENCES `Spare` (`SpareID`);
+
+ALTER TABLE `OrderItemToFollow` ADD FOREIGN KEY (`Assgin`) REFERENCES `Warehouse` (`WarehouseID`);
