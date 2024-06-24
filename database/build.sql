@@ -175,8 +175,10 @@ CREATE TABLE `TruckInvoice` (
 
 CREATE TABLE `Warehouse` (
   `WarehouseID` int PRIMARY KEY AUTO_INCREMENT,
+  `Name` varchar(255) NOT NULL,
   `SaleAreaID` int NOT NULL,
-  `Location` varchar(255) NOT NULL
+  `Location` varchar(255) NOT NULL,
+  `State` char(1) NOT NULL DEFAULT 'N' COMMENT 'only N,D'
 );
 
 CREATE TABLE `WarehouseStockLevel` (

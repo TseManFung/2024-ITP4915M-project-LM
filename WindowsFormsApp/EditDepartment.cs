@@ -8,6 +8,7 @@ using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace WindowsFormsApp
 {
@@ -23,15 +24,27 @@ namespace WindowsFormsApp
             tableLayoutPanel1.Visible = true;
             tableLayoutPanel5.Visible = false;
 
+            // 获取选中的 DepartmentID
             string DepartmentID = comboBoxDepartment.SelectedItem.ToString();
 
-            if (DepartmentID.Length >= 2 && DepartmentID.Substring(0, 2) == "wh")
+            // 查询 Department 表中的 WarehouseID
+            int? warehouseIDFromDept = null;  // 使用 nullable int 来处理可能的空值
+            string sqlCheckWarehouseID = $"SELECT WarehouseID FROM Department WHERE DeptID = '{DepartmentID}';";
+            using (var reader = Main.db.readBySql(sqlCheckWarehouseID))
+            {
+                if (reader.Read())
+                {
+                    warehouseIDFromDept = reader.IsDBNull(0) ? (int?)null : reader.GetInt32(0);  // 处理可能的 DB null 值
+                }
+            }
+
+            // 如果 WarehouseID 不为空，则设置 tableLayoutPanel5 可见
+            if (warehouseIDFromDept.HasValue)
             {
                 tableLayoutPanel5.Visible = true;
             }
-
             List<string> WarehouseIDList = new List<string>();
-            string sql = "SELECT Location FROM Warehouse;";
+            string sql = "SELECT Name FROM Warehouse Where State = 'N';";
             WarehouseIDList.Add("No Warehouse");
             using (var reader = Main.db.readBySql(sql))
             {
@@ -42,12 +55,30 @@ namespace WindowsFormsApp
             }
             this.comboBoxWarehouseID.DataSource = WarehouseIDList;
 
+            // 如果 warehouseIDFromDept 有值，则查询对应的 Warehouse 名称并设置 comboBoxWarehouseID 的选中项
+            if (warehouseIDFromDept.HasValue)
+            {
+                string warehouseName = null;
+                string sqlGetWarehouseName = $"SELECT Name FROM Warehouse WHERE WarehouseID = {warehouseIDFromDept.Value};";
+                using (var reader = Main.db.readBySql(sqlGetWarehouseName))
+                {
+                    if (reader.Read())
+                    {
+                        warehouseName = reader.GetString(0);
+                    }
+                }
+
+                if (!string.IsNullOrEmpty(warehouseName))
+                {
+                    this.comboBoxWarehouseID.SelectedItem = warehouseName;
+                }
+            }
         }
 
         private void frmEditDepartment_Load(object sender, EventArgs e)
         {
             List<string> Departmentlist = new List<string>();
-            String sql = $"SELECT DeptID FROM Department;";
+            String sql = $"SELECT DeptID FROM Department Where State = 'N';";
             using (var reader = Main.db.readBySql(sql))
             {
                 while (reader.Read())
@@ -101,12 +132,20 @@ namespace WindowsFormsApp
                     string DepartmentID = comboBoxDepartment.SelectedItem.ToString();
                     string DeptName = txtDepartmentName.Text;
                     string DeptEmail = txtDepartmentEmail.Text;
-                    string WarehouseID = comboBoxWarehouseID.SelectedItem.ToString();
-
-                    string query;
-                    if (WarehouseID != "-1")
+                    int WarehouseID = 0;
+                    string selectedWarehouseName = comboBoxWarehouseID.SelectedItem.ToString();
+                    string sql = $"SELECT WarehouseID FROM Warehouse WHERE Name = '{selectedWarehouseName}';";
+                    using (var reader = Main.db.readBySql(sql))
                     {
-                        query = $"UPDATE Department SET DeptEmail = '{DeptEmail}', DeptName = '{DeptName}', WarehouseID = '{WarehouseID}' WHERE DeptID = '{DepartmentID}'";
+                        while (reader.Read())
+                        {
+                            WarehouseID = reader.GetInt32(0);
+                        }
+                    }
+                    string query;
+                    if (selectedWarehouseName != "-1")
+                    {
+                        query = $"UPDATE Department SET DeptEmail = '{DeptEmail}', DeptName = '{DeptName}', WarehouseID = {WarehouseID} WHERE DeptID = '{DepartmentID}'";
                     }
                     else
                     {
@@ -138,6 +177,18 @@ namespace WindowsFormsApp
         private void frmEditDepartment_Resize(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.ResizeControlsFont(this);
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
+            {
+                String DepartmentID = comboBoxDepartment.SelectedItem.ToString();
+                String query = $"UPDATE Department SET State = 'D' WHERE DeptID = '{DepartmentID}'";
+                Main.db.updateBySql(query);
+                Main.ShowMessage("Succeed!");
+            }
         }
     }
 }

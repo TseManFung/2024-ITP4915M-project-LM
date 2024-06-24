@@ -35,12 +35,12 @@ VALUES
 (30, 'Guiyang', NULL);
 
 /*Warehouse*/
-INSERT INTO `Warehouse` (`WarehouseID`, `SaleAreaID`, `Location`)
+INSERT INTO `Warehouse` (`WarehouseID`, `Name`, `SaleAreaID`, `Location`, `State`)
 VALUES
-  (1, 18, '昆明市滇池路1310號雲南民族村東門'),
-  (2, 19, 'China, CN 辽宁省 大连市 甘井子区'),
-  (3, 20, '55WW+CX3, Changsha County, Changsha, Hunan, China, 410141'),
-  (4, 21, 'P4JJ+P9J, Kaiyuan Rd, Licheng District, Jinan, Jinan, Shandong, China, 250101');
+  (1, 'Warehouse 1', 18, '昆明市滇池路1310號雲南民族村東門', 'N'),
+  (2, 'Warehouse 2', 19, 'China, CN 辽宁省 大连市 甘井子区', 'N'),
+  (3, 'Warehouse 3', 20, '55WW+CX3, Changsha County, Changsha, Hunan, China, 410141', 'N'),
+  (4, 'Warehouse 4', 21, 'P4JJ+P9J, Kaiyuan Rd, Licheng District, Jinan, Jinan, Shandong, China, 250101', 'N');
 
 /*Department*/
 INSERT INTO `Department` (`DeptID`, `DeptEmail`, `DeptName`, `WarehouseID`)
