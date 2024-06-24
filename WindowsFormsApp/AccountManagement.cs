@@ -47,7 +47,7 @@ namespace WindowsFormsApp
         private void frmAccountManagement_Load(object sender, EventArgs e)
         {
             List<string> LoginNamelist = new List<string>();
-            String sql = $"SELECT LoginName FROM User;";
+            String sql = $"SELECT LoginName FROM User WHERE Password LIKE '0%';";
             using (var reader = Main.db.readBySql(sql))
             {
                 while (reader.Read())
@@ -57,6 +57,7 @@ namespace WindowsFormsApp
             }
             this.comboBoxLoginName.DataSource = LoginNamelist;
             this.comboBoxLoginName.DisplayMember = "LoginName";
+
             List<string> Locationlist = new List<string>();
             Locationlist.Add("No saleArea");
             sql = $"SELECT Location FROM SaleArea;";
@@ -69,7 +70,6 @@ namespace WindowsFormsApp
             }
             this.comboBoxSaleArea.DataSource = Locationlist;
             this.comboBoxSaleArea.DisplayMember = "SaleArea";
-
         }
 
         private void btnSave_Click(object sender, EventArgs e)

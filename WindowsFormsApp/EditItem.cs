@@ -228,7 +228,6 @@ namespace WindowsFormsApp
         {
             string spareID = comboBoxSpareID.SelectedItem.ToString();
             string query = $"UPDATE Spare SET State = 'D' WHERE SpareID = '{spareID}'";
-
         }
     }
 }

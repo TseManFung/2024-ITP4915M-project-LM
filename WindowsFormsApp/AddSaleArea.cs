@@ -29,29 +29,32 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtLocation.Text))
+            if (Main.ShowYesNoDialog("Do you want to save?"))
             {
-
-                string Location = txtLocation.Text;
-                string Remark = txtRemark.Text;
-                string query;
-
-                if (!string.IsNullOrEmpty(Remark))
+                if (!string.IsNullOrEmpty(txtLocation.Text))
                 {
-                    query = $"INSERT INTO SaleArea (Location, Remark) VALUES ('{Location}', '{Remark}')";
+
+                    string Location = txtLocation.Text;
+                    string Remark = txtRemark.Text;
+                    string query;
+
+                    if (!string.IsNullOrEmpty(Remark))
+                    {
+                        query = $"INSERT INTO SaleArea (Location, Remark) VALUES ('{Location}', '{Remark}')";
+                    }
+                    else
+                    {
+                        query = $"INSERT INTO SaleArea (Location) VALUES ('{Location}')";
+                    }
+                    Main.db.insertBySql(query);
+                    Main.ShowMessage("Successful add!");
+                    txtLocation.Text = String.Empty;
+                    txtRemark.Text = String.Empty;
                 }
                 else
                 {
-                    query = $"INSERT INTO SaleArea (Location) VALUES ('{Location}')";
+                    Main.ShowMessage("Please provide Location!");
                 }
-                Main.db.insertBySql(query);
-                Main.ShowMessage("Successful add!");
-                txtLocation.Text = String.Empty;
-                txtRemark.Text = String.Empty;
-            }
-            else
-            {
-                Main.ShowMessage("Please provide Location!");
             }
         }
 
