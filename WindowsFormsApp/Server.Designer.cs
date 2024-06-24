@@ -28,13 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.button = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // button
+            // 
+            this.button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button.Font = new System.Drawing.Font("PMingLiU", 48F);
+            this.button.Location = new System.Drawing.Point(0, 0);
+            this.button.Name = "button";
+            this.button.Size = new System.Drawing.Size(800, 450);
+            this.button.TabIndex = 0;
+            this.button.Text = "Simulate server on time";
+            this.button.UseVisualStyleBackColor = true;
+            this.button.Click += new System.EventHandler(this.button_Click);
             // 
             // frmServer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button);
             this.Name = "frmServer";
             this.Text = "Server";
             this.ResumeLayout(false);
@@ -42,5 +56,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button;
     }
 }
