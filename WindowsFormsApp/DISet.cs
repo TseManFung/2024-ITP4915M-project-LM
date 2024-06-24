@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Media.Media3D;
 
 namespace WindowsFormsApp
 {
@@ -17,7 +18,7 @@ namespace WindowsFormsApp
     {
         int? warehouseID;
         String InvoiceID, OrderSerial;
-        List<Form> forms = new List<Form>() ;
+        List<Form> forms = new List<Form>();
         public frmDISet(int? respent_warehouse, String respent_InvoiceID)
         {
             this.warehouseID = respent_warehouse;
@@ -60,10 +61,10 @@ namespace WindowsFormsApp
             txtInvoiceName.Text = strdata["DealerName"];
 
 
-           
+
             sql = "SELECT a.ItemID,  s.SpareName,  s.Weight,oi.Quantity,  oi.Quantity - IFNULL(f.Quantity, 0) - CASE WHEN i.CompleteState = 'C' THEN (SELECT SUM(quantity) FROM ActualQuantityDespatched WHERE InvoiceID = '202405240000011') ELSE 0 END AS 'Prev Qty',  a.Quantity AS 'Qty delivered',  IFNULL(f.Quantity, 0) AS 'Qty to follow',  a.BundlesNumber FROM  ActualQuantityDespatched a  INNER JOIN Invoice i ON a.InvoiceID = i.InvoiceID  INNER JOIN Spare s ON a.ItemID = s.SpareID  LEFT JOIN OrderItemToFollow f ON f.ItemID = a.ItemID  INNER JOIN OrderItem oi ON a.ItemID = oi.ItemID AND oi.OrderSerial = '20240524-0900-000001' WHERE  a.InvoiceID = '202405240000011' GROUP BY  a.ItemID,  s.SpareName,  s.Weight,  oi.Quantity - IFNULL(f.Quantity, 0) - CASE WHEN i.CompleteState = 'C' THEN (SELECT SUM(quantity) FROM ActualQuantityDespatched WHERE InvoiceID = '202405240000011') ELSE 0 END,  a.Quantity,  IFNULL(f.Quantity, 0),f.Quantity,  a.BundlesNumber;";
             forms.Add(this);
-            using(var dt = Main.db.GetDataTable(sql))
+            using (var dt = Main.db.GetDataTable(sql))
             {
                 foreach (DataRow dr in dt.Rows)
                 {
@@ -75,14 +76,37 @@ namespace WindowsFormsApp
         private void btnExportasPDF_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Visible = false;
+            PrintDialog printDialog = new PrintDialog();
+            printDialog.Document = new PrintDocument();
+
+
+
             try
             {
+
+
                 // download invoice as pdf
 
-                PrintDocument printDocument1 = new PrintDocument();
-                printDocument1.DefaultPageSettings.Landscape = true;
-                printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
-                printDocument1.Print();
+                //PrintDocument printDocument1 = new PrintDocument();
+                //printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
+                //printPreviewDialog1.ShowDialog();
+                if (printDialog.ShowDialog() == DialogResult.OK)
+                {
+                    // Set the selected printer
+                    PrintDocument printDocument = printDialog.Document;
+
+                    printDocument.DefaultPageSettings.Landscape = true;
+
+                    // Attach the event handler for printing
+                    printDocument.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
+
+                    // Print to the selected printer
+                    printDocument.Print();
+                    currentPageIndex = 0;
+                }
+
+
+                //printDocument1.Print();
             }
             catch (Exception ex)
             {
@@ -103,13 +127,13 @@ namespace WindowsFormsApp
             {
                 pdfCover(e);
             }
-            else 
+            else
             {
                 pdfContent(e);
             }
 
             currentPageIndex++;
-            if(forms.Count-1 <= currentPageIndex)
+            if (forms.Count - 1 <= currentPageIndex)
             {
                 e.HasMorePages = false;
             }
@@ -120,46 +144,44 @@ namespace WindowsFormsApp
         }
         Font font = new Font("Arial", 48, System.Drawing.FontStyle.Regular);
         Brush brush = Brushes.Black;
-        private void pdfCover(System.Drawing.Printing.PrintPageEventArgs e) {
+        private void pdfCover(System.Drawing.Printing.PrintPageEventArgs e)
+        {
             int centerX = e.PageBounds.Width / 2;
             int centerY = e.PageBounds.Height / 2;
             int mt = e.MarginBounds.Top, ml = e.MarginBounds.Left, mr = e.MarginBounds.Right, mb = e.MarginBounds.Bottom;
-            e.Graphics.DrawString("Despatch Instruction Set", font, brush, centerX, mt-100, new StringFormat() { Alignment = StringAlignment.Center });
+            e.Graphics.DrawString("Despatch Instruction Set", font, brush, centerX, mt - 100, new StringFormat() { Alignment = StringAlignment.Center });
 
-            e.Graphics.DrawImage(Form2Bitmap(forms[0], mb-mt,mr-ml), ml,mt );
-            
+            //e.Graphics.DrawImage(Form2Bitmap(forms[0], mb-mt,mr-ml), 0,0 );
+            e.Graphics.DrawImage(Form2Bitmap(forms[0], mb - mt, mr - ml), ml, mt);
+
 
         }
 
-        private Bitmap Form2Bitmap(Form frm, int height, int maxWidth)
+        private Bitmap Form2Bitmap(Form frm, int maxHeight, int maxWidth)
         {
-            int width = (int)(((double)height / frm.Height) * frm.Width);
+            int height = maxHeight;
+            int width = maxWidth;
 
-            if (width > maxWidth)
+            if (frm.Width > frm.Height)
             {
-                width = maxWidth;
-                height = (int)(((double)width / frm.Width) * frm.Height);
+                height = (int)(((double)frm.Height / frm.Width) * maxWidth);
             }
-
-            Bitmap bmp = new Bitmap(width, height);
-
-            if (frm.BackgroundImage != null)
+            else
             {
-                using (Graphics graphics = Graphics.FromImage(bmp))
-                {
-                    graphics.Clear(Color.White); // 清空背景为白色
-                    graphics.DrawImage(frm.BackgroundImage, new Rectangle(0, 0, width, height));
-                }
+                width = (int)(((double)frm.Width / frm.Height) * maxHeight);
             }
+            Bitmap original = new Bitmap(frm.Width, frm.Height);
+            frm.DrawToBitmap(original, new System.Drawing.Rectangle(0, 0, frm.Width, frm.Height));
 
-            frm.DrawToBitmap(bmp, new Rectangle(0, 0, width, height));
-            return bmp;
+            Bitmap resized = new Bitmap(original, new Size(width, height));
+
+            return resized;
         }
 
         private void pdfContent(System.Drawing.Printing.PrintPageEventArgs e)
         {
             int mt = e.MarginBounds.Top, ml = e.MarginBounds.Left, mr = e.MarginBounds.Right, mb = e.MarginBounds.Bottom;
-            e.Graphics.DrawImage(Form2Bitmap(forms[currentPageIndex], e.PageBounds.Height, e.PageBounds.Width), ml, mt);
+            e.Graphics.DrawImage(Form2Bitmap(forms[currentPageIndex], mb - mt, mr - ml), ml, mt);
         }
 
         private void createDID(string date, string OrderSerial, int DealerID, string Carrier, DataRow dr)

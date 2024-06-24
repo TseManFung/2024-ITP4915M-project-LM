@@ -82,7 +82,7 @@ namespace WindowsFormsApp
                 }
             }
 
-            if ((Main.AssessLevel == 700 || Main.AssessLevel<=300) && (respent_InvoiceID != null)&&(State =="TKD"))
+            if ((Main.AssessLevel == 700 || Main.AssessLevel<=300) && (respent_InvoiceID != null)&&(State =="T"))
             {
                 BtnDIset.Visible = true;
             }
