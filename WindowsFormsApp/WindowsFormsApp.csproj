@@ -247,6 +247,12 @@
     <Compile Include="OrderItemDetail.Designer.cs">
       <DependentUpon>OrderItemDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="Server.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Server.Designer.cs">
+      <DependentUpon>Server.cs</DependentUpon>
+    </Compile>
     <Compile Include="sign.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -562,6 +568,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Scrap.resx">
       <DependentUpon>Scrap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Server.resx">
+      <DependentUpon>Server.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SetStockLevel.resx">
       <DependentUpon>SetStockLevel.cs</DependentUpon>

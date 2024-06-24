@@ -68,7 +68,7 @@ namespace WindowsFormsApp
             if (dgvProcessing.Columns.Count == 0)
             {
                 dgvProcessing.Columns.Add("OrderSerial", "Order Serial");
-                if (Main.staffID == null) { dgvProcessing.Columns.Add("DealerID", "Dealer ID"); }
+                if (Main.staffID != null) { dgvProcessing.Columns.Add("DealerID", "Dealer ID"); }
                 dgvProcessing.Columns.Add("OrderDate", "Order Date");
                 dgvProcessing.Columns.Add("OrderNumberfromDealer", "Order Number from Dealer");
                 dgvProcessing.Columns.Add("State", "State");
@@ -78,7 +78,7 @@ namespace WindowsFormsApp
             if (dgvComplete.Columns.Count == 0)
             {
                 dgvComplete.Columns.Add("OrderSerial", "Order Serial");
-                if (Main.staffID == null) { dgvComplete.Columns.Add("DealerID", "Dealer ID"); }
+                if (Main.staffID != null) { dgvComplete.Columns.Add("DealerID", "Dealer ID"); }
                 dgvComplete.Columns.Add("OrderDate", "Order Date");
                 dgvComplete.Columns.Add("OrderNumberfromDealer", "Order Number from Dealer");
                 dgvComplete.Columns.Add("State", "State");
@@ -88,6 +88,7 @@ namespace WindowsFormsApp
             //State 在 ProcesingList 的就放入dgvProcessing，在否則就放入dgvComplete
             if (Main.dealerID != null)
             {
+
                 foreach (DataRow row in dt.Rows)
                 {
                     if (ProcesingList.Contains(row["State"].ToString()))

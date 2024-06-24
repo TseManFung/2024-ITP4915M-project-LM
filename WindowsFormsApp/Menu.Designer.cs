@@ -99,6 +99,8 @@
             this.lblModifyInformation = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBoxLogout = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBoxLenguage = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -147,6 +149,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxModifyInformation)).BeginInit();
             this.tableLayoutPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
+            this.tableLayoutPanel24.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLenguage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -212,6 +215,7 @@
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel21);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel22);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel7);
+            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel24);
             this.flowLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -1159,6 +1163,35 @@
             this.pictureBoxLogout.TabStop = false;
             this.pictureBoxLogout.Click += new System.EventHandler(this.CLogout);
             // 
+            // tableLayoutPanel24
+            // 
+            this.tableLayoutPanel24.ColumnCount = 1;
+            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel24.Controls.Add(this.label2, 0, 1);
+            this.tableLayoutPanel24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tableLayoutPanel24.Location = new System.Drawing.Point(993, 471);
+            this.tableLayoutPanel24.Name = "tableLayoutPanel24";
+            this.tableLayoutPanel24.RowCount = 2;
+            this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel24.Size = new System.Drawing.Size(192, 150);
+            this.tableLayoutPanel24.TabIndex = 48;
+            this.tableLayoutPanel24.Visible = false;
+            this.tableLayoutPanel24.Click += new System.EventHandler(this.server_Click);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label2.Location = new System.Drawing.Point(58, 129);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 12);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Simulate server";
+            this.label2.Click += new System.EventHandler(this.server_Click);
+            // 
             // pictureBoxLenguage
             // 
             this.pictureBoxLenguage.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -1252,6 +1285,8 @@
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).EndInit();
+            this.tableLayoutPanel24.ResumeLayout(false);
+            this.tableLayoutPanel24.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLenguage)).EndInit();
             this.ResumeLayout(false);
 
@@ -1329,6 +1364,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel24;
+        private System.Windows.Forms.Label label2;
     }
 }
 

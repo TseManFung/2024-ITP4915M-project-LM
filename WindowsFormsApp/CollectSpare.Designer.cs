@@ -94,7 +94,7 @@
             // txtActualQuantity
             // 
             this.txtActualQuantity.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtActualQuantity.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtActualQuantity.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtActualQuantity.Location = new System.Drawing.Point(3, 53);
             this.txtActualQuantity.Multiline = true;
             this.txtActualQuantity.Name = "txtActualQuantity";
@@ -107,7 +107,7 @@
             this.lblActualQuantity.BackColor = System.Drawing.SystemColors.Control;
             this.lblActualQuantity.CausesValidation = false;
             this.lblActualQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblActualQuantity.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblActualQuantity.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblActualQuantity.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblActualQuantity.Location = new System.Drawing.Point(3, 0);
             this.lblActualQuantity.Name = "lblActualQuantity";
@@ -120,7 +120,7 @@
             this.lblFollowingCollect.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.lblFollowingCollect, 2);
             this.lblFollowingCollect.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblFollowingCollect.Font = new System.Drawing.Font("新細明體", 24F);
+            this.lblFollowingCollect.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.lblFollowingCollect.Location = new System.Drawing.Point(3, 0);
             this.lblFollowingCollect.Name = "lblFollowingCollect";
             this.lblFollowingCollect.Size = new System.Drawing.Size(1130, 31);
@@ -173,7 +173,7 @@
             // txtSpareNumberofBundles
             // 
             this.txtSpareNumberofBundles.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtSpareNumberofBundles.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtSpareNumberofBundles.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtSpareNumberofBundles.Location = new System.Drawing.Point(3, 53);
             this.txtSpareNumberofBundles.Multiline = true;
             this.txtSpareNumberofBundles.Name = "txtSpareNumberofBundles";
@@ -186,7 +186,7 @@
             this.lblSpareNumberofBundles.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareNumberofBundles.CausesValidation = false;
             this.lblSpareNumberofBundles.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareNumberofBundles.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareNumberofBundles.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareNumberofBundles.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareNumberofBundles.Location = new System.Drawing.Point(3, 0);
             this.lblSpareNumberofBundles.Name = "lblSpareNumberofBundles";
@@ -215,7 +215,7 @@
             this.lblSpareID.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareID.CausesValidation = false;
             this.lblSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareID.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareID.Location = new System.Drawing.Point(3, 0);
             this.lblSpareID.Name = "lblSpareID";
@@ -227,7 +227,7 @@
             // 
             this.comboBoxSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxSpareID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.comboBoxSpareID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSpareID.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareID.FormattingEnabled = true;
             this.comboBoxSpareID.Location = new System.Drawing.Point(3, 53);
             this.comboBoxSpareID.Name = "comboBoxSpareID";
@@ -252,7 +252,7 @@
             // btnTurnOnScanner
             // 
             this.btnTurnOnScanner.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnTurnOnScanner.Font = new System.Drawing.Font("新細明體", 24F);
+            this.btnTurnOnScanner.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.btnTurnOnScanner.Location = new System.Drawing.Point(3, 3);
             this.btnTurnOnScanner.Name = "btnTurnOnScanner";
             this.btnTurnOnScanner.Size = new System.Drawing.Size(388, 51);
@@ -264,7 +264,7 @@
             // btnConfirm
             // 
             this.btnConfirm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnConfirm.Font = new System.Drawing.Font("新細明體", 24F);
+            this.btnConfirm.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.btnConfirm.Location = new System.Drawing.Point(798, 561);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(335, 57);

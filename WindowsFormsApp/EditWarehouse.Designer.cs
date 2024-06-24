@@ -57,7 +57,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.Controls.Add(this.btnDelete, 3, 1);
             this.tableLayoutPanel2.Controls.Add(this.lblEdit, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel12, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel12, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 3);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
@@ -74,7 +74,7 @@
             // btnDelete
             // 
             this.btnDelete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDelete.Font = new System.Drawing.Font("新細明體", 32F);
+            this.btnDelete.Font = new System.Drawing.Font("PMingLiU", 32F);
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDelete.Location = new System.Drawing.Point(483, 121);
             this.btnDelete.Name = "btnDelete";
@@ -87,7 +87,7 @@
             // lblEdit
             // 
             this.lblEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblEdit.Font = new System.Drawing.Font("新細明體", 32F);
+            this.lblEdit.Font = new System.Drawing.Font("PMingLiU", 32F);
             this.lblEdit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblEdit.Location = new System.Drawing.Point(163, 121);
             this.lblEdit.Name = "lblEdit";
@@ -100,27 +100,28 @@
             // tableLayoutPanel12
             // 
             this.tableLayoutPanel12.ColumnCount = 1;
+            this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel12, 3);
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel12.Controls.Add(this.comboBoxWarehouse, 0, 1);
             this.tableLayoutPanel12.Controls.Add(this.lblWarehouse, 0, 0);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(323, 3);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(163, 3);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 2;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(154, 112);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(474, 112);
             this.tableLayoutPanel12.TabIndex = 86;
             // 
             // comboBoxWarehouse
             // 
             this.comboBoxWarehouse.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxWarehouse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxWarehouse.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxWarehouse.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxWarehouse.FormattingEnabled = true;
             this.comboBoxWarehouse.Location = new System.Drawing.Point(3, 59);
             this.comboBoxWarehouse.Name = "comboBoxWarehouse";
-            this.comboBoxWarehouse.Size = new System.Drawing.Size(148, 35);
+            this.comboBoxWarehouse.Size = new System.Drawing.Size(468, 35);
             this.comboBoxWarehouse.TabIndex = 74;
             this.comboBoxWarehouse.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -130,11 +131,11 @@
             this.lblWarehouse.BackColor = System.Drawing.SystemColors.Control;
             this.lblWarehouse.CausesValidation = false;
             this.lblWarehouse.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblWarehouse.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblWarehouse.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblWarehouse.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblWarehouse.Location = new System.Drawing.Point(3, 0);
             this.lblWarehouse.Name = "lblWarehouse";
-            this.lblWarehouse.Size = new System.Drawing.Size(148, 56);
+            this.lblWarehouse.Size = new System.Drawing.Size(468, 56);
             this.lblWarehouse.TabIndex = 73;
             this.lblWarehouse.Text = "Warehouse:";
             // 
@@ -189,7 +190,7 @@
             // txtLocation
             // 
             this.txtLocation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtLocation.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtLocation.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtLocation.Location = new System.Drawing.Point(3, 53);
             this.txtLocation.Multiline = true;
             this.txtLocation.Name = "txtLocation";
@@ -202,7 +203,7 @@
             this.lblLocation.BackColor = System.Drawing.SystemColors.Control;
             this.lblLocation.CausesValidation = false;
             this.lblLocation.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblLocation.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblLocation.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblLocation.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblLocation.Location = new System.Drawing.Point(3, 0);
             this.lblLocation.Name = "lblLocation";
@@ -213,7 +214,7 @@
             // btnSave
             // 
             this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSave.Font = new System.Drawing.Font("新細明體", 32F);
+            this.btnSave.Font = new System.Drawing.Font("PMingLiU", 32F);
             this.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSave.Location = new System.Drawing.Point(319, 158);
             this.btnSave.Name = "btnSave";

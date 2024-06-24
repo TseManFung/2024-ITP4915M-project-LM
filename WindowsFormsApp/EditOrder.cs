@@ -123,5 +123,35 @@ namespace WindowsFormsApp
             numericUpDownQuantity.Maximum = numericUpDownQuantity.Value = quantity;
             numericUpDownQuantity.Minimum = Convert.ToInt32(orderItem.Select($"SpareName = '{comboBoxSpareName.SelectedItem}'")[0]["Processed Qty"]);
         }
+
+        private void buttonDeleteOrder_Click(object sender, EventArgs e)
+        {
+            if (comboBoxOrderSerial.SelectedItem == null)
+            {
+                Main.ShowMessage("Please select a Order");
+                return;
+            }
+            string sql = $"SELECT State FROM `Order` where OrderSerial = '{this.orderSerial}'";
+            string state;
+            using (var reader = Main.db.readBySql(sql))
+            {
+                reader.Read();
+                state = reader[0].ToString();
+            }
+            if(state == "C")
+            {
+
+                sql = $"DELETE FROM OrderItem WHERE OrderSerial = '{this.orderSerial}';";
+                Main.db.updateBySql(sql);
+                sql = $"DELETE FROM `Order` WHERE OrderSerial = '{this.orderSerial}';";
+                Main.db.updateBySql(sql);
+                Main.ShowMessage("Order Deleted");
+                (this.ParentForm as Main)?.lblTitle_Click_1(sender,e);
+            }
+            else
+            {
+                Main.ShowMessage("Order can not be deleted");
+            }
+        }
     }
 }

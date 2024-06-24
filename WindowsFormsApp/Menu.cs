@@ -42,7 +42,8 @@ namespace WindowsFormsApp
             {"scrap", 500 },
             {"Re-Stock Record", 500 },
             {"Order Edit", 600 },
-            {"Report", 300 }
+            {"Report", 300 },
+            {"Simulate server",0 }
         };
 
         Dictionary<string, int> bigaccessMap = new Dictionary<string, int>() {
@@ -228,6 +229,12 @@ namespace WindowsFormsApp
         private void CSpareQRcode(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmSpareQRCode));
+
+        }
+
+        private void server_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmServer));
 
         }
     }

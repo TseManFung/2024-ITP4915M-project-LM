@@ -165,7 +165,7 @@ namespace WindowsFormsApp
             return Main.currfrm.GetType() == frmType;
         }
 
-        private void lblTitle_Click_1(object sender, EventArgs e)
+        public void lblTitle_Click_1(object sender, EventArgs e)
         {
 
             if (currfrm_equals(typeof(frmLogin)) || currfrm_equals(typeof(frmMenu)))
