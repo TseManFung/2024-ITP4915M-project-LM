@@ -25,13 +25,22 @@ namespace WindowsFormsApp
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txtLocation.Text = comboBoxWarehouse.SelectedItem.ToString();
+            string selectWarehouse = comboBoxWarehouse.SelectedItem.ToString();
+            String sql = $"SELECT Location FROM Warehouse Where Name = '{selectWarehouse}';";
+            using (var reader = Main.db.readBySql(sql))
+            {
+                while (reader.Read())
+                {
+                    selectWarehouse = reader.GetString(0);
+                }
+            }
+            txtLocation.Text = selectWarehouse;
         }
 
         private void frmEditWarehouse_Load(object sender, EventArgs e)
         {
             List<string> WarehouseNamelist = new List<string>();
-            String sql = $"SELECT Location FROM Warehouse;";
+            String sql = $"SELECT Name FROM Warehouse Where State = 'N';";
             using (var reader = Main.db.readBySql(sql))
             {
                 while (reader.Read())
@@ -52,7 +61,15 @@ namespace WindowsFormsApp
                 {
 
                     string Location = txtLocation.Text;
-                    string selectWarehouse = comboBoxWarehouse.SelectedItem.ToString(); ;
+                    string selectWarehouse = comboBoxWarehouse.SelectedItem.ToString();
+                    String sql = $"SELECT Location FROM Warehouse Where Name = '{selectWarehouse}';";
+                    using (var reader = Main.db.readBySql(sql))
+                    {
+                        while (reader.Read())
+                        {
+                            selectWarehouse = reader.GetString(0);
+                        }
+                    }
                     String sqlofWarehouse = $"SELECT WarehouseID FROM Warehouse WHERE Location = '{selectWarehouse}'";
                     int WarehouseID = 0;
                     using (var reader = Main.db.readBySql(sqlofWarehouse))
@@ -85,8 +102,16 @@ namespace WindowsFormsApp
         {
             TargetWarehouse input = new TargetWarehouse();
             String DeleteWarehouse = comboBoxWarehouse.SelectedItem.ToString();
+            String sql = $"SELECT Location FROM Warehouse Where Name = '{DeleteWarehouse}';";
+            using (var reader = Main.db.readBySql(sql))
+            {
+                while (reader.Read())
+                {
+                    DeleteWarehouse = reader.GetString(0);
+                }
+            }
             // 获取要删除仓库的 WarehouseID
-            String sql = $"SELECT WarehouseID FROM Warehouse WHERE Location = '{DeleteWarehouse}'";
+            sql = $"SELECT WarehouseID FROM Warehouse WHERE Location = '{DeleteWarehouse}'";
             int WarehouseID = 0;
             using (var reader = Main.db.readBySql(sql))
             {

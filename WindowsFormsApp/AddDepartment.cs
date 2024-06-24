@@ -31,7 +31,7 @@ namespace WindowsFormsApp
         private void frmAddDepartment_Load(object sender, EventArgs e)
         {
             List<string> WarehouseNamelist = new List<string>();
-            String sql = $"SELECT Location FROM Warehouse;";
+            String sql = $"SELECT Name FROM Warehouse Where State = 'N';";
             using (var reader = Main.db.readBySql(sql))
             {
                 while (reader.Read())
@@ -55,6 +55,14 @@ namespace WindowsFormsApp
                     string DeptName = txtDepartmentName.Text;
                     string DeptEmail = txtDepartmentEmail.Text;
                     string WarehouseLocation = comboBoxWarehouse.SelectedItem.ToString();
+                    string sql = $"SELECT Location FROM Warehouse WHERE Name = '{WarehouseLocation}';";
+                    using (var reader = Main.db.readBySql(sql))
+                    {
+                        while (reader.Read())
+                        {
+                            WarehouseLocation = reader.GetString(0);
+                        }
+                    }
                     int WarehouseID = 0;
 
                     string sql1 = "SELECT DeptID FROM Department;";
@@ -81,7 +89,7 @@ namespace WindowsFormsApp
                     string query;
                     if (radYes.Checked)
                     {
-                        string sql = $"SELECT WarehouseID FROM Warehouse WHERE Location = '{WarehouseLocation}';";
+                        sql = $"SELECT WarehouseID FROM Warehouse WHERE Location = '{WarehouseLocation}';";
                         using (var reader = Main.db.readBySql(sql))
                         {
                             if (reader.Read())

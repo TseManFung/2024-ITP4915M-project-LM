@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace WindowsFormsApp
 {
@@ -16,6 +17,7 @@ namespace WindowsFormsApp
         private BindingSource restockBindingSource = new BindingSource();
         private BindingSource followingROLBindingSource = new BindingSource();
         DataTable RestockOrder;
+        int respent_warehouse = 0;
         public frmReStock()
         {
             InitializeComponent();
@@ -44,15 +46,13 @@ namespace WindowsFormsApp
         }
         private void getData()
         {
-            int respent_warehouse = 0;
             string sql_getwarehouse = $"SELECT d.WarehouseID FROM User u INNER JOIN Staff s ON u.StaffID = s.StaffID INNER JOIN Department d ON s.DeptID = d.DeptID WHERE u.UserID={Main.userID};";
             using (var reader = Main.db.readBySql(sql_getwarehouse))
             {
                 reader.Read();
                 respent_warehouse = reader.GetInt32(0);
             }
-            string sql = $"SELECT ws.WarehouseID, ws.SpareID, a.quantity FROM WarehouseStockLevel ws JOIN ActualStock a ON ws.WarehouseID = a.WarehouseID AND ws.SpareID = a.SpareID WHERE a.quantity <= ws.ROL AND a.WarehouseID = {respent_warehouse};";
-            RestockOrder = Main.db.GetDataTable(sql);
+            string sql = $@" SELECT ws.WarehouseID, ws.SpareID, a.quantity FROM WarehouseStockLevel ws JOIN ActualStock a ON ws.WarehouseID = a.WarehouseID AND ws.SpareID = a.SpareID WHERE a.quantity <= ws.ROL AND a.WarehouseID = '{respent_warehouse}' AND NOT EXISTS ( SELECT 1 FROM RestockItem ri JOIN RestockOrder ro ON ri.RestockOrderID = ro.RestockOrderID WHERE ri.ItemID = ws.SpareID AND ri.Quantity = a.quantity AND ri.State = 'C' AND ro.WarehouseID = '{respent_warehouse}' ); "; RestockOrder = Main.db.GetDataTable(sql);
 
         }
 
@@ -179,6 +179,21 @@ namespace WindowsFormsApp
 
             bool rowsProcessed = false;
             string processedRowsDetails = string.Empty;
+            int RestockOrderID = 0;
+
+            // 獲取最大的 RestockOrderID 並加 1
+            string query = " SELECT MAX(RestockOrderID) AS NextRestockOrderID FROM RestockOrder;";
+            using (var reader = Main.db.readBySql(query))
+            {
+                if (reader.Read())
+                {
+                    RestockOrderID = reader.GetInt32(0);
+                }
+            }
+            RestockOrderID += 1;
+            // 插入新的 RestockOrder
+            query = $"INSERT INTO RestockOrder (RestockOrderID, WarehouseID, OrderDate, Remark) VALUES ({RestockOrderID}, '{respent_warehouse}', '{DateTime.UtcNow.AddHours(8).ToString("yyyy-MM-dd")}', 'ROL order')";
+            Main.db.insertBySql(query);
 
             // 遍歷 DataGridView 中的所有行
             foreach (DataGridViewRow row in dgvRestock.Rows)
@@ -190,6 +205,10 @@ namespace WindowsFormsApp
                 var warehouseID = row.Cells["WarehouseID"].Value;
                 var spareID = row.Cells["SpareID"].Value;
                 var quantity = row.Cells["quantity"].Value;
+
+                // 插入 RestockItem
+                query = $"INSERT INTO RestockItem (RestockOrderID, ItemID, Quantity, State) VALUES ({RestockOrderID}, '{spareID}', {quantity}, 'C')";
+                Main.db.insertBySql(query);
 
                 // 處理數據並構建詳細信息字符串
                 processedRowsDetails += $"WarehouseID: {warehouseID}, SpareID: {spareID}, Quantity: {quantity}\n";
