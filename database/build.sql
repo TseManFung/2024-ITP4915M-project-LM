@@ -109,9 +109,16 @@ CREATE TABLE `OrderItemToFollow` (
   `OrderSerial` char(20),
   `ItemID` char(6),
   `Quantity` int NOT NULL DEFAULT 1,
-  `Assgin` int DEFAULT NULL,
   `State` char(1) NOT NULL COMMENT 'use a char to record the state(D = Dnoe, W = Wait, etc...)',
   PRIMARY KEY (`OrderSerial`, `ItemID`)
+);
+
+CREATE TABLE `OrderItemForCollect` (
+  `OrderSerial` char(20),
+  `ItemID` char(6),
+  `Assgin` int,
+  `Quantity` int NOT NULL DEFAULT 1,
+  PRIMARY KEY (`OrderSerial`, `ItemID`,`Assgin`)
 );
 
 CREATE TABLE `ActualQuantityDespatched` (
@@ -261,4 +268,8 @@ ALTER TABLE `WarehouseStockLevel` ADD FOREIGN KEY (`WarehouseID`) REFERENCES `Wa
 
 ALTER TABLE `WarehouseStockLevel` ADD FOREIGN KEY (`SpareID`) REFERENCES `Spare` (`SpareID`);
 
-ALTER TABLE `OrderItemToFollow` ADD FOREIGN KEY (`Assgin`) REFERENCES `Warehouse` (`WarehouseID`);
+ALTER TABLE `OrderItemForCollect` ADD FOREIGN KEY (`Assgin`) REFERENCES `Warehouse` (`WarehouseID`);
+
+ALTER TABLE `OrderItemForCollect` ADD FOREIGN KEY (`OrderSerial`) REFERENCES `Order` (`OrderSerial`);
+
+ALTER TABLE `OrderItemForCollect` ADD FOREIGN KEY (`ItemID`) REFERENCES `Spare` (`SpareID`);
