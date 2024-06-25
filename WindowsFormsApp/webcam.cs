@@ -18,6 +18,7 @@ namespace WindowsFormsApp
         public frmWebcam()
         {
             InitializeComponent();
+            
         }
         FilterInfoCollection FInfoC;
         VideoCaptureDevice cam;
@@ -78,6 +79,10 @@ namespace WindowsFormsApp
                     {
                         string decoded = result.ToString().Trim();
                         lblCode.Text = this.scanCode = decoded;
+                        if(Main.ShowYesNoDialog($"Do you want to use this code: {decoded}"))
+                        {
+                            this.Close();
+                        }
                     }
                     else {
                         lblCode.Text = "Scanning...";
@@ -90,5 +95,7 @@ namespace WindowsFormsApp
                 }
             }
         }
+
+
     }
 }

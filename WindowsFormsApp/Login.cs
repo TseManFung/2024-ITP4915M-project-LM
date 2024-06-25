@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Renci.SshNet.Messages;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -72,8 +73,9 @@ namespace WindowsFormsApp
 
         private void lblForgotPassword_Click(object sender, EventArgs e)
         {
-            frmForgetPW f = new frmForgetPW();
-            f.ShowDialog();
+            //frmForgetPW f = new frmForgetPW();
+            //f.ShowDialog();
+            MessageBox.Show("Please contact us to reset your password.\n    tel for Hong Kong: 2595-8333\n    tel for China: 012-3456-7890\n    email: it@legendmotor.com\nOpening Hours: 9am - 6pm daily incl. public holiday.","Contact Us");
         }
 
         private void frmLogin_Load(object sender, EventArgs e)

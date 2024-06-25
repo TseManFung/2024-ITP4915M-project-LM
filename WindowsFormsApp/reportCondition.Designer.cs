@@ -316,6 +316,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(768, 392);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.MaximumSize = new System.Drawing.Size(784, 431);
+            this.MinimumSize = new System.Drawing.Size(784, 431);
             this.Name = "reportCondition";
             this.Text = "reportCondition";
             this.Load += new System.EventHandler(this.reportCondition_Load);

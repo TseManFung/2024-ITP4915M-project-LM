@@ -26,39 +26,46 @@ namespace WindowsFormsApp
             reportCondition.ShowDialog();
             CoditionDict = reportCondition.CoditionDict;
             string s = "Condition: ";
-            foreach (KeyValuePair<string, Object> kvp in CoditionDict)
+            try
             {
-                if (kvp.Key == "quantity_operator")
+                foreach (KeyValuePair<string, Object> kvp in CoditionDict)
                 {
-                    continue;
-                }
-                if (kvp.Key == "only")
-                {
-                    if ((bool)kvp.Value)
+                    if (kvp.Key == "quantity_operator")
                     {
-                        s += "your working warehouse";
+                        continue;
+                    }
+                    if (kvp.Key == "only")
+                    {
+                        if ((bool)kvp.Value)
+                        {
+                            s += "your working warehouse";
+                        }
+                        else
+                        {
+                            s += "all warehouse";
+                        }
                     }
                     else
                     {
-                        s += "all warehouse";
+                        s += " and ";
+                        s += kvp.Key + " ";
+                        if (kvp.Key == "quantity")
+                        {
+                            s += CoditionDict["quantity_operator"] + " ";
+                        }
+                        else
+                        {
+                            s += "= ";
+                        }
+                        s += kvp.Value;
                     }
                 }
-                else
-                {
-                    s += " and ";
-                    s += kvp.Key + " ";
-                    if (kvp.Key == "quantity")
-                    {
-                        s += CoditionDict["quantity_operator"] + " ";
-                    }
-                    else
-                    {
-                        s += "= ";
-                    }
-                    s += kvp.Value;
-                }
+                lblCondition.Text = s;
             }
-            lblCondition.Text = s;
+            catch (Exception ex)
+            {
+                
+            }
             //update report
             GenReport();
         }
@@ -125,12 +132,12 @@ WHERE i.CompleteState = 'S'
                 {
                     sql += " AND ord.DealerID = " + CoditionDict["DealerID"];
                 }
-                sql +=" GROUP BY a.WarehouseID";
+                sql += " GROUP BY a.WarehouseID";
 
                 DataTable dt = Main.db.GetDataTable(sql);
                 dgvPreview.DataSource = dt;
 
-                tableLayoutPanel4.Visible = tableLayoutPanel6.Visible = tableLayoutPanel7.Visible =  true;
+                tableLayoutPanel4.Visible = tableLayoutPanel6.Visible = tableLayoutPanel7.Visible = true;
                 txtTotalNumberofDistinctItem.Text = dt.Rows.Count.ToString();
                 txtTotalPrice.Text = dt.Compute("SUM([Total Sales])", "").ToString();
                 txtTotalNumberofItem.Text = dt.Compute("SUM([Total Quantity])", "").ToString();
@@ -212,15 +219,83 @@ JOIN Spare s ON a.SpareID = s.SpareID WHERE ";
 
                 DataTable dt = Main.db.GetDataTable(sql);
                 dgvPreview.DataSource = dt;
-                tableLayoutPanel4.Visible = tableLayoutPanel6.Visible =  true;
+                tableLayoutPanel4.Visible = tableLayoutPanel6.Visible = true;
                 tableLayoutPanel7.Visible = false;
                 txtTotalNumberofDistinctItem.Text = dt.Rows.Count.ToString();
                 txtTotalNumberofItem.Text = dt.Compute("SUM([quantity])", "").ToString();
             }
             else if (comboBoxReportType.SelectedIndex == 3)
             {
-
+                sql = @"SELECT 
+  s.ItemID,
+  sp.SpareName,
+  s.WarehouseID,
+  w.Name AS WarehouseName,
+  s.RecordTime,
+  s.Quantity,
+  s.Discrepancy,
+  s.Quantity * sp.Price AS ScrapAmount
+FROM ScrapItems s
+JOIN Spare sp ON s.ItemID = sp.SpareID
+JOIN Warehouse w ON s.WarehouseID = w.WarehouseID where ";
+                scrapReport(sql,"", warehouseID);
             }
+            else if (comboBoxReportType.SelectedIndex == 4)
+            {
+                sql = @"SELECT 
+  s.ItemID,
+  sp.SpareName,
+  sum(s.Quantity) as Quantity,
+  sum(s.Quantity * sp.Price) AS ScrapAmount
+FROM ScrapItems s
+JOIN Spare sp ON s.ItemID = sp.SpareID
+JOIN Warehouse w ON s.WarehouseID = w.WarehouseID where";
+                scrapReport(sql,"s.ItemID", warehouseID);
+            }
+            else if (comboBoxReportType.SelectedIndex == 5)
+            {
+                sql = @"SELECT 
+  s.WarehouseID,
+  w.Name AS WarehouseName,
+  sum(s.Quantity) as Quantity,
+  sum(s.Quantity * sp.Price) AS ScrapAmount
+FROM ScrapItems s
+JOIN Spare sp ON s.ItemID = sp.SpareID
+JOIN Warehouse w ON s.WarehouseID = w.WarehouseID where";
+                scrapReport(sql, "s.WarehouseID", warehouseID);
+            }
+        }
+
+        private void scrapReport(string sql,string groupby, int warehouseID)
+        {
+            
+            if (CoditionDict.ContainsKey("only") && (bool)CoditionDict["only"] && (warehouseID != -1))
+            {
+                sql += " s.WarehouseID = " + warehouseID;
+            }
+            else
+            {
+                sql += " 1=1";
+            }
+            if (CoditionDict.ContainsKey("quantity_operator"))
+            {
+                sql += " AND s.Quantity " + CoditionDict["quantity_operator"] + " " + CoditionDict["quantity"];
+            }
+            if (CoditionDict.ContainsKey("SpareID"))
+            {
+                sql += " AND s.ItemID = " + CoditionDict["SpareID"];
+            }
+            if (groupby != String.Empty)
+            {
+                sql += " GROUP BY " + groupby;
+            }
+            DataTable dt = Main.db.GetDataTable(sql);
+            dgvPreview.DataSource = dt;
+
+            tableLayoutPanel4.Visible = tableLayoutPanel6.Visible = tableLayoutPanel7.Visible = true;
+            txtTotalNumberofDistinctItem.Text = dt.Rows.Count.ToString();
+            txtTotalPrice.Text = dt.Compute("SUM([ScrapAmount])", "").ToString();
+            txtTotalNumberofItem.Text = dt.Compute("SUM([Quantity])", "").ToString();
         }
 
         private void frmReport_Resize(object sender, EventArgs e)

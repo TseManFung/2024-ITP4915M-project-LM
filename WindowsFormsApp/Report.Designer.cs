@@ -75,6 +75,7 @@
             this.lblPreview.Size = new System.Drawing.Size(482, 53);
             this.lblPreview.TabIndex = 78;
             this.lblPreview.Text = "Preview:";
+            this.lblPreview.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // tableLayoutPanel1
             // 
@@ -260,7 +261,9 @@
             "sale report (warehouse)",
             "sale report (spare)",
             "stock report",
-            "scarp report"});
+            "scarp report (list all)",
+            "scarp report (spare)",
+            "scarp report (warehouse)"});
             this.comboBoxReportType.Location = new System.Drawing.Point(3, 40);
             this.comboBoxReportType.Name = "comboBoxReportType";
             this.comboBoxReportType.Size = new System.Drawing.Size(208, 29);
@@ -307,7 +310,9 @@
             // 
             // txtTotalNumberofItem
             // 
-            this.txtTotalNumberofItem.BackColor = System.Drawing.SystemColors.Info;
+            this.txtTotalNumberofItem.BackColor = System.Drawing.SystemColors.Control;
+            this.txtTotalNumberofItem.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotalNumberofItem.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtTotalNumberofItem.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtTotalNumberofItem.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtTotalNumberofItem.Location = new System.Drawing.Point(3, 40);
@@ -348,7 +353,9 @@
             // 
             // txtTotalNumberofDistinctItem
             // 
-            this.txtTotalNumberofDistinctItem.BackColor = System.Drawing.SystemColors.Info;
+            this.txtTotalNumberofDistinctItem.BackColor = System.Drawing.SystemColors.Control;
+            this.txtTotalNumberofDistinctItem.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotalNumberofDistinctItem.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtTotalNumberofDistinctItem.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtTotalNumberofDistinctItem.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtTotalNumberofDistinctItem.Location = new System.Drawing.Point(3, 40);
@@ -400,7 +407,9 @@
             // 
             // txtTotalPrice
             // 
-            this.txtTotalPrice.BackColor = System.Drawing.SystemColors.Info;
+            this.txtTotalPrice.BackColor = System.Drawing.SystemColors.Control;
+            this.txtTotalPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTotalPrice.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtTotalPrice.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtTotalPrice.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtTotalPrice.Location = new System.Drawing.Point(3, 40);

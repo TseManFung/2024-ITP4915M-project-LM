@@ -53,13 +53,13 @@
             // 
             // cboCamera
             // 
-            this.cboCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.tableLayoutPanel1.SetColumnSpan(this.cboCamera, 2);
+            this.cboCamera.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.cboCamera.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cboCamera.FormattingEnabled = true;
             this.cboCamera.Location = new System.Drawing.Point(138, 58);
             this.cboCamera.Name = "cboCamera";
-            this.cboCamera.Size = new System.Drawing.Size(232, 29);
+            this.cboCamera.Size = new System.Drawing.Size(264, 29);
             this.cboCamera.TabIndex = 1;
             this.cboCamera.SelectedIndexChanged += new System.EventHandler(this.cboCamera_SelectedIndexChanged);
             // 
@@ -91,6 +91,7 @@
             this.picCamera.Location = new System.Drawing.Point(3, 93);
             this.picCamera.Name = "picCamera";
             this.picCamera.Size = new System.Drawing.Size(399, 265);
+            this.picCamera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picCamera.TabIndex = 2;
             this.picCamera.TabStop = false;
             // 
@@ -109,7 +110,7 @@
             // 
             // timer
             // 
-            this.timer.Interval = 1000;
+            this.timer.Interval = 250;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // frmWebcam
