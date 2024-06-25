@@ -216,7 +216,6 @@ namespace WindowsFormsApp
                     {
                         Main.ShowMessage("All fuck up");
                     }
-
                 }
             }
         }

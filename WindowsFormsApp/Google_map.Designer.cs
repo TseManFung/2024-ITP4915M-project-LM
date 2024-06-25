@@ -38,6 +38,7 @@
             this.lbllongitude = new System.Windows.Forms.Label();
             this.lbltitle = new System.Windows.Forms.Label();
             this.btnConfirm = new System.Windows.Forms.Button();
+            this.btncomplete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // splitter1
@@ -154,11 +155,23 @@
             this.btnConfirm.UseVisualStyleBackColor = true;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
+            // btncomplete
+            // 
+            this.btncomplete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btncomplete.Location = new System.Drawing.Point(529, 355);
+            this.btncomplete.Name = "btncomplete";
+            this.btncomplete.Size = new System.Drawing.Size(113, 24);
+            this.btncomplete.TabIndex = 10;
+            this.btncomplete.Text = "Complete";
+            this.btncomplete.UseVisualStyleBackColor = true;
+            this.btncomplete.Click += new System.EventHandler(this.btncomplete_Click);
+            // 
             // Google_map
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btncomplete);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.lbltitle);
             this.Controls.Add(this.txtlongitude);
@@ -189,5 +202,6 @@
         private System.Windows.Forms.Label lbllongitude;
         private System.Windows.Forms.Label lbltitle;
         private System.Windows.Forms.Button btnConfirm;
+        private System.Windows.Forms.Button btncomplete;
     }
 }
