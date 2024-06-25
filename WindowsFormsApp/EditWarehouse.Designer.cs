@@ -74,7 +74,7 @@
             // btnDelete
             // 
             this.btnDelete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDelete.Font = new System.Drawing.Font("PMingLiU", 32F);
+            this.btnDelete.Font = new System.Drawing.Font("新細明體", 32F);
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDelete.Location = new System.Drawing.Point(483, 121);
             this.btnDelete.Name = "btnDelete";
@@ -87,7 +87,7 @@
             // lblEdit
             // 
             this.lblEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblEdit.Font = new System.Drawing.Font("PMingLiU", 32F);
+            this.lblEdit.Font = new System.Drawing.Font("新細明體", 32F);
             this.lblEdit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblEdit.Location = new System.Drawing.Point(163, 121);
             this.lblEdit.Name = "lblEdit";
@@ -117,7 +117,7 @@
             // 
             this.comboBoxWarehouse.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxWarehouse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxWarehouse.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxWarehouse.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxWarehouse.FormattingEnabled = true;
             this.comboBoxWarehouse.Location = new System.Drawing.Point(3, 59);
             this.comboBoxWarehouse.Name = "comboBoxWarehouse";
@@ -131,7 +131,7 @@
             this.lblWarehouse.BackColor = System.Drawing.SystemColors.Control;
             this.lblWarehouse.CausesValidation = false;
             this.lblWarehouse.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblWarehouse.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblWarehouse.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblWarehouse.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblWarehouse.Location = new System.Drawing.Point(3, 0);
             this.lblWarehouse.Name = "lblWarehouse";
@@ -190,7 +190,7 @@
             // txtLocation
             // 
             this.txtLocation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtLocation.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtLocation.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtLocation.Location = new System.Drawing.Point(3, 53);
             this.txtLocation.Multiline = true;
             this.txtLocation.Name = "txtLocation";
@@ -203,7 +203,7 @@
             this.lblLocation.BackColor = System.Drawing.SystemColors.Control;
             this.lblLocation.CausesValidation = false;
             this.lblLocation.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblLocation.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblLocation.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblLocation.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblLocation.Location = new System.Drawing.Point(3, 0);
             this.lblLocation.Name = "lblLocation";
@@ -214,7 +214,7 @@
             // btnSave
             // 
             this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSave.Font = new System.Drawing.Font("PMingLiU", 32F);
+            this.btnSave.Font = new System.Drawing.Font("新細明體", 32F);
             this.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSave.Location = new System.Drawing.Point(319, 158);
             this.btnSave.Name = "btnSave";
