@@ -59,7 +59,7 @@
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button1.Font = new System.Drawing.Font("PMingLiU", 22F);
+            this.button1.Font = new System.Drawing.Font("新細明體", 22F);
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(214, 44);
@@ -87,7 +87,7 @@
             // button2
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("PMingLiU", 22F);
+            this.button2.Font = new System.Drawing.Font("新細明體", 22F);
             this.button2.Location = new System.Drawing.Point(278, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(113, 38);
@@ -100,7 +100,7 @@
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Font = new System.Drawing.Font("PMingLiU", 22F);
+            this.textBox1.Font = new System.Drawing.Font("新細明體", 22F);
             this.textBox1.Location = new System.Drawing.Point(3, 3);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(269, 36);

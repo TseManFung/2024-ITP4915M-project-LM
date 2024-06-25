@@ -56,9 +56,9 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+
             if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
             {
-
                 if (!string.IsNullOrEmpty(txtLocation.Text))
                 {
 
