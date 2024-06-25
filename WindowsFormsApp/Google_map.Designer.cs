@@ -182,6 +182,8 @@
             this.Controls.Add(this.lbllocation);
             this.Controls.Add(this.map);
             this.Controls.Add(this.splitter1);
+            this.MaximumSize = new System.Drawing.Size(816, 489);
+            this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Google_map";
             this.Text = "Google_map";
             this.Load += new System.EventHandler(this.Google_map_Load);
