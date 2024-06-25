@@ -86,6 +86,8 @@
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.comboBoxWarehouseName);
             this.Controls.Add(this.btnOK);
+            this.MaximumSize = new System.Drawing.Size(426, 240);
+            this.MinimumSize = new System.Drawing.Size(426, 240);
             this.Name = "TargetWarehouse";
             this.Text = "TargetWarehouse";
             this.Load += new System.EventHandler(this.TargetWarehouse_Load);

@@ -255,11 +255,11 @@ VALUES
   (1, '202405240000021', 'B22978', 10, 2);
 
 /*ScrapItems*/
-INSERT INTO `ScrapItems` (`ItemID`, `RecordTime`, `RecordStaffID`, `Quantity`, `Discrepancy`)
+INSERT INTO `ScrapItems` (`ItemID`, `WarehouseID`,`RecordTime`, `RecordStaffID`, `Quantity`, `Discrepancy`)
 VALUES
-  ('A26130', '2024-05-24 21:05', 20, 1, 'Tolerances for sheet metal can range from a few millimetres to tens of millimetres.'),
-  ('B22978', '2024-05-24 21:05', 20, 2, 'Tolerances of components may be a few millimetres to tens of millimetres'),
-  ('C10435', '2024-05-24 21:05', 20, 3, 'Tolerances for lighting fittings may be a few millimetres to a fraction of a millimetre');
+  ('A26130', 1,'2024-05-24 21:05', 20, 1, 'Tolerances for sheet metal can range from a few millimetres to tens of millimetres.'),
+  ('B22978', 1,'2024-05-24 21:05', 20, 2, 'Tolerances of components may be a few millimetres to tens of millimetres'),
+  ('C10435', 1,'2024-05-24 21:05', 20, 3, 'Tolerances for lighting fittings may be a few millimetres to a fraction of a millimetre');
 
 /*RestockOrder*/
 INSERT INTO `RestockOrder` (`RestockOrderID`, `WarehouseID`, `OrderDate`, `Remark`)
