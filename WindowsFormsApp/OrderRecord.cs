@@ -22,6 +22,7 @@ namespace WindowsFormsApp
         List<string> ProcesingList = new List<string> { "C", "P", "W", "T" },
             CompleteList = new List<string> { "U", "F" };
 
+        DataTable dtP, dtC;
         private void frmOrderRecord_Load(object sender, EventArgs e)
         {
             getData();
@@ -63,41 +64,60 @@ namespace WindowsFormsApp
             else { throw new Exception("No DealerID or StaffID"); }
 
             DataTable dt = Main.db.GetDataTable(sql);
+            DataColumn dcRowString = dt.Columns.Add("_RowString",typeof(string));
+            foreach (DataRow dataRow in dt.Rows)
+            {
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < dt.Columns.Count - 1; i++)
+                {
+                    sb.Append(dataRow[i].ToString());
+                    sb.Append("\t");
+                }
+                dataRow[dcRowString] = sb.ToString();
+            }
 
             // Add columns to the DataGridView controls if they don't exist
             if (dgvProcessing.Columns.Count == 0)
             {
-                dgvProcessing.Columns.Add("OrderSerial", "Order Serial");
-                if (Main.staffID != null) { dgvProcessing.Columns.Add("DealerID", "Dealer ID"); }
-                dgvProcessing.Columns.Add("OrderDate", "Order Date");
-                dgvProcessing.Columns.Add("OrderNumberfromDealer", "Order Number from Dealer");
-                dgvProcessing.Columns.Add("State", "State");
-                dgvProcessing.Columns.Add("remark", "Remark");
+                dtP = new DataTable();
+                dtP.Columns.Add("OrderSerial", typeof(string));
+                if (Main.staffID != null) { dtP.Columns.Add("DealerID", typeof(int)); }
+                dtP.Columns.Add("OrderDate", typeof(DateTime));
+                dtP.Columns.Add("OrderNumberfromDealer", typeof(string));
+                dtP.Columns.Add("State", typeof(string));
+                dtP.Columns.Add("remark", typeof(string));
+                dtP.Columns.Add("_RowString", typeof(string));
+                dgvProcessing.DataSource = dtP;
+                dgvProcessing.Columns["_RowString"].Visible = false;
             }
 
             if (dgvComplete.Columns.Count == 0)
             {
-                dgvComplete.Columns.Add("OrderSerial", "Order Serial");
-                if (Main.staffID != null) { dgvComplete.Columns.Add("DealerID", "Dealer ID"); }
-                dgvComplete.Columns.Add("OrderDate", "Order Date");
-                dgvComplete.Columns.Add("OrderNumberfromDealer", "Order Number from Dealer");
-                dgvComplete.Columns.Add("State", "State");
-                dgvComplete.Columns.Add("remark", "Remark");
+                dtC = new DataTable();
+                dtC.Columns.Add("OrderSerial", typeof(string));
+                if (Main.staffID != null) { dtC.Columns.Add("DealerID", typeof(int)); }
+                dtC.Columns.Add("OrderDate", typeof(DateTime));
+                dtC.Columns.Add("OrderNumberfromDealer", typeof(string));
+                dtC.Columns.Add("State", typeof(string));
+                dtC.Columns.Add("remark", typeof(string));
+                dtC.Columns.Add("_RowString", typeof(string));
+                dgvComplete.DataSource = dtC;
+                dgvComplete.Columns["_RowString"].Visible = false;
             }
 
             //State 在 ProcesingList 的就放入dgvProcessing，在否則就放入dgvComplete
             if (Main.dealerID != null)
             {
-
+                
                 foreach (DataRow row in dt.Rows)
                 {
                     if (ProcesingList.Contains(row["State"].ToString()))
                     {
-                        dgvProcessing.Rows.Add(row["OrderSerial"], row["OrderDate"], row["OrderNumberfromDealer"], row["State"], row["remark"]);
+                        dtP.Rows.Add(row["OrderSerial"], row["OrderDate"], row["OrderNumberfromDealer"], row["State"], row["remark"], row["_RowString"]);
                     }
                     else if (CompleteList.Contains(row["State"].ToString()))
                     {
-                        dgvComplete.Rows.Add(row["OrderSerial"], row["OrderDate"], row["OrderNumberfromDealer"], row["State"], row["remark"]);
+                        dtC.Rows.Add(row["OrderSerial"], row["OrderDate"], row["OrderNumberfromDealer"], row["State"], row["remark"], row["_RowString"]);
                     }
                 }
             }
@@ -107,11 +127,11 @@ namespace WindowsFormsApp
                 {
                     if (ProcesingList.Contains(row["State"].ToString()))
                     {
-                        dgvProcessing.Rows.Add(row["OrderSerial"], row["DealerID"], row["OrderDate"], row["OrderNumberfromDealer"], row["State"], row["remark"]);
+                        dtP.Rows.Add(row["OrderSerial"], row["DealerID"], row["OrderDate"], row["OrderNumberfromDealer"], row["State"], row["remark"], row["_RowString"]);
                     }
                     else if (CompleteList.Contains(row["State"].ToString()))
                     {
-                        dgvComplete.Rows.Add(row["OrderSerial"], row["DealerID"], row["OrderDate"], row["OrderNumberfromDealer"], row["State"], row["remark"]);
+                        dtC.Rows.Add(row["OrderSerial"], row["DealerID"], row["OrderDate"], row["OrderNumberfromDealer"], row["State"], row["remark"], row["_RowString"]);
                     }
                 }
             }
@@ -147,6 +167,12 @@ namespace WindowsFormsApp
                 frmOrderDetail frm = new frmOrderDetail(OrderSerial);
                 (this.ParentForm as Main)?.Change_pContent(frm);
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dtC.DefaultView.RowFilter = string.Format("[_RowString] LIKE '%{0}%'", textBox1.Text);
+            dtP.DefaultView.RowFilter = string.Format("[_RowString] LIKE '%{0}%'", textBox1.Text);
         }
 
         private void dgvProcessing_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)

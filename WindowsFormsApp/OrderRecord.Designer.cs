@@ -35,12 +35,18 @@
             this.dgvComplete = new System.Windows.Forms.DataGridView();
             this.groupBoxProcessing = new System.Windows.Forms.GroupBox();
             this.dgvProcessing = new System.Windows.Forms.DataGridView();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblDoubleClickSeeMoreDetaill = new System.Windows.Forms.Label();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBoxComplete.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvComplete)).BeginInit();
             this.groupBoxProcessing.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProcessing)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSelect
@@ -68,7 +74,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.groupBoxComplete, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.groupBoxProcessing, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.lblDoubleClickSeeMoreDetaill, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -139,17 +145,70 @@
             this.dgvProcessing.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvProcessing_CellMouseDoubleClick);
             this.dgvProcessing.Scroll += new System.Windows.Forms.ScrollEventHandler(this.dgvProcessing_Scroll);
             // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lblDoubleClickSeeMoreDetaill, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(833, 44);
+            this.tableLayoutPanel2.TabIndex = 10;
+            // 
             // lblDoubleClickSeeMoreDetaill
             // 
             this.lblDoubleClickSeeMoreDetaill.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDoubleClickSeeMoreDetaill.AutoSize = true;
             this.lblDoubleClickSeeMoreDetaill.Font = new System.Drawing.Font("PMingLiU", 24F);
-            this.lblDoubleClickSeeMoreDetaill.Location = new System.Drawing.Point(173, 9);
+            this.lblDoubleClickSeeMoreDetaill.Location = new System.Drawing.Point(37, 0);
             this.lblDoubleClickSeeMoreDetaill.Name = "lblDoubleClickSeeMoreDetaill";
-            this.lblDoubleClickSeeMoreDetaill.Size = new System.Drawing.Size(492, 32);
-            this.lblDoubleClickSeeMoreDetaill.TabIndex = 10;
+            this.lblDoubleClickSeeMoreDetaill.Size = new System.Drawing.Size(342, 44);
+            this.lblDoubleClickSeeMoreDetaill.TabIndex = 11;
             this.lblDoubleClickSeeMoreDetaill.Text = "double click a record to see more detaill";
             this.lblDoubleClickSeeMoreDetaill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.SystemColors.Window;
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel3.Controls.Add(this.button2, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.textBox1, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(419, 3);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(411, 38);
+            this.tableLayoutPanel3.TabIndex = 12;
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button2.Font = new System.Drawing.Font("PMingLiU", 16F);
+            this.button2.Location = new System.Drawing.Point(290, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(118, 32);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Search";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox1.Font = new System.Drawing.Font("PMingLiU", 22F);
+            this.textBox1.Location = new System.Drawing.Point(3, 3);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(281, 36);
+            this.textBox1.TabIndex = 1;
             // 
             // frmOrderRecord
             // 
@@ -163,11 +222,14 @@
             this.Text = "Order Record";
             this.Load += new System.EventHandler(this.frmOrderRecord_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             this.groupBoxComplete.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvComplete)).EndInit();
             this.groupBoxProcessing.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProcessing)).EndInit();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -180,6 +242,10 @@
         private System.Windows.Forms.GroupBox groupBoxComplete;
         private System.Windows.Forms.DataGridView dgvComplete;
         private System.Windows.Forms.DataGridView dgvProcessing;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         public System.Windows.Forms.Label lblDoubleClickSeeMoreDetaill;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

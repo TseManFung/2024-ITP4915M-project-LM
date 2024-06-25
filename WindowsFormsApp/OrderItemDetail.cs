@@ -39,6 +39,7 @@ namespace WindowsFormsApp
             }
             dataGridView1.DataSource = OrderItem;
             dataGridView1.Columns["_RowString"].Visible = false;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
