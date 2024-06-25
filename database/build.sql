@@ -132,11 +132,12 @@ CREATE TABLE `ActualQuantityDespatched` (
 
 CREATE TABLE `ScrapItems` (
   `ItemID` char(6),
+  `WarehouseID` int,
   `RecordTime` datetime NOT NULL,
   `RecordStaffID` int NOT NULL,
   `Quantity` int NOT NULL DEFAULT 1,
   `Discrepancy` varchar(255) NOT NULL,
-  PRIMARY KEY (`ItemID`, `RecordTime`)
+  PRIMARY KEY (`ItemID`, `RecordTime`,`WarehouseID`)
 );
 
 CREATE TABLE `RestockOrder` (
@@ -273,3 +274,5 @@ ALTER TABLE `OrderItemForCollect` ADD FOREIGN KEY (`Assgin`) REFERENCES `Warehou
 ALTER TABLE `OrderItemForCollect` ADD FOREIGN KEY (`OrderSerial`) REFERENCES `Order` (`OrderSerial`);
 
 ALTER TABLE `OrderItemForCollect` ADD FOREIGN KEY (`ItemID`) REFERENCES `Spare` (`SpareID`);
+
+ALTER TABLE `ScrapItems` ADD FOREIGN KEY (`WarehouseID`) REFERENCES `Warehouse` (`WarehouseID`);
