@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static WindowsFormsApp.Google_map;
 
 namespace WindowsFormsApp
 {
@@ -56,41 +57,51 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-
-            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
+            string selectLocation = comboBoxSaleAreaLocation.SelectedItem.ToString();
+            string Location = txtLocation.Text;
+            String sqlofsupplier = $"SELECT AreaID FROM SaleArea WHERE Location = '{selectLocation}'";
+            int AreaID = 0;
+            using (var reader = Main.db.readBySql(sqlofsupplier))
             {
-                if (!string.IsNullOrEmpty(txtLocation.Text))
+                while (reader.Read())
                 {
+                    AreaID = reader.GetInt32(0);
+                }
+            }
+            Google_map map = new Google_map(AreaID, "SaleArea", Location);
+            map.ShowDialog();
+            if (map.Getstate())
+            {
+                String Latitude = GlobalVariables.Latitude.ToString();
+                String Longitude = GlobalVariables.Longitude.ToString();
+                Main.ShowMessage(Latitude+"\n"+ Longitude);
+                return;
+                if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
+                {
+                    if (!string.IsNullOrEmpty(txtLocation.Text))
+                    {
 
-                    string Location = txtLocation.Text;
-                    string Remark = txtRemark.Text;
-                    string selectLocation = comboBoxSaleAreaLocation.SelectedItem.ToString(); ;
-                    String sqlofsupplier = $"SELECT AreaID FROM SaleArea WHERE Location = '{selectLocation}'";
-                    int AreaID = 0;
-                    using (var reader = Main.db.readBySql(sqlofsupplier))
-                    {
-                        while (reader.Read())
+                        Location = txtLocation.Text;
+                        string Remark = txtRemark.Text;
+
+                        string query;
+                        if (!string.IsNullOrEmpty(Remark))
                         {
-                            AreaID = reader.GetInt32(0);
+                            query = $"UPDATE SaleArea SET Location = '{Location}', Remark = '{Remark}' WHERE AreaID = '{AreaID}'";
                         }
-                    }
-                    string query;
-                    if (!string.IsNullOrEmpty(Remark))
-                    {
-                        query = $"UPDATE SaleArea SET Location = '{Location}', Remark = '{Remark}' WHERE AreaID = '{AreaID}'";
+                        else
+                        {
+                            query = $"UPDATE SaleArea SET Location = '{Location}' WHERE AreaID = '{AreaID}'";
+                        }
+                        Main.db.updateBySql(query);
+                        Main.ShowMessage("Successful editing");
+                        txtLocation.Text = "";
+                        txtRemark.Text = "";
                     }
                     else
                     {
-                        query = $"UPDATE SaleArea SET Location = '{Location}' WHERE AreaID = '{AreaID}'";
+                        Main.ShowMessage("Please provide Location!");
                     }
-                    Main.db.updateBySql(query);
-                    Main.ShowMessage("Successful editing");
-                    txtLocation.Text = "";
-                    txtRemark.Text = "";
-                }
-                else
-                {
-                    Main.ShowMessage("Please provide Location!");
                 }
             }
         }
