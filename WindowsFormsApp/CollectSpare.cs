@@ -33,7 +33,7 @@ namespace WindowsFormsApp
 
         private void frmCollectSpare_Load(object sender, EventArgs e)
         {
-
+    
         }
     }
 }
