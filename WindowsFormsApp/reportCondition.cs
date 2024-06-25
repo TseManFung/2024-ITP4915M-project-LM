@@ -60,22 +60,30 @@ namespace WindowsFormsApp
         private void button1_Click(object sender, EventArgs e)
         {
             CoditionDict = new Dictionary<string, object>();
+            if (radioButton1.Checked)
+            {
+                CoditionDict.Add("only", true);
+            }
+            else
+            {
+                CoditionDict.Add("only", false);
+            }
             if (comboBox1.SelectedIndex != -1)
             {
                 List<string> list = new List<string>() {"<","<=","=",">=",">" };
-                CoditionDict.Add("quantity_operator", list[comboBox1.SelectedIndex]);
+                CoditionDict.Add("quantity_operator",list[comboBox1.SelectedIndex]);
                 CoditionDict.Add("quantity", numericUpDown1.Value);
             }
             if (comboBox2.SelectedIndex != -1)
             {
 
-                CoditionDict.Add("SpareID", comboBox2.SelectedValue);
+                CoditionDict.Add("SpareID", $"'{comboBox2.SelectedValue.ToString()}'");
 
             }
             if (comboBox3.SelectedIndex != -1)
             {
 
-                CoditionDict.Add("Type", comboBox3.SelectedItem.ToString());
+                CoditionDict.Add("Type", $"'{comboBox3.SelectedItem.ToString()}'");
 
             }
             if (comboBox4.SelectedIndex != -1)
@@ -84,14 +92,7 @@ namespace WindowsFormsApp
                 CoditionDict.Add("DealerID", comboBox4.SelectedValue);
                
             }
-            if (radioButton1.Checked)
-            {
-                CoditionDict.Add("only",true);
-            }
-            else
-            {
-                CoditionDict.Add("only",false);
-            }
+
             this.Close();
         }
 

@@ -260,7 +260,6 @@
             this.comboBox2.Location = new System.Drawing.Point(424, 160);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(176, 20);
-            this.comboBox2.Sorted = true;
             this.comboBox2.TabIndex = 12;
             // 
             // comboBox4
@@ -272,7 +271,6 @@
             this.comboBox4.Location = new System.Drawing.Point(424, 296);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(176, 20);
-            this.comboBox4.Sorted = true;
             this.comboBox4.TabIndex = 14;
             // 
             // button1
@@ -299,7 +297,6 @@
             this.comboBox3.Location = new System.Drawing.Point(424, 92);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(176, 20);
-            this.comboBox3.Sorted = true;
             this.comboBox3.TabIndex = 13;
             // 
             // button2
