@@ -24,131 +24,100 @@ namespace WindowsFormsApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-        }
-
-        private void comboBoxSpareID_SelectedIndexChanged(object sender, EventArgs e)
-        {
+            tableLayoutPanel2.Visible = true;
             string id = comboBoxSpareID.SelectedItem.ToString();
             tableLayoutPanel1.Visible = true;
-            List<string> SpareType = new List<string>();
-            String sql = $"SELECT CategoryLetter FROM Category;";
+
+            LoadSpareTypes();
+            LoadSupplierNames();
+            LoadSpareDetails(id);
+        }
+        private void LoadSpareTypes()
+        {
+            var spareTypes = new List<string>();
+            string sql = "SELECT CategoryLetter FROM Category";
+
             using (var reader = Main.db.readBySql(sql))
             {
                 while (reader.Read())
                 {
-                    SpareType.Add(reader.GetString(0));
+                    spareTypes.Add(reader.GetString(0));
                 }
             }
-            this.comboBoxSpareType.DataSource = SpareType;
-            this.comboBoxSpareType.DisplayMember = "Type";
 
-            List<string> SupplierIDlist = new List<string>();
-            String sqlofSupplierIDlist = $"SELECT Name FROM Supplier;";
-            using (var reader = Main.db.readBySql(sqlofSupplierIDlist))
-            {
-                while (reader.Read())
-                {
-                    SupplierIDlist.Add(reader.GetString(0));
-                }
-            }
-            this.comboBoxSupplier.DataSource = SupplierIDlist;
-            this.comboBoxSupplier.DisplayMember = "Name";
+            comboBoxSpareType.DataSource = spareTypes;
+        }
 
-            string SpareName = string.Empty;
-            sql = $"SELECT SpareName FROM Spare WHERE SpareID = '{id}';";
+        private void LoadSupplierNames()
+        {
+            var supplierNames = new List<string>();
+            string sql = "SELECT Name FROM Supplier";
             using (var reader = Main.db.readBySql(sql))
             {
                 while (reader.Read())
                 {
-                    SpareName = reader.GetString(0);
+                    supplierNames.Add(reader.GetString(0));
                 }
             }
-            txtSpareName.Text = SpareName;
-            Decimal Price = 0;
-            sql = $"SELECT Price FROM Spare WHERE SpareID = '{id}';";
-            using (var reader = Main.db.readBySql(sql))
-            {
-                if (reader.Read())
-                {
-                    Price = reader.GetDecimal(0);
-                }
-            }
-            txtPrice.Text = Price.ToString();
-            float Weight = 0;
-            sql = $"SELECT Weight FROM Spare WHERE SpareID = '{id}';";
-            using (var reader = Main.db.readBySql(sql))
-            {
-                if (reader.Read())
-                {
-                    if (!reader.IsDBNull(0))
-                    {
-                        Weight = reader.GetFloat(0);
-                    }
-                }
-            }
-            txtSpareWeight.Text = Weight.ToString();
-            string Description = null;
-            sql = $"SELECT Description FROM Spare WHERE SpareID = '{id}';";
-            using (var reader = Main.db.readBySql(sql))
-            {
-                if (reader.Read())
-                {
-                    if (!reader.IsDBNull(0))
-                    {
-                        Description = reader.GetString(0);
-                    }
-                }
-            }
+            comboBoxSupplier.DataSource = supplierNames;
+        }
 
-            if (Description != null)
+        private void LoadSpareDetails(string id)
+        {
+            string sql = $"SELECT SpareName, Price, Weight, Description FROM Spare WHERE SpareID = '{id}'";
+
+            using (var reader = Main.db.readBySql(sql))
             {
-                txtDescription.Text = Description;
+                if (reader.Read())
+                {
+                    txtSpareName.Text = reader.GetString(0);
+                    txtPrice.Text = reader.GetDecimal(1).ToString();
+                    txtSpareWeight.Text = reader.IsDBNull(2) ? string.Empty : reader.GetFloat(2).ToString();
+                    txtDescription.Text = reader.IsDBNull(3) ? string.Empty : reader.GetString(3);
+                }
             }
-            else
-            {
-                txtDescription.Text = string.Empty;
-            }
+        }
+        private void comboBoxSpareID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tableLayoutPanel1.Visible = false;
         }
 
         private void frmEditItem_Load(object sender, EventArgs e)
         {
-            List<string> SpareIDlist = new List<string>();
-            string sql = $"SELECT SpareID FROM Spare WHERE state <> 'D';";
+            var spareIDs = new List<string>();
+            string sql = "SELECT SpareID FROM Spare WHERE state <> 'D'";
+
             using (var reader = Main.db.readBySql(sql))
             {
                 while (reader.Read())
                 {
-                    SpareIDlist.Add(reader.GetString(0));
+                    spareIDs.Add(reader.GetString(0));
                 }
             }
-            this.comboBoxSpareID.DataSource = SpareIDlist;
-            this.comboBoxSpareID.DisplayMember = "SpareID";
-
+            comboBoxSpareID.DataSource = spareIDs;
         }
 
         private void txtSpareName_TextChanged(object sender, EventArgs e)
         {
             string input = txtSpareName.Text;
-            string pattern = @"^[a-zA-Z\s]+$"; // only space and letter
+            string pattern = @"^[a-zA-Z\s]+$";
+
             if (!string.IsNullOrEmpty(input) && !Regex.IsMatch(input, pattern))
             {
                 txtSpareName.Text = string.Empty;
-                Main.ShowMessage("only space and letter!"); // Show error message
+                Main.ShowMessage("Only spaces and letters are allowed!");
             }
         }
 
         private void txtPrice_TextChanged(object sender, EventArgs e)
         {
-            string input = txtPrice.Text;
-            double inputValue;
-            if (double.TryParse(input, out inputValue))
+            if (double.TryParse(txtPrice.Text, out double inputValue))
             {
-                this.txtPrice.Text = string.Format("{0:#,##0.00}", inputValue);
+                txtPrice.Text = string.Format("{0:#,##0.00}", inputValue);
             }
             else
             {
-                this.txtPrice.Text = "0.00";
+                txtPrice.Text = "0.00";
             }
         }
 
@@ -156,54 +125,69 @@ namespace WindowsFormsApp
         {
             string input = txtSpareWeight.Text;
             string pattern = @"^(\d*\.\d+|\d+)$";
+
             if (!string.IsNullOrEmpty(input) && !Regex.IsMatch(input, pattern))
             {
                 txtSpareWeight.Text = string.Empty;
-                Main.ShowMessage("Only numbers and decimal points are allowed!"); // Show error message
+                Main.ShowMessage("Only numbers and decimal points are allowed!");
             }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (comboBoxSpareID.SelectedItem != null &&
-                comboBoxSpareType.SelectedItem != null &&
-                !string.IsNullOrEmpty(txtSpareName.Text) &&
-                !string.IsNullOrEmpty(txtPrice.Text) &&
-                !string.IsNullOrEmpty(txtSpareWeight.Text) &&
-                comboBoxSupplier.SelectedItem != null)
+            if (ValidateInput())
             {
                 string spareID = comboBoxSpareID.SelectedItem.ToString();
-                string CattegoryLetter = comboBoxSpareType.SelectedItem.ToString();
-                string SpareName = txtSpareName.Text;
+                string categoryLetter = comboBoxSpareType.SelectedItem.ToString();
+                string spareName = txtSpareName.Text;
                 decimal price = decimal.Parse(txtPrice.Text);
-                string Description = txtDescription.Text;
+                string description = txtDescription.Text;
                 float weight = float.Parse(txtSpareWeight.Text);
-                string supplierName = comboBoxSupplier.SelectedItem.ToString(); ;
-                String sqlofsupplier = $"SELECT SupplierID FROM Supplier WHERE Name = '{supplierName}'";
-                int SupplierID = 0;
-                using (var reader = Main.db.readBySql(sqlofsupplier))
-                {
-                    while (reader.Read())
-                    {
-                        SupplierID = reader.GetInt32(0);
-                    }
-                }
-                string query = $"UPDATE Spare SET SpareName = '{SpareName}', CategoryLetter = '{CattegoryLetter}', Price = {price}, Description = '{Description}', Weight = {weight}, SupplierID = {SupplierID} WHERE SpareID = '{spareID}'";
+                string supplierName = comboBoxSupplier.SelectedItem.ToString();
+
+                int supplierID = GetSupplierIDByName(supplierName);
+
+                string query = $"UPDATE Spare SET SpareName = '{spareName}', CategoryLetter = '{categoryLetter}', Price = {price}, Description = '{description}', Weight = {weight}, SupplierID = {supplierID} WHERE SpareID = '{spareID}'";
                 Main.db.updateBySql(query);
                 Main.ShowMessage("Successful editing");
 
-                txtSpareName.Text = "";
-                txtPrice.Text = "00.00";
-                txtSpareWeight.Text = "0";
-                txtDescription.Text = "";
+                ClearForm();
             }
             else
             {
                 Main.ShowMessage("Please provide complete data");
             }
-   
-        }
 
+
+        }
+        private bool ValidateInput()
+        {
+            return comboBoxSpareID.SelectedItem != null &&
+                   comboBoxSpareType.SelectedItem != null &&
+                   !string.IsNullOrEmpty(txtSpareName.Text) &&
+                   !string.IsNullOrEmpty(txtPrice.Text) &&
+                   !string.IsNullOrEmpty(txtSpareWeight.Text) &&
+                   comboBoxSupplier.SelectedItem != null;
+        }
+        private int GetSupplierIDByName(string supplierName)
+        {
+            string sql = $"SELECT SupplierID FROM Supplier WHERE Name = '{supplierName}'";
+            using (var reader = Main.db.readBySql(sql))
+            {
+                if (reader.Read())
+                {
+                    return reader.GetInt32(0);
+                }
+            }
+            return 0;
+        }
+        private void ClearForm()
+        {
+            txtSpareName.Text = string.Empty;
+            txtPrice.Text = "0.00";
+            txtSpareWeight.Text = "0";
+            txtDescription.Text = string.Empty;
+        }
         private void comboBoxSpareType_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -226,8 +210,20 @@ namespace WindowsFormsApp
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            string spareID = comboBoxSpareID.SelectedItem.ToString();
-            string query = $"UPDATE Spare SET State = 'D' WHERE SpareID = '{spareID}'";
+            if (comboBoxSpareID.SelectedItem != null)
+            {
+                string spareID = comboBoxSpareID.SelectedItem.ToString();
+                string query = $"UPDATE Spare SET State = 'D' WHERE SpareID = '{spareID}'";
+                Main.db.updateBySql(query);
+                Main.ShowMessage("Item successfully deleted");
+
+                // Refresh the SpareID list after deletion
+                frmEditItem_Load(sender, e);
+            }
+            else
+            {
+                Main.ShowMessage("Please select an item to delete");
+            }
         }
     }
 }

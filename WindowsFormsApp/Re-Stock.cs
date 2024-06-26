@@ -52,7 +52,8 @@ namespace WindowsFormsApp
                 reader.Read();
                 respent_warehouse = reader.GetInt32(0);
             }
-            string sql = $@" SELECT ws.WarehouseID, ws.SpareID, a.quantity FROM WarehouseStockLevel ws JOIN ActualStock a ON ws.WarehouseID = a.WarehouseID AND ws.SpareID = a.SpareID WHERE a.quantity <= ws.ROL AND a.WarehouseID = '{respent_warehouse}' AND NOT EXISTS ( SELECT 1 FROM RestockItem ri JOIN RestockOrder ro ON ri.RestockOrderID = ro.RestockOrderID WHERE ri.ItemID = ws.SpareID AND ri.Quantity = a.quantity AND ri.State = 'C' AND ro.WarehouseID = '{respent_warehouse}' ); "; RestockOrder = Main.db.GetDataTable(sql);
+            string sql = $@" SELECT ws.WarehouseID, ws.SpareID, a.quantity FROM WarehouseStockLevel ws JOIN ActualStock a ON ws.WarehouseID = a.WarehouseID AND ws.SpareID = a.SpareID WHERE a.quantity <= ws.ROL AND a.WarehouseID = '{respent_warehouse}' AND NOT EXISTS ( SELECT 1 FROM RestockItem ri JOIN RestockOrder ro ON ri.RestockOrderID = ro.RestockOrderID WHERE ri.ItemID = ws.SpareID AND ri.Quantity = a.quantity AND ri.State = 'C' AND ro.WarehouseID = '{respent_warehouse}' ); "; 
+            RestockOrder = Main.db.GetDataTable(sql);
 
         }
 
@@ -63,7 +64,7 @@ namespace WindowsFormsApp
 
             if (RestockOrder == null || RestockOrder.Rows.Count == 0)
             {
-                Main.ShowMessage("No ROL item");
+                //Main.ShowMessage("No ROL item");
                 return;
             }
 
