@@ -234,22 +234,9 @@ namespace WindowsFormsApp
 
         private void server_Click(object sender, EventArgs e)
         {
-            //(this.ParentForm as Main)?.Change_pContent(typeof(frmServer));
-            Google_map map = new Google_map();
-            map.ShowDialog();
-
-
-
-
-
-
-
-
-
-
-
-
-
+            (this.ParentForm as Main)?.Change_pContent(typeof(frmServer));
+            //Google_map map = new Google_map();
+            //map.ShowDialog();
         }
     }
 }
