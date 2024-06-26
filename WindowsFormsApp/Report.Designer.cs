@@ -389,6 +389,7 @@
             this.btnOutput.TabIndex = 94;
             this.btnOutput.Text = "Output";
             this.btnOutput.UseVisualStyleBackColor = true;
+            this.btnOutput.Click += new System.EventHandler(this.btnOutput_Click);
             // 
             // tableLayoutPanel7
             // 

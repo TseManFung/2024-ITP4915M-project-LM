@@ -26,17 +26,17 @@ namespace WindowsFormsApp
 
         private void frmEditSaleArea_Load(object sender, EventArgs e)
         {
-            List<string> SaleAreaLocationlist = new List<string>();
-            String sql = $"SELECT Location FROM SaleArea;";
-            using (var reader = Main.db.readBySql(sql))
+            List<string> SaleAreaLocationlist = new List<string>(); //1
+            String sql = $"SELECT Location FROM SaleArea;"; //1
+            using (var reader = Main.db.readBySql(sql)) //1
             {
-                while (reader.Read())
+                while (reader.Read()) // n
                 {
-                    SaleAreaLocationlist.Add(reader.GetString(0));
+                    SaleAreaLocationlist.Add(reader.GetString(0)); //n
                 }
             }
-            this.comboBoxSaleAreaLocation.DataSource = SaleAreaLocationlist;
-            this.comboBoxSaleAreaLocation.DisplayMember = "SaleAreaID";
+            this.comboBoxSaleAreaLocation.DataSource = SaleAreaLocationlist; // 1
+            this.comboBoxSaleAreaLocation.DisplayMember = "SaleAreaID"; // n
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)

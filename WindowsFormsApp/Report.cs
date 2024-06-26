@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Microsoft.WindowsAPICodePack.Dialogs;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +16,7 @@ namespace WindowsFormsApp
     public partial class frmReport : Form
     {
         Dictionary<string, Object> CoditionDict;
+        DataTable dt;
         public frmReport()
         {
             InitializeComponent();
@@ -134,7 +137,7 @@ WHERE i.CompleteState = 'S'
                 }
                 sql += " GROUP BY a.WarehouseID";
 
-                DataTable dt = Main.db.GetDataTable(sql);
+                dt = Main.db.GetDataTable(sql);
                 dgvPreview.DataSource = dt;
 
                 tableLayoutPanel4.Visible = tableLayoutPanel6.Visible = tableLayoutPanel7.Visible = true;
@@ -177,7 +180,7 @@ WHERE i.CompleteState = 'S'
                     sql += " AND ord.DealerID = " + CoditionDict["DealerID"];
                 }
                 sql += " GROUP BY a.ItemID";
-                DataTable dt = Main.db.GetDataTable(sql);
+                dt = Main.db.GetDataTable(sql);
                 dgvPreview.DataSource = dt;
 
                 tableLayoutPanel4.Visible = tableLayoutPanel6.Visible = tableLayoutPanel7.Visible = true;
@@ -217,7 +220,7 @@ JOIN Spare s ON a.SpareID = s.SpareID WHERE ";
                     sql += " AND s.CategoryLetter = " + CoditionDict["Type"];
                 }
 
-                DataTable dt = Main.db.GetDataTable(sql);
+                dt = Main.db.GetDataTable(sql);
                 dgvPreview.DataSource = dt;
                 tableLayoutPanel4.Visible = tableLayoutPanel6.Visible = true;
                 tableLayoutPanel7.Visible = false;
@@ -289,7 +292,7 @@ JOIN Warehouse w ON s.WarehouseID = w.WarehouseID where";
             {
                 sql += " GROUP BY " + groupby;
             }
-            DataTable dt = Main.db.GetDataTable(sql);
+            dt = Main.db.GetDataTable(sql);
             dgvPreview.DataSource = dt;
 
             tableLayoutPanel4.Visible = tableLayoutPanel6.Visible = tableLayoutPanel7.Visible = true;
@@ -301,6 +304,80 @@ JOIN Warehouse w ON s.WarehouseID = w.WarehouseID where";
         private void frmReport_Resize(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.ResizeControlsFont(this);
+        }
+
+        private void btnOutput_Click(object sender, EventArgs e)
+        {
+            if (dt == null || dt.Rows.Count==0)
+            {
+                Main.ShowMessage("No data to export");
+                return;
+            }
+            var lines = new List<string>();
+
+            string[] columnNames = dt.Columns
+                .Cast<DataColumn>()
+                .Select(column => column.ColumnName)
+                .ToArray();
+
+            var header = string.Join(",", columnNames.Select(name => $"\"{name}\""));
+            lines.Add(header);
+
+            var valueLines = dt.AsEnumerable()
+                .Select(row => string.Join(",", row.ItemArray.Select(val => $"\"{val}\"")));
+
+            lines.AddRange(valueLines);
+            try
+            {
+                string path = GetPath();
+                string filePath = path + "\\excel.csv";
+                if (File.Exists(filePath))
+                {
+                    try
+                    {
+                        using (FileStream fileStream = File.Open(filePath, FileMode.Open, FileAccess.Read, FileShare.None))
+                        {
+                            // File is not open, write to it
+                            File.WriteAllLines(filePath, lines);
+                        }
+                    }
+                    catch (IOException)
+                    {
+                        // File is open, create a new file with a different name
+                        string newFilePath = Path.Combine(Path.GetDirectoryName(filePath), Path.GetFileNameWithoutExtension(filePath) + "_new.csv");
+                        File.WriteAllLines(newFilePath, lines);
+                    }
+                }
+                else
+                {
+                    // File does not exist, create it and write to it
+                    File.WriteAllLines(filePath, lines);
+                }
+            }
+            catch (Exception ex)
+            {
+                //Main.ShowMessage("No path selected");
+                Console.WriteLine(ex.Message);
+                return;
+            }
+           
+            //File.WriteAllLines(path +"excel.csv", lines);
+        }
+
+        private string GetPath()
+        {
+            CommonOpenFileDialog dialog = new CommonOpenFileDialog();
+            dialog.InitialDirectory = "C:\\Users";
+            dialog.IsFolderPicker = true;
+            if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
+            {
+                return dialog.FileName;
+            }
+            else
+            {
+                throw new Exception("No path selected");
+            }
+            
         }
     }
 }
