@@ -51,8 +51,8 @@ namespace WindowsFormsApp
             comboBoxSpareName.Items.AddRange(orderItem.AsEnumerable().Select(x => x["SpareName"].ToString()).ToArray());
 
 
-            tableLayoutPanel3.Visible = tableLayoutPanel4.Visible = tableLayoutPanel8.Visible = true;
-            tableLayoutPanel5.Visible = false;
+            tableLayoutPanel3.Visible  = tableLayoutPanel8.Visible = true;
+            tableLayoutPanel5.Visible = tableLayoutPanel8.Visible = tableLayoutPanel4.Visible = false;
             btnSave.Visible = true;
 
         }
@@ -112,7 +112,8 @@ namespace WindowsFormsApp
 
         private void comboBoxOrderSerial_SelectedValueChanged(object sender, EventArgs e)
         {
-            btnSave.Visible = tableLayoutPanel3.Visible = tableLayoutPanel4.Visible = tableLayoutPanel8.Visible = tableLayoutPanel5.Visible = false;
+            btnSave.Visible = tableLayoutPanel3.Visible = tableLayoutPanel4.Visible = tableLayoutPanel8.Visible = tableLayoutPanel5.Visible  =
+                tableLayoutPanel8.Visible = tableLayoutPanel4.Visible= false;
             this.orderSerial = comboBoxOrderSerial.SelectedItem.ToString();
         }
 
@@ -120,8 +121,9 @@ namespace WindowsFormsApp
         {
             txtSpareID.Text = orderItem.Select($"SpareName = '{comboBoxSpareName.SelectedItem}'")[0]["ItemID"].ToString();
             int quantity = Convert.ToInt32(orderItem.Select($"SpareName = '{comboBoxSpareName.SelectedItem}'")[0]["Quantity"]);
-            numericUpDownQuantity.Maximum = numericUpDownQuantity.Value = quantity;
+            numericUpDownQuantity.Value = numericUpDownQuantity.Maximum =  quantity;
             numericUpDownQuantity.Minimum = Convert.ToInt32(orderItem.Select($"SpareName = '{comboBoxSpareName.SelectedItem}'")[0]["Processed Qty"]);
+            tableLayoutPanel8.Visible = tableLayoutPanel4.Visible = true;
         }
 
         private void buttonDeleteOrder_Click(object sender, EventArgs e)
