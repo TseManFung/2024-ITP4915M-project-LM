@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls.Primitives;
 using System.Windows.Forms;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
@@ -78,7 +79,32 @@ namespace WindowsFormsApp
                 dgvRestock.DataSource = followingROLBindingSource;
 
                 InitializeDgvRestock();
+                foreach (DataGridViewRow row in dgvItemFollowingROL.Rows)
+                {
+                    if (row.IsNewRow) continue;
+
+                    var spareID = row.Cells["SpareID"].Value;
+                    var quantity = Convert.ToInt32(row.Cells["quantity"].Value);
+
+                    string query = $"SELECT DL FROM WarehouseStockLevel WHERE WarehouseID = {respent_warehouse} AND SpareID = '{spareID}';";
+                    int dl = 0;
+
+                    using (var reader = Main.db.readBySql(query))
+                    {
+                        if (reader.Read())
+                        {
+                            dl = reader.GetInt32(0);
+                        }
+                    }
+
+                    // 如果 quantity 小于 DL，则将该行背景设置为红色
+                    if (quantity < dl)
+                    {
+                        row.DefaultCellStyle.BackColor = Color.Red;
+                    }
+                }
             }
+
             catch (InvalidOperationException ex)
             {
                 Main.ShowMessage("No data found");
@@ -205,8 +231,16 @@ namespace WindowsFormsApp
                 // 使用列名獲取特定列中的數據
                 var warehouseID = row.Cells["WarehouseID"].Value;
                 var spareID = row.Cells["SpareID"].Value;
-                var quantity = row.Cells["quantity"].Value;
+                query = $"SELECT ws.CSL - a.quantity AS Difference FROM WarehouseStockLevel ws JOIN ActualStock a ON ws.WarehouseID = a.WarehouseID AND ws.SpareID = a.SpareID WHERE ws.WarehouseID = {respent_warehouse} AND ws.SpareID = '{spareID}';";
 
+                var quantity = 0;
+                using (var reader = Main.db.readBySql(query))
+                {
+                    if (reader.Read())
+                    {
+                        quantity = reader.GetInt32(0);
+                    }
+                }
                 // 插入 RestockItem
                 query = $"INSERT INTO RestockItem (RestockOrderID, ItemID, Quantity, State) VALUES ({RestockOrderID}, '{spareID}', {quantity}, 'C')";
                 Main.db.insertBySql(query);
@@ -226,6 +260,16 @@ namespace WindowsFormsApp
             {
                 MessageBox.Show("No rows were processed.");
             }
+        }
+
+        private void dgvRestock_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvItemFollowingROL_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+
         }
     }
 }

@@ -44,8 +44,6 @@ namespace WindowsFormsApp
 
             if (RestockOrder == null)
             {
-
-                MessageBox.Show("No RestockOrder ");
                 return;
             }
 

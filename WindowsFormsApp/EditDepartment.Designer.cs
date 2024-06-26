@@ -81,7 +81,7 @@
             // btnDelete
             // 
             this.btnDelete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDelete.Font = new System.Drawing.Font("PMingLiU", 32F);
+            this.btnDelete.Font = new System.Drawing.Font("新細明體", 32F);
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDelete.Location = new System.Drawing.Point(483, 121);
             this.btnDelete.Name = "btnDelete";
@@ -94,7 +94,7 @@
             // btnEdit
             // 
             this.btnEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEdit.Font = new System.Drawing.Font("PMingLiU", 32F);
+            this.btnEdit.Font = new System.Drawing.Font("新細明體", 32F);
             this.btnEdit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnEdit.Location = new System.Drawing.Point(163, 121);
             this.btnEdit.Name = "btnEdit";
@@ -123,7 +123,7 @@
             // 
             this.comboBoxDepartment.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxDepartment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxDepartment.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxDepartment.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxDepartment.FormattingEnabled = true;
             this.comboBoxDepartment.Location = new System.Drawing.Point(3, 59);
             this.comboBoxDepartment.Name = "comboBoxDepartment";
@@ -137,7 +137,7 @@
             this.lblDepartment.BackColor = System.Drawing.SystemColors.Control;
             this.lblDepartment.CausesValidation = false;
             this.lblDepartment.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDepartment.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblDepartment.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblDepartment.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDepartment.Location = new System.Drawing.Point(3, 0);
             this.lblDepartment.Name = "lblDepartment";
@@ -182,7 +182,7 @@
             // btnSave
             // 
             this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSave.Font = new System.Drawing.Font("PMingLiU", 32F);
+            this.btnSave.Font = new System.Drawing.Font("新細明體", 32F);
             this.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSave.Location = new System.Drawing.Point(319, 158);
             this.btnSave.Name = "btnSave";
@@ -210,7 +210,7 @@
             // txtDepartmentName
             // 
             this.txtDepartmentName.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtDepartmentName.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtDepartmentName.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtDepartmentName.Location = new System.Drawing.Point(3, 53);
             this.txtDepartmentName.Multiline = true;
             this.txtDepartmentName.Name = "txtDepartmentName";
@@ -224,7 +224,7 @@
             this.lblDepartmentName.BackColor = System.Drawing.SystemColors.Control;
             this.lblDepartmentName.CausesValidation = false;
             this.lblDepartmentName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDepartmentName.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblDepartmentName.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblDepartmentName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDepartmentName.Location = new System.Drawing.Point(3, 0);
             this.lblDepartmentName.Name = "lblDepartmentName";
@@ -250,7 +250,7 @@
             // txtDepartmentEmail
             // 
             this.txtDepartmentEmail.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtDepartmentEmail.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtDepartmentEmail.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtDepartmentEmail.Location = new System.Drawing.Point(3, 53);
             this.txtDepartmentEmail.Multiline = true;
             this.txtDepartmentEmail.Name = "txtDepartmentEmail";
@@ -264,7 +264,7 @@
             this.lblDepartmentEmail.BackColor = System.Drawing.SystemColors.Control;
             this.lblDepartmentEmail.CausesValidation = false;
             this.lblDepartmentEmail.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDepartmentEmail.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblDepartmentEmail.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblDepartmentEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDepartmentEmail.Location = new System.Drawing.Point(3, 0);
             this.lblDepartmentEmail.Name = "lblDepartmentEmail";
@@ -292,7 +292,7 @@
             // 
             this.comboBoxWarehouseID.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxWarehouseID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxWarehouseID.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxWarehouseID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxWarehouseID.FormattingEnabled = true;
             this.comboBoxWarehouseID.Location = new System.Drawing.Point(3, 53);
             this.comboBoxWarehouseID.Name = "comboBoxWarehouseID";
@@ -306,7 +306,7 @@
             this.lblWarehouse.BackColor = System.Drawing.SystemColors.Control;
             this.lblWarehouse.CausesValidation = false;
             this.lblWarehouse.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblWarehouse.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblWarehouse.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblWarehouse.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblWarehouse.Location = new System.Drawing.Point(3, 0);
             this.lblWarehouse.Name = "lblWarehouse";

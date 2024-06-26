@@ -44,7 +44,10 @@
             // 
             // dgvItemFollowingROL
             // 
+            this.dgvItemFollowingROL.AllowUserToAddRows = false;
+            this.dgvItemFollowingROL.AllowUserToDeleteRows = false;
             this.dgvItemFollowingROL.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvItemFollowingROL.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dgvItemFollowingROL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel1.SetColumnSpan(this.dgvItemFollowingROL, 5);
             this.dgvItemFollowingROL.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -54,6 +57,7 @@
             this.dgvItemFollowingROL.Size = new System.Drawing.Size(1094, 218);
             this.dgvItemFollowingROL.TabIndex = 72;
             this.dgvItemFollowingROL.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItemFollowingROL_CellContentClick);
+            this.dgvItemFollowingROL.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvItemFollowingROL_CellPainting);
             // 
             // lblItemFollowingROL
             // 
@@ -82,7 +86,10 @@
             // 
             // dgvRestock
             // 
+            this.dgvRestock.AllowUserToAddRows = false;
+            this.dgvRestock.AllowUserToDeleteRows = false;
             this.dgvRestock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvRestock.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dgvRestock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel1.SetColumnSpan(this.dgvRestock, 5);
             this.dgvRestock.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -91,6 +98,7 @@
             this.dgvRestock.RowTemplate.Height = 24;
             this.dgvRestock.Size = new System.Drawing.Size(1094, 162);
             this.dgvRestock.TabIndex = 75;
+            this.dgvRestock.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRestock_CellContentClick);
             // 
             // btnConfirm
             // 

@@ -110,9 +110,12 @@ namespace WindowsFormsApp
                     int commonStockLevel = int.Parse(txtCommonStockLevel.Text);
                     int dangerLevel = int.Parse(txtDangerLevel.Text);
                     string spareID = comboBoxSpareID.SelectedItem.ToString();
+                    bool autoRestock = checkBoxAutoReStock.Checked;
 
                     UpdateStockLevels(spareID, warehouseID, reOrderLevel, commonStockLevel, dangerLevel);
-                    UpdateAutoRestock(spareID, warehouseID, checkBoxAutoReStock.Checked);
+                    UpdateAutoRestock(spareID, warehouseID, autoRestock);
+                    CheckAndInsertActualStock(spareID, warehouseID, autoRestock);
+
                     Main.ShowYesNoDialog("Setting Successful!");
                 }
                 else
@@ -120,7 +123,19 @@ namespace WindowsFormsApp
                     Main.ShowYesNoDialog("Please enter full data!");
                 }
             }
-
+        }
+        private void CheckAndInsertActualStock(string spareID, int warehouseID, bool autoRestock)
+        {
+            string sql = $"SELECT COUNT(*) FROM ActualStock WHERE SpareID = '{spareID}' AND WarehouseID = {warehouseID}";
+            using (var reader = Main.db.readBySql(sql))
+            {
+                if (reader.Read() && reader.GetInt32(0) == 0)
+                {
+                    reader.Close(); // Ensure the reader is closed before executing the insert statement
+                    sql = $"INSERT INTO ActualStock (SpareID, WarehouseID, Quantity, AutoRestork) VALUES ('{spareID}', {warehouseID}, 0, {autoRestock})";
+                    Main.db.insertBySql(sql);
+                }
+            }
         }
         private bool ValidateInput()
         {
@@ -133,8 +148,28 @@ namespace WindowsFormsApp
         }
         private void UpdateStockLevels(string spareID, int warehouseID, int reOrderLevel, int commonStockLevel, int dangerLevel)
         {
-            string sql = $"UPDATE WarehouseStockLevel SET ROL = {reOrderLevel}, CSL = {commonStockLevel}, DL = {dangerLevel} WHERE SpareID = '{spareID}' AND WarehouseID = {warehouseID}";
-            Main.db.updateBySql(sql);
+            int check = 0;
+            string checkSql = $"SELECT COUNT(*) FROM WarehouseStockLevel WHERE SpareID = '{spareID}' AND WarehouseID = {warehouseID}";
+            using (var reader = Main.db.readBySql(checkSql))
+            {
+                while (reader.Read())
+                {
+                    check = reader.GetInt32(0);
+                }
+            }
+
+            if (check == 0)
+            {
+                    // Record does not exist, insert new record
+                    string insertSql = $"INSERT INTO WarehouseStockLevel (SpareID, WarehouseID, ROL, CSL, DL) VALUES ('{spareID}', {warehouseID}, {reOrderLevel}, {commonStockLevel}, {dangerLevel})";
+                    Main.db.insertBySql(insertSql);
+            }
+            else if (check > 0)
+            {
+                        // Record exists, update existing record
+                        string updateSql = $"UPDATE WarehouseStockLevel SET ROL = {reOrderLevel}, CSL = {commonStockLevel}, DL = {dangerLevel} WHERE SpareID = '{spareID}' AND WarehouseID = {warehouseID}";
+                        Main.db.updateBySql(updateSql); 
+            }
         }
 
         private void UpdateAutoRestock(string spareID, int warehouseID, bool autoRestock)
