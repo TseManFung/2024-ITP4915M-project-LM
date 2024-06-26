@@ -63,7 +63,7 @@ namespace WindowsFormsApp
 
             if (RestockOrder == null || RestockOrder.Rows.Count == 0)
             {
-                Main.ShowMessage("No ROL item");
+                //Main.ShowMessage("No ROL item");
                 return;
             }
 
