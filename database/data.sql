@@ -1,38 +1,38 @@
 use test;
 
 /*SaleArea*/
-INSERT INTO `SaleArea` (`AreaID`, `Location`, `remark`)
+INSERT INTO `SaleArea` (`AreaID`, `Location`, `Latitude`, `Longitude`, `remark`)
 VALUES 
-(1, 'Beijing', NULL),
-(2, 'Shanghai', NULL),
-(3, 'Guangzhou', NULL),
-(4, 'Shenzhen', NULL),
-(5, 'Tianjin', NULL),
-(6, 'Hong Kong', NULL),
-(7, 'Macau', NULL),
-(8, 'Taipei', NULL),
-(9, 'Nanjing', NULL),
-(10, 'Qingdao', NULL),
-(11, 'Hangzhou', NULL),
-(12, 'Wuhan', NULL),
-(13, 'Chengdu', NULL),
-(14, 'Chongqing', NULL),
-(15, 'Xiamen', NULL),
-(16, 'Xi''an', NULL),
-(17, 'Zhengzhou', NULL),
-(18, 'Kunming', NULL),
-(19, 'Dalian', NULL),
-(20, 'Changsha', NULL),
-(21, 'Jinan', NULL),
-(22, 'Lanzhou', NULL),
-(23, 'Zhuhai', NULL),
-(24, 'Nanning', NULL),
-(25, 'Harbin', NULL),
-(26, 'Haikou', NULL),
-(27, 'Shijiazhuang', NULL),
-(28, 'Hefei', NULL),
-(29, 'Changchun', NULL),
-(30, 'Guiyang', NULL);
+(1, 'Beijing', 39.9042, 116.4074, NULL),
+(2, 'Shanghai', 31.2304, 121.4737, NULL),
+(3, 'Guangzhou', 23.1291, 113.2644, NULL),
+(4, 'Shenzhen', 22.5431, 114.0579, NULL),
+(5, 'Tianjin', 39.3434, 117.3616, NULL),
+(6, 'Hong Kong', 22.3193, 114.1694, NULL),
+(7, 'Macau', 22.1987, 113.5439, NULL),
+(8, 'Taipei', 25.0330, 121.5654, NULL),
+(9, 'Nanjing', 32.0603, 118.7969, NULL),
+(10, 'Qingdao', 36.0671, 120.3826, NULL),
+(11, 'Hangzhou', 30.2741, 120.1551, NULL),
+(12, 'Wuhan', 30.5928, 114.3055, NULL),
+(13, 'Chengdu', 30.5728, 104.0668, NULL),
+(14, 'Chongqing', 29.5630, 106.5516, NULL),
+(15, 'Xiamen', 24.4798, 118.0895, NULL),
+(16, 'Xian', 34.3416, 108.9398, NULL),
+(17, 'Zhengzhou', 34.7466, 113.6254, NULL),
+(18, 'Kunming', 25.0438, 102.7100, NULL),
+(19, 'Dalian', 38.9140, 121.6147, NULL),
+(20, 'Changsha', 28.2282, 112.9388, NULL),
+(21, 'Jinan', 36.6512, 117.1201, NULL),
+(22, 'Lanzhou', 36.0611, 103.8343, NULL),
+(23, 'Zhuhai', 22.2707, 113.5767, NULL),
+(24, 'Nanning', 22.8170, 108.3669, NULL),
+(25, 'Harbin', 45.8038, 126.5349, NULL),
+(26, 'Haikou', 20.0440, 110.1999, NULL),
+(27, 'Shijiazhuang', 38.0428, 114.5149, NULL),
+(28, 'Hefei', 31.8206, 117.2290, NULL),
+(29, 'Changchun', 43.8171, 125.3235, NULL),
+(30, 'Guiyang', 26.6470, 106.6302, NULL);
 
 /*Warehouse*/
 INSERT INTO `Warehouse` (`WarehouseID`, `Name`, `SaleAreaID`, `Location`, `State`)
@@ -164,18 +164,34 @@ VALUES
 (29, 'Dealer2', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '5000', 2, NULL);
 
 /*Spare*/
-INSERT INTO `Spare` (`SpareID`, `CategoryLetter`, `SpareName`, `Price`, `Description`, `Weight`, `SupplierID`)
-VALUES 
-('A26130', 'A', 'WTF Aluminium alloy sheet', 68, NULL, 53, 104),
-('B22978', 'B', 'Hole engine', 2248, NULL, 12.7, 106),
-('C10435', 'C', 'Shiift Tail Light Assembly', 15.5, NULL, 58.2, 102),
-('D75438', 'D', 'Tis Vehicle Car Recorder', 42.9, NULL, 63.5, 103),
-('C91177', 'C', 'Porject Headlight Assembly', 65.2, NULL, 67.5, 109),
-('D52143', 'D', 'IS In-vehicle mobile phone holder', 202, NULL, 32.5, 103),
-('A48880', 'A', 'fire Stainless Steel Sheet', 17, NULL, 49.5, 102),
-('D31172', 'D', 'DDD Vehicle Air Cleaner', 15.7, NULL, 34.7, 106),
-('D62438', 'D', 'GGG Car USB Charger', 47.3, NULL, 44.8, 102),
-('B25912', 'B', 'www cooling system', 47.87, NULL, 69.2, 106);
+INSERT INTO Spare (SpareID, CategoryLetter, SpareName, Price, Description, Weight, SupplierID)
+VALUES
+    ('A26130', 'A', 'WTF Aluminium alloy sheet', 42.55, '', 62.4, 108),
+    ('B22978', 'B', 'Hole engine', 41.1, '', 18.8, 100),
+    ('C10435', 'C', 'Shiift Tail Light Assembly', 63.23, '', 41.8, 102),
+    ('D75438', 'D', 'Tis Vehicle Car Recorder', 35.28, '', 22.8, 103),
+    ('C91177', 'C', 'Porject Headlight Assembly', 22.76, '', 34.5, 100),
+    ('D52143', 'D', 'IS In-vehicle mobile phone holder', 39.08, '', 61.1, 105),
+    ('A48880', 'A', 'fire Stainless Steel Sheet', 49.09, '', 61, 107),
+    ('D31172', 'D', 'DDD Vehicle Air Cleaner', 16.03, '', 17.9, 106),
+    ('D62438', 'D', 'GGG Car USB Charger', 53.69, '', 40, 107),
+    ('B25912', 'B', 'www cooling system', 39.69, '', 28.9, 104),
+    ('A11002', 'A', 'OOE sheet metal', 67.02, '', 53, 107),
+    ('B11003', 'B', 'ASD ddmetal', 12.51, '', 47.6, 109),
+    ('C11004', 'C', 'HHH SS engine', 18.44, '', 30.9, 101),
+    ('D11005', 'D', 'WEE Cleaner', 59.51, '', 47.7, 107),
+    ('A11006', 'A', 'UUV erMetal', 53.76, '', 17.8, 105),
+    ('B11007', 'B', 'BB ssEngine', 45.64, '', 13.9, 101),
+    ('C11008', 'C', 'CEE Assembly', 64.94, '', 25, 108),
+    ('D11009', 'D', 'RRE Charger', 15.42, '', 21.1, 102),
+    ('A11010', 'A', 'AV Metal', 45.98, '', 24.5, 106),
+    ('B11011', 'B', 'Bill Engine', 63.69, '', 14.9, 109),
+    ('C11012', 'C', 'CCC Assembly', 24.49, '', 60.1, 109),
+    ('D11013', 'D', 'DOV mobile phone holder', 43.68, '', 30.4, 103),
+    ('A11014', 'A', 'MYGO alloy sheet', 51.13, '', 40, 100),
+    ('B11015', 'B', 'BS cooling system', 34.73, '', 69.2, 105),
+    ('C11016', 'C', 'CAD Headlight Assembly', 57.83, '', 28.8, 106),
+    ('D11017', 'D', 'DEE Vehicle Air Cleaner', 40.26, '', 27.2, 104);
 
 /*Stock*/
 INSERT INTO Stock (SpareID, quantity)
