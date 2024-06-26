@@ -212,9 +212,8 @@
             this.txtDepartmentName.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtDepartmentName.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtDepartmentName.Location = new System.Drawing.Point(3, 53);
-            this.txtDepartmentName.Multiline = true;
             this.txtDepartmentName.Name = "txtDepartmentName";
-            this.txtDepartmentName.Size = new System.Drawing.Size(146, 45);
+            this.txtDepartmentName.Size = new System.Drawing.Size(146, 40);
             this.txtDepartmentName.TabIndex = 47;
             this.txtDepartmentName.TextChanged += new System.EventHandler(this.txtDepartmentName_TextChanged);
             // 
@@ -252,9 +251,8 @@
             this.txtDepartmentEmail.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtDepartmentEmail.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtDepartmentEmail.Location = new System.Drawing.Point(3, 53);
-            this.txtDepartmentEmail.Multiline = true;
             this.txtDepartmentEmail.Name = "txtDepartmentEmail";
-            this.txtDepartmentEmail.Size = new System.Drawing.Size(146, 45);
+            this.txtDepartmentEmail.Size = new System.Drawing.Size(146, 40);
             this.txtDepartmentEmail.TabIndex = 57;
             this.txtDepartmentEmail.TextChanged += new System.EventHandler(this.txtDepartmentEmail_TextChanged);
             // 

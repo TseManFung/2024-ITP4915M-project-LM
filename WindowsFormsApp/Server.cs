@@ -29,11 +29,12 @@ namespace WindowsFormsApp
         }
         public void AssignOrderItemsToCollect()
         {
-            // Fetch all OrderItemToFollow records that are not completed
             string fetchOrderItemsSql = @"
-            SELECT oit.OrderSerial, oit.ItemID, oit.Quantity, o.DealerID 
+            SELECT oit.OrderSerial, oit.ItemID, oit.Quantity, o.DealerID, o.State AS OrderState, sa.AreaID AS DealerAreaID
             FROM OrderItemToFollow oit
             JOIN `Order` o ON oit.OrderSerial = o.OrderSerial
+            JOIN Dealer d ON o.DealerID = d.DealerID
+            JOIN SaleArea sa ON d.SaleAreaID = sa.AreaID
             WHERE oit.State != 'D'"; // Assuming 'D' means 'Done'
 
             DataTable orderItemsTable = Main.db.GetDataTable(fetchOrderItemsSql);
@@ -44,71 +45,92 @@ namespace WindowsFormsApp
                 string itemId = orderItemRow["ItemID"].ToString();
                 int quantity = Convert.ToInt32(orderItemRow["Quantity"]);
                 int dealerId = Convert.ToInt32(orderItemRow["DealerID"]);
+                string orderState = orderItemRow["OrderState"].ToString();
+                int dealerAreaId = Convert.ToInt32(orderItemRow["DealerAreaID"]);
 
-                // Fetch Dealer's DeliveryAddress or OfficeAddress
-                string fetchDealerAddressSql = $@"
-                SELECT COALESCE(NULLIF(d.DeliveryAddress, ''), d.OfficeAddress) as Address
-                FROM Dealer d
-                WHERE d.DealerID = {dealerId}";
+                // Fetch SaleArea's coordinates for the dealer
+                string fetchDealerSaleAreaSql = $@"
+                SELECT Latitude, Longitude
+                FROM SaleArea
+                WHERE AreaID = {dealerAreaId}";
 
-                DataTable dealerAddressTable = Main.db.GetDataTable(fetchDealerAddressSql);
-                string dealerAddress = "";
-                if (dealerAddressTable.Rows.Count > 0)
+                DataTable dealerSaleAreaTable = Main.db.GetDataTable(fetchDealerSaleAreaSql);
+                double dealerLatitude = 0;
+                double dealerLongitude = 0;
+                if (dealerSaleAreaTable.Rows.Count > 0)
                 {
-                    dealerAddress = dealerAddressTable.Rows[0]["Address"].ToString();
+                    dealerLatitude = Convert.ToDouble(dealerSaleAreaTable.Rows[0]["Latitude"]);
+                    dealerLongitude = Convert.ToDouble(dealerSaleAreaTable.Rows[0]["Longitude"]);
                 }
 
-                // Find the nearest Warehouse with enough stock
-                string fetchWarehouseSql = $@"
-                SELECT w.WarehouseID, ast.quantity as AvailableQuantity
+                int remainingQuantity = quantity;
+
+                // Find the nearest Warehouses with enough stock using Haversine formula
+                string fetchWarehousesSql = $@"
+                SELECT w.WarehouseID, w.SaleAreaID, ast.quantity as AvailableQuantity,
+                       sa.Latitude, sa.Longitude,
+                       (6371 * acos(cos(radians({dealerLatitude})) * cos(radians(sa.Latitude)) * cos(radians(sa.Longitude) - radians({dealerLongitude})) + sin(radians({dealerLatitude})) * sin(radians(sa.Latitude)))) AS distance
                 FROM Warehouse w
                 JOIN ActualStock ast ON w.WarehouseID = ast.WarehouseID
-                WHERE ast.SpareID = '{itemId}' AND ast.quantity >= {quantity}
-                ORDER BY ast.quantity DESC
-                LIMIT 1"; // Simplified to pick the warehouse with the most stock
+                JOIN SaleArea sa ON w.SaleAreaID = sa.AreaID
+                WHERE ast.SpareID = '{itemId}' AND ast.quantity > 0
+                ORDER BY distance ASC";
 
-                DataTable warehouseTable = Main.db.GetDataTable(fetchWarehouseSql);
-                if (warehouseTable.Rows.Count > 0)
+                DataTable warehousesTable = Main.db.GetDataTable(fetchWarehousesSql);
+
+                foreach (DataRow warehouseRow in warehousesTable.Rows)
                 {
-                    int warehouseId = Convert.ToInt32(warehouseTable.Rows[0]["WarehouseID"]);
-                    int availableQuantity = Convert.ToInt32(warehouseTable.Rows[0]["AvailableQuantity"]);
+                    if (remainingQuantity <= 0) break;
 
-                    // Check if we can assign the quantity
-                    if (availableQuantity >= quantity)
-                    {
-                        // Insert into OrderItemForCollect
-                        string insertCollectSql = $@"
-                        INSERT INTO OrderItemForCollect (OrderSerial, ItemID, Assgin, Quantity)
-                        VALUES ('{orderSerial}', '{itemId}', {warehouseId}, {quantity})";
+                    int warehouseId = Convert.ToInt32(warehouseRow["WarehouseID"]);
+                    int availableQuantity = Convert.ToInt32(warehouseRow["AvailableQuantity"]);
 
-                        Main.db.insertBySql(insertCollectSql);
+                    int assignedQuantity = Math.Min(availableQuantity, remainingQuantity);
 
-                        // Update ActualStock
-                        string updateStockSql = $@"
-                        UPDATE ActualStock
-                        SET quantity = quantity - {quantity}
-                        WHERE WarehouseID = {warehouseId} AND SpareID = '{itemId}'";
+                    // Insert into OrderItemForCollect
+                    string insertCollectSql = $@"
+                    INSERT INTO OrderItemForCollect (OrderSerial, ItemID, Assgin, Quantity)
+                    VALUES ('{orderSerial}', '{itemId}', {warehouseId}, {assignedQuantity})";
 
-                        Main.db.updateBySql(updateStockSql);
+                    Main.db.insertBySql(insertCollectSql);
 
-                        // Update OrderItemToFollow state to 'D' (Done)
-                        string updateOrderItemToFollowSql = $@"
-                        UPDATE OrderItemToFollow
-                        SET State = 'D'
-                        WHERE OrderSerial = '{orderSerial}' AND ItemID = '{itemId}'";
+                    // Update ActualStock
+                    string updateStockSql = $@"
+                    UPDATE ActualStock
+                    SET quantity = quantity - {assignedQuantity}
+                    WHERE WarehouseID = {warehouseId} AND SpareID = '{itemId}'";
 
-                        Main.db.updateBySql(updateOrderItemToFollowSql);
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Not enough stock for ItemID: {itemId} in any warehouse.");
-                    }
+                    Main.db.updateBySql(updateStockSql);
+
+                    remainingQuantity -= assignedQuantity;
                 }
-                else
+
+                if (remainingQuantity <= 0)
                 {
-                    Console.WriteLine($"Not enough stock for ItemID: {itemId} in any warehouse.");
+                    // Update OrderItemToFollow state to 'D' (Done)
+                    string updateOrderItemToFollowSql = $@"
+                    UPDATE OrderItemToFollow
+                    SET State = 'D'
+                    WHERE OrderSerial = '{orderSerial}' AND ItemID = '{itemId}'";
+
+                    Main.db.updateBySql(updateOrderItemToFollowSql);
+
+                    // Update Order state to 'P' if it is 'C' or 'W'
+                    if (orderState == "C" || orderState == "W")
+                    {
+                        string updateOrderSql = $@"
+                        UPDATE `Order`
+                        SET State = 'P'
+                        WHERE OrderSerial = '{orderSerial}'";
+
+                    Main.db.updateBySql(updateOrderSql);
                 }
             }
+            else
+            {
+                Console.WriteLine($"Not enough stock for ItemID: {itemId} in any warehouse.");
+            }
+        }
         }
     }
 }
