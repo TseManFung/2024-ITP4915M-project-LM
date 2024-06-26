@@ -26,7 +26,7 @@ namespace WindowsFormsApp
         private string type;
         private string comelocation;
         private string locationor;
-        private bool state = true;
+        private bool state = false;
         public static class GlobalVariables
         {
             public static decimal Latitude { get; set; }
@@ -102,6 +102,12 @@ namespace WindowsFormsApp
             this.type = type;
             this.comelocation = comelocation;
         }
+        public Google_map(string comelocation)
+        {
+            InitializeComponent();
+            this.comelocation = comelocation;
+            txtlocation.Text = comelocation;
+        }
         private void Google_map_Load(object sender, EventArgs e)
         {
             if (type == "SaleArea")
@@ -114,10 +120,10 @@ namespace WindowsFormsApp
                         locationor = reader.GetString(0);
                     }
                 }
-                txtlocation.Text = locationor;
+                txtlocation.Text = comelocation;
                 if (comelocation == locationor)
                 {
-                    MessageBox.Show("Location matches. Closing the form.");
+                    Main.ShowMessage("Location matches. Closing the form.");
                     state = false;
                     this.Close(); // 关闭当前表单
                     return; // 直接返回，不执行后续代码
@@ -151,10 +157,11 @@ namespace WindowsFormsApp
             {
                 // 嘗試將 txtlatitude 和 txtlongitude 的文本內容轉換為 decimal 類型
                 try
-                {
+                {   
+                    
                     GlobalVariables.Latitude = Convert.ToDecimal(txtlatitude.Text);
                     GlobalVariables.Longitude = Convert.ToDecimal(txtlongitude.Text);
-
+                    state = true;
                     // 關閉當前窗口
                     this.Close();
                 }

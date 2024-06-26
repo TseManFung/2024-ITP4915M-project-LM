@@ -72,26 +72,22 @@ namespace WindowsFormsApp
             map.ShowDialog();
             if (map.Getstate())
             {
-                String Latitude = GlobalVariables.Latitude.ToString();
-                String Longitude = GlobalVariables.Longitude.ToString();
-                Main.ShowMessage(Latitude+"\n"+ Longitude);
-                return;
-                if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
-                {
-                    if (!string.IsNullOrEmpty(txtLocation.Text))
-                    {
 
+                if (!string.IsNullOrEmpty(txtLocation.Text))
+                    {
+                        double Latitude = (double)GlobalVariables.Latitude;
+                        double Longitude = (double)GlobalVariables.Latitude;
+                        Main.ShowMessage(Longitude.ToString());
                         Location = txtLocation.Text;
                         string Remark = txtRemark.Text;
-
                         string query;
                         if (!string.IsNullOrEmpty(Remark))
                         {
-                            query = $"UPDATE SaleArea SET Location = '{Location}', Remark = '{Remark}' WHERE AreaID = '{AreaID}'";
+                            query = $"UPDATE SaleArea SET Location = '{Location}', Latitude = {Latitude},  Longitude = {Longitude} ,Remark = '{Remark}' WHERE AreaID = '{AreaID}'";
                         }
                         else
                         {
-                            query = $"UPDATE SaleArea SET Location = '{Location}' WHERE AreaID = '{AreaID}'";
+                            query = $"UPDATE SaleArea SET Location = '{Location}' , Latitude = {Latitude},  Longitude = {Longitude} WHERE AreaID = '{AreaID}'";
                         }
                         Main.db.updateBySql(query);
                         Main.ShowMessage("Successful editing");
@@ -103,7 +99,6 @@ namespace WindowsFormsApp
                         Main.ShowMessage("Please provide Location!");
                     }
                 }
-            }
         }
 
         private void txtLocation_TextChanged(object sender, EventArgs e)
