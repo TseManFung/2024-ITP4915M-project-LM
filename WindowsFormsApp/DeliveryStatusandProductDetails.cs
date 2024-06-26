@@ -18,7 +18,7 @@ namespace WindowsFormsApp
 {
     public partial class frmDeliveryStatusandProductDetails : Form
     {
-        String InvoiceID, orderState, invoiceState,orderSerial;
+        String InvoiceID, orderState, invoiceState, orderSerial;
         DataTable dt;
 
         Dictionary<String, String> dictInvoiceStates = new Dictionary<string, string> {
@@ -98,14 +98,14 @@ namespace WindowsFormsApp
                 printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
                 printDocument1.Print();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Main.ShowMessage("Can not print now");
                 Console.WriteLine(ex.ToString());
                 Console.WriteLine(ex.Message);
             }
         }
-        private int currentPageIndex = 0,i=0;
+        private int currentPageIndex = 0, i = 0;
 
         Font font = new Font("Arial", 12, System.Drawing.FontStyle.Regular);
         Brush brush = Brushes.Black;
@@ -152,11 +152,12 @@ namespace WindowsFormsApp
             {
                 pdfCover(e);
             }
-            else if (i>0)
+            else if (i > 0)
             {
                 // Page 2 content
                 pdfContent(e);
-            }else if (i==0)
+            }
+            else if (i == 0)
             {
                 // Page 3 content
                 pdfEnd(e);
@@ -173,8 +174,8 @@ namespace WindowsFormsApp
             e.Graphics.DrawString(this.str["Title"], font, brush, centerX, mt, new StringFormat() { Alignment = StringAlignment.Center });
             e.Graphics.DrawString(this.str["companyName"], font, brush, centerX, mt + 20, new StringFormat() { Alignment = StringAlignment.Center });
             int k = (int)(e.Graphics.MeasureString(this.str["companyName"], font).Width / 2);
-            e.Graphics.DrawString(this.str["tel"], font, brush, centerX-k- (int)(e.Graphics.MeasureString(this.str["tel"], font).Width / 2), mt + 40, new StringFormat() { Alignment = StringAlignment.Near });
-            e.Graphics.DrawString(this.str["Grams"], font, brush, centerX +k-(int)(e.Graphics.MeasureString(this.str["Grams"], font).Width / 2), mt + 40, new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString(this.str["tel"], font, brush, centerX - k - (int)(e.Graphics.MeasureString(this.str["tel"], font).Width / 2), mt + 40, new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString(this.str["Grams"], font, brush, centerX + k - (int)(e.Graphics.MeasureString(this.str["Grams"], font).Width / 2), mt + 40, new StringFormat() { Alignment = StringAlignment.Near });
 
             e.Graphics.DrawString(this.str["InvAdd"], font, brush, ml, mt + 70, new StringFormat() { Alignment = StringAlignment.Near });
             e.Graphics.DrawString(this.strdata["InvAdd"], font, brush, ml, mt + 90, new StringFormat() { Alignment = StringAlignment.Near });
@@ -185,7 +186,7 @@ namespace WindowsFormsApp
             e.Graphics.DrawString(this.str["Date"], font, brush, ml, mt + 170, new StringFormat() { Alignment = StringAlignment.Near });
             e.Graphics.DrawString(this.strdata["OrderDate"], font, brush, ml, mt + 190, new StringFormat() { Alignment = StringAlignment.Near });
             e.Graphics.DrawString(this.str["DealerCode"], font, brush, centerX, mt + 170, new StringFormat() { Alignment = StringAlignment.Near });
-            e.Graphics.DrawString(this.strdata["DealerCode"], font, brush, centerX , mt + 190, new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString(this.strdata["DealerCode"], font, brush, centerX, mt + 190, new StringFormat() { Alignment = StringAlignment.Near });
 
             e.Graphics.DrawString(this.str["DealerOrderNo"], font, brush, ml, mt + 220, new StringFormat() { Alignment = StringAlignment.Near });
             e.Graphics.DrawString(this.strdata["DealerOrderNo"], font, brush, ml, mt + 240, new StringFormat() { Alignment = StringAlignment.Near });
@@ -195,44 +196,49 @@ namespace WindowsFormsApp
             e.Graphics.DrawString(this.str["DespatchForeman"], font, brush, ml, mt + 270, new StringFormat() { Alignment = StringAlignment.Near });
             e.Graphics.DrawString(this.strdata["DespatchForeman"], font, brush, ml, mt + 290, new StringFormat() { Alignment = StringAlignment.Near });
             e.Graphics.DrawString(this.str["weight"], font, brush, centerX, mt + 270, new StringFormat() { Alignment = StringAlignment.Near });
-            e.Graphics.DrawString(totalWeight.ToString()+" g", font, brush, centerX, mt + 290, new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString(totalWeight.ToString() + " g", font, brush, centerX, mt + 290, new StringFormat() { Alignment = StringAlignment.Near });
 
             e.HasMorePages = true;
 
         }
-
+        Pen lineBlack = new Pen(Brushes.Black);
 
         private void pdfContent(System.Drawing.Printing.PrintPageEventArgs e)
         {
             int centerX = e.PageBounds.Width / 2;
             int centerY = e.PageBounds.Height / 2;
-            int mt = e.MarginBounds.Top, ml = e.MarginBounds.Left,mr = e.MarginBounds.Right,mb= e.MarginBounds.Bottom;
-            int col1x = (ml+mr)/5, col2x = (ml + mr)*2 /5 , col3x = (ml + mr) * 3 / 5,col4x = (ml + mr) * 4 / 5;
+            int mt = e.MarginBounds.Top, ml = e.MarginBounds.Left, mr = e.MarginBounds.Right, mb = e.MarginBounds.Bottom;
+            int col1x = (ml + mr) / 5, col2x = (ml + mr) * 2 / 5, col3x = (ml + mr) * 3 / 5, col4x = (ml + mr) * 4 / 5;
             int r = 30;
 
-            e.Graphics.DrawString(this.str["PartNo"], font, brush, ml, mt , new StringFormat() { Alignment = StringAlignment.Near });
-            e.Graphics.DrawString(this.str["prevQty"], font, brush, col1x, mt , new StringFormat() { Alignment = StringAlignment.Near });
-            e.Graphics.DrawString(this.str["Qtydelivered"], font, brush, col2x, mt , new StringFormat() { Alignment = StringAlignment.Near });
-            e.Graphics.DrawString(this.str["followQty"], font, brush, col3x, mt , new StringFormat() { Alignment = StringAlignment.Near });
-            e.Graphics.DrawString(this.str["bundle"], font, brush, col4x, mt , new StringFormat() { Alignment = StringAlignment.Near });
-
+            e.Graphics.DrawString(this.str["PartNo"], font, brush, ml, mt, new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString(this.str["prevQty"], font, brush, col1x, mt, new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString(this.str["Qtydelivered"], font, brush, col2x, mt, new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString(this.str["followQty"], font, brush, col3x, mt, new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString(this.str["bundle"], font, brush, col4x, mt, new StringFormat() { Alignment = StringAlignment.Near });
+            string bundlesNumber = this.str["bundle"];
+            SizeF textSize = e.Graphics.MeasureString(bundlesNumber, font);
+            float textWidth = textSize.Width;
+            e.Graphics.DrawLine(lineBlack, ml, mt  + 25, textWidth + col4x, mt + 25);
             int count = 0;
             foreach (DataRow row in dt.Rows)
             {
-                if(count < (currentPageIndex-1)*18)
+                if (count < (currentPageIndex - 1) * 18)
                 {
                     count++;
                     continue;
                 }
                 e.Graphics.DrawString(row["ItemID"].ToString(), font, brush, ml, mt + r, new StringFormat() { Alignment = StringAlignment.Near });
-                e.Graphics.DrawString(row["SpareName"].ToString(), font, brush, ml, mt + r+20, new StringFormat() { Alignment = StringAlignment.Near });
+                e.Graphics.DrawString(row["SpareName"].ToString(), font, brush, ml, mt + r + 20, new StringFormat() { Alignment = StringAlignment.Near });
                 e.Graphics.DrawString(row["Prev Qty"].ToString(), font, brush, col1x, mt + r, new StringFormat() { Alignment = StringAlignment.Near });
                 e.Graphics.DrawString(row["Qty delivered"].ToString(), font, brush, col2x, mt + r, new StringFormat() { Alignment = StringAlignment.Near });
                 e.Graphics.DrawString(row["Qty to follow"].ToString(), font, brush, col3x, mt + r, new StringFormat() { Alignment = StringAlignment.Near });
                 e.Graphics.DrawString(row["BundlesNumber"].ToString(), font, brush, col4x, mt + r, new StringFormat() { Alignment = StringAlignment.Near });
                 r += 50;
+                e.Graphics.DrawLine(lineBlack, ml, mt + r -5, textWidth+ col4x, mt + r -5);
+
                 i--;
-                if (r+ml > mb)
+                if (r + ml > mb)
                 {
                     break;
                 }
@@ -268,19 +274,19 @@ namespace WindowsFormsApp
 
                 e.Graphics.DrawString(this.str["Sign"], font, brush, centerX, mt + 50, new StringFormat() { Alignment = StringAlignment.Near });
                 // Draw "Sign" to image sign
-                using (var ms = new MemoryStream((byte[]) reader["Sign"]))
+                using (var ms = new MemoryStream((byte[])reader["Sign"]))
                 {
-                   sign = Image.FromStream(ms);
+                    sign = Image.FromStream(ms);
                 }
                 int signWidth = centerX - ml;
                 int signHeight = (int)(((double)signWidth / sign.Width) * sign.Height);
-                Image s_image = (Image) ResizeImage(sign,signWidth,signHeight);
+                Image s_image = (Image)ResizeImage(sign, signWidth, signHeight);
                 e.Graphics.DrawImage(s_image, centerX, mt + 70);
                 currentPageIndex = 0;
                 s_image.Dispose();
             }
             sign.Dispose();
-            
+
         }
         public Bitmap ResizeImage(Image image, int width, int height)
         {
@@ -313,7 +319,7 @@ namespace WindowsFormsApp
             {
                 btnInvoice.Visible = true;
             }
-            if (Main.AssessLevel <= 300 || Main.AssessLevel == 600)
+            if (invoiceState == "S" && (Main.AssessLevel <= 300 || Main.AssessLevel == 600))
             {
                 btnInvoice.Visible = true;
             }

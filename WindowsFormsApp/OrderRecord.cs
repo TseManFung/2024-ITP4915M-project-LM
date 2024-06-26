@@ -39,11 +39,7 @@ namespace WindowsFormsApp
         private void getData(int start, int end)
         {
             string sql;
-            if (Main.dealerID != null)
-            {
-                sql = $"SELECT OrderSerial, OrderDate, OrderNumberfromDealer, State, remark FROM `Order` Where DealerID = {Main.dealerID} limit {start},{end};";
-            }
-            else if (Main.staffID != null)
+             if (Main.staffID != null)
             {
                 if (Main.AssessLevel == 400)
                 {
@@ -60,6 +56,10 @@ namespace WindowsFormsApp
                     sql = $"SELECT OrderSerial,DealerID, OrderDate, OrderNumberfromDealer, State, remark FROM `Order` limit {start},{end};";
 
                 }
+            }
+            else if (Main.dealerID != null)
+            {
+                sql = $"SELECT OrderSerial, OrderDate, OrderNumberfromDealer, State, remark FROM `Order` Where DealerID = {Main.dealerID} limit {start},{end};";
             }
             else { throw new Exception("No DealerID or StaffID"); }
 
@@ -106,22 +106,8 @@ namespace WindowsFormsApp
             }
 
             //State 在 ProcesingList 的就放入dgvProcessing，在否則就放入dgvComplete
-            if (Main.dealerID != null)
-            {
-                
-                foreach (DataRow row in dt.Rows)
-                {
-                    if (ProcesingList.Contains(row["State"].ToString()))
-                    {
-                        dtP.Rows.Add(row["OrderSerial"], row["OrderDate"], row["OrderNumberfromDealer"], row["State"], row["remark"], row["_RowString"]);
-                    }
-                    else if (CompleteList.Contains(row["State"].ToString()))
-                    {
-                        dtC.Rows.Add(row["OrderSerial"], row["OrderDate"], row["OrderNumberfromDealer"], row["State"], row["remark"], row["_RowString"]);
-                    }
-                }
-            }
-            else if (Main.staffID != null)
+
+             if (Main.staffID != null)
             {
                 foreach (DataRow row in dt.Rows)
                 {
@@ -132,6 +118,21 @@ namespace WindowsFormsApp
                     else if (CompleteList.Contains(row["State"].ToString()))
                     {
                         dtC.Rows.Add(row["OrderSerial"], row["DealerID"], row["OrderDate"], row["OrderNumberfromDealer"], row["State"], row["remark"], row["_RowString"]);
+                    }
+                }
+            }
+            else if (Main.dealerID != null)
+            {
+
+                foreach (DataRow row in dt.Rows)
+                {
+                    if (ProcesingList.Contains(row["State"].ToString()))
+                    {
+                        dtP.Rows.Add(row["OrderSerial"], row["OrderDate"], row["OrderNumberfromDealer"], row["State"], row["remark"], row["_RowString"]);
+                    }
+                    else if (CompleteList.Contains(row["State"].ToString()))
+                    {
+                        dtC.Rows.Add(row["OrderSerial"], row["OrderDate"], row["OrderNumberfromDealer"], row["State"], row["remark"], row["_RowString"]);
                     }
                 }
             }

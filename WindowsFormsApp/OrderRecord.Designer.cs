@@ -36,10 +36,10 @@
             this.groupBoxProcessing = new System.Windows.Forms.GroupBox();
             this.dgvProcessing = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblDoubleClickSeeMoreDetaill = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblDoubleClickSeeMoreDetaill = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBoxComplete.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvComplete)).BeginInit();
@@ -160,18 +160,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(833, 44);
             this.tableLayoutPanel2.TabIndex = 10;
             // 
-            // lblDoubleClickSeeMoreDetaill
-            // 
-            this.lblDoubleClickSeeMoreDetaill.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblDoubleClickSeeMoreDetaill.AutoSize = true;
-            this.lblDoubleClickSeeMoreDetaill.Font = new System.Drawing.Font("PMingLiU", 24F);
-            this.lblDoubleClickSeeMoreDetaill.Location = new System.Drawing.Point(37, 0);
-            this.lblDoubleClickSeeMoreDetaill.Name = "lblDoubleClickSeeMoreDetaill";
-            this.lblDoubleClickSeeMoreDetaill.Size = new System.Drawing.Size(342, 44);
-            this.lblDoubleClickSeeMoreDetaill.TabIndex = 11;
-            this.lblDoubleClickSeeMoreDetaill.Text = "double click a record to see more detaill";
-            this.lblDoubleClickSeeMoreDetaill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.BackColor = System.Drawing.SystemColors.Window;
@@ -209,6 +197,18 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(281, 36);
             this.textBox1.TabIndex = 1;
+            // 
+            // lblDoubleClickSeeMoreDetaill
+            // 
+            this.lblDoubleClickSeeMoreDetaill.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblDoubleClickSeeMoreDetaill.AutoSize = true;
+            this.lblDoubleClickSeeMoreDetaill.Font = new System.Drawing.Font("PMingLiU", 24F);
+            this.lblDoubleClickSeeMoreDetaill.Location = new System.Drawing.Point(37, 0);
+            this.lblDoubleClickSeeMoreDetaill.Name = "lblDoubleClickSeeMoreDetaill";
+            this.lblDoubleClickSeeMoreDetaill.Size = new System.Drawing.Size(342, 44);
+            this.lblDoubleClickSeeMoreDetaill.TabIndex = 11;
+            this.lblDoubleClickSeeMoreDetaill.Text = "double click a record to see more detaill";
+            this.lblDoubleClickSeeMoreDetaill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmOrderRecord
             // 
