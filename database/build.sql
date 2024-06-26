@@ -12,6 +12,8 @@ CREATE TABLE `Dealer` (
 CREATE TABLE `SaleArea` (
   `AreaID` int PRIMARY KEY AUTO_INCREMENT,
   `Location` varchar(255) NOT NULL,
+  `Latitude` double,
+  `Longitude` double,
   `remark` varchar(255)
 );
 
