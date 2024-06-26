@@ -164,18 +164,34 @@ VALUES
 (29, 'Dealer2', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '5000', 2, NULL);
 
 /*Spare*/
-INSERT INTO `Spare` (`SpareID`, `CategoryLetter`, `SpareName`, `Price`, `Description`, `Weight`, `SupplierID`)
-VALUES 
-('A26130', 'A', 'WTF Aluminium alloy sheet', 68, NULL, 53, 104),
-('B22978', 'B', 'Hole engine', 2248, NULL, 12.7, 106),
-('C10435', 'C', 'Shiift Tail Light Assembly', 15.5, NULL, 58.2, 102),
-('D75438', 'D', 'Tis Vehicle Car Recorder', 42.9, NULL, 63.5, 103),
-('C91177', 'C', 'Porject Headlight Assembly', 65.2, NULL, 67.5, 109),
-('D52143', 'D', 'IS In-vehicle mobile phone holder', 202, NULL, 32.5, 103),
-('A48880', 'A', 'fire Stainless Steel Sheet', 17, NULL, 49.5, 102),
-('D31172', 'D', 'DDD Vehicle Air Cleaner', 15.7, NULL, 34.7, 106),
-('D62438', 'D', 'GGG Car USB Charger', 47.3, NULL, 44.8, 102),
-('B25912', 'B', 'www cooling system', 47.87, NULL, 69.2, 106);
+INSERT INTO Spare (SpareID, CategoryLetter, SpareName, Price, Description, Weight, SupplierID)
+VALUES
+    ('A26130', 'A', 'WTF Aluminium alloy sheet', 42.55, '', 62.4, 108),
+    ('B22978', 'B', 'Hole engine', 41.1, '', 18.8, 100),
+    ('C10435', 'C', 'Shiift Tail Light Assembly', 63.23, '', 41.8, 102),
+    ('D75438', 'D', 'Tis Vehicle Car Recorder', 35.28, '', 22.8, 103),
+    ('C91177', 'C', 'Porject Headlight Assembly', 22.76, '', 34.5, 100),
+    ('D52143', 'D', 'IS In-vehicle mobile phone holder', 39.08, '', 61.1, 105),
+    ('A48880', 'A', 'fire Stainless Steel Sheet', 49.09, '', 61, 107),
+    ('D31172', 'D', 'DDD Vehicle Air Cleaner', 16.03, '', 17.9, 106),
+    ('D62438', 'D', 'GGG Car USB Charger', 53.69, '', 40, 107),
+    ('B25912', 'B', 'www cooling system', 39.69, '', 28.9, 104),
+    ('A11002', 'A', 'OOE sheet metal', 67.02, '', 53, 107),
+    ('B11003', 'B', 'ASD ddmetal', 12.51, '', 47.6, 109),
+    ('C11004', 'C', 'HHH SS engine', 18.44, '', 30.9, 101),
+    ('D11005', 'D', 'WEE Cleaner', 59.51, '', 47.7, 107),
+    ('A11006', 'A', 'UUV erMetal', 53.76, '', 17.8, 105),
+    ('B11007', 'B', 'BB ssEngine', 45.64, '', 13.9, 101),
+    ('C11008', 'C', 'CEE Assembly', 64.94, '', 25, 108),
+    ('D11009', 'D', 'RRE Charger', 15.42, '', 21.1, 102),
+    ('A11010', 'A', 'AV Metal', 45.98, '', 24.5, 106),
+    ('B11011', 'B', 'Bill Engine', 63.69, '', 14.9, 109),
+    ('C11012', 'C', 'CCC Assembly', 24.49, '', 60.1, 109),
+    ('D11013', 'D', 'DOV mobile phone holder', 43.68, '', 30.4, 103),
+    ('A11014', 'A', 'MYGO alloy sheet', 51.13, '', 40, 100),
+    ('B11015', 'B', 'BS cooling system', 34.73, '', 69.2, 105),
+    ('C11016', 'C', 'CAD Headlight Assembly', 57.83, '', 28.8, 106),
+    ('D11017', 'D', 'DEE Vehicle Air Cleaner', 40.26, '', 27.2, 104);
 
 /*Stock*/
 INSERT INTO Stock (SpareID, quantity)
