@@ -116,5 +116,19 @@ WHERE OrderSerial = '{OrderSerial}'
             // selete this row's ItemID in the comboBoxSpareID
             comboBoxSpareID.SelectedItem = dgvCollect.Rows[e.RowIndex].Cells["ItemID"].Value;
         }
+
+        private void comboBoxSpareID_SelectedValueChanged(object sender, EventArgs e)
+        {
+            // find the quantity of the selected ItemID
+            var row = dgvCollect.Rows
+                .OfType<DataGridViewRow>()
+                .FirstOrDefault(x => x.Cells["ItemID"].Value.ToString() == comboBoxSpareID.SelectedItem.ToString());
+
+            if (row != null)
+            {
+                var quantity = Convert.ToDecimal(row.Cells["Quantity"].Value);
+                numericUpDown2.Value = numericUpDown2.Maximum = quantity;
+            }
+        }
     }
 }
