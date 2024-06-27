@@ -53,7 +53,7 @@ namespace WindowsFormsApp
                 reader.Read();
                 respent_warehouse = reader.GetInt32(0);
             }
-            string sql = $@" SELECT s.SpareName, w.Name AS WarehouseName, ws.SpareID, s.SupplierID, sup.Name AS SupplierName, a.quantity, ws.CSL - a.quantity AS RestockQty, ws.DL FROM WarehouseStockLevel ws JOIN ActualStock a ON ws.WarehouseID = a.WarehouseID AND ws.SpareID = a.SpareID JOIN Warehouse w ON ws.WarehouseID = w.WarehouseID JOIN Spare s ON ws.SpareID = s.SpareID JOIN Supplier sup ON s.SupplierID = sup.SupplierID WHERE a.quantity <= ws.ROL AND a.WarehouseID = '{respent_warehouse}' AND s.state = 'N' AND a.AutoRestork = 1 AND NOT EXISTS ( SELECT 1 FROM RestockItem ri JOIN RestockOrder ro ON ri.RestockOrderID = ro.RestockOrderID WHERE ri.ItemID = ws.SpareID AND ri.State = 'C' AND ro.WarehouseID = '{respent_warehouse}' );"; RestockOrder = Main.db.GetDataTable(sql);
+            string sql = $@" SELECT s.SpareName, w.WarehouseID ,w.Name AS WarehouseName, ws.SpareID, s.SupplierID, sup.Name AS SupplierName, a.quantity, ws.CSL - a.quantity AS RestockQty, ws.DL FROM WarehouseStockLevel ws JOIN ActualStock a ON ws.WarehouseID = a.WarehouseID AND ws.SpareID = a.SpareID JOIN Warehouse w ON ws.WarehouseID = w.WarehouseID JOIN Spare s ON ws.SpareID = s.SpareID JOIN Supplier sup ON s.SupplierID = sup.SupplierID WHERE a.quantity <= ws.ROL AND a.WarehouseID = '{respent_warehouse}' AND s.state = 'N' AND a.AutoRestork = 1 AND NOT EXISTS ( SELECT 1 FROM RestockItem ri JOIN RestockOrder ro ON ri.RestockOrderID = ro.RestockOrderID WHERE ri.ItemID = ws.SpareID AND ri.State = 'C' AND ro.WarehouseID = '{respent_warehouse}' );"; RestockOrder = Main.db.GetDataTable(sql);
 
         }
 
