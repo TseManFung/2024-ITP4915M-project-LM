@@ -122,7 +122,10 @@ VALUES
 (18, '皇甫樂成',  3,'wh003', 'delivery worker', '82838532', 'F'),
 (19, '山靜白', 4, 'wh004', 'delivery worker', '23023829', 'F'),
 (20, '山小明',  1, 'wh001', 'Stock record clerk', '48193089', 'M'),
-(100, 'storeman', 1, 'wh001', 'storeman', '98765432', 'M'),
+(100, 'storeman1', 1, 'wh001', 'storeman', '98765432', 'M'),
+(107, 'storeman2', 2, 'wh002', 'storeman', '98765437', 'M'),
+(108, 'storeman3', 3, 'wh003', 'storeman', '98765438', 'M'),
+(109, 'storeman4', 4, 'wh004', 'storeman', '98765439', 'M'),
 (101, 'LMcleck', NULL, 'Hdt', 'LMcleck', '98765431', 'M'),
 (102, 'accountant', NULL, 'Hdt', 'accountant', '98765430', 'M'),
 (103, 'manager', 1, 'wh001', 'manager', '98765429', 'M'),
@@ -153,7 +156,10 @@ VALUES
 (26, 'ianWsRYLjsJhgTPdiwgy', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,18),
 (27, 'HJfXjJbUrEwcnMvnXjos', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,19),
 (28, 'mHMVNDcyDQVtkXDqRDma', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3',10000,NULL,20),
-(1, 'storeman', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '400', NULL, 100),
+(1, 'storeman1', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '400', NULL, 100),
+(30, 'storeman2', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '400', NULL, 107),
+(31, 'storeman3', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '400', NULL, 108),
+(32, 'storeman4', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '400', NULL, 109),
 (2, 'LMcleck', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '200', NULL, 101),
 (3, 'accountant', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '300', NULL, 102),
 (4, 'manager', '0a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', '100', NULL, 103),
@@ -217,9 +223,9 @@ VALUES
 (2, 'C91177', TRUE, 1000),
 (2, 'D52143', TRUE, 1000),
 (3, 'A48880', TRUE, 1000),
-(3, 'D31172', TRUE, 90),
-(4, 'D62438', TRUE, 90),
-(4, 'B25912', TRUE, 90);
+(3, 'D31172', TRUE, 100),
+(4, 'D62438', TRUE, 100),
+(4, 'B25912', TRUE, 100);
 
 
 /*Order*/
@@ -261,14 +267,14 @@ VALUES
 /*Invoice*/
 INSERT INTO `Invoice` (`InvoiceID`, `OrderSerial`, `DespatchForemanID`, `InvoiceDate`, `CompleteState`)
 VALUES
-  ('202405240000011', '20240524-0900-000001', 6, '2024-05-24', 'C'),
-  ('202405240000021', '20240524-0901-000002', 6, '2024-05-24', 'C');
+  ('2024052400000101', '20240524-0900-000001', 6, '2024-05-24', 'C'),
+  ('2024052400000201', '20240524-0901-000002', 6, '2024-05-24', 'C');
 /*ActualQuantityDespatched*/
 
 INSERT INTO `ActualQuantityDespatched` (`WarehouseID`, `InvoiceID`, `ItemID`, `Quantity`, `BundlesNumber`)
 VALUES
-  (1, '202405240000011', 'A26130', 10, 1),
-  (1, '202405240000021', 'B22978', 10, 2);
+  (1, '2024052400000101', 'A26130', 10, 1),
+  (1, '2024052400000201', 'B22978', 10, 2);
 
 /*ScrapItems*/
 INSERT INTO `ScrapItems` (`ItemID`, `WarehouseID`,`RecordTime`, `RecordStaffID`, `Quantity`, `Discrepancy`)
@@ -308,8 +314,8 @@ VALUES
 /*TruckInvoice*/
 INSERT INTO `TruckInvoice` (`TruckID`, `InvoiceID`)
 VALUES
-  (1, '202405240000011'),
-  (1, '202405240000021');
+  (1, '2024052400000101'),
+  (1, '2024052400000201');
 
 
 /*WarehouseStockLevel*/
