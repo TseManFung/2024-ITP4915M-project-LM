@@ -37,7 +37,7 @@
             this.txtlongitude = new System.Windows.Forms.TextBox();
             this.lbllongitude = new System.Windows.Forms.Label();
             this.lbltitle = new System.Windows.Forms.Label();
-            this.btnConfirm = new System.Windows.Forms.Button();
+            this.btnlocate = new System.Windows.Forms.Button();
             this.btncomplete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -116,6 +116,7 @@
             this.txtlatitude.Name = "txtlatitude";
             this.txtlatitude.Size = new System.Drawing.Size(113, 22);
             this.txtlatitude.TabIndex = 5;
+            this.txtlatitude.TextChanged += new System.EventHandler(this.txtlatitude_TextChanged);
             // 
             // txtlongitude
             // 
@@ -124,6 +125,7 @@
             this.txtlongitude.Name = "txtlongitude";
             this.txtlongitude.Size = new System.Drawing.Size(113, 22);
             this.txtlongitude.TabIndex = 7;
+            this.txtlongitude.TextChanged += new System.EventHandler(this.txtlongitude_TextChanged);
             // 
             // lbllongitude
             // 
@@ -144,16 +146,16 @@
             this.lbltitle.TabIndex = 8;
             this.lbltitle.Text = "Please select a location";
             // 
-            // btnConfirm
+            // btnlocate
             // 
-            this.btnConfirm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnConfirm.Location = new System.Drawing.Point(529, 307);
-            this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(113, 24);
-            this.btnConfirm.TabIndex = 9;
-            this.btnConfirm.Text = "confirm";
-            this.btnConfirm.UseVisualStyleBackColor = true;
-            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
+            this.btnlocate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnlocate.Location = new System.Drawing.Point(529, 307);
+            this.btnlocate.Name = "btnlocate";
+            this.btnlocate.Size = new System.Drawing.Size(113, 24);
+            this.btnlocate.TabIndex = 9;
+            this.btnlocate.Text = "locate";
+            this.btnlocate.UseVisualStyleBackColor = true;
+            this.btnlocate.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // btncomplete
             // 
@@ -172,7 +174,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btncomplete);
-            this.Controls.Add(this.btnConfirm);
+            this.Controls.Add(this.btnlocate);
             this.Controls.Add(this.lbltitle);
             this.Controls.Add(this.txtlongitude);
             this.Controls.Add(this.lbllongitude);
@@ -203,7 +205,7 @@
         private System.Windows.Forms.TextBox txtlongitude;
         private System.Windows.Forms.Label lbllongitude;
         private System.Windows.Forms.Label lbltitle;
-        private System.Windows.Forms.Button btnConfirm;
+        private System.Windows.Forms.Button btnlocate;
         private System.Windows.Forms.Button btncomplete;
     }
 }

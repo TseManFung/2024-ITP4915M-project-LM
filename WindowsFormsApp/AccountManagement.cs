@@ -41,35 +41,33 @@ namespace WindowsFormsApp
             tableLayoutPanel1.Visible = true;
             tableLayoutPanel6.Visible = tableLayoutPanel7.Visible = ForTest;
             tableLayoutPanel9.Visible = tableLayoutPanel10.Visible = tableLayoutPanel11.Visible = tableLayoutPanel13.Visible = !ForTest;
-            
         }
 
         private void frmAccountManagement_Load(object sender, EventArgs e)
         {
-            List<string> LoginNamelist = new List<string>();
             String sql = $"SELECT LoginName FROM User WHERE Password LIKE '0%';";
             using (var reader = Main.db.readBySql(sql))
             {
+                // Clear existing items in the ComboBox
+                this.comboBoxLoginName.Items.Clear();
+
                 while (reader.Read())
                 {
-                    LoginNamelist.Add(reader.GetString(0));
+                    // Add each LoginName directly to the ComboBox 
+                    this.comboBoxLoginName.Items.Add(reader.GetString(0));
                 }
             }
-            this.comboBoxLoginName.DataSource = LoginNamelist;
-            this.comboBoxLoginName.DisplayMember = "LoginName";
-
-            List<string> Locationlist = new List<string>();
-            Locationlist.Add("No saleArea");
+            comboBoxLoginName.SelectedIndex = 0;
             sql = $"SELECT Location FROM SaleArea;";
             using (var reader = Main.db.readBySql(sql))
             {
+                this.comboBoxSaleArea.Items.Clear();
+                this.comboBoxSaleArea.Items.Add("No saleArea");
                 while (reader.Read())
                 {
-                    Locationlist.Add(reader.GetString(0));
+                    this.comboBoxSaleArea.Items.Add(reader.GetString(0));
                 }
             }
-            this.comboBoxSaleArea.DataSource = Locationlist;
-            this.comboBoxSaleArea.DisplayMember = "SaleArea";
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -84,6 +82,7 @@ namespace WindowsFormsApp
                 else
                 {
                     Main.ShowMessage("error");
+                    return;
 
                 }
                 int usid = 0;
@@ -148,9 +147,7 @@ namespace WindowsFormsApp
                             sql = $"UPDATE Staff SET StaffName = '{name}', SaleAreaID = {AreaID} , DeptID = '{department}', Position = '{position}' Where StaffID = {id};";
                             Main.db.updateBySql(sql);
                             Main.ShowMessage("succeed!");
-                            txtName.Text = String.Empty;
-                            txtPassword.Text = String.Empty;
-                            txtAccessLevel.Text = String.Empty;
+                            claerAll();
 
                         }
                         else
@@ -158,9 +155,7 @@ namespace WindowsFormsApp
                             sql = $"UPDATE Staff SET StaffName = '{name}' ,DeptID = {department},   Position = '{position}'  Where StaffID = {id};";
                             Main.db.updateBySql(sql);
                             Main.ShowMessage("succeed!");
-                            txtName.Text = String.Empty;
-                            txtPassword.Text = String.Empty;
-                            txtAccessLevel.Text = String.Empty;
+                            claerAll();
                         }
 
                     }
@@ -214,26 +209,14 @@ namespace WindowsFormsApp
                             sql = $"UPDATE Dealer SET DealerName = '{name}', SaleAreaID = {AreaID} , email = '{email}', OfficeAddress = '{OfficeAdress}', DeliveryAddress = '{DeliveryAddress}' Where DealerID = {id};";
                             Main.db.updateBySql(sql);
                             Main.ShowMessage("succeed!");
-                            txtName.Text = String.Empty;
-                            txtPassword.Text = String.Empty;
-                            txtAccessLevel.Text = String.Empty;
-                            txtDeliveryAddress.Text = String.Empty;
-                            txtOfficeAddress.Text = String.Empty;
-                            txtEmail.Text = String.Empty;
-                            txtPhoneNumber.Text = String.Empty;
+                            claerAll();
                         }
                         else
                         {
                             sql = $"UPDATE Dealer SET DealerName = '{name}', SaleAreaID = {AreaID} , email = '{email}', OfficeAddress = '{OfficeAdress}' Where DealerID = {id};";
                             Main.db.updateBySql(sql);
                             Main.ShowMessage("succeed!");
-                            txtName.Text = String.Empty;
-                            txtPassword.Text = String.Empty;
-                            txtAccessLevel.Text = String.Empty;
-                            txtDeliveryAddress.Text = String.Empty;
-                            txtOfficeAddress.Text = String.Empty;
-                            txtEmail.Text = String.Empty;
-                            txtPhoneNumber.Text = String.Empty;
+                            claerAll();
                         }
 
                     }
@@ -286,169 +269,105 @@ namespace WindowsFormsApp
             tableLayoutPanel9.Visible = tableLayoutPanel10.Visible = tableLayoutPanel11.Visible = tableLayoutPanel13.Visible = !ForTest;
 
             int Accesslevele = 0;
-            if (isid == "StaffID" )
+            if (isid == "StaffID")
             {
+                sql = $@" SELECT u.AccessLevel, d.DeptName, s.Position, s.StaffName, a.Location FROM User u JOIN Staff s ON u.LoginName = '{LoginName}' AND s.StaffID = {id} JOIN Department d ON s.DeptID = d.DeptID LEFT JOIN SaleArea a ON s.SaleAreaID = a.AreaID WHERE s.StaffID = {id}; SELECT DeptName FROM Department; SELECT DISTINCT Position FROM Staff;";
+                string deptName = string.Empty;
+                string position = string.Empty;
 
-                sql = $"SELECT AccessLevel FROM User Where LoginName ='{LoginName}'AND  StaffID = {id};";
                 using (var reader = Main.db.readBySql(sql))
                 {
+                    // Read the first result set to populate AccessLevel and other fields
                     if (reader.Read())
                     {
                         if (!reader.IsDBNull(0))
                         {
                             Accesslevele = reader.GetInt32(0);
                         }
-                    }
-                }
-                txtAccessLevel.Text = Accesslevele.ToString();
-                List<string> DeptNamelist = new List<string>();
-                sql = $"SELECT DeptName FROM Department;";
-                using (var reader = Main.db.readBySql(sql))
-                {
-                    while (reader.Read())
-                    {
-                        DeptNamelist.Add(reader.GetString(0));
-                    }
-                }
-                this.comboBoxDepartment.DataSource = DeptNamelist;
-                this.comboBoxDepartment.DisplayMember = "DeptName";
-                String DeptName = null;
-                sql = $"SELECT d.DeptName FROM Staff s JOIN Department d ON s.DeptID = d.DeptID WHERE s.StaffID = {id};";
-                using (var reader = Main.db.readBySql(sql))
-                {
-                    if (reader.Read())
-                    {
-                        DeptName = reader.GetString(0);
+                        txtAccessLevel.Text = Accesslevele.ToString();
 
+                        // Store the department, position, and sale area temporarily
+                        deptName = reader.IsDBNull(1) ? string.Empty : reader.GetString(1);
+                        position = reader.IsDBNull(2) ? string.Empty : reader.GetString(2);
+                        string staffName = reader.IsDBNull(3) ? string.Empty : reader.GetString(3);
+                        string saleArea = reader.IsDBNull(4) ? string.Empty : reader.GetString(4);
+                        txtName.Text = staffName;
+                        comboBoxSaleArea.Text = saleArea;
                     }
-                }
-                comboBoxDepartment.Text = DeptName;
-                List<string> comboBoxPositionlist = new List<string>();
-                sql = $"SELECT DISTINCT Position FROM Staff;";
-                using (var reader = Main.db.readBySql(sql))
-                {
-                    while (reader.Read())
-                    {
-                        comboBoxPositionlist.Add(reader.GetString(0));
-                    }
-                }
-                this.comboBoxPosition.DataSource = comboBoxPositionlist;
-                this.comboBoxPosition.DisplayMember = "Position";
-                String position = null;
-                sql = $"SELECT Position FROM Staff WHERE StaffID = {id};";
-                using (var reader = Main.db.readBySql(sql))
-                {
-                    if (reader.Read())
-                    {
-                        position = reader.GetString(0);
 
-                    }
-                }
-                comboBoxPosition.Text = position;
-                string StaffName = null;
-                sql = $"SELECT StaffName FROM Staff WHERE StaffID = {id};";
-                using (var reader = Main.db.readBySql(sql))
-                {
-                    if (reader.Read())
+                    // Move to the next result set for Departments
+                    if (reader.NextResult())
                     {
-                        StaffName = reader.GetString(0);
+                        List<string> DeptNamelist = new List<string>();
+                        while (reader.Read())
+                        {
+                            DeptNamelist.Add(reader.GetString(0));
+                        }
+                        this.comboBoxDepartment.DataSource = DeptNamelist;
                     }
-                }
-                txtName.Text = StaffName;
-                String Area = null;
-                sql = $"SELECT a.Location FROM Staff s INNER JOIN SaleArea a ON s.SaleAreaID = a.AreaID WHERE s.StaffID = {id};";
-                using (var reader = Main.db.readBySql(sql))
-                {
-                    if (reader.Read())
+
+                    // Move to the next result set for Positions
+                    if (reader.NextResult())
                     {
-                        Area = reader.GetString(0);
+                        List<string> comboBoxPositionlist = new List<string>();
+                        while (reader.Read())
+                        {
+                            comboBoxPositionlist.Add(reader.GetString(0));
+                        }
+                        this.comboBoxPosition.DataSource = comboBoxPositionlist;
+                    }
 
+                    // Set the selected items after setting the DataSource
+                    if (!string.IsNullOrEmpty(deptName))
+                    {
+                        comboBoxDepartment.SelectedItem = deptName;
+                    }
+                    if (!string.IsNullOrEmpty(position))
+                    {
+                        comboBoxPosition.SelectedItem = position;
                     }
                 }
-                comboBoxSaleArea.Text = Area;
-
             }
 
             else if (isid == "DealerID")
             {
-                sql = $"SELECT AccessLevel FROM User Where LoginName ='{LoginName}' AND DealerID = {id};";
+                sql = $@" SELECT u.AccessLevel, d.DealerName, d.ContantNumber, d.email, d.OfficeAddress, d.DeliveryAddress, a.Location FROM User u LEFT JOIN Dealer d ON d.DealerID = {id} LEFT JOIN SaleArea a ON d.SaleAreaID = a.AreaID WHERE u.LoginName = '{LoginName}' AND u.DealerID = {id};";
                 using (var reader = Main.db.readBySql(sql))
                 {
                     if (reader.Read())
                     {
+                        // AccessLevel
                         if (!reader.IsDBNull(0))
                         {
                             Accesslevele = reader.GetInt32(0);
                         }
-                    }
-                }
-                txtAccessLevel.Text = Accesslevele.ToString();
+                        txtAccessLevel.Text = Accesslevele.ToString();
 
-                sql = $"SELECT DealerName FROM Dealer WHERE DealerID = {id};";
-                string DealerName = null;
-                using (var reader = Main.db.readBySql(sql))
-                {
-                    if (reader.Read())
-                    {
-                        DealerName = reader.GetString(0);
+                        // DealerName
+                        string DealerName = reader.IsDBNull(1) ? string.Empty : reader.GetString(1);
+                        txtName.Text = DealerName;
 
-                    }
-                }
-                txtName.Text = DealerName;
-                string ContantNumber = string.Empty;
-                sql = $"SELECT ContantNumber FROM Dealer WHERE DealerID = {id};";
-                using (var reader = Main.db.readBySql(sql))
-                {
-                    if (reader.Read())
-                    {
-                        ContantNumber = reader.GetString(0);
+                        // ContantNumber
+                        string ContantNumber = reader.IsDBNull(2) ? string.Empty : reader.GetString(2);
+                        txtPhoneNumber.Text = ContantNumber;
 
-                    }
-                }
-                txtPhoneNumber.Text = ContantNumber.ToString();
-                String eamil = String.Empty;
-                sql = $"SELECT email FROM Dealer WHERE DealerID = {id};";
-                using (var reader = Main.db.readBySql(sql))
-                {
-                    if (reader.Read())
-                    {
-                        eamil = reader.GetString(0);
+                        // Email
+                        string email = reader.IsDBNull(3) ? string.Empty : reader.GetString(3);
+                        txtEmail.Text = email;
 
-                    }
-                }
-                txtEmail.Text = eamil;
-                String OfficeAddress = String.Empty;
-                sql = $"SELECT OfficeAddress FROM Dealer WHERE DealerID = {id};";
-                using (var reader = Main.db.readBySql(sql))
-                {
-                    if (reader.Read())
-                    {
-                        OfficeAddress = reader.GetString(0);
+                        // OfficeAddress
+                        string OfficeAddress = reader.IsDBNull(4) ? string.Empty : reader.GetString(4);
+                        txtOfficeAddress.Text = OfficeAddress;
 
-                    }
-                }
-                txtOfficeAddress.Text = OfficeAddress;
-                String DeliveryAddress = String.Empty;
-                sql = $"SELECT DeliveryAddress FROM Dealer WHERE DealerID = {id};";
-                using (var reader = Main.db.readBySql(sql))
-                {
-                    if (reader.Read())
-                    {
-                        DeliveryAddress = reader.GetString(0);
+                        // DeliveryAddress
+                        string DeliveryAddress = reader.IsDBNull(5) ? string.Empty : reader.GetString(5);
+                        txtDeliveryAddress.Text = DeliveryAddress;
 
+                        // SaleArea Location
+                        string Area = reader.IsDBNull(6) ? string.Empty : reader.GetString(6);
+                        comboBoxSaleArea.Text = Area;
                     }
                 }
-                txtDeliveryAddress.Text = DeliveryAddress;
-                string Area = null;
-                sql = $"SELECT a.Location FROM Dealer d INNER JOIN SaleArea a ON d.SaleAreaID = a.AreaID WHERE d.DealerID = {id};";
-                using (var reader = Main.db.readBySql(sql))
-                {
-                    if (reader.Read())
-                    {
-                        Area = reader.GetString("Location");
-                    }
-                }
-                comboBoxSaleArea.Text = Area;
             }
         }
 
@@ -534,10 +453,17 @@ namespace WindowsFormsApp
         {
             if (!string.IsNullOrEmpty(txtPhoneNumber.Text))
             {
-                if (!int.TryParse(txtPhoneNumber.Text, out _))
+                // Check if the input is a valid number
+                if (!long.TryParse(txtPhoneNumber.Text, out _))
                 {
                     Main.ShowMessage("Invalid input. Please enter a valid number.");
                     txtPhoneNumber.Text = string.Empty;
+                }
+                // Check if the input length exceeds 20 digits
+                else if (txtPhoneNumber.Text.Length > 20)
+                {
+                    Main.ShowMessage("Phone number cannot exceed 20 digits.");
+                    txtPhoneNumber.Text = txtPhoneNumber.Text.Substring(0, 20);
                 }
             }
         }
@@ -567,6 +493,16 @@ namespace WindowsFormsApp
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        private void claerAll()
+        {
+            txtName.Text = String.Empty;
+            txtPassword.Text = String.Empty;
+            txtAccessLevel.Text = "0";
+            txtDeliveryAddress.Text = String.Empty;
+            txtOfficeAddress.Text = String.Empty;
+            txtEmail.Text = String.Empty;
+            txtPhoneNumber.Text = String.Empty;
         }
     }
 }

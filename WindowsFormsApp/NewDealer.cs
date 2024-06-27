@@ -184,10 +184,17 @@ namespace WindowsFormsApp
         {
             if (!string.IsNullOrEmpty(txtPhoneNumber.Text))
             {
-                if (!int.TryParse(txtPhoneNumber.Text, out _))
+                // Check if the input is a valid number
+                if (!long.TryParse(txtPhoneNumber.Text, out _))
                 {
                     Main.ShowMessage("Invalid input. Please enter a valid number.");
                     txtPhoneNumber.Text = string.Empty;
+                }
+                // Check if the input length exceeds 20 digits
+                else if (txtPhoneNumber.Text.Length > 20)
+                {
+                    Main.ShowMessage("Phone number cannot exceed 20 digits.");
+                    txtPhoneNumber.Text = txtPhoneNumber.Text.Substring(0, 20);
                 }
             }
         }

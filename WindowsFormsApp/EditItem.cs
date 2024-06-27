@@ -44,7 +44,6 @@ namespace WindowsFormsApp
                     spareTypes.Add(reader.GetString(0));
                 }
             }
-
             comboBoxSpareType.DataSource = spareTypes;
         }
 
@@ -64,16 +63,18 @@ namespace WindowsFormsApp
 
         private void LoadSpareDetails(string id)
         {
-            string sql = $"SELECT SpareName, Price, Weight, Description FROM Spare WHERE SpareID = '{id}'";
-
+            string sql = $"SELECT Spare.SpareName, Spare.CategoryLetter, Spare.Price, Spare.Weight, Spare.Description, Supplier.Name AS SupplierName FROM Spare INNER JOIN Supplier ON Spare.SupplierID = Supplier.SupplierID WHERE Spare.SpareID = '{id}'";
             using (var reader = Main.db.readBySql(sql))
             {
                 if (reader.Read())
                 {
                     txtSpareName.Text = reader.GetString(0);
-                    txtPrice.Text = reader.GetDecimal(1).ToString();
-                    txtSpareWeight.Text = reader.IsDBNull(2) ? string.Empty : reader.GetFloat(2).ToString();
-                    txtDescription.Text = reader.IsDBNull(3) ? string.Empty : reader.GetString(3);
+                    comboBoxSpareType.Text = reader.GetString(1);
+                    txtPrice.Text = reader.GetDecimal(2).ToString();
+                    txtSpareWeight.Text = reader.IsDBNull(3) ? string.Empty : reader.GetFloat(3).ToString();
+                    txtDescription.Text = reader.IsDBNull(4) ? string.Empty : reader.GetString(4);
+                    comboBoxSupplier.Text = reader.GetString(5);
+
                 }
             }
         }

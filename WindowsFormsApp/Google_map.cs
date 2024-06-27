@@ -88,11 +88,11 @@ namespace WindowsFormsApp
             }
             catch (WebException webEx)
             {
-                MessageBox.Show($"WebException 发生: {webEx.Message}");
+                Main.ShowMessage($"WebException 发生: {webEx.Message}");
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"发生错误: {ex.Message}");
+                Main.ShowMessage($"发生错误: {ex.Message}");
             }
         }
         public Google_map(int id, string type,string comelocation)
@@ -107,6 +107,7 @@ namespace WindowsFormsApp
             InitializeComponent();
             this.comelocation = comelocation;
             txtlocation.Text = comelocation;
+
         }
         private void Google_map_Load(object sender, EventArgs e)
         {
@@ -152,15 +153,38 @@ namespace WindowsFormsApp
 
         private void btncomplete_Click(object sender, EventArgs e)
         {
+
             // 顯示確認對話框
             if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
             {
                 // 嘗試將 txtlatitude 和 txtlongitude 的文本內容轉換為 decimal 類型
                 try
-                {   
-                    
-                    GlobalVariables.Latitude = Convert.ToDecimal(txtlatitude.Text);
-                    GlobalVariables.Longitude = Convert.ToDecimal(txtlongitude.Text);
+                {
+                    decimal latitude = Convert.ToDecimal(txtlatitude.Text);
+                    decimal longitude = Convert.ToDecimal(txtlongitude.Text);
+
+                    // 如果經緯度的值為 0，直接返回
+                    if (latitude == 0 && longitude == 0)
+                    {
+                        Main.ShowYesNoDialog("The coordinates (0, 0) are known as Null Island, a location in the Gulf of Guinea where the equator and prime meridian intersect.");
+                        return;
+                    }
+
+                    // 檢查經緯度是否在有效範圍內
+                    if (latitude < -90 || latitude > 90)
+                    {
+                        Main.ShowYesNoDialog("Latitude must be between -90 and 90.Invalid Input");
+                        return;
+                    }
+
+                    if (longitude < -180 || longitude > 180)
+                    {
+                        Main.ShowYesNoDialog("Longitude must be between -180 and 180.Invalid Input");
+                        return;
+                    }
+
+                    GlobalVariables.Latitude = latitude;
+                    GlobalVariables.Longitude = longitude;
                     state = true;
                     // 關閉當前窗口
                     this.Close();
@@ -168,14 +192,24 @@ namespace WindowsFormsApp
                 catch (FormatException)
                 {
                     // 處理轉換失敗的情況，例如顯示錯誤消息
-                    MessageBox.Show("Please enter valid numeric values for latitude and longitude.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Main.ShowYesNoDialog("Please enter valid numeric values for latitude and longitude.Invalid Input");
                 }
                 catch (OverflowException)
                 {
                     // 處理超出 decimal 範圍的情況
-                    MessageBox.Show("The entered values are too large or too small.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Main.ShowYesNoDialog("The entered values are too large or too small.Invalid Input");
                 }
             }
+        }
+
+        private void txtlatitude_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtlongitude_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
