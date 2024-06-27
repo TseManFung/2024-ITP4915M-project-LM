@@ -273,8 +273,8 @@ VALUES
 
 INSERT INTO `ActualQuantityDespatched` (`WarehouseID`, `InvoiceID`, `ItemID`, `Quantity`, `BundlesNumber`)
 VALUES
-  (1, '202405240000011', 'A26130', 10, 1),
-  (1, '202405240000021', 'B22978', 10, 2);
+  (1, '2024052400000101', 'A26130', 10, 1),
+  (1, '2024052400000201', 'B22978', 10, 2);
 
 /*ScrapItems*/
 INSERT INTO `ScrapItems` (`ItemID`, `WarehouseID`,`RecordTime`, `RecordStaffID`, `Quantity`, `Discrepancy`)
