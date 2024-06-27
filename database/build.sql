@@ -126,7 +126,7 @@ CREATE TABLE `OrderItemForCollect` (
 
 CREATE TABLE `ActualQuantityDespatched` (
   `WarehouseID` int,
-  `InvoiceID` char(15),
+  `InvoiceID` char(16),
   `ItemID` char(6),
   `Quantity` int NOT NULL DEFAULT 1,
   `BundlesNumber` int NOT NULL DEFAULT 0,
@@ -159,7 +159,7 @@ CREATE TABLE `RestockItem` (
 );
 
 CREATE TABLE `Invoice` (
-  `InvoiceID` char(15) PRIMARY KEY COMMENT 'YYYYMMDD+DealerID+SerialNo.(1-9)',
+  `InvoiceID` char(16) PRIMARY KEY COMMENT 'YYYYMMDD+DealerID+SerialNo.(01-99)',
   `OrderSerial` char(20) NOT NULL,
   `DespatchForemanID` int,
   `InvoiceDate` date NOT NULL,
@@ -167,7 +167,7 @@ CREATE TABLE `Invoice` (
 );
 
 CREATE TABLE `Signature` (
-  `InvoiceID` char(15) PRIMARY KEY,
+  `InvoiceID` char(16) PRIMARY KEY,
   `Name` varchar(255) NOT NULL,
   `SignatureDate` datetime NOT NULL,
   `Sign` LONGBLOB NOT NULL
@@ -181,7 +181,7 @@ CREATE TABLE `Truck` (
 
 CREATE TABLE `TruckInvoice` (
   `TruckID` int,
-  `InvoiceID` char(15),
+  `InvoiceID` char(16),
   PRIMARY KEY (`TruckID`, `InvoiceID`)
 );
 
