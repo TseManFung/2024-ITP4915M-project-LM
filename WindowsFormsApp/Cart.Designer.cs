@@ -64,7 +64,9 @@
             this.dgvSelectedSpare.Location = new System.Drawing.Point(3, 3);
             this.dgvSelectedSpare.MultiSelect = false;
             this.dgvSelectedSpare.Name = "dgvSelectedSpare";
+            this.dgvSelectedSpare.RowHeadersVisible = false;
             this.dgvSelectedSpare.RowTemplate.Height = 24;
+            this.dgvSelectedSpare.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSelectedSpare.Size = new System.Drawing.Size(1399, 294);
             this.dgvSelectedSpare.TabIndex = 0;
             this.dgvSelectedSpare.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvSelectedSpareName_CellMouseClick);

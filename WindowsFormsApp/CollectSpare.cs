@@ -13,8 +13,9 @@ namespace WindowsFormsApp
 {
     public partial class frmCollectSpare : Form
     {
-        int whID;
+        int whID, dealerID;
         string OrderSerial;
+        string invoiceID;
 
         public frmCollectSpare()
         {
@@ -56,10 +57,20 @@ WHERE s.StaffID = {Main.staffID}";
             getData();
         }
 
+        private void deleteOITF()
+        {
+            string sql = $@" DELETE FROM OrderItemToFollow
+WHERE OrderSerial = '{OrderSerial}' AND Quantity = 0";
+            Main.db.updateBySql(sql);
+}
+
         private void getData()
         {
-            string
-sql = $@"SELECT 
+            deleteOITF();
+
+
+            invoiceID = null;
+            string sql = $@"SELECT 
   OrderSerial
 FROM OrderItemForCollect
 WHERE Assgin = {whID} AND State = 'W'  
@@ -96,9 +107,20 @@ WHERE OrderSerial = '{OrderSerial}'
   AND Assgin = {whID}
   AND o.State = 'C'";
             var dt = Main.db.GetDataTable(sql);
+            sql = $@"SELECT DealerID 
+FROM `Order`
+WHERE OrderSerial = '{OrderSerial}';";
+            using (var reader = Main.db.readBySql(sql))
+            {
+                reader.Read();
+                dealerID = Convert.ToInt32(reader["DealerID"]);
+            }
+
+
             dgvCollect.DataSource = dt;
             dgvCollect.Columns["OrderSerial"].Visible = false;
             comboBoxSpareID.Items.AddRange(dt.AsEnumerable().Select(x => x["ItemID"].ToString()).ToArray());
+            Main.ShowMessage("The current order number is: " + OrderSerial);
         }
 
         private void frmCollectSpare_FormClosing(object sender, FormClosingEventArgs e)
@@ -127,8 +149,115 @@ WHERE OrderSerial = '{OrderSerial}'
             if (row != null)
             {
                 var quantity = Convert.ToDecimal(row.Cells["Quantity"].Value);
-                numericUpDown2.Value = numericUpDown2.Maximum = quantity;
+                numActualQuantity.Value = numActualQuantity.Maximum = quantity;
+                numSpareNumberofBundles.Value = 1;
             }
         }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            if (comboBoxSpareID.SelectedItem == null)
+            {
+                Main.ShowMessage("Please select a spare");
+                return;
+            }
+            else if (numSpareNumberofBundles.Value == 0)
+            {
+                Main.ShowMessage("Please input the Number of Bundles");
+                return;
+            }
+            if (invoiceID == null)
+            {
+                createInvoice();
+            }
+            string sql;
+
+            sql = $@"UPDATE `Order`
+SET State = 'T' 
+WHERE `OrderSerial` = '{OrderSerial}'";
+            Main.db.updateBySql(sql);
+
+
+
+            // item to ActualQuantityDespatched
+            sql = $@"INSERT INTO ActualQuantityDespatched
+(WarehouseID, InvoiceID, ItemID, Quantity, BundlesNumber)
+VALUES
+({whID}, 
+ '{invoiceID}',
+ '{comboBoxSpareID.SelectedItem.ToString()}',
+ {numActualQuantity.Value}, 
+ {numSpareNumberofBundles.Value})";
+            Main.db.insertBySql(sql);
+
+            // get OrderItemToFollow qty - qty, if OrderItemToFollow qty - qty = 0, OrderItemToFollow delete a row, 
+            // else update OrderItemToFollow qty - qty, and state to 'W'
+            //            string updateOrderItemToFollowS
+            sql = $@"UPDATE OrderItemToFollow
+SET Quantity = Quantity - {numActualQuantity.Value},State = 'W'
+WHERE OrderSerial = '{OrderSerial}' AND ItemID = '{comboBoxSpareID.SelectedItem}'";
+            Main.db.updateBySql(sql);
+
+            // comboBoxSpareID and dgvCollect remove this item
+            dgvCollect.Rows.Remove(dgvCollect.Rows
+    .OfType<DataGridViewRow>()
+    .FirstOrDefault(x => x.Cells["ItemID"].Value.ToString() == comboBoxSpareID.SelectedItem.ToString()));
+            comboBoxSpareID.Items.Remove(comboBoxSpareID.SelectedItem);
+
+            if (comboBoxSpareID.Items.Count == 0)
+            {
+                sql = $@"DELETE FROM OrderItemForCollect 
+WHERE OrderSerial = '{OrderSerial}' 
+  AND Assgin = {whID}
+  AND State = 'C'";
+                Main.db.updateBySql(sql);
+                getData();
+            }
+
+        }
+
+        private void createInvoice()
+        {
+            //UTC+8
+            string today = DateTime.UtcNow.AddHours(8).ToString("yyyyMMdd");// + dealerID.ToString().PadLeft(6, '0')
+            string sql = $@"SELECT MAX(InvoiceID) as max_IID
+FROM Invoice
+WHERE InvoiceID LIKE '{today + dealerID.ToString().PadLeft(6, '0')}__'";
+            using (var reader = Main.db.readBySql(sql))
+            {
+                if (reader.Read())
+                {
+                    string k = reader["max_IID"].ToString();
+                    if (k == String.Empty)
+                    {
+                        invoiceID = today + dealerID.ToString().PadLeft(6, '0') + "01";
+                    }
+                    else
+                    {
+                        int max_IID = Convert.ToInt32(k.Substring(14));
+                        if (max_IID != 0)
+                        {
+                            invoiceID = today + dealerID.ToString().PadLeft(6, '0') + ((max_IID + 1)%100).ToString().PadLeft(2, '0');
+                        }
+                    }
+                }
+                else
+                {
+                    invoiceID = today + dealerID.ToString().PadLeft(6, '0') + "01";
+                }
+            }
+
+            sql = $@"INSERT INTO Invoice 
+(InvoiceID, OrderSerial, DespatchForemanID, InvoiceDate, CompleteState)
+VALUES
+('{invoiceID}', 
+ '{OrderSerial}',
+ {Main.staffID},
+ '{today}',
+ 'C')";
+            Main.db.insertBySql(sql);
+
+        }
+
     }
 }

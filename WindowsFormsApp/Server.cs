@@ -24,7 +24,7 @@ namespace WindowsFormsApp
             sql = $"INSERT INTO `OrderItemToFollow` (`OrderSerial`, `ItemID`, `Quantity`, `State`) SELECT `OrderSerial`, `ItemID`, `Quantity`, 'W' FROM `OrderItem` WHERE `OrderSerial` IN (   SELECT `OrderSerial`   FROM `Order`   WHERE `State` = 'C' );";
             Main.db.insertBySql(sql);
             sql = $"UPDATE `Order` SET `State` = 'W' WHERE `State` = 'C';";
-            Main.db.updateBySql(sql);AssignOrderItemsToCollect();
+            Main.db.updateBySql(sql); AssignOrderItemsToCollect();
 
         }
         public void AssignOrderItemsToCollect()
@@ -123,14 +123,16 @@ namespace WindowsFormsApp
                         SET State = 'P'
                         WHERE OrderSerial = '{orderSerial}'";
 
-                    Main.db.updateBySql(updateOrderSql);
+                        Main.db.updateBySql(updateOrderSql);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine($"Not enough stock for ItemID: {itemId} in any warehouse.");
+
                 }
             }
-            else
-            {
-                Console.WriteLine($"Not enough stock for ItemID: {itemId} in any warehouse.");
-            }
-        }
+            Main.ShowMessage("Order Items Assigned to Collect");
         }
     }
 }

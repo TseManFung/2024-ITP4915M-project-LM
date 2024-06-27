@@ -157,6 +157,7 @@
             this.lblItems.Size = new System.Drawing.Size(46, 12);
             this.lblItems.TabIndex = 1;
             this.lblItems.Text = "0 item(s)";
+            this.lblItems.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblRelatedspare
             // 

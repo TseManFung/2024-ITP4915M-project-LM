@@ -31,28 +31,28 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.lblActualQuantity = new System.Windows.Forms.Label();
+            this.numActualQuantity = new System.Windows.Forms.NumericUpDown();
             this.lblFollowingCollect = new System.Windows.Forms.Label();
             this.dgvCollect = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.lblSpareNumberofBundles = new System.Windows.Forms.Label();
+            this.numSpareNumberofBundles = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.lblSpareID = new System.Windows.Forms.Label();
             this.comboBoxSpareID = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.btnTurnOnScanner = new System.Windows.Forms.Button();
             this.btnConfirm = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numActualQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCollect)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numSpareNumberofBundles)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -83,7 +83,7 @@
             this.tableLayoutPanel6.ColumnCount = 1;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel6.Controls.Add(this.lblActualQuantity, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.numericUpDown2, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.numActualQuantity, 0, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(798, 437);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -99,7 +99,7 @@
             this.lblActualQuantity.BackColor = System.Drawing.SystemColors.Control;
             this.lblActualQuantity.CausesValidation = false;
             this.lblActualQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblActualQuantity.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblActualQuantity.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblActualQuantity.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblActualQuantity.Location = new System.Drawing.Point(3, 0);
             this.lblActualQuantity.Name = "lblActualQuantity";
@@ -107,12 +107,26 @@
             this.lblActualQuantity.TabIndex = 50;
             this.lblActualQuantity.Text = "Actual Quantity:";
             // 
+            // numActualQuantity
+            // 
+            this.numActualQuantity.Dock = System.Windows.Forms.DockStyle.Top;
+            this.numActualQuantity.Font = new System.Drawing.Font("PMingLiU", 20.25F);
+            this.numActualQuantity.Location = new System.Drawing.Point(3, 53);
+            this.numActualQuantity.Maximum = new decimal(new int[] {
+            999999,
+            0,
+            0,
+            0});
+            this.numActualQuantity.Name = "numActualQuantity";
+            this.numActualQuantity.Size = new System.Drawing.Size(329, 40);
+            this.numActualQuantity.TabIndex = 51;
+            // 
             // lblFollowingCollect
             // 
             this.lblFollowingCollect.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.lblFollowingCollect, 2);
             this.lblFollowingCollect.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblFollowingCollect.Font = new System.Drawing.Font("新細明體", 24F);
+            this.lblFollowingCollect.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.lblFollowingCollect.Location = new System.Drawing.Point(3, 0);
             this.lblFollowingCollect.Name = "lblFollowingCollect";
             this.lblFollowingCollect.Size = new System.Drawing.Size(1130, 31);
@@ -159,7 +173,7 @@
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.Controls.Add(this.lblSpareNumberofBundles, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.numericUpDown1, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.numSpareNumberofBundles, 0, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(397, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -176,13 +190,27 @@
             this.lblSpareNumberofBundles.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareNumberofBundles.CausesValidation = false;
             this.lblSpareNumberofBundles.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareNumberofBundles.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareNumberofBundles.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareNumberofBundles.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareNumberofBundles.Location = new System.Drawing.Point(3, 0);
             this.lblSpareNumberofBundles.Name = "lblSpareNumberofBundles";
             this.lblSpareNumberofBundles.Size = new System.Drawing.Size(383, 50);
             this.lblSpareNumberofBundles.TabIndex = 50;
             this.lblSpareNumberofBundles.Text = "Number of Bundles:";
+            // 
+            // numSpareNumberofBundles
+            // 
+            this.numSpareNumberofBundles.Dock = System.Windows.Forms.DockStyle.Top;
+            this.numSpareNumberofBundles.Font = new System.Drawing.Font("PMingLiU", 20.25F);
+            this.numSpareNumberofBundles.Location = new System.Drawing.Point(3, 53);
+            this.numSpareNumberofBundles.Maximum = new decimal(new int[] {
+            999999,
+            0,
+            0,
+            0});
+            this.numSpareNumberofBundles.Name = "numSpareNumberofBundles";
+            this.numSpareNumberofBundles.Size = new System.Drawing.Size(383, 40);
+            this.numSpareNumberofBundles.TabIndex = 51;
             // 
             // tableLayoutPanel3
             // 
@@ -205,7 +233,7 @@
             this.lblSpareID.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareID.CausesValidation = false;
             this.lblSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSpareID.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSpareID.Location = new System.Drawing.Point(3, 0);
             this.lblSpareID.Name = "lblSpareID";
@@ -217,7 +245,7 @@
             // 
             this.comboBoxSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxSpareID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxSpareID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSpareID.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareID.FormattingEnabled = true;
             this.comboBoxSpareID.Location = new System.Drawing.Point(3, 53);
             this.comboBoxSpareID.Name = "comboBoxSpareID";
@@ -243,7 +271,7 @@
             // btnTurnOnScanner
             // 
             this.btnTurnOnScanner.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnTurnOnScanner.Font = new System.Drawing.Font("新細明體", 24F);
+            this.btnTurnOnScanner.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.btnTurnOnScanner.Location = new System.Drawing.Point(3, 3);
             this.btnTurnOnScanner.Name = "btnTurnOnScanner";
             this.btnTurnOnScanner.Size = new System.Drawing.Size(388, 51);
@@ -255,41 +283,14 @@
             // btnConfirm
             // 
             this.btnConfirm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnConfirm.Font = new System.Drawing.Font("新細明體", 24F);
+            this.btnConfirm.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.btnConfirm.Location = new System.Drawing.Point(798, 561);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(335, 57);
             this.btnConfirm.TabIndex = 79;
             this.btnConfirm.Text = "Confirm";
             this.btnConfirm.UseVisualStyleBackColor = true;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.numericUpDown1.Font = new System.Drawing.Font("新細明體", 20.25F);
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 53);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            999999,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(383, 40);
-            this.numericUpDown1.TabIndex = 51;
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.numericUpDown2.Font = new System.Drawing.Font("新細明體", 20.25F);
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 53);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
-            999999,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(329, 40);
-            this.numericUpDown2.TabIndex = 51;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // frmCollectSpare
             // 
@@ -305,15 +306,15 @@
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numActualQuantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCollect)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numSpareNumberofBundles)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -334,7 +335,7 @@
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Label lblActualQuantity;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numActualQuantity;
+        private System.Windows.Forms.NumericUpDown numSpareNumberofBundles;
     }
 }

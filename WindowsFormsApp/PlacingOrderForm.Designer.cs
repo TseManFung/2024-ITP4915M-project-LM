@@ -233,8 +233,10 @@
             this.dgvPlacingOrder.MultiSelect = false;
             this.dgvPlacingOrder.Name = "dgvPlacingOrder";
             this.dgvPlacingOrder.ReadOnly = true;
+            this.dgvPlacingOrder.RowHeadersVisible = false;
             this.tlpSelectSpace.SetRowSpan(this.dgvPlacingOrder, 3);
             this.dgvPlacingOrder.RowTemplate.Height = 24;
+            this.dgvPlacingOrder.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPlacingOrder.Size = new System.Drawing.Size(693, 246);
             this.dgvPlacingOrder.TabIndex = 37;
             this.dgvPlacingOrder.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPlacingOrder_CellContentClick);
