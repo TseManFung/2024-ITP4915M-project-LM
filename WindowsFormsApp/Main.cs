@@ -185,6 +185,7 @@ namespace WindowsFormsApp
 
                 }
                 clear_frmStack();
+                System.GC.Collect();
             }
         }
 
