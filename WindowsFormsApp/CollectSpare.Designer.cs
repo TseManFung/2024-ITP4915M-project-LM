@@ -129,14 +129,22 @@
             // 
             // dgvCollect
             // 
+            this.dgvCollect.AllowUserToAddRows = false;
+            this.dgvCollect.AllowUserToDeleteRows = false;
+            this.dgvCollect.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCollect.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel1.SetColumnSpan(this.dgvCollect, 2);
             this.dgvCollect.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCollect.Location = new System.Drawing.Point(3, 34);
+            this.dgvCollect.MultiSelect = false;
             this.dgvCollect.Name = "dgvCollect";
+            this.dgvCollect.ReadOnly = true;
+            this.dgvCollect.RowHeadersVisible = false;
             this.dgvCollect.RowTemplate.Height = 24;
+            this.dgvCollect.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCollect.Size = new System.Drawing.Size(1130, 397);
             this.dgvCollect.TabIndex = 74;
+            this.dgvCollect.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCollect_CellClick);
             // 
             // tableLayoutPanel2
             // 
@@ -226,12 +234,12 @@
             // comboBoxSpareID
             // 
             this.comboBoxSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxSpareID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.comboBoxSpareID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSpareID.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareID.FormattingEnabled = true;
             this.comboBoxSpareID.Location = new System.Drawing.Point(3, 53);
             this.comboBoxSpareID.Name = "comboBoxSpareID";
-            this.comboBoxSpareID.Size = new System.Drawing.Size(382, 41);
+            this.comboBoxSpareID.Size = new System.Drawing.Size(382, 35);
             this.comboBoxSpareID.TabIndex = 45;
             // 
             // tableLayoutPanel5
@@ -280,6 +288,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmCollectSpare";
             this.Text = "Collect Spare";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCollectSpare_FormClosing);
             this.Load += new System.EventHandler(this.frmCollectSpare_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
