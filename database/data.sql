@@ -261,8 +261,8 @@ VALUES
 /*Invoice*/
 INSERT INTO `Invoice` (`InvoiceID`, `OrderSerial`, `DespatchForemanID`, `InvoiceDate`, `CompleteState`)
 VALUES
-  ('202405240000011', '20240524-0900-000001', 6, '2024-05-24', 'C'),
-  ('202405240000021', '20240524-0901-000002', 6, '2024-05-24', 'C');
+  ('2024052400000101', '20240524-0900-000001', 6, '2024-05-24', 'C'),
+  ('2024052400000201', '20240524-0901-000002', 6, '2024-05-24', 'C');
 /*ActualQuantityDespatched*/
 
 INSERT INTO `ActualQuantityDespatched` (`WarehouseID`, `InvoiceID`, `ItemID`, `Quantity`, `BundlesNumber`)
@@ -308,8 +308,8 @@ VALUES
 /*TruckInvoice*/
 INSERT INTO `TruckInvoice` (`TruckID`, `InvoiceID`)
 VALUES
-  (1, '202405240000011'),
-  (1, '202405240000021');
+  (1, '2024052400000101'),
+  (1, '2024052400000201');
 
 
 /*WarehouseStockLevel*/
