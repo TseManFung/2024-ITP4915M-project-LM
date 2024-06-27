@@ -53,8 +53,7 @@ namespace WindowsFormsApp
                 reader.Read();
                 respent_warehouse = reader.GetInt32(0);
             }
-            string sql = $@" SELECT ws.WarehouseID, ws.SpareID, a.quantity FROM WarehouseStockLevel ws JOIN ActualStock a ON ws.WarehouseID = a.WarehouseID AND ws.SpareID = a.SpareID WHERE a.quantity <= ws.ROL AND a.WarehouseID = '{respent_warehouse}' AND NOT EXISTS ( SELECT 1 FROM RestockItem ri JOIN RestockOrder ro ON ri.RestockOrderID = ro.RestockOrderID WHERE ri.ItemID = ws.SpareID AND ri.Quantity = a.quantity AND ri.State = 'C' AND ro.WarehouseID = '{respent_warehouse}' ); "; 
-            RestockOrder = Main.db.GetDataTable(sql);
+            string sql = $@" SELECT s.SpareName, w.Name AS WarehouseName, ws.SpareID, s.SupplierID, sup.Name AS SupplierName, a.quantity, ws.CSL - a.quantity AS RestockQty, ws.DL FROM WarehouseStockLevel ws JOIN ActualStock a ON ws.WarehouseID = a.WarehouseID AND ws.SpareID = a.SpareID JOIN Warehouse w ON ws.WarehouseID = w.WarehouseID JOIN Spare s ON ws.SpareID = s.SpareID JOIN Supplier sup ON s.SupplierID = sup.SupplierID WHERE a.quantity <= ws.ROL AND a.WarehouseID = '{respent_warehouse}' AND s.state = 'N' AND a.AutoRestork = 1 AND NOT EXISTS ( SELECT 1 FROM RestockItem ri JOIN RestockOrder ro ON ri.RestockOrderID = ro.RestockOrderID WHERE ri.ItemID = ws.SpareID AND ri.State = 'C' AND ro.WarehouseID = '{respent_warehouse}' );"; RestockOrder = Main.db.GetDataTable(sql);
 
         }
 
@@ -79,30 +78,8 @@ namespace WindowsFormsApp
                 dgvRestock.DataSource = followingROLBindingSource;
 
                 InitializeDgvRestock();
-                foreach (DataGridViewRow row in dgvItemFollowingROL.Rows)
-                {
-                    if (row.IsNewRow) continue;
-
-                    var spareID = row.Cells["SpareID"].Value;
-                    var quantity = Convert.ToInt32(row.Cells["quantity"].Value);
-
-                    string query = $"SELECT DL FROM WarehouseStockLevel WHERE WarehouseID = {respent_warehouse} AND SpareID = '{spareID}';";
-                    int dl = 0;
-
-                    using (var reader = Main.db.readBySql(query))
-                    {
-                        if (reader.Read())
-                        {
-                            dl = reader.GetInt32(0);
-                        }
-                    }
-
-                    // 如果 quantity 小于 DL，则将该行背景设置为红色
-                    if (quantity < dl)
-                    {
-                        row.DefaultCellStyle.BackColor = Color.Red;
-                    }
-                }
+                dgvItemFollowingROL.Columns["DL"].Visible = false;
+                dgvRestock.Columns["DL"].Visible = false;
             }
 
             catch (InvalidOperationException ex)
@@ -270,6 +247,24 @@ namespace WindowsFormsApp
         private void dgvItemFollowingROL_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
 
+        }
+
+        private void dgvItemFollowingROL_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            // 遍历 dgvItemFollowingROL 的每一行
+            foreach (DataGridViewRow row in dgvItemFollowingROL.Rows)
+            {
+                if (row.IsNewRow) continue;
+
+                var quantity = Convert.ToInt32(row.Cells["quantity"].Value);
+                var dl = Convert.ToInt32(row.Cells["DL"].Value);
+
+                // 如果 quantity 小于 DL，则将该行背景设置为红色
+                if (quantity < dl)
+                {
+                    row.DefaultCellStyle.BackColor = Color.Red;
+                }
+            }
         }
     }
 }

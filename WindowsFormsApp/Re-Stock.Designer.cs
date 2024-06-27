@@ -58,6 +58,7 @@
             this.dgvItemFollowingROL.TabIndex = 72;
             this.dgvItemFollowingROL.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItemFollowingROL_CellContentClick);
             this.dgvItemFollowingROL.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvItemFollowingROL_CellPainting);
+            this.dgvItemFollowingROL.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvItemFollowingROL_DataBindingComplete);
             // 
             // lblItemFollowingROL
             // 
@@ -170,7 +171,7 @@
             this.btnReStockConfirm.Name = "btnReStockConfirm";
             this.btnReStockConfirm.Size = new System.Drawing.Size(324, 51);
             this.btnReStockConfirm.TabIndex = 80;
-            this.btnReStockConfirm.Text = "Confirm";
+            this.btnReStockConfirm.Text = "Restocking to CSL";
             this.btnReStockConfirm.UseVisualStyleBackColor = true;
             this.btnReStockConfirm.Click += new System.EventHandler(this.btnReStockConfirm_Click);
             // 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static WindowsFormsApp.Google_map;
 
 namespace WindowsFormsApp
 {
@@ -29,31 +30,36 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Do you want to save?"))
+            string Location = txtLocation.Text;
+            Google_map map = new Google_map(Location);
+            map.ShowDialog();
+            if (map.Getstate())
             {
-                if (!string.IsNullOrEmpty(txtLocation.Text))
+                double Latitude = (double)GlobalVariables.Latitude;
+                double Longitude = (double)GlobalVariables.Latitude;
                 {
-
-                    string Location = txtLocation.Text;
-                    string Remark = txtRemark.Text;
-                    string query;
-
-                    if (!string.IsNullOrEmpty(Remark))
+                    if (!string.IsNullOrEmpty(txtLocation.Text))
                     {
-                        query = $"INSERT INTO SaleArea (Location, Remark) VALUES ('{Location}', '{Remark}')";
+                        string Remark = txtRemark.Text;
+                        string query;
+
+                        if (!string.IsNullOrEmpty(Remark))
+                        {
+                            query = $"INSERT INTO SaleArea (Location,Latitude,Longitude,Remark,) VALUES ('{Location}',{Latitude},{Latitude}, '{Remark}')";
+                        }
+                        else
+                        {
+                            query = $"INSERT INTO SaleArea (Location,Latitude,Longitude) VALUES ('{Location}',{Latitude},{Latitude})";
+                        }
+                        Main.db.insertBySql(query);
+                        Main.ShowMessage("Successful add!");
+                        txtLocation.Text = String.Empty;
+                        txtRemark.Text = String.Empty;
                     }
                     else
                     {
-                        query = $"INSERT INTO SaleArea (Location) VALUES ('{Location}')";
+                        Main.ShowMessage("Please provide Location!");
                     }
-                    Main.db.insertBySql(query);
-                    Main.ShowMessage("Successful add!");
-                    txtLocation.Text = String.Empty;
-                    txtRemark.Text = String.Empty;
-                }
-                else
-                {
-                    Main.ShowMessage("Please provide Location!");
                 }
             }
         }

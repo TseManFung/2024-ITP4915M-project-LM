@@ -120,6 +120,7 @@ CREATE TABLE `OrderItemForCollect` (
   `ItemID` char(6),
   `Assgin` int,
   `Quantity` int NOT NULL DEFAULT 1,
+  `State` char(1) NOT Null DEFAULT "W" COMMENT 'use a char to record the state(C = Collecting, W = Wait)',
   PRIMARY KEY (`OrderSerial`, `ItemID`,`Assgin`)
 );
 

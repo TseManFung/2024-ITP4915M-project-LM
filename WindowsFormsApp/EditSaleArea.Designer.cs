@@ -78,7 +78,7 @@
             // btnDelete
             // 
             this.btnDelete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDelete.Font = new System.Drawing.Font("PMingLiU", 32F);
+            this.btnDelete.Font = new System.Drawing.Font("新細明體", 32F);
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDelete.Location = new System.Drawing.Point(717, 123);
             this.btnDelete.Name = "btnDelete";
@@ -91,7 +91,7 @@
             // btnEdit
             // 
             this.btnEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEdit.Font = new System.Drawing.Font("PMingLiU", 32F);
+            this.btnEdit.Font = new System.Drawing.Font("新細明體", 32F);
             this.btnEdit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnEdit.Location = new System.Drawing.Point(241, 123);
             this.btnEdit.Name = "btnEdit";
@@ -120,7 +120,7 @@
             // 
             this.comboBoxSaleAreaLocation.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxSaleAreaLocation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxSaleAreaLocation.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.comboBoxSaleAreaLocation.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSaleAreaLocation.FormattingEnabled = true;
             this.comboBoxSaleAreaLocation.Location = new System.Drawing.Point(3, 60);
             this.comboBoxSaleAreaLocation.Name = "comboBoxSaleAreaLocation";
@@ -134,7 +134,7 @@
             this.lblSaleArea.BackColor = System.Drawing.SystemColors.Control;
             this.lblSaleArea.CausesValidation = false;
             this.lblSaleArea.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSaleArea.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblSaleArea.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSaleArea.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSaleArea.Location = new System.Drawing.Point(3, 0);
             this.lblSaleArea.Name = "lblSaleArea";
@@ -196,7 +196,7 @@
             // txtRemark
             // 
             this.txtRemark.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtRemark.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtRemark.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtRemark.Location = new System.Drawing.Point(3, 53);
             this.txtRemark.Multiline = true;
             this.txtRemark.Name = "txtRemark";
@@ -210,7 +210,7 @@
             this.lblRemark.BackColor = System.Drawing.SystemColors.Control;
             this.lblRemark.CausesValidation = false;
             this.lblRemark.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblRemark.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblRemark.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblRemark.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblRemark.Location = new System.Drawing.Point(3, 0);
             this.lblRemark.Name = "lblRemark";
@@ -237,7 +237,7 @@
             // txtLocation
             // 
             this.txtLocation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtLocation.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtLocation.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtLocation.Location = new System.Drawing.Point(3, 53);
             this.txtLocation.Multiline = true;
             this.txtLocation.Name = "txtLocation";
@@ -251,7 +251,7 @@
             this.lblLocation.BackColor = System.Drawing.SystemColors.Control;
             this.lblLocation.CausesValidation = false;
             this.lblLocation.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblLocation.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblLocation.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblLocation.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblLocation.Location = new System.Drawing.Point(3, 0);
             this.lblLocation.Name = "lblLocation";
@@ -262,7 +262,7 @@
             // btnSave
             // 
             this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSave.Font = new System.Drawing.Font("PMingLiU", 32F);
+            this.btnSave.Font = new System.Drawing.Font("新細明體", 32F);
             this.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSave.Location = new System.Drawing.Point(475, 304);
             this.btnSave.Name = "btnSave";
