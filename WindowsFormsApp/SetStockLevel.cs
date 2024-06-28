@@ -1,4 +1,5 @@
-﻿using Org.BouncyCastle.Utilities;
+﻿using WindowsFormsApp.Properties;
+using Org.BouncyCastle.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,7 +23,7 @@ namespace WindowsFormsApp
 
         private void frmSetStockLevel_Load(object sender, EventArgs e)
         {
-            LoadSpareIDs();
+            LoadSpareIDs();        
         }
         private void LoadSpareIDs()
         {
@@ -35,6 +36,7 @@ namespace WindowsFormsApp
                     comboBoxSpareID.Items.Add(reader.GetString(0));
                 }
             }
+            comboBoxSpareID.SelectedIndex = 0;
         }
         private int GetStaffID()
         {
@@ -46,7 +48,7 @@ namespace WindowsFormsApp
                     return reader.GetInt32(0);
                 }
             }
-            throw new Exception("StaffID not found for current user.");
+            throw new Exception(Resources.StaffID_not_found_for_current_);
         }
         private int GetWarehouseID(int staffID)
         {
@@ -58,7 +60,7 @@ namespace WindowsFormsApp
                     return reader.GetInt32(0);
                 }
             }
-            throw new Exception("WarehouseID not found for current staff.");
+            throw new Exception(Resources.WarehouseID_not_found_for_curr);
         }
         private void LoadSpareDetails(string spareID, int warehouseID)
         {
@@ -92,7 +94,6 @@ namespace WindowsFormsApp
             int staffID = GetStaffID();
             int warehouseID = GetWarehouseID(staffID);
             string spareID = comboBoxSpareID.SelectedItem.ToString();
-
             LoadSpareDetails(spareID, warehouseID);
 
         }
@@ -102,7 +103,7 @@ namespace WindowsFormsApp
             int staffID = GetStaffID();
             int warehouseID = GetWarehouseID(staffID);
 
-            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
+            if (Main.ShowYesNoDialog(Resources.Are_you_sure_you_want_to_chang0))
             {
                 if (ValidateInput())
                 {
@@ -116,11 +117,11 @@ namespace WindowsFormsApp
                     UpdateAutoRestock(spareID, warehouseID, autoRestock);
                     CheckAndInsertActualStock(spareID, warehouseID, autoRestock);
 
-                    Main.ShowYesNoDialog("Setting Successful!");
+                    Main.ShowYesNoDialog(Resources.Setting_Successful);
                 }
                 else
                 {
-                    Main.ShowYesNoDialog("Please enter full data!");
+                    Main.ShowYesNoDialog(Resources.Please_enter_full_data);
                 }
             }
         }

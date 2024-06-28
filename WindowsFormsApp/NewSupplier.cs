@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -69,7 +70,7 @@ namespace WindowsFormsApp
                 }
                 else
                 {
-                    Main.ShowMessage("Please enter a maximum of 20 digits!");
+                    Main.ShowMessage(Resources.Please_enter_a_maximum_of_20_d);
                     txtContantNumber.Text = string.Empty;
                 }
             }
@@ -88,13 +89,13 @@ namespace WindowsFormsApp
         private void btnCreateNewSupplier_Click(object sender, EventArgs e)
         {
 
-            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
+            if (Main.ShowYesNoDialog(Resources.Are_you_sure_you_want_to_chang0))
             {
                 if (!string.IsNullOrEmpty(txtEmail.Text))
                 {
                     if (!IsValidEmail(txtEmail.Text))
                     {
-                        Main.ShowMessage("Please enter a valid email address!");
+                        Main.ShowMessage(Resources.Please_enter_a_valid_email_add);
                         txtEmail.Text = string.Empty;
                         return;
                     }
@@ -114,11 +115,11 @@ namespace WindowsFormsApp
                         txtAddress.Text = string.Empty;
                         txtContantNumber.Text = string.Empty;
                         txtEmail.Text = string.Empty;
-                        Main.ShowMessage("Successful creating");
+                        Main.ShowMessage(Resources.Successful_creating);
                     }
                     else
                     {
-                        Main.ShowMessage("Please fill in all information");
+                        Main.ShowMessage(Resources.Please_fill_in_all_information);
                     }
                 
             }

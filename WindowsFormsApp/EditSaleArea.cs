@@ -1,4 +1,5 @@
-﻿using Org.BouncyCastle.Utilities;
+﻿using WindowsFormsApp.Properties;
+using Org.BouncyCastle.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -90,13 +91,13 @@ namespace WindowsFormsApp
                             query = $"UPDATE SaleArea SET Location = '{Location}' , Latitude = {Latitude},  Longitude = {Longitude} WHERE AreaID = '{AreaID}'";
                         }
                         Main.db.updateBySql(query);
-                        Main.ShowMessage("Successful editing");
+                        Main.ShowMessage(Resources.Successful_editing);
                         txtLocation.Text = "";
                         txtRemark.Text = "";
                     }
                     else
                     {
-                        Main.ShowMessage("Please provide Location!");
+                        Main.ShowMessage(Resources.Please_provide_Location);
                     }
                 }
         }
@@ -113,7 +114,7 @@ namespace WindowsFormsApp
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            Main.ShowMessage("succeed!");
+            Main.ShowMessage(Resources.succeed);
         }
     }
 }

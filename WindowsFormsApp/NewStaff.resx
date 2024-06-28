@@ -117,54 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnClear.Text" xml:space="preserve">
-    <value>Clear</value>
-  </data>
-  <data name="btnSave.Text" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>New Staff</value>
-  </data>
-  <data name="lblAreYouNewStaff.Text" xml:space="preserve">
-    <value>Are you new staff?</value>
-  </data>
-  <data name="lblDepartment.Text" xml:space="preserve">
-    <value>Department:</value>
-  </data>
-  <data name="lblGender.Text" xml:space="preserve">
-    <value>Gender:</value>
-  </data>
-  <data name="lblPosition.Text" xml:space="preserve">
-    <value>Position:</value>
-  </data>
-  <data name="lblSaleArea.Text" xml:space="preserve">
-    <value>SaleArea:</value>
-  </data>
-  <data name="lblSpareName.Text" xml:space="preserve">
-    <value>Staff Name:</value>
-  </data>
-  <data name="lblStaffID.Text" xml:space="preserve">
-    <value>Staff ID:</value>
-  </data>
-  <data name="lblSupplierID.Text" xml:space="preserve">
-    <value>Phone Number:</value>
-  </data>
-  <data name="radNo.Text" xml:space="preserve">
-    <value>No</value>
-  </data>
-  <data name="radYes.Text" xml:space="preserve">
-    <value>Yes</value>
-  </data>
-  <data name="rbFemale.Text" xml:space="preserve">
-    <value>Female</value>
-  </data>
-  <data name="rbMale.Text" xml:space="preserve">
-    <value>Male</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>5</value>
@@ -181,7 +133,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblGender.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblGender.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -191,6 +143,9 @@
   </data>
   <data name="lblGender.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
+  </data>
+  <data name="lblGender.Text" xml:space="preserve">
+    <value>Gender:</value>
   </data>
   <data name="&gt;&gt;lblGender.Name" xml:space="preserve">
     <value>lblGender</value>
@@ -211,7 +166,7 @@
     <value>True</value>
   </data>
   <data name="rbMale.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="rbMale.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
@@ -221,6 +176,9 @@
   </data>
   <data name="rbMale.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="rbMale.Text" xml:space="preserve">
+    <value>Male</value>
   </data>
   <data name="&gt;&gt;rbMale.Name" xml:space="preserve">
     <value>rbMale</value>
@@ -238,7 +196,7 @@
     <value>True</value>
   </data>
   <data name="rbFemale.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="rbFemale.Location" type="System.Drawing.Point, System.Drawing">
     <value>183, 3</value>
@@ -248,6 +206,9 @@
   </data>
   <data name="rbFemale.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="rbFemale.Text" xml:space="preserve">
+    <value>Female</value>
   </data>
   <data name="&gt;&gt;rbFemale.Name" xml:space="preserve">
     <value>rbFemale</value>
@@ -331,7 +292,7 @@
     <value>Fill</value>
   </data>
   <data name="lblSupplierID.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblSupplierID.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -341,6 +302,9 @@
   </data>
   <data name="lblSupplierID.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
+  </data>
+  <data name="lblSupplierID.Text" xml:space="preserve">
+    <value>Phone Number:</value>
   </data>
   <data name="&gt;&gt;lblSupplierID.Name" xml:space="preserve">
     <value>lblSupplierID</value>
@@ -358,7 +322,7 @@
     <value>Top</value>
   </data>
   <data name="txtPhoneNum.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtPhoneNum.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -421,7 +385,7 @@
     <value>Fill</value>
   </data>
   <data name="comboBoxDepartment.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="comboBoxDepartment.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -451,7 +415,7 @@
     <value>Fill</value>
   </data>
   <data name="lblDepartment.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblDepartment.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -461,6 +425,9 @@
   </data>
   <data name="lblDepartment.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
+  </data>
+  <data name="lblDepartment.Text" xml:space="preserve">
+    <value>Department:</value>
   </data>
   <data name="&gt;&gt;lblDepartment.Name" xml:space="preserve">
     <value>lblDepartment</value>
@@ -511,7 +478,7 @@
     <value>Fill</value>
   </data>
   <data name="comboBoxSaleArea.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="comboBoxSaleArea.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -541,7 +508,7 @@
     <value>Fill</value>
   </data>
   <data name="lblSaleArea.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblSaleArea.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -551,6 +518,9 @@
   </data>
   <data name="lblSaleArea.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
+  </data>
+  <data name="lblSaleArea.Text" xml:space="preserve">
+    <value>SaleArea:</value>
   </data>
   <data name="&gt;&gt;lblSaleArea.Name" xml:space="preserve">
     <value>lblSaleArea</value>
@@ -601,7 +571,7 @@
     <value>Top</value>
   </data>
   <data name="txtStaffName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtStaffName.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -634,7 +604,7 @@
     <value>Fill</value>
   </data>
   <data name="lblSpareName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblSpareName.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -644,6 +614,9 @@
   </data>
   <data name="lblSpareName.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="lblSpareName.Text" xml:space="preserve">
+    <value>Staff Name:</value>
   </data>
   <data name="&gt;&gt;lblSpareName.Name" xml:space="preserve">
     <value>lblSpareName</value>
@@ -697,7 +670,7 @@
     <value>Fill</value>
   </data>
   <data name="lblPosition.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblPosition.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -707,6 +680,9 @@
   </data>
   <data name="lblPosition.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
+  </data>
+  <data name="lblPosition.Text" xml:space="preserve">
+    <value>Position:</value>
   </data>
   <data name="&gt;&gt;lblPosition.Name" xml:space="preserve">
     <value>lblPosition</value>
@@ -724,7 +700,7 @@
     <value>Fill</value>
   </data>
   <data name="comboBoxPosition.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="comboBoxPosition.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -811,7 +787,7 @@
     <value>Fill</value>
   </data>
   <data name="btnClear.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 32pt</value>
+    <value>新細明體, 32pt</value>
   </data>
   <data name="btnClear.Location" type="System.Drawing.Point, System.Drawing">
     <value>1122, 3</value>
@@ -821,6 +797,9 @@
   </data>
   <data name="btnClear.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
+  </data>
+  <data name="btnClear.Text" xml:space="preserve">
+    <value>Clear</value>
   </data>
   <data name="&gt;&gt;btnClear.Name" xml:space="preserve">
     <value>btnClear</value>
@@ -838,7 +817,7 @@
     <value>Fill</value>
   </data>
   <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 32pt</value>
+    <value>新細明體, 32pt</value>
   </data>
   <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
     <value>376, 3</value>
@@ -848,6 +827,9 @@
   </data>
   <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Save</value>
   </data>
   <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
     <value>btnSave</value>
@@ -871,7 +853,7 @@
     <value>Fill</value>
   </data>
   <data name="lblAreYouNewStaff.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblAreYouNewStaff.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -881,6 +863,9 @@
   </data>
   <data name="lblAreYouNewStaff.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="lblAreYouNewStaff.Text" xml:space="preserve">
+    <value>Are you new staff?</value>
   </data>
   <data name="lblAreYouNewStaff.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
@@ -904,7 +889,7 @@
     <value>Bottom</value>
   </data>
   <data name="radYes.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="radYes.Location" type="System.Drawing.Point, System.Drawing">
     <value>935, 19</value>
@@ -914,6 +899,9 @@
   </data>
   <data name="radYes.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="radYes.Text" xml:space="preserve">
+    <value>Yes</value>
   </data>
   <data name="&gt;&gt;radYes.Name" xml:space="preserve">
     <value>radYes</value>
@@ -934,7 +922,7 @@
     <value>Top</value>
   </data>
   <data name="radNo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="radNo.Location" type="System.Drawing.Point, System.Drawing">
     <value>935, 56</value>
@@ -944,6 +932,9 @@
   </data>
   <data name="radNo.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="radNo.Text" xml:space="preserve">
+    <value>No</value>
   </data>
   <data name="&gt;&gt;radNo.Name" xml:space="preserve">
     <value>radNo</value>
@@ -997,7 +988,7 @@
     <value>Left</value>
   </data>
   <data name="comboBoxStaffID.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="comboBoxStaffID.Location" type="System.Drawing.Point, System.Drawing">
     <value>935, 36</value>
@@ -1027,7 +1018,7 @@
     <value>Fill</value>
   </data>
   <data name="lblStaffID.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblStaffID.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -1037,6 +1028,9 @@
   </data>
   <data name="lblStaffID.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="lblStaffID.Text" xml:space="preserve">
+    <value>Staff ID:</value>
   </data>
   <data name="lblStaffID.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
@@ -1149,11 +1143,17 @@
   <data name="tableLayoutPanel10.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel1" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel12" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel9" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,18.2,Percent,18.2,Percent,54.6,Percent,9" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1871, 626</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>New Staff</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmNewStaff</value>

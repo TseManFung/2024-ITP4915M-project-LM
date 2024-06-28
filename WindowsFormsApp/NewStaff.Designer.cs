@@ -229,6 +229,7 @@
             // comboBoxPosition
             // 
             resources.ApplyResources(this.comboBoxPosition, "comboBoxPosition");
+            this.comboBoxPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxPosition.FormattingEnabled = true;
             this.comboBoxPosition.Name = "comboBoxPosition";
             this.comboBoxPosition.SelectedIndexChanged += new System.EventHandler(this.comboBoxPosition_SelectedIndexChanged);

@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using WindowsFormsApp.Properties;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -106,7 +107,7 @@ namespace WindowsFormsApp
             if (!string.IsNullOrEmpty(input) && !Regex.IsMatch(input, pattern))
             {
                 txtSpareName.Text = string.Empty;
-                Main.ShowMessage("Only spaces and letters are allowed!");
+                Main.ShowMessage(Resources.Only_spaces_and_letters_are_al);
             }
         }
 
@@ -150,13 +151,13 @@ namespace WindowsFormsApp
 
                 string query = $"UPDATE Spare SET SpareName = '{spareName}', CategoryLetter = '{categoryLetter}', Price = {price}, Description = '{description}', Weight = {weight}, SupplierID = {supplierID} WHERE SpareID = '{spareID}'";
                 Main.db.updateBySql(query);
-                Main.ShowMessage("Successful editing");
+                Main.ShowMessage(Resources.Successful_editing);
 
                 ClearForm();
             }
             else
             {
-                Main.ShowMessage("Please provide complete data");
+                Main.ShowMessage(Resources.Please_provide_complete_data);
             }
 
 
@@ -216,14 +217,14 @@ namespace WindowsFormsApp
                 string spareID = comboBoxSpareID.SelectedItem.ToString();
                 string query = $"UPDATE Spare SET State = 'D' WHERE SpareID = '{spareID}'";
                 Main.db.updateBySql(query);
-                Main.ShowMessage("Item successfully deleted");
+                Main.ShowMessage(Resources.Item_successfully_deleted);
 
                 // Refresh the SpareID list after deletion
                 frmEditItem_Load(sender, e);
             }
             else
             {
-                Main.ShowMessage("Please select an item to delete");
+                Main.ShowMessage(Resources.Please_select_an_item_to_delet);
             }
         }
     }

@@ -1,4 +1,5 @@
-﻿using Google.Protobuf.WellKnownTypes;
+﻿using WindowsFormsApp.Properties;
+using Google.Protobuf.WellKnownTypes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -40,13 +41,34 @@ namespace WindowsFormsApp
             tableLayoutPanel12.Visible = radNo.Checked;
 
         }
-
+        private string CreatePassword(int length)
+        {
+            const string valid = "abcdefghkmnpqrstuvwxyzABCDEFGHKLMNPQRSTUVWXYZ23456789@#$%&*";
+            StringBuilder res = new StringBuilder();
+            Random rnd = new Random();
+            while (0 < length--)
+            {
+                res.Append(valid[rnd.Next(valid.Length)]);
+            }
+            return res.ToString();
+        }
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
+
+            if (!string.IsNullOrEmpty(txtEmail.Text))
+            {
+                if (!IsValidEmail(txtEmail.Text))
+                {
+                    Main.ShowMessage(Resources.Please_enter_a_valid_email_add);
+                    txtEmail.Text = string.Empty;
+                }
+
+                return;
+            }
+            if (Main.ShowYesNoDialog(Resources.Are_you_sure_you_want_to_chang0))
             {
                 Random random = new Random();
-                int randompasswd = random.Next(0, 1001);
+                string randompasswd = CreatePassword(8);
                 string passwd = '0' + Main.db.ComputeSha256Hash(randompasswd.ToString());
                 string loginName = frmUserManagementAndAccountManagement.GlobalLoginNameForCreate;
                 int accessLevel = frmUserManagementAndAccountManagement.GlobalAccessLevelForCreate;
@@ -109,7 +131,8 @@ namespace WindowsFormsApp
                     }
                     else
                     {
-                        Main.ShowMessage("Please provide both Department Name and Department Email!");
+                        Main.ShowMessage(Resources.Please_provide_both_Department);
+                        return;
                     }
 
                 }
@@ -187,13 +210,13 @@ namespace WindowsFormsApp
                 // Check if the input is a valid number
                 if (!long.TryParse(txtPhoneNumber.Text, out _))
                 {
-                    Main.ShowMessage("Invalid input. Please enter a valid number.");
+                    Main.ShowMessage(Resources.Invalid_input_Please_enter_a_v);
                     txtPhoneNumber.Text = string.Empty;
                 }
                 // Check if the input length exceeds 20 digits
                 else if (txtPhoneNumber.Text.Length > 20)
                 {
-                    Main.ShowMessage("Phone number cannot exceed 20 digits.");
+                    Main.ShowMessage(Resources.Phone_number_cannot_exceed_20_);
                     txtPhoneNumber.Text = txtPhoneNumber.Text.Substring(0, 20);
                 }
             }
@@ -201,14 +224,7 @@ namespace WindowsFormsApp
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtEmail.Text))
-            {
-                if (!IsValidEmail(txtEmail.Text))
-                {
-                    Main.ShowMessage("Please enter a valid email address!");
-                    txtEmail.Text = string.Empty;
-                }
-            }
+
         }
     }
 }

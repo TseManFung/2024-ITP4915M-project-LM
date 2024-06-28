@@ -117,33 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnSave.Text" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="checkBoxAutoReStock.Text" xml:space="preserve">
-    <value>Auto Re-stock</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Set Stock Level</value>
-  </data>
-  <data name="lblCommonStockLevel.Text" xml:space="preserve">
-    <value>Common Stock Level:</value>
-  </data>
-  <data name="lblDangerLevel.Text" xml:space="preserve">
-    <value>Danger Level:</value>
-  </data>
-  <data name="lblReOrderLevel.Text" xml:space="preserve">
-    <value>Re Order Level:</value>
-  </data>
-  <data name="lblSpareID.Text" xml:space="preserve">
-    <value>Spare ID:</value>
-  </data>
-  <data name="lblSpareName.Text" xml:space="preserve">
-    <value>Spare Name:</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
@@ -160,7 +133,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblSpareID.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblSpareID.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -170,6 +143,9 @@
   </data>
   <data name="lblSpareID.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
+  </data>
+  <data name="lblSpareID.Text" xml:space="preserve">
+    <value>Spare ID:</value>
   </data>
   <data name="lblSpareID.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
@@ -190,7 +166,7 @@
     <value>Fill</value>
   </data>
   <data name="comboBoxSpareID.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="comboBoxSpareID.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 90</value>
@@ -250,7 +226,7 @@
     <value>Top</value>
   </data>
   <data name="txtSpareName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtSpareName.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 90</value>
@@ -283,7 +259,7 @@
     <value>Fill</value>
   </data>
   <data name="lblSpareName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblSpareName.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -293,6 +269,9 @@
   </data>
   <data name="lblSpareName.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="lblSpareName.Text" xml:space="preserve">
+    <value>Spare Name:</value>
   </data>
   <data name="lblSpareName.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
@@ -343,7 +322,7 @@
     <value>Fill</value>
   </data>
   <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt</value>
+    <value>新細明體, 24pt</value>
   </data>
   <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
     <value>326, 363</value>
@@ -353,6 +332,9 @@
   </data>
   <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
     <value>91</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Save</value>
   </data>
   <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
     <value>btnSave</value>
@@ -373,7 +355,7 @@
     <value>Fill</value>
   </data>
   <data name="checkBoxAutoReStock.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="checkBoxAutoReStock.Location" type="System.Drawing.Point, System.Drawing">
     <value>649, 3</value>
@@ -383,6 +365,9 @@
   </data>
   <data name="checkBoxAutoReStock.TabIndex" type="System.Int32, mscorlib">
     <value>93</value>
+  </data>
+  <data name="checkBoxAutoReStock.Text" xml:space="preserve">
+    <value>Auto Re-stock</value>
   </data>
   <data name="&gt;&gt;checkBoxAutoReStock.Name" xml:space="preserve">
     <value>checkBoxAutoReStock</value>
@@ -406,7 +391,7 @@
     <value>Fill</value>
   </data>
   <data name="lblReOrderLevel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblReOrderLevel.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -416,6 +401,9 @@
   </data>
   <data name="lblReOrderLevel.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
+  </data>
+  <data name="lblReOrderLevel.Text" xml:space="preserve">
+    <value>Re Order Level:</value>
   </data>
   <data name="lblReOrderLevel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
@@ -436,7 +424,7 @@
     <value>Top</value>
   </data>
   <data name="txtReOrderLevel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtReOrderLevel.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 90</value>
@@ -496,7 +484,7 @@
     <value>Top</value>
   </data>
   <data name="txtCommonStockLevel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtCommonStockLevel.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 90</value>
@@ -529,7 +517,7 @@
     <value>Fill</value>
   </data>
   <data name="lblCommonStockLevel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblCommonStockLevel.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -539,6 +527,9 @@
   </data>
   <data name="lblCommonStockLevel.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
+  </data>
+  <data name="lblCommonStockLevel.Text" xml:space="preserve">
+    <value>Common Stock Level:</value>
   </data>
   <data name="lblCommonStockLevel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
@@ -589,7 +580,7 @@
     <value>Top</value>
   </data>
   <data name="txtDangerLevel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtDangerLevel.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 90</value>
@@ -622,7 +613,7 @@
     <value>Fill</value>
   </data>
   <data name="lblDangerLevel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblDangerLevel.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -632,6 +623,9 @@
   </data>
   <data name="lblDangerLevel.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
+  </data>
+  <data name="lblDangerLevel.Text" xml:space="preserve">
+    <value>Danger Level:</value>
   </data>
   <data name="lblDangerLevel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
@@ -705,11 +699,17 @@
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel4" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="btnSave" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="checkBoxAutoReStock" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel8" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel9" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel2" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33333,Percent,33.33333,Percent,33.33333" /&gt;&lt;Rows Styles="Percent,40,Percent,40,Percent,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>970, 450</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Set Stock Level</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmSetStockLevel</value>

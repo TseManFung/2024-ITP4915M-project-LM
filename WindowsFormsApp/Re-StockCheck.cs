@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -81,7 +82,7 @@ namespace WindowsFormsApp
 
         private void btnReceived_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Are you sure you want to receive it?"))
+            if (Main.ShowYesNoDialog(Resources.Are_you_sure_you_want_to_recei))
             {
 
                 if (clickedRowIndex >= 0 && clickedColumnIndex >= 0)
@@ -131,7 +132,7 @@ namespace WindowsFormsApp
                 }
                 else
                 {
-                    MessageBox.Show("No cell has been clicked yet.");
+                    MessageBox.Show(Resources.No_cell_has_been_clicked_yet);
                 }
             }
         }
