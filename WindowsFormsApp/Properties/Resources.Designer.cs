@@ -70,15 +70,6 @@ namespace WindowsFormsApp.Properties {
         }
         
         /// <summary>
-        ///   查詢類似 Order 的當地語系化字串。
-        /// </summary>
-        public static string _Order {
-            get {
-                return ResourceManager.GetString("_Order", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查詢類似 Are you sure you want to change your password? 的當地語系化字串。
         /// </summary>
         public static string Are_you_sure_you_want_to_chang {
@@ -348,15 +339,6 @@ namespace WindowsFormsApp.Properties {
         }
         
         /// <summary>
-        ///   查詢類似 OrderItem 的當地語系化字串。
-        /// </summary>
-        public static string OrderItem {
-            get {
-                return ResourceManager.GetString("OrderItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查詢類似 Phone number cannot exceed 20 digits. 的當地語系化字串。
         /// </summary>
         public static string Phone_number_cannot_exceed_20_ {
@@ -402,57 +384,12 @@ namespace WindowsFormsApp.Properties {
         }
         
         /// <summary>
-        ///   查詢類似 Price 的當地語系化字串。
-        /// </summary>
-        public static string Price {
-            get {
-                return ResourceManager.GetString("Price", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
         public static System.Drawing.Bitmap printing_document_72649 {
             get {
                 object obj = ResourceManager.GetObject("printing-document_72649", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 Qty 的當地語系化字串。
-        /// </summary>
-        public static string Qty {
-            get {
-                return ResourceManager.GetString("Qty", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 quantity 的當地語系化字串。
-        /// </summary>
-        public static string quantity {
-            get {
-                return ResourceManager.GetString("quantity", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 SpareID 的當地語系化字串。
-        /// </summary>
-        public static string SpareID {
-            get {
-                return ResourceManager.GetString("SpareID", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   查詢類似 SpareName 的當地語系化字串。
-        /// </summary>
-        public static string SpareName {
-            get {
-                return ResourceManager.GetString("SpareName", resourceCulture);
             }
         }
         
@@ -561,6 +498,15 @@ namespace WindowsFormsApp.Properties {
         public static string The_password_entered_twice_is_ {
             get {
                 return ResourceManager.GetString("The_password_entered_twice_is_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 The spare is not in the collect list 的當地語系化字串。
+        /// </summary>
+        public static string The_spare_is_not_in_the_collec {
+            get {
+                return ResourceManager.GetString("The_spare_is_not_in_the_collec", resourceCulture);
             }
         }
     }
