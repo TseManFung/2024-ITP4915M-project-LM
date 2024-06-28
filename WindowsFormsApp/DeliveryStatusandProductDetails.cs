@@ -80,12 +80,13 @@ namespace WindowsFormsApp
             }
 
 
-            sql = $"SELECT a.ItemID, s.SpareName, s.Weight, oi.Quantity - IFNULL(f.Quantity, 0) - CASE WHEN i.CompleteState = 'C' THEN (SELECT SUM(quantity) FROM ActualQuantityDespatched WHERE InvoiceID = '{InvoiceID}') ELSE 0 END AS 'Prev Qty', a.Quantity AS 'Qty delivered', IFNULL(f.Quantity, 0) AS 'Qty to follow', a.BundlesNumber FROM ActualQuantityDespatched a INNER JOIN Invoice i ON a.InvoiceID = i.InvoiceID INNER JOIN Spare s ON a.ItemID = s.SpareID LEFT JOIN OrderItemToFollow f ON f.ItemID = a.ItemID INNER JOIN OrderItem oi ON a.ItemID = oi.ItemID AND oi.OrderSerial = '{orderSerial}' WHERE a.InvoiceID = '{InvoiceID}' GROUP BY a.ItemID, s.SpareName, s.Weight, oi.Quantity - IFNULL(f.Quantity, 0) - CASE WHEN i.CompleteState = 'C' THEN (SELECT SUM(quantity) FROM ActualQuantityDespatched WHERE InvoiceID = '{InvoiceID}') ELSE 0 END, a.Quantity, IFNULL(f.Quantity, 0),f.Quantity, a.BundlesNumber;";
+            sql = $"SELECT a.ItemID, s.SpareName, s.Weight, oi.Quantity - IFNULL(f.Quantity, 0) - CASE WHEN i.CompleteState = 'C' THEN (SELECT SUM(quantity) FROM ActualQuantityDespatched WHERE InvoiceID = '{InvoiceID}') ELSE 0 END AS 'Prev Qty', a.Quantity AS 'Qty delivered', IFNULL(f.Quantity, 0) AS 'Qty to follow', a.BundlesNumber, oi.PriceInOrder as 'UnitPrice' FROM ActualQuantityDespatched a INNER JOIN Invoice i ON a.InvoiceID = i.InvoiceID INNER JOIN Spare s ON a.ItemID = s.SpareID LEFT JOIN OrderItemToFollow f ON f.ItemID = a.ItemID INNER JOIN OrderItem oi ON a.ItemID = oi.ItemID AND oi.OrderSerial = '{orderSerial}' WHERE a.InvoiceID = '{InvoiceID}' GROUP BY a.ItemID, s.SpareName, s.Weight, oi.Quantity - IFNULL(f.Quantity, 0) - CASE WHEN i.CompleteState = 'C' THEN (SELECT SUM(quantity) FROM ActualQuantityDespatched WHERE InvoiceID = '{InvoiceID}') ELSE 0 END, a.Quantity, IFNULL(f.Quantity, 0),f.Quantity, a.BundlesNumber;";
             using (dt = Main.db.GetDataTable(sql))
             {
                 foreach (DataRow row in dt.Rows)
                 {
                     totalWeight += Convert.ToDecimal(row["Weight"]) * Convert.ToDecimal(row["Qty delivered"]);
+                    totalPrice += Convert.ToDecimal(row["UnitPrice"]) * Convert.ToDecimal(row["Qty delivered"]);
                 }
             }
             this.i = dt.Rows.Count;
@@ -129,7 +130,9 @@ namespace WindowsFormsApp
                 { "weight", "Total weight" },
                 { "DespatchForeman", "Despatch Foreman" },
                 { "Receive", "Received in good order" },
-                { "Sign", "Signature" }
+                { "Sign", "Signature" },
+            { "UnitPrice","Unit price ($)"},
+            {"TotalPrice","Total price ($)" }
             };
 
         Dictionary<string, string> strdata = new Dictionary<string, string>
@@ -142,7 +145,7 @@ namespace WindowsFormsApp
                 { "DealerCode", "DEALER CODE" },
                 { "DespatchForeman", "Despatch Foreman" }
                 };
-        decimal totalWeight = 0;
+        decimal totalWeight = 0,totalPrice = 0;
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
@@ -208,18 +211,47 @@ namespace WindowsFormsApp
             int centerX = e.PageBounds.Width / 2;
             int centerY = e.PageBounds.Height / 2;
             int mt = e.MarginBounds.Top, ml = e.MarginBounds.Left, mr = e.MarginBounds.Right, mb = e.MarginBounds.Bottom;
-            int col1x = (ml + mr) / 5, col2x = (ml + mr) * 2 / 5, col3x = (ml + mr) * 3 / 5, col4x = (ml + mr) * 4 / 5;
+
+            SizeF textSize0 = e.Graphics.MeasureString(this.str["PartNo"], font);
+            SizeF textSize1 = e.Graphics.MeasureString(this.str["prevQty"], font);
+            SizeF textSize2 = e.Graphics.MeasureString(this.str["Qtydelivered"], font);
+            SizeF textSize3 = e.Graphics.MeasureString(this.str["followQty"], font);
+            SizeF textSize4 = e.Graphics.MeasureString(this.str["bundle"], font);
+            SizeF textSize5 = e.Graphics.MeasureString(this.str["UnitPrice"], font);
+            float[] textWidth = { textSize0.Width, textSize1.Width, textSize2.Width, textSize3.Width, textSize4.Width ,textSize5.Width};
+            float totalWidth = 0;
+            for (int i = 0; i < textWidth.Length; i++)
+            {
+                textWidth[i] += 10;
+                totalWidth += textWidth[i];
+                if(i > 0){
+                    textWidth[i] += textWidth[i - 1];
+                }
+            }
+            if(totalWidth <= mr - ml)
+            {
+                float ratio = (mr - ml) / totalWidth;
+                for (int i = 0; i < textWidth.Length; i++)
+                {
+                    textWidth[i] *= ratio;
+                }
+            }
+            else
+            {
+                float pad = totalWidth - (mr - ml);
+                ml -= (int)(pad / 2);
+                mr += (int)(pad / 2);
+            }
             int r = 30;
 
-            e.Graphics.DrawString(this.str["PartNo"], font, brush, ml, mt, new StringFormat() { Alignment = StringAlignment.Near });
-            e.Graphics.DrawString(this.str["prevQty"], font, brush, col1x, mt, new StringFormat() { Alignment = StringAlignment.Near });
-            e.Graphics.DrawString(this.str["Qtydelivered"], font, brush, col2x, mt, new StringFormat() { Alignment = StringAlignment.Near });
-            e.Graphics.DrawString(this.str["followQty"], font, brush, col3x, mt, new StringFormat() { Alignment = StringAlignment.Near });
-            e.Graphics.DrawString(this.str["bundle"], font, brush, col4x, mt, new StringFormat() { Alignment = StringAlignment.Near });
-            string bundlesNumber = this.str["bundle"];
-            SizeF textSize = e.Graphics.MeasureString(bundlesNumber, font);
-            float textWidth = textSize.Width;
-            e.Graphics.DrawLine(lineBlack, ml, mt  + 25, textWidth + col4x, mt + 25);
+            e.Graphics.DrawString(this.str["PartNo"], font, brush, new RectangleF(ml, mt, textWidth[0],20), new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString(this.str["prevQty"], font, brush, new RectangleF(ml, mt, textWidth[1], 20), new StringFormat() { Alignment = StringAlignment.Far });
+            e.Graphics.DrawString(this.str["Qtydelivered"], font, brush, new RectangleF(ml, mt, textWidth[2], 20), new StringFormat() { Alignment = StringAlignment.Far });
+            e.Graphics.DrawString(this.str["followQty"], font, brush, new RectangleF(ml, mt, textWidth[3], 20), new StringFormat() { Alignment = StringAlignment.Far });
+            e.Graphics.DrawString(this.str["bundle"], font, brush, new RectangleF(ml, mt, textWidth[4], 20), new StringFormat() { Alignment = StringAlignment.Far });
+            e.Graphics.DrawString(this.str["UnitPrice"], font, brush, new RectangleF(ml, mt, textWidth[5], 20), new StringFormat() { Alignment = StringAlignment.Far });
+            //change
+            e.Graphics.DrawLine(lineBlack, ml, mt  + 25, mr, mt + 25);
             int count = 0;
             foreach (DataRow row in dt.Rows)
             {
@@ -228,14 +260,15 @@ namespace WindowsFormsApp
                     count++;
                     continue;
                 }
-                e.Graphics.DrawString(row["ItemID"].ToString(), font, brush, ml, mt + r, new StringFormat() { Alignment = StringAlignment.Near });
-                e.Graphics.DrawString(row["SpareName"].ToString(), font, brush, ml, mt + r + 20, new StringFormat() { Alignment = StringAlignment.Near });
-                e.Graphics.DrawString(row["Prev Qty"].ToString(), font, brush, col1x, mt + r, new StringFormat() { Alignment = StringAlignment.Near });
-                e.Graphics.DrawString(row["Qty delivered"].ToString(), font, brush, col2x, mt + r, new StringFormat() { Alignment = StringAlignment.Near });
-                e.Graphics.DrawString(row["Qty to follow"].ToString(), font, brush, col3x, mt + r, new StringFormat() { Alignment = StringAlignment.Near });
-                e.Graphics.DrawString(row["BundlesNumber"].ToString(), font, brush, col4x, mt + r, new StringFormat() { Alignment = StringAlignment.Near });
+                e.Graphics.DrawString(row["ItemID"].ToString(), font, brush, new RectangleF(ml, mt + r, textWidth[0], 20), new StringFormat() { Alignment = StringAlignment.Near });
+                e.Graphics.DrawString(row["SpareName"].ToString(), font, brush, new RectangleF(ml, mt + r + 20,mr-ml,20), new StringFormat() { Alignment = StringAlignment.Near });
+                e.Graphics.DrawString(row["Prev Qty"].ToString(), font, brush, new RectangleF(ml, mt + r, textWidth[1], 20), new StringFormat() { Alignment = StringAlignment.Far });
+                e.Graphics.DrawString(row["Qty delivered"].ToString(), font, brush, new RectangleF(ml, mt + r, textWidth[2], 20), new StringFormat() { Alignment = StringAlignment.Far });
+                e.Graphics.DrawString(row["Qty to follow"].ToString(), font, brush, new RectangleF(ml, mt + r, textWidth[3], 20), new StringFormat() { Alignment = StringAlignment.Far });
+                e.Graphics.DrawString(row["BundlesNumber"].ToString(), font, brush, new RectangleF(ml, mt + r, textWidth[4], 20), new StringFormat() { Alignment = StringAlignment.Far });
+                e.Graphics.DrawString(row["UnitPrice"].ToString(), font, brush, new RectangleF(ml, mt + r, textWidth[5], 20), new StringFormat() { Alignment = StringAlignment.Far });
                 r += 50;
-                e.Graphics.DrawLine(lineBlack, ml, mt + r -5, textWidth+ col4x, mt + r -5);
+                e.Graphics.DrawLine(lineBlack, ml, mt + r -5, mr, mt + r -5);
 
                 i--;
                 if (r + ml > mb)
@@ -244,8 +277,6 @@ namespace WindowsFormsApp
                 }
             }
             e.HasMorePages = true;
-
-            Console.WriteLine(mb - mt);
 
         }
         private void pdfEnd(System.Drawing.Printing.PrintPageEventArgs e)
@@ -259,7 +290,8 @@ namespace WindowsFormsApp
 
             e.Graphics.DrawString(this.str["Date"], font, brush, ml, mt, new StringFormat() { Alignment = StringAlignment.Near });
             e.Graphics.DrawString("Signatory", font, brush, centerX, mt, new StringFormat() { Alignment = StringAlignment.Near });
-
+            e.Graphics.DrawString(this.str["TotalPrice"], font, brush, ml, mt+50, new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString("$"+totalPrice.ToString(), font, brush,ml , mt + 70, new StringFormat() { Alignment = StringAlignment.Near });
             using (var reader = Main.db.readBySql(sql))
             {
                 reader.Read();
