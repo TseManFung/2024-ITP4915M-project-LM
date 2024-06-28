@@ -173,18 +173,6 @@ CREATE TABLE `Signature` (
   `Sign` LONGBLOB NOT NULL
 );
 
-CREATE TABLE `Truck` (
-  `TruckID` int PRIMARY KEY AUTO_INCREMENT,
-  `SaleAreaID` int,
-  `LicensePlate` varchar(255)
-);
-
-CREATE TABLE `TruckInvoice` (
-  `TruckID` int,
-  `InvoiceID` char(16),
-  PRIMARY KEY (`TruckID`, `InvoiceID`)
-);
-
 CREATE TABLE `Warehouse` (
   `WarehouseID` int PRIMARY KEY AUTO_INCREMENT,
   `Name` varchar(255) NOT NULL,
@@ -259,12 +247,6 @@ ALTER TABLE `RestockItem` ADD FOREIGN KEY (`ItemID`) REFERENCES `Spare` (`SpareI
 ALTER TABLE `Invoice` ADD FOREIGN KEY (`OrderSerial`) REFERENCES `Order` (`OrderSerial`);
 
 ALTER TABLE `Invoice` ADD FOREIGN KEY (`DespatchForemanID`) REFERENCES `Staff` (`StaffID`);
-
-ALTER TABLE `Truck` ADD FOREIGN KEY (`SaleAreaID`) REFERENCES `SaleArea` (`AreaID`);
-
-ALTER TABLE `TruckInvoice` ADD FOREIGN KEY (`TruckID`) REFERENCES `Truck` (`TruckID`);
-
-ALTER TABLE `TruckInvoice` ADD FOREIGN KEY (`InvoiceID`) REFERENCES `Invoice` (`InvoiceID`);
 
 ALTER TABLE `Warehouse` ADD FOREIGN KEY (`SaleAreaID`) REFERENCES `SaleArea` (`AreaID`);
 
