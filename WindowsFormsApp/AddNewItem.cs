@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,7 +36,7 @@ namespace WindowsFormsApp
                 }
             }
             this.comboBoxSpareType.DataSource = SpareTypelist;
-            this.comboBoxSpareType.DisplayMember = "SpareType";
+            this.comboBoxSpareType.DisplayMember = Resources.SpareType;
             List<string> SupplierIDlist = new List<string>();
             String sqlofSupplierIDlist = $"SELECT Name FROM Supplier;";
             using (var reader = Main.db.readBySql(sqlofSupplierIDlist))
@@ -46,13 +47,13 @@ namespace WindowsFormsApp
                 }
             }
             this.comboBoxSupplier.DataSource = SupplierIDlist;
-            this.comboBoxSupplier.DisplayMember = "Name";
+            this.comboBoxSupplier.DisplayMember = Resources.Name;
  
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Do you want to turn to the next page?"))
+            if (Main.ShowYesNoDialog(Resources.Do_you_want_to_turn_to_the_nex))
             {
 
 
@@ -97,7 +98,7 @@ namespace WindowsFormsApp
                     string query = $"INSERT INTO Spare (SpareID, SpareName, CategoryLetter, Price, Description, Weight, SupplierID) VALUES ('{newSpareID}','{SpareName}', '{CattegoryLetter}', {price}, '{Description}', {weight}, {SupplierID})";
                     Main.db.insertBySql(query);
 
-                    MessageBox.Show("Successful ADD, your added new spare ID is " + newSpareID.ToString(), "Success");
+                    MessageBox.Show(Resources.Successful_ADD_your_added_new_ + newSpareID.ToString(), Resources.Success);
 
                     txtSpareName.Text = "";
                     txtSparePrice.Text = "00.00";
@@ -106,7 +107,7 @@ namespace WindowsFormsApp
                 }
                 else
                 {
-                    Main.ShowMessage("Please provide complete data");
+                    Main.ShowMessage(Resources.Please_provide_complete_data);
                 }
             }
         }
@@ -142,7 +143,7 @@ namespace WindowsFormsApp
             if (!string.IsNullOrEmpty(input) && !Regex.IsMatch(input, pattern))
             {
                 txtSpareWeight.Text = string.Empty;
-                Main.ShowMessage("only number!"); // Show error message
+                Main.ShowMessage(Resources.only_number); // Show error message
             }
         }
 

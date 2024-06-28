@@ -22,7 +22,7 @@ namespace WindowsFormsApp.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace WindowsFormsApp.Properties {
         ///   傳回這個類別使用的快取的 ResourceManager 執行個體。
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WindowsFormsApp.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace WindowsFormsApp.Properties {
         ///   使用這個強類型資源類別的資源查閱。
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,9 +61,45 @@ namespace WindowsFormsApp.Properties {
         }
         
         /// <summary>
+        ///   查詢類似 error 的當地語系化字串。
+        /// </summary>
+        public static string _error {
+            get {
+                return ResourceManager.GetString("_error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Order 的當地語系化字串。
+        /// </summary>
+        public static string _Order {
+            get {
+                return ResourceManager.GetString("_Order", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Are you sure you want to change your password? 的當地語系化字串。
+        /// </summary>
+        public static string Are_you_sure_you_want_to_chang {
+            get {
+                return ResourceManager.GetString("Are_you_sure_you_want_to_chang", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Are you sure you want to remove all items from your cart? 的當地語系化字串。
+        /// </summary>
+        public static string Are_you_sure_you_want_to_remov {
+            get {
+                return ResourceManager.GetString("Are_you_sure_you_want_to_remov", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
-        internal static System.Drawing.Bitmap back {
+        public static System.Drawing.Bitmap back {
             get {
                 object obj = ResourceManager.GetObject("back", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -71,9 +107,167 @@ namespace WindowsFormsApp.Properties {
         }
         
         /// <summary>
+        ///   查詢類似 can not get price 的當地語系化字串。
+        /// </summary>
+        public static string can_not_get_price {
+            get {
+                return ResourceManager.GetString("can_not_get_price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 can not get stock 的當地語系化字串。
+        /// </summary>
+        public static string can_not_get_stock {
+            get {
+                return ResourceManager.GetString("can_not_get_stock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 dealer must have a saleArea! 的當地語系化字串。
+        /// </summary>
+        public static string dealer_must_have_a_saleArea {
+            get {
+                return ResourceManager.GetString("dealer_must_have_a_saleArea", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 DealerID 的當地語系化字串。
+        /// </summary>
+        public static string DealerID {
+            get {
+                return ResourceManager.GetString("DealerID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Department ID already exists. Please choose a different ID. 的當地語系化字串。
+        /// </summary>
+        public static string Department_ID_already_exists_P {
+            get {
+                return ResourceManager.GetString("Department_ID_already_exists_P", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Department ID cannot exceed 5 characters. Please re-enter. 的當地語系化字串。
+        /// </summary>
+        public static string Department_ID_cannot_exceed_5_ {
+            get {
+                return ResourceManager.GetString("Department_ID_cannot_exceed_5_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Do you want to change the data? 的當地語系化字串。
+        /// </summary>
+        public static string Do_you_want_to_change_the_data {
+            get {
+                return ResourceManager.GetString("Do_you_want_to_change_the_data", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Do you want to turn to the next page? 的當地語系化字串。
+        /// </summary>
+        public static string Do_you_want_to_turn_to_the_nex {
+            get {
+                return ResourceManager.GetString("Do_you_want_to_turn_to_the_nex", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Invalid access level. Please enter a valid integer value between 0 and 10000. 的當地語系化字串。
+        /// </summary>
+        public static string Invalid_access_level_Please_en {
+            get {
+                return ResourceManager.GetString("Invalid_access_level_Please_en", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Invalid input. Please enter a valid number. 的當地語系化字串。
+        /// </summary>
+        public static string Invalid_input_Please_enter_a_v {
+            get {
+                return ResourceManager.GetString("Invalid_input_Please_enter_a_v", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Are you sure you want to remove {0}:{1} from your cart? 的當地語系化字串。
+        /// </summary>
+        public static string IS_Are_you_sure_you_want_to_re {
+            get {
+                return ResourceManager.GetString("IS_Are_you_sure_you_want_to_re", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 DELETE FROM Cart WHERE SpareID = &apos;{0}&apos; AND UserID = {1}; 的當地語系化字串。
+        /// </summary>
+        public static string IS_DELETE_FROM_Cart_WHERE_Spar {
+            get {
+                return ResourceManager.GetString("IS_DELETE_FROM_Cart_WHERE_Spar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Not enough stock for {0}:{1}
+        /// Only can order {2}
+        ///Still placing order? 的當地語系化字串。
+        /// </summary>
+        public static string IS_Not_enough_stock_for_0_1_On {
+            get {
+                return ResourceManager.GetString("IS_Not_enough_stock_for_0_1_On", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Order placed successfully, the order serial is {0} 的當地語系化字串。
+        /// </summary>
+        public static string IS_Order_placed_successfully_t {
+            get {
+                return ResourceManager.GetString("IS_Order_placed_successfully_t", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 The price of {0}:{1} has changed from {2} to {3}
+        ///Still placing order? 的當地語系化字串。
+        /// </summary>
+        public static string IS_The_price_of_0_1_has_change {
+            get {
+                return ResourceManager.GetString("IS_The_price_of_0_1_has_change", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Total Price:
+        ///{0} 的當地語系化字串。
+        /// </summary>
+        public static string IS_Total_Price_0 {
+            get {
+                return ResourceManager.GetString("IS_Total_Price_0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Total Quantity:
+        ///{0} 的當地語系化字串。
+        /// </summary>
+        public static string IS_Total_Quantity_0 {
+            get {
+                return ResourceManager.GetString("IS_Total_Quantity_0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
-        internal static System.Drawing.Bitmap languageimage {
+        public static System.Drawing.Bitmap languageimage {
             get {
                 object obj = ResourceManager.GetObject("languageimage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -81,9 +275,18 @@ namespace WindowsFormsApp.Properties {
         }
         
         /// <summary>
+        ///   查詢類似 Location 的當地語系化字串。
+        /// </summary>
+        public static string Location {
+            get {
+                return ResourceManager.GetString("Location", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
-        internal static System.Drawing.Bitmap LoGoLeGend {
+        public static System.Drawing.Bitmap LoGoLeGend {
             get {
                 object obj = ResourceManager.GetObject("LoGoLeGend", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -91,12 +294,273 @@ namespace WindowsFormsApp.Properties {
         }
         
         /// <summary>
+        ///   查詢類似 Missging data! 的當地語系化字串。
+        /// </summary>
+        public static string Missging_data {
+            get {
+                return ResourceManager.GetString("Missging_data", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Name 的當地語系化字串。
+        /// </summary>
+        public static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 No item in cart 的當地語系化字串。
+        /// </summary>
+        public static string No_item_in_cart {
+            get {
+                return ResourceManager.GetString("No_item_in_cart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 No saleArea 的當地語系化字串。
+        /// </summary>
+        public static string No_saleArea {
+            get {
+                return ResourceManager.GetString("No_saleArea", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 No stock found 的當地語系化字串。
+        /// </summary>
+        public static string No_stock_found {
+            get {
+                return ResourceManager.GetString("No_stock_found", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 only number! 的當地語系化字串。
+        /// </summary>
+        public static string only_number {
+            get {
+                return ResourceManager.GetString("only_number", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 OrderItem 的當地語系化字串。
+        /// </summary>
+        public static string OrderItem {
+            get {
+                return ResourceManager.GetString("OrderItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Phone number cannot exceed 20 digits. 的當地語系化字串。
+        /// </summary>
+        public static string Phone_number_cannot_exceed_20_ {
+            get {
+                return ResourceManager.GetString("Phone_number_cannot_exceed_20_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Please enter a valid email address! 的當地語系化字串。
+        /// </summary>
+        public static string Please_enter_a_valid_email_add {
+            get {
+                return ResourceManager.GetString("Please_enter_a_valid_email_add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Please fill in all the required information! 的當地語系化字串。
+        /// </summary>
+        public static string Please_fill_in_all_the_require {
+            get {
+                return ResourceManager.GetString("Please_fill_in_all_the_require", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Please provide complete data 的當地語系化字串。
+        /// </summary>
+        public static string Please_provide_complete_data {
+            get {
+                return ResourceManager.GetString("Please_provide_complete_data", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Please provide Location! 的當地語系化字串。
+        /// </summary>
+        public static string Please_provide_Location {
+            get {
+                return ResourceManager.GetString("Please_provide_Location", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Price 的當地語系化字串。
+        /// </summary>
+        public static string Price {
+            get {
+                return ResourceManager.GetString("Price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
-        internal static System.Drawing.Bitmap printing_document_72649 {
+        public static System.Drawing.Bitmap printing_document_72649 {
             get {
                 object obj = ResourceManager.GetObject("printing-document_72649", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Qty 的當地語系化字串。
+        /// </summary>
+        public static string Qty {
+            get {
+                return ResourceManager.GetString("Qty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 quantity 的當地語系化字串。
+        /// </summary>
+        public static string quantity {
+            get {
+                return ResourceManager.GetString("quantity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 SpareID 的當地語系化字串。
+        /// </summary>
+        public static string SpareID {
+            get {
+                return ResourceManager.GetString("SpareID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 SpareName 的當地語系化字串。
+        /// </summary>
+        public static string SpareName {
+            get {
+                return ResourceManager.GetString("SpareName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 SpareType 的當地語系化字串。
+        /// </summary>
+        public static string SpareType {
+            get {
+                return ResourceManager.GetString("SpareType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 StaffID 的當地語系化字串。
+        /// </summary>
+        public static string StaffID {
+            get {
+                return ResourceManager.GetString("StaffID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 succeed! 的當地語系化字串。
+        /// </summary>
+        public static string succeed {
+            get {
+                return ResourceManager.GetString("succeed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Success 的當地語系化字串。
+        /// </summary>
+        public static string Success {
+            get {
+                return ResourceManager.GetString("Success", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Successful add! 的當地語系化字串。
+        /// </summary>
+        public static string Successful_add {
+            get {
+                return ResourceManager.GetString("Successful_add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Successful ADD, your added new spare ID is  的當地語系化字串。
+        /// </summary>
+        public static string Successful_ADD_your_added_new_ {
+            get {
+                return ResourceManager.GetString("Successful_ADD_your_added_new_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Successful adding! 的當地語系化字串。
+        /// </summary>
+        public static string Successful_adding {
+            get {
+                return ResourceManager.GetString("Successful_adding", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Successful reset password 的當地語系化字串。
+        /// </summary>
+        public static string Successful_reset_password {
+            get {
+                return ResourceManager.GetString("Successful_reset_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 SupplierName 的當地語系化字串。
+        /// </summary>
+        public static string SupplierName {
+            get {
+                return ResourceManager.GetString("SupplierName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 System is busy please try again later 的當地語系化字串。
+        /// </summary>
+        public static string System_is_busy_please_try_agai {
+            get {
+                return ResourceManager.GetString("System_is_busy_please_try_agai", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 The old password does not match, please re-enter! 的當地語系化字串。
+        /// </summary>
+        public static string The_old_password_does_not_matc {
+            get {
+                return ResourceManager.GetString("The_old_password_does_not_matc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 The password entered twice is different, please re-enter! 的當地語系化字串。
+        /// </summary>
+        public static string The_password_entered_twice_is_ {
+            get {
+                return ResourceManager.GetString("The_password_entered_twice_is_", resourceCulture);
             }
         }
     }

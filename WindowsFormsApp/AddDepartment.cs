@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,13 +41,13 @@ namespace WindowsFormsApp
                 }
             }
             this.comboBoxWarehouse.DataSource = WarehouseNamelist;
-            this.comboBoxWarehouse.DisplayMember = "SupplierName";
+            this.comboBoxWarehouse.DisplayMember = Resources.SupplierName;
 
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Do you want to turn to the next page?"))
+            if (Main.ShowYesNoDialog(Resources.Do_you_want_to_turn_to_the_nex))
             {
 
                 if (!string.IsNullOrEmpty(txtDepartmentName.Text) && !string.IsNullOrEmpty(txtDepartmentEmail.Text) && !string.IsNullOrEmpty(txtDepartmentID.Text))
@@ -79,7 +80,7 @@ namespace WindowsFormsApp
 
                     if (deptIDs.Contains(DepartmentID))
                     {
-                        Main.ShowMessage("Department ID already exists. Please choose a different ID.");
+                        Main.ShowMessage(Resources.Department_ID_already_exists_P);
                         txtDepartmentName.Text = String.Empty;
                         txtDepartmentEmail.Text = String.Empty;
                         txtDepartmentID.Text = String.Empty;
@@ -105,14 +106,14 @@ namespace WindowsFormsApp
                     }
 
                     Main.db.insertBySql(query);
-                    Main.ShowMessage("Successful adding!");
+                    Main.ShowMessage(Resources.Successful_adding);
                     txtDepartmentName.Text = String.Empty;
                     txtDepartmentEmail.Text = String.Empty;
                     txtDepartmentID.Text = String.Empty;
                 }
                 else
                 {
-                    Main.ShowMessage("Please fill in all the required information!");
+                    Main.ShowMessage(Resources.Please_fill_in_all_the_require);
                 }
             }
         }
@@ -139,7 +140,7 @@ namespace WindowsFormsApp
 
             if (departmentID.Length > 5)
             {
-                Main.ShowMessage("Department ID cannot exceed 5 characters. Please re-enter.");
+                Main.ShowMessage(Resources.Department_ID_cannot_exceed_5_);
                 txtDepartmentID.Text = string.Empty;
                 txtDepartmentID.SelectionStart = txtDepartmentID.Text.Length;
             }

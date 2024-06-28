@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -65,7 +66,7 @@ namespace WindowsFormsApp
                 string.IsNullOrEmpty(txtNewPassword.Text) ||
                 string.IsNullOrEmpty(txtRepartNewPassword.Text))
             {
-                Main.ShowMessage("Please fill in all the required information!");
+                Main.ShowMessage(Resources.Please_fill_in_all_the_require);
                 return;
             }
 
@@ -76,7 +77,7 @@ namespace WindowsFormsApp
 
             if (txtNewPassword.Text != txtRepartNewPassword.Text)
             {
-                Main.ShowMessage("The password entered twice is different, please re-enter!");
+                Main.ShowMessage(Resources.The_password_entered_twice_is_);
                 claer();
             }
 
@@ -87,18 +88,18 @@ namespace WindowsFormsApp
                 dbOldPassword = reader.GetString(0);
             }
 
-            if (OldPassword == dbOldPassword && Main.ShowYesNoDialog("Are you sure you want to change your password?"))
+            if (OldPassword == dbOldPassword && Main.ShowYesNoDialog(Resources.Are_you_sure_you_want_to_chang))
             {
                 String newpasswd = "0" + Main.db.ComputeSha256Hash(txtRepartNewPassword.Text);
                 String query = $"UPDATE User SET Password = '{newpasswd}' Where UserID = {Main.userID};";
                 Main.db.updateBySql(query);
-                Main.ShowMessage("Successful reset password");
+                Main.ShowMessage(Resources.Successful_reset_password);
                 (this.ParentForm as Main)?.SetLogout();
                 (this.ParentForm as Main)?.Change_pContent(typeof(frmLogin));
             }
             else
             {
-                Main.ShowMessage("The old password does not match, please re-enter!");
+                Main.ShowMessage(Resources.The_old_password_does_not_matc);
                 claer();
             }
 

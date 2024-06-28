@@ -117,4 +117,346 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tableLayoutPanelDeliveryStatusandProductDetails.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblState.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="lblState.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblState.Font" type="System.Drawing.Font, System.Drawing">
+    <value>PMingLiU, 24pt</value>
+  </data>
+  <data name="lblState.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="lblState.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 32</value>
+  </data>
+  <data name="lblState.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblState.Text" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="&gt;&gt;lblState.Name" xml:space="preserve">
+    <value>lblState</value>
+  </data>
+  <data name="&gt;&gt;lblState.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblState.Parent" xml:space="preserve">
+    <value>groupBoxStatus</value>
+  </data>
+  <data name="&gt;&gt;lblState.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBoxStatus.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="groupBoxStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 126</value>
+  </data>
+  <data name="groupBoxStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 97</value>
+  </data>
+  <data name="groupBoxStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="groupBoxStatus.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="&gt;&gt;groupBoxStatus.Name" xml:space="preserve">
+    <value>groupBoxStatus</value>
+  </data>
+  <data name="&gt;&gt;groupBoxStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxStatus.Parent" xml:space="preserve">
+    <value>tableLayoutPanelDeliveryStatusandProductDetails</value>
+  </data>
+  <data name="&gt;&gt;groupBoxStatus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dgvRelatedSpareItem.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvRelatedSpareItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 270</value>
+  </data>
+  <data name="dgvRelatedSpareItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 139</value>
+  </data>
+  <data name="dgvRelatedSpareItem.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;dgvRelatedSpareItem.Name" xml:space="preserve">
+    <value>dgvRelatedSpareItem</value>
+  </data>
+  <data name="&gt;&gt;dgvRelatedSpareItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvRelatedSpareItem.Parent" xml:space="preserve">
+    <value>tableLayoutPanelDeliveryStatusandProductDetails</value>
+  </data>
+  <data name="&gt;&gt;dgvRelatedSpareItem.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblDelivery.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDelivery.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lblDelivery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="lblDelivery.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 12</value>
+  </data>
+  <data name="lblDelivery.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblDelivery.Text" xml:space="preserve">
+    <value>Delivery</value>
+  </data>
+  <data name="&gt;&gt;lblDelivery.Name" xml:space="preserve">
+    <value>lblDelivery</value>
+  </data>
+  <data name="&gt;&gt;lblDelivery.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDelivery.Parent" xml:space="preserve">
+    <value>tableLayoutPanelDeliveryStatusandProductDetails</value>
+  </data>
+  <data name="&gt;&gt;lblDelivery.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="lblDate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>PMingLiU, 24pt</value>
+  </data>
+  <data name="lblDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 29</value>
+  </data>
+  <data name="lblDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 32</value>
+  </data>
+  <data name="lblDate.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblDate.Text" xml:space="preserve">
+    <value>1/1/1970</value>
+  </data>
+  <data name="&gt;&gt;lblDate.Name" xml:space="preserve">
+    <value>lblDate</value>
+  </data>
+  <data name="&gt;&gt;lblDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDate.Parent" xml:space="preserve">
+    <value>groupBoxDate</value>
+  </data>
+  <data name="&gt;&gt;lblDate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBoxDate.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="groupBoxDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 44</value>
+  </data>
+  <data name="groupBoxDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 76</value>
+  </data>
+  <data name="groupBoxDate.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="groupBoxDate.Text" xml:space="preserve">
+    <value>Delivery date</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDate.Name" xml:space="preserve">
+    <value>groupBoxDate</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDate.Parent" xml:space="preserve">
+    <value>tableLayoutPanelDeliveryStatusandProductDetails</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDate.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblItems.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="lblItems.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>321, 13</value>
+  </data>
+  <data name="lblItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 12</value>
+  </data>
+  <data name="lblItems.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblItems.Text" xml:space="preserve">
+    <value>0 item(s)</value>
+  </data>
+  <data name="lblItems.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblItems.Name" xml:space="preserve">
+    <value>lblItems</value>
+  </data>
+  <data name="&gt;&gt;lblItems.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblItems.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lblItems.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblRelatedspare.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="lblRelatedspare.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblRelatedspare.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 13</value>
+  </data>
+  <data name="lblRelatedspare.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 12</value>
+  </data>
+  <data name="lblRelatedspare.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblRelatedspare.Text" xml:space="preserve">
+    <value>Related Spare(s):</value>
+  </data>
+  <data name="&gt;&gt;lblRelatedspare.Name" xml:space="preserve">
+    <value>lblRelatedspare</value>
+  </data>
+  <data name="&gt;&gt;lblRelatedspare.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblRelatedspare.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lblRelatedspare.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 229</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 35</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>tableLayoutPanelDeliveryStatusandProductDetails</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tableLayoutPanelDeliveryStatusandProductDetails.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="tableLayoutPanelDeliveryStatusandProductDetails.RowCount" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tableLayoutPanelDeliveryStatusandProductDetails.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 412</value>
+  </data>
+  <data name="tableLayoutPanelDeliveryStatusandProductDetails.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelDeliveryStatusandProductDetails.Name" xml:space="preserve">
+    <value>tableLayoutPanelDeliveryStatusandProductDetails</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelDeliveryStatusandProductDetails.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelDeliveryStatusandProductDetails.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelDeliveryStatusandProductDetails.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanelDeliveryStatusandProductDetails.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxStatus" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="dgvRelatedSpareItem" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblDelivery" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxDate" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel1" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,10,Percent,20,Percent,25,Percent,10,Percent,35" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="btnInvoice.Font" type="System.Drawing.Font, System.Drawing">
+    <value>PMingLiU, 24pt</value>
+  </data>
+  <data name="btnInvoice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 430</value>
+  </data>
+  <data name="btnInvoice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 44</value>
+  </data>
+  <data name="btnInvoice.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="btnInvoice.Text" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="btnInvoice.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;btnInvoice.Name" xml:space="preserve">
+    <value>btnInvoice</value>
+  </data>
+  <data name="&gt;&gt;btnInvoice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnInvoice.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnInvoice.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 481</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>DeliveryStatusandProductDetails</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmDeliveryStatusandProductDetails</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

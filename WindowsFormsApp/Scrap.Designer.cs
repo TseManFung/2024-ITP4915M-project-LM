@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmScrap));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.comboBoxSpareID = new System.Windows.Forms.ComboBox();
             this.txtDiscrepancy = new System.Windows.Forms.TextBox();
@@ -41,10 +42,7 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.comboBoxSpareID, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtDiscrepancy, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.txtQuantity, 1, 1);
@@ -52,112 +50,64 @@
             this.tableLayoutPanel1.Controls.Add(this.lblQuantity, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblSpareID, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnRecord, 0, 3);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(60, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(437, 266);
-            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // comboBoxSpareID
             // 
-            this.comboBoxSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
+            resources.ApplyResources(this.comboBoxSpareID, "comboBoxSpareID");
             this.comboBoxSpareID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxSpareID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareID.FormattingEnabled = true;
-            this.comboBoxSpareID.Location = new System.Drawing.Point(221, 3);
             this.comboBoxSpareID.Name = "comboBoxSpareID";
-            this.comboBoxSpareID.Size = new System.Drawing.Size(213, 40);
-            this.comboBoxSpareID.TabIndex = 60;
             // 
             // txtDiscrepancy
             // 
-            this.txtDiscrepancy.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtDiscrepancy.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtDiscrepancy.Location = new System.Drawing.Point(221, 145);
-            this.txtDiscrepancy.Multiline = true;
+            resources.ApplyResources(this.txtDiscrepancy, "txtDiscrepancy");
             this.txtDiscrepancy.Name = "txtDiscrepancy";
-            this.txtDiscrepancy.Size = new System.Drawing.Size(213, 45);
-            this.txtDiscrepancy.TabIndex = 58;
             this.txtDiscrepancy.TextChanged += new System.EventHandler(this.txtDiscrepancy_TextChanged);
             // 
             // txtQuantity
             // 
-            this.txtQuantity.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtQuantity.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtQuantity.Location = new System.Drawing.Point(221, 74);
-            this.txtQuantity.Multiline = true;
+            resources.ApplyResources(this.txtQuantity, "txtQuantity");
             this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(213, 45);
-            this.txtQuantity.TabIndex = 57;
             // 
             // lblDiscrepancy
             // 
-            this.lblDiscrepancy.AutoSize = true;
+            resources.ApplyResources(this.lblDiscrepancy, "lblDiscrepancy");
             this.lblDiscrepancy.BackColor = System.Drawing.SystemColors.Control;
             this.lblDiscrepancy.CausesValidation = false;
-            this.lblDiscrepancy.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDiscrepancy.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblDiscrepancy.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblDiscrepancy.Location = new System.Drawing.Point(3, 142);
             this.lblDiscrepancy.Name = "lblDiscrepancy";
-            this.lblDiscrepancy.Size = new System.Drawing.Size(212, 71);
-            this.lblDiscrepancy.TabIndex = 55;
-            this.lblDiscrepancy.Text = "Discrepancy:";
             // 
             // lblQuantity
             // 
-            this.lblQuantity.AutoSize = true;
+            resources.ApplyResources(this.lblQuantity, "lblQuantity");
             this.lblQuantity.BackColor = System.Drawing.SystemColors.Control;
             this.lblQuantity.CausesValidation = false;
-            this.lblQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblQuantity.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblQuantity.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblQuantity.Location = new System.Drawing.Point(3, 71);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(212, 71);
-            this.lblQuantity.TabIndex = 53;
-            this.lblQuantity.Text = "Quantity:";
             // 
             // lblSpareID
             // 
-            this.lblSpareID.AutoSize = true;
+            resources.ApplyResources(this.lblSpareID, "lblSpareID");
             this.lblSpareID.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareID.CausesValidation = false;
-            this.lblSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSpareID.Location = new System.Drawing.Point(3, 0);
             this.lblSpareID.Name = "lblSpareID";
-            this.lblSpareID.Size = new System.Drawing.Size(212, 71);
-            this.lblSpareID.TabIndex = 51;
-            this.lblSpareID.Text = "Spare ID:";
             // 
             // btnRecord
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.btnRecord, 2);
-            this.btnRecord.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRecord.Font = new System.Drawing.Font("新細明體", 24F);
-            this.btnRecord.Location = new System.Drawing.Point(3, 216);
+            resources.ApplyResources(this.btnRecord, "btnRecord");
             this.btnRecord.Name = "btnRecord";
-            this.btnRecord.Size = new System.Drawing.Size(431, 47);
-            this.btnRecord.TabIndex = 59;
-            this.btnRecord.Text = "Record";
             this.btnRecord.UseVisualStyleBackColor = true;
             this.btnRecord.Click += new System.EventHandler(this.btnRecord_Click);
             // 
             // frmScrap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(540, 293);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmScrap";
-            this.Text = "Scrap";
             this.Load += new System.EventHandler(this.frmScrap_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Google_map));
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.map = new GMap.NET.WindowsForms.GMapControl();
             this.lbllocation = new System.Windows.Forms.Label();
@@ -43,24 +44,19 @@
             // 
             // splitter1
             // 
-            this.splitter1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.splitter1, "splitter1");
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(414, 450);
-            this.splitter1.TabIndex = 0;
             this.splitter1.TabStop = false;
             // 
             // map
             // 
-            this.map.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.map, "map");
             this.map.Bearing = 0F;
             this.map.CanDragMap = true;
             this.map.EmptyTileColor = System.Drawing.Color.Navy;
             this.map.GrayScaleMode = false;
             this.map.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.map.LevelsKeepInMemory = 5;
-            this.map.Location = new System.Drawing.Point(0, 0);
             this.map.MarkersEnabled = true;
             this.map.MaxZoom = 2;
             this.map.MinZoom = 2;
@@ -74,8 +70,6 @@
             this.map.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.map.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.map.ShowTileGridLines = false;
-            this.map.Size = new System.Drawing.Size(414, 450);
-            this.map.TabIndex = 1;
             this.map.Zoom = 0D;
             this.map.OnMapClick += new GMap.NET.WindowsForms.MapClick(this.map_OnMapClick);
             this.map.Load += new System.EventHandler(this.map_Load);
@@ -83,96 +77,59 @@
             // 
             // lbllocation
             // 
-            this.lbllocation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbllocation.AutoSize = true;
-            this.lbllocation.Location = new System.Drawing.Point(454, 138);
+            resources.ApplyResources(this.lbllocation, "lbllocation");
             this.lbllocation.Name = "lbllocation";
-            this.lbllocation.Size = new System.Drawing.Size(46, 12);
-            this.lbllocation.TabIndex = 2;
-            this.lbllocation.Text = "Location";
             // 
             // lbllatitude
             // 
-            this.lbllatitude.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbllatitude.AutoSize = true;
-            this.lbllatitude.Location = new System.Drawing.Point(453, 205);
+            resources.ApplyResources(this.lbllatitude, "lbllatitude");
             this.lbllatitude.Name = "lbllatitude";
-            this.lbllatitude.Size = new System.Drawing.Size(43, 12);
-            this.lbllatitude.TabIndex = 3;
-            this.lbllatitude.Text = "Latitude";
             // 
             // txtlocation
             // 
-            this.txtlocation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtlocation.Location = new System.Drawing.Point(529, 128);
+            resources.ApplyResources(this.txtlocation, "txtlocation");
             this.txtlocation.Name = "txtlocation";
-            this.txtlocation.Size = new System.Drawing.Size(113, 22);
-            this.txtlocation.TabIndex = 4;
             // 
             // txtlatitude
             // 
-            this.txtlatitude.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtlatitude.Location = new System.Drawing.Point(529, 197);
+            resources.ApplyResources(this.txtlatitude, "txtlatitude");
             this.txtlatitude.Name = "txtlatitude";
-            this.txtlatitude.Size = new System.Drawing.Size(113, 22);
-            this.txtlatitude.TabIndex = 5;
             this.txtlatitude.TextChanged += new System.EventHandler(this.txtlatitude_TextChanged);
             // 
             // txtlongitude
             // 
-            this.txtlongitude.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtlongitude.Location = new System.Drawing.Point(529, 234);
+            resources.ApplyResources(this.txtlongitude, "txtlongitude");
             this.txtlongitude.Name = "txtlongitude";
-            this.txtlongitude.Size = new System.Drawing.Size(113, 22);
-            this.txtlongitude.TabIndex = 7;
             this.txtlongitude.TextChanged += new System.EventHandler(this.txtlongitude_TextChanged);
             // 
             // lbllongitude
             // 
-            this.lbllongitude.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbllongitude.AutoSize = true;
-            this.lbllongitude.Location = new System.Drawing.Point(454, 242);
+            resources.ApplyResources(this.lbllongitude, "lbllongitude");
             this.lbllongitude.Name = "lbllongitude";
-            this.lbllongitude.Size = new System.Drawing.Size(53, 12);
-            this.lbllongitude.TabIndex = 6;
-            this.lbllongitude.Text = "Longitude";
             // 
             // lbltitle
             // 
-            this.lbltitle.AutoSize = true;
-            this.lbltitle.Location = new System.Drawing.Point(527, 75);
+            resources.ApplyResources(this.lbltitle, "lbltitle");
             this.lbltitle.Name = "lbltitle";
-            this.lbltitle.Size = new System.Drawing.Size(109, 12);
-            this.lbltitle.TabIndex = 8;
-            this.lbltitle.Text = "Please select a location";
             // 
             // btnlocate
             // 
-            this.btnlocate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnlocate.Location = new System.Drawing.Point(529, 307);
+            resources.ApplyResources(this.btnlocate, "btnlocate");
             this.btnlocate.Name = "btnlocate";
-            this.btnlocate.Size = new System.Drawing.Size(113, 24);
-            this.btnlocate.TabIndex = 9;
-            this.btnlocate.Text = "locate";
             this.btnlocate.UseVisualStyleBackColor = true;
             this.btnlocate.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // btncomplete
             // 
-            this.btncomplete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btncomplete.Location = new System.Drawing.Point(529, 355);
+            resources.ApplyResources(this.btncomplete, "btncomplete");
             this.btncomplete.Name = "btncomplete";
-            this.btncomplete.Size = new System.Drawing.Size(113, 24);
-            this.btncomplete.TabIndex = 10;
-            this.btncomplete.Text = "Complete";
             this.btncomplete.UseVisualStyleBackColor = true;
             this.btncomplete.Click += new System.EventHandler(this.btncomplete_Click);
             // 
             // Google_map
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btncomplete);
             this.Controls.Add(this.btnlocate);
             this.Controls.Add(this.lbltitle);
@@ -184,10 +141,7 @@
             this.Controls.Add(this.lbllocation);
             this.Controls.Add(this.map);
             this.Controls.Add(this.splitter1);
-            this.MaximumSize = new System.Drawing.Size(816, 489);
-            this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Google_map";
-            this.Text = "Google_map";
             this.Load += new System.EventHandler(this.Google_map_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

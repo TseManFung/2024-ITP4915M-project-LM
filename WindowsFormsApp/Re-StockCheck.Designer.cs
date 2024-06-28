@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReStockCheck));
             this.dataGridViewItemHaveArrivedInROL = new System.Windows.Forms.DataGridView();
             this.lblFollowingROL = new System.Windows.Forms.Label();
             this.btnReceived = new System.Windows.Forms.Button();
@@ -44,66 +45,40 @@
             this.dataGridViewItemHaveArrivedInROL.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dataGridViewItemHaveArrivedInROL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel1.SetColumnSpan(this.dataGridViewItemHaveArrivedInROL, 2);
-            this.dataGridViewItemHaveArrivedInROL.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewItemHaveArrivedInROL.Location = new System.Drawing.Point(3, 32);
+            resources.ApplyResources(this.dataGridViewItemHaveArrivedInROL, "dataGridViewItemHaveArrivedInROL");
             this.dataGridViewItemHaveArrivedInROL.Name = "dataGridViewItemHaveArrivedInROL";
             this.dataGridViewItemHaveArrivedInROL.RowTemplate.Height = 24;
-            this.dataGridViewItemHaveArrivedInROL.Size = new System.Drawing.Size(1235, 490);
-            this.dataGridViewItemHaveArrivedInROL.TabIndex = 74;
             this.dataGridViewItemHaveArrivedInROL.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewItemHaveArrivedInROL_CellClick);
             this.dataGridViewItemHaveArrivedInROL.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewItemHaveArrivedInROL_CellContentClick);
             // 
             // lblFollowingROL
             // 
-            this.lblFollowingROL.AutoSize = true;
+            resources.ApplyResources(this.lblFollowingROL, "lblFollowingROL");
             this.tableLayoutPanel1.SetColumnSpan(this.lblFollowingROL, 2);
-            this.lblFollowingROL.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblFollowingROL.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblFollowingROL.Location = new System.Drawing.Point(3, 0);
             this.lblFollowingROL.Name = "lblFollowingROL";
-            this.lblFollowingROL.Size = new System.Drawing.Size(1235, 29);
-            this.lblFollowingROL.TabIndex = 75;
-            this.lblFollowingROL.Text = "The following items should be received:";
             this.lblFollowingROL.Click += new System.EventHandler(this.lblFollowingROL_Click);
             // 
             // btnReceived
             // 
-            this.btnReceived.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnReceived.Font = new System.Drawing.Font("新細明體", 24F);
-            this.btnReceived.Location = new System.Drawing.Point(871, 528);
+            resources.ApplyResources(this.btnReceived, "btnReceived");
             this.btnReceived.Name = "btnReceived";
-            this.btnReceived.Size = new System.Drawing.Size(367, 53);
-            this.btnReceived.TabIndex = 76;
-            this.btnReceived.Text = "Received";
             this.btnReceived.UseVisualStyleBackColor = true;
             this.btnReceived.Click += new System.EventHandler(this.btnReceived_Click);
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.lblFollowingROL, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnReceived, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.dataGridViewItemHaveArrivedInROL, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1241, 584);
-            this.tableLayoutPanel1.TabIndex = 77;
             // 
             // frmReStockCheck
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1241, 584);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmReStockCheck";
-            this.Text = "Re-stock Check";
             this.Load += new System.EventHandler(this.frmReStockCheck_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewItemHaveArrivedInROL)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);

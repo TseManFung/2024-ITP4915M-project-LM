@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddSaleArea));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.txtRemark = new System.Windows.Forms.TextBox();
@@ -44,144 +45,79 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel11, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnClear, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnSave, 1, 3);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
-            this.tableLayoutPanel1.TabIndex = 80;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // tableLayoutPanel11
             // 
-            this.tableLayoutPanel11.ColumnCount = 1;
+            resources.ApplyResources(this.tableLayoutPanel11, "tableLayoutPanel11");
             this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel11, 5);
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel11.Controls.Add(this.txtRemark, 0, 1);
             this.tableLayoutPanel11.Controls.Add(this.lblRemark, 0, 0);
-            this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 183);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
-            this.tableLayoutPanel11.RowCount = 2;
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(794, 101);
-            this.tableLayoutPanel11.TabIndex = 91;
             // 
             // txtRemark
             // 
-            this.txtRemark.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtRemark.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtRemark.Location = new System.Drawing.Point(3, 53);
-            this.txtRemark.Multiline = true;
+            resources.ApplyResources(this.txtRemark, "txtRemark");
             this.txtRemark.Name = "txtRemark";
-            this.txtRemark.Size = new System.Drawing.Size(788, 45);
-            this.txtRemark.TabIndex = 80;
             // 
             // lblRemark
             // 
-            this.lblRemark.AutoSize = true;
+            resources.ApplyResources(this.lblRemark, "lblRemark");
             this.lblRemark.BackColor = System.Drawing.SystemColors.Control;
             this.lblRemark.CausesValidation = false;
-            this.lblRemark.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblRemark.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblRemark.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblRemark.Location = new System.Drawing.Point(3, 0);
             this.lblRemark.Name = "lblRemark";
-            this.lblRemark.Size = new System.Drawing.Size(788, 50);
-            this.lblRemark.TabIndex = 81;
-            this.lblRemark.Text = "Remark:";
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.ColumnCount = 1;
+            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
             this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel3, 5);
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Controls.Add(this.txtLocation, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.lblSpareLocation, 0, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(794, 101);
-            this.tableLayoutPanel3.TabIndex = 83;
             // 
             // txtLocation
             // 
-            this.txtLocation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtLocation.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtLocation.Location = new System.Drawing.Point(3, 53);
-            this.txtLocation.Multiline = true;
+            resources.ApplyResources(this.txtLocation, "txtLocation");
             this.txtLocation.Name = "txtLocation";
-            this.txtLocation.Size = new System.Drawing.Size(788, 45);
-            this.txtLocation.TabIndex = 81;
             // 
             // lblSpareLocation
             // 
-            this.lblSpareLocation.AutoSize = true;
+            resources.ApplyResources(this.lblSpareLocation, "lblSpareLocation");
             this.lblSpareLocation.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareLocation.CausesValidation = false;
-            this.lblSpareLocation.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareLocation.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareLocation.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSpareLocation.Location = new System.Drawing.Point(3, 0);
             this.lblSpareLocation.Name = "lblSpareLocation";
-            this.lblSpareLocation.Size = new System.Drawing.Size(788, 50);
-            this.lblSpareLocation.TabIndex = 48;
-            this.lblSpareLocation.Text = "Location:";
             this.lblSpareLocation.Click += new System.EventHandler(this.lblSpareLocation_Click);
             // 
             // btnClear
             // 
-            this.btnClear.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnClear.Font = new System.Drawing.Font("新細明體", 32F);
+            resources.ApplyResources(this.btnClear, "btnClear");
             this.btnClear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnClear.Location = new System.Drawing.Point(483, 385);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(154, 62);
-            this.btnClear.TabIndex = 71;
-            this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSave
             // 
-            this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSave.Font = new System.Drawing.Font("新細明體", 32F);
+            resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSave.Location = new System.Drawing.Point(163, 385);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(154, 62);
-            this.btnSave.TabIndex = 51;
-            this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // frmAddSaleArea
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmAddSaleArea";
-            this.Text = "Add SaleArea";
             this.Load += new System.EventHandler(this.frmAddSaleArea_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel11.ResumeLayout(false);

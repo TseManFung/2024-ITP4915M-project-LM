@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReStock));
             this.dgvItemFollowingROL = new System.Windows.Forms.DataGridView();
             this.lblItemFollowingROL = new System.Windows.Forms.Label();
             this.lblReStock = new System.Windows.Forms.Label();
@@ -50,40 +51,25 @@
             this.dgvItemFollowingROL.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dgvItemFollowingROL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel1.SetColumnSpan(this.dgvItemFollowingROL, 5);
-            this.dgvItemFollowingROL.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvItemFollowingROL.Location = new System.Drawing.Point(3, 31);
+            resources.ApplyResources(this.dgvItemFollowingROL, "dgvItemFollowingROL");
             this.dgvItemFollowingROL.Name = "dgvItemFollowingROL";
             this.dgvItemFollowingROL.RowTemplate.Height = 24;
-            this.dgvItemFollowingROL.Size = new System.Drawing.Size(1094, 218);
-            this.dgvItemFollowingROL.TabIndex = 72;
             this.dgvItemFollowingROL.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItemFollowingROL_CellContentClick);
             this.dgvItemFollowingROL.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvItemFollowingROL_CellPainting);
             this.dgvItemFollowingROL.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvItemFollowingROL_DataBindingComplete);
             // 
             // lblItemFollowingROL
             // 
-            this.lblItemFollowingROL.AutoSize = true;
+            resources.ApplyResources(this.lblItemFollowingROL, "lblItemFollowingROL");
             this.tableLayoutPanel1.SetColumnSpan(this.lblItemFollowingROL, 5);
-            this.lblItemFollowingROL.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblItemFollowingROL.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblItemFollowingROL.Location = new System.Drawing.Point(3, 0);
             this.lblItemFollowingROL.Name = "lblItemFollowingROL";
-            this.lblItemFollowingROL.Size = new System.Drawing.Size(1094, 28);
-            this.lblItemFollowingROL.TabIndex = 73;
-            this.lblItemFollowingROL.Text = "The following items have arrived in ROL:";
             this.lblItemFollowingROL.Click += new System.EventHandler(this.lblFollowingROL_Click);
             // 
             // lblReStock
             // 
-            this.lblReStock.AutoSize = true;
+            resources.ApplyResources(this.lblReStock, "lblReStock");
             this.tableLayoutPanel1.SetColumnSpan(this.lblReStock, 5);
-            this.lblReStock.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblReStock.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblReStock.Location = new System.Drawing.Point(3, 308);
             this.lblReStock.Name = "lblReStock";
-            this.lblReStock.Size = new System.Drawing.Size(1094, 28);
-            this.lblReStock.TabIndex = 74;
-            this.lblReStock.Text = "Restock:";
             // 
             // dgvRestock
             // 
@@ -93,32 +79,20 @@
             this.dgvRestock.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dgvRestock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel1.SetColumnSpan(this.dgvRestock, 5);
-            this.dgvRestock.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvRestock.Location = new System.Drawing.Point(3, 339);
+            resources.ApplyResources(this.dgvRestock, "dgvRestock");
             this.dgvRestock.Name = "dgvRestock";
             this.dgvRestock.RowTemplate.Height = 24;
-            this.dgvRestock.Size = new System.Drawing.Size(1094, 162);
-            this.dgvRestock.TabIndex = 75;
             this.dgvRestock.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRestock_CellContentClick);
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Font = new System.Drawing.Font("新細明體", 24F);
-            this.btnConfirm.Location = new System.Drawing.Point(1379, 864);
+            resources.ApplyResources(this.btnConfirm, "btnConfirm");
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(287, 79);
-            this.btnConfirm.TabIndex = 76;
-            this.btnConfirm.Text = "Confirm";
             this.btnConfirm.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.btnMovedown, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.lblItemFollowingROL, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnMoveUp, 1, 2);
@@ -126,64 +100,36 @@
             this.tableLayoutPanel1.Controls.Add(this.dgvRestock, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.lblReStock, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnReStockConfirm, 4, 5);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 6;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1100, 561);
-            this.tableLayoutPanel1.TabIndex = 77;
             // 
             // btnMovedown
             // 
-            this.btnMovedown.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnMovedown.Font = new System.Drawing.Font("新細明體", 24F);
-            this.btnMovedown.Location = new System.Drawing.Point(718, 255);
+            resources.ApplyResources(this.btnMovedown, "btnMovedown");
             this.btnMovedown.Name = "btnMovedown";
-            this.btnMovedown.Size = new System.Drawing.Size(49, 50);
-            this.btnMovedown.TabIndex = 79;
-            this.btnMovedown.Text = "↓";
             this.btnMovedown.UseVisualStyleBackColor = true;
             this.btnMovedown.Click += new System.EventHandler(this.btnMovedown_Click);
             // 
             // btnMoveUp
             // 
-            this.btnMoveUp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnMoveUp.Font = new System.Drawing.Font("新細明體", 24F);
-            this.btnMoveUp.Location = new System.Drawing.Point(333, 255);
+            resources.ApplyResources(this.btnMoveUp, "btnMoveUp");
             this.btnMoveUp.Name = "btnMoveUp";
-            this.btnMoveUp.Size = new System.Drawing.Size(49, 50);
-            this.btnMoveUp.TabIndex = 78;
-            this.btnMoveUp.Text = "↑";
             this.btnMoveUp.UseVisualStyleBackColor = true;
             this.btnMoveUp.Click += new System.EventHandler(this.btnMoveUp_Click);
             // 
             // btnReStockConfirm
             // 
-            this.btnReStockConfirm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnReStockConfirm.Font = new System.Drawing.Font("新細明體", 24F);
-            this.btnReStockConfirm.Location = new System.Drawing.Point(773, 507);
+            resources.ApplyResources(this.btnReStockConfirm, "btnReStockConfirm");
             this.btnReStockConfirm.Name = "btnReStockConfirm";
-            this.btnReStockConfirm.Size = new System.Drawing.Size(324, 51);
-            this.btnReStockConfirm.TabIndex = 80;
-            this.btnReStockConfirm.Text = "Restocking to CSL";
             this.btnReStockConfirm.UseVisualStyleBackColor = true;
             this.btnReStockConfirm.Click += new System.EventHandler(this.btnReStockConfirm_Click);
             // 
             // frmReStock
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1100, 561);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.btnConfirm);
             this.Name = "frmReStock";
-            this.Text = "Re-stock";
             this.Load += new System.EventHandler(this.frmReStock_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvItemFollowingROL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRestock)).EndInit();

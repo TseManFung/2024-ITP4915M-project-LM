@@ -117,4 +117,273 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnSubmit.Text" xml:space="preserve">
+    <value>submit</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>forget password</value>
+  </data>
+  <data name="lblDelearName.Text" xml:space="preserve">
+    <value>Dealer name:</value>
+  </data>
+  <data name="lblYouAreDealerOrLMStaff.Text" xml:space="preserve">
+    <value>You are dealer or LM staff:</value>
+  </data>
+  <data name="lblYourLoginName.Text" xml:space="preserve">
+    <value>Your login name:</value>
+  </data>
+  <data name="radioButtonYouAreDealer.Text" xml:space="preserve">
+    <value>dealer</value>
+  </data>
+  <data name="radioButtonYouAreLMStaff.Text" xml:space="preserve">
+    <value>LM staff</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblYourLoginName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblYourLoginName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>PMingLiU, 24pt</value>
+  </data>
+  <data name="lblYourLoginName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 35</value>
+  </data>
+  <data name="lblYourLoginName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 32</value>
+  </data>
+  <data name="lblYourLoginName.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblYourLoginName.Name" xml:space="preserve">
+    <value>lblYourLoginName</value>
+  </data>
+  <data name="&gt;&gt;lblYourLoginName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblYourLoginName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblYourLoginName.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lblYouAreDealerOrLMStaff.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblYouAreDealerOrLMStaff.Font" type="System.Drawing.Font, System.Drawing">
+    <value>PMingLiU, 24pt</value>
+  </data>
+  <data name="lblYouAreDealerOrLMStaff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 114</value>
+  </data>
+  <data name="lblYouAreDealerOrLMStaff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 32</value>
+  </data>
+  <data name="lblYouAreDealerOrLMStaff.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblYouAreDealerOrLMStaff.Name" xml:space="preserve">
+    <value>lblYouAreDealerOrLMStaff</value>
+  </data>
+  <data name="&gt;&gt;lblYouAreDealerOrLMStaff.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblYouAreDealerOrLMStaff.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblYouAreDealerOrLMStaff.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="radioButtonYouAreDealer.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButtonYouAreDealer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>PMingLiU, 24pt</value>
+  </data>
+  <data name="radioButtonYouAreDealer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>397, 114</value>
+  </data>
+  <data name="radioButtonYouAreDealer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 36</value>
+  </data>
+  <data name="radioButtonYouAreDealer.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;radioButtonYouAreDealer.Name" xml:space="preserve">
+    <value>radioButtonYouAreDealer</value>
+  </data>
+  <data name="&gt;&gt;radioButtonYouAreDealer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonYouAreDealer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;radioButtonYouAreDealer.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="radioButtonYouAreLMStaff.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButtonYouAreLMStaff.Font" type="System.Drawing.Font, System.Drawing">
+    <value>PMingLiU, 24pt</value>
+  </data>
+  <data name="radioButtonYouAreLMStaff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>518, 114</value>
+  </data>
+  <data name="radioButtonYouAreLMStaff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 36</value>
+  </data>
+  <data name="radioButtonYouAreLMStaff.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;radioButtonYouAreLMStaff.Name" xml:space="preserve">
+    <value>radioButtonYouAreLMStaff</value>
+  </data>
+  <data name="&gt;&gt;radioButtonYouAreLMStaff.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonYouAreLMStaff.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;radioButtonYouAreLMStaff.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtYourLoginName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>PMingLiU, 24pt</value>
+  </data>
+  <data name="txtYourLoginName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>407, 21</value>
+  </data>
+  <data name="txtYourLoginName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 46</value>
+  </data>
+  <data name="txtYourLoginName.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtYourLoginName.Name" xml:space="preserve">
+    <value>txtYourLoginName</value>
+  </data>
+  <data name="&gt;&gt;txtYourLoginName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtYourLoginName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtYourLoginName.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblDelearName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>PMingLiU, 24pt</value>
+  </data>
+  <data name="lblDelearName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 187</value>
+  </data>
+  <data name="lblDelearName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>339, 32</value>
+  </data>
+  <data name="lblDelearName.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblDelearName.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;lblDelearName.Name" xml:space="preserve">
+    <value>lblDelearName</value>
+  </data>
+  <data name="&gt;&gt;lblDelearName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDelearName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblDelearName.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtDelearNmae.Font" type="System.Drawing.Font, System.Drawing">
+    <value>PMingLiU, 24pt</value>
+  </data>
+  <data name="txtDelearNmae.Location" type="System.Drawing.Point, System.Drawing">
+    <value>407, 187</value>
+  </data>
+  <data name="txtDelearNmae.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 46</value>
+  </data>
+  <data name="txtDelearNmae.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtDelearNmae.Name" xml:space="preserve">
+    <value>txtDelearNmae</value>
+  </data>
+  <data name="&gt;&gt;txtDelearNmae.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtDelearNmae.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtDelearNmae.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnSubmit.Font" type="System.Drawing.Font, System.Drawing">
+    <value>PMingLiU, 24pt</value>
+  </data>
+  <data name="btnSubmit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 289</value>
+  </data>
+  <data name="btnSubmit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 49</value>
+  </data>
+  <data name="btnSubmit.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btnSubmit.Name" xml:space="preserve">
+    <value>btnSubmit</value>
+  </data>
+  <data name="&gt;&gt;btnSubmit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSubmit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnSubmit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtSubmitMessage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>PMingLiU, 24pt</value>
+  </data>
+  <data name="txtSubmitMessage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 369</value>
+  </data>
+  <data name="txtSubmitMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 46</value>
+  </data>
+  <data name="txtSubmitMessage.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txtSubmitMessage.Name" xml:space="preserve">
+    <value>txtSubmitMessage</value>
+  </data>
+  <data name="&gt;&gt;txtSubmitMessage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtSubmitMessage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtSubmitMessage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmForgetPW</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

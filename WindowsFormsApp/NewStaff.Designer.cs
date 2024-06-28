@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNewStaff));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.lblGender = new System.Windows.Forms.Label();
@@ -76,470 +77,248 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel8, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel7, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 229);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.05882F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.05882F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882353F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1865, 335);
-            this.tableLayoutPanel1.TabIndex = 80;
             // 
             // tableLayoutPanel8
             // 
-            this.tableLayoutPanel8.ColumnCount = 1;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            resources.ApplyResources(this.tableLayoutPanel8, "tableLayoutPanel8");
             this.tableLayoutPanel8.Controls.Add(this.lblGender, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.tableLayoutPanel13, 0, 1);
-            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 160);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 2;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(367, 101);
-            this.tableLayoutPanel8.TabIndex = 88;
             // 
             // lblGender
             // 
-            this.lblGender.AutoSize = true;
+            resources.ApplyResources(this.lblGender, "lblGender");
             this.lblGender.BackColor = System.Drawing.SystemColors.Control;
             this.lblGender.CausesValidation = false;
-            this.lblGender.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblGender.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblGender.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblGender.Location = new System.Drawing.Point(3, 0);
             this.lblGender.Name = "lblGender";
-            this.lblGender.Size = new System.Drawing.Size(361, 50);
-            this.lblGender.TabIndex = 69;
-            this.lblGender.Text = "Gender:";
             // 
             // tableLayoutPanel13
             // 
-            this.tableLayoutPanel13.ColumnCount = 2;
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            resources.ApplyResources(this.tableLayoutPanel13, "tableLayoutPanel13");
             this.tableLayoutPanel13.Controls.Add(this.rbMale, 0, 0);
             this.tableLayoutPanel13.Controls.Add(this.rbFemale, 1, 0);
-            this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(3, 53);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
-            this.tableLayoutPanel13.RowCount = 1;
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(361, 45);
-            this.tableLayoutPanel13.TabIndex = 70;
             // 
             // rbMale
             // 
-            this.rbMale.AutoSize = true;
-            this.rbMale.Font = new System.Drawing.Font("新細明體", 20.25F);
-            this.rbMale.Location = new System.Drawing.Point(3, 3);
+            resources.ApplyResources(this.rbMale, "rbMale");
             this.rbMale.Name = "rbMale";
-            this.rbMale.Size = new System.Drawing.Size(82, 31);
-            this.rbMale.TabIndex = 0;
             this.rbMale.TabStop = true;
-            this.rbMale.Text = "Male";
             this.rbMale.UseVisualStyleBackColor = true;
             this.rbMale.CheckedChanged += new System.EventHandler(this.rbMale_CheckedChanged);
             // 
             // rbFemale
             // 
-            this.rbFemale.AutoSize = true;
-            this.rbFemale.Font = new System.Drawing.Font("新細明體", 20.25F);
-            this.rbFemale.Location = new System.Drawing.Point(183, 3);
+            resources.ApplyResources(this.rbFemale, "rbFemale");
             this.rbFemale.Name = "rbFemale";
-            this.rbFemale.Size = new System.Drawing.Size(104, 31);
-            this.rbFemale.TabIndex = 1;
             this.rbFemale.TabStop = true;
-            this.rbFemale.Text = "Female";
             this.rbFemale.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel7
             // 
-            this.tableLayoutPanel7.ColumnCount = 1;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            resources.ApplyResources(this.tableLayoutPanel7, "tableLayoutPanel7");
             this.tableLayoutPanel7.Controls.Add(this.lblSupplierID, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.txtPhoneNum, 0, 1);
-            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(1495, 3);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 2;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(367, 101);
-            this.tableLayoutPanel7.TabIndex = 87;
             // 
             // lblSupplierID
             // 
-            this.lblSupplierID.AutoSize = true;
+            resources.ApplyResources(this.lblSupplierID, "lblSupplierID");
             this.lblSupplierID.BackColor = System.Drawing.SystemColors.Control;
             this.lblSupplierID.CausesValidation = false;
-            this.lblSupplierID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSupplierID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSupplierID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSupplierID.Location = new System.Drawing.Point(3, 0);
             this.lblSupplierID.Name = "lblSupplierID";
-            this.lblSupplierID.Size = new System.Drawing.Size(361, 50);
-            this.lblSupplierID.TabIndex = 60;
-            this.lblSupplierID.Text = "Phone Number:";
             // 
             // txtPhoneNum
             // 
-            this.txtPhoneNum.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtPhoneNum.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtPhoneNum.Location = new System.Drawing.Point(3, 53);
-            this.txtPhoneNum.Multiline = true;
+            resources.ApplyResources(this.txtPhoneNum, "txtPhoneNum");
             this.txtPhoneNum.Name = "txtPhoneNum";
-            this.txtPhoneNum.Size = new System.Drawing.Size(361, 45);
-            this.txtPhoneNum.TabIndex = 59;
             this.txtPhoneNum.TextChanged += new System.EventHandler(this.txtSupplierID_TextChanged);
             // 
             // tableLayoutPanel6
             // 
-            this.tableLayoutPanel6.ColumnCount = 1;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            resources.ApplyResources(this.tableLayoutPanel6, "tableLayoutPanel6");
             this.tableLayoutPanel6.Controls.Add(this.comboBoxDepartment, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.lblDepartment, 0, 0);
-            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(1122, 3);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 2;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(367, 101);
-            this.tableLayoutPanel6.TabIndex = 86;
             // 
             // comboBoxDepartment
             // 
-            this.comboBoxDepartment.Dock = System.Windows.Forms.DockStyle.Fill;
+            resources.ApplyResources(this.comboBoxDepartment, "comboBoxDepartment");
             this.comboBoxDepartment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxDepartment.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxDepartment.FormattingEnabled = true;
-            this.comboBoxDepartment.Location = new System.Drawing.Point(3, 53);
             this.comboBoxDepartment.Name = "comboBoxDepartment";
-            this.comboBoxDepartment.Size = new System.Drawing.Size(361, 35);
-            this.comboBoxDepartment.TabIndex = 75;
             this.comboBoxDepartment.SelectedIndexChanged += new System.EventHandler(this.comboBoxDepartment_SelectedIndexChanged);
             // 
             // lblDepartment
             // 
-            this.lblDepartment.AutoSize = true;
+            resources.ApplyResources(this.lblDepartment, "lblDepartment");
             this.lblDepartment.BackColor = System.Drawing.SystemColors.Control;
             this.lblDepartment.CausesValidation = false;
-            this.lblDepartment.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDepartment.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblDepartment.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblDepartment.Location = new System.Drawing.Point(3, 0);
             this.lblDepartment.Name = "lblDepartment";
-            this.lblDepartment.Size = new System.Drawing.Size(361, 50);
-            this.lblDepartment.TabIndex = 58;
-            this.lblDepartment.Text = "Department:";
             // 
             // tableLayoutPanel5
             // 
-            this.tableLayoutPanel5.ColumnCount = 1;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            resources.ApplyResources(this.tableLayoutPanel5, "tableLayoutPanel5");
             this.tableLayoutPanel5.Controls.Add(this.comboBoxSaleArea, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.lblSaleArea, 0, 0);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(749, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 2;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(367, 101);
-            this.tableLayoutPanel5.TabIndex = 85;
             // 
             // comboBoxSaleArea
             // 
-            this.comboBoxSaleArea.Dock = System.Windows.Forms.DockStyle.Fill;
+            resources.ApplyResources(this.comboBoxSaleArea, "comboBoxSaleArea");
             this.comboBoxSaleArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxSaleArea.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSaleArea.FormattingEnabled = true;
-            this.comboBoxSaleArea.Location = new System.Drawing.Point(3, 53);
             this.comboBoxSaleArea.Name = "comboBoxSaleArea";
-            this.comboBoxSaleArea.Size = new System.Drawing.Size(361, 35);
-            this.comboBoxSaleArea.TabIndex = 74;
             this.comboBoxSaleArea.SelectedIndexChanged += new System.EventHandler(this.comboBoxSaleArea_SelectedIndexChanged);
             // 
             // lblSaleArea
             // 
-            this.lblSaleArea.AutoSize = true;
+            resources.ApplyResources(this.lblSaleArea, "lblSaleArea");
             this.lblSaleArea.BackColor = System.Drawing.SystemColors.Control;
             this.lblSaleArea.CausesValidation = false;
-            this.lblSaleArea.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSaleArea.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSaleArea.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSaleArea.Location = new System.Drawing.Point(3, 0);
             this.lblSaleArea.Name = "lblSaleArea";
-            this.lblSaleArea.Size = new System.Drawing.Size(361, 50);
-            this.lblSaleArea.TabIndex = 73;
-            this.lblSaleArea.Text = "SaleArea:";
             // 
             // tableLayoutPanel4
             // 
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
             this.tableLayoutPanel4.Controls.Add(this.txtStaffName, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.lblSpareName, 0, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(376, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(367, 101);
-            this.tableLayoutPanel4.TabIndex = 84;
             // 
             // txtStaffName
             // 
-            this.txtStaffName.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtStaffName.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtStaffName.Location = new System.Drawing.Point(3, 53);
-            this.txtStaffName.Multiline = true;
+            resources.ApplyResources(this.txtStaffName, "txtStaffName");
             this.txtStaffName.Name = "txtStaffName";
-            this.txtStaffName.Size = new System.Drawing.Size(361, 45);
-            this.txtStaffName.TabIndex = 47;
             this.txtStaffName.TextChanged += new System.EventHandler(this.txtSpareName_TextChanged);
             // 
             // lblSpareName
             // 
-            this.lblSpareName.AutoSize = true;
+            resources.ApplyResources(this.lblSpareName, "lblSpareName");
             this.lblSpareName.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareName.CausesValidation = false;
-            this.lblSpareName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareName.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSpareName.Location = new System.Drawing.Point(3, 0);
             this.lblSpareName.Name = "lblSpareName";
-            this.lblSpareName.Size = new System.Drawing.Size(361, 50);
-            this.lblSpareName.TabIndex = 50;
-            this.lblSpareName.Text = "Staff Name:";
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
             this.tableLayoutPanel3.Controls.Add(this.lblPosition, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.comboBoxPosition, 0, 1);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(367, 101);
-            this.tableLayoutPanel3.TabIndex = 83;
             // 
             // lblPosition
             // 
-            this.lblPosition.AutoSize = true;
+            resources.ApplyResources(this.lblPosition, "lblPosition");
             this.lblPosition.BackColor = System.Drawing.SystemColors.Control;
             this.lblPosition.CausesValidation = false;
-            this.lblPosition.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblPosition.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblPosition.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPosition.Location = new System.Drawing.Point(3, 0);
             this.lblPosition.Name = "lblPosition";
-            this.lblPosition.Size = new System.Drawing.Size(361, 50);
-            this.lblPosition.TabIndex = 48;
-            this.lblPosition.Text = "Position:";
             // 
             // comboBoxPosition
             // 
-            this.comboBoxPosition.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxPosition.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            resources.ApplyResources(this.comboBoxPosition, "comboBoxPosition");
             this.comboBoxPosition.FormattingEnabled = true;
-            this.comboBoxPosition.Location = new System.Drawing.Point(3, 53);
             this.comboBoxPosition.Name = "comboBoxPosition";
-            this.comboBoxPosition.Size = new System.Drawing.Size(361, 35);
-            this.comboBoxPosition.TabIndex = 45;
             this.comboBoxPosition.SelectedIndexChanged += new System.EventHandler(this.comboBoxPosition_SelectedIndexChanged);
             // 
             // btnClear
             // 
-            this.btnClear.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnClear.Font = new System.Drawing.Font("新細明體", 32F);
+            resources.ApplyResources(this.btnClear, "btnClear");
             this.btnClear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnClear.Location = new System.Drawing.Point(1122, 3);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(367, 47);
-            this.btnClear.TabIndex = 71;
-            this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
             // 
             // btnSave
             // 
-            this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSave.Font = new System.Drawing.Font("新細明體", 32F);
+            resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSave.Location = new System.Drawing.Point(376, 3);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(367, 47);
-            this.btnSave.TabIndex = 51;
-            this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
             this.tableLayoutPanel2.Controls.Add(this.lblAreYouNewStaff, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.radYes, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.radNo, 1, 1);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1865, 107);
-            this.tableLayoutPanel2.TabIndex = 93;
             // 
             // lblAreYouNewStaff
             // 
-            this.lblAreYouNewStaff.AutoSize = true;
-            this.lblAreYouNewStaff.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAreYouNewStaff.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold);
-            this.lblAreYouNewStaff.Location = new System.Drawing.Point(3, 0);
+            resources.ApplyResources(this.lblAreYouNewStaff, "lblAreYouNewStaff");
             this.lblAreYouNewStaff.Name = "lblAreYouNewStaff";
             this.tableLayoutPanel2.SetRowSpan(this.lblAreYouNewStaff, 2);
-            this.lblAreYouNewStaff.Size = new System.Drawing.Size(926, 107);
-            this.lblAreYouNewStaff.TabIndex = 0;
-            this.lblAreYouNewStaff.Text = "Are you new staff?";
-            this.lblAreYouNewStaff.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // radYes
             // 
-            this.radYes.AutoSize = true;
+            resources.ApplyResources(this.radYes, "radYes");
             this.radYes.Checked = true;
-            this.radYes.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.radYes.Font = new System.Drawing.Font("新細明體", 20.25F);
-            this.radYes.Location = new System.Drawing.Point(935, 19);
             this.radYes.Name = "radYes";
-            this.radYes.Size = new System.Drawing.Size(927, 31);
-            this.radYes.TabIndex = 1;
             this.radYes.TabStop = true;
-            this.radYes.Text = "Yes";
             this.radYes.UseVisualStyleBackColor = true;
             // 
             // radNo
             // 
-            this.radNo.AutoSize = true;
-            this.radNo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.radNo.Font = new System.Drawing.Font("新細明體", 20.25F);
-            this.radNo.Location = new System.Drawing.Point(935, 56);
+            resources.ApplyResources(this.radNo, "radNo");
             this.radNo.Name = "radNo";
-            this.radNo.Size = new System.Drawing.Size(927, 31);
-            this.radNo.TabIndex = 2;
-            this.radNo.Text = "No";
             this.radNo.UseVisualStyleBackColor = true;
             this.radNo.CheckedChanged += new System.EventHandler(this.radNo_CheckedChanged);
             // 
             // tableLayoutPanel10
             // 
-            this.tableLayoutPanel10.ColumnCount = 1;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            resources.ApplyResources(this.tableLayoutPanel10, "tableLayoutPanel10");
             this.tableLayoutPanel10.Controls.Add(this.tableLayoutPanel1, 0, 2);
             this.tableLayoutPanel10.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.tableLayoutPanel12, 0, 1);
             this.tableLayoutPanel10.Controls.Add(this.tableLayoutPanel9, 0, 3);
-            this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
-            this.tableLayoutPanel10.RowCount = 4;
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.2F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.2F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.6F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(1871, 626);
-            this.tableLayoutPanel10.TabIndex = 94;
             // 
             // tableLayoutPanel12
             // 
-            this.tableLayoutPanel12.ColumnCount = 2;
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            resources.ApplyResources(this.tableLayoutPanel12, "tableLayoutPanel12");
             this.tableLayoutPanel12.Controls.Add(this.comboBoxStaffID, 0, 0);
             this.tableLayoutPanel12.Controls.Add(this.lblStaffID, 0, 0);
-            this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(3, 116);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
-            this.tableLayoutPanel12.RowCount = 1;
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 107F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(1865, 107);
-            this.tableLayoutPanel12.TabIndex = 94;
-            this.tableLayoutPanel12.Visible = false;
             // 
             // comboBoxStaffID
             // 
-            this.comboBoxStaffID.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            resources.ApplyResources(this.comboBoxStaffID, "comboBoxStaffID");
             this.comboBoxStaffID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxStaffID.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxStaffID.FormattingEnabled = true;
-            this.comboBoxStaffID.Location = new System.Drawing.Point(935, 36);
             this.comboBoxStaffID.Name = "comboBoxStaffID";
-            this.comboBoxStaffID.Size = new System.Drawing.Size(226, 35);
-            this.comboBoxStaffID.TabIndex = 75;
             this.comboBoxStaffID.SelectedIndexChanged += new System.EventHandler(this.comboBoxStaffID_SelectedIndexChanged);
             // 
             // lblStaffID
             // 
-            this.lblStaffID.AutoSize = true;
-            this.lblStaffID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblStaffID.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Bold);
-            this.lblStaffID.Location = new System.Drawing.Point(3, 0);
+            resources.ApplyResources(this.lblStaffID, "lblStaffID");
             this.lblStaffID.Name = "lblStaffID";
-            this.lblStaffID.Size = new System.Drawing.Size(926, 107);
-            this.lblStaffID.TabIndex = 1;
-            this.lblStaffID.Text = "Staff ID:";
-            this.lblStaffID.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // tableLayoutPanel9
             // 
-            this.tableLayoutPanel9.ColumnCount = 5;
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            resources.ApplyResources(this.tableLayoutPanel9, "tableLayoutPanel9");
             this.tableLayoutPanel9.Controls.Add(this.btnSave, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.btnClear, 3, 0);
-            this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 570);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
-            this.tableLayoutPanel9.RowCount = 1;
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(1865, 53);
-            this.tableLayoutPanel9.TabIndex = 95;
             // 
             // frmNewStaff
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1871, 626);
             this.Controls.Add(this.tableLayoutPanel10);
             this.Name = "frmNewStaff";
-            this.Text = "New Staff";
             this.Load += new System.EventHandler(this.frmNewStaff_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);

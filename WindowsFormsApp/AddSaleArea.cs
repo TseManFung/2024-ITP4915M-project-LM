@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -52,13 +53,13 @@ namespace WindowsFormsApp
                             query = $"INSERT INTO SaleArea (Location,Latitude,Longitude) VALUES ('{Location}',{Latitude},{Latitude})";
                         }
                         Main.db.insertBySql(query);
-                        Main.ShowMessage("Successful add!");
+                        Main.ShowMessage(Resources.Successful_add);
                         txtLocation.Text = String.Empty;
                         txtRemark.Text = String.Empty;
                     }
                     else
                     {
-                        Main.ShowMessage("Please provide Location!");
+                        Main.ShowMessage(Resources.Please_provide_Location);
                     }
                 }
             }

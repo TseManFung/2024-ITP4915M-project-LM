@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmWebcam));
             this.lblCamera = new System.Windows.Forms.Label();
             this.cboCamera = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -41,72 +42,40 @@
             // 
             // lblCamera
             // 
-            this.lblCamera.AutoSize = true;
-            this.lblCamera.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCamera.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblCamera.Location = new System.Drawing.Point(3, 0);
+            resources.ApplyResources(this.lblCamera, "lblCamera");
             this.lblCamera.Name = "lblCamera";
-            this.lblCamera.Size = new System.Drawing.Size(129, 90);
-            this.lblCamera.TabIndex = 0;
-            this.lblCamera.Text = "Camera:";
-            this.lblCamera.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // cboCamera
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.cboCamera, 2);
-            this.cboCamera.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.cboCamera.Font = new System.Drawing.Font("PMingLiU", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            resources.ApplyResources(this.cboCamera, "cboCamera");
             this.cboCamera.FormattingEnabled = true;
-            this.cboCamera.Location = new System.Drawing.Point(138, 58);
             this.cboCamera.Name = "cboCamera";
-            this.cboCamera.Size = new System.Drawing.Size(264, 29);
-            this.cboCamera.TabIndex = 1;
             this.cboCamera.SelectedIndexChanged += new System.EventHandler(this.cboCamera_SelectedIndexChanged);
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.picCamera, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.cboCamera, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblCamera, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblCode, 0, 2);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(405, 452);
-            this.tableLayoutPanel1.TabIndex = 4;
             // 
             // picCamera
             // 
             this.picCamera.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tableLayoutPanel1.SetColumnSpan(this.picCamera, 3);
-            this.picCamera.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picCamera.Location = new System.Drawing.Point(3, 93);
+            resources.ApplyResources(this.picCamera, "picCamera");
             this.picCamera.Name = "picCamera";
-            this.picCamera.Size = new System.Drawing.Size(399, 265);
-            this.picCamera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picCamera.TabIndex = 2;
             this.picCamera.TabStop = false;
             // 
             // lblCode
             // 
-            this.lblCode.AutoSize = true;
+            resources.ApplyResources(this.lblCode, "lblCode");
             this.tableLayoutPanel1.SetColumnSpan(this.lblCode, 3);
-            this.lblCode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCode.Font = new System.Drawing.Font("PMingLiU", 24F);
             this.lblCode.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.lblCode.Location = new System.Drawing.Point(3, 361);
             this.lblCode.Name = "lblCode";
-            this.lblCode.Size = new System.Drawing.Size(399, 91);
-            this.lblCode.TabIndex = 3;
-            this.lblCode.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // timer
             // 
@@ -115,12 +84,10 @@
             // 
             // frmWebcam
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(405, 452);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmWebcam";
-            this.Text = "webcam";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmWebcam_FormClosing);
             this.Load += new System.EventHandler(this.frmWebcam_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

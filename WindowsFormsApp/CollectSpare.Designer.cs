@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCollectSpare));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.lblActualQuantity = new System.Windows.Forms.Label();
@@ -57,81 +58,45 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.lblFollowingCollect, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.dgvCollect, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnConfirm, 1, 3);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1136, 621);
-            this.tableLayoutPanel1.TabIndex = 78;
             // 
             // tableLayoutPanel6
             // 
-            this.tableLayoutPanel6.ColumnCount = 1;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            resources.ApplyResources(this.tableLayoutPanel6, "tableLayoutPanel6");
             this.tableLayoutPanel6.Controls.Add(this.lblActualQuantity, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.numActualQuantity, 0, 1);
-            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(798, 437);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 2;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(335, 101);
-            this.tableLayoutPanel6.TabIndex = 86;
             // 
             // lblActualQuantity
             // 
-            this.lblActualQuantity.AutoSize = true;
+            resources.ApplyResources(this.lblActualQuantity, "lblActualQuantity");
             this.lblActualQuantity.BackColor = System.Drawing.SystemColors.Control;
             this.lblActualQuantity.CausesValidation = false;
-            this.lblActualQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblActualQuantity.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblActualQuantity.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblActualQuantity.Location = new System.Drawing.Point(3, 0);
             this.lblActualQuantity.Name = "lblActualQuantity";
-            this.lblActualQuantity.Size = new System.Drawing.Size(329, 50);
-            this.lblActualQuantity.TabIndex = 50;
-            this.lblActualQuantity.Text = "Actual Quantity:";
             // 
             // numActualQuantity
             // 
-            this.numActualQuantity.Dock = System.Windows.Forms.DockStyle.Top;
-            this.numActualQuantity.Font = new System.Drawing.Font("PMingLiU", 20.25F);
-            this.numActualQuantity.Location = new System.Drawing.Point(3, 53);
+            resources.ApplyResources(this.numActualQuantity, "numActualQuantity");
             this.numActualQuantity.Maximum = new decimal(new int[] {
             999999,
             0,
             0,
             0});
             this.numActualQuantity.Name = "numActualQuantity";
-            this.numActualQuantity.Size = new System.Drawing.Size(329, 40);
-            this.numActualQuantity.TabIndex = 51;
             // 
             // lblFollowingCollect
             // 
-            this.lblFollowingCollect.AutoSize = true;
+            resources.ApplyResources(this.lblFollowingCollect, "lblFollowingCollect");
             this.tableLayoutPanel1.SetColumnSpan(this.lblFollowingCollect, 2);
-            this.lblFollowingCollect.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblFollowingCollect.Font = new System.Drawing.Font("PMingLiU", 24F);
-            this.lblFollowingCollect.Location = new System.Drawing.Point(3, 0);
             this.lblFollowingCollect.Name = "lblFollowingCollect";
-            this.lblFollowingCollect.Size = new System.Drawing.Size(1130, 31);
-            this.lblFollowingCollect.TabIndex = 75;
-            this.lblFollowingCollect.Text = "The following items have need to collect:";
             // 
             // dgvCollect
             // 
@@ -140,166 +105,96 @@
             this.dgvCollect.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCollect.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel1.SetColumnSpan(this.dgvCollect, 2);
-            this.dgvCollect.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvCollect.Location = new System.Drawing.Point(3, 34);
+            resources.ApplyResources(this.dgvCollect, "dgvCollect");
             this.dgvCollect.MultiSelect = false;
             this.dgvCollect.Name = "dgvCollect";
             this.dgvCollect.ReadOnly = true;
             this.dgvCollect.RowHeadersVisible = false;
             this.dgvCollect.RowTemplate.Height = 24;
             this.dgvCollect.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCollect.Size = new System.Drawing.Size(1130, 397);
-            this.dgvCollect.TabIndex = 74;
             this.dgvCollect.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCollect_CellClick);
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 437);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 118F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(789, 118);
-            this.tableLayoutPanel2.TabIndex = 77;
             // 
             // tableLayoutPanel4
             // 
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
             this.tableLayoutPanel4.Controls.Add(this.lblSpareNumberofBundles, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.numSpareNumberofBundles, 0, 1);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(397, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(389, 101);
-            this.tableLayoutPanel4.TabIndex = 85;
             // 
             // lblSpareNumberofBundles
             // 
-            this.lblSpareNumberofBundles.AutoSize = true;
+            resources.ApplyResources(this.lblSpareNumberofBundles, "lblSpareNumberofBundles");
             this.lblSpareNumberofBundles.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareNumberofBundles.CausesValidation = false;
-            this.lblSpareNumberofBundles.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareNumberofBundles.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareNumberofBundles.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSpareNumberofBundles.Location = new System.Drawing.Point(3, 0);
             this.lblSpareNumberofBundles.Name = "lblSpareNumberofBundles";
-            this.lblSpareNumberofBundles.Size = new System.Drawing.Size(383, 50);
-            this.lblSpareNumberofBundles.TabIndex = 50;
-            this.lblSpareNumberofBundles.Text = "Number of Bundles:";
             // 
             // numSpareNumberofBundles
             // 
-            this.numSpareNumberofBundles.Dock = System.Windows.Forms.DockStyle.Top;
-            this.numSpareNumberofBundles.Font = new System.Drawing.Font("PMingLiU", 20.25F);
-            this.numSpareNumberofBundles.Location = new System.Drawing.Point(3, 53);
+            resources.ApplyResources(this.numSpareNumberofBundles, "numSpareNumberofBundles");
             this.numSpareNumberofBundles.Maximum = new decimal(new int[] {
             999999,
             0,
             0,
             0});
             this.numSpareNumberofBundles.Name = "numSpareNumberofBundles";
-            this.numSpareNumberofBundles.Size = new System.Drawing.Size(383, 40);
-            this.numSpareNumberofBundles.TabIndex = 51;
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
             this.tableLayoutPanel3.Controls.Add(this.lblSpareID, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.comboBoxSpareID, 0, 1);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(388, 101);
-            this.tableLayoutPanel3.TabIndex = 84;
             // 
             // lblSpareID
             // 
-            this.lblSpareID.AutoSize = true;
+            resources.ApplyResources(this.lblSpareID, "lblSpareID");
             this.lblSpareID.BackColor = System.Drawing.SystemColors.Control;
             this.lblSpareID.CausesValidation = false;
-            this.lblSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSpareID.Font = new System.Drawing.Font("PMingLiU", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSpareID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSpareID.Location = new System.Drawing.Point(3, 0);
             this.lblSpareID.Name = "lblSpareID";
-            this.lblSpareID.Size = new System.Drawing.Size(382, 50);
-            this.lblSpareID.TabIndex = 48;
-            this.lblSpareID.Text = "Spare ID:";
             // 
             // comboBoxSpareID
             // 
-            this.comboBoxSpareID.Dock = System.Windows.Forms.DockStyle.Fill;
+            resources.ApplyResources(this.comboBoxSpareID, "comboBoxSpareID");
             this.comboBoxSpareID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxSpareID.Font = new System.Drawing.Font("PMingLiU", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.comboBoxSpareID.FormattingEnabled = true;
-            this.comboBoxSpareID.Location = new System.Drawing.Point(3, 53);
             this.comboBoxSpareID.Name = "comboBoxSpareID";
-            this.comboBoxSpareID.Size = new System.Drawing.Size(382, 35);
-            this.comboBoxSpareID.TabIndex = 45;
             this.comboBoxSpareID.SelectedValueChanged += new System.EventHandler(this.comboBoxSpareID_SelectedValueChanged);
             // 
             // tableLayoutPanel5
             // 
-            this.tableLayoutPanel5.ColumnCount = 2;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            resources.ApplyResources(this.tableLayoutPanel5, "tableLayoutPanel5");
             this.tableLayoutPanel5.Controls.Add(this.btnTurnOnScanner, 0, 0);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 561);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 1;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(789, 57);
-            this.tableLayoutPanel5.TabIndex = 78;
             // 
             // btnTurnOnScanner
             // 
-            this.btnTurnOnScanner.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnTurnOnScanner.Font = new System.Drawing.Font("PMingLiU", 24F);
-            this.btnTurnOnScanner.Location = new System.Drawing.Point(3, 3);
+            resources.ApplyResources(this.btnTurnOnScanner, "btnTurnOnScanner");
             this.btnTurnOnScanner.Name = "btnTurnOnScanner";
-            this.btnTurnOnScanner.Size = new System.Drawing.Size(388, 51);
-            this.btnTurnOnScanner.TabIndex = 76;
-            this.btnTurnOnScanner.Text = "Turn on scanner";
             this.btnTurnOnScanner.UseVisualStyleBackColor = true;
             this.btnTurnOnScanner.Click += new System.EventHandler(this.btnscanner_Click);
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnConfirm.Font = new System.Drawing.Font("PMingLiU", 24F);
-            this.btnConfirm.Location = new System.Drawing.Point(798, 561);
+            resources.ApplyResources(this.btnConfirm, "btnConfirm");
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(335, 57);
-            this.btnConfirm.TabIndex = 79;
-            this.btnConfirm.Text = "Confirm";
             this.btnConfirm.UseVisualStyleBackColor = true;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // frmCollectSpare
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1136, 621);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmCollectSpare";
-            this.Text = "Collect Spare";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCollectSpare_FormClosing);
             this.Load += new System.EventHandler(this.frmCollectSpare_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

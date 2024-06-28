@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLanguage));
             this.lblChooseYourLanguageEng = new System.Windows.Forms.Label();
             this.radioButtonEng = new System.Windows.Forms.RadioButton();
             this.radioButtonTw = new System.Windows.Forms.RadioButton();
@@ -38,75 +39,44 @@
             // 
             // lblChooseYourLanguageEng
             // 
-            this.lblChooseYourLanguageEng.AutoSize = true;
-            this.lblChooseYourLanguageEng.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblChooseYourLanguageEng.Location = new System.Drawing.Point(12, 9);
+            resources.ApplyResources(this.lblChooseYourLanguageEng, "lblChooseYourLanguageEng");
             this.lblChooseYourLanguageEng.Name = "lblChooseYourLanguageEng";
-            this.lblChooseYourLanguageEng.Size = new System.Drawing.Size(282, 32);
-            this.lblChooseYourLanguageEng.TabIndex = 0;
-            this.lblChooseYourLanguageEng.Text = "Choose your language";
             // 
             // radioButtonEng
             // 
-            this.radioButtonEng.AutoSize = true;
-            this.radioButtonEng.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.radioButtonEng.Location = new System.Drawing.Point(18, 135);
+            resources.ApplyResources(this.radioButtonEng, "radioButtonEng");
             this.radioButtonEng.Name = "radioButtonEng";
-            this.radioButtonEng.Size = new System.Drawing.Size(109, 31);
-            this.radioButtonEng.TabIndex = 1;
             this.radioButtonEng.TabStop = true;
-            this.radioButtonEng.Text = "English";
             this.radioButtonEng.UseVisualStyleBackColor = true;
             // 
             // radioButtonTw
             // 
-            this.radioButtonTw.AutoSize = true;
-            this.radioButtonTw.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.radioButtonTw.Location = new System.Drawing.Point(18, 172);
+            resources.ApplyResources(this.radioButtonTw, "radioButtonTw");
             this.radioButtonTw.Name = "radioButtonTw";
-            this.radioButtonTw.Size = new System.Drawing.Size(161, 31);
-            this.radioButtonTw.TabIndex = 2;
             this.radioButtonTw.TabStop = true;
-            this.radioButtonTw.Text = "中文 (繁體)";
             this.radioButtonTw.UseVisualStyleBackColor = true;
             // 
             // radioButtonChina
             // 
-            this.radioButtonChina.AutoSize = true;
-            this.radioButtonChina.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.radioButtonChina.Location = new System.Drawing.Point(18, 209);
+            resources.ApplyResources(this.radioButtonChina, "radioButtonChina");
             this.radioButtonChina.Name = "radioButtonChina";
-            this.radioButtonChina.Size = new System.Drawing.Size(161, 31);
-            this.radioButtonChina.TabIndex = 3;
             this.radioButtonChina.TabStop = true;
-            this.radioButtonChina.Text = "中文 (简体)";
             this.radioButtonChina.UseVisualStyleBackColor = true;
             // 
             // lblChooseYourLanguageTW
             // 
-            this.lblChooseYourLanguageTW.AutoSize = true;
-            this.lblChooseYourLanguageTW.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblChooseYourLanguageTW.Location = new System.Drawing.Point(12, 41);
+            resources.ApplyResources(this.lblChooseYourLanguageTW, "lblChooseYourLanguageTW");
             this.lblChooseYourLanguageTW.Name = "lblChooseYourLanguageTW";
-            this.lblChooseYourLanguageTW.Size = new System.Drawing.Size(206, 32);
-            this.lblChooseYourLanguageTW.TabIndex = 4;
-            this.lblChooseYourLanguageTW.Text = "選擇你的語言";
             // 
             // lblChooseYourLanguageChina
             // 
-            this.lblChooseYourLanguageChina.AutoSize = true;
-            this.lblChooseYourLanguageChina.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblChooseYourLanguageChina.Location = new System.Drawing.Point(12, 73);
+            resources.ApplyResources(this.lblChooseYourLanguageChina, "lblChooseYourLanguageChina");
             this.lblChooseYourLanguageChina.Name = "lblChooseYourLanguageChina";
-            this.lblChooseYourLanguageChina.Size = new System.Drawing.Size(206, 32);
-            this.lblChooseYourLanguageChina.TabIndex = 5;
-            this.lblChooseYourLanguageChina.Text = "选择你的语言";
             // 
             // frmLanguage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(309, 252);
             this.Controls.Add(this.lblChooseYourLanguageChina);
             this.Controls.Add(this.lblChooseYourLanguageTW);
             this.Controls.Add(this.radioButtonChina);
@@ -114,7 +84,6 @@
             this.Controls.Add(this.radioButtonEng);
             this.Controls.Add(this.lblChooseYourLanguageEng);
             this.Name = "frmLanguage";
-            this.Text = "Language";
             this.ResumeLayout(false);
             this.PerformLayout();
 

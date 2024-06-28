@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOrderRecord));
             this.btnSelect = new System.Windows.Forms.Button();
             this.btnCheckDetail = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -51,50 +52,30 @@
             // 
             // btnSelect
             // 
-            this.btnSelect.Font = new System.Drawing.Font("PMingLiU", 24F);
-            this.btnSelect.Location = new System.Drawing.Point(1641, 96);
+            resources.ApplyResources(this.btnSelect, "btnSelect");
             this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(143, 60);
-            this.btnSelect.TabIndex = 4;
-            this.btnSelect.Text = "Select";
             this.btnSelect.UseVisualStyleBackColor = true;
             // 
             // btnCheckDetail
             // 
-            this.btnCheckDetail.Location = new System.Drawing.Point(1597, 892);
+            resources.ApplyResources(this.btnCheckDetail, "btnCheckDetail");
             this.btnCheckDetail.Name = "btnCheckDetail";
-            this.btnCheckDetail.Size = new System.Drawing.Size(187, 72);
-            this.btnCheckDetail.TabIndex = 6;
-            this.btnCheckDetail.Text = "Check Detail";
             this.btnCheckDetail.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.groupBoxComplete, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.groupBoxProcessing, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(839, 621);
-            this.tableLayoutPanel1.TabIndex = 7;
             // 
             // groupBoxComplete
             // 
             this.groupBoxComplete.Controls.Add(this.dgvComplete);
-            this.groupBoxComplete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBoxComplete.Location = new System.Drawing.Point(3, 338);
+            resources.ApplyResources(this.groupBoxComplete, "groupBoxComplete");
             this.groupBoxComplete.Name = "groupBoxComplete";
-            this.groupBoxComplete.Size = new System.Drawing.Size(833, 280);
-            this.groupBoxComplete.TabIndex = 9;
             this.groupBoxComplete.TabStop = false;
-            this.groupBoxComplete.Text = "complete";
             // 
             // dgvComplete
             // 
@@ -102,29 +83,22 @@
             this.dgvComplete.AllowUserToDeleteRows = false;
             this.dgvComplete.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvComplete.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvComplete.Dock = System.Windows.Forms.DockStyle.Fill;
+            resources.ApplyResources(this.dgvComplete, "dgvComplete");
             this.dgvComplete.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvComplete.Location = new System.Drawing.Point(3, 18);
             this.dgvComplete.MultiSelect = false;
             this.dgvComplete.Name = "dgvComplete";
             this.dgvComplete.ReadOnly = true;
             this.dgvComplete.RowTemplate.Height = 24;
             this.dgvComplete.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvComplete.Size = new System.Drawing.Size(827, 259);
-            this.dgvComplete.TabIndex = 9;
             this.dgvComplete.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvComplete_CellMouseDoubleClick);
             this.dgvComplete.Scroll += new System.Windows.Forms.ScrollEventHandler(this.dgvComplete_Scroll);
             // 
             // groupBoxProcessing
             // 
             this.groupBoxProcessing.Controls.Add(this.dgvProcessing);
-            this.groupBoxProcessing.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBoxProcessing.Location = new System.Drawing.Point(3, 53);
+            resources.ApplyResources(this.groupBoxProcessing, "groupBoxProcessing");
             this.groupBoxProcessing.Name = "groupBoxProcessing";
-            this.groupBoxProcessing.Size = new System.Drawing.Size(833, 279);
-            this.groupBoxProcessing.TabIndex = 8;
             this.groupBoxProcessing.TabStop = false;
-            this.groupBoxProcessing.Text = "Processing";
             // 
             // dgvProcessing
             // 
@@ -132,94 +106,57 @@
             this.dgvProcessing.AllowUserToDeleteRows = false;
             this.dgvProcessing.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProcessing.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProcessing.Dock = System.Windows.Forms.DockStyle.Fill;
+            resources.ApplyResources(this.dgvProcessing, "dgvProcessing");
             this.dgvProcessing.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvProcessing.Location = new System.Drawing.Point(3, 18);
             this.dgvProcessing.MultiSelect = false;
             this.dgvProcessing.Name = "dgvProcessing";
             this.dgvProcessing.ReadOnly = true;
             this.dgvProcessing.RowTemplate.Height = 24;
             this.dgvProcessing.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProcessing.Size = new System.Drawing.Size(827, 258);
-            this.dgvProcessing.TabIndex = 8;
             this.dgvProcessing.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvProcessing_CellMouseDoubleClick);
             this.dgvProcessing.Scroll += new System.Windows.Forms.ScrollEventHandler(this.dgvProcessing_Scroll);
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblDoubleClickSeeMoreDetaill, 0, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(833, 44);
-            this.tableLayoutPanel2.TabIndex = 10;
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.BackColor = System.Drawing.SystemColors.Window;
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
             this.tableLayoutPanel3.Controls.Add(this.button2, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.textBox1, 0, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(419, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(411, 38);
-            this.tableLayoutPanel3.TabIndex = 12;
             // 
             // button2
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("PMingLiU", 16F);
-            this.button2.Location = new System.Drawing.Point(290, 3);
+            resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(118, 32);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Search";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Font = new System.Drawing.Font("PMingLiU", 22F);
-            this.textBox1.Location = new System.Drawing.Point(3, 3);
+            resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(281, 36);
-            this.textBox1.TabIndex = 1;
             // 
             // lblDoubleClickSeeMoreDetaill
             // 
-            this.lblDoubleClickSeeMoreDetaill.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblDoubleClickSeeMoreDetaill.AutoSize = true;
-            this.lblDoubleClickSeeMoreDetaill.Font = new System.Drawing.Font("PMingLiU", 24F);
-            this.lblDoubleClickSeeMoreDetaill.Location = new System.Drawing.Point(37, 0);
+            resources.ApplyResources(this.lblDoubleClickSeeMoreDetaill, "lblDoubleClickSeeMoreDetaill");
             this.lblDoubleClickSeeMoreDetaill.Name = "lblDoubleClickSeeMoreDetaill";
-            this.lblDoubleClickSeeMoreDetaill.Size = new System.Drawing.Size(342, 44);
-            this.lblDoubleClickSeeMoreDetaill.TabIndex = 11;
-            this.lblDoubleClickSeeMoreDetaill.Text = "double click a record to see more detaill";
-            this.lblDoubleClickSeeMoreDetaill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmOrderRecord
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(839, 621);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.btnCheckDetail);
             this.Controls.Add(this.btnSelect);
             this.Name = "frmOrderRecord";
-            this.Text = "Order Record";
             this.Load += new System.EventHandler(this.frmOrderRecord_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.groupBoxComplete.ResumeLayout(false);

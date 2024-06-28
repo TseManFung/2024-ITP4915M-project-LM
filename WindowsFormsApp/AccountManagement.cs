@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -62,7 +63,7 @@ namespace WindowsFormsApp
             using (var reader = Main.db.readBySql(sql))
             {
                 this.comboBoxSaleArea.Items.Clear();
-                this.comboBoxSaleArea.Items.Add("No saleArea");
+                this.comboBoxSaleArea.Items.Add(Resources.No_saleArea);
                 while (reader.Read())
                 {
                     this.comboBoxSaleArea.Items.Add(reader.GetString(0));
@@ -72,7 +73,7 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Do you want to change the data?"))
+            if (Main.ShowYesNoDialog(Resources.Do_you_want_to_change_the_data))
             {
                 string passwd = txtPassword.Text;
                 int accessL;
@@ -81,7 +82,7 @@ namespace WindowsFormsApp
                 }
                 else
                 {
-                    Main.ShowMessage("error");
+                    Main.ShowMessage(Resources._error);
                     return;
 
                 }
@@ -107,7 +108,7 @@ namespace WindowsFormsApp
                     String query = $"UPDATE User SET AccessLevel = '{accessL}' Where UserID = {usid};";
                     Main.db.updateBySql(query);
                 }
-                if (isid == "StaffID")
+                if (isid == Resources.StaffID)
                 {
 
                     if (!string.IsNullOrEmpty(comboBoxSaleArea.SelectedItem?.ToString()) &&
@@ -131,7 +132,7 @@ namespace WindowsFormsApp
                         string name = txtName.Text;
                         string saleArea = comboBoxSaleArea.SelectedItem?.ToString();
                         int AreaID = 0;
-                        if (!string.IsNullOrEmpty(saleArea) && saleArea != "No saleArea")
+                        if (!string.IsNullOrEmpty(saleArea) && saleArea != Resources.No_saleArea)
                         {
                             sql = $"SELECT AreaID FROM SaleArea Where Location = '{saleArea}';";
                             using (var reader = Main.db.readBySql(sql))
@@ -146,7 +147,7 @@ namespace WindowsFormsApp
                             }
                             sql = $"UPDATE Staff SET StaffName = '{name}', SaleAreaID = {AreaID} , DeptID = '{department}', Position = '{position}' Where StaffID = {id};";
                             Main.db.updateBySql(sql);
-                            Main.ShowMessage("succeed!");
+                            Main.ShowMessage(Resources.succeed);
                             claerAll();
 
                         }
@@ -154,17 +155,17 @@ namespace WindowsFormsApp
                         {
                             sql = $"UPDATE Staff SET StaffName = '{name}' ,DeptID = {department},   Position = '{position}'  Where StaffID = {id};";
                             Main.db.updateBySql(sql);
-                            Main.ShowMessage("succeed!");
+                            Main.ShowMessage(Resources.succeed);
                             claerAll();
                         }
 
                     }
                     else
                     {
-                        Main.ShowMessage("Missging data!");
+                        Main.ShowMessage(Resources.Missging_data);
                     }
                 }
-                else if (isid == "DealerID"){
+                else if (isid == Resources.DealerID){
 
 
 
@@ -186,7 +187,7 @@ namespace WindowsFormsApp
                         string saleArea = comboBoxSaleArea.SelectedItem?.ToString();
                         int AreaID = 0;
                         string name = txtName.Text;
-                        if (!string.IsNullOrEmpty(saleArea) && saleArea != "No saleArea")
+                        if (!string.IsNullOrEmpty(saleArea) && saleArea != Resources.No_saleArea)
                         {
                             sql = $"SELECT AreaID FROM SaleArea Where Location = '{saleArea}';";
                             using (var reader = Main.db.readBySql(sql))
@@ -201,28 +202,28 @@ namespace WindowsFormsApp
                             }
                         }else
                         {
-                            Main.ShowMessage("dealer must have a saleArea!");
+                            Main.ShowMessage(Resources.dealer_must_have_a_saleArea);
                             return;
                         }
                         if (!string.IsNullOrEmpty(txtDeliveryAddress.Text)){
                             string DeliveryAddress = txtDeliveryAddress.Text;
                             sql = $"UPDATE Dealer SET DealerName = '{name}', SaleAreaID = {AreaID} , email = '{email}', OfficeAddress = '{OfficeAdress}', DeliveryAddress = '{DeliveryAddress}' Where DealerID = {id};";
                             Main.db.updateBySql(sql);
-                            Main.ShowMessage("succeed!");
+                            Main.ShowMessage(Resources.succeed);
                             claerAll();
                         }
                         else
                         {
                             sql = $"UPDATE Dealer SET DealerName = '{name}', SaleAreaID = {AreaID} , email = '{email}', OfficeAddress = '{OfficeAdress}' Where DealerID = {id};";
                             Main.db.updateBySql(sql);
-                            Main.ShowMessage("succeed!");
+                            Main.ShowMessage(Resources.succeed);
                             claerAll();
                         }
 
                     }
                     else
                     {
-                        Main.ShowMessage("Missging data!");
+                        Main.ShowMessage(Resources.Missging_data);
                     }
                 }
             }
@@ -242,7 +243,7 @@ namespace WindowsFormsApp
                     if (!reader.IsDBNull(0))
                     {
                         id = reader.GetInt32(0);
-                        isid = "DealerID";
+                        isid = Resources.DealerID;
                     }
                 }
             }
@@ -254,14 +255,14 @@ namespace WindowsFormsApp
                     if (!reader.IsDBNull(0))
                     {
                         id = reader.GetInt32(0);
-                        isid = "StaffID";
+                        isid = Resources.StaffID;
                     }
                 }
             }
-            if(isid == "StaffID")
+            if(isid == Resources.StaffID)
             {
                 ForTest = true;
-            }else if(isid == "DealerID")
+            }else if(isid == Resources.DealerID)
             {
                 ForTest = false;
             }
@@ -269,7 +270,7 @@ namespace WindowsFormsApp
             tableLayoutPanel9.Visible = tableLayoutPanel10.Visible = tableLayoutPanel11.Visible = tableLayoutPanel13.Visible = !ForTest;
 
             int Accesslevele = 0;
-            if (isid == "StaffID")
+            if (isid == Resources.StaffID)
             {
                 sql = $@" SELECT u.AccessLevel, d.DeptName, s.Position, s.StaffName, a.Location FROM User u JOIN Staff s ON u.LoginName = '{LoginName}' AND s.StaffID = {id} JOIN Department d ON s.DeptID = d.DeptID LEFT JOIN SaleArea a ON s.SaleAreaID = a.AreaID WHERE s.StaffID = {id}; SELECT DeptName FROM Department; SELECT DISTINCT Position FROM Staff;";
                 string deptName = string.Empty;
@@ -329,7 +330,7 @@ namespace WindowsFormsApp
                 }
             }
 
-            else if (isid == "DealerID")
+            else if (isid == Resources.DealerID)
             {
                 sql = $@" SELECT u.AccessLevel, d.DealerName, d.ContantNumber, d.email, d.OfficeAddress, d.DeliveryAddress, a.Location FROM User u LEFT JOIN Dealer d ON d.DealerID = {id} LEFT JOIN SaleArea a ON d.SaleAreaID = a.AreaID WHERE u.LoginName = '{LoginName}' AND u.DealerID = {id};";
                 using (var reader = Main.db.readBySql(sql))
@@ -391,7 +392,7 @@ namespace WindowsFormsApp
             }
             sql = $"UPDATE User SET Password = '{Password}' Where  LoginName = '{LoginName}';";
             Main.db.updateBySql(sql);
-            Main.ShowMessage("succeed!");
+            Main.ShowMessage(Resources.succeed);
         }
 
         private void txtAccessLevel_TextChanged(object sender, EventArgs e)
@@ -423,7 +424,7 @@ namespace WindowsFormsApp
             {
                 if (txtAccessLevel.Text != null && txtAccessLevel.Text != "0")
                 {
-                    Main.ShowMessage("Invalid access level. Please enter a valid integer value between 0 and 10000.");
+                    Main.ShowMessage(Resources.Invalid_access_level_Please_en);
                     txtAccessLevel.Text = "0";
                 }
             }
@@ -456,13 +457,13 @@ namespace WindowsFormsApp
                 // Check if the input is a valid number
                 if (!long.TryParse(txtPhoneNumber.Text, out _))
                 {
-                    Main.ShowMessage("Invalid input. Please enter a valid number.");
+                    Main.ShowMessage(Resources.Invalid_input_Please_enter_a_v);
                     txtPhoneNumber.Text = string.Empty;
                 }
                 // Check if the input length exceeds 20 digits
                 else if (txtPhoneNumber.Text.Length > 20)
                 {
-                    Main.ShowMessage("Phone number cannot exceed 20 digits.");
+                    Main.ShowMessage(Resources.Phone_number_cannot_exceed_20_);
                     txtPhoneNumber.Text = txtPhoneNumber.Text.Substring(0, 20);
                 }
             }
@@ -474,7 +475,7 @@ namespace WindowsFormsApp
             {
                 if (!IsValidEmail(txtEmail.Text))
                 {
-                    Main.ShowMessage("Please enter a valid email address!");
+                    Main.ShowMessage(Resources.Please_enter_a_valid_email_add);
                     txtEmail.Text = string.Empty;
                 }
             }

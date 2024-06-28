@@ -511,50 +511,206 @@
     <Compile Include="webcam.Designer.cs">
       <DependentUpon>webcam.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AccountManagement.en.resx">
+      <DependentUpon>AccountManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AccountManagement.resx">
       <DependentUpon>AccountManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountManagement.zh-Hans.resx">
+      <DependentUpon>AccountManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountManagement.zh-Hant.resx">
+      <DependentUpon>AccountManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDepartment.en.resx">
+      <DependentUpon>AddDepartment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddDepartment.resx">
       <DependentUpon>AddDepartment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddDepartment.zh-Hans.resx">
+      <DependentUpon>AddDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDepartment.zh-Hant.resx">
+      <DependentUpon>AddDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewItem.en.resx">
+      <DependentUpon>AddNewItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewItem.zh-Hans.resx">
+      <DependentUpon>AddNewItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewItem.zh-Hant.resx">
+      <DependentUpon>AddNewItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSaleArea.en.resx">
+      <DependentUpon>AddSaleArea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddSaleArea.resx">
       <DependentUpon>AddSaleArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSaleArea.zh-Hans.resx">
+      <DependentUpon>AddSaleArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSaleArea.zh-Hant.resx">
+      <DependentUpon>AddSaleArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWarehouse.en.resx">
+      <DependentUpon>AddWarehouse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddWarehouse.resx">
       <DependentUpon>AddWarehouse.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddWarehouse.zh-Hans.resx">
+      <DependentUpon>AddWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWarehouse.zh-Hant.resx">
+      <DependentUpon>AddWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cart.en.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cart.resx">
       <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cart.zh-Hans.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cart.zh-Hant.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.en.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.zh-Hans.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.zh-Hant.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectSpare.en.resx">
+      <DependentUpon>CollectSpare.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CollectSpare.resx">
       <DependentUpon>CollectSpare.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CollectSpare.zh-Hans.resx">
+      <DependentUpon>CollectSpare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectSpare.zh-Hant.resx">
+      <DependentUpon>CollectSpare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryStatusandProductDetails.en.resx">
+      <DependentUpon>DeliveryStatusandProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DeliveryStatusandProductDetails.resx">
       <DependentUpon>DeliveryStatusandProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryStatusandProductDetails.zh-Hans.resx">
+      <DependentUpon>DeliveryStatusandProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryStatusandProductDetails.zh-Hant.resx">
+      <DependentUpon>DeliveryStatusandProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DID.en.resx">
+      <DependentUpon>DID.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DID.resx">
       <DependentUpon>DID.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DID.zh-Hans.resx">
+      <DependentUpon>DID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DID.zh-Hant.resx">
+      <DependentUpon>DID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DISet.en.resx">
+      <DependentUpon>DISet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DISet.resx">
       <DependentUpon>DISet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DISet.zh-Hans.resx">
+      <DependentUpon>DISet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DISet.zh-Hant.resx">
+      <DependentUpon>DISet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDepartment.en.resx">
+      <DependentUpon>EditDepartment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditDepartment.resx">
       <DependentUpon>EditDepartment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditDepartment.zh-Hans.resx">
+      <DependentUpon>EditDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDepartment.zh-Hant.resx">
+      <DependentUpon>EditDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditItem.en.resx">
+      <DependentUpon>EditItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditItem.resx">
       <DependentUpon>EditItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditItem.zh-Hans.resx">
+      <DependentUpon>EditItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditItem.zh-Hant.resx">
+      <DependentUpon>EditItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditOrder.en.resx">
+      <DependentUpon>EditOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditOrder.resx">
       <DependentUpon>EditOrder.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditOrder.zh-Hans.resx">
+      <DependentUpon>EditOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditOrder.zh-Hant.resx">
+      <DependentUpon>EditOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSaleArea.en.resx">
+      <DependentUpon>EditSaleArea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditSaleArea.resx">
       <DependentUpon>EditSaleArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSaleArea.zh-Hans.resx">
+      <DependentUpon>EditSaleArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSaleArea.zh-Hant.resx">
+      <DependentUpon>EditSaleArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSupplier.en.resx">
+      <DependentUpon>EditSupplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditSupplier.resx">
       <DependentUpon>EditSupplier.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditSupplier.zh-Hans.resx">
+      <DependentUpon>EditSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSupplier.zh-Hant.resx">
+      <DependentUpon>EditSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditWarehouse.en.resx">
+      <DependentUpon>EditWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditWarehouse.resx">
       <DependentUpon>EditWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditWarehouse.zh-Hans.resx">
+      <DependentUpon>EditWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditWarehouse.zh-Hant.resx">
+      <DependentUpon>EditWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgetPW.en.resx">
+      <DependentUpon>forgetPW.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forgetPW.resx">
       <DependentUpon>forgetPW.cs</DependentUpon>
@@ -562,26 +718,143 @@
     <EmbeddedResource Include="ChangePassword.resx">
       <DependentUpon>ChangePassword.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forgetPW.zh-Hans.resx">
+      <DependentUpon>forgetPW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgetPW.zh-Hant.resx">
+      <DependentUpon>forgetPW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Google_map.en.resx">
+      <DependentUpon>Google_map.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Google_map.resx">
       <DependentUpon>Google_map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Google_map.zh-Hans.resx">
+      <DependentUpon>Google_map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Google_map.zh-Hant.resx">
+      <DependentUpon>Google_map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.en.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.zh-Hans.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.zh-Hant.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language.en.resx">
+      <DependentUpon>language.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="language.resx">
       <DependentUpon>language.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="language.zh-Hans.resx">
+      <DependentUpon>language.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language.zh-Hant.resx">
+      <DependentUpon>language.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.en.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.zh-Hans.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.zh-Hant.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.en.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.zh-Hans.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.zh-Hant.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.en.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Menu.zh-Hans.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.zh-Hant.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyInformation.en.resx">
+      <DependentUpon>ModifyInformation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ModifyInformation.resx">
       <DependentUpon>ModifyInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyInformation.zh-Hans.resx">
+      <DependentUpon>ModifyInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyInformation.zh-Hant.resx">
+      <DependentUpon>ModifyInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewDealer.en.resx">
+      <DependentUpon>NewDealer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewDealer.zh-Hans.resx">
+      <DependentUpon>NewDealer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewDealer.zh-Hant.resx">
+      <DependentUpon>NewDealer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewStaff.en.resx">
+      <DependentUpon>NewStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewStaff.zh-Hans.resx">
+      <DependentUpon>NewStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewStaff.zh-Hant.resx">
+      <DependentUpon>NewStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewSupplier.en.resx">
+      <DependentUpon>NewSupplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewSupplier.resx">
       <DependentUpon>NewSupplier.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NewSupplier.zh-Hans.resx">
+      <DependentUpon>NewSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewSupplier.zh-Hant.resx">
+      <DependentUpon>NewSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderDetail.en.resx">
+      <DependentUpon>OrderDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderDetail.zh-Hans.resx">
+      <DependentUpon>OrderDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderDetail.zh-Hant.resx">
+      <DependentUpon>OrderDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderItemDetail.en.resx">
+      <DependentUpon>OrderItemDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OrderItemDetail.resx">
       <DependentUpon>OrderItemDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderItemDetail.zh-Hans.resx">
+      <DependentUpon>OrderItemDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderItemDetail.zh-Hant.resx">
+      <DependentUpon>OrderItemDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderRecord.en.resx">
+      <DependentUpon>OrderRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrderRecord.resx">
       <DependentUpon>OrderRecord.cs</DependentUpon>
@@ -604,11 +877,29 @@
     <EmbeddedResource Include="NewStaff.resx">
       <DependentUpon>NewStaff.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OrderRecord.zh-Hans.resx">
+      <DependentUpon>OrderRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderRecord.zh-Hant.resx">
+      <DependentUpon>OrderRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlacingOrderForm.en.resx">
+      <DependentUpon>PlacingOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PlacingOrderForm.resx">
       <DependentUpon>PlacingOrderForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PlacingOrderForm.zh-Hans.resx">
+      <DependentUpon>PlacingOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlacingOrderForm.zh-Hant.resx">
+      <DependentUpon>PlacingOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.en.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -617,43 +908,166 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Properties\Resources.zh-Hans.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.zh-Hant.resx">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Re-Stock.en.resx">
+      <DependentUpon>Re-Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Re-Stock.zh-Hans.resx">
+      <DependentUpon>Re-Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Re-Stock.zh-Hant.resx">
+      <DependentUpon>Re-Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Re-StockCheck.en.resx">
+      <DependentUpon>Re-StockCheck.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Re-StockCheck.resx">
       <DependentUpon>Re-StockCheck.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Re-Stock.resx">
       <DependentUpon>Re-Stock.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Re-StockCheck.zh-Hans.resx">
+      <DependentUpon>Re-StockCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Re-StockCheck.zh-Hant.resx">
+      <DependentUpon>Re-StockCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.en.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report.resx">
       <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.zh-Hans.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.zh-Hant.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportCondition.en.resx">
+      <DependentUpon>reportCondition.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="reportCondition.resx">
       <DependentUpon>reportCondition.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="reportCondition.zh-Hans.resx">
+      <DependentUpon>reportCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportCondition.zh-Hant.resx">
+      <DependentUpon>reportCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scrap.en.resx">
+      <DependentUpon>Scrap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Scrap.resx">
       <DependentUpon>Scrap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scrap.zh-Hans.resx">
+      <DependentUpon>Scrap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scrap.zh-Hant.resx">
+      <DependentUpon>Scrap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Server.en.resx">
+      <DependentUpon>Server.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Server.resx">
       <DependentUpon>Server.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Server.zh-Hans.resx">
+      <DependentUpon>Server.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Server.zh-Hant.resx">
+      <DependentUpon>Server.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetStockLevel.en.resx">
+      <DependentUpon>SetStockLevel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SetStockLevel.resx">
       <DependentUpon>SetStockLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetStockLevel.zh-Hans.resx">
+      <DependentUpon>SetStockLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetStockLevel.zh-Hant.resx">
+      <DependentUpon>SetStockLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sign.en.resx">
+      <DependentUpon>sign.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="sign.resx">
       <DependentUpon>sign.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="sign.zh-Hans.resx">
+      <DependentUpon>sign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sign.zh-Hant.resx">
+      <DependentUpon>sign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signature.en.resx">
+      <DependentUpon>Signature.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Signature.resx">
       <DependentUpon>Signature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signature.zh-Hans.resx">
+      <DependentUpon>Signature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signature.zh-Hant.resx">
+      <DependentUpon>Signature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpareQRCode.en.resx">
+      <DependentUpon>SpareQRCode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SpareQRCode.resx">
       <DependentUpon>SpareQRCode.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SpareQRCode.zh-Hans.resx">
+      <DependentUpon>SpareQRCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpareQRCode.zh-Hant.resx">
+      <DependentUpon>SpareQRCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TargetWarehouse.en.resx">
+      <DependentUpon>TargetWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TargetWarehouse.resx">
       <DependentUpon>TargetWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TargetWarehouse.zh-Hans.resx">
+      <DependentUpon>TargetWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TargetWarehouse.zh-Hant.resx">
+      <DependentUpon>TargetWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAndAccountCreate.en.resx">
+      <DependentUpon>UserAndAccountCreate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserAndAccountCreate.resx">
       <DependentUpon>UserAndAccountCreate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserAndAccountCreate.zh-Hans.resx">
+      <DependentUpon>UserAndAccountCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAndAccountCreate.zh-Hant.resx">
+      <DependentUpon>UserAndAccountCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="webcam.en.resx">
+      <DependentUpon>webcam.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="webcam.resx">
+      <DependentUpon>webcam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="webcam.zh-Hans.resx">
+      <DependentUpon>webcam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="webcam.zh-Hant.resx">
       <DependentUpon>webcam.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -698,6 +1112,7 @@
     <Content Include="Resources\shopping-cart-icon.png" />
     <Content Include="Resources\vector60-5835-01.jpg" />
     <Content Include="Resources\vector60-5835-01.png" />
+    <AdditionalFiles Include="WindowsFormsApp_ml.xml" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

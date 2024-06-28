@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,7 +30,7 @@ namespace WindowsFormsApp
                 }
             }
             this.comboBoxSaleArea.DataSource = Locationlist;
-            this.comboBoxSaleArea.DisplayMember = "Location";
+            this.comboBoxSaleArea.DisplayMember = Resources.Location;
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -55,7 +56,7 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Do you want to turn to the next page?"))
+            if (Main.ShowYesNoDialog(Resources.Do_you_want_to_turn_to_the_nex))
             {
 
 
@@ -76,13 +77,13 @@ namespace WindowsFormsApp
                     }
                     String query = $"INSERT INTO Warehouse (Name,SaleAreaID, Location,State) VALUES ('{Name}','{SaleAreaID}', '{Location}','N')";
                     Main.db.insertBySql(query);
-                    Main.ShowMessage("Successful add!");
+                    Main.ShowMessage(Resources.Successful_add);
                     txtLocation.Text = string.Empty;
                     txtName.Text = string.Empty;
                 }
                 else
                 {
-                    Main.ShowMessage("Please provide Location!");
+                    Main.ShowMessage(Resources.Please_provide_Location);
                 }
             }
         }

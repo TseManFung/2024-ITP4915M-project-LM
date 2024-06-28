@@ -117,4 +117,319 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btncomplete.Text" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="btnlocate.Text" xml:space="preserve">
+    <value>locate</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Google_map</value>
+  </data>
+  <data name="lbllatitude.Text" xml:space="preserve">
+    <value>Latitude</value>
+  </data>
+  <data name="lbllocation.Text" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="lbllongitude.Text" xml:space="preserve">
+    <value>Longitude</value>
+  </data>
+  <data name="lbltitle.Text" xml:space="preserve">
+    <value>Please select a location</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="splitter1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="splitter1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>414, 450</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitter1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitter1.Name" xml:space="preserve">
+    <value>splitter1</value>
+  </data>
+  <data name="&gt;&gt;splitter1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Splitter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitter1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;splitter1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="map.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="map.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="map.Size" type="System.Drawing.Size, System.Drawing">
+    <value>414, 450</value>
+  </data>
+  <data name="map.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;map.Name" xml:space="preserve">
+    <value>map</value>
+  </data>
+  <data name="&gt;&gt;map.Type" xml:space="preserve">
+    <value>GMap.NET.WindowsForms.GMapControl, GMap.NET.WindowsForms, Version=2.1.7.0, Culture=neutral, PublicKeyToken=b85b9027b614afef</value>
+  </data>
+  <data name="&gt;&gt;map.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;map.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lbllocation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="lbllocation.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbllocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>454, 138</value>
+  </data>
+  <data name="lbllocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 12</value>
+  </data>
+  <data name="lbllocation.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lbllocation.Name" xml:space="preserve">
+    <value>lbllocation</value>
+  </data>
+  <data name="&gt;&gt;lbllocation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbllocation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbllocation.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lbllatitude.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="lbllatitude.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbllatitude.Location" type="System.Drawing.Point, System.Drawing">
+    <value>453, 205</value>
+  </data>
+  <data name="lbllatitude.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 12</value>
+  </data>
+  <data name="lbllatitude.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lbllatitude.Name" xml:space="preserve">
+    <value>lbllatitude</value>
+  </data>
+  <data name="&gt;&gt;lbllatitude.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbllatitude.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbllatitude.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="txtlocation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtlocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>529, 128</value>
+  </data>
+  <data name="txtlocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 22</value>
+  </data>
+  <data name="txtlocation.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtlocation.Name" xml:space="preserve">
+    <value>txtlocation</value>
+  </data>
+  <data name="&gt;&gt;txtlocation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtlocation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtlocation.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtlatitude.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtlatitude.Location" type="System.Drawing.Point, System.Drawing">
+    <value>529, 197</value>
+  </data>
+  <data name="txtlatitude.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 22</value>
+  </data>
+  <data name="txtlatitude.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtlatitude.Name" xml:space="preserve">
+    <value>txtlatitude</value>
+  </data>
+  <data name="&gt;&gt;txtlatitude.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtlatitude.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtlatitude.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtlongitude.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="txtlongitude.Location" type="System.Drawing.Point, System.Drawing">
+    <value>529, 234</value>
+  </data>
+  <data name="txtlongitude.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 22</value>
+  </data>
+  <data name="txtlongitude.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txtlongitude.Name" xml:space="preserve">
+    <value>txtlongitude</value>
+  </data>
+  <data name="&gt;&gt;txtlongitude.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtlongitude.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtlongitude.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lbllongitude.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="lbllongitude.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbllongitude.Location" type="System.Drawing.Point, System.Drawing">
+    <value>454, 242</value>
+  </data>
+  <data name="lbllongitude.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 12</value>
+  </data>
+  <data name="lbllongitude.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lbllongitude.Name" xml:space="preserve">
+    <value>lbllongitude</value>
+  </data>
+  <data name="&gt;&gt;lbllongitude.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbllongitude.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbllongitude.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lbltitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbltitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>527, 75</value>
+  </data>
+  <data name="lbltitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 12</value>
+  </data>
+  <data name="lbltitle.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lbltitle.Name" xml:space="preserve">
+    <value>lbltitle</value>
+  </data>
+  <data name="&gt;&gt;lbltitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbltitle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbltitle.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnlocate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnlocate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>529, 307</value>
+  </data>
+  <data name="btnlocate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 24</value>
+  </data>
+  <data name="btnlocate.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;btnlocate.Name" xml:space="preserve">
+    <value>btnlocate</value>
+  </data>
+  <data name="&gt;&gt;btnlocate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnlocate.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnlocate.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btncomplete.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btncomplete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>529, 355</value>
+  </data>
+  <data name="btncomplete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 24</value>
+  </data>
+  <data name="btncomplete.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;btncomplete.Name" xml:space="preserve">
+    <value>btncomplete</value>
+  </data>
+  <data name="&gt;&gt;btncomplete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btncomplete.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btncomplete.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>816, 489</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>816, 489</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Google_map</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

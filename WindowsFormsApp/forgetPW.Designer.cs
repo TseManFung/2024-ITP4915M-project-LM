@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmForgetPW));
             this.lblYourLoginName = new System.Windows.Forms.Label();
             this.lblYouAreDealerOrLMStaff = new System.Windows.Forms.Label();
             this.radioButtonYouAreDealer = new System.Windows.Forms.RadioButton();
@@ -41,101 +42,62 @@
             // 
             // lblYourLoginName
             // 
-            this.lblYourLoginName.AutoSize = true;
-            this.lblYourLoginName.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblYourLoginName.Location = new System.Drawing.Point(166, 35);
+            resources.ApplyResources(this.lblYourLoginName, "lblYourLoginName");
             this.lblYourLoginName.Name = "lblYourLoginName";
-            this.lblYourLoginName.Size = new System.Drawing.Size(225, 32);
-            this.lblYourLoginName.TabIndex = 0;
-            this.lblYourLoginName.Text = "Your login name:";
             // 
             // lblYouAreDealerOrLMStaff
             // 
-            this.lblYouAreDealerOrLMStaff.AutoSize = true;
-            this.lblYouAreDealerOrLMStaff.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblYouAreDealerOrLMStaff.Location = new System.Drawing.Point(46, 114);
+            resources.ApplyResources(this.lblYouAreDealerOrLMStaff, "lblYouAreDealerOrLMStaff");
             this.lblYouAreDealerOrLMStaff.Name = "lblYouAreDealerOrLMStaff";
-            this.lblYouAreDealerOrLMStaff.Size = new System.Drawing.Size(345, 32);
-            this.lblYouAreDealerOrLMStaff.TabIndex = 1;
-            this.lblYouAreDealerOrLMStaff.Text = "You are dealer or LM staff:";
             // 
             // radioButtonYouAreDealer
             // 
-            this.radioButtonYouAreDealer.AutoSize = true;
+            resources.ApplyResources(this.radioButtonYouAreDealer, "radioButtonYouAreDealer");
             this.radioButtonYouAreDealer.Checked = true;
-            this.radioButtonYouAreDealer.Font = new System.Drawing.Font("新細明體", 24F);
-            this.radioButtonYouAreDealer.Location = new System.Drawing.Point(397, 114);
             this.radioButtonYouAreDealer.Name = "radioButtonYouAreDealer";
-            this.radioButtonYouAreDealer.Size = new System.Drawing.Size(104, 36);
-            this.radioButtonYouAreDealer.TabIndex = 2;
             this.radioButtonYouAreDealer.TabStop = true;
-            this.radioButtonYouAreDealer.Text = "dealer";
             this.radioButtonYouAreDealer.UseVisualStyleBackColor = true;
             // 
             // radioButtonYouAreLMStaff
             // 
-            this.radioButtonYouAreLMStaff.AutoSize = true;
-            this.radioButtonYouAreLMStaff.Font = new System.Drawing.Font("新細明體", 24F);
-            this.radioButtonYouAreLMStaff.Location = new System.Drawing.Point(518, 114);
+            resources.ApplyResources(this.radioButtonYouAreLMStaff, "radioButtonYouAreLMStaff");
             this.radioButtonYouAreLMStaff.Name = "radioButtonYouAreLMStaff";
-            this.radioButtonYouAreLMStaff.Size = new System.Drawing.Size(138, 36);
-            this.radioButtonYouAreLMStaff.TabIndex = 3;
-            this.radioButtonYouAreLMStaff.Text = "LM staff";
             this.radioButtonYouAreLMStaff.UseVisualStyleBackColor = true;
             this.radioButtonYouAreLMStaff.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // txtYourLoginName
             // 
-            this.txtYourLoginName.Font = new System.Drawing.Font("新細明體", 24F);
-            this.txtYourLoginName.Location = new System.Drawing.Point(407, 21);
+            resources.ApplyResources(this.txtYourLoginName, "txtYourLoginName");
             this.txtYourLoginName.Name = "txtYourLoginName";
-            this.txtYourLoginName.Size = new System.Drawing.Size(249, 46);
-            this.txtYourLoginName.TabIndex = 4;
             // 
             // lblDelearName
             // 
-            this.lblDelearName.Font = new System.Drawing.Font("新細明體", 24F);
-            this.lblDelearName.Location = new System.Drawing.Point(52, 187);
+            resources.ApplyResources(this.lblDelearName, "lblDelearName");
             this.lblDelearName.Name = "lblDelearName";
-            this.lblDelearName.Size = new System.Drawing.Size(339, 32);
-            this.lblDelearName.TabIndex = 5;
-            this.lblDelearName.Text = "Dealer name:";
-            this.lblDelearName.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // txtDelearNmae
             // 
-            this.txtDelearNmae.Font = new System.Drawing.Font("新細明體", 24F);
-            this.txtDelearNmae.Location = new System.Drawing.Point(407, 187);
+            resources.ApplyResources(this.txtDelearNmae, "txtDelearNmae");
             this.txtDelearNmae.Name = "txtDelearNmae";
-            this.txtDelearNmae.Size = new System.Drawing.Size(249, 46);
-            this.txtDelearNmae.TabIndex = 6;
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Font = new System.Drawing.Font("新細明體", 24F);
-            this.btnSubmit.Location = new System.Drawing.Point(254, 289);
+            resources.ApplyResources(this.btnSubmit, "btnSubmit");
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(247, 49);
-            this.btnSubmit.TabIndex = 7;
-            this.btnSubmit.Text = "submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
             // 
             // txtSubmitMessage
             // 
             this.txtSubmitMessage.BackColor = System.Drawing.SystemColors.Info;
-            this.txtSubmitMessage.Font = new System.Drawing.Font("新細明體", 24F);
+            resources.ApplyResources(this.txtSubmitMessage, "txtSubmitMessage");
             this.txtSubmitMessage.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtSubmitMessage.Location = new System.Drawing.Point(12, 369);
             this.txtSubmitMessage.Name = "txtSubmitMessage";
             this.txtSubmitMessage.ReadOnly = true;
-            this.txtSubmitMessage.Size = new System.Drawing.Size(776, 46);
-            this.txtSubmitMessage.TabIndex = 8;
             // 
             // frmForgetPW
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtSubmitMessage);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.txtDelearNmae);
@@ -146,7 +108,6 @@
             this.Controls.Add(this.lblYouAreDealerOrLMStaff);
             this.Controls.Add(this.lblYourLoginName);
             this.Name = "frmForgetPW";
-            this.Text = "forget password";
             this.ResumeLayout(false);
             this.PerformLayout();
 
