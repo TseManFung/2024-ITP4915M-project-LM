@@ -1,4 +1,5 @@
-﻿using Mysqlx.Crud;
+﻿using WindowsFormsApp.Properties;
+using Mysqlx.Crud;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,7 +33,7 @@ namespace WindowsFormsApp
                 //if can not find the code in the collect list
                 if (!comboBoxSpareID.Items.Contains(code))
                 {
-                    Main.ShowMessage("The spare is not in the collect list");
+                    Main.ShowMessage(Resources.The_spare_is_not_in_the_collec);
                     return;
                 }
                 comboBoxSpareID.SelectedItem = code;
@@ -85,7 +86,7 @@ limit 0,1";
                 }
                 else
                 {
-                    Main.ShowMessage("No Order to Collect");
+                    Main.ShowMessage(Resources.No_Order_to_Collect);
                     return;
                 }
             }
@@ -120,7 +121,7 @@ WHERE OrderSerial = '{OrderSerial}';";
             dgvCollect.DataSource = dt;
             dgvCollect.Columns["OrderSerial"].Visible = false;
             comboBoxSpareID.Items.AddRange(dt.AsEnumerable().Select(x => x["ItemID"].ToString()).ToArray());
-            Main.ShowMessage("The current order number is: " + OrderSerial);
+            Main.ShowMessage(Resources.The_current_order_number_is + OrderSerial);
         }
 
         private void frmCollectSpare_FormClosing(object sender, FormClosingEventArgs e)
@@ -158,12 +159,12 @@ WHERE OrderSerial = '{OrderSerial}'
         {
             if (comboBoxSpareID.SelectedItem == null)
             {
-                Main.ShowMessage("Please select a spare");
+                Main.ShowMessage(Resources.Please_select_a_spare);
                 return;
             }
             else if (numSpareNumberofBundles.Value == 0)
             {
-                Main.ShowMessage("Please input the Number of Bundles");
+                Main.ShowMessage(Resources.Please_input_the_Number_of_Bun);
                 return;
             }
             if (invoiceID == null)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,7 +23,7 @@ namespace WindowsFormsApp
         DataTable dt;
 
         Dictionary<String, String> dictInvoiceStates = new Dictionary<string, string> {
-            {"C","Shipping" },{"S","Received" }
+            {"C",Resources.Shipping },{"S",Resources.Received }
         };
         public frmDeliveryStatusandProductDetails()
         {
@@ -46,7 +47,7 @@ namespace WindowsFormsApp
                     invoiceState = reader["CompleteState"].ToString();
                     lblState.Text = dictInvoiceStates[invoiceState];
                 }
-                catch (Exception e) { lblState.Text = "Unknown State"; }
+                catch (Exception e) { lblState.Text = Resources.Unknown_State; }
                 //reader.Close();
             }
             sql = $"SELECT a.ItemID,s.SpareName,sum(a.Quantity) as 'Qty',sum(a.BundlesNumber) as 'Bundles Number' FROM  ActualQuantityDespatched a inner join Spare s on a.ItemID =s.SpareID  where a.InvoiceID = '{InvoiceID}' group by itemID;";
@@ -115,25 +116,25 @@ namespace WindowsFormsApp
                 { "Title", "Legend MOTOR Co. Ltd." },
                 { "companyName", "SMLC District, Tienhou, Guangzhou." },
                 { "tel", "Tel: 133 808 12345" },
-                { "Grams", "Grams: LegendMC" },
-                { "InvAdd", "INVOICE ADDRESS" },
-                { "DeliAdd", "DELIVERY ADDRESS (IF DIFFERENT)" },
-                { "Date", "Date" },
-                { "DealerOrderNo", "YOUR ORDER NO." },
-                { "OurOrderNo", "OUR ORDER NO." },
-                { "DealerCode", "DEALER CODE" },
-                { "bundle", "No. of bundles" },
-                { "PartNo", "Part No." },
-                { "prevQty", "Prev. Qty." },
-                { "followQty", "Qty to follow" },
-                { "Qtydelivered", "Quantity delivered" },
-                { "weight", "Total weight" },
-                { "DespatchForeman", "Despatch Foreman" },
-                { "Receive", "Received in good order" },
-                { "Sign", "Signature" },
-            { "UnitPrice","Unit price ($)"},
-            {"TotalPrice","Total price ($)" },
-            {"CreateDate","This invoice create at" }
+                { "Grams", Resources.Grams_LegendMC },
+                { "InvAdd", Resources.INVOICE_ADDRESS },
+                { "DeliAdd", Resources.DELIVERY_ADDRESS_IF_DIFFERENT },
+                { "Date", Resources._Date },
+                { "DealerOrderNo", Resources.YOUR_ORDER_NO },
+                { "OurOrderNo", Resources.OUR_ORDER_NO },
+                { "DealerCode", Resources.DEALER_CODE },
+                { "bundle", Resources.No_of_bundles },
+                { "PartNo", Resources.Part_No },
+                { "prevQty", Resources.Prev_Qty },
+                { "followQty", Resources.Qty_to_follow },
+                { "Qtydelivered", Resources.Quantity_delivered },
+                { "weight", Resources.Total_weight },
+                { "DespatchForeman", Resources.Despatch_Foreman },
+                { "Receive", Resources.Received_in_good_order },
+                { "Sign", Resources.Signature },
+            { "UnitPrice",Resources.Unit_price},
+            {"TotalPrice",Resources.Total_price },
+            {"CreateDate",Resources.This_invoice_create_at }
             };
 
         Dictionary<string, string> strdata = new Dictionary<string, string>
@@ -292,7 +293,7 @@ namespace WindowsFormsApp
             Image sign;
 
             e.Graphics.DrawString(this.str["Date"], font, brush, ml, mt, new StringFormat() { Alignment = StringAlignment.Near });
-            e.Graphics.DrawString("Signatory", font, brush, centerX, mt, new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString(Resources.Signatory, font, brush, centerX, mt, new StringFormat() { Alignment = StringAlignment.Near });
             e.Graphics.DrawString(this.str["TotalPrice"], font, brush, ml, mt+50, new StringFormat() { Alignment = StringAlignment.Near });
             e.Graphics.DrawString("$"+totalPrice.ToString(), font, brush,ml , mt + 70, new StringFormat() { Alignment = StringAlignment.Near });
             using (var reader = Main.db.readBySql(sql))

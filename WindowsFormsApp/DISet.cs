@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -110,7 +111,7 @@ namespace WindowsFormsApp
             }
             catch (Exception ex)
             {
-                Main.ShowMessage("Can not print now");
+                Main.ShowMessage(Resources.Can_not_print_now);
                 Console.WriteLine(ex.ToString());
                 Console.WriteLine(ex.Message);
             }
@@ -149,7 +150,7 @@ namespace WindowsFormsApp
             int centerX = e.PageBounds.Width / 2;
             int centerY = e.PageBounds.Height / 2;
             int mt = e.MarginBounds.Top, ml = e.MarginBounds.Left, mr = e.MarginBounds.Right, mb = e.MarginBounds.Bottom;
-            e.Graphics.DrawString("Despatch Instruction Set", font, brush, centerX, mt - 100, new StringFormat() { Alignment = StringAlignment.Center });
+            e.Graphics.DrawString(Resources.Despatch_Instruction_Set, font, brush, centerX, mt - 100, new StringFormat() { Alignment = StringAlignment.Center });
 
             //e.Graphics.DrawImage(Form2Bitmap(forms[0], mb-mt,mr-ml), 0,0 );
             e.Graphics.DrawImage(Form2Bitmap(forms[0], mb - mt, mr - ml), ml, mt);
