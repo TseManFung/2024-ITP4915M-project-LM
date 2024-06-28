@@ -1,4 +1,4 @@
-﻿using WindowsFormsApp.Properties;
+﻿using MultiLang;
 using Mysqlx.Crud;
 using System;
 using System.Collections.Generic;
@@ -33,7 +33,7 @@ namespace WindowsFormsApp
                 //if can not find the code in the collect list
                 if (!comboBoxSpareID.Items.Contains(code))
                 {
-                    Main.ShowMessage(Resources.The_spare_is_not_in_the_collec);
+                    Main.ShowMessage(ml.ml_string(352,"The spare is not in the collect list"));
                     return;
                 }
                 comboBoxSpareID.SelectedItem = code;
@@ -86,7 +86,7 @@ limit 0,1";
                 }
                 else
                 {
-                    Main.ShowMessage("No Order to Collect");
+                    Main.ShowMessage(ml.ml_string(351,"No Order to Collect"));
                     return;
                 }
             }
@@ -121,7 +121,7 @@ WHERE OrderSerial = '{OrderSerial}';";
             dgvCollect.DataSource = dt;
             dgvCollect.Columns["OrderSerial"].Visible = false;
             comboBoxSpareID.Items.AddRange(dt.AsEnumerable().Select(x => x["ItemID"].ToString()).ToArray());
-            Main.ShowMessage("The current order number is: " + OrderSerial);
+            Main.ShowMessage(ml.ml_string(353,"The current order number is: ") + OrderSerial);
         }
 
         private void frmCollectSpare_FormClosing(object sender, FormClosingEventArgs e)
@@ -159,12 +159,12 @@ WHERE OrderSerial = '{OrderSerial}'
         {
             if (comboBoxSpareID.SelectedItem == null)
             {
-                Main.ShowMessage("Please select a spare");
+                Main.ShowMessage(ml.ml_string(349,"Please select a spare"));
                 return;
             }
             else if (numSpareNumberofBundles.Value == 0)
             {
-                Main.ShowMessage("Please input the Number of Bundles");
+                Main.ShowMessage(ml.ml_string(350,"Please input the Number of Bundles"));
                 return;
             }
             if (invoiceID == null)

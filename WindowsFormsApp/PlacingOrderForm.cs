@@ -1,4 +1,5 @@
-﻿using MySqlConnector;
+﻿using MultiLang;
+using MySqlConnector;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -68,7 +69,7 @@ namespace WindowsFormsApp
                 numQuantity.Maximum = getStock(txtSelectedSpareName.Text);
                 tlpSelectSpace.Visible = true;
             }
-            catch (InvalidOperationException ex) { MessageBox.Show("No data found"); }
+            catch (InvalidOperationException ex) { MessageBox.Show(ml.ml_string(337,"No data found")); }
         }
 
         private void dgvPlacingOrder_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -104,7 +105,7 @@ namespace WindowsFormsApp
                 return stock;
 
             }
-            throw new Exception("No stock found");
+            throw new Exception(ml.ml_string(282,"No stock found"));
         }
 
         private void change_qty(int change)
