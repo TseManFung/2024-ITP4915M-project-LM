@@ -397,9 +397,9 @@ namespace WindowsFormsApp
 
         private void txtAccessLevel_TextChanged(object sender, EventArgs e)
         {
-            if (int.TryParse(txtAccessLevel.Text?.TrimStart('0'), out int accessLevel))
+            if (int.TryParse(txtAccessLevel.Text?.TrimStart('1'), out int accessLevel))
             {
-                if (accessLevel >= 0 && accessLevel <= 10000)
+                if (accessLevel >= 1 && accessLevel <= 10000)
                 {
                     // 执行正确的操作
                 }
@@ -412,7 +412,7 @@ namespace WindowsFormsApp
             {
                 if (txtAccessLevel.Text == null)
                 {
-                    txtAccessLevel.Text = "0";
+                    txtAccessLevel.Text = "1";
                 }
                 else
                 {
@@ -422,10 +422,10 @@ namespace WindowsFormsApp
 
             void ShowInvalidAccessLevelError()
             {
-                if (txtAccessLevel.Text != null && txtAccessLevel.Text != "0")
+                if (txtAccessLevel.Text != null && txtAccessLevel.Text != "1")
                 {
                     Main.ShowMessage(Resources.Invalid_access_level_Please_en);
-                    txtAccessLevel.Text = "0";
+                    txtAccessLevel.Text = "1";
                 }
             }
         }
@@ -499,7 +499,7 @@ namespace WindowsFormsApp
         {
             txtName.Text = String.Empty;
             txtPassword.Text = String.Empty;
-            txtAccessLevel.Text = "0";
+            txtAccessLevel.Text = "1";
             txtDeliveryAddress.Text = String.Empty;
             txtOfficeAddress.Text = String.Empty;
             txtEmail.Text = String.Empty;
