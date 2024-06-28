@@ -117,6 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnEditOrderItem.Text" xml:space="preserve">
+    <value>Edit order item</value>
+  </data>
+  <data name="btnEditYourOrderNumber.Text" xml:space="preserve">
+    <value>Edit your order number</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="buttonDeleteOrder.Text" xml:space="preserve">
+    <value>Cancel Order</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Edit Order</value>
+  </data>
+  <data name="lblOrderSerial.Text" xml:space="preserve">
+    <value>Order Serial:</value>
+  </data>
+  <data name="lblQuantity.Text" xml:space="preserve">
+    <value>Quantity:</value>
+  </data>
+  <data name="lblSpareID.Text" xml:space="preserve">
+    <value>Spare ID:</value>
+  </data>
+  <data name="lblSpareName.Text" xml:space="preserve">
+    <value>Spare Name:</value>
+  </data>
+  <data name="lblYourOrderNumber.Text" xml:space="preserve">
+    <value>Your order number:</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
     <value>5</value>
@@ -137,9 +170,6 @@
   </data>
   <data name="buttonDeleteOrder.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
-  </data>
-  <data name="buttonDeleteOrder.Text" xml:space="preserve">
-    <value>Cancel Order</value>
   </data>
   <data name="&gt;&gt;buttonDeleteOrder.Name" xml:space="preserve">
     <value>buttonDeleteOrder</value>
@@ -167,9 +197,6 @@
   </data>
   <data name="btnEditYourOrderNumber.TabIndex" type="System.Int32, mscorlib">
     <value>88</value>
-  </data>
-  <data name="btnEditYourOrderNumber.Text" xml:space="preserve">
-    <value>Edit your order number</value>
   </data>
   <data name="&gt;&gt;btnEditYourOrderNumber.Name" xml:space="preserve">
     <value>btnEditYourOrderNumber</value>
@@ -233,9 +260,6 @@
   </data>
   <data name="lblOrderSerial.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
-  </data>
-  <data name="lblOrderSerial.Text" xml:space="preserve">
-    <value>Order Serial:</value>
   </data>
   <data name="&gt;&gt;lblOrderSerial.Name" xml:space="preserve">
     <value>lblOrderSerial</value>
@@ -302,9 +326,6 @@
   </data>
   <data name="lblSpareID.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
-  </data>
-  <data name="lblSpareID.Text" xml:space="preserve">
-    <value>Spare ID:</value>
   </data>
   <data name="&gt;&gt;lblSpareID.Name" xml:space="preserve">
     <value>lblSpareID</value>
@@ -429,9 +450,6 @@
   <data name="lblYourOrderNumber.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
   </data>
-  <data name="lblYourOrderNumber.Text" xml:space="preserve">
-    <value>Your order number:</value>
-  </data>
   <data name="&gt;&gt;lblYourOrderNumber.Name" xml:space="preserve">
     <value>lblYourOrderNumber</value>
   </data>
@@ -492,9 +510,6 @@
   <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
-  <data name="btnSave.Text" xml:space="preserve">
-    <value>Save</value>
-  </data>
   <data name="btnSave.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -530,9 +545,6 @@
   </data>
   <data name="lblQuantity.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
-  </data>
-  <data name="lblQuantity.Text" xml:space="preserve">
-    <value>Quantity:</value>
   </data>
   <data name="&gt;&gt;lblQuantity.Name" xml:space="preserve">
     <value>lblQuantity</value>
@@ -623,9 +635,6 @@
   </data>
   <data name="lblSpareName.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
-  </data>
-  <data name="lblSpareName.Text" xml:space="preserve">
-    <value>Spare Name:</value>
   </data>
   <data name="&gt;&gt;lblSpareName.Name" xml:space="preserve">
     <value>lblSpareName</value>
@@ -765,9 +774,6 @@
   <data name="btnEditOrderItem.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
   </data>
-  <data name="btnEditOrderItem.Text" xml:space="preserve">
-    <value>Edit order item</value>
-  </data>
   <data name="&gt;&gt;btnEditOrderItem.Name" xml:space="preserve">
     <value>btnEditOrderItem</value>
   </data>
@@ -810,17 +816,11 @@
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="buttonDeleteOrder" Row="1" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnEditYourOrderNumber" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel12" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="panel1" Row="3" RowSpan="1" Column="0" ColumnSpan="5" /&gt;&lt;Control Name="btnEditOrderItem" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,20,Percent,10,Percent,10,Percent,60,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1321, 605</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Edit Order</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmEditOrder</value>

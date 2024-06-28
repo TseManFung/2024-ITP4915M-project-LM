@@ -286,6 +286,7 @@
     <Compile Include="Google_map.Designer.cs">
       <DependentUpon>Google_map.cs</DependentUpon>
     </Compile>
+    <Compile Include="MlString.cs" />
     <Compile Include="ModifyInformation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -303,6 +304,12 @@
     </Compile>
     <Compile Include="reportCondition.Designer.cs">
       <DependentUpon>reportCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectLanguage.designer.cs">
+      <DependentUpon>SelectLanguage.cs</DependentUpon>
     </Compile>
     <Compile Include="Server.cs">
       <SubType>Form</SubType>
@@ -973,6 +980,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Scrap.zh-Hant.resx">
       <DependentUpon>Scrap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectLanguage.resx">
+      <DependentUpon>SelectLanguage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Server.en.resx">
       <DependentUpon>Server.cs</DependentUpon>

@@ -9,6 +9,7 @@ using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Microsoft.WindowsAPICodePack.Shell.PropertySystem.SystemProperties.System;
 // Debug
 //using System.Diagnostics;
 
@@ -44,6 +45,8 @@ namespace WindowsFormsApp
 
         public Main()
         {
+
+
             InitializeComponent();
         }
 
@@ -257,8 +260,27 @@ namespace WindowsFormsApp
 
         private void pictureBoxLanguage_Click(object sender, EventArgs e)
         {
-            frmLanguage f = new frmLanguage();
-            f.ShowDialog();
+            //frmLanguage f = new frmLanguage();
+            //f.ShowDialog();
+            //Show the language select dialog
+            MultiLang.SelectLanguage frmLang = new MultiLang.SelectLanguage();
+            frmLang.LoadSettingsAndShow();
+            frmLang.Dispose();
+            frmLang = null;
+            // reload pContent's control
+
+            if (currfrm_equals(typeof(frmLogin)) )
+            {
+                this.Change_pContent(typeof(frmLogin));
+            }else if (currfrm_equals(typeof(frmMenu)))
+            {
+                this.Change_pContent(typeof(frmMenu));
+            }
+            else {
+                lblTitle_Click_1(sender, e);
+                this.Change_pContent(typeof(frmMenu));
+            }
+
         }
 
         public void goBack()

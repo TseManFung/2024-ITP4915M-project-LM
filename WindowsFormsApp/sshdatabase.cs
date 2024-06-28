@@ -123,9 +123,10 @@ namespace WindowsFormsApp
 
         public int getUserID(string loginName, string pw)
         {
-            string sql = "SELECT `UserID` FROM `User` WHERE `LoginName` = @loginName AND `Password` = @pw";
+            string sql = "SELECT `UserID`,`LoginName` FROM `User` WHERE `LoginName` = @loginName AND `Password` = @pw";
             int count = 0;
             int id = -1;
+            string name = "";
             using (MySqlCommand com = new MySqlCommand(sql, dbconnect))
             {
 
@@ -138,13 +139,14 @@ namespace WindowsFormsApp
                     {
                         count++;
                         id = (int)reader["UserID"];
+                        name = (string)reader["LoginName"];
 
                     }
                 }
                 com.Parameters.Clear();
             }
 
-            if (count == 1)
+            if (count == 1&&(name != "") && (name == loginName))
             {
                 return id;
             }

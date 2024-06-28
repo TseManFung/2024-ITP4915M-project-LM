@@ -117,30 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnLogIn.Text" xml:space="preserve">
-    <value>Log In</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Login</value>
-  </data>
-  <data name="lblForgotPassword.Text" xml:space="preserve">
-    <value>Forgot Password?</value>
-  </data>
-  <data name="lblLogInAccount.Text" xml:space="preserve">
-    <value>Log in to your account</value>
-  </data>
-  <data name="lblLoginName.Text" xml:space="preserve">
-    <value>Login Name:</value>
-  </data>
-  <data name="lblPassword.Text" xml:space="preserve">
-    <value>Password:</value>
-  </data>
-  <data name="lblWrongPassword.Text" xml:space="preserve">
-    <value>Login name or password is wrong</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -189,6 +165,9 @@
   <data name="lblForgotPassword.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
+  <data name="lblForgotPassword.Text" xml:space="preserve">
+    <value>Forgot Password?</value>
+  </data>
   <data name="&gt;&gt;lblForgotPassword.Name" xml:space="preserve">
     <value>lblForgotPassword</value>
   </data>
@@ -222,6 +201,9 @@
   <data name="lblWrongPassword.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
+  <data name="lblWrongPassword.Text" xml:space="preserve">
+    <value>Login name or password is wrong</value>
+  </data>
   <data name="lblWrongPassword.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -244,7 +226,7 @@
     <value>True</value>
   </data>
   <data name="lblLogInAccount.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Rounded MT Bold, 18pt</value>
+    <value>清松手寫體1, 17.9999981pt</value>
   </data>
   <data name="lblLogInAccount.Location" type="System.Drawing.Point, System.Drawing">
     <value>77, 241</value>
@@ -253,10 +235,16 @@
     <value>4, 0, 4, 0</value>
   </data>
   <data name="lblLogInAccount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 28</value>
+    <value>260, 31</value>
   </data>
   <data name="lblLogInAccount.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
+  </data>
+  <data name="lblLogInAccount.Text" xml:space="preserve">
+    <value>Log in to your account</value>
+  </data>
+  <data name="lblLogInAccount.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;lblLogInAccount.Name" xml:space="preserve">
     <value>lblLogInAccount</value>
@@ -287,6 +275,9 @@
   </data>
   <data name="btnLogIn.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
+  </data>
+  <data name="btnLogIn.Text" xml:space="preserve">
+    <value>Log In</value>
   </data>
   <data name="&gt;&gt;btnLogIn.Name" xml:space="preserve">
     <value>btnLogIn</value>
@@ -321,6 +312,9 @@
   <data name="lblPassword.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
+  <data name="lblPassword.Text" xml:space="preserve">
+    <value>Password:</value>
+  </data>
   <data name="&gt;&gt;lblPassword.Name" xml:space="preserve">
     <value>lblPassword</value>
   </data>
@@ -353,6 +347,9 @@
   </data>
   <data name="lblLoginName.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
+  </data>
+  <data name="lblLoginName.Text" xml:space="preserve">
+    <value>Login Name:</value>
   </data>
   <data name="&gt;&gt;lblLoginName.Name" xml:space="preserve">
     <value>lblLoginName</value>
@@ -477,11 +474,17 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>384, 561</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Login</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmLogin</value>
