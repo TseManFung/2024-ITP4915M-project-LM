@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultiLang;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -54,7 +55,7 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
+            if (Main.ShowYesNoDialog(ml.ml_string(308,"Are you sure you want to change it?")))
             {
 
                 if (!string.IsNullOrEmpty(txtLocation.Text))
@@ -83,12 +84,12 @@ namespace WindowsFormsApp
                     String  query = $"UPDATE Warehouse SET Location = '{Location}' WHERE WarehouseID = '{WarehouseID}'";
                     
                     Main.db.updateBySql(query);
-                    Main.ShowMessage("Successful editing");
+                    Main.ShowMessage(ml.ml_string(309,"Successful editing"));
                     txtLocation.Text = String.Empty;
                 }
                 else
                 {
-                    Main.ShowMessage("Please provide Location!");
+                    Main.ShowMessage(ml.ml_string(289,"Please provide Location!"));
                 }
             }
         }
@@ -140,11 +141,11 @@ namespace WindowsFormsApp
             // 检查目标仓库是否与要删除的仓库相同
             if (targetwarehouse == DeleteWarehouse)
             {
-                Main.ShowMessage("Cannot select the location to be deleted!");
+                Main.ShowMessage(ml.ml_string(322,"Cannot select the location to be deleted!"));
             }else
             {
                 // 确认删除操作
-                if (Main.ShowYesNoDialog("Are you sure you want to delete it?"))
+                if (Main.ShowYesNoDialog(ml.ml_string(323,"Are you sure you want to delete it?")))
                 {
                     // 获取当前用户的 StaffID
                     sql = $"select StaffID FROM User WHERE UserID = {Main.userID};";
@@ -210,11 +211,11 @@ namespace WindowsFormsApp
                         }
                         sql = $"UPDATE Department SET WarehouseID = NULL ,State = 'D' WHERE WarehouseID = {WarehouseID}";
                         Main.db.updateBySql(sql);
-                        Main.ShowMessage("Succeed!");
+                        Main.ShowMessage(ml.ml_string(310,"Succeed!"));
                     }
                     else
                     {
-                        Main.ShowMessage("All fuck up");
+                        Main.ShowMessage(ml.ml_string(324,"All fuck up"));
                     }
                 }
             }

@@ -1,4 +1,5 @@
-﻿using WindowsFormsApp.Properties;
+﻿using MultiLang;
+using WindowsFormsApp.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,7 +31,7 @@ namespace WindowsFormsApp
                 }
             }
             this.comboBoxSaleArea.DataSource = Locationlist;
-            this.comboBoxSaleArea.DisplayMember = Resources.Location;
+            this.comboBoxSaleArea.DisplayMember = "Location";
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)

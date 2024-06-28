@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultiLang;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -84,7 +85,7 @@ namespace WindowsFormsApp
 
             catch (InvalidOperationException ex)
             {
-                Main.ShowMessage("No data found");
+                Main.ShowMessage(ml.ml_string(337,"No data found"));
             }
         }
 
@@ -92,13 +93,13 @@ namespace WindowsFormsApp
         {
             if (dgvItemFollowingROL.Rows.Count == 0)
             {
-                Main.ShowMessage("No rows available to move.");
+                Main.ShowMessage(ml.ml_string(336,"No rows available to move."));
                 return;
             }
 
             if (dgvItemFollowingROL.SelectedRows.Count == 0)
             {
-                Main.ShowMessage("Please select a row to move.");
+                Main.ShowMessage(ml.ml_string(338,"Please select a row to move."));
                 return;
             }
 
@@ -134,13 +135,13 @@ namespace WindowsFormsApp
         {
             if (dgvRestock.Rows.Count == 0)
             {
-                Main.ShowMessage("No rows available to move.");
+                Main.ShowMessage(ml.ml_string(336,"No rows available to move."));
                 return;
             }
 
             if (dgvRestock.SelectedRows.Count == 0)
             {
-                Main.ShowMessage("Please select a row to move.");
+                Main.ShowMessage(ml.ml_string(338,"Please select a row to move."));
                 return;
             }
 
@@ -177,7 +178,7 @@ namespace WindowsFormsApp
             // 確保 DataGridView 有行可供處理
             if (dgvRestock.Rows.Count == 0)
             {
-                MessageBox.Show("No rows available in the restock list.");
+                MessageBox.Show(ml.ml_string(339,"No rows available in the restock list."));
                 return;
             }
 
@@ -235,7 +236,7 @@ namespace WindowsFormsApp
             }
             else
             {
-                MessageBox.Show("No rows were processed.");
+                MessageBox.Show(ml.ml_string(340,"No rows were processed."));
             }
         }
 

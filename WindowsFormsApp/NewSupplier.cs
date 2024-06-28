@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultiLang;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -69,7 +70,7 @@ namespace WindowsFormsApp
                 }
                 else
                 {
-                    Main.ShowMessage("Please enter a maximum of 20 digits!");
+                    Main.ShowMessage(ml.ml_string(320,"Please enter a maximum of 20 digits!"));
                     txtContantNumber.Text = string.Empty;
                 }
             }
@@ -88,13 +89,13 @@ namespace WindowsFormsApp
         private void btnCreateNewSupplier_Click(object sender, EventArgs e)
         {
 
-            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
+            if (Main.ShowYesNoDialog(ml.ml_string(308,"Are you sure you want to change it?")))
             {
                 if (!string.IsNullOrEmpty(txtEmail.Text))
                 {
                     if (!IsValidEmail(txtEmail.Text))
                     {
-                        Main.ShowMessage("Please enter a valid email address!");
+                        Main.ShowMessage(ml.ml_string(286,"Please enter a valid email address!"));
                         txtEmail.Text = string.Empty;
                         return;
                     }
@@ -114,11 +115,11 @@ namespace WindowsFormsApp
                         txtAddress.Text = string.Empty;
                         txtContantNumber.Text = string.Empty;
                         txtEmail.Text = string.Empty;
-                        Main.ShowMessage("Successful creating");
+                        Main.ShowMessage(ml.ml_string(335,"Successful creating"));
                     }
                     else
                     {
-                        Main.ShowMessage("Please fill in all information");
+                        Main.ShowMessage(ml.ml_string(334,"Please fill in all information"));
                     }
                 
             }

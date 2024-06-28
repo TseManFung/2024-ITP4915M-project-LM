@@ -117,6 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnAdd.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="btnClearAll.Text" xml:space="preserve">
+    <value>Clear All Item</value>
+  </data>
+  <data name="btnConfirm.Text" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="btnReduce.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Remove this Item</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Cart</value>
+  </data>
+  <data name="lblSelectedSpareName.Text" xml:space="preserve">
+    <value>Selected Spare Name:</value>
+  </data>
+  <data name="lblTotalPrice.Text" xml:space="preserve">
+    <value>Total Price:</value>
+  </data>
+  <data name="lblTotalQuantity.Text" xml:space="preserve">
+    <value>Total Quantity:</value>
+  </data>
+  <data name="lblYourOrderNo.Text" xml:space="preserve">
+    <value>Your order no. (if any) :</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>5</value>
@@ -137,9 +170,6 @@
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Remove this Item</value>
   </data>
   <data name="&gt;&gt;button1.Name" xml:space="preserve">
     <value>button1</value>
@@ -171,9 +201,6 @@
   <data name="btnAdd.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
   </data>
-  <data name="btnAdd.Text" xml:space="preserve">
-    <value>+</value>
-  </data>
   <data name="&gt;&gt;btnAdd.Name" xml:space="preserve">
     <value>btnAdd</value>
   </data>
@@ -200,9 +227,6 @@
   </data>
   <data name="btnReduce.TabIndex" type="System.Int32, mscorlib">
     <value>86</value>
-  </data>
-  <data name="btnReduce.Text" xml:space="preserve">
-    <value>-</value>
   </data>
   <data name="&gt;&gt;btnReduce.Name" xml:space="preserve">
     <value>btnReduce</value>
@@ -324,9 +348,6 @@
   <data name="lblSelectedSpareName.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
-  <data name="lblSelectedSpareName.Text" xml:space="preserve">
-    <value>Selected Spare Name:</value>
-  </data>
   <data name="&gt;&gt;lblSelectedSpareName.Name" xml:space="preserve">
     <value>lblSelectedSpareName</value>
   </data>
@@ -384,9 +405,6 @@
   <data name="lblTotalPrice.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="lblTotalPrice.Text" xml:space="preserve">
-    <value>Total Price:</value>
-  </data>
   <data name="&gt;&gt;lblTotalPrice.Name" xml:space="preserve">
     <value>lblTotalPrice</value>
   </data>
@@ -414,9 +432,6 @@
   <data name="btnConfirm.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="btnConfirm.Text" xml:space="preserve">
-    <value>Confirm</value>
-  </data>
   <data name="&gt;&gt;btnConfirm.Name" xml:space="preserve">
     <value>btnConfirm</value>
   </data>
@@ -443,9 +458,6 @@
   </data>
   <data name="lblTotalQuantity.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
-  </data>
-  <data name="lblTotalQuantity.Text" xml:space="preserve">
-    <value>Total Quantity:</value>
   </data>
   <data name="&gt;&gt;lblTotalQuantity.Name" xml:space="preserve">
     <value>lblTotalQuantity</value>
@@ -476,9 +488,6 @@
   </data>
   <data name="lblYourOrderNo.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="lblYourOrderNo.Text" xml:space="preserve">
-    <value>Your order no. (if any) :</value>
   </data>
   <data name="&gt;&gt;lblYourOrderNo.Name" xml:space="preserve">
     <value>lblYourOrderNo</value>
@@ -533,9 +542,6 @@
   </data>
   <data name="btnClearAll.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
-  </data>
-  <data name="btnClearAll.Text" xml:space="preserve">
-    <value>Clear All Item</value>
   </data>
   <data name="&gt;&gt;btnClearAll.Name" xml:space="preserve">
     <value>btnClearAll</value>
@@ -603,17 +609,11 @@
   <data name="&gt;&gt;dgvSelectedSpare.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1405, 501</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Cart</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmCart</value>

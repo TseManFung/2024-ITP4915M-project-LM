@@ -63,7 +63,7 @@ namespace WindowsFormsApp
             using (var reader = Main.db.readBySql(sql))
             {
                 this.comboBoxSaleArea.Items.Clear();
-                this.comboBoxSaleArea.Items.Add(Resources.No_saleArea);
+                this.comboBoxSaleArea.Items.Add("No saleArea");
                 while (reader.Read())
                 {
                     this.comboBoxSaleArea.Items.Add(reader.GetString(0));
@@ -108,7 +108,7 @@ namespace WindowsFormsApp
                     String query = $"UPDATE User SET AccessLevel = '{accessL}' Where UserID = {usid};";
                     Main.db.updateBySql(query);
                 }
-                if (isid == Resources.StaffID)
+                if (isid == "StaffID")
                 {
 
                     if (!string.IsNullOrEmpty(comboBoxSaleArea.SelectedItem?.ToString()) &&
@@ -165,7 +165,7 @@ namespace WindowsFormsApp
                         Main.ShowMessage(Resources.Missging_data);
                     }
                 }
-                else if (isid == Resources.DealerID){
+                else if (isid == "DealerID"){
 
 
 
@@ -243,7 +243,7 @@ namespace WindowsFormsApp
                     if (!reader.IsDBNull(0))
                     {
                         id = reader.GetInt32(0);
-                        isid = Resources.DealerID;
+                        isid = "DealerID";
                     }
                 }
             }
@@ -255,14 +255,14 @@ namespace WindowsFormsApp
                     if (!reader.IsDBNull(0))
                     {
                         id = reader.GetInt32(0);
-                        isid = Resources.StaffID;
+                        isid = "StaffID";
                     }
                 }
             }
-            if(isid == Resources.StaffID)
+            if(isid == "StaffID")
             {
                 ForTest = true;
-            }else if(isid == Resources.DealerID)
+            }else if(isid == "DealerID")
             {
                 ForTest = false;
             }
@@ -270,7 +270,7 @@ namespace WindowsFormsApp
             tableLayoutPanel9.Visible = tableLayoutPanel10.Visible = tableLayoutPanel11.Visible = tableLayoutPanel13.Visible = !ForTest;
 
             int Accesslevele = 0;
-            if (isid == Resources.StaffID)
+            if (isid == "StaffID")
             {
                 sql = $@" SELECT u.AccessLevel, d.DeptName, s.Position, s.StaffName, a.Location FROM User u JOIN Staff s ON u.LoginName = '{LoginName}' AND s.StaffID = {id} JOIN Department d ON s.DeptID = d.DeptID LEFT JOIN SaleArea a ON s.SaleAreaID = a.AreaID WHERE s.StaffID = {id}; SELECT DeptName FROM Department; SELECT DISTINCT Position FROM Staff;";
                 string deptName = string.Empty;
@@ -330,7 +330,7 @@ namespace WindowsFormsApp
                 }
             }
 
-            else if (isid == Resources.DealerID)
+            else if (isid == "DealerID")
             {
                 sql = $@" SELECT u.AccessLevel, d.DealerName, d.ContantNumber, d.email, d.OfficeAddress, d.DeliveryAddress, a.Location FROM User u LEFT JOIN Dealer d ON d.DealerID = {id} LEFT JOIN SaleArea a ON d.SaleAreaID = a.AreaID WHERE u.LoginName = '{LoginName}' AND u.DealerID = {id};";
                 using (var reader = Main.db.readBySql(sql))

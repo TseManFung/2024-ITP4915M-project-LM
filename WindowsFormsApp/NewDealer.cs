@@ -1,4 +1,5 @@
-﻿using Google.Protobuf.WellKnownTypes;
+﻿using MultiLang;
+using Google.Protobuf.WellKnownTypes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -43,7 +44,7 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
+            if (Main.ShowYesNoDialog(ml.ml_string(308,"Are you sure you want to change it?")))
             {
                 Random random = new Random();
                 int randompasswd = random.Next(0, 1001);
@@ -109,7 +110,7 @@ namespace WindowsFormsApp
                     }
                     else
                     {
-                        Main.ShowMessage("Please provide both Department Name and Department Email!");
+                        Main.ShowMessage(ml.ml_string(331,"Please provide both Department Name and Department Email!"));
                     }
 
                 }
@@ -187,13 +188,13 @@ namespace WindowsFormsApp
                 // Check if the input is a valid number
                 if (!long.TryParse(txtPhoneNumber.Text, out _))
                 {
-                    Main.ShowMessage("Invalid input. Please enter a valid number.");
+                    Main.ShowMessage(ml.ml_string(270,"Invalid input. Please enter a valid number."));
                     txtPhoneNumber.Text = string.Empty;
                 }
                 // Check if the input length exceeds 20 digits
                 else if (txtPhoneNumber.Text.Length > 20)
                 {
-                    Main.ShowMessage("Phone number cannot exceed 20 digits.");
+                    Main.ShowMessage(ml.ml_string(285,"Phone number cannot exceed 20 digits."));
                     txtPhoneNumber.Text = txtPhoneNumber.Text.Substring(0, 20);
                 }
             }
@@ -205,7 +206,7 @@ namespace WindowsFormsApp
             {
                 if (!IsValidEmail(txtEmail.Text))
                 {
-                    Main.ShowMessage("Please enter a valid email address!");
+                    Main.ShowMessage(ml.ml_string(286,"Please enter a valid email address!"));
                     txtEmail.Text = string.Empty;
                 }
             }

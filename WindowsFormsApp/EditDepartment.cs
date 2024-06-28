@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultiLang;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -124,7 +125,7 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
+            if (Main.ShowYesNoDialog(ml.ml_string(308,"Are you sure you want to change it?")))
             {
 
                 if (!string.IsNullOrEmpty(txtDepartmentName.Text) && !string.IsNullOrEmpty(txtDepartmentEmail.Text))
@@ -153,13 +154,13 @@ namespace WindowsFormsApp
                     }
 
                     Main.db.updateBySql(query);
-                    Main.ShowMessage("Successful editing");
+                    Main.ShowMessage(ml.ml_string(309,"Successful editing"));
                     txtDepartmentName.Text = "";
                     txtDepartmentEmail.Text = "";
                 }
                 else
                 {
-                    Main.ShowMessage("Please provide Location!");
+                    Main.ShowMessage(ml.ml_string(289,"Please provide Location!"));
                 }
             }
         }
@@ -182,12 +183,12 @@ namespace WindowsFormsApp
         private void btnDelete_Click(object sender, EventArgs e)
         {
 
-            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
+            if (Main.ShowYesNoDialog(ml.ml_string(308,"Are you sure you want to change it?")))
             {
                 String DepartmentID = comboBoxDepartment.SelectedItem.ToString();
                 String query = $"UPDATE Department SET State = 'D' WHERE DeptID = '{DepartmentID}'";
                 Main.db.updateBySql(query);
-                Main.ShowMessage("Succeed!");
+                Main.ShowMessage(ml.ml_string(310,"Succeed!"));
             }
         }
     }

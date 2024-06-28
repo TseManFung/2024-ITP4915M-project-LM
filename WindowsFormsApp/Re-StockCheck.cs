@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultiLang;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -65,7 +66,7 @@ namespace WindowsFormsApp
             }
             catch (InvalidOperationException ex)
             {
-                MessageBox.Show("No data found");
+                MessageBox.Show(ml.ml_string(337,"No data found"));
             }
         }
 
@@ -81,7 +82,7 @@ namespace WindowsFormsApp
 
         private void btnReceived_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Are you sure you want to receive it?"))
+            if (Main.ShowYesNoDialog(ml.ml_string(341,"Are you sure you want to receive it?")))
             {
 
                 if (clickedRowIndex >= 0 && clickedColumnIndex >= 0)
@@ -131,7 +132,7 @@ namespace WindowsFormsApp
                 }
                 else
                 {
-                    MessageBox.Show("No cell has been clicked yet.");
+                    MessageBox.Show(ml.ml_string(342,"No cell has been clicked yet."));
                 }
             }
         }

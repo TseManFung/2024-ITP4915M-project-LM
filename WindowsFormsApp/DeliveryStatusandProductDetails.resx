@@ -117,6 +117,36 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnInvoice.Text" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>DeliveryStatusandProductDetails</value>
+  </data>
+  <data name="groupBoxDate.Text" xml:space="preserve">
+    <value>Delivery date</value>
+  </data>
+  <data name="groupBoxStatus.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="lblDate.Text" xml:space="preserve">
+    <value>1/1/1970</value>
+  </data>
+  <data name="lblDelivery.Text" xml:space="preserve">
+    <value>Delivery</value>
+  </data>
+  <data name="lblItems.Text" xml:space="preserve">
+    <value>0 item(s)</value>
+  </data>
+  <data name="lblRelatedspare.Text" xml:space="preserve">
+    <value>Related Spare(s):</value>
+  </data>
+  <data name="lblState.Text" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanelDeliveryStatusandProductDetails.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
@@ -141,9 +171,6 @@
   <data name="lblState.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="lblState.Text" xml:space="preserve">
-    <value>State</value>
-  </data>
   <data name="&gt;&gt;lblState.Name" xml:space="preserve">
     <value>lblState</value>
   </data>
@@ -167,9 +194,6 @@
   </data>
   <data name="groupBoxStatus.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
-  </data>
-  <data name="groupBoxStatus.Text" xml:space="preserve">
-    <value>Status</value>
   </data>
   <data name="&gt;&gt;groupBoxStatus.Name" xml:space="preserve">
     <value>groupBoxStatus</value>
@@ -222,9 +246,6 @@
   <data name="lblDelivery.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="lblDelivery.Text" xml:space="preserve">
-    <value>Delivery</value>
-  </data>
   <data name="&gt;&gt;lblDelivery.Name" xml:space="preserve">
     <value>lblDelivery</value>
   </data>
@@ -255,9 +276,6 @@
   <data name="lblDate.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="lblDate.Text" xml:space="preserve">
-    <value>1/1/1970</value>
-  </data>
   <data name="&gt;&gt;lblDate.Name" xml:space="preserve">
     <value>lblDate</value>
   </data>
@@ -281,9 +299,6 @@
   </data>
   <data name="groupBoxDate.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
-  </data>
-  <data name="groupBoxDate.Text" xml:space="preserve">
-    <value>Delivery date</value>
   </data>
   <data name="&gt;&gt;groupBoxDate.Name" xml:space="preserve">
     <value>groupBoxDate</value>
@@ -311,9 +326,6 @@
   </data>
   <data name="lblItems.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
-  </data>
-  <data name="lblItems.Text" xml:space="preserve">
-    <value>0 item(s)</value>
   </data>
   <data name="lblItems.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
@@ -344,9 +356,6 @@
   </data>
   <data name="lblRelatedspare.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="lblRelatedspare.Text" xml:space="preserve">
-    <value>Related Spare(s):</value>
   </data>
   <data name="&gt;&gt;lblRelatedspare.Name" xml:space="preserve">
     <value>lblRelatedspare</value>
@@ -423,9 +432,6 @@
   <data name="btnInvoice.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
   </data>
-  <data name="btnInvoice.Text" xml:space="preserve">
-    <value>Invoice</value>
-  </data>
   <data name="btnInvoice.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -441,17 +447,11 @@
   <data name="&gt;&gt;btnInvoice.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>400, 481</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>DeliveryStatusandProductDetails</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmDeliveryStatusandProductDetails</value>

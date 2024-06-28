@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultiLang;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,7 +38,7 @@ namespace WindowsFormsApp
                     WarehouseID = reader.GetInt32(0);
                 }
             }
-            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
+            if (Main.ShowYesNoDialog(ml.ml_string(308,"Are you sure you want to change it?")))
             {
                 if (!string.IsNullOrWhiteSpace(txtQuantity.Text) && !string.IsNullOrWhiteSpace(txtDiscrepancy.Text))
                 {
@@ -54,12 +55,12 @@ namespace WindowsFormsApp
                         Main.db.updateBySql(sql);
                         sql = $"update ActualStock SET quantity = quantity - {Quantity} where SpareID = '{id}' AND WarehouseID = {WarehouseID}"; 
                         Main.db.updateBySql(sql);
-                        Main.ShowYesNoDialog("ScrapItem Successful!");
+                        Main.ShowYesNoDialog(ml.ml_string(344,"ScrapItem Successful!"));
                     }
                 }
                 else
                 {
-                    Main.ShowYesNoDialog("Please enter full data!");
+                    Main.ShowYesNoDialog(ml.ml_string(343,"Please enter full data!"));
                 }
             }
         }

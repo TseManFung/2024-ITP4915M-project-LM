@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultiLang;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -86,7 +87,7 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
+            if (Main.ShowYesNoDialog(ml.ml_string(308,"Are you sure you want to change it?")))
             {
 
                 Random random = new Random();
@@ -116,7 +117,7 @@ namespace WindowsFormsApp
 
                         if (count > 0)
                         {
-                            Main.ShowMessage("Duplicate phone numbers");
+                            Main.ShowMessage(ml.ml_string(332,"Duplicate phone numbers"));
                             txtPhoneNum.Text = String.Empty;
                             return;
                         }
@@ -138,7 +139,7 @@ namespace WindowsFormsApp
                         }
                         else
                         {
-                            Main.ShowMessage("Please select a gemder!");
+                            Main.ShowMessage(ml.ml_string(333,"Please select a gemder!"));
                             return;
                         }
                         int? SaleAreaID = null;
@@ -230,7 +231,7 @@ namespace WindowsFormsApp
             {
                 if (!int.TryParse(txtPhoneNum.Text, out _))
                 {
-                    Main.ShowMessage("Invalid input. Please enter a valid number.");
+                    Main.ShowMessage(ml.ml_string(270,"Invalid input. Please enter a valid number."));
                     txtPhoneNum.Text = string.Empty;
                 }
             }
