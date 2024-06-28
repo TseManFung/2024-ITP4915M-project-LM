@@ -5102,6 +5102,96 @@
   </ControlsScanResults>
   <ControlsScanResults>
     <ControlsScanID>341</ControlsScanID>
+    <Component>SelectLanguage.cs</Component>
+    <FullName>SelectLanguage.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>SelectLanguage</OriginalText>
+    <SortKey>AASelectLanguage.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>$this.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>342</ControlsScanID>
+    <Component>SelectLanguage.cs</Component>
+    <FullName>btOK.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>OK</OriginalText>
+    <SortKey>BAbtOK.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>btOK.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>343</ControlsScanID>
+    <Component>SelectLanguage.cs</Component>
+    <FullName>lblStartup.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Next time ...</OriginalText>
+    <SortKey>BAlblStartup.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>lblStartup.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>344</ControlsScanID>
+    <Component>SelectLanguage.cs</Component>
+    <FullName>rbDefault.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Use the default language</OriginalText>
+    <SortKey>BArbDefault.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>rbDefault.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>345</ControlsScanID>
+    <Component>SelectLanguage.cs</Component>
+    <FullName>rbSelected.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Use the selected language</OriginalText>
+    <SortKey>BArbSelected.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>rbSelected.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>346</ControlsScanID>
+    <Component>SelectLanguage.cs</Component>
+    <FullName>rbShow.Text</FullName>
+    <ShortName>Text</ShortName>
+    <XPath />
+    <ProgID>System.Windows.Forms.Form</ProgID>
+    <OriginalText>Show this form again</OriginalText>
+    <SortKey>BArbShow.Text</SortKey>
+    <NodeType>8963</NodeType>
+    <Expanded>false</Expanded>
+    <ItemLevel>1</ItemLevel>
+    <ArrayIndexOrCount>-1</ArrayIndexOrCount>
+    <CompilerName>rbShow.Text</CompilerName>
+  </ControlsScanResults>
+  <ControlsScanResults>
+    <ControlsScanID>347</ControlsScanID>
     <Component>Server.cs</Component>
     <FullName>frmServer.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5116,7 +5206,7 @@
     <CompilerName>$this.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>342</ControlsScanID>
+    <ControlsScanID>348</ControlsScanID>
     <Component>Server.cs</Component>
     <FullName>button.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5131,7 +5221,7 @@
     <CompilerName>button.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>343</ControlsScanID>
+    <ControlsScanID>349</ControlsScanID>
     <Component>SetStockLevel.cs</Component>
     <FullName>frmSetStockLevel.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5146,7 +5236,7 @@
     <CompilerName>$this.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>344</ControlsScanID>
+    <ControlsScanID>350</ControlsScanID>
     <Component>SetStockLevel.cs</Component>
     <FullName>btnSave.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5161,7 +5251,7 @@
     <CompilerName>btnSave.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>345</ControlsScanID>
+    <ControlsScanID>351</ControlsScanID>
     <Component>SetStockLevel.cs</Component>
     <FullName>checkBoxAutoReStock.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5176,7 +5266,7 @@
     <CompilerName>checkBoxAutoReStock.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>346</ControlsScanID>
+    <ControlsScanID>352</ControlsScanID>
     <Component>SetStockLevel.cs</Component>
     <FullName>lblCommonStockLevel.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5191,7 +5281,7 @@
     <CompilerName>lblCommonStockLevel.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>347</ControlsScanID>
+    <ControlsScanID>353</ControlsScanID>
     <Component>SetStockLevel.cs</Component>
     <FullName>lblDangerLevel.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5206,7 +5296,7 @@
     <CompilerName>lblDangerLevel.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>348</ControlsScanID>
+    <ControlsScanID>354</ControlsScanID>
     <Component>SetStockLevel.cs</Component>
     <FullName>lblReOrderLevel.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5221,7 +5311,7 @@
     <CompilerName>lblReOrderLevel.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>349</ControlsScanID>
+    <ControlsScanID>355</ControlsScanID>
     <Component>SetStockLevel.cs</Component>
     <FullName>lblSpareID.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5236,7 +5326,7 @@
     <CompilerName>lblSpareID.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>350</ControlsScanID>
+    <ControlsScanID>356</ControlsScanID>
     <Component>SetStockLevel.cs</Component>
     <FullName>lblSpareName.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5251,7 +5341,7 @@
     <CompilerName>lblSpareName.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>351</ControlsScanID>
+    <ControlsScanID>357</ControlsScanID>
     <Component>sign.cs</Component>
     <FullName>frmSign.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5266,7 +5356,7 @@
     <CompilerName>$this.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>352</ControlsScanID>
+    <ControlsScanID>358</ControlsScanID>
     <Component>Signature.cs</Component>
     <FullName>frmSignature.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5281,7 +5371,7 @@
     <CompilerName>$this.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>353</ControlsScanID>
+    <ControlsScanID>359</ControlsScanID>
     <Component>Signature.cs</Component>
     <FullName>btnClear.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5296,7 +5386,7 @@
     <CompilerName>btnClear.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>354</ControlsScanID>
+    <ControlsScanID>360</ControlsScanID>
     <Component>Signature.cs</Component>
     <FullName>btnConfirm.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5311,7 +5401,7 @@
     <CompilerName>btnConfirm.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>355</ControlsScanID>
+    <ControlsScanID>361</ControlsScanID>
     <Component>Signature.cs</Component>
     <FullName>groupBoxPleaseSignBelow.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5326,7 +5416,7 @@
     <CompilerName>groupBoxPleaseSignBelow.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>356</ControlsScanID>
+    <ControlsScanID>362</ControlsScanID>
     <Component>Signature.cs</Component>
     <FullName>label1.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5341,7 +5431,7 @@
     <CompilerName>label1.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>357</ControlsScanID>
+    <ControlsScanID>363</ControlsScanID>
     <Component>SpareQRCode.cs</Component>
     <FullName>frmSpareQRCode.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5356,7 +5446,7 @@
     <CompilerName>$this.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>358</ControlsScanID>
+    <ControlsScanID>364</ControlsScanID>
     <Component>SpareQRCode.cs</Component>
     <FullName>lblSpareID.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5371,7 +5461,7 @@
     <CompilerName>lblSpareID.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>359</ControlsScanID>
+    <ControlsScanID>365</ControlsScanID>
     <Component>SpareQRCode.cs</Component>
     <FullName>lblSpareName.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5386,7 +5476,7 @@
     <CompilerName>lblSpareName.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>360</ControlsScanID>
+    <ControlsScanID>366</ControlsScanID>
     <Component>TargetWarehouse.cs</Component>
     <FullName>TargetWarehouse.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5401,7 +5491,7 @@
     <CompilerName>$this.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>361</ControlsScanID>
+    <ControlsScanID>367</ControlsScanID>
     <Component>TargetWarehouse.cs</Component>
     <FullName>btnCancel.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5416,7 +5506,7 @@
     <CompilerName>btnCancel.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>362</ControlsScanID>
+    <ControlsScanID>368</ControlsScanID>
     <Component>TargetWarehouse.cs</Component>
     <FullName>btnOK.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5431,7 +5521,7 @@
     <CompilerName>btnOK.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>363</ControlsScanID>
+    <ControlsScanID>369</ControlsScanID>
     <Component>TargetWarehouse.cs</Component>
     <FullName>input.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5446,7 +5536,7 @@
     <CompilerName>input.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>364</ControlsScanID>
+    <ControlsScanID>370</ControlsScanID>
     <Component>UserAndAccountCreate.cs</Component>
     <FullName>frmUserManagementAndAccountManagement.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5461,7 +5551,7 @@
     <CompilerName>$this.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>365</ControlsScanID>
+    <ControlsScanID>371</ControlsScanID>
     <Component>UserAndAccountCreate.cs</Component>
     <FullName>accForDealer.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5476,7 +5566,7 @@
     <CompilerName>accForDealer.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>366</ControlsScanID>
+    <ControlsScanID>372</ControlsScanID>
     <Component>UserAndAccountCreate.cs</Component>
     <FullName>accForStaff.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5491,7 +5581,7 @@
     <CompilerName>accForStaff.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>367</ControlsScanID>
+    <ControlsScanID>373</ControlsScanID>
     <Component>UserAndAccountCreate.cs</Component>
     <FullName>btnClear.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5506,7 +5596,7 @@
     <CompilerName>btnClear.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>368</ControlsScanID>
+    <ControlsScanID>374</ControlsScanID>
     <Component>UserAndAccountCreate.cs</Component>
     <FullName>btnCreate.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5521,7 +5611,7 @@
     <CompilerName>btnCreate.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>369</ControlsScanID>
+    <ControlsScanID>375</ControlsScanID>
     <Component>UserAndAccountCreate.cs</Component>
     <FullName>btnManageExistAccount.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5536,7 +5626,7 @@
     <CompilerName>btnManageExistAccount.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>370</ControlsScanID>
+    <ControlsScanID>376</ControlsScanID>
     <Component>UserAndAccountCreate.cs</Component>
     <FullName>lblAccessLevel.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5551,7 +5641,7 @@
     <CompilerName>lblAccessLevel.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>371</ControlsScanID>
+    <ControlsScanID>377</ControlsScanID>
     <Component>UserAndAccountCreate.cs</Component>
     <FullName>lblLoginName.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5566,7 +5656,7 @@
     <CompilerName>lblLoginName.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>372</ControlsScanID>
+    <ControlsScanID>378</ControlsScanID>
     <Component>UserAndAccountCreate.cs</Component>
     <FullName>lblThisAccountFor.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5581,7 +5671,7 @@
     <CompilerName>lblThisAccountFor.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>373</ControlsScanID>
+    <ControlsScanID>379</ControlsScanID>
     <Component>webcam.cs</Component>
     <FullName>frmWebcam.Text</FullName>
     <ShortName>Text</ShortName>
@@ -5596,7 +5686,7 @@
     <CompilerName>$this.Text</CompilerName>
   </ControlsScanResults>
   <ControlsScanResults>
-    <ControlsScanID>374</ControlsScanID>
+    <ControlsScanID>380</ControlsScanID>
     <Component>webcam.cs</Component>
     <FullName>lblCamera.Text</FullName>
     <ShortName>Text</ShortName>

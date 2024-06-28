@@ -981,7 +981,13 @@
     <EmbeddedResource Include="Scrap.zh-Hant.resx">
       <DependentUpon>Scrap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SelectLanguage.en.resx">
+      <DependentUpon>SelectLanguage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SelectLanguage.resx">
+      <DependentUpon>SelectLanguage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectLanguage.zh-Hans.resx">
       <DependentUpon>SelectLanguage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Server.en.resx">

@@ -117,18 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Despatch_Instruction_Set" xml:space="preserve">
-    <value>發貨指令集</value>
-  </data>
-  <data name="Location" xml:space="preserve">
-    <value>位置</value>
-  </data>
-  <data name="Received" xml:space="preserve">
-    <value>收到</value>
-  </data>
-  <data name="Signature" xml:space="preserve">
-    <value>簽名</value>
-  </data>
   <data name="All_fuck_up" xml:space="preserve">
     <value>都他媽的</value>
   </data>
@@ -156,6 +144,9 @@
   <data name="Delivery_address_not_yet_recor" xml:space="preserve">
     <value>收貨位址尚未記錄。</value>
   </data>
+  <data name="Despatch_Instruction_Set" xml:space="preserve">
+    <value>發貨指令集</value>
+  </data>
   <data name="Duplicate_phone_numbers" xml:space="preserve">
     <value>重複的電話號碼</value>
   </data>
@@ -170,6 +161,9 @@
   </data>
   <data name="Latitude_must_be_between_90_an" xml:space="preserve">
     <value>緯度必須介於 -90 和 90 之間。無效輸入</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>位置</value>
   </data>
   <data name="Location_matches_Closing_the_f" xml:space="preserve">
     <value>位置匹配。關閉表單。</value>
@@ -228,6 +222,9 @@
   <data name="Please_select_an_item_to_delet" xml:space="preserve">
     <value>請選擇要刪除的專案</value>
   </data>
+  <data name="Received" xml:space="preserve">
+    <value>收到</value>
+  </data>
   <data name="Same_location" xml:space="preserve">
     <value>同一地點</value>
   </data>
@@ -237,8 +234,14 @@
   <data name="Setting_Successful" xml:space="preserve">
     <value>設置成功！</value>
   </data>
+  <data name="Signature" xml:space="preserve">
+    <value>簽名</value>
+  </data>
   <data name="StaffID_not_found_for_current_" xml:space="preserve">
     <value>找不到當前使用者的 StaffID。</value>
+  </data>
+  <data name="succeed" xml:space="preserve">
+    <value>成功！</value>
   </data>
   <data name="Succeed0" xml:space="preserve">
     <value>成功！</value>
