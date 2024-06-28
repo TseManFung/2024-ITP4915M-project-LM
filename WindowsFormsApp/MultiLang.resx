@@ -1166,34 +1166,4 @@ Still placing order?</value>
   <data name="_348" xml:space="preserve">
     <value>Login name or Access level has not been entered.</value>
   </data>
-  <data name="_349" xml:space="preserve">
-    <value>Please select a spare</value>
-  </data>
-  <data name="_350" xml:space="preserve">
-    <value>Please input the Number of Bundles</value>
-  </data>
-  <data name="_351" xml:space="preserve">
-    <value>No Order to Collect</value>
-  </data>
-  <data name="_352" xml:space="preserve">
-    <value>The spare is not in the collect list</value>
-  </data>
-  <data name="_353" xml:space="preserve">
-    <value>The current order number is: </value>
-  </data>
-  <data name="_354" xml:space="preserve">
-    <value>Your name:</value>
-  </data>
-  <data name="_355" xml:space="preserve">
-    <value>Delivery address not yet recorded.</value>
-  </data>
-  <data name="_356" xml:space="preserve">
-    <value>Invalid input. Please enter a valid number with up to 20 digits.</value>
-  </data>
-  <data name="_357" xml:space="preserve">
-    <value>Please enter values in at least one of the fields.</value>
-  </data>
-  <data name="_358" xml:space="preserve">
-    <value>Success!</value>
-  </data>
 </root>

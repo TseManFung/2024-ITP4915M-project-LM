@@ -1,5 +1,4 @@
-﻿using MultiLang;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,10 +21,10 @@ namespace WindowsFormsApp
         {
             if (radioButtonYouAreLMStaff.Checked)
             {
-                lblDelearName.Text = ml.ml_string(354,"Your name:");
+                lblDelearName.Text = "Your name:";
             }else
             {
-                lblDelearName.Text = ml.ml_string(103,"Dealer name:");
+                lblDelearName.Text = "Dealer name:";
             }
         }
     }

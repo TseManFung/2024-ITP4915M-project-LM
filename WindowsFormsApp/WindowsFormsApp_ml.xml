@@ -1044,36 +1044,6 @@
   <GeneralIds>
     <StringID>348</StringID>
   </GeneralIds>
-  <GeneralIds>
-    <StringID>349</StringID>
-  </GeneralIds>
-  <GeneralIds>
-    <StringID>350</StringID>
-  </GeneralIds>
-  <GeneralIds>
-    <StringID>351</StringID>
-  </GeneralIds>
-  <GeneralIds>
-    <StringID>352</StringID>
-  </GeneralIds>
-  <GeneralIds>
-    <StringID>353</StringID>
-  </GeneralIds>
-  <GeneralIds>
-    <StringID>354</StringID>
-  </GeneralIds>
-  <GeneralIds>
-    <StringID>355</StringID>
-  </GeneralIds>
-  <GeneralIds>
-    <StringID>356</StringID>
-  </GeneralIds>
-  <GeneralIds>
-    <StringID>357</StringID>
-  </GeneralIds>
-  <GeneralIds>
-    <StringID>358</StringID>
-  </GeneralIds>
   <Languages>
     <LanguageID>9</LanguageID>
     <LanguageName>英文</LanguageName>
@@ -6063,78 +6033,6 @@ Still placing order?</LanguageText>
     <StringID>348</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Login name or Access level has not been entered.</LanguageText>
-    <Status>1</Status>
-  </GeneralTexts>
-  <GeneralTexts>
-    <StringID>349</StringID>
-    <LanguageID>9</LanguageID>
-    <LanguageText>Please select a spare</LanguageText>
-    <Status>1</Status>
-  </GeneralTexts>
-  <GeneralTexts>
-    <StringID>350</StringID>
-    <LanguageID>9</LanguageID>
-    <LanguageText>Please input the Number of Bundles</LanguageText>
-    <Status>1</Status>
-  </GeneralTexts>
-  <GeneralTexts>
-    <StringID>351</StringID>
-    <LanguageID>9</LanguageID>
-    <LanguageText>No Order to Collect</LanguageText>
-    <Status>1</Status>
-  </GeneralTexts>
-  <GeneralTexts>
-    <StringID>352</StringID>
-    <LanguageID>9</LanguageID>
-    <LanguageText>The spare is not in the collect list</LanguageText>
-    <Status>1</Status>
-  </GeneralTexts>
-  <GeneralTexts>
-    <StringID>353</StringID>
-    <LanguageID>9</LanguageID>
-    <LanguageText>The current order number is: </LanguageText>
-    <Status>1</Status>
-  </GeneralTexts>
-  <GeneralTexts>
-    <StringID>354</StringID>
-    <LanguageID>9</LanguageID>
-    <LanguageText>Your name:</LanguageText>
-    <Status>1</Status>
-  </GeneralTexts>
-  <GeneralTexts>
-    <StringID>354</StringID>
-    <LanguageID>31748</LanguageID>
-    <LanguageText>您的姓名：</LanguageText>
-    <Status>3</Status>
-  </GeneralTexts>
-  <GeneralTexts>
-    <StringID>354</StringID>
-    <LanguageID>4</LanguageID>
-    <LanguageText>您的姓名：</LanguageText>
-    <Status>3</Status>
-  </GeneralTexts>
-  <GeneralTexts>
-    <StringID>355</StringID>
-    <LanguageID>9</LanguageID>
-    <LanguageText>Delivery address not yet recorded.</LanguageText>
-    <Status>1</Status>
-  </GeneralTexts>
-  <GeneralTexts>
-    <StringID>356</StringID>
-    <LanguageID>9</LanguageID>
-    <LanguageText>Invalid input. Please enter a valid number with up to 20 digits.</LanguageText>
-    <Status>1</Status>
-  </GeneralTexts>
-  <GeneralTexts>
-    <StringID>357</StringID>
-    <LanguageID>9</LanguageID>
-    <LanguageText>Please enter values in at least one of the fields.</LanguageText>
-    <Status>1</Status>
-  </GeneralTexts>
-  <GeneralTexts>
-    <StringID>358</StringID>
-    <LanguageID>9</LanguageID>
-    <LanguageText>Success!</LanguageText>
     <Status>1</Status>
   </GeneralTexts>
   <Properties>

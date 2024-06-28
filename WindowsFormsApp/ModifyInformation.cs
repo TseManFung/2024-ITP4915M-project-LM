@@ -1,5 +1,4 @@
-﻿using MultiLang;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,7 +39,7 @@ namespace WindowsFormsApp
             {
                 if (txtContactNumber.Text.Length > 20 || !IsNumeric(txtContactNumber.Text))
                 {
-                    Main.ShowMessage(ml.ml_string(356,"Invalid input. Please enter a valid number with up to 20 digits."));
+                    Main.ShowMessage("Invalid input. Please enter a valid number with up to 20 digits.");
                     txtContactNumber.Text = string.Empty;
                 }
             }
@@ -52,7 +51,7 @@ namespace WindowsFormsApp
             {
                 if (!IsValidEmail(txtEmail.Text))
                 {
-                    Main.ShowMessage(ml.ml_string(286,"Please enter a valid email address!"));
+                    Main.ShowMessage("Please enter a valid email address!");
                     txtEmail.Text = string.Empty;
                 }
             }
@@ -65,7 +64,7 @@ namespace WindowsFormsApp
                 string.IsNullOrEmpty(txtOfficeAdress.Text) &&
                 string.IsNullOrEmpty(txtDeliveryAddress.Text))
             {
-                Main.ShowMessage(ml.ml_string(357,"Please enter values in at least one of the fields."));
+                Main.ShowMessage("Please enter values in at least one of the fields.");
                 return;
             }
             
@@ -78,7 +77,7 @@ namespace WindowsFormsApp
                     DealerID = reader.GetInt32(0);
                 }
             }
-            if (Main.ShowYesNoDialog(ml.ml_string(308,"Are you sure you want to change it?")))
+            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
             {
                 
                 if (!string.IsNullOrEmpty(txtContactNumber.Text))
@@ -96,7 +95,7 @@ namespace WindowsFormsApp
 
                     if (count > 0)
                     {
-                        Main.ShowMessage(ml.ml_string(332,"Duplicate phone numbers"));
+                        Main.ShowMessage("Duplicate phone numbers");
                         txtContactNumber.Text = string.Empty;
                         return;
                     }
@@ -123,7 +122,7 @@ namespace WindowsFormsApp
                     sql = $"UPDATE Dealer SET DeliveryAddress = '{DeliveryAddress}' WHERE DealerID = {DealerID};";
                     Main.db.updateBySql(sql);
                 }
-                Main.ShowMessage(ml.ml_string(358,"Success!")); 
+                Main.ShowMessage("Success!"); 
                 txtContactNumber.Text = string.Empty;
                 txtEmail.Text = string.Empty;
                 txtOfficeAdress.Text = string.Empty;
@@ -189,7 +188,7 @@ namespace WindowsFormsApp
             {
                 if (reader.Read())
                 {
-                    DeliveryAddress = reader.IsDBNull(0) ? ml.ml_string(355,"Delivery address not yet recorded.") : reader.GetString(0);
+                    DeliveryAddress = reader.IsDBNull(0) ? "Delivery address not yet recorded." : reader.GetString(0);
                 }
             }
             txtDeliveryAddress.Text = DeliveryAddress ?? string.Empty;
