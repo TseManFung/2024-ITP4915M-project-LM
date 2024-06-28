@@ -31,6 +31,10 @@ namespace WindowsFormsApp
                 string code = webcam.scanCode;
                 Console.WriteLine(code);
                 //if can not find the code in the collect list
+                if(code == null || code == string.Empty)
+                {
+                    return;
+                }
                 if (!comboBoxSpareID.Items.Contains(code))
                 {
                     Main.ShowMessage(Resources.The_spare_is_not_in_the_collec);

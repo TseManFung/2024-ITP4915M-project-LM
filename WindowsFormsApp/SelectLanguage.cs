@@ -53,7 +53,7 @@ namespace MultiLang
         private CultureInfo SelectedCulture;
 
         // The array of supported cultures is updated automatically by Multi-Language for Visual Studio
-        private static string[] SupportedCultures = { "en", "zh-Hant", "zh-Hans" } ; //MLHIDE
+        private static string[] SupportedCultures = { "zh-Hans", "en", "zh-Hant" } ; //MLHIDE
 
         //----------------------------------------------
         //Public Methods

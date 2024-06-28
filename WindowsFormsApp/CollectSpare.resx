@@ -117,30 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnConfirm.Text" xml:space="preserve">
-    <value>Confirm</value>
-  </data>
-  <data name="btnTurnOnScanner.Text" xml:space="preserve">
-    <value>Turn on scanner</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Collect Spare</value>
-  </data>
-  <data name="lblActualQuantity.Text" xml:space="preserve">
-    <value>Actual Quantity:</value>
-  </data>
-  <data name="lblFollowingCollect.Text" xml:space="preserve">
-    <value>The following items have need to collect:</value>
-  </data>
-  <data name="lblSpareID.Text" xml:space="preserve">
-    <value>Spare ID:</value>
-  </data>
-  <data name="lblSpareNumberofBundles.Text" xml:space="preserve">
-    <value>Number of Bundles:</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
@@ -167,6 +143,9 @@
   </data>
   <data name="lblActualQuantity.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="lblActualQuantity.Text" xml:space="preserve">
+    <value>Actual Quantity:</value>
   </data>
   <data name="&gt;&gt;lblActualQuantity.Name" xml:space="preserve">
     <value>lblActualQuantity</value>
@@ -255,6 +234,9 @@
   <data name="lblFollowingCollect.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
   </data>
+  <data name="lblFollowingCollect.Text" xml:space="preserve">
+    <value>The following items have need to collect:</value>
+  </data>
   <data name="&gt;&gt;lblFollowingCollect.Name" xml:space="preserve">
     <value>lblFollowingCollect</value>
   </data>
@@ -314,6 +296,9 @@
   </data>
   <data name="lblSpareNumberofBundles.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="lblSpareNumberofBundles.Text" xml:space="preserve">
+    <value>Number of Bundles:</value>
   </data>
   <data name="&gt;&gt;lblSpareNumberofBundles.Name" xml:space="preserve">
     <value>lblSpareNumberofBundles</value>
@@ -404,6 +389,9 @@
   </data>
   <data name="lblSpareID.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
+  </data>
+  <data name="lblSpareID.Text" xml:space="preserve">
+    <value>Spare ID:</value>
   </data>
   <data name="&gt;&gt;lblSpareID.Name" xml:space="preserve">
     <value>lblSpareID</value>
@@ -522,6 +510,9 @@
   <data name="btnTurnOnScanner.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
   </data>
+  <data name="btnTurnOnScanner.Text" xml:space="preserve">
+    <value>Turn on scanner</value>
+  </data>
   <data name="&gt;&gt;btnTurnOnScanner.Name" xml:space="preserve">
     <value>btnTurnOnScanner</value>
   </data>
@@ -579,6 +570,9 @@
   <data name="btnConfirm.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
   </data>
+  <data name="btnConfirm.Text" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
   <data name="&gt;&gt;btnConfirm.Name" xml:space="preserve">
     <value>btnConfirm</value>
   </data>
@@ -621,11 +615,17 @@
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel6" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblFollowingCollect" Row="0" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;Control Name="dgvCollect" Row="1" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;Control Name="tableLayoutPanel2" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel5" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnConfirm" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,70,Percent,30" /&gt;&lt;Rows Styles="Percent,5,Percent,65,Percent,20,Percent,10,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1136, 621</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Collect Spare</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmCollectSpare</value>
