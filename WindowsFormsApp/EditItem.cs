@@ -1,5 +1,4 @@
-﻿using MultiLang;
-using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -107,7 +106,7 @@ namespace WindowsFormsApp
             if (!string.IsNullOrEmpty(input) && !Regex.IsMatch(input, pattern))
             {
                 txtSpareName.Text = string.Empty;
-                Main.ShowMessage(ml.ml_string(311,"Only spaces and letters are allowed!"));
+                Main.ShowMessage("Only spaces and letters are allowed!");
             }
         }
 
@@ -131,7 +130,7 @@ namespace WindowsFormsApp
             if (!string.IsNullOrEmpty(input) && !Regex.IsMatch(input, pattern))
             {
                 txtSpareWeight.Text = string.Empty;
-                Main.ShowMessage(ml.ml_string(312,"Only numbers and decimal points are allowed!"));
+                Main.ShowMessage("Only numbers and decimal points are allowed!");
             }
         }
 
@@ -151,13 +150,13 @@ namespace WindowsFormsApp
 
                 string query = $"UPDATE Spare SET SpareName = '{spareName}', CategoryLetter = '{categoryLetter}', Price = {price}, Description = '{description}', Weight = {weight}, SupplierID = {supplierID} WHERE SpareID = '{spareID}'";
                 Main.db.updateBySql(query);
-                Main.ShowMessage(ml.ml_string(309,"Successful editing"));
+                Main.ShowMessage("Successful editing");
 
                 ClearForm();
             }
             else
             {
-                Main.ShowMessage(ml.ml_string(288,"Please provide complete data"));
+                Main.ShowMessage("Please provide complete data");
             }
 
 
@@ -217,14 +216,14 @@ namespace WindowsFormsApp
                 string spareID = comboBoxSpareID.SelectedItem.ToString();
                 string query = $"UPDATE Spare SET State = 'D' WHERE SpareID = '{spareID}'";
                 Main.db.updateBySql(query);
-                Main.ShowMessage(ml.ml_string(313,"Item successfully deleted"));
+                Main.ShowMessage("Item successfully deleted");
 
                 // Refresh the SpareID list after deletion
                 frmEditItem_Load(sender, e);
             }
             else
             {
-                Main.ShowMessage(ml.ml_string(314,"Please select an item to delete"));
+                Main.ShowMessage("Please select an item to delete");
             }
         }
     }

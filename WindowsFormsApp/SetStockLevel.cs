@@ -1,5 +1,4 @@
-﻿using MultiLang;
-using Org.BouncyCastle.Utilities;
+﻿using Org.BouncyCastle.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -78,7 +77,7 @@ namespace WindowsFormsApp
         }
         private int GetStockLevel(string spareID, int warehouseID, string column)
         {
-            string sql = String.Format("SELECT {0} FROM WarehouseStockLevel WHERE SpareID = '{1}' AND WarehouseID = {2}",column,spareID,warehouseID);
+            string sql = $"SELECT {column} FROM WarehouseStockLevel WHERE SpareID = '{spareID}' AND WarehouseID = {warehouseID}";
             using (var reader = Main.db.readBySql(sql))
             {
                 if (reader.Read() && !reader.IsDBNull(0))
@@ -103,7 +102,7 @@ namespace WindowsFormsApp
             int staffID = GetStaffID();
             int warehouseID = GetWarehouseID(staffID);
 
-            if (Main.ShowYesNoDialog(ml.ml_string(308,"Are you sure you want to change it?")))
+            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
             {
                 if (ValidateInput())
                 {
@@ -117,11 +116,11 @@ namespace WindowsFormsApp
                     UpdateAutoRestock(spareID, warehouseID, autoRestock);
                     CheckAndInsertActualStock(spareID, warehouseID, autoRestock);
 
-                    Main.ShowYesNoDialog(ml.ml_string(345,"Setting Successful!"));
+                    Main.ShowYesNoDialog("Setting Successful!");
                 }
                 else
                 {
-                    Main.ShowYesNoDialog(ml.ml_string(343,"Please enter full data!"));
+                    Main.ShowYesNoDialog("Please enter full data!");
                 }
             }
         }

@@ -286,7 +286,6 @@
     <Compile Include="Google_map.Designer.cs">
       <DependentUpon>Google_map.cs</DependentUpon>
     </Compile>
-    <Compile Include="MlString.cs" />
     <Compile Include="ModifyInformation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -803,10 +802,6 @@
     <EmbeddedResource Include="ModifyInformation.zh-Hant.resx">
       <DependentUpon>ModifyInformation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MultiLang.en.resx" />
-    <EmbeddedResource Include="MultiLang.resx" />
-    <EmbeddedResource Include="MultiLang.zh-Hans.resx" />
-    <EmbeddedResource Include="MultiLang.zh-Hant.resx" />
     <EmbeddedResource Include="NewDealer.en.resx">
       <DependentUpon>NewDealer.cs</DependentUpon>
     </EmbeddedResource>

@@ -1,5 +1,4 @@
-﻿using MultiLang;
-using Org.BouncyCastle.Utilities;
+﻿using Org.BouncyCastle.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -91,13 +90,13 @@ namespace WindowsFormsApp
                             query = $"UPDATE SaleArea SET Location = '{Location}' , Latitude = {Latitude},  Longitude = {Longitude} WHERE AreaID = '{AreaID}'";
                         }
                         Main.db.updateBySql(query);
-                        Main.ShowMessage(ml.ml_string(309,"Successful editing"));
+                        Main.ShowMessage("Successful editing");
                         txtLocation.Text = "";
                         txtRemark.Text = "";
                     }
                     else
                     {
-                        Main.ShowMessage(ml.ml_string(289,"Please provide Location!"));
+                        Main.ShowMessage("Please provide Location!");
                     }
                 }
         }
@@ -114,7 +113,7 @@ namespace WindowsFormsApp
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            Main.ShowMessage(ml.ml_string(297,"succeed!"));
+            Main.ShowMessage("succeed!");
         }
     }
 }

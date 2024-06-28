@@ -117,39 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnSign.Text" xml:space="preserve">
-    <value>Sign Here</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Invoice</value>
-  </data>
-  <data name="lblDATE.Text" xml:space="preserve">
-    <value>DATE:</value>
-  </data>
-  <data name="lblDEALERCODE.Text" xml:space="preserve">
-    <value>DEALER CODE:</value>
-  </data>
-  <data name="lblDELIVERYADDRESS.Text" xml:space="preserve">
-    <value>DELIVERY ADDRESS (IF DIFFERENT) (PER):</value>
-  </data>
-  <data name="lblDespatchForeman.Text" xml:space="preserve">
-    <value>Despatch Foreman:</value>
-  </data>
-  <data name="lblINVOICEADDRESS.Text" xml:space="preserve">
-    <value>INVOICE ADDRESS:</value>
-  </data>
-  <data name="lblOURORDERTO.Text" xml:space="preserve">
-    <value>OUR ORDER NO:</value>
-  </data>
-  <data name="lblTotalWeight.Text" xml:space="preserve">
-    <value>Total weight:</value>
-  </data>
-  <data name="lblYOURORDERNO.Text" xml:space="preserve">
-    <value>YOUR ORDER NO:</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>4</value>
@@ -206,6 +173,9 @@
   </data>
   <data name="lblDespatchForeman.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="lblDespatchForeman.Text" xml:space="preserve">
+    <value>Despatch Foreman:</value>
   </data>
   <data name="&gt;&gt;lblDespatchForeman.Name" xml:space="preserve">
     <value>lblDespatchForeman</value>
@@ -300,6 +270,9 @@
   <data name="lblTotalWeight.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
+  <data name="lblTotalWeight.Text" xml:space="preserve">
+    <value>Total weight:</value>
+  </data>
   <data name="&gt;&gt;lblTotalWeight.Name" xml:space="preserve">
     <value>lblTotalWeight</value>
   </data>
@@ -392,6 +365,9 @@
   </data>
   <data name="lblINVOICEADDRESS.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="lblINVOICEADDRESS.Text" xml:space="preserve">
+    <value>INVOICE ADDRESS:</value>
   </data>
   <data name="&gt;&gt;lblINVOICEADDRESS.Name" xml:space="preserve">
     <value>lblINVOICEADDRESS</value>
@@ -486,6 +462,9 @@
   <data name="lblDELIVERYADDRESS.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
+  <data name="lblDELIVERYADDRESS.Text" xml:space="preserve">
+    <value>DELIVERY ADDRESS (IF DIFFERENT) (PER):</value>
+  </data>
   <data name="&gt;&gt;lblDELIVERYADDRESS.Name" xml:space="preserve">
     <value>lblDELIVERYADDRESS</value>
   </data>
@@ -578,6 +557,9 @@
   </data>
   <data name="lblDATE.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="lblDATE.Text" xml:space="preserve">
+    <value>DATE:</value>
   </data>
   <data name="&gt;&gt;lblDATE.Name" xml:space="preserve">
     <value>lblDATE</value>
@@ -672,6 +654,9 @@
   <data name="lblYOURORDERNO.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
+  <data name="lblYOURORDERNO.Text" xml:space="preserve">
+    <value>YOUR ORDER NO:</value>
+  </data>
   <data name="&gt;&gt;lblYOURORDERNO.Name" xml:space="preserve">
     <value>lblYOURORDERNO</value>
   </data>
@@ -764,6 +749,9 @@
   </data>
   <data name="lblOURORDERTO.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="lblOURORDERTO.Text" xml:space="preserve">
+    <value>OUR ORDER NO:</value>
   </data>
   <data name="&gt;&gt;lblOURORDERTO.Name" xml:space="preserve">
     <value>lblOURORDERTO</value>
@@ -858,6 +846,9 @@
   <data name="lblDEALERCODE.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
+  <data name="lblDEALERCODE.Text" xml:space="preserve">
+    <value>DEALER CODE:</value>
+  </data>
   <data name="&gt;&gt;lblDEALERCODE.Name" xml:space="preserve">
     <value>lblDEALERCODE</value>
   </data>
@@ -939,6 +930,9 @@
   <data name="btnSign.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
   </data>
+  <data name="btnSign.Text" xml:space="preserve">
+    <value>Sign Here</value>
+  </data>
   <data name="&gt;&gt;btnSign.Name" xml:space="preserve">
     <value>btnSign</value>
   </data>
@@ -981,11 +975,17 @@
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel9" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel8" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel4" Row="0" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;Control Name="tableLayoutPanel2" Row="0" RowSpan="1" Column="2" ColumnSpan="2" /&gt;&lt;Control Name="tableLayoutPanel3" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel5" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel6" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel7" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="dgvInvoice" Row="2" RowSpan="2" Column="0" ColumnSpan="4" /&gt;&lt;Control Name="btnSign" Row="4" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;Rows Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1678, 513</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Invoice</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmInvoice</value>

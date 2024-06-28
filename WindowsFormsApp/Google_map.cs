@@ -1,5 +1,4 @@
-﻿using MultiLang;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -125,7 +124,7 @@ namespace WindowsFormsApp
                 txtlocation.Text = comelocation;
                 if (comelocation == locationor)
                 {
-                    Main.ShowMessage(ml.ml_string(325,"Location matches. Closing the form."));
+                    Main.ShowMessage("Location matches. Closing the form.");
                     state = false;
                     this.Close(); // 关闭当前表单
                     return; // 直接返回，不执行后续代码
@@ -156,7 +155,7 @@ namespace WindowsFormsApp
         {
 
             // 顯示確認對話框
-            if (Main.ShowYesNoDialog(ml.ml_string(308,"Are you sure you want to change it?")))
+            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
             {
                 // 嘗試將 txtlatitude 和 txtlongitude 的文本內容轉換為 decimal 類型
                 try
@@ -167,20 +166,20 @@ namespace WindowsFormsApp
                     // 如果經緯度的值為 0，直接返回
                     if (latitude == 0 && longitude == 0)
                     {
-                        Main.ShowYesNoDialog(ml.ml_string(330,"The coordinates (0, 0) are known as Null Island, a location in the Gulf of Guinea where the equator and prime meridian intersect."));
+                        Main.ShowYesNoDialog("The coordinates (0, 0) are known as Null Island, a location in the Gulf of Guinea where the equator and prime meridian intersect.");
                         return;
                     }
 
                     // 檢查經緯度是否在有效範圍內
                     if (latitude < -90 || latitude > 90)
                     {
-                        Main.ShowYesNoDialog(ml.ml_string(326,"Latitude must be between -90 and 90.Invalid Input"));
+                        Main.ShowYesNoDialog("Latitude must be between -90 and 90.Invalid Input");
                         return;
                     }
 
                     if (longitude < -180 || longitude > 180)
                     {
-                        Main.ShowYesNoDialog(ml.ml_string(327,"Longitude must be between -180 and 180.Invalid Input"));
+                        Main.ShowYesNoDialog("Longitude must be between -180 and 180.Invalid Input");
                         return;
                     }
 
@@ -193,12 +192,12 @@ namespace WindowsFormsApp
                 catch (FormatException)
                 {
                     // 處理轉換失敗的情況，例如顯示錯誤消息
-                    Main.ShowYesNoDialog(ml.ml_string(328,"Please enter valid numeric values for latitude and longitude.Invalid Input"));
+                    Main.ShowYesNoDialog("Please enter valid numeric values for latitude and longitude.Invalid Input");
                 }
                 catch (OverflowException)
                 {
                     // 處理超出 decimal 範圍的情況
-                    Main.ShowYesNoDialog(ml.ml_string(329,"The entered values are too large or too small.Invalid Input"));
+                    Main.ShowYesNoDialog("The entered values are too large or too small.Invalid Input");
                 }
             }
         }

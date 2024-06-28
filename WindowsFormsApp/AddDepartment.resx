@@ -117,6 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnClear.Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Add Department</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Department ID:</value>
+  </data>
+  <data name="lblDepartmentEmail.Text" xml:space="preserve">
+    <value>Department Email:</value>
+  </data>
+  <data name="lblDepartmentName.Text" xml:space="preserve">
+    <value>Department Name:</value>
+  </data>
+  <data name="lblIsItWarehouse.Text" xml:space="preserve">
+    <value>Is it warehouse?</value>
+  </data>
+  <data name="lblWareHouse.Text" xml:space="preserve">
+    <value>Warehouse:</value>
+  </data>
+  <data name="radNo.Text" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="radYes.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>5</value>
@@ -130,7 +163,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="txtDepartmentEmail.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 20.25pt</value>
+    <value>PMingLiU, 20.25pt</value>
   </data>
   <data name="txtDepartmentEmail.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -163,7 +196,7 @@
     <value>Fill</value>
   </data>
   <data name="lblDepartmentEmail.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 24pt, style=Bold</value>
+    <value>PMingLiU, 24pt, style=Bold</value>
   </data>
   <data name="lblDepartmentEmail.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -173,9 +206,6 @@
   </data>
   <data name="lblDepartmentEmail.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
-  </data>
-  <data name="lblDepartmentEmail.Text" xml:space="preserve">
-    <value>Department Email:</value>
   </data>
   <data name="lblDepartmentEmail.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
@@ -226,7 +256,7 @@
     <value>Fill</value>
   </data>
   <data name="btnClear.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 32pt</value>
+    <value>PMingLiU, 32pt</value>
   </data>
   <data name="btnClear.Location" type="System.Drawing.Point, System.Drawing">
     <value>483, 385</value>
@@ -236,9 +266,6 @@
   </data>
   <data name="btnClear.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
-  </data>
-  <data name="btnClear.Text" xml:space="preserve">
-    <value>Clear</value>
   </data>
   <data name="&gt;&gt;btnClear.Name" xml:space="preserve">
     <value>btnClear</value>
@@ -256,7 +283,7 @@
     <value>Fill</value>
   </data>
   <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 32pt</value>
+    <value>PMingLiU, 32pt</value>
   </data>
   <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
     <value>163, 385</value>
@@ -266,9 +293,6 @@
   </data>
   <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
-  </data>
-  <data name="btnSave.Text" xml:space="preserve">
-    <value>Save</value>
   </data>
   <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
     <value>btnSave</value>
@@ -292,7 +316,7 @@
     <value>Fill</value>
   </data>
   <data name="lblIsItWarehouse.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 24pt, style=Bold</value>
+    <value>PMingLiU, 24pt, style=Bold</value>
   </data>
   <data name="lblIsItWarehouse.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -302,9 +326,6 @@
   </data>
   <data name="lblIsItWarehouse.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="lblIsItWarehouse.Text" xml:space="preserve">
-    <value>Is it warehouse?</value>
   </data>
   <data name="lblIsItWarehouse.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
@@ -328,7 +349,7 @@
     <value>Bottom</value>
   </data>
   <data name="radYes.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 20.25pt</value>
+    <value>PMingLiU, 20.25pt</value>
   </data>
   <data name="radYes.Location" type="System.Drawing.Point, System.Drawing">
     <value>334, 53</value>
@@ -338,9 +359,6 @@
   </data>
   <data name="radYes.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
-  </data>
-  <data name="radYes.Text" xml:space="preserve">
-    <value>Yes</value>
   </data>
   <data name="&gt;&gt;radYes.Name" xml:space="preserve">
     <value>radYes</value>
@@ -361,7 +379,7 @@
     <value>Top</value>
   </data>
   <data name="radNo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 20.25pt</value>
+    <value>PMingLiU, 20.25pt</value>
   </data>
   <data name="radNo.Location" type="System.Drawing.Point, System.Drawing">
     <value>334, 90</value>
@@ -371,9 +389,6 @@
   </data>
   <data name="radNo.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="radNo.Text" xml:space="preserve">
-    <value>No</value>
   </data>
   <data name="&gt;&gt;radNo.Name" xml:space="preserve">
     <value>radNo</value>
@@ -424,7 +439,7 @@
     <value>Fill</value>
   </data>
   <data name="comboBoxWarehouse.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 20.25pt</value>
+    <value>PMingLiU, 20.25pt</value>
   </data>
   <data name="comboBoxWarehouse.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -454,7 +469,7 @@
     <value>Fill</value>
   </data>
   <data name="lblWareHouse.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 24pt, style=Bold</value>
+    <value>PMingLiU, 24pt, style=Bold</value>
   </data>
   <data name="lblWareHouse.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -464,9 +479,6 @@
   </data>
   <data name="lblWareHouse.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
-  </data>
-  <data name="lblWareHouse.Text" xml:space="preserve">
-    <value>Warehouse:</value>
   </data>
   <data name="&gt;&gt;lblWareHouse.Name" xml:space="preserve">
     <value>lblWareHouse</value>
@@ -520,7 +532,7 @@
     <value>Top</value>
   </data>
   <data name="txtDepartmentID.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 20.25pt</value>
+    <value>PMingLiU, 20.25pt</value>
   </data>
   <data name="txtDepartmentID.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -553,7 +565,7 @@
     <value>Fill</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 24pt, style=Bold</value>
+    <value>PMingLiU, 24pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -563,9 +575,6 @@
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Department ID:</value>
   </data>
   <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
@@ -619,7 +628,7 @@
     <value>Top</value>
   </data>
   <data name="txtDepartmentName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 20.25pt</value>
+    <value>PMingLiU, 20.25pt</value>
   </data>
   <data name="txtDepartmentName.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -652,7 +661,7 @@
     <value>Fill</value>
   </data>
   <data name="lblDepartmentName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 24pt, style=Bold</value>
+    <value>PMingLiU, 24pt, style=Bold</value>
   </data>
   <data name="lblDepartmentName.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -662,9 +671,6 @@
   </data>
   <data name="lblDepartmentName.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
-  </data>
-  <data name="lblDepartmentName.Text" xml:space="preserve">
-    <value>Department Name:</value>
   </data>
   <data name="lblDepartmentName.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
@@ -741,17 +747,11 @@
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel6" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="btnClear" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="btnSave" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel2" Row="1" RowSpan="1" Column="0" ColumnSpan="3" /&gt;&lt;Control Name="tableLayoutPanel5" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel3" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel4" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20,Absolute,20" /&gt;&lt;Rows Styles="Percent,40,Percent,40,Percent,5,Percent,15" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>800, 450</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Add Department</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmAddDepartment</value>

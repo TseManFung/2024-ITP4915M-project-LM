@@ -1,5 +1,4 @@
-﻿using MultiLang;
-using Org.BouncyCastle.Utilities;
+﻿using Org.BouncyCastle.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -57,7 +56,7 @@ namespace WindowsFormsApp
                 }
             }
 
-            if (Main.ShowYesNoDialog(ml.ml_string(308,"Are you sure you want to change it?")))
+            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
             {
                 if (!string.IsNullOrEmpty(txtName.Text))
                 {
@@ -83,7 +82,7 @@ namespace WindowsFormsApp
                     }
                     else
                     {
-                        Main.ShowMessage(ml.ml_string(319,"Invalid ContantNumber. Please enter a valid number.")); return;
+                        Main.ShowMessage("Invalid ContantNumber. Please enter a valid number."); return;
                     }
                 }
                 if (!string.IsNullOrEmpty(txtAddress.Text))
@@ -96,7 +95,7 @@ namespace WindowsFormsApp
 
                 if (flag == 1)
                 {
-                    Main.ShowMessage(ml.ml_string(309,"Successful editing"));
+                    Main.ShowMessage("Successful editing");
                     txtName.Text = string.Empty;
                     txtEmail.Text = string.Empty;
                     txtContantNumber.Text = string.Empty;
@@ -127,7 +126,7 @@ namespace WindowsFormsApp
                 }
                 else
                 {
-                    Main.ShowMessage(ml.ml_string(320,"Please enter a maximum of 20 digits!"));
+                    Main.ShowMessage("Please enter a maximum of 20 digits!");
                     txtContantNumber.Text = string.Empty;
                 }
             }
@@ -186,7 +185,7 @@ namespace WindowsFormsApp
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog(ml.ml_string(321,"Are you sure you want to delete the supplier?")))
+            if (Main.ShowYesNoDialog("Are you sure you want to delete the supplier?"))
             {
                 string selectSupplier = comboBoxSupplierID.SelectedItem.ToString();
                 String sqlofsupplier = $"SELECT supplierID FROM Supplier WHERE Name = '{selectSupplier}'";
@@ -200,7 +199,7 @@ namespace WindowsFormsApp
                 }
                 string sql = $"UPDATE Supplier SET State = 'D' Where  SupplierID = '{supplierID}';";
                 Main.db.updateBySql(sql);
-                Main.ShowMessage(ml.ml_string(297,"succeed!"));
+                Main.ShowMessage("succeed!");
             }
         }
     }

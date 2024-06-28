@@ -1,5 +1,4 @@
-﻿using MultiLang;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -99,7 +98,7 @@ namespace WindowsFormsApp
                 sql = $"update OrderItem set Quantity = {numericUpDownQuantity.Value} where OrderSerial = '{this.orderSerial}' and ItemID = '{txtSpareID.Text}'";
             }else
             {
-                throw new Exception(ml.ml_string(316,"No data to save"));
+                throw new Exception("No data to save");
             }
             Main.db.updateBySql(sql);
             Main.ShowMessage("Saved");

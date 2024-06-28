@@ -117,48 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="$this.Text" xml:space="preserve">
-    <value>DID</value>
-  </data>
-  <data name="lblActualQuantityDespatched.Text" xml:space="preserve">
-    <value>Actual Quantity Despatched:</value>
-  </data>
-  <data name="lblCarrier.Text" xml:space="preserve">
-    <value>Carrier:</value>
-  </data>
-  <data name="lblDate.Text" xml:space="preserve">
-    <value>Date:</value>
-  </data>
-  <data name="lblDealerCode.Text" xml:space="preserve">
-    <value>Dealer Code:</value>
-  </data>
-  <data name="lblNumberofBundles.Text" xml:space="preserve">
-    <value>Number of Bundles:</value>
-  </data>
-  <data name="lblOrderQuantity.Text" xml:space="preserve">
-    <value>Order Quantity:</value>
-  </data>
-  <data name="lblOrderSerial.Text" xml:space="preserve">
-    <value>Order Serial:</value>
-  </data>
-  <data name="lblPartNumber.Text" xml:space="preserve">
-    <value>Part Number:</value>
-  </data>
-  <data name="lblPreviousOutstanding.Text" xml:space="preserve">
-    <value>Previous Outstanding:</value>
-  </data>
-  <data name="lblToFollow.Text" xml:space="preserve">
-    <value>To follow:</value>
-  </data>
-  <data name="lblTotaltoDespatach.Text" xml:space="preserve">
-    <value>Total to Despatach:</value>
-  </data>
-  <data name="lblWeight.Text" xml:space="preserve">
-    <value>Weight:</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
@@ -215,6 +173,9 @@
   </data>
   <data name="lblWeight.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="lblWeight.Text" xml:space="preserve">
+    <value>Weight:</value>
   </data>
   <data name="&gt;&gt;lblWeight.Name" xml:space="preserve">
     <value>lblWeight</value>
@@ -309,6 +270,9 @@
   <data name="lblDate.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
+  <data name="lblDate.Text" xml:space="preserve">
+    <value>Date:</value>
+  </data>
   <data name="&gt;&gt;lblDate.Name" xml:space="preserve">
     <value>lblDate</value>
   </data>
@@ -401,6 +365,9 @@
   </data>
   <data name="lblOrderSerial.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="lblOrderSerial.Text" xml:space="preserve">
+    <value>Order Serial:</value>
   </data>
   <data name="&gt;&gt;lblOrderSerial.Name" xml:space="preserve">
     <value>lblOrderSerial</value>
@@ -495,6 +462,9 @@
   <data name="lblDealerCode.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
+  <data name="lblDealerCode.Text" xml:space="preserve">
+    <value>Dealer Code:</value>
+  </data>
   <data name="&gt;&gt;lblDealerCode.Name" xml:space="preserve">
     <value>lblDealerCode</value>
   </data>
@@ -587,6 +557,9 @@
   </data>
   <data name="lblPartNumber.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="lblPartNumber.Text" xml:space="preserve">
+    <value>Part Number:</value>
   </data>
   <data name="&gt;&gt;lblPartNumber.Name" xml:space="preserve">
     <value>lblPartNumber</value>
@@ -681,6 +654,9 @@
   <data name="lblOrderQuantity.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
+  <data name="lblOrderQuantity.Text" xml:space="preserve">
+    <value>Order Quantity:</value>
+  </data>
   <data name="&gt;&gt;lblOrderQuantity.Name" xml:space="preserve">
     <value>lblOrderQuantity</value>
   </data>
@@ -773,6 +749,9 @@
   </data>
   <data name="lblPreviousOutstanding.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="lblPreviousOutstanding.Text" xml:space="preserve">
+    <value>Previous Outstanding:</value>
   </data>
   <data name="&gt;&gt;lblPreviousOutstanding.Name" xml:space="preserve">
     <value>lblPreviousOutstanding</value>
@@ -867,6 +846,9 @@
   <data name="lblActualQuantityDespatched.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
+  <data name="lblActualQuantityDespatched.Text" xml:space="preserve">
+    <value>Actual Quantity Despatched:</value>
+  </data>
   <data name="&gt;&gt;lblActualQuantityDespatched.Name" xml:space="preserve">
     <value>lblActualQuantityDespatched</value>
   </data>
@@ -959,6 +941,9 @@
   </data>
   <data name="lblToFollow.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="lblToFollow.Text" xml:space="preserve">
+    <value>To follow:</value>
   </data>
   <data name="&gt;&gt;lblToFollow.Name" xml:space="preserve">
     <value>lblToFollow</value>
@@ -1053,6 +1038,9 @@
   <data name="lblCarrier.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
+  <data name="lblCarrier.Text" xml:space="preserve">
+    <value>Carrier:</value>
+  </data>
   <data name="&gt;&gt;lblCarrier.Name" xml:space="preserve">
     <value>lblCarrier</value>
   </data>
@@ -1145,6 +1133,9 @@
   </data>
   <data name="lblTotaltoDespatach.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="lblTotaltoDespatach.Text" xml:space="preserve">
+    <value>Total to Despatach:</value>
   </data>
   <data name="&gt;&gt;lblTotaltoDespatach.Name" xml:space="preserve">
     <value>lblTotaltoDespatach</value>
@@ -1239,6 +1230,9 @@
   <data name="lblNumberofBundles.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
+  <data name="lblNumberofBundles.Text" xml:space="preserve">
+    <value>Number of Bundles:</value>
+  </data>
   <data name="&gt;&gt;lblNumberofBundles.Name" xml:space="preserve">
     <value>lblNumberofBundles</value>
   </data>
@@ -1311,11 +1305,17 @@
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel16" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel4" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel5" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel6" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel3" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel8" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel10" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel12" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel14" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel9" Row="4" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel13" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33333,Percent,33.33334,Percent,33.33333,Absolute,20" /&gt;&lt;Rows Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1054, 511</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>DID</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmDID</value>

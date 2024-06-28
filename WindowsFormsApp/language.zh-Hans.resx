@@ -120,19 +120,10 @@
   <data name="$this.Text" xml:space="preserve">
     <value>语言</value>
   </data>
-  <data name="lblChooseYourLanguageChina.Text" xml:space="preserve">
-    <value>選擇你的語言</value>
-  </data>
   <data name="lblChooseYourLanguageEng.Text" xml:space="preserve">
     <value>选择您的语言</value>
   </data>
-  <data name="radioButtonChina.Text" xml:space="preserve">
-    <value>中文 （簡體）</value>
-  </data>
   <data name="radioButtonEng.Text" xml:space="preserve">
     <value>英语</value>
-  </data>
-  <data name="radioButtonTw.Text" xml:space="preserve">
-    <value>中文 （繁體）</value>
   </data>
 </root>

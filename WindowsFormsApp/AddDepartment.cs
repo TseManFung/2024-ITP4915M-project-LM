@@ -41,7 +41,7 @@ namespace WindowsFormsApp
                 }
             }
             this.comboBoxWarehouse.DataSource = WarehouseNamelist;
-            this.comboBoxWarehouse.DisplayMember = "SupplierName";
+            this.comboBoxWarehouse.DisplayMember = Resources.SupplierName;
 
         }
 
