@@ -297,27 +297,6 @@ VALUES
   (123789, 'D62438', 1000, 'C'),
   (123456, 'B25912', 1000, 'C');
 
-/*Truck*/
-INSERT INTO `Truck` (`TruckID`, `LicensePlate`, `SaleAreaID`)
-VALUES
-  (1, NULL, NULL),
-  (2, NULL, NULL),
-  (3, NULL, NULL),
-  (4, NULL, NULL),
-  (5, NULL, NULL),
-  (6, NULL, NULL),
-  (7, NULL, NULL),
-  (8, NULL, NULL),
-  (9, NULL, NULL),
-  (10, NULL, NULL);
-
-/*TruckInvoice*/
-INSERT INTO `TruckInvoice` (`TruckID`, `InvoiceID`)
-VALUES
-  (1, '2024052400000101'),
-  (1, '2024052400000201');
-
-
 /*WarehouseStockLevel*/
 INSERT INTO `WarehouseStockLevel` (`WarehouseID`, `SpareID`,`DL` ,`ROL`, `CSL`)
 VALUES
