@@ -117,33 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnDelete.Text" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="btnEdit.Text" xml:space="preserve">
-    <value>Edit</value>
-  </data>
-  <data name="btnSave.Text" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Edit Department</value>
-  </data>
-  <data name="lblDepartment.Text" xml:space="preserve">
-    <value>Department:</value>
-  </data>
-  <data name="lblDepartmentEmail.Text" xml:space="preserve">
-    <value>Department email:</value>
-  </data>
-  <data name="lblDepartmentName.Text" xml:space="preserve">
-    <value>Department Name:</value>
-  </data>
-  <data name="lblWarehouse.Text" xml:space="preserve">
-    <value>Warehouse:</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
     <value>5</value>
@@ -154,7 +127,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnDelete.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 32pt</value>
+    <value>新細明體, 32pt</value>
   </data>
   <data name="btnDelete.Location" type="System.Drawing.Point, System.Drawing">
     <value>483, 121</value>
@@ -164,6 +137,9 @@
   </data>
   <data name="btnDelete.TabIndex" type="System.Int32, mscorlib">
     <value>88</value>
+  </data>
+  <data name="btnDelete.Text" xml:space="preserve">
+    <value>Delete</value>
   </data>
   <data name="&gt;&gt;btnDelete.Name" xml:space="preserve">
     <value>btnDelete</value>
@@ -181,7 +157,7 @@
     <value>Fill</value>
   </data>
   <data name="btnEdit.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 32pt</value>
+    <value>新細明體, 32pt</value>
   </data>
   <data name="btnEdit.Location" type="System.Drawing.Point, System.Drawing">
     <value>163, 121</value>
@@ -191,6 +167,9 @@
   </data>
   <data name="btnEdit.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
+  </data>
+  <data name="btnEdit.Text" xml:space="preserve">
+    <value>Edit</value>
   </data>
   <data name="&gt;&gt;btnEdit.Name" xml:space="preserve">
     <value>btnEdit</value>
@@ -211,7 +190,7 @@
     <value>Fill</value>
   </data>
   <data name="comboBoxDepartment.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="comboBoxDepartment.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 59</value>
@@ -241,7 +220,7 @@
     <value>Fill</value>
   </data>
   <data name="lblDepartment.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblDepartment.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -251,6 +230,9 @@
   </data>
   <data name="lblDepartment.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
+  </data>
+  <data name="lblDepartment.Text" xml:space="preserve">
+    <value>Department:</value>
   </data>
   <data name="&gt;&gt;lblDepartment.Name" xml:space="preserve">
     <value>lblDepartment</value>
@@ -301,7 +283,7 @@
     <value>Fill</value>
   </data>
   <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 32pt</value>
+    <value>新細明體, 32pt</value>
   </data>
   <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
     <value>319, 158</value>
@@ -311,6 +293,9 @@
   </data>
   <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Save</value>
   </data>
   <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
     <value>btnSave</value>
@@ -331,7 +316,7 @@
     <value>Top</value>
   </data>
   <data name="txtDepartmentName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtDepartmentName.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -361,7 +346,7 @@
     <value>Fill</value>
   </data>
   <data name="lblDepartmentName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblDepartmentName.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -371,6 +356,9 @@
   </data>
   <data name="lblDepartmentName.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="lblDepartmentName.Text" xml:space="preserve">
+    <value>Department Name:</value>
   </data>
   <data name="&gt;&gt;lblDepartmentName.Name" xml:space="preserve">
     <value>lblDepartmentName</value>
@@ -421,7 +409,7 @@
     <value>Top</value>
   </data>
   <data name="txtDepartmentEmail.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtDepartmentEmail.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -451,7 +439,7 @@
     <value>Fill</value>
   </data>
   <data name="lblDepartmentEmail.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblDepartmentEmail.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -461,6 +449,9 @@
   </data>
   <data name="lblDepartmentEmail.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
+  </data>
+  <data name="lblDepartmentEmail.Text" xml:space="preserve">
+    <value>Department email:</value>
   </data>
   <data name="&gt;&gt;lblDepartmentEmail.Name" xml:space="preserve">
     <value>lblDepartmentEmail</value>
@@ -511,7 +502,7 @@
     <value>Fill</value>
   </data>
   <data name="comboBoxWarehouseID.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="comboBoxWarehouseID.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -541,7 +532,7 @@
     <value>Fill</value>
   </data>
   <data name="lblWarehouse.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblWarehouse.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -551,6 +542,9 @@
   </data>
   <data name="lblWarehouse.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
+  </data>
+  <data name="lblWarehouse.Text" xml:space="preserve">
+    <value>Warehouse:</value>
   </data>
   <data name="&gt;&gt;lblWarehouse.Name" xml:space="preserve">
     <value>lblWarehouse</value>
@@ -684,11 +678,17 @@
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnDelete" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="btnEdit" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel12" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="panel1" Row="3" RowSpan="1" Column="0" ColumnSpan="5" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,26.31579,Percent,13.1579,Percent,13.1579,Percent,47.36842" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>800, 450</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Edit Department</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmEditDepartment</value>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ZXing;
+using System.Security.Cryptography;
 
 namespace WindowsFormsApp
 {
@@ -83,14 +85,24 @@ namespace WindowsFormsApp
             tableLayoutPanel12.Visible = radNo.Checked;
 
         }
-
+        private string CreatePassword(int length)
+        {
+            const string valid = "abcdefghkmnpqrstuvwxyzABCDEFGHKLMNPQRSTUVWXYZ23456789@#$%&*";
+            StringBuilder res = new StringBuilder();
+            Random rnd = new Random();
+            while (0 < length--)
+            {
+                res.Append(valid[rnd.Next(valid.Length)]);
+            }
+            return res.ToString();
+        }
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
+            if (Main.ShowYesNoDialog(Resources.Are_you_sure_you_want_to_chang0))
             {
 
                 Random random = new Random();
-                int randompasswd = random.Next(0, 1001);
+                string randompasswd = CreatePassword(8);
                 string passwd = '0' + Main.db.ComputeSha256Hash(randompasswd.ToString());
                 string loginName = frmUserManagementAndAccountManagement.GlobalLoginNameForCreate;
                 int accessLevel = frmUserManagementAndAccountManagement.GlobalAccessLevelForCreate;
@@ -116,7 +128,7 @@ namespace WindowsFormsApp
 
                         if (count > 0)
                         {
-                            Main.ShowMessage("Duplicate phone numbers");
+                            Main.ShowMessage(Resources.Duplicate_phone_numbers);
                             txtPhoneNum.Text = String.Empty;
                             return;
                         }
@@ -138,7 +150,7 @@ namespace WindowsFormsApp
                         }
                         else
                         {
-                            Main.ShowMessage("Please select a gemder!");
+                            Main.ShowMessage(Resources.Please_select_a_gemder);
                             return;
                         }
                         int? SaleAreaID = null;
@@ -230,7 +242,7 @@ namespace WindowsFormsApp
             {
                 if (!int.TryParse(txtPhoneNum.Text, out _))
                 {
-                    Main.ShowMessage("Invalid input. Please enter a valid number.");
+                    Main.ShowMessage(Resources.Invalid_input_Please_enter_a_v);
                     txtPhoneNum.Text = string.Empty;
                 }
             }

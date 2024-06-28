@@ -117,6 +117,36 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BtnDIset.Text" xml:space="preserve">
+    <value>DI set</value>
+  </data>
+  <data name="btnInvoice.Text" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="btnItem.Text" xml:space="preserve">
+    <value>Item Detail</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Order Detail</value>
+  </data>
+  <data name="groupBoxDeliveryStatusandProductDetails.Text" xml:space="preserve">
+    <value>Delivery Status and Product Details</value>
+  </data>
+  <data name="groupBoxOrderOverview.Text" xml:space="preserve">
+    <value>Order Overview</value>
+  </data>
+  <data name="lblOrderNo.Text" xml:space="preserve">
+    <value>Order No. :</value>
+  </data>
+  <data name="lblPurchaseDateandTime.Text" xml:space="preserve">
+    <value>Purchase date and time :</value>
+  </data>
+  <data name="lblStatus.Text" xml:space="preserve">
+    <value>Status :</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
@@ -171,9 +201,6 @@
   <data name="lblPurchaseDateandTime.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
   </data>
-  <data name="lblPurchaseDateandTime.Text" xml:space="preserve">
-    <value>Purchase date and time :</value>
-  </data>
   <data name="&gt;&gt;lblPurchaseDateandTime.Name" xml:space="preserve">
     <value>lblPurchaseDateandTime</value>
   </data>
@@ -203,9 +230,6 @@
   </data>
   <data name="lblStatus.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
-  </data>
-  <data name="lblStatus.Text" xml:space="preserve">
-    <value>Status :</value>
   </data>
   <data name="&gt;&gt;lblStatus.Name" xml:space="preserve">
     <value>lblStatus</value>
@@ -237,9 +261,6 @@
   <data name="lblOrderNo.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
-  <data name="lblOrderNo.Text" xml:space="preserve">
-    <value>Order No. :</value>
-  </data>
   <data name="&gt;&gt;lblOrderNo.Name" xml:space="preserve">
     <value>lblOrderNo</value>
   </data>
@@ -266,9 +287,6 @@
   </data>
   <data name="BtnDIset.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
-  </data>
-  <data name="BtnDIset.Text" xml:space="preserve">
-    <value>DI set</value>
   </data>
   <data name="BtnDIset.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -360,9 +378,6 @@
   <data name="btnItem.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
-  <data name="btnItem.Text" xml:space="preserve">
-    <value>Item Detail</value>
-  </data>
   <data name="&gt;&gt;btnItem.Name" xml:space="preserve">
     <value>btnItem</value>
   </data>
@@ -389,9 +404,6 @@
   </data>
   <data name="btnInvoice.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
-  </data>
-  <data name="btnInvoice.Text" xml:space="preserve">
-    <value>Invoice</value>
   </data>
   <data name="btnInvoice.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -450,9 +462,6 @@
   <data name="groupBoxOrderOverview.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="groupBoxOrderOverview.Text" xml:space="preserve">
-    <value>Order Overview</value>
-  </data>
   <data name="&gt;&gt;groupBoxOrderOverview.Name" xml:space="preserve">
     <value>groupBoxOrderOverview</value>
   </data>
@@ -504,9 +513,6 @@
   <data name="groupBoxDeliveryStatusandProductDetails.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="groupBoxDeliveryStatusandProductDetails.Text" xml:space="preserve">
-    <value>Delivery Status and Product Details</value>
-  </data>
   <data name="&gt;&gt;groupBoxDeliveryStatusandProductDetails.Name" xml:space="preserve">
     <value>groupBoxDeliveryStatusandProductDetails</value>
   </data>
@@ -552,17 +558,11 @@
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxOrderOverview" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxDeliveryStatusandProductDetails" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,Absolute,20" /&gt;&lt;Rows Styles="Percent,30,Percent,70" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1249, 572</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Order Detail</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmOrderDetail</value>

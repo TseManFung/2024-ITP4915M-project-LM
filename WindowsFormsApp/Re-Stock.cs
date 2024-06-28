@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -84,7 +85,7 @@ namespace WindowsFormsApp
 
             catch (InvalidOperationException ex)
             {
-                Main.ShowMessage("No data found");
+                Main.ShowMessage(Resources.No_data_found);
             }
         }
 
@@ -92,13 +93,13 @@ namespace WindowsFormsApp
         {
             if (dgvItemFollowingROL.Rows.Count == 0)
             {
-                Main.ShowMessage("No rows available to move.");
+                Main.ShowMessage(Resources.No_rows_available_to_move);
                 return;
             }
 
             if (dgvItemFollowingROL.SelectedRows.Count == 0)
             {
-                Main.ShowMessage("Please select a row to move.");
+                Main.ShowMessage(Resources.Please_select_a_row_to_move);
                 return;
             }
 
@@ -109,7 +110,7 @@ namespace WindowsFormsApp
 
             if (restockTable == null || followingROLTable == null)
             {
-                Main.ShowMessage("Data sources are not properly initialized.");
+                Main.ShowMessage(Resources.Data_sources_are_not_properly_);
                 return;
             }
 
@@ -134,13 +135,13 @@ namespace WindowsFormsApp
         {
             if (dgvRestock.Rows.Count == 0)
             {
-                Main.ShowMessage("No rows available to move.");
+                Main.ShowMessage(Resources.No_rows_available_to_move);
                 return;
             }
 
             if (dgvRestock.SelectedRows.Count == 0)
             {
-                Main.ShowMessage("Please select a row to move.");
+                Main.ShowMessage(Resources.Please_select_a_row_to_move);
                 return;
             }
 
@@ -151,7 +152,7 @@ namespace WindowsFormsApp
 
             if (restockTable == null || followingROLTable == null)
             {
-                Main.ShowMessage("Data sources are not properly initialized.");
+                Main.ShowMessage(Resources.Data_sources_are_not_properly_);
                 return;
             }
 
@@ -177,7 +178,7 @@ namespace WindowsFormsApp
             // 確保 DataGridView 有行可供處理
             if (dgvRestock.Rows.Count == 0)
             {
-                MessageBox.Show("No rows available in the restock list.");
+                MessageBox.Show(Resources.No_rows_available_in_the_resto);
                 return;
             }
 
@@ -235,7 +236,7 @@ namespace WindowsFormsApp
             }
             else
             {
-                MessageBox.Show("No rows were processed.");
+                MessageBox.Show(Resources.No_rows_were_processed);
             }
         }
 

@@ -1,4 +1,5 @@
-﻿using Org.BouncyCastle.Utilities;
+﻿using WindowsFormsApp.Properties;
+using Org.BouncyCastle.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -55,8 +56,16 @@ namespace WindowsFormsApp
                     supplierID = reader.GetInt32(0);
                 }
             }
-
-            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
+            // 检查所有文本框是否都为空
+            if (string.IsNullOrEmpty(txtName.Text) &&
+                string.IsNullOrEmpty(txtEmail.Text) &&
+                string.IsNullOrEmpty(txtContantNumber.Text) &&
+                string.IsNullOrEmpty(txtAddress.Text))
+            {
+                Main.ShowMessage("Please enter at least one field!");
+                return;  // 退出方法
+            }
+            if (Main.ShowYesNoDialog(Resources.Are_you_sure_you_want_to_chang0))
             {
                 if (!string.IsNullOrEmpty(txtName.Text))
                 {
@@ -74,16 +83,10 @@ namespace WindowsFormsApp
                 }
                 if (!string.IsNullOrEmpty(txtContantNumber.Text))
                 {
-                    if (int.TryParse(txtContantNumber.Text, out int ContantNumber))
-                    {
+                        string ContantNumber = txtContantNumber.Text;
                         string query = $"UPDATE Supplier SET ContantNumber = '{ContantNumber}' WHERE supplierID = '{supplierID}'";
                         Main.db.updateBySql(query);
                         flag = 1;
-                    }
-                    else
-                    {
-                        Main.ShowMessage("Invalid ContantNumber. Please enter a valid number."); return;
-                    }
                 }
                 if (!string.IsNullOrEmpty(txtAddress.Text))
                 {
@@ -95,7 +98,7 @@ namespace WindowsFormsApp
 
                 if (flag == 1)
                 {
-                    Main.ShowMessage("Successful editing");
+                    Main.ShowMessage(Resources.Successful_editing);
                     txtName.Text = string.Empty;
                     txtEmail.Text = string.Empty;
                     txtContantNumber.Text = string.Empty;
@@ -126,7 +129,7 @@ namespace WindowsFormsApp
                 }
                 else
                 {
-                    Main.ShowMessage("Please enter a maximum of 20 digits!");
+                    Main.ShowMessage(Resources.Please_enter_a_maximum_of_20_d);
                     txtContantNumber.Text = string.Empty;
                 }
             }
@@ -185,7 +188,7 @@ namespace WindowsFormsApp
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Are you sure you want to delete the supplier?"))
+            if (Main.ShowYesNoDialog(Resources.Are_you_sure_you_want_to_delet))
             {
                 string selectSupplier = comboBoxSupplierID.SelectedItem.ToString();
                 String sqlofsupplier = $"SELECT supplierID FROM Supplier WHERE Name = '{selectSupplier}'";
@@ -199,7 +202,7 @@ namespace WindowsFormsApp
                 }
                 string sql = $"UPDATE Supplier SET State = 'D' Where  SupplierID = '{supplierID}';";
                 Main.db.updateBySql(sql);
-                Main.ShowMessage("succeed!");
+                Main.ShowMessage(Resources.succeed);
             }
         }
     }

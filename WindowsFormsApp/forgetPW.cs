@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,10 +22,10 @@ namespace WindowsFormsApp
         {
             if (radioButtonYouAreLMStaff.Checked)
             {
-                lblDelearName.Text = "Your name:";
+                lblDelearName.Text = Resources.Your_name;
             }else
             {
-                lblDelearName.Text = "Dealer name:";
+                lblDelearName.Text = Resources.Dealer_name;
             }
         }
     }

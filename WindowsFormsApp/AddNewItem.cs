@@ -36,7 +36,7 @@ namespace WindowsFormsApp
                 }
             }
             this.comboBoxSpareType.DataSource = SpareTypelist;
-            this.comboBoxSpareType.DisplayMember = Resources.SpareType;
+            this.comboBoxSpareType.DisplayMember = "SpareType";
             List<string> SupplierIDlist = new List<string>();
             String sqlofSupplierIDlist = $"SELECT Name FROM Supplier;";
             using (var reader = Main.db.readBySql(sqlofSupplierIDlist))
@@ -47,7 +47,7 @@ namespace WindowsFormsApp
                 }
             }
             this.comboBoxSupplier.DataSource = SupplierIDlist;
-            this.comboBoxSupplier.DisplayMember = Resources.Name;
+            this.comboBoxSupplier.DisplayMember = "Name";
  
         }
 

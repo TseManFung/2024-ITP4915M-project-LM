@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -54,7 +55,7 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Are you sure you want to change it?"))
+            if (Main.ShowYesNoDialog(Resources.Are_you_sure_you_want_to_chang0))
             {
 
                 if (!string.IsNullOrEmpty(txtLocation.Text))
@@ -83,12 +84,12 @@ namespace WindowsFormsApp
                     String  query = $"UPDATE Warehouse SET Location = '{Location}' WHERE WarehouseID = '{WarehouseID}'";
                     
                     Main.db.updateBySql(query);
-                    Main.ShowMessage("Successful editing");
+                    Main.ShowMessage(Resources.Successful_editing);
                     txtLocation.Text = String.Empty;
                 }
                 else
                 {
-                    Main.ShowMessage("Please provide Location!");
+                    Main.ShowMessage(Resources.Please_provide_Location);
                 }
             }
         }
@@ -140,11 +141,11 @@ namespace WindowsFormsApp
             // 检查目标仓库是否与要删除的仓库相同
             if (targetwarehouse == DeleteWarehouse)
             {
-                Main.ShowMessage("Cannot select the location to be deleted!");
+                Main.ShowMessage(Resources.Cannot_select_the_location_to_);
             }else
             {
                 // 确认删除操作
-                if (Main.ShowYesNoDialog("Are you sure you want to delete it?"))
+                if (Main.ShowYesNoDialog(Resources.Are_you_sure_you_want_to_delet0))
                 {
                     // 获取当前用户的 StaffID
                     sql = $"select StaffID FROM User WHERE UserID = {Main.userID};";
@@ -210,11 +211,11 @@ namespace WindowsFormsApp
                         }
                         sql = $"UPDATE Department SET WarehouseID = NULL ,State = 'D' WHERE WarehouseID = {WarehouseID}";
                         Main.db.updateBySql(sql);
-                        Main.ShowMessage("Succeed!");
+                        Main.ShowMessage(Resources.Succeed0);
                     }
                     else
                     {
-                        Main.ShowMessage("All fuck up");
+                        Main.ShowMessage(Resources.All_fuck_up);
                     }
                 }
             }

@@ -117,6 +117,60 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnOutput.Text" xml:space="preserve">
+    <value>Output</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>make condition</value>
+  </data>
+  <data name="comboBoxReportType.Items" xml:space="preserve">
+    <value>sale report (warehouse)</value>
+  </data>
+  <data name="comboBoxReportType.Items1" xml:space="preserve">
+    <value>sale report (spare)</value>
+  </data>
+  <data name="comboBoxReportType.Items2" xml:space="preserve">
+    <value>stock report</value>
+  </data>
+  <data name="comboBoxReportType.Items3" xml:space="preserve">
+    <value>scarp report (list all)</value>
+  </data>
+  <data name="comboBoxReportType.Items4" xml:space="preserve">
+    <value>scarp report (spare)</value>
+  </data>
+  <data name="comboBoxReportType.Items5" xml:space="preserve">
+    <value>scarp report (warehouse)</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="lblCondition.Text" xml:space="preserve">
+    <value>Condition: your working warehouse</value>
+  </data>
+  <data name="lblPeriod.Text" xml:space="preserve">
+    <value>Period:</value>
+  </data>
+  <data name="lblPreview.Text" xml:space="preserve">
+    <value>Preview:</value>
+  </data>
+  <data name="lblReportType.Text" xml:space="preserve">
+    <value>Report Type:</value>
+  </data>
+  <data name="lblTo.Text" xml:space="preserve">
+    <value>to</value>
+  </data>
+  <data name="lblTotalNumberofDistinctItem.Text" xml:space="preserve">
+    <value>Number of row:</value>
+  </data>
+  <data name="lblTotalNumberofItem.Text" xml:space="preserve">
+    <value>Total number of item(s):</value>
+  </data>
+  <data name="lblTotalPrice.Text" xml:space="preserve">
+    <value>Total Price:</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lblPreview.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -137,9 +191,6 @@
   </data>
   <data name="lblPreview.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
-  </data>
-  <data name="lblPreview.Text" xml:space="preserve">
-    <value>Preview:</value>
   </data>
   <data name="lblPreview.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
@@ -180,9 +231,6 @@
   <data name="lblCondition.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
   </data>
-  <data name="lblCondition.Text" xml:space="preserve">
-    <value>Condition: your working warehouse</value>
-  </data>
   <data name="&gt;&gt;lblCondition.Name" xml:space="preserve">
     <value>lblCondition</value>
   </data>
@@ -206,9 +254,6 @@
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>make condition</value>
   </data>
   <data name="&gt;&gt;button1.Name" xml:space="preserve">
     <value>button1</value>
@@ -273,9 +318,6 @@
   <data name="lblPeriod.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
   </data>
-  <data name="lblPeriod.Text" xml:space="preserve">
-    <value>Period:</value>
-  </data>
   <data name="&gt;&gt;lblPeriod.Name" xml:space="preserve">
     <value>lblPeriod</value>
   </data>
@@ -332,9 +374,6 @@
   </data>
   <data name="lblTo.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
-  </data>
-  <data name="lblTo.Text" xml:space="preserve">
-    <value>to</value>
   </data>
   <data name="lblTo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
@@ -456,9 +495,6 @@
   <data name="lblReportType.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
   </data>
-  <data name="lblReportType.Text" xml:space="preserve">
-    <value>Report Type:</value>
-  </data>
   <data name="&gt;&gt;lblReportType.Name" xml:space="preserve">
     <value>lblReportType</value>
   </data>
@@ -476,24 +512,6 @@
   </data>
   <data name="comboBoxReportType.Font" type="System.Drawing.Font, System.Drawing">
     <value>PMingLiU, 16pt</value>
-  </data>
-  <data name="comboBoxReportType.Items" xml:space="preserve">
-    <value>sale report (warehouse)</value>
-  </data>
-  <data name="comboBoxReportType.Items1" xml:space="preserve">
-    <value>sale report (spare)</value>
-  </data>
-  <data name="comboBoxReportType.Items2" xml:space="preserve">
-    <value>stock report</value>
-  </data>
-  <data name="comboBoxReportType.Items3" xml:space="preserve">
-    <value>scarp report (list all)</value>
-  </data>
-  <data name="comboBoxReportType.Items4" xml:space="preserve">
-    <value>scarp report (spare)</value>
-  </data>
-  <data name="comboBoxReportType.Items5" xml:space="preserve">
-    <value>scarp report (warehouse)</value>
   </data>
   <data name="comboBoxReportType.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 40</value>
@@ -621,9 +639,6 @@
   <data name="lblTotalNumberofItem.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
   </data>
-  <data name="lblTotalNumberofItem.Text" xml:space="preserve">
-    <value>Total number of item(s):</value>
-  </data>
   <data name="&gt;&gt;lblTotalNumberofItem.Name" xml:space="preserve">
     <value>lblTotalNumberofItem</value>
   </data>
@@ -717,9 +732,6 @@
   <data name="lblTotalNumberofDistinctItem.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
   </data>
-  <data name="lblTotalNumberofDistinctItem.Text" xml:space="preserve">
-    <value>Number of row:</value>
-  </data>
   <data name="&gt;&gt;lblTotalNumberofDistinctItem.Name" xml:space="preserve">
     <value>lblTotalNumberofDistinctItem</value>
   </data>
@@ -776,9 +788,6 @@
   </data>
   <data name="btnOutput.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
-  </data>
-  <data name="btnOutput.Text" xml:space="preserve">
-    <value>Output</value>
   </data>
   <data name="&gt;&gt;btnOutput.Name" xml:space="preserve">
     <value>btnOutput</value>
@@ -842,9 +851,6 @@
   </data>
   <data name="lblTotalPrice.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
-  </data>
-  <data name="lblTotalPrice.Text" xml:space="preserve">
-    <value>Total Price:</value>
   </data>
   <data name="&gt;&gt;lblTotalPrice.Name" xml:space="preserve">
     <value>lblTotalPrice</value>
@@ -918,17 +924,11 @@
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel9" Row="0" RowSpan="2" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel3" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblPreview" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="dgvPreview" Row="2" RowSpan="1" Column="0" ColumnSpan="3" /&gt;&lt;Control Name="tableLayoutPanel4" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel6" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="btnOutput" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel7" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,40.81633,Percent,18.36735,Percent,40.81633" /&gt;&lt;Rows Styles="Percent,15,Percent,10,Percent,45,Percent,15,Percent,15" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1198, 536</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Report</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmReport</value>

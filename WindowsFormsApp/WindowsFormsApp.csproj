@@ -286,6 +286,7 @@
     <Compile Include="Google_map.Designer.cs">
       <DependentUpon>Google_map.cs</DependentUpon>
     </Compile>
+    <Compile Include="MlString.cs" />
     <Compile Include="ModifyInformation.cs">
       <SubType>Form</SubType>
     </Compile>

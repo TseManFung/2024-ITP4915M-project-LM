@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,7 +30,7 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Do you want to turn to the next page?"))
+            if (Main.ShowYesNoDialog(Resources.Do_you_want_to_turn_to_the_nex))
             {
 
                 if (!string.IsNullOrEmpty(txtAccessLevel.Text) && !string.IsNullOrEmpty(txtLoginName.Text))
@@ -45,12 +46,12 @@ namespace WindowsFormsApp
                     }
                     else
                     {
-                        MessageBox.Show("Please select an account option!");
+                        MessageBox.Show(Resources.Please_select_an_account_optio);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Login name or Access level has not been entered.");
+                    MessageBox.Show(Resources.Login_name_or_Access_level_has);
                     txtLoginName.Text = String.Empty;
                     txtAccessLevel.Text = "0";
                 }
@@ -97,7 +98,7 @@ namespace WindowsFormsApp
             {
                 if (txtAccessLevel.Text != null && txtAccessLevel.Text != "0")
                 {
-                    Main.ShowMessage("Invalid access level. Please enter a valid integer value between 0 and 10000.");
+                    Main.ShowMessage(Resources.Invalid_access_level_Please_en);
                     txtAccessLevel.Text = "0";
                 }
             }
