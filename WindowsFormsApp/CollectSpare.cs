@@ -1,5 +1,4 @@
-﻿using WindowsFormsApp.Properties;
-using Mysqlx.Crud;
+﻿using Mysqlx.Crud;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,7 +32,7 @@ namespace WindowsFormsApp
                 //if can not find the code in the collect list
                 if (!comboBoxSpareID.Items.Contains(code))
                 {
-                    Main.ShowMessage(Resources.The_spare_is_not_in_the_collec);
+                    Main.ShowMessage("The spare is not in the collect list");
                     return;
                 }
                 comboBoxSpareID.SelectedItem = code;
