@@ -990,6 +990,9 @@
     <EmbeddedResource Include="SelectLanguage.zh-Hans.resx">
       <DependentUpon>SelectLanguage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SelectLanguage.zh-Hant.resx">
+      <DependentUpon>SelectLanguage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Server.en.resx">
       <DependentUpon>Server.cs</DependentUpon>
     </EmbeddedResource>

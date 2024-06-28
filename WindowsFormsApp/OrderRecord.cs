@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -61,7 +62,7 @@ namespace WindowsFormsApp
             {
                 sql = $"SELECT OrderSerial, OrderDate, OrderNumberfromDealer, State, remark FROM `Order` Where DealerID = {Main.dealerID} limit {start},{end};";
             }
-            else { throw new Exception("No DealerID or StaffID"); }
+            else { throw new Exception(Resources.No_DealerID_or_StaffID); }
 
             DataTable dt = Main.db.GetDataTable(sql);
             DataColumn dcRowString = dt.Columns.Add("_RowString",typeof(string));

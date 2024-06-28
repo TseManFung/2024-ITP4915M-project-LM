@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -54,7 +55,7 @@ namespace WindowsFormsApp
         {
             if (string.IsNullOrEmpty(txtName.Text))
             {
-                Main.ShowMessage("Please enter your name");
+                Main.ShowMessage(Resources.Please_enter_your_name);
                 return;
             }
             // Get the signature from the form
@@ -122,12 +123,12 @@ namespace WindowsFormsApp
             }
             else
             {
-                throw new Exception("Unknown state");
+                throw new Exception(Resources.Unknown_state0);
             }
             sql = $"UPDATE `Order` SET `State` = '{updateState}' WHERE (`OrderSerial` = '{OrderSerial}');";
             Main.db.updateBySql(sql);
 
-            Main.ShowMessage("success");
+            Main.ShowMessage(Resources.success1);
             (this.ParentForm as Main)?.goBack();
 
         }

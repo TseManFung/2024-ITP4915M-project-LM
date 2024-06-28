@@ -1,4 +1,5 @@
-﻿using MySqlConnector;
+﻿using WindowsFormsApp.Properties;
+using MySqlConnector;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -104,7 +105,7 @@ namespace WindowsFormsApp
                 return stock;
 
             }
-            throw new Exception("No stock found");
+            throw new Exception(Resources.No_stock_found);
         }
 
         private void change_qty(int change)
@@ -134,7 +135,7 @@ namespace WindowsFormsApp
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show($"Error: {txtSelectedSpareName.Text} is already in your shopping cart");
+                MessageBox.Show(String.Format(Resources.IS_Error_0_is_already_in_your_,txtSelectedSpareName.Text));
             }
         }
 

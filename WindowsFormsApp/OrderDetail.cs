@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,12 +20,12 @@ namespace WindowsFormsApp
 
 
         Dictionary<string, string> dictState = new Dictionary<string, string>() {
-            { "C", "Order Create" } ,
-            { "P", "Processing" } ,
-            { "W", "Waiting" } ,
-            { "U", "Unavailable" } ,
-            { "T", "In transit" },
-            { "F", "this order is finfshed" }
+            { "C", Resources.Order_Create } ,
+            { "P", Resources.Processing } ,
+            { "W", Resources.Waiting } ,
+            { "U", Resources.Unavailable } ,
+            { "T", Resources.In_transit },
+            { "F", Resources.this_order_is_finfshed }
         };
         public frmOrderDetail(string OrderSerial)
         {

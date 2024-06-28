@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -82,7 +83,7 @@ namespace WindowsFormsApp
 
                     }
                     else {
-                        lblCode.Text = "Scanning...";
+                        lblCode.Text = Resources.Scanning;
                     }
                 }
                 catch (Exception ex)

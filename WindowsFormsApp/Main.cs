@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -52,13 +53,13 @@ namespace WindowsFormsApp
 
         public static bool ShowYesNoDialog(string message)
         {
-            var result = MessageBox.Show(message, "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            var result = MessageBox.Show(message, Resources.Warning, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             return result == DialogResult.Yes;
         }
 
         public static void ShowMessage(string message)
         {
-            MessageBox.Show(message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(message, Resources.Message, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -72,7 +73,7 @@ namespace WindowsFormsApp
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                Main.ShowMessage("Error: Can not connect server\nPlease call technician for help.");
+                Main.ShowMessage(Resources.Error_Can_not_connect_server_P);
                 Application.Exit();
                 this.Close();
                 return;

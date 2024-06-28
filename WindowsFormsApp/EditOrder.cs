@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -61,7 +62,7 @@ namespace WindowsFormsApp
         {
             if (comboBoxOrderSerial.SelectedItem == null)
             {
-                Main.ShowMessage("Please select a Order");
+                Main.ShowMessage(Resources.Please_select_a_Order);
                 return;
             }
             string sql = $"select OrderNumberfromDealer from `Order` where OrderSerial = '{this.orderSerial}'";
@@ -98,10 +99,10 @@ namespace WindowsFormsApp
                 sql = $"update OrderItem set Quantity = {numericUpDownQuantity.Value} where OrderSerial = '{this.orderSerial}' and ItemID = '{txtSpareID.Text}'";
             }else
             {
-                throw new Exception("No data to save");
+                throw new Exception(Resources.No_data_to_save);
             }
             Main.db.updateBySql(sql);
-            Main.ShowMessage("Saved");
+            Main.ShowMessage(Resources.Saved);
         }
 
 
@@ -130,7 +131,7 @@ namespace WindowsFormsApp
         {
             if (comboBoxOrderSerial.SelectedItem == null)
             {
-                Main.ShowMessage("Please select a Order");
+                Main.ShowMessage(Resources.Please_select_a_Order);
                 return;
             }
             string sql = $"SELECT State FROM `Order` where OrderSerial = '{this.orderSerial}'";
@@ -147,12 +148,12 @@ namespace WindowsFormsApp
                 Main.db.updateBySql(sql);
                 sql = $"DELETE FROM `Order` WHERE OrderSerial = '{this.orderSerial}';";
                 Main.db.updateBySql(sql);
-                Main.ShowMessage("Order Deleted");
+                Main.ShowMessage(Resources.Order_Deleted);
                 (this.ParentForm as Main)?.lblTitle_Click_1(sender,e);
             }
             else
             {
-                Main.ShowMessage("Order can not be deleted");
+                Main.ShowMessage(Resources.Order_can_not_be_deleted);
             }
         }
     }

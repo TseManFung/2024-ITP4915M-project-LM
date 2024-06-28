@@ -1,4 +1,5 @@
-﻿using Microsoft.WindowsAPICodePack.Dialogs;
+﻿using WindowsFormsApp.Properties;
+using Microsoft.WindowsAPICodePack.Dialogs;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -28,7 +29,7 @@ namespace WindowsFormsApp
             reportCondition reportCondition = new reportCondition(this.ParentForm as Main);
             reportCondition.ShowDialog();
             CoditionDict = reportCondition.CoditionDict;
-            string s = "Condition: ";
+            string s = Resources.Condition;
             try
             {
                 foreach (KeyValuePair<string, Object> kvp in CoditionDict)
@@ -41,11 +42,11 @@ namespace WindowsFormsApp
                     {
                         if ((bool)kvp.Value)
                         {
-                            s += "your working warehouse";
+                            s += Resources.your_working_warehouse;
                         }
                         else
                         {
-                            s += "all warehouse";
+                            s += Resources.all_warehouse;
                         }
                     }
                     else
@@ -86,7 +87,7 @@ namespace WindowsFormsApp
                 //Main.ShowMessage("Please select report type");
                 return;
             }
-            string codition = lblCondition.Text.Replace("Condition:", "");
+            string codition = lblCondition.Text.Replace(Resources.Condition0, "");
             string start = dateTimePickerStart.Value.ToString("yyyy-MM-dd");
             string end = dateTimePickerEnd.Value.ToString("yyyy-MM-dd");
 
@@ -310,7 +311,7 @@ JOIN Warehouse w ON s.WarehouseID = w.WarehouseID where";
         {
             if (dt == null || dt.Rows.Count==0)
             {
-                Main.ShowMessage("No data to export");
+                Main.ShowMessage(Resources.No_data_to_export);
                 return;
             }
             var lines = new List<string>();
@@ -375,7 +376,7 @@ JOIN Warehouse w ON s.WarehouseID = w.WarehouseID where";
             }
             else
             {
-                throw new Exception("No path selected");
+                throw new Exception(Resources.No_path_selected);
             }
             
         }

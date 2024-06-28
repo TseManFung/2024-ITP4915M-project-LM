@@ -1,4 +1,5 @@
-﻿using System;
+﻿using WindowsFormsApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -132,7 +133,7 @@ namespace WindowsFormsApp
 
                 }
             }
-            Main.ShowMessage("Order Items Assigned to Collect");
+            Main.ShowMessage(Resources.Order_Items_Assigned_to_Collec);
         }
     }
 }

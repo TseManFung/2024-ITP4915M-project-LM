@@ -1,4 +1,5 @@
-﻿using Mysqlx.Crud;
+﻿using WindowsFormsApp.Properties;
+using Mysqlx.Crud;
 using Org.BouncyCastle.Crypto.Generators;
 using System;
 using System.Collections.Generic;
@@ -21,35 +22,35 @@ namespace WindowsFormsApp
         }
 
         Dictionary<string, int> smallaccessMap = new Dictionary<string, int>() {
-            {"Order Record", 10000 },
-            {"Add New Spare", 200 },
-            {"Edit Spare", 200 },
-            {"Add SaleArea", 200 },
-            {"Edit SaleArea", 200 },
-            {"Add Department", 200 },
-            {"Edit Department", 200 },
-            {"Add Warehouse", 200 },
-            {"Edit Warehouse", 200 },
-            {"Supplier Management", 200 },
-            {"User Management", 200 },
-            {"Generate Spare QR-code", 600 }
+            {Resources.Order_Record, 10000 },
+            {Resources.Add_New_Spare, 200 },
+            {Resources.Edit_Spare, 200 },
+            {Resources.Add_SaleArea, 200 },
+            {Resources.Edit_SaleArea, 200 },
+            {Resources.Add_Department, 200 },
+            {Resources.Edit_Department, 200 },
+            {Resources.Add_Warehouse, 200 },
+            {Resources.Edit_Warehouse, 200 },
+            {Resources.Supplier_Management, 200 },
+            {Resources.User_Management, 200 },
+            {Resources.Generate_Spare_QR_code, 600 }
         };
         
         Dictionary<string, int> equalaccessMap = new Dictionary<string, int>() {
-            {"set stock level", 500 },
-            {"Collect Spare", 400 },
-            {"Re-Stock", 500 },
-            {"scrap", 500 },
-            {"Re-Stock Record", 500 },
-            {"Order Edit", 600 },
-            {"Report", 300 },
-            {"Simulate server",0 }
+            {Resources.set_stock_level, 500 },
+            {Resources.Collect_Spare, 400 },
+            {Resources.Re_Stock, 500 },
+            {Resources.scrap, 500 },
+            {Resources.Re_Stock_Record, 500 },
+            {Resources.Order_Edit, 600 },
+            {Resources.Report, 300 },
+            {Resources.Simulate_server,0 }
         };
 
         Dictionary<string, int> bigaccessMap = new Dictionary<string, int>() {
-            {"Place Order", 5000 },
-            {"Order Edit", 5000 },
-            {"Modify Information", 5000 }
+            {Resources.Place_Order, 5000 },
+            {Resources.Order_Edit, 5000 },
+            {Resources.Modify_Information, 5000 }
         };
 
 
