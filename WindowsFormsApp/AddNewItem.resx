@@ -117,6 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnClear.Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Add New Spare</value>
+  </data>
+  <data name="labelDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblSpareName.Text" xml:space="preserve">
+    <value>Spare Name:</value>
+  </data>
+  <data name="lblSparePrice.Text" xml:space="preserve">
+    <value>Price:</value>
+  </data>
+  <data name="lblSpareType.Text" xml:space="preserve">
+    <value>Spare Type:</value>
+  </data>
+  <data name="lblSpareWeight.Text" xml:space="preserve">
+    <value>Weight:</value>
+  </data>
+  <data name="lblSupplier.Text" xml:space="preserve">
+    <value>Supplier:</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lblSupplier.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -127,7 +160,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblSupplier.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 24pt, style=Bold</value>
+    <value>PMingLiU, 24pt, style=Bold</value>
   </data>
   <data name="lblSupplier.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -137,9 +170,6 @@
   </data>
   <data name="lblSupplier.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
-  </data>
-  <data name="lblSupplier.Text" xml:space="preserve">
-    <value>Supplier:</value>
   </data>
   <data name="&gt;&gt;lblSupplier.Name" xml:space="preserve">
     <value>lblSupplier</value>
@@ -160,7 +190,7 @@
     <value>Fill</value>
   </data>
   <data name="lblSpareWeight.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 24pt, style=Bold</value>
+    <value>PMingLiU, 24pt, style=Bold</value>
   </data>
   <data name="lblSpareWeight.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -170,9 +200,6 @@
   </data>
   <data name="lblSpareWeight.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
-  </data>
-  <data name="lblSpareWeight.Text" xml:space="preserve">
-    <value>Weight:</value>
   </data>
   <data name="&gt;&gt;lblSpareWeight.Name" xml:space="preserve">
     <value>lblSpareWeight</value>
@@ -190,7 +217,7 @@
     <value>Top</value>
   </data>
   <data name="txtSpareWeight.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 20.25pt</value>
+    <value>PMingLiU, 20.25pt</value>
   </data>
   <data name="txtSpareWeight.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -220,7 +247,7 @@
     <value>Fill</value>
   </data>
   <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 32pt</value>
+    <value>PMingLiU, 32pt</value>
   </data>
   <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
     <value>253, 321</value>
@@ -230,9 +257,6 @@
   </data>
   <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
-  </data>
-  <data name="btnSave.Text" xml:space="preserve">
-    <value>Save</value>
   </data>
   <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
     <value>btnSave</value>
@@ -253,7 +277,7 @@
     <value>Fill</value>
   </data>
   <data name="lblSpareName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 24pt, style=Bold</value>
+    <value>PMingLiU, 24pt, style=Bold</value>
   </data>
   <data name="lblSpareName.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -263,9 +287,6 @@
   </data>
   <data name="lblSpareName.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
-  </data>
-  <data name="lblSpareName.Text" xml:space="preserve">
-    <value>Spare Name:</value>
   </data>
   <data name="&gt;&gt;lblSpareName.Name" xml:space="preserve">
     <value>lblSpareName</value>
@@ -286,7 +307,7 @@
     <value>Fill</value>
   </data>
   <data name="lblSpareType.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 24pt, style=Bold</value>
+    <value>PMingLiU, 24pt, style=Bold</value>
   </data>
   <data name="lblSpareType.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -296,9 +317,6 @@
   </data>
   <data name="lblSpareType.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
-  </data>
-  <data name="lblSpareType.Text" xml:space="preserve">
-    <value>Spare Type:</value>
   </data>
   <data name="&gt;&gt;lblSpareType.Name" xml:space="preserve">
     <value>lblSpareType</value>
@@ -316,7 +334,7 @@
     <value>Top</value>
   </data>
   <data name="txtSpareName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 20.25pt</value>
+    <value>PMingLiU, 20.25pt</value>
   </data>
   <data name="txtSpareName.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -346,7 +364,7 @@
     <value>Fill</value>
   </data>
   <data name="comboBoxSpareType.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 20.25pt</value>
+    <value>PMingLiU, 20.25pt</value>
   </data>
   <data name="comboBoxSpareType.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -373,7 +391,7 @@
     <value>True</value>
   </data>
   <data name="lblDescription.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 24pt, style=Bold</value>
+    <value>PMingLiU, 24pt, style=Bold</value>
   </data>
   <data name="lblDescription.Location" type="System.Drawing.Point, System.Drawing">
     <value>1953, 73</value>
@@ -383,9 +401,6 @@
   </data>
   <data name="lblDescription.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
-  </data>
-  <data name="lblDescription.Text" xml:space="preserve">
-    <value>Description:</value>
   </data>
   <data name="&gt;&gt;lblDescription.Name" xml:space="preserve">
     <value>lblDescription</value>
@@ -430,7 +445,7 @@
     <value>Fill</value>
   </data>
   <data name="lblSparePrice.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 24pt, style=Bold</value>
+    <value>PMingLiU, 24pt, style=Bold</value>
   </data>
   <data name="lblSparePrice.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -440,9 +455,6 @@
   </data>
   <data name="lblSparePrice.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
-  </data>
-  <data name="lblSparePrice.Text" xml:space="preserve">
-    <value>Price:</value>
   </data>
   <data name="&gt;&gt;lblSparePrice.Name" xml:space="preserve">
     <value>lblSparePrice</value>
@@ -460,7 +472,7 @@
     <value>Top</value>
   </data>
   <data name="txtSparePrice.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 20.25pt</value>
+    <value>PMingLiU, 20.25pt</value>
   </data>
   <data name="txtSparePrice.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -490,7 +502,7 @@
     <value>Fill</value>
   </data>
   <data name="btnClear.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 32pt</value>
+    <value>PMingLiU, 32pt</value>
   </data>
   <data name="btnClear.Location" type="System.Drawing.Point, System.Drawing">
     <value>753, 321</value>
@@ -500,9 +512,6 @@
   </data>
   <data name="btnClear.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
-  </data>
-  <data name="btnClear.Text" xml:space="preserve">
-    <value>Clear</value>
   </data>
   <data name="&gt;&gt;btnClear.Name" xml:space="preserve">
     <value>btnClear</value>
@@ -526,7 +535,7 @@
     <value>Top</value>
   </data>
   <data name="textBoxDescription.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 20.25pt</value>
+    <value>PMingLiU, 20.25pt</value>
   </data>
   <data name="textBoxDescription.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -559,7 +568,7 @@
     <value>Fill</value>
   </data>
   <data name="labelDescription.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 24pt, style=Bold</value>
+    <value>PMingLiU, 24pt, style=Bold</value>
   </data>
   <data name="labelDescription.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -569,9 +578,6 @@
   </data>
   <data name="labelDescription.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
-  </data>
-  <data name="labelDescription.Text" xml:space="preserve">
-    <value>Description:</value>
   </data>
   <data name="&gt;&gt;labelDescription.Name" xml:space="preserve">
     <value>labelDescription</value>
@@ -622,7 +628,7 @@
     <value>Fill</value>
   </data>
   <data name="comboBoxSupplier.Font" type="System.Drawing.Font, System.Drawing">
-    <value>新細明體, 20.25pt</value>
+    <value>PMingLiU, 20.25pt</value>
   </data>
   <data name="comboBoxSupplier.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -837,17 +843,11 @@
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel11" Row="1" RowSpan="1" Column="0" ColumnSpan="5" /&gt;&lt;Control Name="tableLayoutPanel7" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel6" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel5" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel4" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnClear" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="btnSave" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20,Absolute,20" /&gt;&lt;Rows Styles="Percent,40,Percent,40,Percent,5,Percent,15" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1250, 377</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Add New Spare</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmAddNewItem</value>
