@@ -117,54 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnDelete.Text" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="btnEdit.Text" xml:space="preserve">
-    <value>Edit</value>
-  </data>
-  <data name="btnSave.Text" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>AccountManagement</value>
-  </data>
-  <data name="lblAccessLevel.Text" xml:space="preserve">
-    <value>Access Level:</value>
-  </data>
-  <data name="lblDeliveryAddress.Text" xml:space="preserve">
-    <value>DeliveryAddress:</value>
-  </data>
-  <data name="lblDepartment.Text" xml:space="preserve">
-    <value>Department:</value>
-  </data>
-  <data name="lblEmail.Text" xml:space="preserve">
-    <value>email:</value>
-  </data>
-  <data name="lblLogin.Text" xml:space="preserve">
-    <value>Login Name:</value>
-  </data>
-  <data name="lblName.Text" xml:space="preserve">
-    <value>Name:</value>
-  </data>
-  <data name="lblOfficeAddress.Text" xml:space="preserve">
-    <value>OfficeAddress:</value>
-  </data>
-  <data name="lblPassword.Text" xml:space="preserve">
-    <value>Password:</value>
-  </data>
-  <data name="lblPhoneNumber.Text" xml:space="preserve">
-    <value>Phone Number:</value>
-  </data>
-  <data name="lblPosition.Text" xml:space="preserve">
-    <value>Position:</value>
-  </data>
-  <data name="lblSaleArea.Text" xml:space="preserve">
-    <value>SaleArea:</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
     <value>5</value>
@@ -175,7 +127,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnDelete.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 32pt</value>
+    <value>新細明體, 32pt</value>
   </data>
   <data name="btnDelete.Location" type="System.Drawing.Point, System.Drawing">
     <value>783, 130</value>
@@ -185,6 +137,9 @@
   </data>
   <data name="btnDelete.TabIndex" type="System.Int32, mscorlib">
     <value>88</value>
+  </data>
+  <data name="btnDelete.Text" xml:space="preserve">
+    <value>Delete</value>
   </data>
   <data name="&gt;&gt;btnDelete.Name" xml:space="preserve">
     <value>btnDelete</value>
@@ -202,7 +157,7 @@
     <value>Fill</value>
   </data>
   <data name="btnEdit.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 32pt</value>
+    <value>新細明體, 32pt</value>
   </data>
   <data name="btnEdit.Location" type="System.Drawing.Point, System.Drawing">
     <value>263, 130</value>
@@ -212,6 +167,9 @@
   </data>
   <data name="btnEdit.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
+  </data>
+  <data name="btnEdit.Text" xml:space="preserve">
+    <value>Edit</value>
   </data>
   <data name="&gt;&gt;btnEdit.Name" xml:space="preserve">
     <value>btnEdit</value>
@@ -232,7 +190,7 @@
     <value>Fill</value>
   </data>
   <data name="comboBoxLoginName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="comboBoxLoginName.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 63</value>
@@ -262,7 +220,7 @@
     <value>Fill</value>
   </data>
   <data name="lblLogin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblLogin.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -272,6 +230,9 @@
   </data>
   <data name="lblLogin.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
+  </data>
+  <data name="lblLogin.Text" xml:space="preserve">
+    <value>Login Name:</value>
   </data>
   <data name="&gt;&gt;lblLogin.Name" xml:space="preserve">
     <value>lblLogin</value>
@@ -325,16 +286,13 @@
     <value>Top</value>
   </data>
   <data name="txtOfficeAddress.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtOfficeAddress.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 75</value>
   </data>
-  <data name="txtOfficeAddress.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="txtOfficeAddress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 41</value>
+    <value>246, 40</value>
   </data>
   <data name="txtOfficeAddress.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
@@ -358,7 +316,7 @@
     <value>Fill</value>
   </data>
   <data name="lblOfficeAddress.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblOfficeAddress.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -368,6 +326,9 @@
   </data>
   <data name="lblOfficeAddress.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
+  </data>
+  <data name="lblOfficeAddress.Text" xml:space="preserve">
+    <value>OfficeAddress:</value>
   </data>
   <data name="&gt;&gt;lblOfficeAddress.Name" xml:space="preserve">
     <value>lblOfficeAddress</value>
@@ -418,16 +379,13 @@
     <value>Top</value>
   </data>
   <data name="txtEmail.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtEmail.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 75</value>
   </data>
-  <data name="txtEmail.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="txtEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 41</value>
+    <value>246, 40</value>
   </data>
   <data name="txtEmail.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
@@ -451,7 +409,7 @@
     <value>Fill</value>
   </data>
   <data name="lblEmail.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblEmail.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -461,6 +419,9 @@
   </data>
   <data name="lblEmail.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
+  </data>
+  <data name="lblEmail.Text" xml:space="preserve">
+    <value>email:</value>
   </data>
   <data name="&gt;&gt;lblEmail.Name" xml:space="preserve">
     <value>lblEmail</value>
@@ -511,7 +472,7 @@
     <value>Top</value>
   </data>
   <data name="txtPhoneNumber.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtPhoneNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 75</value>
@@ -544,7 +505,7 @@
     <value>Fill</value>
   </data>
   <data name="lblPhoneNumber.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblPhoneNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -554,6 +515,9 @@
   </data>
   <data name="lblPhoneNumber.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
+  </data>
+  <data name="lblPhoneNumber.Text" xml:space="preserve">
+    <value>Phone Number:</value>
   </data>
   <data name="&gt;&gt;lblPhoneNumber.Name" xml:space="preserve">
     <value>lblPhoneNumber</value>
@@ -607,7 +571,7 @@
     <value>Fill</value>
   </data>
   <data name="lblName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblName.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -617,6 +581,9 @@
   </data>
   <data name="lblName.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
+  </data>
+  <data name="lblName.Text" xml:space="preserve">
+    <value>Name:</value>
   </data>
   <data name="&gt;&gt;lblName.Name" xml:space="preserve">
     <value>lblName</value>
@@ -634,7 +601,7 @@
     <value>Top</value>
   </data>
   <data name="txtName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtName.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 75</value>
@@ -697,7 +664,7 @@
     <value>Fill</value>
   </data>
   <data name="comboBoxPosition.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="comboBoxPosition.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 75</value>
@@ -727,7 +694,7 @@
     <value>Fill</value>
   </data>
   <data name="lblPosition.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblPosition.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -737,6 +704,9 @@
   </data>
   <data name="lblPosition.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
+  </data>
+  <data name="lblPosition.Text" xml:space="preserve">
+    <value>Position:</value>
   </data>
   <data name="&gt;&gt;lblPosition.Name" xml:space="preserve">
     <value>lblPosition</value>
@@ -787,7 +757,7 @@
     <value>Fill</value>
   </data>
   <data name="comboBoxDepartment.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="comboBoxDepartment.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 75</value>
@@ -817,7 +787,7 @@
     <value>Fill</value>
   </data>
   <data name="lblDepartment.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblDepartment.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -827,6 +797,9 @@
   </data>
   <data name="lblDepartment.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
+  </data>
+  <data name="lblDepartment.Text" xml:space="preserve">
+    <value>Department:</value>
   </data>
   <data name="&gt;&gt;lblDepartment.Name" xml:space="preserve">
     <value>lblDepartment</value>
@@ -877,7 +850,7 @@
     <value>Fill</value>
   </data>
   <data name="comboBoxSaleArea.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="comboBoxSaleArea.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 75</value>
@@ -907,7 +880,7 @@
     <value>Fill</value>
   </data>
   <data name="lblSaleArea.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblSaleArea.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -917,6 +890,9 @@
   </data>
   <data name="lblSaleArea.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
+  </data>
+  <data name="lblSaleArea.Text" xml:space="preserve">
+    <value>SaleArea:</value>
   </data>
   <data name="&gt;&gt;lblSaleArea.Name" xml:space="preserve">
     <value>lblSaleArea</value>
@@ -967,7 +943,7 @@
     <value>Top</value>
   </data>
   <data name="txtAccessLevel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtAccessLevel.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 75</value>
@@ -1000,7 +976,7 @@
     <value>Fill</value>
   </data>
   <data name="lblAccessLevel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblAccessLevel.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -1010,6 +986,9 @@
   </data>
   <data name="lblAccessLevel.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="lblAccessLevel.Text" xml:space="preserve">
+    <value>Access Level:</value>
   </data>
   <data name="&gt;&gt;lblAccessLevel.Name" xml:space="preserve">
     <value>lblAccessLevel</value>
@@ -1060,7 +1039,7 @@
     <value>Top</value>
   </data>
   <data name="txtPassword.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtPassword.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 75</value>
@@ -1093,7 +1072,7 @@
     <value>Fill</value>
   </data>
   <data name="lblPassword.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblPassword.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -1103,6 +1082,9 @@
   </data>
   <data name="lblPassword.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
+  </data>
+  <data name="lblPassword.Text" xml:space="preserve">
+    <value>Password:</value>
   </data>
   <data name="&gt;&gt;lblPassword.Name" xml:space="preserve">
     <value>lblPassword</value>
@@ -1150,7 +1132,7 @@
     <value>Fill</value>
   </data>
   <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 32pt</value>
+    <value>新細明體, 32pt</value>
   </data>
   <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
     <value>519, 322</value>
@@ -1160,6 +1142,9 @@
   </data>
   <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Save</value>
   </data>
   <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
     <value>btnSave</value>
@@ -1180,16 +1165,13 @@
     <value>Top</value>
   </data>
   <data name="txtDeliveryAddress.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtDeliveryAddress.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 75</value>
   </data>
-  <data name="txtDeliveryAddress.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="txtDeliveryAddress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 41</value>
+    <value>250, 40</value>
   </data>
   <data name="txtDeliveryAddress.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
@@ -1213,7 +1195,7 @@
     <value>Fill</value>
   </data>
   <data name="lblDeliveryAddress.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblDeliveryAddress.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -1223,6 +1205,9 @@
   </data>
   <data name="lblDeliveryAddress.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
+  </data>
+  <data name="lblDeliveryAddress.Text" xml:space="preserve">
+    <value>DeliveryAddress:</value>
   </data>
   <data name="&gt;&gt;lblDeliveryAddress.Name" xml:space="preserve">
     <value>lblDeliveryAddress</value>
@@ -1353,11 +1338,17 @@
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnDelete" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="btnEdit" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel12" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="panel1" Row="3" RowSpan="1" Column="0" ColumnSpan="5" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,20,Percent,10,Percent,10,Percent,60,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1300, 635</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>AccountManagement</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmAccountManagement</value>
