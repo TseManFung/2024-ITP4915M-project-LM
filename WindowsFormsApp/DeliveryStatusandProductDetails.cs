@@ -72,7 +72,7 @@ namespace WindowsFormsApp
                 reader.Read();
                 strdata["InvAdd"] = reader["OfficeAddress"].ToString();
                 strdata["DeliAdd"] = reader["DeliveryAddress"].ToString();
-                strdata["OrderDate"] = reader["InvoiceDate"].ToString();
+                strdata["OrderDate"] = DateTime.Parse(reader["InvoiceDate"].ToString()).ToString("dd/MM/yyyy");
                 strdata["DealerOrderNo"] = reader["OrderNumberfromDealer"].ToString();
                 strdata["OurOrderNo"] = this.orderSerial = reader["OrderSerial"].ToString();
                 strdata["DealerCode"] = reader["DealerID"].ToString();
@@ -132,7 +132,8 @@ namespace WindowsFormsApp
                 { "Receive", "Received in good order" },
                 { "Sign", "Signature" },
             { "UnitPrice","Unit price ($)"},
-            {"TotalPrice","Total price ($)" }
+            {"TotalPrice","Total price ($)" },
+            {"CreateDate","This invoice create at" }
             };
 
         Dictionary<string, string> strdata = new Dictionary<string, string>
@@ -201,6 +202,8 @@ namespace WindowsFormsApp
             e.Graphics.DrawString(this.str["weight"], font, brush, centerX, mt + 270, new StringFormat() { Alignment = StringAlignment.Near });
             e.Graphics.DrawString(totalWeight.ToString() + " g", font, brush, centerX, mt + 290, new StringFormat() { Alignment = StringAlignment.Near });
 
+            e.Graphics.DrawString(this.str["CreateDate"], font, brush, ml, mt + 320, new StringFormat() { Alignment = StringAlignment.Near });
+            e.Graphics.DrawString(DateTime.UtcNow.AddHours(8).ToString("yyyy/MM/dd HH:mm"), font, brush, ml, mt + 340, new StringFormat() { Alignment = StringAlignment.Near });
             e.HasMorePages = true;
 
         }

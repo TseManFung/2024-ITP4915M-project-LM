@@ -39,7 +39,7 @@ namespace WindowsFormsApp
                 reader.Read();
                 strdata["InvAdd"] = reader["OfficeAddress"].ToString();
                 strdata["DeliAdd"] = reader["DeliveryAddress"].ToString();
-                strdata["OrderDate"] = reader["InvoiceDate"].ToString();
+                strdata["OrderDate"] = DateTime.Parse(reader["InvoiceDate"].ToString()).ToString("dd/MM/yyyy");
                 strdata["DealerOrderNo"] = reader["OrderNumberfromDealer"].ToString();
                 strdata["OurOrderNo"] = this.OrderSerial = reader["OrderSerial"].ToString();
                 strdata["DealerCode"] = reader["DealerID"].ToString();
@@ -54,7 +54,7 @@ namespace WindowsFormsApp
             txtDespatchForeman.Text = strdata["DespatchForeman"];
 
             decimal totalWeight = 0;
-            sql = $"SELECT a.ItemID, s.SpareName, s.Weight, oi.Quantity - IFNULL(f.Quantity, 0) - CASE WHEN i.CompleteState = 'C' THEN (SELECT SUM(quantity) FROM ActualQuantityDespatched WHERE InvoiceID = '{InvoiceID}') ELSE 0 END AS 'Prev Qty', a.Quantity AS 'Qty delivered', IFNULL(f.Quantity, 0) AS 'Qty to follow', a.BundlesNumber FROM ActualQuantityDespatched a INNER JOIN Invoice i ON a.InvoiceID = i.InvoiceID INNER JOIN Spare s ON a.ItemID = s.SpareID LEFT JOIN OrderItemToFollow f ON f.ItemID = a.ItemID INNER JOIN OrderItem oi ON a.ItemID = oi.ItemID AND oi.OrderSerial = '{OrderSerial}' WHERE a.InvoiceID = '{InvoiceID}' GROUP BY a.ItemID, s.SpareName, s.Weight, oi.Quantity - IFNULL(f.Quantity, 0) - CASE WHEN i.CompleteState = 'C' THEN (SELECT SUM(quantity) FROM ActualQuantityDespatched WHERE InvoiceID = '{InvoiceID}') ELSE 0 END, a.Quantity, IFNULL(f.Quantity, 0),f.Quantity, a.BundlesNumber;";
+            sql = $"SELECT a.ItemID,  s.SpareName,  s.Weight,oi.Quantity,  oi.Quantity - IFNULL(f.Quantity, 0) - CASE WHEN i.CompleteState = 'C' THEN (SELECT SUM(quantity) FROM ActualQuantityDespatched WHERE InvoiceID = '{{InvoiceID}}' and ItemID = a.ItemID) ELSE 0 END AS 'Prev Qty',  a.Quantity AS 'Qty delivered',  IFNULL(f.Quantity, 0) AS 'Qty to follow',  a.BundlesNumber,oi.PriceInOrder as 'Unit Price' FROM  ActualQuantityDespatched a  INNER JOIN Invoice i ON a.InvoiceID = i.InvoiceID  INNER JOIN Spare s ON a.ItemID = s.SpareID  LEFT JOIN OrderItemToFollow f ON f.ItemID = a.ItemID  INNER JOIN OrderItem oi ON a.ItemID = oi.ItemID AND oi.OrderSerial = '{{OrderSerial}}' WHERE  a.InvoiceID = '{{InvoiceID}}' GROUP BY  a.ItemID,  s.SpareName,  s.Weight,  'Prev Qty',  a.Quantity,  'Qty delivered',f.Quantity,  a.BundlesNumber,'Unit Price';\r\n";
             using (var dt = Main.db.GetDataTable(sql))
             {
                 dgvInvoice.DataSource = dt;
