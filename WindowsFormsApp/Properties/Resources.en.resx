@@ -683,4 +683,7 @@ Opening Hours: 9am - 6pm daily incl. public holiday.</value>
   <data name="Signature_already_exists" xml:space="preserve">
     <value>Signature already exists</value>
   </data>
+  <data name="Please_select_a_warehouse" xml:space="preserve">
+    <value>Please select a warehouse</value>
+  </data>
 </root>

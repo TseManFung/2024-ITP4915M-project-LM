@@ -40,17 +40,10 @@ namespace WindowsFormsApp
 
         private void frmEditWarehouse_Load(object sender, EventArgs e)
         {
-            List<string> WarehouseNamelist = new List<string>();
-            String sql = $"SELECT Name FROM Warehouse Where State = 'N';";
-            using (var reader = Main.db.readBySql(sql))
-            {
-                while (reader.Read())
-                {
-                    WarehouseNamelist.Add(reader.GetString(0));
-                }
-            }
-            this.comboBoxWarehouse.DataSource = WarehouseNamelist;
-            this.comboBoxWarehouse.DisplayMember = "SupplierName";
+            String sql = $"SELECT Name,Location FROM Warehouse;";
+            var dt = Main.db.GetDataTable(sql);
+            comboBoxWarehouse.Items.AddRange(dt.Rows.OfType<DataRow>().Select(dr => dr.Field<string>("Name")).ToArray());
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -126,7 +119,12 @@ namespace WindowsFormsApp
             String targetwarehouse = String.Empty;
             if (dr == DialogResult.OK)
             {
-                targetwarehouse = input.GetMsg();
+                if (input.Msg == null)
+                {
+                    Main.ShowMessage(Resources.Please_select_a_warehouse);
+                    return;
+                }
+                targetwarehouse = input.Msg;
             }
             // 获取目标仓库的 WarehouseID
             int targetwarehouseID = 0;

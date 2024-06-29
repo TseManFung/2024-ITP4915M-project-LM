@@ -57,6 +57,7 @@
             resources.ApplyResources(this.btnCancel, "btnCancel");
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // input
             // 
@@ -74,6 +75,7 @@
             this.Controls.Add(this.comboBoxWarehouseName);
             this.Controls.Add(this.btnOK);
             this.Name = "TargetWarehouse";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TargetWarehouse_FormClosing);
             this.Load += new System.EventHandler(this.TargetWarehouse_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

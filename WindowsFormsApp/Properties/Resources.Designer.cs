@@ -140,7 +140,13 @@ namespace WindowsFormsApp.Properties {
                 return ResourceManager.GetString("all_warehouse", resourceCulture);
             }
         }
-        
+        public static string Please_select_a_warehouse
+        {
+            get
+            {
+                return ResourceManager.GetString("Please_select_a_warehouse", resourceCulture);
+            }
+        }
         /// <summary>
         ///   查詢類似 Are you sure you want to change your password? 的當地語系化字串。
         /// </summary>

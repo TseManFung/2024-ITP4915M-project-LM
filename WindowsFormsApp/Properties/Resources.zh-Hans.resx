@@ -683,4 +683,7 @@
   <data name="Signature_already_exists" xml:space="preserve">
     <value>已经签名了</value>
   </data>
+  <data name="Please_select_a_warehouse" xml:space="preserve">
+    <value>请选择仓库</value>
+  </data>
 </root>
