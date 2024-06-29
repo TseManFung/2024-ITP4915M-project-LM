@@ -19,7 +19,7 @@ namespace WindowsFormsApp
     {
         SshClient client;
         MySqlConnection dbconnect;
-        string mysqlUid = "mysqluser",mysqlPW = "P@$$w0rd";
+        string mysqlUid = "mysqluser",mysqlPW = "P@$$w0rd",dbName= "test";
         string serverIP = "192.9.149.106", serverUser = "mysqluser", serverPassword = "P@$$w0rd";
         public sshdatabase()
 
@@ -212,7 +212,7 @@ namespace WindowsFormsApp
         public void dbConnect()
         {
             this.dbDisconnect();
-            this.dbconnect = new MySqlConnection($"server=127.0.0.1;port=3306;uid={mysqlUid};pwd={mysqlPW};database=test;");
+            this.dbconnect = new MySqlConnection($"server=127.0.0.1;port=3306;uid={mysqlUid};pwd={mysqlPW};database={dbName};");
             dbconnect.Open();
         }
 
