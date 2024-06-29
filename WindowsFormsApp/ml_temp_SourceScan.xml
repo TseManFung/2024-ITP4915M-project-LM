@@ -3005,18 +3005,18 @@ Still placing order?</OriginalText>
   <SourceScanResults>
     <SourceScanID>150</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>36</LineNumber>
+    <LineNumber>40</LineNumber>
     <ColumnNumber>38</ColumnNumber>
     <StringID>307</StringID>
     <OriginalText>The spare is not in the collect list</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>36</StartOfStatement>
-    <EndOfStatement>36</EndOfStatement>
+    <StartOfStatement>40</StartOfStatement>
+    <EndOfStatement>40</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>btnscanner_Click</CodeElement>
-    <RelativeLineNumber>10</RelativeLineNumber>
+    <RelativeLineNumber>14</RelativeLineNumber>
     <NamedResource>The_spare_is_not_in_the_collec</NamedResource>
     <IsHiddenString>false</IsHiddenString>
     <IsInterpolatedString>false</IsInterpolatedString>
@@ -3026,7 +3026,7 @@ Still placing order?</OriginalText>
   <SourceScanResults>
     <SourceScanID>151</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>46</LineNumber>
+    <LineNumber>50</LineNumber>
     <ColumnNumber>28</ColumnNumber>
     <OriginalText>SELECT
   IF(d.WarehouseID IS NULL, -1, d.WarehouseID) AS WarehouseID
@@ -3035,8 +3035,8 @@ JOIN Department d ON s.DeptID = d.DeptID
 WHERE s.StaffID = {Main.staffID}</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>46</StartOfStatement>
-    <EndOfStatement>50</EndOfStatement>
+    <StartOfStatement>50</StartOfStatement>
+    <EndOfStatement>54</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>frmCollectSpare_Load</CodeElement>
@@ -3049,13 +3049,13 @@ WHERE s.StaffID = {Main.staffID}</OriginalText>
   <SourceScanResults>
     <SourceScanID>152</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>55</LineNumber>
+    <LineNumber>59</LineNumber>
     <ColumnNumber>48</ColumnNumber>
     <OriginalText>WarehouseID</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>55</StartOfStatement>
-    <EndOfStatement>55</EndOfStatement>
+    <StartOfStatement>59</StartOfStatement>
+    <EndOfStatement>59</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>frmCollectSpare_Load</CodeElement>
@@ -3068,14 +3068,14 @@ WHERE s.StaffID = {Main.staffID}</OriginalText>
   <SourceScanResults>
     <SourceScanID>153</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>63</LineNumber>
+    <LineNumber>67</LineNumber>
     <ColumnNumber>28</ColumnNumber>
     <OriginalText> DELETE FROM OrderItemToFollow
 WHERE OrderSerial = '{OrderSerial}' AND Quantity = 0</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>63</StartOfStatement>
-    <EndOfStatement>64</EndOfStatement>
+    <StartOfStatement>67</StartOfStatement>
+    <EndOfStatement>68</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>deleteOITF</CodeElement>
@@ -3088,7 +3088,7 @@ WHERE OrderSerial = '{OrderSerial}' AND Quantity = 0</OriginalText>
   <SourceScanResults>
     <SourceScanID>154</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>74</LineNumber>
+    <LineNumber>78</LineNumber>
     <ColumnNumber>28</ColumnNumber>
     <OriginalText>SELECT 
   OrderSerial
@@ -3099,8 +3099,8 @@ ORDER BY OrderSerial ASC
 limit 0,1</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>74</StartOfStatement>
-    <EndOfStatement>80</EndOfStatement>
+    <StartOfStatement>78</StartOfStatement>
+    <EndOfStatement>84</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>getData</CodeElement>
@@ -3113,13 +3113,13 @@ limit 0,1</OriginalText>
   <SourceScanResults>
     <SourceScanID>155</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>85</LineNumber>
+    <LineNumber>89</LineNumber>
     <ColumnNumber>43</ColumnNumber>
     <OriginalText>OrderSerial</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>85</StartOfStatement>
-    <EndOfStatement>85</EndOfStatement>
+    <StartOfStatement>89</StartOfStatement>
+    <EndOfStatement>89</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>getData</CodeElement>
@@ -3132,14 +3132,14 @@ limit 0,1</OriginalText>
   <SourceScanResults>
     <SourceScanID>156</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>89</LineNumber>
+    <LineNumber>93</LineNumber>
     <ColumnNumber>38</ColumnNumber>
     <StringID>308</StringID>
     <OriginalText>No Order to Collect</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>89</StartOfStatement>
-    <EndOfStatement>89</EndOfStatement>
+    <StartOfStatement>93</StartOfStatement>
+    <EndOfStatement>93</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>getData</CodeElement>
@@ -3153,7 +3153,7 @@ limit 0,1</OriginalText>
   <SourceScanResults>
     <SourceScanID>157</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>94</LineNumber>
+    <LineNumber>98</LineNumber>
     <ColumnNumber>21</ColumnNumber>
     <OriginalText>UPDATE OrderItemForCollect 
 SET State = 'C'
@@ -3162,8 +3162,8 @@ WHERE OrderSerial = '{OrderSerial}'
   AND State = 'W'</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>94</StartOfStatement>
-    <EndOfStatement>98</EndOfStatement>
+    <StartOfStatement>98</StartOfStatement>
+    <EndOfStatement>102</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>getData</CodeElement>
@@ -3176,7 +3176,7 @@ WHERE OrderSerial = '{OrderSerial}'
   <SourceScanResults>
     <SourceScanID>158</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>100</LineNumber>
+    <LineNumber>104</LineNumber>
     <ColumnNumber>21</ColumnNumber>
     <OriginalText>SELECT 
   o.OrderSerial,
@@ -3190,8 +3190,8 @@ WHERE OrderSerial = '{OrderSerial}'
   AND o.State = 'C'</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>100</StartOfStatement>
-    <EndOfStatement>109</EndOfStatement>
+    <StartOfStatement>104</StartOfStatement>
+    <EndOfStatement>113</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>getData</CodeElement>
@@ -3204,15 +3204,15 @@ WHERE OrderSerial = '{OrderSerial}'
   <SourceScanResults>
     <SourceScanID>159</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>111</LineNumber>
+    <LineNumber>115</LineNumber>
     <ColumnNumber>21</ColumnNumber>
     <OriginalText>SELECT DealerID 
 FROM `Order`
 WHERE OrderSerial = '{OrderSerial}';</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>111</StartOfStatement>
-    <EndOfStatement>113</EndOfStatement>
+    <StartOfStatement>115</StartOfStatement>
+    <EndOfStatement>117</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>getData</CodeElement>
@@ -3225,13 +3225,13 @@ WHERE OrderSerial = '{OrderSerial}';</OriginalText>
   <SourceScanResults>
     <SourceScanID>160</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>117</LineNumber>
+    <LineNumber>121</LineNumber>
     <ColumnNumber>52</ColumnNumber>
     <OriginalText>DealerID</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>117</StartOfStatement>
-    <EndOfStatement>117</EndOfStatement>
+    <StartOfStatement>121</StartOfStatement>
+    <EndOfStatement>121</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>getData</CodeElement>
@@ -3244,13 +3244,13 @@ WHERE OrderSerial = '{OrderSerial}';</OriginalText>
   <SourceScanResults>
     <SourceScanID>161</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>122</LineNumber>
+    <LineNumber>126</LineNumber>
     <ColumnNumber>33</ColumnNumber>
     <OriginalText>OrderSerial</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>122</StartOfStatement>
-    <EndOfStatement>122</EndOfStatement>
+    <StartOfStatement>126</StartOfStatement>
+    <EndOfStatement>126</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>getData</CodeElement>
@@ -3263,13 +3263,13 @@ WHERE OrderSerial = '{OrderSerial}';</OriginalText>
   <SourceScanResults>
     <SourceScanID>162</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>123</LineNumber>
+    <LineNumber>127</LineNumber>
     <ColumnNumber>77</ColumnNumber>
     <OriginalText>ItemID</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>123</StartOfStatement>
-    <EndOfStatement>123</EndOfStatement>
+    <StartOfStatement>127</StartOfStatement>
+    <EndOfStatement>127</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>getData</CodeElement>
@@ -3282,14 +3282,14 @@ WHERE OrderSerial = '{OrderSerial}';</OriginalText>
   <SourceScanResults>
     <SourceScanID>163</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>124</LineNumber>
+    <LineNumber>128</LineNumber>
     <ColumnNumber>30</ColumnNumber>
     <StringID>309</StringID>
     <OriginalText>The current order number is: </OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>124</StartOfStatement>
-    <EndOfStatement>124</EndOfStatement>
+    <StartOfStatement>128</StartOfStatement>
+    <EndOfStatement>128</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>getData</CodeElement>
@@ -3303,7 +3303,7 @@ WHERE OrderSerial = '{OrderSerial}';</OriginalText>
   <SourceScanResults>
     <SourceScanID>164</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>129</LineNumber>
+    <LineNumber>133</LineNumber>
     <ColumnNumber>28</ColumnNumber>
     <OriginalText>UPDATE OrderItemForCollect 
 SET State = 'W'
@@ -3312,8 +3312,8 @@ WHERE OrderSerial = '{OrderSerial}'
   AND State = 'C'</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>129</StartOfStatement>
-    <EndOfStatement>133</EndOfStatement>
+    <StartOfStatement>133</StartOfStatement>
+    <EndOfStatement>137</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>frmCollectSpare_FormClosing</CodeElement>
@@ -3326,13 +3326,13 @@ WHERE OrderSerial = '{OrderSerial}'
   <SourceScanResults>
     <SourceScanID>165</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>140</LineNumber>
+    <LineNumber>144</LineNumber>
     <ColumnNumber>79</ColumnNumber>
     <OriginalText>ItemID</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>140</StartOfStatement>
-    <EndOfStatement>140</EndOfStatement>
+    <StartOfStatement>144</StartOfStatement>
+    <EndOfStatement>144</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>dgvCollect_CellClick</CodeElement>
@@ -3345,13 +3345,13 @@ WHERE OrderSerial = '{OrderSerial}'
   <SourceScanResults>
     <SourceScanID>166</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>148</LineNumber>
+    <LineNumber>152</LineNumber>
     <ColumnNumber>47</ColumnNumber>
     <OriginalText>ItemID</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>146</StartOfStatement>
-    <EndOfStatement>148</EndOfStatement>
+    <StartOfStatement>150</StartOfStatement>
+    <EndOfStatement>152</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>comboBoxSpareID_SelectedValueChanged</CodeElement>
@@ -3364,13 +3364,13 @@ WHERE OrderSerial = '{OrderSerial}'
   <SourceScanResults>
     <SourceScanID>167</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>152</LineNumber>
+    <LineNumber>156</LineNumber>
     <ColumnNumber>61</ColumnNumber>
     <OriginalText>Quantity</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>152</StartOfStatement>
-    <EndOfStatement>152</EndOfStatement>
+    <StartOfStatement>156</StartOfStatement>
+    <EndOfStatement>156</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>comboBoxSpareID_SelectedValueChanged</CodeElement>
@@ -3383,14 +3383,14 @@ WHERE OrderSerial = '{OrderSerial}'
   <SourceScanResults>
     <SourceScanID>168</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>162</LineNumber>
+    <LineNumber>166</LineNumber>
     <ColumnNumber>34</ColumnNumber>
     <StringID>310</StringID>
     <OriginalText>Please select a spare</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>162</StartOfStatement>
-    <EndOfStatement>162</EndOfStatement>
+    <StartOfStatement>166</StartOfStatement>
+    <EndOfStatement>166</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>btnConfirm_Click</CodeElement>
@@ -3404,14 +3404,14 @@ WHERE OrderSerial = '{OrderSerial}'
   <SourceScanResults>
     <SourceScanID>169</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>167</LineNumber>
+    <LineNumber>171</LineNumber>
     <ColumnNumber>34</ColumnNumber>
     <StringID>311</StringID>
     <OriginalText>Please input the Number of Bundles</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>167</StartOfStatement>
-    <EndOfStatement>167</EndOfStatement>
+    <StartOfStatement>171</StartOfStatement>
+    <EndOfStatement>171</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>btnConfirm_Click</CodeElement>
@@ -3425,15 +3425,15 @@ WHERE OrderSerial = '{OrderSerial}'
   <SourceScanResults>
     <SourceScanID>170</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>176</LineNumber>
+    <LineNumber>180</LineNumber>
     <ColumnNumber>21</ColumnNumber>
     <OriginalText>UPDATE `Order`
 SET State = 'T' 
 WHERE `OrderSerial` = '{OrderSerial}'</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>176</StartOfStatement>
-    <EndOfStatement>178</EndOfStatement>
+    <StartOfStatement>180</StartOfStatement>
+    <EndOfStatement>182</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>btnConfirm_Click</CodeElement>
@@ -3446,7 +3446,7 @@ WHERE `OrderSerial` = '{OrderSerial}'</OriginalText>
   <SourceScanResults>
     <SourceScanID>171</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>184</LineNumber>
+    <LineNumber>188</LineNumber>
     <ColumnNumber>21</ColumnNumber>
     <OriginalText>INSERT INTO ActualQuantityDespatched
 (WarehouseID, InvoiceID, ItemID, Quantity, BundlesNumber)
@@ -3458,8 +3458,8 @@ VALUES
  {numSpareNumberofBundles.Value})</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>184</StartOfStatement>
-    <EndOfStatement>191</EndOfStatement>
+    <StartOfStatement>188</StartOfStatement>
+    <EndOfStatement>195</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>btnConfirm_Click</CodeElement>
@@ -3472,15 +3472,15 @@ VALUES
   <SourceScanResults>
     <SourceScanID>172</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>197</LineNumber>
+    <LineNumber>201</LineNumber>
     <ColumnNumber>21</ColumnNumber>
     <OriginalText>UPDATE OrderItemToFollow
 SET Quantity = Quantity - {numActualQuantity.Value},State = 'W'
 WHERE OrderSerial = '{OrderSerial}' AND ItemID = '{comboBoxSpareID.SelectedItem}'</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>197</StartOfStatement>
-    <EndOfStatement>199</EndOfStatement>
+    <StartOfStatement>201</StartOfStatement>
+    <EndOfStatement>203</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>btnConfirm_Click</CodeElement>
@@ -3493,13 +3493,13 @@ WHERE OrderSerial = '{OrderSerial}' AND ItemID = '{comboBoxSpareID.SelectedItem}
   <SourceScanResults>
     <SourceScanID>173</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>205</LineNumber>
+    <LineNumber>209</LineNumber>
     <ColumnNumber>35</ColumnNumber>
     <OriginalText>ItemID</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>203</StartOfStatement>
-    <EndOfStatement>205</EndOfStatement>
+    <StartOfStatement>207</StartOfStatement>
+    <EndOfStatement>209</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>btnConfirm_Click</CodeElement>
@@ -3512,7 +3512,7 @@ WHERE OrderSerial = '{OrderSerial}' AND ItemID = '{comboBoxSpareID.SelectedItem}
   <SourceScanResults>
     <SourceScanID>174</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>210</LineNumber>
+    <LineNumber>214</LineNumber>
     <ColumnNumber>25</ColumnNumber>
     <OriginalText>DELETE FROM OrderItemForCollect 
 WHERE OrderSerial = '{OrderSerial}' 
@@ -3520,8 +3520,8 @@ WHERE OrderSerial = '{OrderSerial}'
   AND State = 'C'</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>210</StartOfStatement>
-    <EndOfStatement>213</EndOfStatement>
+    <StartOfStatement>214</StartOfStatement>
+    <EndOfStatement>217</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>btnConfirm_Click</CodeElement>
@@ -3534,13 +3534,13 @@ WHERE OrderSerial = '{OrderSerial}'
   <SourceScanResults>
     <SourceScanID>175</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>223</LineNumber>
+    <LineNumber>227</LineNumber>
     <ColumnNumber>66</ColumnNumber>
     <OriginalText>yyyyMMdd</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>223</StartOfStatement>
-    <EndOfStatement>223</EndOfStatement>
+    <StartOfStatement>227</StartOfStatement>
+    <EndOfStatement>227</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>createInvoice</CodeElement>
@@ -3553,15 +3553,15 @@ WHERE OrderSerial = '{OrderSerial}'
   <SourceScanResults>
     <SourceScanID>176</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>224</LineNumber>
+    <LineNumber>228</LineNumber>
     <ColumnNumber>28</ColumnNumber>
     <OriginalText>SELECT MAX(InvoiceID) as max_IID
 FROM Invoice
 WHERE InvoiceID LIKE '{today + dealerID.ToString().PadLeft(6, '0')}__'</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>224</StartOfStatement>
-    <EndOfStatement>226</EndOfStatement>
+    <StartOfStatement>228</StartOfStatement>
+    <EndOfStatement>230</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>createInvoice</CodeElement>
@@ -3574,13 +3574,13 @@ WHERE InvoiceID LIKE '{today + dealerID.ToString().PadLeft(6, '0')}__'</Original
   <SourceScanResults>
     <SourceScanID>177</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>231</LineNumber>
+    <LineNumber>235</LineNumber>
     <ColumnNumber>40</ColumnNumber>
     <OriginalText>max_IID</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>231</StartOfStatement>
-    <EndOfStatement>231</EndOfStatement>
+    <StartOfStatement>235</StartOfStatement>
+    <EndOfStatement>235</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>createInvoice</CodeElement>
@@ -3593,7 +3593,7 @@ WHERE InvoiceID LIKE '{today + dealerID.ToString().PadLeft(6, '0')}__'</Original
   <SourceScanResults>
     <SourceScanID>178</SourceScanID>
     <ModuleName>CollectSpare.cs</ModuleName>
-    <LineNumber>251</LineNumber>
+    <LineNumber>255</LineNumber>
     <ColumnNumber>21</ColumnNumber>
     <OriginalText>INSERT INTO Invoice 
 (InvoiceID, OrderSerial, DespatchForemanID, InvoiceDate, CompleteState)
@@ -3605,8 +3605,8 @@ VALUES
  'C')</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>251</StartOfStatement>
-    <EndOfStatement>258</EndOfStatement>
+    <StartOfStatement>255</StartOfStatement>
+    <EndOfStatement>262</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>createInvoice</CodeElement>
@@ -7621,17 +7621,17 @@ VALUES
   <SourceScanResults>
     <SourceScanID>387</SourceScanID>
     <ModuleName>EditDepartment.cs</ModuleName>
-    <LineNumber>99</LineNumber>
+    <LineNumber>100</LineNumber>
     <ColumnNumber>28</ColumnNumber>
     <OriginalText>SELECT DeptName FROM Department Where DeptID = '{Department}';</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>99</StartOfStatement>
-    <EndOfStatement>99</EndOfStatement>
+    <StartOfStatement>100</StartOfStatement>
+    <EndOfStatement>100</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>comboBoxDepartment_SelectedIndexChanged</CodeElement>
-    <RelativeLineNumber>4</RelativeLineNumber>
+    <RelativeLineNumber>5</RelativeLineNumber>
     <IsHiddenString>false</IsHiddenString>
     <IsInterpolatedString>true</IsInterpolatedString>
     <ClassName>WindowsFormsApp.frmEditDepartment</ClassName>
@@ -7640,17 +7640,17 @@ VALUES
   <SourceScanResults>
     <SourceScanID>388</SourceScanID>
     <ModuleName>EditDepartment.cs</ModuleName>
-    <LineNumber>109</LineNumber>
+    <LineNumber>110</LineNumber>
     <ColumnNumber>21</ColumnNumber>
     <OriginalText>SELECT DeptEmail FROM Department Where DeptID = '{Department}';</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>109</StartOfStatement>
-    <EndOfStatement>109</EndOfStatement>
+    <StartOfStatement>110</StartOfStatement>
+    <EndOfStatement>110</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>comboBoxDepartment_SelectedIndexChanged</CodeElement>
-    <RelativeLineNumber>14</RelativeLineNumber>
+    <RelativeLineNumber>15</RelativeLineNumber>
     <IsHiddenString>false</IsHiddenString>
     <IsInterpolatedString>true</IsInterpolatedString>
     <ClassName>WindowsFormsApp.frmEditDepartment</ClassName>
@@ -7659,14 +7659,14 @@ VALUES
   <SourceScanResults>
     <SourceScanID>389</SourceScanID>
     <ModuleName>EditDepartment.cs</ModuleName>
-    <LineNumber>128</LineNumber>
+    <LineNumber>129</LineNumber>
     <ColumnNumber>38</ColumnNumber>
     <StringID>339</StringID>
     <OriginalText>Are you sure you want to change it?</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>128</StartOfStatement>
-    <EndOfStatement>128</EndOfStatement>
+    <StartOfStatement>129</StartOfStatement>
+    <EndOfStatement>129</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>btnSave_Click</CodeElement>
@@ -7680,13 +7680,13 @@ VALUES
   <SourceScanResults>
     <SourceScanID>390</SourceScanID>
     <ModuleName>EditDepartment.cs</ModuleName>
-    <LineNumber>138</LineNumber>
+    <LineNumber>139</LineNumber>
     <ColumnNumber>36</ColumnNumber>
     <OriginalText>SELECT WarehouseID FROM Warehouse WHERE Name = '{selectedWarehouseName}';</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>138</StartOfStatement>
-    <EndOfStatement>138</EndOfStatement>
+    <StartOfStatement>139</StartOfStatement>
+    <EndOfStatement>139</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>btnSave_Click</CodeElement>
@@ -7699,13 +7699,13 @@ VALUES
   <SourceScanResults>
     <SourceScanID>391</SourceScanID>
     <ModuleName>EditDepartment.cs</ModuleName>
-    <LineNumber>149</LineNumber>
+    <LineNumber>150</LineNumber>
     <ColumnNumber>35</ColumnNumber>
     <OriginalText>UPDATE Department SET DeptEmail = '{DeptEmail}', DeptName = '{DeptName}', WarehouseID = {WarehouseID} WHERE DeptID = '{DepartmentID}'</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>149</StartOfStatement>
-    <EndOfStatement>149</EndOfStatement>
+    <StartOfStatement>150</StartOfStatement>
+    <EndOfStatement>150</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>btnSave_Click</CodeElement>
@@ -7718,13 +7718,13 @@ VALUES
   <SourceScanResults>
     <SourceScanID>392</SourceScanID>
     <ModuleName>EditDepartment.cs</ModuleName>
-    <LineNumber>153</LineNumber>
+    <LineNumber>154</LineNumber>
     <ColumnNumber>35</ColumnNumber>
     <OriginalText>UPDATE Department SET DeptEmail = '{DeptEmail}', DeptName = '{DeptName}',  WHERE DeptID = '{DepartmentID}'</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>153</StartOfStatement>
-    <EndOfStatement>153</EndOfStatement>
+    <StartOfStatement>154</StartOfStatement>
+    <EndOfStatement>154</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>btnSave_Click</CodeElement>
@@ -7737,14 +7737,14 @@ VALUES
   <SourceScanResults>
     <SourceScanID>393</SourceScanID>
     <ModuleName>EditDepartment.cs</ModuleName>
-    <LineNumber>157</LineNumber>
+    <LineNumber>158</LineNumber>
     <ColumnNumber>38</ColumnNumber>
     <StringID>377</StringID>
     <OriginalText>Successful editing</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>157</StartOfStatement>
-    <EndOfStatement>157</EndOfStatement>
+    <StartOfStatement>158</StartOfStatement>
+    <EndOfStatement>158</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>btnSave_Click</CodeElement>
@@ -7758,14 +7758,14 @@ VALUES
   <SourceScanResults>
     <SourceScanID>394</SourceScanID>
     <ModuleName>EditDepartment.cs</ModuleName>
-    <LineNumber>163</LineNumber>
+    <LineNumber>164</LineNumber>
     <ColumnNumber>38</ColumnNumber>
     <StringID>289</StringID>
     <OriginalText>Please provide Location!</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>163</StartOfStatement>
-    <EndOfStatement>163</EndOfStatement>
+    <StartOfStatement>164</StartOfStatement>
+    <EndOfStatement>164</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>btnSave_Click</CodeElement>
@@ -7779,14 +7779,14 @@ VALUES
   <SourceScanResults>
     <SourceScanID>395</SourceScanID>
     <ModuleName>EditDepartment.cs</ModuleName>
-    <LineNumber>186</LineNumber>
+    <LineNumber>187</LineNumber>
     <ColumnNumber>38</ColumnNumber>
     <StringID>339</StringID>
     <OriginalText>Are you sure you want to change it?</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>186</StartOfStatement>
-    <EndOfStatement>186</EndOfStatement>
+    <StartOfStatement>187</StartOfStatement>
+    <EndOfStatement>187</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>btnDelete_Click</CodeElement>
@@ -7800,13 +7800,13 @@ VALUES
   <SourceScanResults>
     <SourceScanID>396</SourceScanID>
     <ModuleName>EditDepartment.cs</ModuleName>
-    <LineNumber>189</LineNumber>
+    <LineNumber>190</LineNumber>
     <ColumnNumber>34</ColumnNumber>
     <OriginalText>UPDATE Department SET State = 'D' WHERE DeptID = '{DepartmentID}'</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>189</StartOfStatement>
-    <EndOfStatement>189</EndOfStatement>
+    <StartOfStatement>190</StartOfStatement>
+    <EndOfStatement>190</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>btnDelete_Click</CodeElement>
@@ -7819,14 +7819,14 @@ VALUES
   <SourceScanResults>
     <SourceScanID>397</SourceScanID>
     <ModuleName>EditDepartment.cs</ModuleName>
-    <LineNumber>191</LineNumber>
+    <LineNumber>192</LineNumber>
     <ColumnNumber>34</ColumnNumber>
     <StringID>374</StringID>
     <OriginalText>Succeed!</OriginalText>
     <IsHidden>false</IsHidden>
     <IndexOnLine>0</IndexOnLine>
-    <StartOfStatement>191</StartOfStatement>
-    <EndOfStatement>191</EndOfStatement>
+    <StartOfStatement>192</StartOfStatement>
+    <EndOfStatement>192</EndOfStatement>
     <IsVerbatim>false</IsVerbatim>
     <IsHiddenBlock>false</IsHiddenBlock>
     <CodeElement>btnDelete_Click</CodeElement>
@@ -18321,7 +18321,7 @@ JOIN Warehouse w ON s.WarehouseID = w.WarehouseID where</OriginalText>
     <ModuleName>SelectLanguage.cs</ModuleName>
     <LineNumber>56</LineNumber>
     <ColumnNumber>56</ColumnNumber>
-    <OriginalText>zh-Hant</OriginalText>
+    <OriginalText>zh-Hans</OriginalText>
     <IsHidden>true</IsHidden>
     <IndexOnLine>0</IndexOnLine>
     <StartOfStatement>56</StartOfStatement>
@@ -18340,7 +18340,7 @@ JOIN Warehouse w ON s.WarehouseID = w.WarehouseID where</OriginalText>
     <ModuleName>SelectLanguage.cs</ModuleName>
     <LineNumber>56</LineNumber>
     <ColumnNumber>67</ColumnNumber>
-    <OriginalText>zh-Hans</OriginalText>
+    <OriginalText>en</OriginalText>
     <IsHidden>true</IsHidden>
     <IndexOnLine>1</IndexOnLine>
     <StartOfStatement>56</StartOfStatement>
@@ -18358,8 +18358,8 @@ JOIN Warehouse w ON s.WarehouseID = w.WarehouseID where</OriginalText>
     <SourceScanID>936</SourceScanID>
     <ModuleName>SelectLanguage.cs</ModuleName>
     <LineNumber>56</LineNumber>
-    <ColumnNumber>78</ColumnNumber>
-    <OriginalText>en</OriginalText>
+    <ColumnNumber>73</ColumnNumber>
+    <OriginalText>zh-Hant</OriginalText>
     <IsHidden>true</IsHidden>
     <IndexOnLine>2</IndexOnLine>
     <StartOfStatement>56</StartOfStatement>
