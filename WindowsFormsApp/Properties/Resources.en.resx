@@ -139,7 +139,7 @@
     <value>Add Warehouse</value>
   </data>
   <data name="All_fuck_up" xml:space="preserve">
-    <value>All fuck up</value>
+    <value>Inconsistency between Spare and Quantity</value>
   </data>
   <data name="all_warehouse" xml:space="preserve">
     <value>all warehouse</value>
@@ -679,5 +679,8 @@ Opening Hours: 9am - 6pm daily incl. public holiday.</value>
   </data>
   <data name="your_working_warehouse" xml:space="preserve">
     <value>your working warehouse</value>
+  </data>
+  <data name="Signature_already_exists" xml:space="preserve">
+    <value>Signature already exists</value>
   </data>
 </root>

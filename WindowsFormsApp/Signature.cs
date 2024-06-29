@@ -78,8 +78,14 @@ namespace WindowsFormsApp
                 command.Parameters.AddWithValue("@Name", txtName.Text);
                 command.Parameters.AddWithValue("@SignatureDate", DateTime.Now);
                 command.Parameters.AddWithValue("@Sign", signatureBytes);
-
-                command.ExecuteNonQuery();
+                try
+                {
+                    command.ExecuteNonQuery();
+                }catch (Exception ex)
+                {
+                    Main.ShowMessage(Resources.Signature_already_exists);
+                    return;
+                }
             }
             string sql = $"UPDATE `Invoice` SET `CompleteState` = 'S' WHERE (`InvoiceID` = '{InvoiceID}');";
             Main.db.updateBySql(sql);

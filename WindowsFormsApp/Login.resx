@@ -223,7 +223,7 @@
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="lblLogInAccount.Font" type="System.Drawing.Font, System.Drawing">
-    <value>清松手寫體1, 17.9999981pt</value>
+    <value>清松手寫體2, 17.9999981pt</value>
   </data>
   <data name="lblLogInAccount.Location" type="System.Drawing.Point, System.Drawing">
     <value>77, 241</value>

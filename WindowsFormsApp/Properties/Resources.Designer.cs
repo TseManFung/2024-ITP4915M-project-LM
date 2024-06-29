@@ -186,6 +186,11 @@ namespace WindowsFormsApp.Properties {
             }
         }
         
+        public static string Signature_already_exists
+        {
+            get { return ResourceManager.GetString("Signature_already_exists", resourceCulture); }
+        }
+
         /// <summary>
         ///   查詢類似 Are you sure you want to remove all items from your cart? 的當地語系化字串。
         /// </summary>
