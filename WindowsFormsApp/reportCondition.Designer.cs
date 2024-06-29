@@ -217,6 +217,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "reportCondition";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.reportCondition_FormClosing);
             this.Load += new System.EventHandler(this.reportCondition_Load);
             this.Resize += new System.EventHandler(this.reportCondition_Resize);
             this.tableLayoutPanel1.ResumeLayout(false);
