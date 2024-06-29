@@ -147,26 +147,26 @@
   <data name="lblForgotPassword.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="lblForgotPassword.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="lblForgotPassword.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Rounded MT Bold, 14.25pt</value>
   </data>
   <data name="lblForgotPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 523</value>
+    <value>82, 523</value>
   </data>
   <data name="lblForgotPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="lblForgotPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 22</value>
+    <value>245, 22</value>
   </data>
   <data name="lblForgotPassword.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
   <data name="lblForgotPassword.Text" xml:space="preserve">
     <value>Forgot Password?</value>
+  </data>
+  <data name="lblForgotPassword.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;lblForgotPassword.Name" xml:space="preserve">
     <value>lblForgotPassword</value>
