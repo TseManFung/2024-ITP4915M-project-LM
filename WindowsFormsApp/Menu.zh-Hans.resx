@@ -157,7 +157,7 @@
     <value>编辑仓库</value>
   </data>
   <data name="lblLogout.Text" xml:space="preserve">
-    <value>注销</value>
+    <value>登出</value>
   </data>
   <data name="lblModifyInformation.Text" xml:space="preserve">
     <value>修改信息</value>

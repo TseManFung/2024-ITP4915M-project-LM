@@ -259,7 +259,7 @@
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="btnLogIn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Rounded MT Bold, 15.75pt</value>
+    <value>清松手寫體2, 15.7499981pt, style=Bold</value>
   </data>
   <data name="btnLogIn.Location" type="System.Drawing.Point, System.Drawing">
     <value>82, 460</value>
