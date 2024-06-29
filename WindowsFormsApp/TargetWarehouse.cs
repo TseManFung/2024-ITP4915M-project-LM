@@ -13,22 +13,38 @@ namespace WindowsFormsApp
 {
     public partial class TargetWarehouse : Form
     {
+        private bool state = false;
         public string Msg { get; set; }
         public TargetWarehouse()
         {
             InitializeComponent();
         }
-
+        public bool Getstate()
+        {
+            return state;
+        }
+        private Dictionary<string, string> warehouseDictionary = new Dictionary<string, string>();
         private void TargetWarehouse_Load(object sender, EventArgs e)
         {
-            List<string> WarehouseNamelist = new List<string>();
-            String sql = $"SELECT Name,Location FROM Warehouse;";
+            String sql = "SELECT Name, Location FROM Warehouse;";
             var dt = Main.db.GetDataTable(sql);
-            comboBoxWarehouseName.Items.AddRange(dt.Rows.OfType<DataRow>().Select(dr => dr.Field<string>("Name")+" | " + dr.Field<string>("Location")).ToArray());
+
+            foreach (DataRow dr in dt.Rows)
+            {
+                string name = dr.Field<string>("Name");
+                string location = dr.Field<string>("Location");
+
+                // Add to dictionary
+                warehouseDictionary[name] = location;
+
+                // Add only name to comboBox
+                comboBoxWarehouseName.Items.Add(name);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            state = true;
             return_data();
         }
         private void return_data()
@@ -37,7 +53,14 @@ namespace WindowsFormsApp
             {
                 return;
             }
-            Msg = comboBoxWarehouseName.SelectedItem.ToString();
+            // Get the selected name
+            string selectedName = comboBoxWarehouseName.SelectedItem.ToString();
+
+            // Get the corresponding location from the dictionary
+            if (warehouseDictionary.TryGetValue(selectedName, out string correspondingLocation))
+            {
+                Msg = correspondingLocation;
+            }
         }
 
         private void input_Click(object sender, EventArgs e)
