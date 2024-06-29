@@ -139,7 +139,7 @@
     <value>添加仓库</value>
   </data>
   <data name="All_fuck_up" xml:space="preserve">
-    <value>都他媽的</value>
+    <value>备件的数量不一致</value>
   </data>
   <data name="all_warehouse" xml:space="preserve">
     <value>所有仓库</value>
@@ -679,5 +679,8 @@
   </data>
   <data name="your_working_warehouse" xml:space="preserve">
     <value>您的工作仓库</value>
+  </data>
+  <data name="Signature_already_exists" xml:space="preserve">
+    <value>已经签名了</value>
   </data>
 </root>
