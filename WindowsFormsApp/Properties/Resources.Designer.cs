@@ -122,7 +122,13 @@ namespace WindowsFormsApp.Properties {
                 return ResourceManager.GetString("Add_Warehouse", resourceCulture);
             }
         }
-        
+        public static string have_restock_order
+        {
+            get
+            {
+                return ResourceManager.GetString("have_restock_order", resourceCulture);
+            }
+        }
         /// <summary>
         ///   查詢類似 All fuck up 的當地語系化字串。
         /// </summary>

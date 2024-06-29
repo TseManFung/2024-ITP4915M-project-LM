@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Documents;
 using System.Windows.Forms;
+using Mysqlx.Crud;
 
 namespace WindowsFormsApp
 {
@@ -120,7 +121,7 @@ namespace WindowsFormsApp
             {
                 if (reader.HasRows)
                 {
-                    Main.ShowMessage("have restock order!");
+                    Main.ShowMessage(Resources.have_restock_order);
                     return;
                 }
             }

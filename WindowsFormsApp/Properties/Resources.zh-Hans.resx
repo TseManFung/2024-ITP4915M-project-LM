@@ -686,4 +686,7 @@
   <data name="Please_select_a_warehouse" xml:space="preserve">
     <value>请选择仓库</value>
   </data>
+  <data name="have_restock_order" xml:space="preserve">
+    <value>有补货订单！</value>
+  </data>
 </root>
