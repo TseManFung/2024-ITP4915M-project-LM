@@ -94,6 +94,7 @@ namespace WindowsFormsApp
 
         private void comboBoxDepartment_SelectedIndexChanged(object sender, EventArgs e)
         {
+            tableLayoutPanel1.Visible = false;
             String Department = comboBoxDepartment.SelectedItem.ToString();
             String DepartmentName = string.Empty;
             String sql = $"SELECT DeptName FROM Department Where DeptID = '{Department}';";

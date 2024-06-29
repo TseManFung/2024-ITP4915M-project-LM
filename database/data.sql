@@ -126,6 +126,10 @@ VALUES
 (107, 'storeman2', 2, 'wh002', 'storeman', '98765437', 'M'),
 (108, 'storeman3', 3, 'wh003', 'storeman', '98765438', 'M'),
 (109, 'storeman4', 4, 'wh004', 'storeman', '98765439', 'M'),
+(110, 'delivery_worke1', 1, 'wh001', 'delivery_worker', '98765428', 'M'),
+(111, 'delivery_worker2', 2, 'wh002', 'delivery_worker', '98765438', 'M'),
+(112, 'delivery_worker3', 3, 'wh003', 'delivery_worker', '98765448', 'M'),
+(113, 'delivery_worker4', 4, 'wh004', 'delivery_worker', '98765458', 'M'),
 (101, 'LMcleck', NULL, 'Hdt', 'LMcleck', '98765431', 'M'),
 (102, 'accountant', NULL, 'Hdt', 'accountant', '98765430', 'M'),
 (103, 'manager', 1, 'wh001', 'manager', '98765429', 'M'),
@@ -297,27 +301,6 @@ VALUES
   (123789, 'D62438', 1000, 'C'),
   (123456, 'B25912', 1000, 'C');
 
-/*Truck*/
-INSERT INTO `Truck` (`TruckID`, `LicensePlate`, `SaleAreaID`)
-VALUES
-  (1, NULL, NULL),
-  (2, NULL, NULL),
-  (3, NULL, NULL),
-  (4, NULL, NULL),
-  (5, NULL, NULL),
-  (6, NULL, NULL),
-  (7, NULL, NULL),
-  (8, NULL, NULL),
-  (9, NULL, NULL),
-  (10, NULL, NULL);
-
-/*TruckInvoice*/
-INSERT INTO `TruckInvoice` (`TruckID`, `InvoiceID`)
-VALUES
-  (1, '2024052400000101'),
-  (1, '2024052400000201');
-
-
 /*WarehouseStockLevel*/
 INSERT INTO `WarehouseStockLevel` (`WarehouseID`, `SpareID`,`DL` ,`ROL`, `CSL`)
 VALUES
@@ -331,27 +314,3 @@ VALUES
   (3, 'D31172', 50, 100, 120),
   (4, 'D62438', 50, 100, 120),
   (4, 'B25912', 50, 100, 120);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
