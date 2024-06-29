@@ -81,7 +81,9 @@
             // 
             // txtDate
             // 
-            this.txtDate.BackColor = System.Drawing.SystemColors.Info;
+            this.txtDate.BackColor = System.Drawing.SystemColors.Control;
+            this.txtDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDate.Cursor = System.Windows.Forms.Cursors.Arrow;
             resources.ApplyResources(this.txtDate, "txtDate");
             this.txtDate.Name = "txtDate";
             this.txtDate.ReadOnly = true;
@@ -103,7 +105,9 @@
             // 
             // txtOrderSerial
             // 
-            this.txtOrderSerial.BackColor = System.Drawing.SystemColors.Info;
+            this.txtOrderSerial.BackColor = System.Drawing.SystemColors.Control;
+            this.txtOrderSerial.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtOrderSerial.Cursor = System.Windows.Forms.Cursors.Arrow;
             resources.ApplyResources(this.txtOrderSerial, "txtOrderSerial");
             this.txtOrderSerial.Name = "txtOrderSerial";
             this.txtOrderSerial.ReadOnly = true;
@@ -125,7 +129,9 @@
             // 
             // txtDealerOrderNo
             // 
-            this.txtDealerOrderNo.BackColor = System.Drawing.SystemColors.Info;
+            this.txtDealerOrderNo.BackColor = System.Drawing.SystemColors.Control;
+            this.txtDealerOrderNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDealerOrderNo.Cursor = System.Windows.Forms.Cursors.Arrow;
             resources.ApplyResources(this.txtDealerOrderNo, "txtDealerOrderNo");
             this.txtDealerOrderNo.Name = "txtDealerOrderNo";
             this.txtDealerOrderNo.ReadOnly = true;
@@ -147,7 +153,9 @@
             // 
             // txtInvoiceName
             // 
-            this.txtInvoiceName.BackColor = System.Drawing.SystemColors.Info;
+            this.txtInvoiceName.BackColor = System.Drawing.SystemColors.Control;
+            this.txtInvoiceName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtInvoiceName.Cursor = System.Windows.Forms.Cursors.Arrow;
             resources.ApplyResources(this.txtInvoiceName, "txtInvoiceName");
             this.txtInvoiceName.Name = "txtInvoiceName";
             this.txtInvoiceName.ReadOnly = true;
@@ -170,7 +178,9 @@
             // 
             // txtDeliveryAddress
             // 
-            this.txtDeliveryAddress.BackColor = System.Drawing.SystemColors.Info;
+            this.txtDeliveryAddress.BackColor = System.Drawing.SystemColors.Control;
+            this.txtDeliveryAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDeliveryAddress.Cursor = System.Windows.Forms.Cursors.Arrow;
             resources.ApplyResources(this.txtDeliveryAddress, "txtDeliveryAddress");
             this.txtDeliveryAddress.Name = "txtDeliveryAddress";
             this.txtDeliveryAddress.ReadOnly = true;
@@ -193,7 +203,9 @@
             // 
             // txtInvoiceAddress
             // 
-            this.txtInvoiceAddress.BackColor = System.Drawing.SystemColors.Info;
+            this.txtInvoiceAddress.BackColor = System.Drawing.SystemColors.Control;
+            this.txtInvoiceAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtInvoiceAddress.Cursor = System.Windows.Forms.Cursors.Arrow;
             resources.ApplyResources(this.txtInvoiceAddress, "txtInvoiceAddress");
             this.txtInvoiceAddress.Name = "txtInvoiceAddress";
             this.txtInvoiceAddress.ReadOnly = true;

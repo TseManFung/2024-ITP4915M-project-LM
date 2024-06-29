@@ -117,33 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnExportasPDF.Text" xml:space="preserve">
-    <value>Export as PDF</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Despatch Instruction Set</value>
-  </data>
-  <data name="lblDate.Text" xml:space="preserve">
-    <value>Date:</value>
-  </data>
-  <data name="lblDealerOrderNo.Text" xml:space="preserve">
-    <value>Dealer Order No. :</value>
-  </data>
-  <data name="lblDeliveryAddress.Text" xml:space="preserve">
-    <value>Delivery Address:</value>
-  </data>
-  <data name="lblInvoiceAddress.Text" xml:space="preserve">
-    <value>Invoice Address:</value>
-  </data>
-  <data name="lblInvoiceName.Text" xml:space="preserve">
-    <value>Invoice Name:</value>
-  </data>
-  <data name="lblOrderSerial.Text" xml:space="preserve">
-    <value>Order Serial:</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>4</value>
@@ -200,6 +173,9 @@
   </data>
   <data name="lblDate.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="lblDate.Text" xml:space="preserve">
+    <value>Date:</value>
   </data>
   <data name="lblDate.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
@@ -297,6 +273,9 @@
   <data name="lblOrderSerial.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
+  <data name="lblOrderSerial.Text" xml:space="preserve">
+    <value>Order Serial:</value>
+  </data>
   <data name="lblOrderSerial.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
   </data>
@@ -392,6 +371,9 @@
   </data>
   <data name="lblDealerOrderNo.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="lblDealerOrderNo.Text" xml:space="preserve">
+    <value>Dealer Order No. :</value>
   </data>
   <data name="lblDealerOrderNo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
@@ -489,6 +471,9 @@
   <data name="lblInvoiceName.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
+  <data name="lblInvoiceName.Text" xml:space="preserve">
+    <value>Invoice Name:</value>
+  </data>
   <data name="lblInvoiceName.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
   </data>
@@ -584,6 +569,9 @@
   </data>
   <data name="lblDeliveryAddress.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="lblDeliveryAddress.Text" xml:space="preserve">
+    <value>Delivery Address:</value>
   </data>
   <data name="lblDeliveryAddress.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
@@ -681,6 +669,9 @@
   <data name="lblInvoiceAddress.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
+  <data name="lblInvoiceAddress.Text" xml:space="preserve">
+    <value>Invoice Address:</value>
+  </data>
   <data name="lblInvoiceAddress.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomLeft</value>
   </data>
@@ -740,6 +731,9 @@
   </data>
   <data name="btnExportasPDF.TabIndex" type="System.Int32, mscorlib">
     <value>92</value>
+  </data>
+  <data name="btnExportasPDF.Text" xml:space="preserve">
+    <value>Export as PDF</value>
   </data>
   <data name="&gt;&gt;btnExportasPDF.Name" xml:space="preserve">
     <value>btnExportasPDF</value>
@@ -810,11 +804,17 @@
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel4" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel3" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel5" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel6" Row="0" RowSpan="1" Column="2" ColumnSpan="2" /&gt;&lt;Control Name="tableLayoutPanel7" Row="1" RowSpan="1" Column="2" ColumnSpan="2" /&gt;&lt;Control Name="btnExportasPDF" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="flowLayoutPanel1" Row="3" RowSpan="1" Column="0" ColumnSpan="4" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;Rows Styles="Percent,15,Percent,15,Percent,10,Percent,60" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>836, 587</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Despatch Instruction Set</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmDISet</value>
