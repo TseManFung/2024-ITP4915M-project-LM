@@ -117,75 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="button1.Text" xml:space="preserve">
-    <value>confirm</value>
-  </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Reset</value>
-  </data>
-  <data name="comboBox1.Items" xml:space="preserve">
-    <value>&lt;</value>
-  </data>
-  <data name="comboBox1.Items1" xml:space="preserve">
-    <value>≤</value>
-  </data>
-  <data name="comboBox1.Items2" xml:space="preserve">
-    <value>=</value>
-  </data>
-  <data name="comboBox1.Items3" xml:space="preserve">
-    <value>≥</value>
-  </data>
-  <data name="comboBox1.Items4" xml:space="preserve">
-    <value>&gt;</value>
-  </data>
-  <data name="comboBox3.Items" xml:space="preserve">
-    <value>A</value>
-  </data>
-  <data name="comboBox3.Items1" xml:space="preserve">
-    <value>B</value>
-  </data>
-  <data name="comboBox3.Items2" xml:space="preserve">
-    <value>C</value>
-  </data>
-  <data name="comboBox3.Items3" xml:space="preserve">
-    <value>D</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Only look at the warehouse to which you belong</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Spare Category Type</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Spare</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Spare quantity</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Dealer</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>is</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>is</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>is</value>
-  </data>
-  <data name="radioButton1.Text" xml:space="preserve">
-    <value>Yes</value>
-  </data>
-  <data name="radioButton2.Text" xml:space="preserve">
-    <value>No</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>reportCondition</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
@@ -206,6 +137,9 @@
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>is</value>
   </data>
   <data name="label7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -237,6 +171,9 @@
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Only look at the warehouse to which you belong</value>
+  </data>
   <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
@@ -267,6 +204,9 @@
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Spare Category Type</value>
+  </data>
   <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
@@ -296,6 +236,9 @@
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Spare</value>
   </data>
   <data name="label3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
@@ -336,6 +279,9 @@
   <data name="radioButton1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="radioButton1.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
   <data name="&gt;&gt;radioButton1.Name" xml:space="preserve">
     <value>radioButton1</value>
   </data>
@@ -374,6 +320,9 @@
   </data>
   <data name="radioButton2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="radioButton2.Text" xml:space="preserve">
+    <value>No</value>
   </data>
   <data name="&gt;&gt;radioButton2.Name" xml:space="preserve">
     <value>radioButton2</value>
@@ -435,6 +384,9 @@
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Spare quantity</value>
+  </data>
   <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
@@ -464,6 +416,9 @@
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Dealer</value>
   </data>
   <data name="label5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
@@ -495,6 +450,9 @@
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>is</value>
+  </data>
   <data name="label6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
@@ -525,6 +483,9 @@
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>is</value>
+  </data>
   <data name="label9.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
@@ -542,6 +503,21 @@
   </data>
   <data name="comboBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
+  </data>
+  <data name="comboBox1.Items" xml:space="preserve">
+    <value>&lt;</value>
+  </data>
+  <data name="comboBox1.Items1" xml:space="preserve">
+    <value>≤</value>
+  </data>
+  <data name="comboBox1.Items2" xml:space="preserve">
+    <value>=</value>
+  </data>
+  <data name="comboBox1.Items3" xml:space="preserve">
+    <value>≥</value>
+  </data>
+  <data name="comboBox1.Items4" xml:space="preserve">
+    <value>&gt;</value>
   </data>
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>356, 228</value>
@@ -648,6 +624,9 @@
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>confirm</value>
+  </data>
   <data name="&gt;&gt;button1.Name" xml:space="preserve">
     <value>button1</value>
   </data>
@@ -662,6 +641,18 @@
   </data>
   <data name="comboBox3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
+  </data>
+  <data name="comboBox3.Items" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="comboBox3.Items1" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="comboBox3.Items2" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="comboBox3.Items3" xml:space="preserve">
+    <value>D</value>
   </data>
   <data name="comboBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>424, 92</value>
@@ -695,6 +686,9 @@
   </data>
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Reset</value>
   </data>
   <data name="&gt;&gt;button2.Name" xml:space="preserve">
     <value>button2</value>
@@ -738,6 +732,9 @@
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label7" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label3" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="splitContainer1" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label4" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label5" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label6" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label9" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="comboBox1" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="numericUpDown1" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox2" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox4" Row="4" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button1" Row="5" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="comboBox3" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="button2" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,45,Percent,10,Percent,45" /&gt;&lt;Rows Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20,Absolute,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
@@ -749,6 +746,9 @@
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>784, 431</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>reportCondition</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>reportCondition</value>

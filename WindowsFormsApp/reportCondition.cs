@@ -57,7 +57,7 @@ namespace WindowsFormsApp
             radioButton2.Checked = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void return_data()
         {
             CoditionDict = new Dictionary<string, object>();
             if (radioButton1.Checked)
@@ -70,8 +70,8 @@ namespace WindowsFormsApp
             }
             if (comboBox1.SelectedIndex != -1)
             {
-                List<string> list = new List<string>() {"<","<=","=",">=",">" };
-                CoditionDict.Add("quantity_operator",list[comboBox1.SelectedIndex]);
+                List<string> list = new List<string>() { "<", "<=", "=", ">=", ">" };
+                CoditionDict.Add("quantity_operator", list[comboBox1.SelectedIndex]);
                 CoditionDict.Add("quantity", numericUpDown1.Value);
             }
             if (comboBox2.SelectedIndex != -1)
@@ -90,10 +90,19 @@ namespace WindowsFormsApp
             {
 
                 CoditionDict.Add("DealerID", comboBox4.SelectedValue);
-               
+
             }
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            return_data();
 
             this.Close();
+        }
+
+        private void reportCondition_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            return_data();
         }
 
         private void getData()

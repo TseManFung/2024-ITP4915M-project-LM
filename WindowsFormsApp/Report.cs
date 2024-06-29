@@ -331,7 +331,7 @@ JOIN Warehouse w ON s.WarehouseID = w.WarehouseID where";
             try
             {
                 string path = GetPath();
-                string filePath = path + "\\excel.csv";
+                string filePath = path + $"\\{comboBoxReportType.SelectedItem}-{DateTime.UtcNow.AddHours(8).ToString("yyyy-MM-dd-HH-mm")}.csv";
                 if (File.Exists(filePath))
                 {
                     try
