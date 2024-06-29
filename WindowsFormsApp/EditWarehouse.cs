@@ -120,7 +120,7 @@ namespace WindowsFormsApp
             {
                 if (reader.HasRows)
                 {
-                    MessageBox.Show("have restock order!");
+                    Main.ShowMessage("have restock order!");
                     return;
                 }
             }

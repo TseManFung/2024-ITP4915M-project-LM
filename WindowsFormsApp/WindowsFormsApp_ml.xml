@@ -1321,7 +1321,7 @@
     <StringID>8</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Name:</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>9</StringID>
@@ -1357,7 +1357,7 @@
     <StringID>14</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Save</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>15</StringID>
@@ -1381,7 +1381,7 @@
     <StringID>18</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Clear</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>19</StringID>
@@ -1393,13 +1393,13 @@
     <StringID>20</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Yes</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>21</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>No</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>22</StringID>
@@ -1441,7 +1441,7 @@
     <StringID>28</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Spare Name:</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>29</StringID>
@@ -1465,7 +1465,7 @@
     <StringID>32</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Add SaleArea</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>33</StringID>
@@ -1489,7 +1489,7 @@
     <StringID>36</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Cart</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>37</StringID>
@@ -1507,7 +1507,7 @@
     <StringID>39</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Total Quantity:</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>40</StringID>
@@ -1531,13 +1531,13 @@
     <StringID>43</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Selected Spare Name:</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>44</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Total Price:</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>45</StringID>
@@ -1597,7 +1597,7 @@
     <StringID>54</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Spare ID:</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>55</StringID>
@@ -1609,7 +1609,7 @@
     <StringID>56</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>DeliveryStatusandProductDetails</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>57</StringID>
@@ -1621,7 +1621,7 @@
     <StringID>58</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>State</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>59</StringID>
@@ -1699,7 +1699,7 @@
     <StringID>71</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Previous Outstanding:</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>72</StringID>
@@ -1723,7 +1723,7 @@
     <StringID>75</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Total to Despatach:</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>76</StringID>
@@ -1783,7 +1783,7 @@
     <StringID>85</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Edit Order</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>86</StringID>
@@ -1819,7 +1819,7 @@
     <StringID>91</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Edit SaleArea</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>92</StringID>
@@ -1843,13 +1843,13 @@
     <StringID>95</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Contant Number:</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>96</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Address:</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>97</StringID>
@@ -1873,13 +1873,13 @@
     <StringID>100</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>You are dealer or LM staff:</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>101</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>dealer</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>102</StringID>
@@ -1891,7 +1891,7 @@
     <StringID>103</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Dealer name:</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>104</StringID>
@@ -1933,7 +1933,7 @@
     <StringID>110</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>locate</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>111</StringID>
@@ -1993,7 +1993,7 @@
     <StringID>120</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Sign Here</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>121</StringID>
@@ -2011,7 +2011,7 @@
     <StringID>123</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>English</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>124</StringID>
@@ -2023,7 +2023,7 @@
     <StringID>125</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>中文 (简体)</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>126</StringID>
@@ -2089,7 +2089,7 @@
     <StringID>136</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Logout</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>137</StringID>
@@ -2197,19 +2197,19 @@
     <StringID>154</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>New Dealer</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>155</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Dealer Name:</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>156</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Are you new Dealer?</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>157</StringID>
@@ -2227,13 +2227,13 @@
     <StringID>159</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Gender:</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>160</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Male</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>161</StringID>
@@ -2251,7 +2251,7 @@
     <StringID>163</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Are you new staff?</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>164</StringID>
@@ -2281,7 +2281,7 @@
     <StringID>168</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Order Detail</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>169</StringID>
@@ -2299,7 +2299,7 @@
     <StringID>171</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Status :</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>172</StringID>
@@ -2311,13 +2311,13 @@
     <StringID>173</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>DI set</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>174</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Item Detail</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>175</StringID>
@@ -2329,7 +2329,7 @@
     <StringID>176</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Order: </LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>177</StringID>
@@ -2365,7 +2365,7 @@
     <StringID>182</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Processing</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>183</StringID>
@@ -2395,7 +2395,7 @@
     <StringID>187</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>SpareID:</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>188</StringID>
@@ -2425,7 +2425,7 @@
     <StringID>192</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>make condition</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>193</StringID>
@@ -2437,7 +2437,7 @@
     <StringID>194</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>to</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>195</StringID>
@@ -2461,25 +2461,25 @@
     <StringID>198</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>stock report</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>199</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>scarp report (list all)</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>200</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>scarp report (spare)</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>201</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>scarp report (warehouse)</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>202</StringID>
@@ -2527,7 +2527,7 @@
     <StringID>209</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Spare</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>210</StringID>
@@ -2539,7 +2539,7 @@
     <StringID>211</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Dealer</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>212</StringID>
@@ -2581,7 +2581,7 @@
     <StringID>218</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>A</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>219</StringID>
@@ -2713,7 +2713,7 @@
     <StringID>240</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Common Stock Level:</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>241</StringID>
@@ -2749,7 +2749,7 @@
     <StringID>246</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Genarate Spare QRCode</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>247</StringID>
@@ -2821,7 +2821,7 @@
     <StringID>258</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Order</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>259</StringID>
@@ -2851,13 +2851,13 @@
     <StringID>263</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>dealer must have a saleArea!</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>264</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>DealerID</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>265</StringID>
@@ -2887,7 +2887,7 @@
     <StringID>269</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Invalid access level. Please enter a valid integer value between 0 and 10000.</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>270</StringID>
@@ -3036,7 +3036,7 @@ Still placing order?</LanguageText>
     <StringID>293</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>SpareID</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>294</StringID>
@@ -3078,7 +3078,7 @@ Still placing order?</LanguageText>
     <StringID>300</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Successful ADD, your added new spare ID is </LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>301</StringID>
@@ -6018,7 +6018,7 @@ Still placing order?</LanguageText>
     <StringID>310</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Please select a spare</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>311</StringID>
@@ -6108,13 +6108,13 @@ Still placing order?</LanguageText>
     <StringID>325</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>No. of bundles</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>326</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Part No.</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>327</StringID>
@@ -6186,7 +6186,7 @@ Still placing order?</LanguageText>
     <StringID>338</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>All fuck up</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>339</StringID>
@@ -6222,7 +6222,7 @@ Still placing order?</LanguageText>
     <StringID>344</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Data sources are not properly initialized.</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>345</StringID>
@@ -6234,19 +6234,19 @@ Still placing order?</LanguageText>
     <StringID>346</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Duplicate phone numbers</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>347</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Invalid ContantNumber. Please enter a valid number.</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>348</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Invalid input. Please enter a valid number with up to 20 digits.</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>349</StringID>
@@ -6258,37 +6258,37 @@ Still placing order?</LanguageText>
     <StringID>350</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Latitude must be between -90 and 90.Invalid Input</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>351</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Location matches. Closing the form.</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>352</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Login name or Access level has not been entered.</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>353</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Longitude must be between -180 and 180.Invalid Input</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>354</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>No cell has been clicked yet.</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>355</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>No data found</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>356</StringID>
@@ -6318,61 +6318,61 @@ Still placing order?</LanguageText>
     <StringID>360</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Please enter a maximum of 20 digits!</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>361</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Please enter full data!</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>362</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Please enter valid numeric values for latitude and longitude.Invalid Input</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>363</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Please enter values in at least one of the fields.</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>364</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Please fill in all information</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>365</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Please provide both Department Name and Department Email!</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>366</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Please select a gemder!</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>367</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Please select a row to move.</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>368</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Please select an account option!</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>369</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Please select an item to delete</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>370</StringID>
@@ -6384,19 +6384,19 @@ Still placing order?</LanguageText>
     <StringID>371</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>ScrapItem Successful!</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>372</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Setting Successful!</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>373</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>StaffID not found for current user.</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>374</StringID>
@@ -6414,31 +6414,31 @@ Still placing order?</LanguageText>
     <StringID>376</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Successful creating</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>377</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>Successful editing</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>378</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>The coordinates (0, 0) are known as Null Island, a location in the Gulf of Guinea where the equator and prime meridian intersect.</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>379</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>The entered values are too large or too small.Invalid Input</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>380</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>WarehouseID not found for current staff.</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>381</StringID>
@@ -6738,7 +6738,7 @@ Still placing order?</LanguageText>
     <StringID>386</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>OK</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>387</StringID>
@@ -7121,19 +7121,19 @@ Please call technician for help.</LanguageText>
     <StringID>402</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>In transit</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>403</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>this order is finfshed</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>404</StringID>
     <LanguageID>9</LanguageID>
     <LanguageText>No DealerID or StaffID</LanguageText>
-    <Status>1</Status>
+    <Status>8</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>405</StringID>

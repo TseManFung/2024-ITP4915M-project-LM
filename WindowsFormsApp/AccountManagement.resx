@@ -127,7 +127,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnDelete.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 32pt</value>
+    <value>新細明體, 32pt</value>
   </data>
   <data name="btnDelete.Location" type="System.Drawing.Point, System.Drawing">
     <value>783, 130</value>
@@ -157,7 +157,7 @@
     <value>Fill</value>
   </data>
   <data name="btnEdit.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 32pt</value>
+    <value>新細明體, 32pt</value>
   </data>
   <data name="btnEdit.Location" type="System.Drawing.Point, System.Drawing">
     <value>263, 130</value>
@@ -190,7 +190,7 @@
     <value>Fill</value>
   </data>
   <data name="comboBoxLoginName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="comboBoxLoginName.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 63</value>
@@ -220,7 +220,7 @@
     <value>Fill</value>
   </data>
   <data name="lblLogin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblLogin.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -286,7 +286,7 @@
     <value>Top</value>
   </data>
   <data name="txtOfficeAddress.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtOfficeAddress.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 75</value>
@@ -316,7 +316,7 @@
     <value>Fill</value>
   </data>
   <data name="lblOfficeAddress.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblOfficeAddress.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -379,7 +379,7 @@
     <value>Top</value>
   </data>
   <data name="txtEmail.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtEmail.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 75</value>
@@ -412,7 +412,7 @@
     <value>Fill</value>
   </data>
   <data name="lblEmail.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblEmail.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -475,7 +475,7 @@
     <value>Top</value>
   </data>
   <data name="txtPhoneNumber.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtPhoneNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 75</value>
@@ -508,7 +508,7 @@
     <value>Fill</value>
   </data>
   <data name="lblPhoneNumber.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblPhoneNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -574,7 +574,7 @@
     <value>Fill</value>
   </data>
   <data name="lblName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblName.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -604,7 +604,7 @@
     <value>Top</value>
   </data>
   <data name="txtName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtName.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 75</value>
@@ -667,7 +667,7 @@
     <value>Fill</value>
   </data>
   <data name="comboBoxPosition.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="comboBoxPosition.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 75</value>
@@ -697,7 +697,7 @@
     <value>Fill</value>
   </data>
   <data name="lblPosition.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblPosition.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -760,7 +760,7 @@
     <value>Fill</value>
   </data>
   <data name="comboBoxDepartment.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="comboBoxDepartment.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 75</value>
@@ -790,7 +790,7 @@
     <value>Fill</value>
   </data>
   <data name="lblDepartment.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblDepartment.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -853,7 +853,7 @@
     <value>Fill</value>
   </data>
   <data name="comboBoxSaleArea.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="comboBoxSaleArea.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 75</value>
@@ -883,7 +883,7 @@
     <value>Fill</value>
   </data>
   <data name="lblSaleArea.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblSaleArea.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -946,7 +946,7 @@
     <value>Top</value>
   </data>
   <data name="txtAccessLevel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtAccessLevel.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 75</value>
@@ -979,7 +979,7 @@
     <value>Fill</value>
   </data>
   <data name="lblAccessLevel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblAccessLevel.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -1042,7 +1042,7 @@
     <value>Top</value>
   </data>
   <data name="txtPassword.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtPassword.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 75</value>
@@ -1075,7 +1075,7 @@
     <value>Fill</value>
   </data>
   <data name="lblPassword.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblPassword.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -1135,7 +1135,7 @@
     <value>Fill</value>
   </data>
   <data name="btnSave.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 32pt</value>
+    <value>新細明體, 32pt</value>
   </data>
   <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
     <value>519, 322</value>
@@ -1168,7 +1168,7 @@
     <value>Top</value>
   </data>
   <data name="txtDeliveryAddress.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtDeliveryAddress.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 75</value>
@@ -1198,7 +1198,7 @@
     <value>Fill</value>
   </data>
   <data name="lblDeliveryAddress.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblDeliveryAddress.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
