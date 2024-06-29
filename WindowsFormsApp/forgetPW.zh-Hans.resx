@@ -133,7 +133,7 @@
     <value>您的登录名：</value>
   </data>
   <data name="radioButtonYouAreDealer.Text" xml:space="preserve">
-    <value>贩子</value>
+    <value>经销商</value>
   </data>
   <data name="radioButtonYouAreLMStaff.Text" xml:space="preserve">
     <value>LM员工</value>

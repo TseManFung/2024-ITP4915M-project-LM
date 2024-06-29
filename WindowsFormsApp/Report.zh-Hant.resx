@@ -121,7 +121,7 @@
     <value>輸出</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
-    <value>make 條件</value>
+    <value>製作條件</value>
   </data>
   <data name="comboBoxReportType.Items" xml:space="preserve">
     <value>銷售報告（倉庫）</value>
@@ -130,16 +130,16 @@
     <value>銷售報告（備用）</value>
   </data>
   <data name="comboBoxReportType.Items2" xml:space="preserve">
-    <value>股票報告</value>
+    <value>庫存報告</value>
   </data>
   <data name="comboBoxReportType.Items3" xml:space="preserve">
-    <value>SCARP 報告（全部列出）</value>
+    <value>報廢報告（列出全部）</value>
   </data>
   <data name="comboBoxReportType.Items4" xml:space="preserve">
-    <value>SCARP 報告（備用）</value>
+    <value>報廢報告（備件）</value>
   </data>
   <data name="comboBoxReportType.Items5" xml:space="preserve">
-    <value>SCARP 報告（倉庫）</value>
+    <value>報廢報告（倉庫）</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>報告</value>
@@ -157,7 +157,7 @@
     <value>報告類型：</value>
   </data>
   <data name="lblTo.Text" xml:space="preserve">
-    <value>自</value>
+    <value>至</value>
   </data>
   <data name="lblTotalNumberofDistinctItem.Text" xml:space="preserve">
     <value>行數：</value>

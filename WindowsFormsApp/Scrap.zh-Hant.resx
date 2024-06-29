@@ -130,6 +130,6 @@
     <value>數量：</value>
   </data>
   <data name="lblSpareID.Text" xml:space="preserve">
-    <value>備用 ID：</value>
+    <value>備件 ID：</value>
   </data>
 </root>

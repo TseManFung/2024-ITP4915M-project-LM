@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnSave.Text" xml:space="preserve">
-    <value>救</value>
+    <value>储存</value>
   </data>
   <data name="checkBoxAutoReStock.Text" xml:space="preserve">
     <value>自动补货</value>
@@ -127,7 +127,7 @@
     <value>设置库存水平</value>
   </data>
   <data name="lblCommonStockLevel.Text" xml:space="preserve">
-    <value>普通股水平：</value>
+    <value>一般库存水平：</value>
   </data>
   <data name="lblDangerLevel.Text" xml:space="preserve">
     <value>危险等级：</value>
@@ -136,9 +136,9 @@
     <value>重新订购级别：</value>
   </data>
   <data name="lblSpareID.Text" xml:space="preserve">
-    <value>备用 ID：</value>
+    <value>备件 ID：</value>
   </data>
   <data name="lblSpareName.Text" xml:space="preserve">
-    <value>备用名称：</value>
+    <value>备件名称：</value>
   </data>
 </root>

@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BtnDIset.Text" xml:space="preserve">
-    <value>DI套裝</value>
+    <value>DI設定</value>
   </data>
   <data name="btnInvoice.Text" xml:space="preserve">
     <value>發票</value>
   </data>
   <data name="btnItem.Text" xml:space="preserve">
-    <value>商品明細</value>
+    <value>商品詳情</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>訂單明細</value>
+    <value>訂單詳情</value>
   </data>
   <data name="groupBoxDeliveryStatusandProductDetails.Text" xml:space="preserve">
     <value>交貨狀態和產品詳細資訊</value>
@@ -142,6 +142,6 @@
     <value>購買日期與時間 ：</value>
   </data>
   <data name="lblStatus.Text" xml:space="preserve">
-    <value>地位：</value>
+    <value>狀態：</value>
   </data>
 </root>

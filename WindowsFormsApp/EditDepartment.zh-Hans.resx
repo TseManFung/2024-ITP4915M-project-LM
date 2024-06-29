@@ -124,7 +124,7 @@
     <value>编辑</value>
   </data>
   <data name="btnSave.Text" xml:space="preserve">
-    <value>救</value>
+    <value>储存</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>编辑部</value>

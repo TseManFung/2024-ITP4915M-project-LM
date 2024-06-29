@@ -124,16 +124,16 @@
     <value>忘記密碼</value>
   </data>
   <data name="lblDelearName.Text" xml:space="preserve">
-    <value>轉銷商名稱：</value>
+    <value>經銷商名稱：</value>
   </data>
   <data name="lblYouAreDealerOrLMStaff.Text" xml:space="preserve">
-    <value>您是轉銷商或LM員工：</value>
+    <value>您是經銷商或LM員工：</value>
   </data>
   <data name="lblYourLoginName.Text" xml:space="preserve">
     <value>登入名稱：</value>
   </data>
   <data name="radioButtonYouAreDealer.Text" xml:space="preserve">
-    <value>販子</value>
+    <value>經銷商</value>
   </data>
   <data name="radioButtonYouAreLMStaff.Text" xml:space="preserve">
     <value>LM員工</value>

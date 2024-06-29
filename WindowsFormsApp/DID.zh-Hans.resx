@@ -145,13 +145,13 @@
     <value>产品编号：</value>
   </data>
   <data name="lblPreviousOutstanding.Text" xml:space="preserve">
-    <value>上一届优秀作品：</value>
+    <value>未完成项目：</value>
   </data>
   <data name="lblToFollow.Text" xml:space="preserve">
     <value>要关注：</value>
   </data>
   <data name="lblTotaltoDespatach.Text" xml:space="preserve">
-    <value>总计 Despatach：</value>
+    <value>总计出货：</value>
   </data>
   <data name="lblWeight.Text" xml:space="preserve">
     <value>重量：</value>

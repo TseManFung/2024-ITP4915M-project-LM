@@ -127,16 +127,16 @@
     <value>删除此项目</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>车</value>
+    <value>购物车</value>
   </data>
   <data name="lblSelectedSpareName.Text" xml:space="preserve">
     <value>选定的备用名称：</value>
   </data>
   <data name="lblTotalPrice.Text" xml:space="preserve">
-    <value>总价：</value>
+    <value>总价格：</value>
   </data>
   <data name="lblTotalQuantity.Text" xml:space="preserve">
-    <value>总量：</value>
+    <value>总数量：</value>
   </data>
   <data name="lblYourOrderNo.Text" xml:space="preserve">
     <value>您的订单号（如有） ：</value>

@@ -121,7 +121,7 @@
     <value>清楚</value>
   </data>
   <data name="btnSave.Text" xml:space="preserve">
-    <value>救</value>
+    <value>儲存</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>添加部門</value>
@@ -142,9 +142,9 @@
     <value>倉庫：</value>
   </data>
   <data name="radNo.Text" xml:space="preserve">
-    <value>不</value>
+    <value>否</value>
   </data>
   <data name="radYes.Text" xml:space="preserve">
-    <value>是的</value>
+    <value>是</value>
   </data>
 </root>

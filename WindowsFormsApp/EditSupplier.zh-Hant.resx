@@ -124,22 +124,22 @@
     <value>編輯</value>
   </data>
   <data name="btnSave.Text" xml:space="preserve">
-    <value>救</value>
+    <value>儲存</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>編輯供應商</value>
   </data>
   <data name="lblAddress.Text" xml:space="preserve">
-    <value>位址：</value>
+    <value>地址：</value>
   </data>
   <data name="lblContantNumber.Text" xml:space="preserve">
-    <value>常數：</value>
+    <value>聯絡電話：</value>
   </data>
   <data name="lblEmail.Text" xml:space="preserve">
     <value>電子郵件：</value>
   </data>
   <data name="lblName.Text" xml:space="preserve">
-    <value>名稱：</value>
+    <value>名字：</value>
   </data>
   <data name="lblSupplierID.Text" xml:space="preserve">
     <value>供應商編號：</value>

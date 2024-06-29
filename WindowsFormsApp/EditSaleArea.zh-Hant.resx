@@ -124,10 +124,10 @@
     <value>編輯</value>
   </data>
   <data name="btnSave.Text" xml:space="preserve">
-    <value>救</value>
+    <value>儲存</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>編輯 SaleArea</value>
+    <value>編輯銷售區域</value>
   </data>
   <data name="lblLocation.Text" xml:space="preserve">
     <value>位置：</value>

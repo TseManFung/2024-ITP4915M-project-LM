@@ -118,12 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="$this.Text" xml:space="preserve">
-    <value>Genarate 備用 QRCode</value>
+    <value>生成備件 QRCode</value>
   </data>
   <data name="lblSpareID.Text" xml:space="preserve">
-    <value>備用 ID：</value>
+    <value>備件ID：</value>
   </data>
   <data name="lblSpareName.Text" xml:space="preserve">
-    <value>備用名稱：</value>
+    <value>備件名稱：</value>
   </data>
 </root>

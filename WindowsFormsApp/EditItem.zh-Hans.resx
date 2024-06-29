@@ -124,7 +124,7 @@
     <value>编辑</value>
   </data>
   <data name="btnSave.Text" xml:space="preserve">
-    <value>救</value>
+    <value>储存</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>编辑或删除备件</value>
@@ -136,10 +136,10 @@
     <value>价格：</value>
   </data>
   <data name="lblSpareID.Text" xml:space="preserve">
-    <value>备用 ID：</value>
+    <value>备件 ID：</value>
   </data>
   <data name="lblSpareName.Text" xml:space="preserve">
-    <value>备用名称：</value>
+    <value>备件名称：</value>
   </data>
   <data name="lblSpareType.Text" xml:space="preserve">
     <value>备件类型：</value>

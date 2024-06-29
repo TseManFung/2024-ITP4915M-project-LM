@@ -118,22 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnClear.Text" xml:space="preserve">
-    <value>清楚</value>
+    <value>清除</value>
   </data>
   <data name="btnSave.Text" xml:space="preserve">
-    <value>救</value>
+    <value>儲存</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>新員工</value>
   </data>
   <data name="lblAreYouNewStaff.Text" xml:space="preserve">
-    <value>你是新員工嗎？</value>
+    <value>你是新的員工嗎？</value>
   </data>
   <data name="lblDepartment.Text" xml:space="preserve">
     <value>部門：</value>
   </data>
   <data name="lblGender.Text" xml:space="preserve">
-    <value>性：</value>
+    <value>性別：</value>
   </data>
   <data name="lblPosition.Text" xml:space="preserve">
     <value>位置：</value>
@@ -151,15 +151,15 @@
     <value>電話號碼：</value>
   </data>
   <data name="radNo.Text" xml:space="preserve">
-    <value>不</value>
+    <value>否</value>
   </data>
   <data name="radYes.Text" xml:space="preserve">
-    <value>是的</value>
+    <value>是</value>
   </data>
   <data name="rbFemale.Text" xml:space="preserve">
     <value>女性</value>
   </data>
   <data name="rbMale.Text" xml:space="preserve">
-    <value>雄</value>
+    <value>男性</value>
   </data>
 </root>

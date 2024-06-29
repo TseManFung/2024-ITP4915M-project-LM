@@ -127,10 +127,10 @@
     <value>選擇您的語言</value>
   </data>
   <data name="radioButtonChina.Text" xml:space="preserve">
-    <value>中文 （簡體）</value>
+    <value>中文 （简体）</value>
   </data>
   <data name="radioButtonEng.Text" xml:space="preserve">
-    <value>英語</value>
+    <value>English</value>
   </data>
   <data name="radioButtonTw.Text" xml:space="preserve">
     <value>中文 （繁體）</value>

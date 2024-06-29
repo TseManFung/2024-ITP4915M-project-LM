@@ -124,13 +124,13 @@
     <value>編輯您的訂單號</value>
   </data>
   <data name="btnSave.Text" xml:space="preserve">
-    <value>救</value>
+    <value>儲存</value>
   </data>
   <data name="buttonDeleteOrder.Text" xml:space="preserve">
     <value>取消訂單</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>編輯順序</value>
+    <value>編輯訂單</value>
   </data>
   <data name="lblOrderSerial.Text" xml:space="preserve">
     <value>訂單序列號：</value>
@@ -139,10 +139,10 @@
     <value>數量：</value>
   </data>
   <data name="lblSpareID.Text" xml:space="preserve">
-    <value>備用 ID：</value>
+    <value>備件 ID：</value>
   </data>
   <data name="lblSpareName.Text" xml:space="preserve">
-    <value>備用名稱：</value>
+    <value>備件名稱：</value>
   </data>
   <data name="lblYourOrderNumber.Text" xml:space="preserve">
     <value>您的訂單號：</value>

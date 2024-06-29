@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="accForDealer.Text" xml:space="preserve">
-    <value>販子</value>
+    <value>經銷商</value>
   </data>
   <data name="accForStaff.Text" xml:space="preserve">
     <value>LM員工</value>
   </data>
   <data name="btnClear.Text" xml:space="preserve">
-    <value>清楚</value>
+    <value>清除</value>
   </data>
   <data name="btnCreate.Text" xml:space="preserve">
     <value>創建一個新帳戶</value>

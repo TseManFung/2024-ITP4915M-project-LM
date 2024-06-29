@@ -133,7 +133,7 @@
     <value>完成</value>
   </data>
   <data name="groupBoxProcessing.Text" xml:space="preserve">
-    <value>加工</value>
+    <value>处理中</value>
   </data>
   <data name="lblDoubleClickSeeMoreDetaill.Text" xml:space="preserve">
     <value>双击记录可查看更多详细信息</value>

@@ -121,7 +121,7 @@
     <value>发票</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>DeliveryStatus和ProductDetails</value>
+    <value>交货状态和产品详情</value>
   </data>
   <data name="groupBoxDate.Text" xml:space="preserve">
     <value>交货日期</value>
@@ -139,6 +139,6 @@
     <value>相关备件：</value>
   </data>
   <data name="lblState.Text" xml:space="preserve">
-    <value>州</value>
+    <value>状态</value>
   </data>
 </root>

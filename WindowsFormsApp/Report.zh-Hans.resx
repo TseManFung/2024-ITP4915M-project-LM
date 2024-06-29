@@ -121,7 +121,7 @@
     <value>输出</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
-    <value>make 条件</value>
+    <value>制作条件</value>
   </data>
   <data name="comboBoxReportType.Items" xml:space="preserve">
     <value>销售报告（仓库）</value>
@@ -130,13 +130,13 @@
     <value>销售报告（备用）</value>
   </data>
   <data name="comboBoxReportType.Items2" xml:space="preserve">
-    <value>股票报告</value>
+    <value>库存报告</value>
   </data>
   <data name="comboBoxReportType.Items3" xml:space="preserve">
-    <value>SCARP 报告（全部列出）</value>
+    <value>废品报告（全部列出）</value>
   </data>
   <data name="comboBoxReportType.Items4" xml:space="preserve">
-    <value>SCARP 报告（备用）</value>
+    <value>废品报告（备件）</value>
   </data>
   <data name="comboBoxReportType.Items5" xml:space="preserve">
     <value>SCARP 报告（仓库）</value>
@@ -157,7 +157,7 @@
     <value>报告类型：</value>
   </data>
   <data name="lblTo.Text" xml:space="preserve">
-    <value>自</value>
+    <value>至</value>
   </data>
   <data name="lblTotalNumberofDistinctItem.Text" xml:space="preserve">
     <value>行数：</value>

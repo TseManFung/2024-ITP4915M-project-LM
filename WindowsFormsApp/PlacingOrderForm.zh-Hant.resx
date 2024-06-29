@@ -133,10 +133,10 @@
     <value>類別類型：</value>
   </data>
   <data name="lblSelectedSpareName.Text" xml:space="preserve">
-    <value>選定的備用名稱：</value>
+    <value>選定的備件名稱：</value>
   </data>
   <data name="lblSpareID.Text" xml:space="preserve">
-    <value>備用 ID：</value>
+    <value>備件 ID：</value>
   </data>
   <data name="lblSpareName.Text" xml:space="preserve">
     <value>備件名稱：</value>

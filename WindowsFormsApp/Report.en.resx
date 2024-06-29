@@ -133,13 +133,13 @@
     <value>stock report</value>
   </data>
   <data name="comboBoxReportType.Items3" xml:space="preserve">
-    <value>scarp report (list all)</value>
+    <value>scrap report (list all)</value>
   </data>
   <data name="comboBoxReportType.Items4" xml:space="preserve">
-    <value>scarp report (spare)</value>
+    <value>scrap report (spare)</value>
   </data>
   <data name="comboBoxReportType.Items5" xml:space="preserve">
-    <value>scarp report (warehouse)</value>
+    <value>scrap report (warehouse)</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Report</value>

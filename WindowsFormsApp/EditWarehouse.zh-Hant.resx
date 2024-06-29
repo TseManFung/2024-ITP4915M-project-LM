@@ -121,7 +121,7 @@
     <value>刪除</value>
   </data>
   <data name="btnSave.Text" xml:space="preserve">
-    <value>救</value>
+    <value>儲存</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>編輯倉庫</value>

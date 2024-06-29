@@ -121,7 +121,7 @@
     <value>完成</value>
   </data>
   <data name="btnlocate.Text" xml:space="preserve">
-    <value>探</value>
+    <value>定位</value>
   </data>
   <data name="lbllatitude.Text" xml:space="preserve">
     <value>緯度</value>

@@ -124,7 +124,7 @@
     <value>编辑</value>
   </data>
   <data name="btnSave.Text" xml:space="preserve">
-    <value>救</value>
+    <value>储存</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>编辑供应商</value>
@@ -133,7 +133,7 @@
     <value>地址：</value>
   </data>
   <data name="lblContantNumber.Text" xml:space="preserve">
-    <value>常数：</value>
+    <value>联系电话：</value>
   </data>
   <data name="lblEmail.Text" xml:space="preserve">
     <value>电子邮件：</value>

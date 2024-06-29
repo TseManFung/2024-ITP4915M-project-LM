@@ -124,13 +124,13 @@
     <value>编辑您的订单号</value>
   </data>
   <data name="btnSave.Text" xml:space="preserve">
-    <value>救</value>
+    <value>储存</value>
   </data>
   <data name="buttonDeleteOrder.Text" xml:space="preserve">
     <value>取消订单</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>编辑顺序</value>
+    <value>编辑订单</value>
   </data>
   <data name="lblOrderSerial.Text" xml:space="preserve">
     <value>订单序列号：</value>
@@ -139,10 +139,10 @@
     <value>数量：</value>
   </data>
   <data name="lblSpareID.Text" xml:space="preserve">
-    <value>备用 ID：</value>
+    <value>备件 ID：</value>
   </data>
   <data name="lblSpareName.Text" xml:space="preserve">
-    <value>备用名称：</value>
+    <value>备件名称：</value>
   </data>
   <data name="lblYourOrderNumber.Text" xml:space="preserve">
     <value>您的订单号：</value>

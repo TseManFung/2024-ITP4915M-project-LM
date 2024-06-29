@@ -118,22 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnClear.Text" xml:space="preserve">
-    <value>清楚</value>
+    <value>清除</value>
   </data>
   <data name="btnSave.Text" xml:space="preserve">
-    <value>救</value>
+    <value>儲存</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>新轉銷商</value>
+    <value>新經銷商</value>
   </data>
   <data name="lblAreYouNewDealer.Text" xml:space="preserve">
-    <value>您是新轉銷商嗎？</value>
+    <value>您是新的經銷商嗎？</value>
   </data>
   <data name="lblDealerID.Text" xml:space="preserve">
     <value>經銷商編號：</value>
   </data>
   <data name="lblDealerName.Text" xml:space="preserve">
-    <value>轉銷商名稱：</value>
+    <value>經銷商名稱：</value>
   </data>
   <data name="lblDeliveryAddress.Text" xml:space="preserve">
     <value>收貨位址：</value>
@@ -151,9 +151,9 @@
     <value>銷售區域：</value>
   </data>
   <data name="radNo.Text" xml:space="preserve">
-    <value>不</value>
+    <value>否</value>
   </data>
   <data name="radYes.Text" xml:space="preserve">
-    <value>是的</value>
+    <value>是</value>
   </data>
 </root>

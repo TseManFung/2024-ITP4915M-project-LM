@@ -133,7 +133,7 @@
     <value>以下物品需要收集：</value>
   </data>
   <data name="lblSpareID.Text" xml:space="preserve">
-    <value>备用 ID：</value>
+    <value>备件 ID：</value>
   </data>
   <data name="lblSpareNumberofBundles.Text" xml:space="preserve">
     <value>捆绑数量：</value>

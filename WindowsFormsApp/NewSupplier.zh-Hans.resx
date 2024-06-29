@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnClear.Text" xml:space="preserve">
-    <value>清楚</value>
+    <value>清除</value>
   </data>
   <data name="btnCreateNewSupplier.Text" xml:space="preserve">
     <value>创建新供应商</value>
@@ -133,7 +133,7 @@
     <value>地址：</value>
   </data>
   <data name="lblContantNumber.Text" xml:space="preserve">
-    <value>常数：</value>
+    <value>联络电话：</value>
   </data>
   <data name="lblEmail.Text" xml:space="preserve">
     <value>电子邮件：</value>

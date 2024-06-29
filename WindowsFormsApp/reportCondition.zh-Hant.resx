@@ -124,7 +124,7 @@
     <value>重置</value>
   </data>
   <data name="comboBox3.Items" xml:space="preserve">
-    <value>一個</value>
+    <value />
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>只看你所屬的倉庫</value>
@@ -133,13 +133,13 @@
     <value>備件類別類型</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>備用</value>
+    <value>備件</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>備件數量</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>販子</value>
+    <value>經銷商</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
     <value>是</value>
@@ -151,9 +151,9 @@
     <value>是</value>
   </data>
   <data name="radioButton1.Text" xml:space="preserve">
-    <value>是的</value>
+    <value>是</value>
   </data>
   <data name="radioButton2.Text" xml:space="preserve">
-    <value>不</value>
+    <value>否</value>
   </data>
 </root>

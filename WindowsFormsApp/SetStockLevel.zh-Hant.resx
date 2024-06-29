@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnSave.Text" xml:space="preserve">
-    <value>救</value>
+    <value>儲存</value>
   </data>
   <data name="checkBoxAutoReStock.Text" xml:space="preserve">
     <value>自動補貨</value>
@@ -127,7 +127,7 @@
     <value>設置庫存水準</value>
   </data>
   <data name="lblCommonStockLevel.Text" xml:space="preserve">
-    <value>普通股水準：</value>
+    <value>一般庫存水準：</value>
   </data>
   <data name="lblDangerLevel.Text" xml:space="preserve">
     <value>危險等級：</value>
@@ -136,9 +136,9 @@
     <value>重新訂購等級：</value>
   </data>
   <data name="lblSpareID.Text" xml:space="preserve">
-    <value>備用 ID：</value>
+    <value>備件 ID：</value>
   </data>
   <data name="lblSpareName.Text" xml:space="preserve">
-    <value>備用名稱：</value>
+    <value>備件名稱：</value>
   </data>
 </root>
