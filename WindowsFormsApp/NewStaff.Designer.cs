@@ -112,13 +112,13 @@
             // 
             resources.ApplyResources(this.rbMale, "rbMale");
             this.rbMale.Name = "rbMale";
-            this.rbMale.TabStop = true;
             this.rbMale.UseVisualStyleBackColor = true;
             this.rbMale.CheckedChanged += new System.EventHandler(this.rbMale_CheckedChanged);
             // 
             // rbFemale
             // 
             resources.ApplyResources(this.rbFemale, "rbFemale");
+            this.rbFemale.Checked = true;
             this.rbFemale.Name = "rbFemale";
             this.rbFemale.TabStop = true;
             this.rbFemale.UseVisualStyleBackColor = true;

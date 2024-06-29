@@ -121,6 +121,7 @@
             this.comboBoxLoginName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.comboBoxLoginName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             resources.ApplyResources(this.comboBoxLoginName, "comboBoxLoginName");
+            this.comboBoxLoginName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxLoginName.FormattingEnabled = true;
             this.comboBoxLoginName.Name = "comboBoxLoginName";
             this.comboBoxLoginName.SelectedIndexChanged += new System.EventHandler(this.comboBoxLoginName_SelectedIndexChanged);
