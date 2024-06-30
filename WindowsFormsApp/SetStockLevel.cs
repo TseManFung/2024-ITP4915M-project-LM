@@ -110,6 +110,14 @@ namespace WindowsFormsApp
                     int reOrderLevel = int.Parse(txtReOrderLevel.Text);
                     int commonStockLevel = int.Parse(txtCommonStockLevel.Text);
                     int dangerLevel = int.Parse(txtDangerLevel.Text);
+
+                    // 新增的验证逻辑，确保 DL < ROL < CSL
+                    if (dangerLevel >= reOrderLevel || reOrderLevel >= commonStockLevel)
+                    {
+                        Main.ShowMessage("Need to follow DL < ROL < CSL rule"); // 请在 Resources 中添加相应的资源字符串
+                        return;
+                    }
+
                     string spareID = comboBoxSpareID.SelectedItem.ToString();
                     bool autoRestock = checkBoxAutoReStock.Checked;
 
@@ -117,11 +125,11 @@ namespace WindowsFormsApp
                     UpdateAutoRestock(spareID, warehouseID, autoRestock);
                     CheckAndInsertActualStock(spareID, warehouseID, autoRestock);
 
-                    Main.ShowYesNoDialog(Resources.Setting_Successful);
+                    Main.ShowMessage(Resources.Setting_Successful);
                 }
                 else
                 {
-                    Main.ShowYesNoDialog(Resources.Please_enter_full_data);
+                    Main.ShowMessage(Resources.Please_enter_full_data);
                 }
             }
         }

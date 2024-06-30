@@ -58,6 +58,7 @@
             this.comboBoxSpareID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSpareID.FormattingEnabled = true;
             this.comboBoxSpareID.Name = "comboBoxSpareID";
+            this.comboBoxSpareID.SelectedIndexChanged += new System.EventHandler(this.comboBoxSpareID_SelectedIndexChanged);
             // 
             // txtDiscrepancy
             // 
@@ -69,6 +70,7 @@
             // 
             resources.ApplyResources(this.txtQuantity, "txtQuantity");
             this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.TextChanged += new System.EventHandler(this.txtQuantity_TextChanged);
             // 
             // lblDiscrepancy
             // 
