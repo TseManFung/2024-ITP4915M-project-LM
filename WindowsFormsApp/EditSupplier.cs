@@ -203,6 +203,7 @@ namespace WindowsFormsApp
                 string sql = $"UPDATE Supplier SET State = 'D' Where  SupplierID = '{supplierID}';";
                 Main.db.updateBySql(sql);
                 Main.ShowMessage(Resources.succeed);
+                (this.ParentForm as Main)?.refreshPage(sender, e);
             }
         }
     }

@@ -35,17 +35,19 @@ namespace WindowsFormsApp
             this.comboBoxSaleArea.DataSource = SaleAreaLocationlist;
             this.comboBoxSaleArea.DisplayMember = "SaleAreaID";
 
-            List<int> StaffIDlist = new List<int>();
-            String sql2 = $"SELECT StaffID FROM Staff;";
-            using (var reader = Main.db.readBySql(sql2))
+            // 使用 LEFT JOIN 查询未在 User 表中使用的 StaffID
+            List<int> availableStaffIDs = new List<int>();
+            sql = @" SELECT s.StaffID FROM Staff s LEFT JOIN User u ON s.StaffID = u.StaffID WHERE u.StaffID IS NULL;";
+            using (var reader = Main.db.readBySql(sql))
             {
                 while (reader.Read())
                 {
-                    StaffIDlist.Add(reader.GetInt32(0));
+                    availableStaffIDs.Add(reader.GetInt32(0));
                 }
             }
-            this.comboBoxStaffID.DataSource = StaffIDlist;
-            this.comboBoxStaffID.DisplayMember = "StaffID";
+
+            // 将 availableStaffIDs 绑定到 comboBoxStaffID
+            this.comboBoxStaffID.DataSource = availableStaffIDs;
 
             List<string> Departmentlist = new List<string>();
             String sql3 = $"SELECT DeptName FROM Department;";
@@ -69,7 +71,6 @@ namespace WindowsFormsApp
             }
             this.comboBoxPosition.DataSource = Positionlist;
             this.comboBoxPosition.DisplayMember = "Position";
-
         }
 
 
@@ -110,8 +111,18 @@ namespace WindowsFormsApp
                 string query;
                 if (radYes.Checked)
                 {
+                    if (string.IsNullOrWhiteSpace(txtStaffName.Text))
+                    {
+                        Main.ShowMessage("Staff Name cannot be empty.");
+                        return;
+                    }
 
-                        if (!string.IsNullOrEmpty(txtStaffName.Text)){
+                    if (string.IsNullOrWhiteSpace(txtPhoneNum.Text))
+                    {
+                        Main.ShowMessage("Phone Number cannot be empty.");
+                        return;
+                    }
+                    if (!string.IsNullOrEmpty(txtStaffName.Text)){
                         string SpareNameT = txtStaffName.Text;
                         string PositionT = comboBoxPosition.SelectedItem.ToString();
                         string DepartmentT = comboBoxDepartment.SelectedItem.ToString();
@@ -202,7 +213,6 @@ namespace WindowsFormsApp
                 Main.ShowMessage($"Successful editing, your password is {randompasswd},  please change your password as soon as possible!");
                 txtStaffName.Text = String.Empty;
                 txtPhoneNum.Text = String.Empty;
-               
             }
         }
 
@@ -246,6 +256,11 @@ namespace WindowsFormsApp
                     txtPhoneNum.Text = string.Empty;
                 }
             }
+        }
+
+        private void radYes_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

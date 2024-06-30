@@ -270,6 +270,7 @@
             this.radYes.Name = "radYes";
             this.radYes.TabStop = true;
             this.radYes.UseVisualStyleBackColor = true;
+            this.radYes.CheckedChanged += new System.EventHandler(this.radYes_CheckedChanged);
             // 
             // radNo
             // 

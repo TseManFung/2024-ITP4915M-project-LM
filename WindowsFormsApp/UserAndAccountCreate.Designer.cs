@@ -89,12 +89,12 @@
             // 
             resources.ApplyResources(this.accForDealer, "accForDealer");
             this.accForDealer.Name = "accForDealer";
-            this.accForDealer.TabStop = true;
             this.accForDealer.UseVisualStyleBackColor = true;
             // 
             // accForStaff
             // 
             resources.ApplyResources(this.accForStaff, "accForStaff");
+            this.accForStaff.Checked = true;
             this.accForStaff.Name = "accForStaff";
             this.accForStaff.TabStop = true;
             this.accForStaff.UseVisualStyleBackColor = true;

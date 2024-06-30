@@ -22,17 +22,19 @@ namespace WindowsFormsApp
         private void radNo_CheckedChanged(object sender, EventArgs e)
         {
             this.ShowTable();
-            List<int> DealerIDlist = new List<int>();
-            string sql = $"SELECT DealerID FROM Dealer;";
+            // 使用 LEFT JOIN 查询未在 User 表中使用的 DealerID
+            List<int> availableDealerIDs = new List<int>();
+            string sql = @" SELECT d.DealerID FROM Dealer d LEFT JOIN User u ON d.DealerID = u.DealerID WHERE u.DealerID IS NULL;";
             using (var reader = Main.db.readBySql(sql))
             {
                 while (reader.Read())
                 {
-                    DealerIDlist.Add(reader.GetInt32(0));
+                    availableDealerIDs.Add(reader.GetInt32(0));
                 }
             }
-            this.comboBoxDealerID.DataSource = DealerIDlist;
-            this.comboBoxDealerID.DisplayMember = "DealerID";
+
+            // 将 availableDealerIDs 绑定到 comboBoxDealerID
+            this.comboBoxDealerID.DataSource = availableDealerIDs;
         }
 
         private void ShowTable()

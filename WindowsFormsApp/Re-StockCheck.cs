@@ -116,13 +116,7 @@ namespace WindowsFormsApp
                         Main.db.updateBySql(sql);
                         Main.ShowMessage($"The RestockOrderID: {restockOrderId} is Received");
                         Form currentForm = this;
-
-                        // 关闭当前 Form
-                        currentForm.Close();
-
-                        // 重新创建并显示当前 Form
-                        currentForm = new frmReStockCheck();
-                        currentForm.Show();
+                        (this.ParentForm as Main)?.refreshPage(sender, e);
 
                     }
                     else

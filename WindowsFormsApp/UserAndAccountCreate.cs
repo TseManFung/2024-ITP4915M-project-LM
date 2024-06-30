@@ -32,10 +32,17 @@ namespace WindowsFormsApp
         {
             if (Main.ShowYesNoDialog(Resources.Do_you_want_to_turn_to_the_nex))
             {
-
                 if (!string.IsNullOrEmpty(txtAccessLevel.Text) && !string.IsNullOrEmpty(txtLoginName.Text))
                 {
                     GlobalLoginNameForCreate = txtLoginName.Text;
+
+                    // 检查 LoginName 是否已存在
+                    if (IsLoginNameDuplicate(GlobalLoginNameForCreate))
+                    {
+                        Main.ShowMessage("LoginName already exists. Please choose another name.");
+                        return;
+                    }
+
                     if (accForDealer.Checked)
                     {
                         (this.ParentForm as Main)?.Change_pContent(typeof(frmNewDealer));
@@ -56,7 +63,6 @@ namespace WindowsFormsApp
                     txtAccessLevel.Text = "1";
                 }
             }
-
         }
 
         private void frmUserManagementAndAccountManagement_Load(object sender, EventArgs e)
@@ -109,6 +115,21 @@ namespace WindowsFormsApp
         {
             txtLoginName.Text = String.Empty;
             txtAccessLevel.Text = "1";
+        }
+        private bool IsLoginNameDuplicate(string loginName)
+        {
+            string query = $"SELECT COUNT(*) FROM `User` WHERE LoginName = '{loginName}'";
+            int count = 0;
+
+            using (var reader = Main.db.readBySql(query))
+            {
+                if (reader.Read())
+                {
+                    count = reader.GetInt32(0);
+                }
+            }
+
+            return count > 0;
         }
     }
 }

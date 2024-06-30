@@ -233,6 +233,7 @@ namespace WindowsFormsApp
             if (rowsProcessed)
             {
                 MessageBox.Show($"Processed Rows:\n{processedRowsDetails}");
+                (this.ParentForm as Main)?.refreshPage(sender, e);
             }
             else
             {

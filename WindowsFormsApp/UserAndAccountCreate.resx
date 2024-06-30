@@ -117,36 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="accForDealer.Text" xml:space="preserve">
-    <value>Dealer</value>
-  </data>
-  <data name="accForStaff.Text" xml:space="preserve">
-    <value>LM Staff</value>
-  </data>
-  <data name="btnClear.Text" xml:space="preserve">
-    <value>Clear</value>
-  </data>
-  <data name="btnCreate.Text" xml:space="preserve">
-    <value>Create a new account</value>
-  </data>
-  <data name="btnManageExistAccount.Text" xml:space="preserve">
-    <value>Manage exist account</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>User  And Account Create</value>
-  </data>
-  <data name="lblAccessLevel.Text" xml:space="preserve">
-    <value>Access Level:</value>
-  </data>
-  <data name="lblLoginName.Text" xml:space="preserve">
-    <value>Login Name:</value>
-  </data>
-  <data name="lblThisAccountFor.Text" xml:space="preserve">
-    <value>This account for:</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>5</value>
@@ -157,7 +127,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnManageExistAccount.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 32pt</value>
+    <value>新細明體, 32pt</value>
   </data>
   <data name="btnManageExistAccount.Location" type="System.Drawing.Point, System.Drawing">
     <value>255, 3</value>
@@ -167,6 +137,9 @@
   </data>
   <data name="btnManageExistAccount.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
+  </data>
+  <data name="btnManageExistAccount.Text" xml:space="preserve">
+    <value>Manage exist account</value>
   </data>
   <data name="&gt;&gt;btnManageExistAccount.Name" xml:space="preserve">
     <value>btnManageExistAccount</value>
@@ -223,7 +196,7 @@
     <value>Bottom</value>
   </data>
   <data name="accForDealer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="accForDealer.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 16</value>
@@ -233,6 +206,9 @@
   </data>
   <data name="accForDealer.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="accForDealer.Text" xml:space="preserve">
+    <value>Dealer</value>
   </data>
   <data name="&gt;&gt;accForDealer.Name" xml:space="preserve">
     <value>accForDealer</value>
@@ -253,7 +229,7 @@
     <value>Top</value>
   </data>
   <data name="accForStaff.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="accForStaff.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -263,6 +239,9 @@
   </data>
   <data name="accForStaff.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="accForStaff.Text" xml:space="preserve">
+    <value>LM Staff</value>
   </data>
   <data name="&gt;&gt;accForStaff.Name" xml:space="preserve">
     <value>accForStaff</value>
@@ -313,7 +292,7 @@
     <value>Top</value>
   </data>
   <data name="txtAccessLevel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtAccessLevel.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -346,7 +325,7 @@
     <value>Fill</value>
   </data>
   <data name="lblAccessLevel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblAccessLevel.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -356,6 +335,9 @@
   </data>
   <data name="lblAccessLevel.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
+  </data>
+  <data name="lblAccessLevel.Text" xml:space="preserve">
+    <value>Access Level:</value>
   </data>
   <data name="&gt;&gt;lblAccessLevel.Name" xml:space="preserve">
     <value>lblAccessLevel</value>
@@ -406,7 +388,7 @@
     <value>Top</value>
   </data>
   <data name="txtLoginName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtLoginName.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
@@ -439,7 +421,7 @@
     <value>Fill</value>
   </data>
   <data name="lblLoginName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblLoginName.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -449,6 +431,9 @@
   </data>
   <data name="lblLoginName.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
+  </data>
+  <data name="lblLoginName.Text" xml:space="preserve">
+    <value>Login Name:</value>
   </data>
   <data name="&gt;&gt;lblLoginName.Name" xml:space="preserve">
     <value>lblLoginName</value>
@@ -499,7 +484,7 @@
     <value>Top</value>
   </data>
   <data name="lblThisAccountFor.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="lblThisAccountFor.Location" type="System.Drawing.Point, System.Drawing">
     <value>507, 64</value>
@@ -509,6 +494,9 @@
   </data>
   <data name="lblThisAccountFor.TabIndex" type="System.Int32, mscorlib">
     <value>88</value>
+  </data>
+  <data name="lblThisAccountFor.Text" xml:space="preserve">
+    <value>This account for:</value>
   </data>
   <data name="lblThisAccountFor.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
@@ -532,7 +520,7 @@
     <value>Fill</value>
   </data>
   <data name="btnCreate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 32pt</value>
+    <value>新細明體, 32pt</value>
   </data>
   <data name="btnCreate.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
@@ -542,6 +530,9 @@
   </data>
   <data name="btnCreate.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
+  </data>
+  <data name="btnCreate.Text" xml:space="preserve">
+    <value>Create a new account</value>
   </data>
   <data name="&gt;&gt;btnCreate.Name" xml:space="preserve">
     <value>btnCreate</value>
@@ -559,7 +550,7 @@
     <value>Fill</value>
   </data>
   <data name="btnClear.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 32pt</value>
+    <value>新細明體, 32pt</value>
   </data>
   <data name="btnClear.Location" type="System.Drawing.Point, System.Drawing">
     <value>841, 3</value>
@@ -569,6 +560,9 @@
   </data>
   <data name="btnClear.TabIndex" type="System.Int32, mscorlib">
     <value>72</value>
+  </data>
+  <data name="btnClear.Text" xml:space="preserve">
+    <value>Clear</value>
   </data>
   <data name="&gt;&gt;btnClear.Name" xml:space="preserve">
     <value>btnClear</value>
@@ -642,11 +636,17 @@
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnManageExistAccount" Row="0" RowSpan="1" Column="1" ColumnSpan="3" /&gt;&lt;Control Name="tableLayoutPanel7" Row="1" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel6" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel4" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel3" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblThisAccountFor" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel2" Row="2" RowSpan="1" Column="0" ColumnSpan="5" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,25,Percent,50,Percent,25" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1263, 257</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>User  And Account Create</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmUserManagementAndAccountManagement</value>
