@@ -110,6 +110,14 @@ namespace WindowsFormsApp
                     int reOrderLevel = int.Parse(txtReOrderLevel.Text);
                     int commonStockLevel = int.Parse(txtCommonStockLevel.Text);
                     int dangerLevel = int.Parse(txtDangerLevel.Text);
+
+                    // 新增的验证逻辑，确保 DL < ROL < CSL
+                    if (dangerLevel >= reOrderLevel || reOrderLevel >= commonStockLevel)
+                    {
+                        Main.ShowYesNoDialog("Need to follow DL < ROL < CSL rule"); // 请在 Resources 中添加相应的资源字符串
+                        return;
+                    }
+
                     string spareID = comboBoxSpareID.SelectedItem.ToString();
                     bool autoRestock = checkBoxAutoReStock.Checked;
 
