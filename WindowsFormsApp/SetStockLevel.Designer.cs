@@ -125,6 +125,8 @@
             // checkBoxAutoReStock
             // 
             resources.ApplyResources(this.checkBoxAutoReStock, "checkBoxAutoReStock");
+            this.checkBoxAutoReStock.Checked = true;
+            this.checkBoxAutoReStock.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxAutoReStock.Name = "checkBoxAutoReStock";
             this.checkBoxAutoReStock.UseVisualStyleBackColor = true;
             this.checkBoxAutoReStock.CheckedChanged += new System.EventHandler(this.checkBoxAutoReStock_CheckedChanged);
