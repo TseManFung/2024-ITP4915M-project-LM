@@ -270,7 +270,7 @@ namespace WindowsFormsApp
             frmLang = null;
             // reload pContent's control
 
-
+            refreshPage(sender,e);
 
         }
         public  void refreshPage(object sender, EventArgs e)
