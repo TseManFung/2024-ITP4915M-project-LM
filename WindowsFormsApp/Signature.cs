@@ -135,7 +135,7 @@ namespace WindowsFormsApp
             Main.db.updateBySql(sql);
 
             Main.ShowMessage(Resources.success1);
-            (this.ParentForm as Main)?.refreshPage();
+            (this.ParentForm as Main)?.refreshPage(sender,e);
 
         }
 

@@ -273,7 +273,7 @@ namespace WindowsFormsApp
 
 
         }
-        public  void refreshPage()
+        public  void refreshPage(object sender, EventArgs e)
         {
             if (currfrm_equals(typeof(frmLogin)))
             {
