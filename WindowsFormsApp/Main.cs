@@ -270,18 +270,24 @@ namespace WindowsFormsApp
             frmLang = null;
             // reload pContent's control
 
-            if (currfrm_equals(typeof(frmLogin)) )
+
+
+        }
+        public  void refreshPage()
+        {
+            if (currfrm_equals(typeof(frmLogin)))
             {
                 this.Change_pContent(typeof(frmLogin));
-            }else if (currfrm_equals(typeof(frmMenu)))
+            }
+            else if (currfrm_equals(typeof(frmMenu)))
             {
                 this.Change_pContent(typeof(frmMenu));
             }
-            else {
+            else
+            {
                 lblTitle_Click_1(sender, e);
                 this.Change_pContent(typeof(frmMenu));
             }
-
         }
 
         public void goBack()

@@ -318,6 +318,7 @@ namespace WindowsFormsApp
             txtSpareID.Text = "";
             number.Value = 1;
             Main.ShowMessage(String.Format(Resources.IS_Order_placed_successfully_t,orderID));
+            (this.ParentForm as Main)?.refreshPage();
         }
 
         private void uploadToDB()

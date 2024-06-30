@@ -79,11 +79,18 @@ namespace WindowsFormsApp
                     if (result != null)
                     {
                         string decoded = result.ToString().Trim();
-                        lblCode.Text = this.scanCode = decoded;
-
+                         this.scanCode = decoded;
+                        lblCode.Text = decoded + " | " + Resources.Scanning;
                     }
                     else {
-                        lblCode.Text = Resources.Scanning;
+                        if (scanCode != null)
+                        {
+                            lblCode.Text = this.scanCode + " | " + Resources.Scanning;
+                        }
+                        else {
+                            lblCode.Text = Resources.Scanning;
+                        }
+                        
                     }
                 }
                 catch (Exception ex)

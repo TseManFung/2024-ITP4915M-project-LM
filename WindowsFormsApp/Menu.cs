@@ -118,6 +118,7 @@ namespace WindowsFormsApp
         private void CAddNewItem(object sender, EventArgs e)
         {
             (this.ParentForm as Main)?.Change_pContent(typeof(frmAddNewItem));
+            
         }
 
         private void CUserManagementAndAccountManagement(object sender, EventArgs e)
