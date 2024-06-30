@@ -117,42 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnDelete.Text" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="btnEdit.Text" xml:space="preserve">
-    <value>Edit</value>
-  </data>
-  <data name="btnSave.Text" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Edit or Delete Spare</value>
-  </data>
-  <data name="lblDescription.Text" xml:space="preserve">
-    <value>Description:</value>
-  </data>
-  <data name="lblPrice.Text" xml:space="preserve">
-    <value>Price:</value>
-  </data>
-  <data name="lblSpareID.Text" xml:space="preserve">
-    <value>Spare ID:</value>
-  </data>
-  <data name="lblSpareName.Text" xml:space="preserve">
-    <value>Spare Name:</value>
-  </data>
-  <data name="lblSpareType.Text" xml:space="preserve">
-    <value>Spare Type:</value>
-  </data>
-  <data name="lblSpareWeight.Text" xml:space="preserve">
-    <value>Weight:</value>
-  </data>
-  <data name="lblSupplier.Text" xml:space="preserve">
-    <value>Supplier:</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>5</value>
@@ -209,6 +173,9 @@
   </data>
   <data name="lblDescription.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
+  </data>
+  <data name="lblDescription.Text" xml:space="preserve">
+    <value>Description:</value>
   </data>
   <data name="&gt;&gt;lblDescription.Name" xml:space="preserve">
     <value>lblDescription</value>
@@ -299,6 +266,9 @@
   </data>
   <data name="lblSupplier.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
+  </data>
+  <data name="lblSupplier.Text" xml:space="preserve">
+    <value>Supplier:</value>
   </data>
   <data name="&gt;&gt;lblSupplier.Name" xml:space="preserve">
     <value>lblSupplier</value>
@@ -393,6 +363,9 @@
   <data name="lblSpareWeight.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
   </data>
+  <data name="lblSpareWeight.Text" xml:space="preserve">
+    <value>Weight:</value>
+  </data>
   <data name="&gt;&gt;lblSpareWeight.Name" xml:space="preserve">
     <value>lblSpareWeight</value>
   </data>
@@ -485,6 +458,9 @@
   </data>
   <data name="lblPrice.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
+  </data>
+  <data name="lblPrice.Text" xml:space="preserve">
+    <value>Price:</value>
   </data>
   <data name="&gt;&gt;lblPrice.Name" xml:space="preserve">
     <value>lblPrice</value>
@@ -579,6 +555,9 @@
   <data name="lblSpareName.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
+  <data name="lblSpareName.Text" xml:space="preserve">
+    <value>Spare Name:</value>
+  </data>
   <data name="&gt;&gt;lblSpareName.Name" xml:space="preserve">
     <value>lblSpareName</value>
   </data>
@@ -642,6 +621,9 @@
   <data name="lblSpareType.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
   </data>
+  <data name="lblSpareType.Text" xml:space="preserve">
+    <value>Spare Type:</value>
+  </data>
   <data name="&gt;&gt;lblSpareType.Name" xml:space="preserve">
     <value>lblSpareType</value>
   </data>
@@ -656,6 +638,9 @@
   </data>
   <data name="comboBoxSpareType.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
+  </data>
+  <data name="comboBoxSpareType.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="comboBoxSpareType.Font" type="System.Drawing.Font, System.Drawing">
     <value>PMingLiU, 20.25pt</value>
@@ -726,6 +711,9 @@
   <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
   <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
     <value>btnSave</value>
   </data>
@@ -789,6 +777,9 @@
   <data name="btnDelete.TabIndex" type="System.Int32, mscorlib">
     <value>88</value>
   </data>
+  <data name="btnDelete.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
   <data name="&gt;&gt;btnDelete.Name" xml:space="preserve">
     <value>btnDelete</value>
   </data>
@@ -815,6 +806,9 @@
   </data>
   <data name="btnEdit.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
+  </data>
+  <data name="btnEdit.Text" xml:space="preserve">
+    <value>Edit</value>
   </data>
   <data name="&gt;&gt;btnEdit.Name" xml:space="preserve">
     <value>btnEdit</value>
@@ -875,6 +869,9 @@
   </data>
   <data name="lblSpareID.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
+  </data>
+  <data name="lblSpareID.Text" xml:space="preserve">
+    <value>Spare ID:</value>
   </data>
   <data name="&gt;&gt;lblSpareID.Name" xml:space="preserve">
     <value>lblSpareID</value>
@@ -972,11 +969,17 @@
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnDelete" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="btnEdit" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel12" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="panel1" Row="3" RowSpan="1" Column="0" ColumnSpan="5" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,20,Percent,10,Percent,10,Percent,60,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1611, 612</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Edit or Delete Spare</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmEditItem</value>
