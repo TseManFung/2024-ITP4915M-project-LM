@@ -229,7 +229,7 @@ namespace WindowsFormsApp
                                 sql = $"INSERT INTO RestockItem (RestockOrderID, ItemID, Quantity, State) VALUES ({RestockOrderID}, '{id}', {quantity}, 'C')";
                                 Main.db.insertBySql(sql);
                             }
-                            sql = $"UPDATE Department SET WarehouseID = NULL ,State = 'D' WHERE WarehouseID = {WarehouseID}";
+                            sql = $"UPDATE Department SET State = 'D' WHERE WarehouseID = {WarehouseID}";
                             Main.db.updateBySql(sql);
                             sql = $"UPDATE Warehouse SET State = 'D' WHERE WarehouseID = {WarehouseID}";
                             Main.db.updateBySql(sql);
