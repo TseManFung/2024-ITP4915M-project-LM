@@ -328,7 +328,7 @@
     <value>消息</value>
   </data>
   <data name="Missging_data" xml:space="preserve">
-    <value>錯過數據！</value>
+    <value>缺少資料！</value>
   </data>
   <data name="Modify_Information" xml:space="preserve">
     <value>修改資訊</value>
