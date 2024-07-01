@@ -221,6 +221,8 @@ namespace WindowsFormsApp
 
                 // Refresh the SpareID list after deletion
                 frmEditItem_Load(sender, e);
+                (this.ParentForm as Main)?.refreshPage(sender, e);
+
             }
             else
             {

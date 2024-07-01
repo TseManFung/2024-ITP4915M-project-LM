@@ -192,7 +192,7 @@
     <value>True</value>
   </data>
   <data name="input.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt, style=Bold</value>
+    <value>新細明體, 24pt, style=Bold</value>
   </data>
   <data name="input.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 25</value>

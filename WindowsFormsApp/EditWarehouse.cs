@@ -234,6 +234,7 @@ namespace WindowsFormsApp
                             sql = $"UPDATE Warehouse SET State = 'D' WHERE WarehouseID = {WarehouseID}";
                             Main.db.updateBySql(sql);
                             Main.ShowMessage(Resources.Succeed0);
+                            (this.ParentForm as Main)?.refreshPage(sender, e);
                         }
                         else
                         {

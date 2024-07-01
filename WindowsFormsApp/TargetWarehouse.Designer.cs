@@ -45,6 +45,7 @@
             // 
             // comboBoxWarehouseName
             // 
+            this.comboBoxWarehouseName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxWarehouseName.FormattingEnabled = true;
             resources.ApplyResources(this.comboBoxWarehouseName, "comboBoxWarehouseName");
             this.comboBoxWarehouseName.Name = "comboBoxWarehouseName";

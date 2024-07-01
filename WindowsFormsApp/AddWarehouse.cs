@@ -58,28 +58,49 @@ namespace WindowsFormsApp
         {
             if (Main.ShowYesNoDialog(Resources.Do_you_want_to_turn_to_the_nex))
             {
-
-
                 if (!string.IsNullOrEmpty(txtLocation.Text) && !string.IsNullOrEmpty(txtName.Text))
                 {
+                    string location = txtLocation.Text;
+                    string name = txtName.Text;
+                    string saleArea = comboBoxSaleArea.SelectedItem.ToString();
+                    int saleAreaID = 0;
 
-                    string Location = txtLocation.Text;
-                    string Name = txtName.Text;
-                    string SaleArea = comboBoxSaleArea.SelectedItem.ToString();
-                    int SaleAreaID = new int();
-                    string sql3 = $"SELECT AreaID FROM SaleArea WHERE Location = '{SaleArea}'";
+                    // 获取SaleAreaID
+                    string sql3 = $"SELECT AreaID FROM SaleArea WHERE Location = '{saleArea}'";
                     using (var reader = Main.db.readBySql(sql3))
                     {
                         while (reader.Read())
                         {
-                            SaleAreaID = reader.GetInt32(0);
+                            saleAreaID = reader.GetInt32(0);
                         }
                     }
-                    String query = $"INSERT INTO Warehouse (Name,SaleAreaID, Location,State) VALUES ('{Name}','{SaleAreaID}', '{Location}','N')";
-                    Main.db.insertBySql(query);
-                    Main.ShowMessage(Resources.Successful_add);
-                    txtLocation.Text = string.Empty;
-                    txtName.Text = string.Empty;
+
+                    // 检查名字和地点是否重复
+                    string checkSql = $"SELECT COUNT(*) FROM Warehouse WHERE Name = '{name}' OR Location = '{location}'";
+                    int existingRecords = 0;
+                    using (var reader = Main.db.readBySql(checkSql))
+                    {
+                        if (reader.Read())
+                        {
+                            existingRecords = reader.GetInt32(0);
+                        }
+                    }
+
+                    if (existingRecords > 0)
+                    {
+                        Main.ShowMessage("Name or Location already exists");
+                    }
+                    else
+                    {
+                        // 插入新仓库记录
+                        string insertSql = $"INSERT INTO Warehouse (Name, SaleAreaID, Location, State) VALUES ('{name}', {saleAreaID}, '{location}', 'N')";
+                        Main.db.insertBySql(insertSql);
+                        Main.ShowMessage(Resources.Successful_add);
+
+                        // 清空输入框
+                        txtLocation.Text = string.Empty;
+                        txtName.Text = string.Empty;
+                    }
                 }
                 else
                 {
@@ -88,7 +109,7 @@ namespace WindowsFormsApp
             }
         }
 
-        private void comboBoxSaleArea_SelectedIndexChanged(object sender, EventArgs e)
+            private void comboBoxSaleArea_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

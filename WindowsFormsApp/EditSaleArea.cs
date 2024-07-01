@@ -27,6 +27,7 @@ namespace WindowsFormsApp
 
         private void frmEditSaleArea_Load(object sender, EventArgs e)
         {
+            btnDelete.Visible = false;
             List<string> SaleAreaLocationlist = new List<string>(); //1
             String sql = $"SELECT Location FROM SaleArea;"; //1
             using (var reader = Main.db.readBySql(sql)) //1
@@ -78,7 +79,6 @@ namespace WindowsFormsApp
                     {
                         double Latitude = (double)GlobalVariables.Latitude;
                         double Longitude = (double)GlobalVariables.Latitude;
-                        Main.ShowMessage(Longitude.ToString());
                         Location = txtLocation.Text;
                         string Remark = txtRemark.Text;
                         string query;
@@ -115,6 +115,7 @@ namespace WindowsFormsApp
         private void btnDelete_Click(object sender, EventArgs e)
         {
             Main.ShowMessage(Resources.succeed);
+
         }
     }
 }

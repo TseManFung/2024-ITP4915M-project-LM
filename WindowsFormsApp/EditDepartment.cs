@@ -128,12 +128,29 @@ namespace WindowsFormsApp
         {
             if (Main.ShowYesNoDialog(Resources.Are_you_sure_you_want_to_chang0))
             {
-
                 if (!string.IsNullOrEmpty(txtDepartmentName.Text) && !string.IsNullOrEmpty(txtDepartmentEmail.Text))
                 {
                     string DepartmentID = comboBoxDepartment.SelectedItem.ToString();
                     string DeptName = txtDepartmentName.Text;
                     string DeptEmail = txtDepartmentEmail.Text;
+
+                    // 检查是否有重复的部门名称
+                    string sqlCheckDuplicateName = $"SELECT COUNT(*) FROM Department WHERE DeptName = '{DeptName}' AND DeptID != '{DepartmentID}';";
+                    int duplicateCount = 0;
+                    using (var reader = Main.db.readBySql(sqlCheckDuplicateName))
+                    {
+                        if (reader.Read())
+                        {
+                            duplicateCount = reader.GetInt32(0);
+                        }
+                    }
+
+                    if (duplicateCount > 0)
+                    {
+                        Main.ShowMessage("Name Repeat.");
+                        return;
+                    }
+
                     int WarehouseID = 0;
                     string selectedWarehouseName = comboBoxWarehouseID.SelectedItem.ToString();
                     string sql = $"SELECT WarehouseID FROM Warehouse WHERE Name = '{selectedWarehouseName}';";
@@ -144,6 +161,7 @@ namespace WindowsFormsApp
                             WarehouseID = reader.GetInt32(0);
                         }
                     }
+
                     string query;
                     if (selectedWarehouseName != "-1")
                     {
@@ -151,7 +169,7 @@ namespace WindowsFormsApp
                     }
                     else
                     {
-                        query = $"UPDATE Department SET DeptEmail = '{DeptEmail}', DeptName = '{DeptName}',  WHERE DeptID = '{DepartmentID}'";
+                        query = $"UPDATE Department SET DeptEmail = '{DeptEmail}', DeptName = '{DeptName}' WHERE DeptID = '{DepartmentID}'";
                     }
 
                     Main.db.updateBySql(query);
@@ -161,7 +179,7 @@ namespace WindowsFormsApp
                 }
                 else
                 {
-                    Main.ShowMessage(Resources.Please_provide_Location);
+                    Main.ShowMessage("Please provide all data");
                 }
             }
         }
@@ -190,6 +208,7 @@ namespace WindowsFormsApp
                 String query = $"UPDATE Department SET State = 'D' WHERE DeptID = '{DepartmentID}'";
                 Main.db.updateBySql(query);
                 Main.ShowMessage(Resources.Succeed0);
+                (this.ParentForm as Main)?.refreshPage(sender, e);
             }
         }
     }

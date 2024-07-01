@@ -79,6 +79,7 @@ namespace WindowsFormsApp
             {
                 Main.ShowMessage(Resources.The_password_entered_twice_is_);
                 claer();
+                return;
             }
 
             string sql = $"SELECT Password FROM `User` WHERE UserID = {Main.userID};";
@@ -101,6 +102,7 @@ namespace WindowsFormsApp
             {
                 Main.ShowMessage(Resources.The_old_password_does_not_matc);
                 claer();
+                return;
             }
 
 
@@ -111,6 +113,11 @@ namespace WindowsFormsApp
             txtOldPassword.Text = String.Empty;
             txtNewPassword.Text = String.Empty;
             txtRepartNewPassword.Text = String.Empty;
+        }
+
+        private void frmChangePassword_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

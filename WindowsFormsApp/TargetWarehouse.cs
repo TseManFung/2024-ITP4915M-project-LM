@@ -26,7 +26,7 @@ namespace WindowsFormsApp
         private Dictionary<string, string> warehouseDictionary = new Dictionary<string, string>();
         private void TargetWarehouse_Load(object sender, EventArgs e)
         {
-            String sql = "SELECT Name, Location FROM Warehouse;";
+            String sql = "SELECT Name, Location FROM Warehouse Where State = 'N';";
             var dt = Main.db.GetDataTable(sql);
 
             foreach (DataRow dr in dt.Rows)

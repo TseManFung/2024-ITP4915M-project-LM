@@ -127,7 +127,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblPreview.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 36pt</value>
+    <value>新細明體, 36pt</value>
   </data>
   <data name="lblPreview.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 80</value>
@@ -169,7 +169,7 @@
     <value>Fill</value>
   </data>
   <data name="lblCondition.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 16pt, style=Bold</value>
+    <value>新細明體, 16pt, style=Bold</value>
   </data>
   <data name="lblCondition.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -262,7 +262,7 @@
     <value>Fill</value>
   </data>
   <data name="lblPeriod.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 16pt, style=Bold</value>
+    <value>新細明體, 16pt, style=Bold</value>
   </data>
   <data name="lblPeriod.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -322,7 +322,7 @@
     <value>Top</value>
   </data>
   <data name="lblTo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 12pt</value>
+    <value>新細明體, 12pt</value>
   </data>
   <data name="lblTo.Location" type="System.Drawing.Point, System.Drawing">
     <value>216, 0</value>
@@ -445,7 +445,7 @@
     <value>Fill</value>
   </data>
   <data name="lblReportType.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 16pt, style=Bold</value>
+    <value>新細明體, 16pt, style=Bold</value>
   </data>
   <data name="lblReportType.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -475,7 +475,7 @@
     <value>Fill</value>
   </data>
   <data name="comboBoxReportType.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 16pt</value>
+    <value>新細明體, 16pt</value>
   </data>
   <data name="comboBoxReportType.Items" xml:space="preserve">
     <value>sale report (warehouse)</value>
@@ -577,7 +577,7 @@
     <value>Fill</value>
   </data>
   <data name="txtTotalNumberofItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtTotalNumberofItem.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 40</value>
@@ -610,7 +610,7 @@
     <value>Fill</value>
   </data>
   <data name="lblTotalNumberofItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 16pt</value>
+    <value>新細明體, 16pt</value>
   </data>
   <data name="lblTotalNumberofItem.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -673,7 +673,7 @@
     <value>Fill</value>
   </data>
   <data name="txtTotalNumberofDistinctItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtTotalNumberofDistinctItem.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 40</value>
@@ -706,7 +706,7 @@
     <value>Fill</value>
   </data>
   <data name="lblTotalNumberofDistinctItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 16pt</value>
+    <value>新細明體, 16pt</value>
   </data>
   <data name="lblTotalNumberofDistinctItem.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -766,7 +766,7 @@
     <value>None</value>
   </data>
   <data name="btnOutput.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt</value>
+    <value>新細明體, 24pt</value>
   </data>
   <data name="btnOutput.Location" type="System.Drawing.Point, System.Drawing">
     <value>491, 469</value>
@@ -799,7 +799,7 @@
     <value>Fill</value>
   </data>
   <data name="txtTotalPrice.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 20.25pt</value>
+    <value>新細明體, 20.25pt</value>
   </data>
   <data name="txtTotalPrice.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 40</value>
@@ -832,7 +832,7 @@
     <value>Fill</value>
   </data>
   <data name="lblTotalPrice.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 16pt</value>
+    <value>新細明體, 16pt</value>
   </data>
   <data name="lblTotalPrice.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>

@@ -204,6 +204,7 @@ namespace WindowsFormsApp
                 Main.db.updateBySql(sql);
                 Main.ShowMessage(Resources.succeed);
                 (this.ParentForm as Main)?.refreshPage(sender, e);
+
             }
         }
     }

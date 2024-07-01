@@ -136,5 +136,10 @@ namespace WindowsFormsApp
             clickedRowIndex = e.RowIndex;
             clickedColumnIndex = e.ColumnIndex;
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
