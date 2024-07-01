@@ -61,7 +61,30 @@ namespace WindowsFormsApp
         private void frmReStock_Load(object sender, EventArgs e)
         {
 
+
             getData();
+
+            // 构造 SQL 查询
+            string sql = $@"
+        SELECT COUNT(*)
+        FROM Department
+        WHERE WarehouseID = {respent_warehouse}
+        AND State = 'D';
+    ";
+
+            // 执行查询并获取计数值
+            int count = 0;
+            using (var reader = Main.db.readBySql(sql))
+            {
+                if (reader.Read())
+                {
+                    count = reader.GetInt32(0);
+                }
+            }
+            if (count > 0)
+            {
+                return;
+            }
 
             if (RestockOrder == null || RestockOrder.Rows.Count == 0)
             {
