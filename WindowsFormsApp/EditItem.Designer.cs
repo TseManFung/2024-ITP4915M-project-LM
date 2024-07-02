@@ -138,6 +138,7 @@
             resources.ApplyResources(this.txtSpareWeight, "txtSpareWeight");
             this.txtSpareWeight.Name = "txtSpareWeight";
             this.txtSpareWeight.TextChanged += new System.EventHandler(this.txtSpareWeight_TextChanged);
+            this.txtSpareWeight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSpareWeight_KeyPress);
             // 
             // lblSpareWeight
             // 
@@ -159,6 +160,7 @@
             resources.ApplyResources(this.txtPrice, "txtPrice");
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
+            this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
             // 
             // lblPrice
             // 

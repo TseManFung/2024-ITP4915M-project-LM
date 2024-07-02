@@ -213,6 +213,7 @@ namespace WindowsFormsApp
                 Main.ShowMessage($"Successful editing, your password is {randompasswd},  please change your password as soon as possible!");
                 txtStaffName.Text = String.Empty;
                 txtPhoneNum.Text = String.Empty;
+                (this.ParentForm as Main)?.refreshPage(sender, e);
             }
         }
 

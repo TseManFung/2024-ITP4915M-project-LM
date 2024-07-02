@@ -98,7 +98,7 @@ namespace WindowsFormsApp
                     MessageBox.Show(Resources.Successful_ADD_your_added_new_ + newSpareID.ToString(), Resources.Success);
 
                     txtSpareName.Text = "";
-                    txtSparePrice.Text = "00.00";
+                    txtSparePrice.Text = "0";
                     txtSpareWeight.Text = "0";
                     textBoxDescription.Text = "";
                 }
@@ -111,16 +111,7 @@ namespace WindowsFormsApp
 
         private void txtSparePrice_TextChanged(object sender, EventArgs e)
         {
-            string input = txtSparePrice.Text;
-            double inputValue;
-            if (double.TryParse(input, out inputValue))
-            {
-                this.txtSparePrice.Text = string.Format("{0:#,##0.00}", inputValue);
-            }
-            else
-            {
-                this.txtSparePrice.Text = "0.00";
-            }
+
         }
 
         private void txtSpareName_TextChanged(object sender, EventArgs e)
@@ -135,19 +126,13 @@ namespace WindowsFormsApp
 
         private void txtSpareWeight_TextChanged(object sender, EventArgs e)
         {
-            string input = txtSpareWeight.Text;
-            string pattern = @"^\d+$";
-            if (!string.IsNullOrEmpty(input) && !Regex.IsMatch(input, pattern))
-            {
-                txtSpareWeight.Text = string.Empty;
-                Main.ShowMessage(Resources.only_number); // Show error message
-            }
+
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
             txtSpareName.Text = String.Empty;
-            txtSparePrice.Text = "00.00";
+            txtSparePrice.Text = "0";
             txtSpareWeight.Text = "0";
             textBoxDescription.Text = String.Empty;
         }
@@ -155,6 +140,48 @@ namespace WindowsFormsApp
         private void comboBoxSupplier_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtSparePrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // 获取当前输入的文本
+            string input = txtSparePrice.Text;
+
+            // 检查输入字符是否是数字（0-9）或退格键
+            if (char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back)
+            {
+                e.Handled = false;
+            }
+            // 允许输入一个小数点但不能重复
+            else if (e.KeyChar == '.' && !input.Contains('.'))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtSpareWeight_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // 获取当前输入的文本
+            string input = txtSpareWeight.Text;
+
+            // 检查输入字符是否是数字（0-9）或退格键
+            if (char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back)
+            {
+                e.Handled = false;
+            }
+            // 允许输入一个小数点但不能重复
+            else if (e.KeyChar == '.' && !input.Contains('.'))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
         }
     }
 }

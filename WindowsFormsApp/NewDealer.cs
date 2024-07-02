@@ -22,21 +22,31 @@ namespace WindowsFormsApp
         private void radNo_CheckedChanged(object sender, EventArgs e)
         {
             this.ShowTable();
-            // 使用 LEFT JOIN 查询未在 User 表中使用的 DealerID
-            List<int> availableDealerIDs = new List<int>();
-            string sql = @" SELECT d.DealerID FROM Dealer d LEFT JOIN User u ON d.DealerID = u.DealerID WHERE u.DealerID IS NULL;";
+            // 使用 LEFT JOIN 查询未在 User 表中使用的 DealerID 和 DealerName
+            List<Dealer> availableDealers = new List<Dealer>();
+            string sql = @"SELECT d.DealerID, d.DealerName FROM Dealer d LEFT JOIN User u ON d.DealerID = u.DealerID WHERE u.DealerID IS NULL;";
             using (var reader = Main.db.readBySql(sql))
             {
                 while (reader.Read())
                 {
-                    availableDealerIDs.Add(reader.GetInt32(0));
+                    availableDealers.Add(new Dealer
+                    {
+                        DealerID = reader.GetInt32(0),
+                        DealerName = reader.GetString(1)
+                    });
                 }
             }
 
-            // 将 availableDealerIDs 绑定到 comboBoxDealerID
-            this.comboBoxDealerID.DataSource = availableDealerIDs;
+            // 将 availableDealers 绑定到 comboBoxDealerID
+            this.comboBoxDealerID.DataSource = availableDealers;
+            this.comboBoxDealerID.DisplayMember = "DealerName"; // Display DealerName
+            this.comboBoxDealerID.ValueMember = "DealerID"; // Keep DealerID for internal use
         }
-
+        public class Dealer
+        {
+            public int DealerID { get; set; }
+            public string DealerName { get; set; }
+        }
         private void ShowTable()
         {
             tableLayoutPanel1.Visible = radYes.Checked;
@@ -140,7 +150,7 @@ namespace WindowsFormsApp
                 }
                 else if(radNo.Checked)
                 {
-                    DealerID = Convert.ToInt32(comboBoxDealerID.SelectedItem);
+                    DealerID = Convert.ToInt32(comboBoxDealerID.SelectedValue);
                 }
                 query = $"INSERT INTO `User` (LoginName, Password, AccessLevel,DealerID) VALUES ('{loginName}', '{passwd}', {accessLevel}, {DealerID})";
 
@@ -151,6 +161,7 @@ namespace WindowsFormsApp
                 txtEmail.Text = String.Empty;
                 txtPhoneNumber.Text = String.Empty;
                 txtOfficeAddress.Text = String.Empty;
+                (this.ParentForm as Main)?.refreshPage(sender, e);
             }
         }
         private bool IsValidEmail(string email)
@@ -225,6 +236,11 @@ namespace WindowsFormsApp
         }
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxDealerID_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

@@ -46,7 +46,7 @@ namespace WindowsFormsApp
 
                         if (!string.IsNullOrEmpty(Remark))
                         {
-                            query = $"INSERT INTO SaleArea (Location,Latitude,Longitude,Remark,) VALUES ('{Location}',{Latitude},{Latitude}, '{Remark}')";
+                            query = $"INSERT INTO SaleArea (Location,Latitude,Longitude,Remark) VALUES ('{Location}',{Latitude},{Latitude}, '{Remark}')";
                         }
                         else
                         {

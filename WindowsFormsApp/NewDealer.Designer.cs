@@ -263,6 +263,7 @@
             this.comboBoxDealerID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDealerID.FormattingEnabled = true;
             this.comboBoxDealerID.Name = "comboBoxDealerID";
+            this.comboBoxDealerID.SelectedIndexChanged += new System.EventHandler(this.comboBoxDealerID_SelectedIndexChanged);
             // 
             // lblDealerID
             // 

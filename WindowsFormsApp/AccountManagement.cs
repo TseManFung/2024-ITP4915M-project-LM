@@ -75,16 +75,26 @@ namespace WindowsFormsApp
         {
             if (Main.ShowYesNoDialog(Resources.Do_you_want_to_change_the_data))
             {
+
                 string passwd = txtPassword.Text;
                 int accessL;
                 if (int.TryParse(txtAccessLevel.Text, out accessL))
                 {
+                    if (accessL == 0)
+                    {
+                        Main.ShowMessage(Resources._error);
+                        return;
+                    }
+                    else if (accessL < 0 || accessL > 10000)
+                    {
+                        Main.ShowMessage(Resources._error);
+                        return;
+                    }
                 }
                 else
                 {
                     Main.ShowMessage(Resources._error);
                     return;
-
                 }
                 int usid = 0;
                 string sql = $"SELECT UserID FROM User Where LoginName = '{LoginName}';";
@@ -397,9 +407,9 @@ namespace WindowsFormsApp
 
         private void txtAccessLevel_TextChanged(object sender, EventArgs e)
         {
-            if (int.TryParse(txtAccessLevel.Text?.TrimStart('1'), out int accessLevel))
+            if (int.TryParse(txtAccessLevel.Text?.Trim(), out int accessLevel))
             {
-                if (accessLevel >= 1 && accessLevel <= 10000)
+                if (accessLevel >= 0 && accessLevel <= 10000)
                 {
                     // 执行正确的操作
                 }
@@ -410,9 +420,9 @@ namespace WindowsFormsApp
             }
             else
             {
-                if (txtAccessLevel.Text == null)
+                if (string.IsNullOrEmpty(txtAccessLevel.Text))
                 {
-                    txtAccessLevel.Text = "1";
+                    txtAccessLevel.Text = "0";
                 }
                 else
                 {
@@ -422,10 +432,10 @@ namespace WindowsFormsApp
 
             void ShowInvalidAccessLevelError()
             {
-                if (txtAccessLevel.Text != null && txtAccessLevel.Text != "1")
+                if (!string.IsNullOrEmpty(txtAccessLevel.Text) && txtAccessLevel.Text != "0")
                 {
                     Main.ShowMessage(Resources.Invalid_access_level_Please_en);
-                    txtAccessLevel.Text = "1";
+                    txtAccessLevel.Text = "0";
                 }
             }
         }
@@ -499,7 +509,7 @@ namespace WindowsFormsApp
         {
             txtName.Text = String.Empty;
             txtPassword.Text = String.Empty;
-            txtAccessLevel.Text = "1";
+            txtAccessLevel.Text = "10000";
             txtDeliveryAddress.Text = String.Empty;
             txtOfficeAddress.Text = String.Empty;
             txtEmail.Text = String.Empty;
