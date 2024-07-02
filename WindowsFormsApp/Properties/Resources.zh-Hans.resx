@@ -148,16 +148,16 @@
     <value>您确定要更改密码吗？</value>
   </data>
   <data name="Are_you_sure_you_want_to_chang0" xml:space="preserve">
-    <value>您確定要更改它嗎？</value>
+    <value>您确定要更改它吗？</value>
   </data>
   <data name="Are_you_sure_you_want_to_delet" xml:space="preserve">
-    <value>您確定要刪除供應商嗎？</value>
+    <value>您确定要删除供应商吗？</value>
   </data>
   <data name="Are_you_sure_you_want_to_delet0" xml:space="preserve">
-    <value>您確定要刪除它嗎？</value>
+    <value>您确定要删除它吗？</value>
   </data>
   <data name="Are_you_sure_you_want_to_recei" xml:space="preserve">
-    <value>您確定要接收它嗎？</value>
+    <value>您确定要接收它吗？</value>
   </data>
   <data name="Are_you_sure_you_want_to_remov" xml:space="preserve">
     <value>您确定要从购物车中删除所有商品吗？</value>
@@ -172,7 +172,7 @@
     <value>现在无法打印</value>
   </data>
   <data name="Cannot_select_the_location_to_" xml:space="preserve">
-    <value>無法選擇要刪除的位置！</value>
+    <value>无法选择要删除的位置！</value>
   </data>
   <data name="Collect_Spare" xml:space="preserve">
     <value>收集备件</value>
@@ -208,7 +208,7 @@
     <value>收货地址（如果不同）</value>
   </data>
   <data name="Delivery_address_not_yet_recor" xml:space="preserve">
-    <value>收貨位址尚未記錄。</value>
+    <value>收货位址尚未记录。</value>
   </data>
   <data name="DeliveryAddress" xml:space="preserve">
     <value>收货地址</value>
@@ -611,7 +611,7 @@
     <value>系统繁忙，请稍后再试</value>
   </data>
   <data name="The_coordinates_0_0_are_known_" xml:space="preserve">
-    <value>座标 （0， 0） 称为 Null 岛，它是几内亚湾赤道和本初子午线相交的位置。</value>
+    <value>座标 （0， 0） 称为 "空岛"，它是几内亚湾赤道和本初子午线相交的位置。</value>
   </data>
   <data name="The_current_order_number_is" xml:space="preserve">
     <value>当前订单号为：</value>
@@ -648,7 +648,7 @@
     <value>总重量</value>
   </data>
   <data name="Unavailable" xml:space="preserve">
-    <value>不能利用的</value>
+    <value>不能利用</value>
   </data>
   <data name="Unit_price" xml:space="preserve">
     <value>单价（$）</value>

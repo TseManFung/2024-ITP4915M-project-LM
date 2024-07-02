@@ -382,7 +382,7 @@
     <value>辦公位址</value>
   </data>
   <data name="only_number" xml:space="preserve">
-    <value>只有數位！</value>
+    <value>只有數字！</value>
   </data>
   <data name="Only_spaces_and_letters_are_al" xml:space="preserve">
     <value>只允許使用空格和字母！</value>
@@ -488,7 +488,7 @@
     <value>價格</value>
   </data>
   <data name="Processing" xml:space="preserve">
-    <value>正在处理</value>
+    <value>正在處理</value>
   </data>
   <data name="Qty" xml:space="preserve">
     <value>數量</value>
@@ -611,7 +611,7 @@
     <value>系統繁忙，請稍後再試</value>
   </data>
   <data name="The_coordinates_0_0_are_known_" xml:space="preserve">
-    <value>座標 （0， 0） 稱為 Null 島，它是幾內亞灣赤道和本初子午線相交的位置。</value>
+    <value>座標 （0， 0） 稱為"空島"，它是幾內亞灣赤道和本初子午線相交的位置。</value>
   </data>
   <data name="The_current_order_number_is" xml:space="preserve">
     <value>目前訂單號為：</value>
@@ -648,7 +648,7 @@
     <value>總重量</value>
   </data>
   <data name="Unavailable" xml:space="preserve">
-    <value>不能利用的</value>
+    <value>不能利用</value>
   </data>
   <data name="Unit_price" xml:space="preserve">
     <value>單價（$）</value>
