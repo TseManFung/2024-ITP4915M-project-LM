@@ -109,7 +109,7 @@ namespace WindowsFormsApp
                 {
                     if (!IsValidEmail(txtEmail.Text))
                     {
-                        Main.ShowYesNoDialog(Resources.peavea);
+                        Main.ShowMessage(Resources.peavea);
                         txtEmail.Text = string.Empty;
                         txtEmail.SelectionStart = txtEmail.Text.Length;
                     }
