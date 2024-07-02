@@ -689,4 +689,49 @@ Opening Hours: 9am - 6pm daily incl. public holiday.</value>
   <data name="have_restock_order" xml:space="preserve">
     <value>have restock order!</value>
   </data>
+  <data name="aysatl" xml:space="preserve">
+    <value>Are you sure about this location?</value>
+  </data>
+  <data name="dywand" xml:space="preserve">
+    <value>Do you want to add a new department?</value>
+  </data>
+  <data name="dywanw" xml:space="preserve">
+    <value>Do you want to add a new warehouse?</value>
+  </data>
+  <data name="dywtans" xml:space="preserve">
+    <value>Do you want to add a new spare?</value>
+  </data>
+  <data name="dywtanw" xml:space="preserve">
+    <value>Do you want to add a new Warehouse?</value>
+  </data>
+  <data name="dywtas" xml:space="preserve">
+    <value>Do you want to add a supplier?</value>
+  </data>
+  <data name="dywtcana" xml:space="preserve">
+    <value>Do you want to creat a new account?</value>
+  </data>
+  <data name="lnaepcann" xml:space="preserve">
+    <value>LoginName already exists. Please choose another name.</value>
+  </data>
+  <data name="nlae" xml:space="preserve">
+    <value>Name or Location already exists</value>
+  </data>
+  <data name="nr" xml:space="preserve">
+    <value>Name Repeat.</value>
+  </data>
+  <data name="ntfdrcr" xml:space="preserve">
+    <value>Need to follow DL &lt; ROL &lt; CSL rule</value>
+  </data>
+  <data name="peavea" xml:space="preserve">
+    <value>Please enter a valid email address.</value>
+  </data>
+  <data name="pncbe" xml:space="preserve">
+    <value>Phone Number cannot be empty.</value>
+  </data>
+  <data name="ppad" xml:space="preserve">
+    <value>Please provide all data</value>
+  </data>
+  <data name="sncbe" xml:space="preserve">
+    <value>Staff Name cannot be empty.</value>
+  </data>
 </root>

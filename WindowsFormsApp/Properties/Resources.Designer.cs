@@ -1783,5 +1783,129 @@ namespace WindowsFormsApp.Properties {
                 return ResourceManager.GetString("your_working_warehouse", resourceCulture);
             }
         }
+
+        public static string sncbe
+        {
+            get
+            {
+                return ResourceManager.GetString("sncbe", resourceCulture);
+            }
+        }
+
+        public static string pncbe
+        {
+            get
+            {
+                return ResourceManager.GetString("pncbe", resourceCulture);
+            }
+        }
+
+        public static string lnaepcann
+        {
+            get
+            {
+                return ResourceManager.GetString("lnaepcann", resourceCulture);
+            }
+        }
+
+        public static string ntfdrcr
+        {
+            get
+            {
+                return ResourceManager.GetString("ntfdrcr", resourceCulture);
+            }
+        }
+
+        public static string ppad
+        {
+            get
+            {
+                return ResourceManager.GetString("ppad", resourceCulture);
+            }
+        }
+
+        public static string nr
+        {
+            get
+            {
+                return ResourceManager.GetString("nr", resourceCulture);
+            }
+        }
+
+        public static string nlae
+        {
+            get
+            {
+                return ResourceManager.GetString("nlae", resourceCulture);
+            }
+        }
+
+        public static string dywanw
+        {
+            get
+            {
+                return ResourceManager.GetString("dywanw", resourceCulture);
+            }
+        }
+
+        public static string dywand
+        {
+            get
+            {
+                return ResourceManager.GetString("dywand", resourceCulture);
+            }
+        }
+
+        public static string aysatl
+        {
+            get
+            {
+                return ResourceManager.GetString("aysatl", resourceCulture);
+            }
+        }
+
+        public static string dywtcana
+        {
+            get
+            {
+                return ResourceManager.GetString("dywtcana", resourceCulture);
+            }
+        }
+
+
+        public static string dywtas
+        {
+            get
+            {
+                return ResourceManager.GetString("dywtas", resourceCulture);
+            }
+        }
+
+        public static string dywtanw
+        {
+            get
+            {
+                return ResourceManager.GetString("dywtanw", resourceCulture);
+            }
+        }
+
+        public static string dywtans
+        {
+            get
+            {
+                return ResourceManager.GetString("dywtans", resourceCulture);
+            }
+        }
+
+        public static string peavea
+        {
+            get
+            {
+                return ResourceManager.GetString("peavea", resourceCulture);
+            }
+        }
+
+
+
     }
 }

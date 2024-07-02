@@ -153,6 +153,9 @@
   <data name="Are_you_sure_you_want_to_remov" xml:space="preserve">
     <value>您確定要從購物車中刪除所有商品嗎？</value>
   </data>
+  <data name="aysatl" xml:space="preserve">
+    <value>你確定選擇這個地點嗎？</value>
+  </data>
   <data name="Cannot_select_the_location_to_" xml:space="preserve">
     <value>無法選擇要刪除的位置！</value>
   </data>
@@ -224,6 +227,24 @@
   </data>
   <data name="Duplicate_phone_numbers" xml:space="preserve">
     <value>重複的電話號碼</value>
+  </data>
+  <data name="dywand" xml:space="preserve">
+    <value>您想增加一個新部門嗎？</value>
+  </data>
+  <data name="dywanw" xml:space="preserve">
+    <value>您想增加一個新倉庫嗎？</value>
+  </data>
+  <data name="dywtans" xml:space="preserve">
+    <value>你確定你要增加這個新零件嗎？</value>
+  </data>
+  <data name="dywtanw" xml:space="preserve">
+    <value>您想新增新倉庫嗎？</value>
+  </data>
+  <data name="dywtas" xml:space="preserve">
+    <value>您想新增供應商嗎？</value>
+  </data>
+  <data name="dywtcana" xml:space="preserve">
+    <value>你確定要創建一個新的用戶嗎？</value>
   </data>
   <data name="Edit_Department" xml:space="preserve">
     <value>編輯部門</value>
@@ -306,6 +327,9 @@
   <data name="Latitude_must_be_between_90_an" xml:space="preserve">
     <value>緯度必須介於 -90 和 90 之間。無效輸入</value>
   </data>
+  <data name="lnaepcann" xml:space="preserve">
+    <value>登入名已存在。請選擇其他名稱。</value>
+  </data>
   <data name="Location" xml:space="preserve">
     <value>位置</value>
   </data>
@@ -329,6 +353,9 @@
   </data>
   <data name="Name" xml:space="preserve">
     <value>名字</value>
+  </data>
+  <data name="nlae" xml:space="preserve">
+    <value>名稱或地點已存在</value>
   </data>
   <data name="No_cell_has_been_clicked_yet" xml:space="preserve">
     <value>尚未按下任何儲存格。</value>
@@ -372,6 +399,12 @@
   <data name="No_stock_found" xml:space="preserve">
     <value>未找到庫存</value>
   </data>
+  <data name="nr" xml:space="preserve">
+    <value>名稱重複。</value>
+  </data>
+  <data name="ntfdrcr" xml:space="preserve">
+    <value>需要遵循 DL &lt; ROL &lt; CSL 規則</value>
+  </data>
   <data name="OfficeAddress" xml:space="preserve">
     <value>辦公位址</value>
   </data>
@@ -407,6 +440,9 @@
   </data>
   <data name="Part_No" xml:space="preserve">
     <value>零件編號</value>
+  </data>
+  <data name="peavea" xml:space="preserve">
+    <value>請輸入有效的電子郵件地址。</value>
   </data>
   <data name="Phone_number_cannot_exceed_20_" xml:space="preserve">
     <value>電話號碼不能超過20位數位。</value>
@@ -477,6 +513,12 @@
   </data>
   <data name="Please_select_a_warehouse" xml:space="preserve">
     <value>請選擇倉庫</value>
+  </data>
+  <data name="pncbe" xml:space="preserve">
+    <value>電話號碼不能為空</value>
+  </data>
+  <data name="ppad" xml:space="preserve">
+    <value>請提供所有數據</value>
   </data>
   <data name="Prev_Qty" xml:space="preserve">
     <value>之前數量</value>
@@ -552,6 +594,9 @@
   </data>
   <data name="Simulate_server" xml:space="preserve">
     <value>模擬伺服器</value>
+  </data>
+  <data name="sncbe" xml:space="preserve">
+    <value>員工姓名不能為空</value>
   </data>
   <data name="SpareID" xml:space="preserve">
     <value>零件ID</value>
