@@ -106,15 +106,17 @@ namespace WindowsFormsApp
                     remainingQuantity -= assignedQuantity;
                 }
 
-                if (remainingQuantity <= 0)
+                if (remainingQuantity < quantity)
                 {
-                    // Update OrderItemToFollow state to 'D' (Done)
-                    string updateOrderItemToFollowSql = $@"
+                    if (remainingQuantity <= 0){
+                        // Update OrderItemToFollow state to 'D' (Done)
+                        string updateOrderItemToFollowSql = $@"
                     UPDATE OrderItemToFollow
                     SET State = 'D'
                     WHERE OrderSerial = '{orderSerial}' AND ItemID = '{itemId}'";
 
-                    Main.db.updateBySql(updateOrderItemToFollowSql);
+                        Main.db.updateBySql(updateOrderItemToFollowSql);
+                    }
 
                     // Update Order state to 'P' if it is 'C' or 'W'
                     if (orderState == "C" || orderState == "W")
@@ -130,8 +132,42 @@ namespace WindowsFormsApp
                 else
                 {
                     Console.WriteLine($"Not enough stock for ItemID: {itemId} in any warehouse.");
+                    //if 所有warehosue的 auto restork是0/ false + if order 是 W:
+                    string sql = $@"SELECT COUNT(*) AS count
+FROM ActualStock
+WHERE SpareID = '{itemId}' AND AutoRestork = 1;";
+                    int num;
+                    using (var reader = Main.db.readBySql(sql))
+                    {
+                        reader.Read();
+                        num = reader.GetInt32(0);
+                    }
+                    sql = $@"SELECT State FROM `Order` where OrderSerial = '{orderSerial}';";
+                    string orderState_curr;
+                    using (var reader = Main.db.readBySql(sql))
+                    {
+                        reader.Read();
+                        orderState_curr = reader.GetString(0);
+                    }
+                    if (num <= 0 && orderState_curr == "W")
+                    {
+                        //order.State = U
+                        sql = $@"UPDATE `Order`
+SET State = 'U'
+WHERE OrderSerial = '{orderSerial}';";
+                        Main.db.updateBySql(sql);
+                        sql = $@"UPDATE Stock
+SET quantity = quantity + {remainingQuantity}
+WHERE SpareID = '{itemId}';";
+                        Main.db.updateBySql(sql);
 
+                        //delete OrderItemToFollow. this row
+                        sql = $@"DELETE FROM OrderItemToFollow
+WHERE OrderSerial = '{orderSerial}' AND ItemID = '{itemId}';";
+                        Main.db.updateBySql(sql);
+                    }
                 }
+                
             }
             Main.ShowMessage(Resources.Order_Items_Assigned_to_Collec);
         }
