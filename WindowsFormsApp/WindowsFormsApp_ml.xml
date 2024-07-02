@@ -140,6 +140,7 @@
   </GeneralIds>
   <GeneralIds>
     <StringID>47</StringID>
+    <Comment>Previous text: Repart new password:</Comment>
   </GeneralIds>
   <GeneralIds>
     <StringID>48</StringID>
@@ -1257,6 +1258,226 @@
   <GeneralIds>
     <StringID>419</StringID>
   </GeneralIds>
+  <GeneralIds>
+    <StringID>420</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>421</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>422</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>423</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>424</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>425</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>426</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>427</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>428</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>429</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>430</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>431</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>432</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>433</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>434</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>435</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>436</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>437</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>438</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>439</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>440</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>441</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>442</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>443</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>444</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>445</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>446</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>447</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>448</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>449</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>450</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>451</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>452</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>453</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>454</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>455</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>456</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>457</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>458</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>459</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>460</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>461</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>462</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>463</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>464</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>465</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>466</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>467</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>468</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>469</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>470</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>471</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>472</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>473</StringID>
+    <Comment />
+  </GeneralIds>
+  <GeneralIds>
+    <StringID>474</StringID>
+    <Comment />
+  </GeneralIds>
   <Languages>
     <LanguageID>9</LanguageID>
     <LanguageName>英文</LanguageName>
@@ -1554,7 +1775,7 @@
   <GeneralTexts>
     <StringID>47</StringID>
     <LanguageID>9</LanguageID>
-    <LanguageText>Repart new password:</LanguageText>
+    <LanguageText>Enter New PW Again:</LanguageText>
     <Status>1</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -3666,7 +3887,7 @@ Still placing order?</LanguageText>
     <StringID>47</StringID>
     <LanguageID>31748</LanguageID>
     <LanguageText>變更新密碼：</LanguageText>
-    <Status>6</Status>
+    <Status>7</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>46</StringID>
@@ -3690,7 +3911,7 @@ Still placing order?</LanguageText>
     <StringID>47</StringID>
     <LanguageID>4</LanguageID>
     <LanguageText>更改新密码：</LanguageText>
-    <Status>6</Status>
+    <Status>7</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>50</StringID>
@@ -6503,7 +6724,7 @@ Still placing order?</LanguageText>
   <GeneralTexts>
     <StringID>347</StringID>
     <LanguageID>31748</LanguageID>
-    <LanguageText>ContantNumber 無效。請輸入有效號碼。</LanguageText>
+    <LanguageText>聯繫電話無效。請輸入有效號碼。</LanguageText>
     <Status>6</Status>
   </GeneralTexts>
   <GeneralTexts>
@@ -7019,8 +7240,8 @@ Still placing order?</LanguageText>
   <GeneralTexts>
     <StringID>347</StringID>
     <LanguageID>4</LanguageID>
-    <LanguageText>ContantNumber 無效。請輸入有效號碼。</LanguageText>
-    <Status>3</Status>
+    <LanguageText>联系电话無效。請輸入有效號碼。</LanguageText>
+    <Status>6</Status>
   </GeneralTexts>
   <GeneralTexts>
     <StringID>381</StringID>
@@ -8646,6 +8867,996 @@ Please call technician for help.</LanguageText>
     <LanguageText>供应商名称</LanguageText>
     <Status>5</Status>
   </GeneralTexts>
+  <GeneralTexts>
+    <StringID>420</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>储存</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>420</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Save</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>420</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>儲存</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>421</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>清除</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>421</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Clear</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>421</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>清楚</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>422</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>否</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>422</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>No</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>422</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>否</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>423</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>是</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>423</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Yes</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>423</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>是</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>424</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>添加销售区域</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>424</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Add SaleArea</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>424</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>添加銷售區域</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>425</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>购物车</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>425</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Cart</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>425</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>購物車</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>426</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>总价格：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>426</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Total Price:</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>426</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>總價格：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>427</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>总数量：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>427</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Total Quantity:</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>427</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>總數量：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>428</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>备件 ID：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>428</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Spare ID:</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>428</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>備件 ID：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>429</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>交货状态和产品详情</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>429</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>DeliveryStatusandProductDetails</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>429</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>交貨狀態和產品詳情</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>430</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>状态</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>430</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>State</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>430</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>狀態</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>431</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>未完成项目：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>431</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Previous Outstanding:</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>431</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>未完成項目：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>432</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>总计出货：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>432</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Total to Despatach:</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>432</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>總計出貨：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>433</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>备件名称：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>433</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Spare Name:</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>433</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>備件名稱：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>434</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>编辑订单</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>434</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Edit Order</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>434</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>編輯訂單</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>435</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>编辑销售区域</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>435</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Edit SaleArea</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>435</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>編輯銷售區域</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>436</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>地址：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>436</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Address:</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>436</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>地址：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>437</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>联系电话：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>437</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Contant Number:</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>437</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>聯絡電話：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>438</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>名字：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>438</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Name:</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>438</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>名字：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>439</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>经销商名称：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>439</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Dealer name:</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>439</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>經銷商名稱：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>440</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>您是经销商或LM员工：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>440</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>You are dealer or LM staff:</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>440</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>您是經銷商或LM員工：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>441</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>经销商</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>441</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>dealer</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>441</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>經銷商</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>442</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>定位</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>442</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>locate</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>442</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>定位</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>443</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>在这里签名</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>443</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Sign Here</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>443</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>在這裡簽名</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>444</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>中文 （简体）</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>444</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>中文 (简体)</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>444</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>中文 （简体）</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>445</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>English</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>445</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>English</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>445</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>English</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>446</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>登出</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>446</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Logout</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>446</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>登出</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>447</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>新经销商</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>447</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>New Dealer</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>447</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>新經銷商</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>448</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>您是新的经销商吗？</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>448</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Are you new Dealer?</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>448</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>您是新的經銷商嗎？</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>449</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>经销商名称：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>449</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Dealer Name:</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>449</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>經銷商名稱：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>450</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>你是新的员工吗？</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>450</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Are you new staff?</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>450</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>你是新的員工嗎？</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>451</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>性別：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>451</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Gender:</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>451</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>性別：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>452</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>男性</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>452</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Male</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>452</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>男性</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>453</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>联络电话：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>453</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Contant Number:</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>453</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>聯絡電話：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>454</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>订单详情</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>454</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Order Detail</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>454</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>訂單詳情</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>455</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>DI设置</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>455</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>DI set</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>455</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>DI設定</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>456</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>商品详情</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>456</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Item Detail</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>456</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>商品詳情</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>457</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>状态：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>457</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Status :</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>457</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>狀態：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>458</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>状态：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>458</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Order: </LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>458</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>狀態：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>459</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>处理中</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>459</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Processing</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>459</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>處理中</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>460</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>选定的备件名称：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>460</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Selected Spare Name:</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>460</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>選定的備件名稱：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>461</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>备件 ID：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>461</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>SpareID:</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>461</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>備件 ID：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>462</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>制作条件</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>462</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>make condition</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>462</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>製作條件</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>463</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>库存报告</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>463</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>stock report</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>463</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>庫存報告</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>464</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>废品报告（全部列出）</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>464</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>scarp report (list all)</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>464</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>報廢報告（列出全部）</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>465</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>废品报告（备件）</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>465</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>scarp report (spare)</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>465</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>報廢報告（備件）</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>466</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>SCARP 报告（仓库）</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>466</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>scarp report (warehouse)</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>466</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>報廢報告（倉庫）</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>467</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>至</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>467</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>to</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>467</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>至</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>468</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText />
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>468</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>A</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>468</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText />
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>469</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>备件</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>469</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Spare</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>469</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>備件</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>470</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>经销商</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>470</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Dealer</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>470</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>經銷商</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>471</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>OK</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>471</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>OK</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>471</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>OK</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>472</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>一般库存水平：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>472</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Common Stock Level:</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>472</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>一般庫存水準：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>473</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>生成备件 QRCode</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>473</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Genarate Spare QRCode</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>473</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>生成備件 QRCode</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>474</StringID>
+    <LanguageID>4</LanguageID>
+    <LanguageText>备件ID：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>474</StringID>
+    <LanguageID>9</LanguageID>
+    <LanguageText>Spare ID:</LanguageText>
+    <Status>8</Status>
+  </GeneralTexts>
+  <GeneralTexts>
+    <StringID>474</StringID>
+    <LanguageID>31748</LanguageID>
+    <LanguageText>備件ID：</LanguageText>
+    <Status>6</Status>
+  </GeneralTexts>
   <Properties>
     <Component>AccountManagement.cs</Component>
     <Name>frmAccountManagement.Text</Name>
@@ -8753,7 +9964,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>AccountManagement.cs</Component>
     <Name>btnSave.Text</Name>
-    <StringID>14</StringID>
+    <StringID>420</StringID>
     <Selected>true</Selected>
     <ResourceName>btnSave.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -8785,7 +9996,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>AddDepartment.cs</Component>
     <Name>btnClear.Text</Name>
-    <StringID>18</StringID>
+    <StringID>421</StringID>
     <Selected>true</Selected>
     <ResourceName>btnClear.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -8793,7 +10004,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>AddDepartment.cs</Component>
     <Name>btnSave.Text</Name>
-    <StringID>14</StringID>
+    <StringID>420</StringID>
     <Selected>true</Selected>
     <ResourceName>btnSave.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -8809,7 +10020,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>AddDepartment.cs</Component>
     <Name>radYes.Text</Name>
-    <StringID>20</StringID>
+    <StringID>423</StringID>
     <Selected>true</Selected>
     <ResourceName>radYes.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -8817,7 +10028,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>AddDepartment.cs</Component>
     <Name>radNo.Text</Name>
-    <StringID>21</StringID>
+    <StringID>422</StringID>
     <Selected>true</Selected>
     <ResourceName>radNo.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -8873,7 +10084,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>AddNewItem.cs</Component>
     <Name>btnSave.Text</Name>
-    <StringID>14</StringID>
+    <StringID>420</StringID>
     <Selected>true</Selected>
     <ResourceName>btnSave.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -8913,7 +10124,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>AddNewItem.cs</Component>
     <Name>btnClear.Text</Name>
-    <StringID>18</StringID>
+    <StringID>421</StringID>
     <Selected>true</Selected>
     <ResourceName>btnClear.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -8929,7 +10140,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>AddSaleArea.cs</Component>
     <Name>frmAddSaleArea.Text</Name>
-    <StringID>32</StringID>
+    <StringID>424</StringID>
     <Selected>true</Selected>
     <ResourceName>$this.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -8953,7 +10164,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>AddSaleArea.cs</Component>
     <Name>btnClear.Text</Name>
-    <StringID>18</StringID>
+    <StringID>421</StringID>
     <Selected>true</Selected>
     <ResourceName>btnClear.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -8961,7 +10172,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>AddSaleArea.cs</Component>
     <Name>btnSave.Text</Name>
-    <StringID>14</StringID>
+    <StringID>420</StringID>
     <Selected>true</Selected>
     <ResourceName>btnSave.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -8993,7 +10204,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>AddWarehouse.cs</Component>
     <Name>btnClear.Text</Name>
-    <StringID>18</StringID>
+    <StringID>421</StringID>
     <Selected>true</Selected>
     <ResourceName>btnClear.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9001,7 +10212,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>AddWarehouse.cs</Component>
     <Name>btnSave.Text</Name>
-    <StringID>14</StringID>
+    <StringID>420</StringID>
     <Selected>true</Selected>
     <ResourceName>btnSave.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9017,7 +10228,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>Cart.cs</Component>
     <Name>frmCart.Text</Name>
-    <StringID>36</StringID>
+    <StringID>425</StringID>
     <Selected>true</Selected>
     <ResourceName>$this.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9041,7 +10252,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>Cart.cs</Component>
     <Name>lblTotalQuantity.Text</Name>
-    <StringID>39</StringID>
+    <StringID>427</StringID>
     <Selected>true</Selected>
     <ResourceName>lblTotalQuantity.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9081,7 +10292,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>Cart.cs</Component>
     <Name>lblTotalPrice.Text</Name>
-    <StringID>44</StringID>
+    <StringID>426</StringID>
     <Selected>true</Selected>
     <ResourceName>lblTotalPrice.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9169,7 +10380,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>CollectSpare.cs</Component>
     <Name>lblSpareID.Text</Name>
-    <StringID>54</StringID>
+    <StringID>428</StringID>
     <Selected>true</Selected>
     <ResourceName>lblSpareID.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9193,7 +10404,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>DeliveryStatusandProductDetails.cs</Component>
     <Name>frmDeliveryStatusandProductDetails.Text</Name>
-    <StringID>56</StringID>
+    <StringID>429</StringID>
     <Selected>true</Selected>
     <ResourceName>$this.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9209,7 +10420,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>DeliveryStatusandProductDetails.cs</Component>
     <Name>lblState.Text</Name>
-    <StringID>58</StringID>
+    <StringID>430</StringID>
     <Selected>true</Selected>
     <ResourceName>lblState.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9321,7 +10532,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>DID.cs</Component>
     <Name>lblPreviousOutstanding.Text</Name>
-    <StringID>71</StringID>
+    <StringID>431</StringID>
     <Selected>true</Selected>
     <ResourceName>lblPreviousOutstanding.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9353,7 +10564,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>DID.cs</Component>
     <Name>lblTotaltoDespatach.Text</Name>
-    <StringID>75</StringID>
+    <StringID>432</StringID>
     <Selected>true</Selected>
     <ResourceName>lblTotaltoDespatach.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9465,7 +10676,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>EditDepartment.cs</Component>
     <Name>btnSave.Text</Name>
-    <StringID>14</StringID>
+    <StringID>420</StringID>
     <Selected>true</Selected>
     <ResourceName>btnSave.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9537,7 +10748,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>EditItem.cs</Component>
     <Name>lblSpareName.Text</Name>
-    <StringID>28</StringID>
+    <StringID>433</StringID>
     <Selected>true</Selected>
     <ResourceName>lblSpareName.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9553,7 +10764,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>EditItem.cs</Component>
     <Name>btnSave.Text</Name>
-    <StringID>14</StringID>
+    <StringID>420</StringID>
     <Selected>true</Selected>
     <ResourceName>btnSave.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9577,7 +10788,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>EditItem.cs</Component>
     <Name>lblSpareID.Text</Name>
-    <StringID>54</StringID>
+    <StringID>428</StringID>
     <Selected>true</Selected>
     <ResourceName>lblSpareID.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9585,7 +10796,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>EditOrder.cs</Component>
     <Name>frmEditOrder.Text</Name>
-    <StringID>85</StringID>
+    <StringID>434</StringID>
     <Selected>true</Selected>
     <ResourceName>$this.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9617,7 +10828,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>EditOrder.cs</Component>
     <Name>lblSpareID.Text</Name>
-    <StringID>54</StringID>
+    <StringID>428</StringID>
     <Selected>true</Selected>
     <ResourceName>lblSpareID.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9633,7 +10844,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>EditOrder.cs</Component>
     <Name>btnSave.Text</Name>
-    <StringID>14</StringID>
+    <StringID>420</StringID>
     <Selected>true</Selected>
     <ResourceName>btnSave.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9649,7 +10860,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>EditOrder.cs</Component>
     <Name>lblSpareName.Text</Name>
-    <StringID>28</StringID>
+    <StringID>433</StringID>
     <Selected>true</Selected>
     <ResourceName>lblSpareName.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9665,7 +10876,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>EditSaleArea.cs</Component>
     <Name>frmEditSaleArea.Text</Name>
-    <StringID>91</StringID>
+    <StringID>435</StringID>
     <Selected>true</Selected>
     <ResourceName>$this.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9713,7 +10924,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>EditSaleArea.cs</Component>
     <Name>btnSave.Text</Name>
-    <StringID>14</StringID>
+    <StringID>420</StringID>
     <Selected>true</Selected>
     <ResourceName>btnSave.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9753,7 +10964,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>EditSupplier.cs</Component>
     <Name>lblName.Text</Name>
-    <StringID>8</StringID>
+    <StringID>438</StringID>
     <Selected>true</Selected>
     <ResourceName>lblName.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9761,7 +10972,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>EditSupplier.cs</Component>
     <Name>btnSave.Text</Name>
-    <StringID>14</StringID>
+    <StringID>420</StringID>
     <Selected>true</Selected>
     <ResourceName>btnSave.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9777,7 +10988,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>EditSupplier.cs</Component>
     <Name>lblContantNumber.Text</Name>
-    <StringID>95</StringID>
+    <StringID>437</StringID>
     <Selected>true</Selected>
     <ResourceName>lblContantNumber.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9785,7 +10996,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>EditSupplier.cs</Component>
     <Name>lblAddress.Text</Name>
-    <StringID>96</StringID>
+    <StringID>436</StringID>
     <Selected>true</Selected>
     <ResourceName>lblAddress.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9833,7 +11044,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>EditWarehouse.cs</Component>
     <Name>btnSave.Text</Name>
-    <StringID>14</StringID>
+    <StringID>420</StringID>
     <Selected>true</Selected>
     <ResourceName>btnSave.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9857,7 +11068,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>forgetPW.cs</Component>
     <Name>lblYouAreDealerOrLMStaff.Text</Name>
-    <StringID>100</StringID>
+    <StringID>440</StringID>
     <Selected>true</Selected>
     <ResourceName>lblYouAreDealerOrLMStaff.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9865,7 +11076,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>forgetPW.cs</Component>
     <Name>radioButtonYouAreDealer.Text</Name>
-    <StringID>101</StringID>
+    <StringID>441</StringID>
     <Selected>true</Selected>
     <ResourceName>radioButtonYouAreDealer.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9881,7 +11092,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>forgetPW.cs</Component>
     <Name>lblDelearName.Text</Name>
-    <StringID>103</StringID>
+    <StringID>439</StringID>
     <Selected>true</Selected>
     <ResourceName>lblDelearName.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -9937,7 +11148,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>Google_map.cs</Component>
     <Name>btnlocate.Text</Name>
-    <StringID>110</StringID>
+    <StringID>442</StringID>
     <Selected>true</Selected>
     <ResourceName>btnlocate.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10025,7 +11236,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>Invoice.cs</Component>
     <Name>btnSign.Text</Name>
-    <StringID>120</StringID>
+    <StringID>443</StringID>
     <Selected>true</Selected>
     <ResourceName>btnSign.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10049,7 +11260,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>language.cs</Component>
     <Name>radioButtonEng.Text</Name>
-    <StringID>123</StringID>
+    <StringID>445</StringID>
     <Selected>true</Selected>
     <ResourceName>radioButtonEng.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10065,7 +11276,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>language.cs</Component>
     <Name>radioButtonChina.Text</Name>
-    <StringID>125</StringID>
+    <StringID>444</StringID>
     <Selected>true</Selected>
     <ResourceName>radioButtonChina.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10169,7 +11380,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>Menu.cs</Component>
     <Name>lblLogout.Text</Name>
-    <StringID>136</StringID>
+    <StringID>446</StringID>
     <Selected>true</Selected>
     <ResourceName>lblLogout.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10417,7 +11628,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>NewDealer.cs</Component>
     <Name>frmNewDealer.Text</Name>
-    <StringID>154</StringID>
+    <StringID>447</StringID>
     <Selected>true</Selected>
     <ResourceName>$this.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10465,7 +11676,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>NewDealer.cs</Component>
     <Name>lblDealerName.Text</Name>
-    <StringID>155</StringID>
+    <StringID>449</StringID>
     <Selected>true</Selected>
     <ResourceName>lblDealerName.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10473,7 +11684,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>NewDealer.cs</Component>
     <Name>lblAreYouNewDealer.Text</Name>
-    <StringID>156</StringID>
+    <StringID>448</StringID>
     <Selected>true</Selected>
     <ResourceName>lblAreYouNewDealer.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10481,7 +11692,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>NewDealer.cs</Component>
     <Name>radYes.Text</Name>
-    <StringID>20</StringID>
+    <StringID>423</StringID>
     <Selected>true</Selected>
     <ResourceName>radYes.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10489,7 +11700,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>NewDealer.cs</Component>
     <Name>radNo.Text</Name>
-    <StringID>21</StringID>
+    <StringID>422</StringID>
     <Selected>true</Selected>
     <ResourceName>radNo.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10505,7 +11716,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>NewDealer.cs</Component>
     <Name>btnSave.Text</Name>
-    <StringID>14</StringID>
+    <StringID>420</StringID>
     <Selected>true</Selected>
     <ResourceName>btnSave.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10513,7 +11724,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>NewDealer.cs</Component>
     <Name>btnClear.Text</Name>
-    <StringID>18</StringID>
+    <StringID>421</StringID>
     <Selected>true</Selected>
     <ResourceName>btnClear.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10529,7 +11740,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>NewStaff.cs</Component>
     <Name>lblGender.Text</Name>
-    <StringID>159</StringID>
+    <StringID>451</StringID>
     <Selected>true</Selected>
     <ResourceName>lblGender.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10537,7 +11748,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>NewStaff.cs</Component>
     <Name>rbMale.Text</Name>
-    <StringID>160</StringID>
+    <StringID>452</StringID>
     <Selected>true</Selected>
     <ResourceName>rbMale.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10593,7 +11804,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>NewStaff.cs</Component>
     <Name>btnClear.Text</Name>
-    <StringID>18</StringID>
+    <StringID>421</StringID>
     <Selected>true</Selected>
     <ResourceName>btnClear.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10601,7 +11812,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>NewStaff.cs</Component>
     <Name>btnSave.Text</Name>
-    <StringID>14</StringID>
+    <StringID>420</StringID>
     <Selected>true</Selected>
     <ResourceName>btnSave.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10609,7 +11820,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>NewStaff.cs</Component>
     <Name>lblAreYouNewStaff.Text</Name>
-    <StringID>163</StringID>
+    <StringID>450</StringID>
     <Selected>true</Selected>
     <ResourceName>lblAreYouNewStaff.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10617,7 +11828,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>NewStaff.cs</Component>
     <Name>radYes.Text</Name>
-    <StringID>20</StringID>
+    <StringID>423</StringID>
     <Selected>true</Selected>
     <ResourceName>radYes.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10625,7 +11836,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>NewStaff.cs</Component>
     <Name>radNo.Text</Name>
-    <StringID>21</StringID>
+    <StringID>422</StringID>
     <Selected>true</Selected>
     <ResourceName>radNo.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10657,7 +11868,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>NewSupplier.cs</Component>
     <Name>lblContantNumber.Text</Name>
-    <StringID>95</StringID>
+    <StringID>453</StringID>
     <Selected>true</Selected>
     <ResourceName>lblContantNumber.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10673,7 +11884,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>NewSupplier.cs</Component>
     <Name>lblAddress.Text</Name>
-    <StringID>96</StringID>
+    <StringID>436</StringID>
     <Selected>true</Selected>
     <ResourceName>lblAddress.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10681,7 +11892,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>NewSupplier.cs</Component>
     <Name>lblName.Text</Name>
-    <StringID>8</StringID>
+    <StringID>438</StringID>
     <Selected>true</Selected>
     <ResourceName>lblName.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10697,7 +11908,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>NewSupplier.cs</Component>
     <Name>btnClear.Text</Name>
-    <StringID>18</StringID>
+    <StringID>421</StringID>
     <Selected>true</Selected>
     <ResourceName>btnClear.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10705,7 +11916,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>OrderDetail.cs</Component>
     <Name>frmOrderDetail.Text</Name>
-    <StringID>168</StringID>
+    <StringID>454</StringID>
     <Selected>true</Selected>
     <ResourceName>$this.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10729,7 +11940,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>OrderDetail.cs</Component>
     <Name>lblStatus.Text</Name>
-    <StringID>171</StringID>
+    <StringID>457</StringID>
     <Selected>true</Selected>
     <ResourceName>lblStatus.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10745,7 +11956,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>OrderDetail.cs</Component>
     <Name>BtnDIset.Text</Name>
-    <StringID>173</StringID>
+    <StringID>455</StringID>
     <Selected>true</Selected>
     <ResourceName>BtnDIset.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10753,7 +11964,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>OrderDetail.cs</Component>
     <Name>btnItem.Text</Name>
-    <StringID>174</StringID>
+    <StringID>456</StringID>
     <Selected>true</Selected>
     <ResourceName>btnItem.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10777,7 +11988,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>OrderItemDetail.cs</Component>
     <Name>OrderItemDetail.Text</Name>
-    <StringID>176</StringID>
+    <StringID>458</StringID>
     <Selected>true</Selected>
     <ResourceName>$this.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10833,7 +12044,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>OrderRecord.cs</Component>
     <Name>groupBoxProcessing.Text</Name>
-    <StringID>182</StringID>
+    <StringID>459</StringID>
     <Selected>true</Selected>
     <ResourceName>groupBoxProcessing.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10881,7 +12092,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>PlacingOrderForm.cs</Component>
     <Name>lblSpareID.Text</Name>
-    <StringID>187</StringID>
+    <StringID>461</StringID>
     <Selected>true</Selected>
     <ResourceName>lblSpareID.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10921,7 +12132,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>PlacingOrderForm.cs</Component>
     <Name>lblSelectedSpareName.Text</Name>
-    <StringID>43</StringID>
+    <StringID>460</StringID>
     <Selected>true</Selected>
     <ResourceName>lblSelectedSpareName.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10961,7 +12172,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>Report.cs</Component>
     <Name>button1.Text</Name>
-    <StringID>192</StringID>
+    <StringID>462</StringID>
     <Selected>true</Selected>
     <ResourceName>button1.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -10977,7 +12188,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>Report.cs</Component>
     <Name>lblTo.Text</Name>
-    <StringID>194</StringID>
+    <StringID>467</StringID>
     <Selected>true</Selected>
     <ResourceName>lblTo.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -11009,7 +12220,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>Report.cs</Component>
     <Name>comboBoxReportType.Items[2]</Name>
-    <StringID>198</StringID>
+    <StringID>463</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBoxReportType.Items2</ResourceName>
     <Hidden>false</Hidden>
@@ -11017,7 +12228,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>Report.cs</Component>
     <Name>comboBoxReportType.Items[3]</Name>
-    <StringID>199</StringID>
+    <StringID>464</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBoxReportType.Items3</ResourceName>
     <Hidden>false</Hidden>
@@ -11025,7 +12236,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>Report.cs</Component>
     <Name>comboBoxReportType.Items[4]</Name>
-    <StringID>200</StringID>
+    <StringID>465</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBoxReportType.Items4</ResourceName>
     <Hidden>false</Hidden>
@@ -11033,7 +12244,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>Report.cs</Component>
     <Name>comboBoxReportType.Items[5]</Name>
-    <StringID>201</StringID>
+    <StringID>466</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBoxReportType.Items5</ResourceName>
     <Hidden>false</Hidden>
@@ -11105,7 +12316,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>reportCondition.cs</Component>
     <Name>label3.Text</Name>
-    <StringID>209</StringID>
+    <StringID>469</StringID>
     <Selected>true</Selected>
     <ResourceName>label3.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -11113,7 +12324,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>reportCondition.cs</Component>
     <Name>radioButton1.Text</Name>
-    <StringID>20</StringID>
+    <StringID>423</StringID>
     <Selected>true</Selected>
     <ResourceName>radioButton1.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -11121,7 +12332,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>reportCondition.cs</Component>
     <Name>radioButton2.Text</Name>
-    <StringID>21</StringID>
+    <StringID>422</StringID>
     <Selected>true</Selected>
     <ResourceName>radioButton2.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -11137,7 +12348,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>reportCondition.cs</Component>
     <Name>label5.Text</Name>
-    <StringID>211</StringID>
+    <StringID>470</StringID>
     <Selected>true</Selected>
     <ResourceName>label5.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -11209,7 +12420,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>reportCondition.cs</Component>
     <Name>comboBox3.Items[0]</Name>
-    <StringID>218</StringID>
+    <StringID>468</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox3.Items</ResourceName>
     <Hidden>false</Hidden>
@@ -11353,7 +12564,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>Scrap.cs</Component>
     <Name>lblSpareID.Text</Name>
-    <StringID>54</StringID>
+    <StringID>428</StringID>
     <Selected>true</Selected>
     <ResourceName>lblSpareID.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -11393,7 +12604,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>SetStockLevel.cs</Component>
     <Name>lblSpareID.Text</Name>
-    <StringID>54</StringID>
+    <StringID>428</StringID>
     <Selected>true</Selected>
     <ResourceName>lblSpareID.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -11401,7 +12612,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>SetStockLevel.cs</Component>
     <Name>lblSpareName.Text</Name>
-    <StringID>28</StringID>
+    <StringID>433</StringID>
     <Selected>true</Selected>
     <ResourceName>lblSpareName.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -11409,7 +12620,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>SetStockLevel.cs</Component>
     <Name>btnSave.Text</Name>
-    <StringID>14</StringID>
+    <StringID>420</StringID>
     <Selected>true</Selected>
     <ResourceName>btnSave.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -11433,7 +12644,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>SetStockLevel.cs</Component>
     <Name>lblCommonStockLevel.Text</Name>
-    <StringID>240</StringID>
+    <StringID>472</StringID>
     <Selected>true</Selected>
     <ResourceName>lblCommonStockLevel.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -11489,7 +12700,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>Signature.cs</Component>
     <Name>btnClear.Text</Name>
-    <StringID>18</StringID>
+    <StringID>421</StringID>
     <Selected>true</Selected>
     <ResourceName>btnClear.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -11497,7 +12708,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>SpareQRCode.cs</Component>
     <Name>frmSpareQRCode.Text</Name>
-    <StringID>246</StringID>
+    <StringID>473</StringID>
     <Selected>true</Selected>
     <ResourceName>$this.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -11505,7 +12716,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>SpareQRCode.cs</Component>
     <Name>lblSpareName.Text</Name>
-    <StringID>28</StringID>
+    <StringID>433</StringID>
     <Selected>true</Selected>
     <ResourceName>lblSpareName.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -11513,7 +12724,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>SpareQRCode.cs</Component>
     <Name>lblSpareID.Text</Name>
-    <StringID>54</StringID>
+    <StringID>474</StringID>
     <Selected>true</Selected>
     <ResourceName>lblSpareID.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -11569,7 +12780,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>UserAndAccountCreate.cs</Component>
     <Name>accForDealer.Text</Name>
-    <StringID>211</StringID>
+    <StringID>470</StringID>
     <Selected>true</Selected>
     <ResourceName>accForDealer.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -11617,7 +12828,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>UserAndAccountCreate.cs</Component>
     <Name>btnClear.Text</Name>
-    <StringID>18</StringID>
+    <StringID>421</StringID>
     <Selected>true</Selected>
     <ResourceName>btnClear.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -11644,14 +12855,6 @@ Please call technician for help.</LanguageText>
     <StringID>257</StringID>
     <Selected>true</Selected>
     <ResourceName>_error</ResourceName>
-    <Hidden>false</Hidden>
-  </Properties>
-  <Properties>
-    <Component>Resources.resx</Component>
-    <Name>_Order</Name>
-    <StringID>258</StringID>
-    <Selected>true</Selected>
-    <ResourceName>_Order</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
   <Properties>
@@ -11692,14 +12895,6 @@ Please call technician for help.</LanguageText>
     <StringID>263</StringID>
     <Selected>true</Selected>
     <ResourceName>dealer_must_have_a_saleArea</ResourceName>
-    <Hidden>false</Hidden>
-  </Properties>
-  <Properties>
-    <Component>Resources.resx</Component>
-    <Name>DealerID</Name>
-    <StringID>264</StringID>
-    <Selected>true</Selected>
-    <ResourceName>DealerID</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
   <Properties>
@@ -11808,14 +13003,6 @@ Please call technician for help.</LanguageText>
   </Properties>
   <Properties>
     <Component>Resources.resx</Component>
-    <Name>Location</Name>
-    <StringID>106</StringID>
-    <Selected>true</Selected>
-    <ResourceName>Location</ResourceName>
-    <Hidden>false</Hidden>
-  </Properties>
-  <Properties>
-    <Component>Resources.resx</Component>
     <Name>Missging_data</Name>
     <StringID>278</StringID>
     <Selected>true</Selected>
@@ -11864,14 +13051,6 @@ Please call technician for help.</LanguageText>
   </Properties>
   <Properties>
     <Component>Resources.resx</Component>
-    <Name>OrderItem</Name>
-    <StringID>284</StringID>
-    <Selected>true</Selected>
-    <ResourceName>OrderItem</ResourceName>
-    <Hidden>false</Hidden>
-  </Properties>
-  <Properties>
-    <Component>Resources.resx</Component>
     <Name>Phone_number_cannot_exceed_20_</Name>
     <StringID>285</StringID>
     <Selected>true</Selected>
@@ -11908,46 +13087,6 @@ Please call technician for help.</LanguageText>
     <StringID>289</StringID>
     <Selected>true</Selected>
     <ResourceName>Please_provide_Location</ResourceName>
-    <Hidden>false</Hidden>
-  </Properties>
-  <Properties>
-    <Component>Resources.resx</Component>
-    <Name>Price</Name>
-    <StringID>290</StringID>
-    <Selected>true</Selected>
-    <ResourceName>Price</ResourceName>
-    <Hidden>false</Hidden>
-  </Properties>
-  <Properties>
-    <Component>Resources.resx</Component>
-    <Name>Qty</Name>
-    <StringID>291</StringID>
-    <Selected>true</Selected>
-    <ResourceName>Qty</ResourceName>
-    <Hidden>false</Hidden>
-  </Properties>
-  <Properties>
-    <Component>Resources.resx</Component>
-    <Name>quantity</Name>
-    <StringID>292</StringID>
-    <Selected>true</Selected>
-    <ResourceName>quantity</ResourceName>
-    <Hidden>false</Hidden>
-  </Properties>
-  <Properties>
-    <Component>Resources.resx</Component>
-    <Name>SpareID</Name>
-    <StringID>293</StringID>
-    <Selected>true</Selected>
-    <ResourceName>SpareID</ResourceName>
-    <Hidden>false</Hidden>
-  </Properties>
-  <Properties>
-    <Component>Resources.resx</Component>
-    <Name>SpareName</Name>
-    <StringID>294</StringID>
-    <Selected>true</Selected>
-    <ResourceName>SpareName</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
   <Properties>
@@ -15761,7 +16900,7 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>SelectLanguage.cs</Component>
     <Name>btOK.Text</Name>
-    <StringID>386</StringID>
+    <StringID>471</StringID>
     <Selected>true</Selected>
     <ResourceName>btOK.Text</ResourceName>
     <Hidden>false</Hidden>
@@ -16205,7 +17344,7 @@ Please call technician for help.</LanguageText>
   </GeneralAttributes>
   <GeneralAttributes>
     <Name>StatusHash</Name>
-    <TextValue>DVI7zu67NTvvkdqrHZB8HpyAahM=</TextValue>
+    <TextValue>gnJ1A7cw83YngyF2ZJCFmCLFOhY=</TextValue>
     <NumValue>0</NumValue>
   </GeneralAttributes>
   <GeneralAttributes>

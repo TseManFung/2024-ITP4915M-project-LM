@@ -30,7 +30,7 @@ namespace WindowsFormsApp
                 }
             }
             this.comboBoxSaleArea.DataSource = Locationlist;
-            this.comboBoxSaleArea.DisplayMember = Resources.Location;
+            this.comboBoxSaleArea.DisplayMember = "Location";
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)

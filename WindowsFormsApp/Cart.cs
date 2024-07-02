@@ -32,8 +32,8 @@ namespace WindowsFormsApp
             number.Controls[0].Visible = false;
             if (Cart.Rows.Count > 0)
             {
-                txtSpareID.Text = dgvSelectedSpare.Rows[0].Cells[Resources.SpareID].Value.ToString();
-                number.Value = Convert.ToInt32(dgvSelectedSpare.Rows[0].Cells[Resources.Qty].Value);
+                txtSpareID.Text = dgvSelectedSpare.Rows[0].Cells["SpareID"].Value.ToString();
+                number.Value = Convert.ToInt32(dgvSelectedSpare.Rows[0].Cells["Qty"].Value);
 
             }
             cucalateTotal(Cart.DefaultView);
@@ -54,12 +54,12 @@ namespace WindowsFormsApp
         {
             foreach (DataGridViewRow row in dgvSelectedSpare.Rows)
             {
-                int qty = Convert.ToInt32(row.Cells[Resources.Qty].Value);
-                int stock = getStock(row.Cells[Resources.SpareID].Value.ToString());
+                int qty = Convert.ToInt32(row.Cells["Qty"].Value);
+                int stock = getStock(row.Cells["SpareID"].Value.ToString());
                 if (qty > stock)
                 {
                     qty = stock;
-                    row.Cells[Resources.Qty].Style.BackColor = Color.Yellow;
+                    row.Cells["Qty"].Style.BackColor = Color.Yellow;
                     return false;
                 }
             }
@@ -73,7 +73,7 @@ namespace WindowsFormsApp
             {
                 if (reader.Read())
                 {
-                    return reader.GetInt32(Resources.quantity);
+                    return reader.GetInt32("quantity");
                 }
             }
             throw new Exception(Resources.No_stock_found);
@@ -81,13 +81,13 @@ namespace WindowsFormsApp
 
         private void dgvSelectedSpareName_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            string sid = dgvSelectedSpare.Rows[e.RowIndex].Cells[Resources.SpareID].Value.ToString();
+            string sid = dgvSelectedSpare.Rows[e.RowIndex].Cells["SpareID"].Value.ToString();
             if (sid != txtSpareID.Text)
             {
                 try{
                 txtSpareID.Text = sid;
                 number.Maximum = getStock(sid);
-                    number.Value = Convert.ToInt32(dgvSelectedSpare.Rows[e.RowIndex].Cells[Resources.Qty].Value); }catch(Exception ex)
+                    number.Value = Convert.ToInt32(dgvSelectedSpare.Rows[e.RowIndex].Cells["Qty"].Value); }catch(Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                     number.Value = number.Maximum;
@@ -149,7 +149,7 @@ namespace WindowsFormsApp
             var selectedRows = Cart.Select("SpareID = '" + txtSpareID.Text + "'");
             if (selectedRows.Length > 0 && n >=1 && n <=number.Maximum)
             {
-                selectedRows[0][Resources.Qty] = n;
+                selectedRows[0]["Qty"] = n;
             }else if (n > number.Maximum)
             {
                 number.Value = number.Maximum;
@@ -165,8 +165,8 @@ namespace WindowsFormsApp
             decimal TotalPrice = 0;
             foreach (DataRowView row in dv)
             {
-                TotalPrice += Convert.ToDecimal(row[Resources.Price]) * Convert.ToDecimal(row[Resources.Qty]);
-                TotalQuantity += Convert.ToInt32(row[Resources.Qty]);
+                TotalPrice += Convert.ToDecimal(row["Price"]) * Convert.ToDecimal(row["Qty"]);
+                TotalQuantity += Convert.ToInt32(row["Qty"]);
             }
             lblTotalPrice.Text = String.Format(Resources.IS_Total_Price_0,TotalPrice);
             lblTotalQuantity.Text = String.Format(Resources.IS_Total_Quantity_0,TotalQuantity);
@@ -177,8 +177,8 @@ namespace WindowsFormsApp
         private void removeRow(int index)
         {
             // get spare ID from index
-            string sid = dgvSelectedSpare.Rows[index].Cells[Resources.SpareID].Value.ToString(),
-                sn = dgvSelectedSpare.Rows[0].Cells[Resources.SpareName].Value.ToString();
+            string sid = dgvSelectedSpare.Rows[index].Cells["SpareID"].Value.ToString(),
+                sn = dgvSelectedSpare.Rows[0].Cells["SpareName"].Value.ToString();
 
             // remove from database
             if (Main.ShowYesNoDialog(String.Format(Resources.IS_Are_you_sure_you_want_to_re,sid,sn)))
@@ -245,7 +245,7 @@ namespace WindowsFormsApp
             }
             try
             {
-                Main.db.insert(Resources._Order, orderID, dealerID, DateTime.UtcNow.AddHours(8).ToString("yyyy-MM-dd HH:mm:ss"), DorderNumber, "C", null);
+                Main.db.insert("Order", orderID, dealerID, DateTime.UtcNow.AddHours(8).ToString("yyyy-MM-dd HH:mm:ss"), DorderNumber, "C", null);
             }
             catch (Exception ex) {
                 Main.ShowMessage(Resources.System_is_busy_please_try_agai);
@@ -256,16 +256,16 @@ namespace WindowsFormsApp
             foreach (DataRow row in Cart.Rows)
             {
                 // get the current stock
-                string stockSQL = $"SELECT quantity FROM Stock WHERE SpareID = '{row[Resources.SpareID]}';";
+                string stockSQL = $"SELECT quantity FROM Stock WHERE SpareID = '{row["SpareID"]}';";
                 int stock;
-                int qty = Convert.ToInt32(row[Resources.Qty]);
+                int qty = Convert.ToInt32(row["Qty"]);
                 using (var reader = Main.db.readBySql(stockSQL))
                 {
-                    stock = reader.Read() ? reader.GetInt32(Resources.quantity) : throw new Exception(Resources.can_not_get_stock);
+                    stock = reader.Read() ? reader.GetInt32("quantity") : throw new Exception(Resources.can_not_get_stock);
                 }
                 if (stock < qty)
                 {
-                    if (Main.ShowYesNoDialog(String.Format(Resources.IS_Not_enough_stock_for_0_1_On,row[Resources.SpareID],row[Resources.SpareName],stock)))
+                    if (Main.ShowYesNoDialog(String.Format(Resources.IS_Not_enough_stock_for_0_1_On,row["SpareID"],row["SpareName"],stock)))
                     {
                         qty = stock;
                     }
@@ -276,7 +276,7 @@ namespace WindowsFormsApp
 
                         Main.db.updateBySql($"DELETE FROM `Order` WHERE `OrderSerial` = \"{orderID}\";");
                         //update the database
-                        Main.db.updateBySql($"Update `Cart` set `Qty` = {stock} Where UserID = {Main.userID} and SpareID = \"{row[Resources.SpareID]}\"");
+                        Main.db.updateBySql($"Update `Cart` set `Qty` = {stock} Where UserID = {Main.userID} and SpareID = \"{row["SpareID"]}\"");
                         getData();
                         number.Value = stock;
                         return;
@@ -286,15 +286,15 @@ namespace WindowsFormsApp
                 // get the current price
                 decimal price;
 
-                using (var reader = Main.db.readBySql($"SELECT Price FROM Spare WHERE SpareID = '{row[Resources.SpareID]}';"))
+                using (var reader = Main.db.readBySql($"SELECT Price FROM Spare WHERE SpareID = '{row["SpareID"]}';"))
                 {
-                    price = reader.Read() ? reader.GetDecimal(Resources.Price) : throw new Exception(Resources.can_not_get_price);
+                    price = reader.Read() ? reader.GetDecimal("Price") : throw new Exception(Resources.can_not_get_price);
                 }
-                if (price != (decimal)row[Resources.Price])
+                if (price != (decimal)row["Price"])
                 {
-                    if (Main.ShowYesNoDialog(String.Format(Resources.IS_The_price_of_0_1_has_change,row[Resources.SpareID],row[Resources.SpareName],row[Resources.Price],price)))
+                    if (Main.ShowYesNoDialog(String.Format(Resources.IS_The_price_of_0_1_has_change,row["SpareID"],row["SpareName"],row["Price"],price)))
                     {
-                        row[Resources.Price] = price;
+                        row["Price"] = price;
                     }
                     else
                     {
@@ -309,9 +309,9 @@ namespace WindowsFormsApp
                     }
                 }
 
-                Main.db.insert(Resources.OrderItem, orderID, row[Resources.SpareID], qty, row[Resources.Price]);
+                Main.db.insert("OrderItem", orderID, row["SpareID"], qty, row["Price"]);
                 // - the stock
-                Main.db.updateBySql($"UPDATE Stock SET quantity = quantity - {qty} WHERE SpareID = '{row[Resources.SpareID]}';");
+                Main.db.updateBySql($"UPDATE Stock SET quantity = quantity - {qty} WHERE SpareID = '{row["SpareID"]}';");
 
             }
             ClearCart();
@@ -325,7 +325,7 @@ namespace WindowsFormsApp
         {
             foreach (DataRow row in Cart.Rows)
             {
-                string sql = $"UPDATE Cart SET Qty = {row[Resources.Qty]} WHERE SpareID = \"{row[Resources.SpareID]}\" AND UserID = {Main.userID};";
+                string sql = $"UPDATE Cart SET Qty = {row["Qty"]} WHERE SpareID = \"{row["SpareID"]}\" AND UserID = {Main.userID};";
                 Main.db.updateBySql(sql);
             }
         }
