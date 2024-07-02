@@ -12420,32 +12420,28 @@ Please call technician for help.</LanguageText>
   <Properties>
     <Component>reportCondition.cs</Component>
     <Name>comboBox3.Items[0]</Name>
-    <StringID>468</StringID>
-    <Selected>true</Selected>
+    <Selected>false</Selected>
     <ResourceName>comboBox3.Items</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
   <Properties>
     <Component>reportCondition.cs</Component>
     <Name>comboBox3.Items[1]</Name>
-    <StringID>219</StringID>
-    <Selected>true</Selected>
+    <Selected>false</Selected>
     <ResourceName>comboBox3.Items1</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
   <Properties>
     <Component>reportCondition.cs</Component>
     <Name>comboBox3.Items[2]</Name>
-    <StringID>220</StringID>
-    <Selected>true</Selected>
+    <Selected>false</Selected>
     <ResourceName>comboBox3.Items2</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
   <Properties>
     <Component>reportCondition.cs</Component>
     <Name>comboBox3.Items[3]</Name>
-    <StringID>221</StringID>
-    <Selected>true</Selected>
+    <Selected>false</Selected>
     <ResourceName>comboBox3.Items3</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
@@ -15663,38 +15659,6 @@ Please call technician for help.</LanguageText>
     <StringID>216</StringID>
     <Selected>true</Selected>
     <ResourceName>comboBox1.Items4</ResourceName>
-    <Hidden>false</Hidden>
-  </Properties>
-  <Properties>
-    <Component>reportCondition.resx</Component>
-    <Name>comboBox3.Items</Name>
-    <StringID>218</StringID>
-    <Selected>true</Selected>
-    <ResourceName>comboBox3.Items</ResourceName>
-    <Hidden>false</Hidden>
-  </Properties>
-  <Properties>
-    <Component>reportCondition.resx</Component>
-    <Name>comboBox3.Items1</Name>
-    <StringID>219</StringID>
-    <Selected>true</Selected>
-    <ResourceName>comboBox3.Items1</ResourceName>
-    <Hidden>false</Hidden>
-  </Properties>
-  <Properties>
-    <Component>reportCondition.resx</Component>
-    <Name>comboBox3.Items2</Name>
-    <StringID>220</StringID>
-    <Selected>true</Selected>
-    <ResourceName>comboBox3.Items2</ResourceName>
-    <Hidden>false</Hidden>
-  </Properties>
-  <Properties>
-    <Component>reportCondition.resx</Component>
-    <Name>comboBox3.Items3</Name>
-    <StringID>221</StringID>
-    <Selected>true</Selected>
-    <ResourceName>comboBox3.Items3</ResourceName>
     <Hidden>false</Hidden>
   </Properties>
   <Properties>

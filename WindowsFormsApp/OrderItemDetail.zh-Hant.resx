@@ -124,6 +124,6 @@
     <value>搜索</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>狀態：</value>
+    <value>訂單：</value>
   </data>
 </root>

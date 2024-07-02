@@ -81,7 +81,9 @@ namespace WindowsFormsApp
             }
 
 
-            sql = $"SELECT a.ItemID, s.SpareName, s.Weight, oi.Quantity - IFNULL(f.Quantity, 0) - CASE WHEN i.CompleteState = 'C' THEN (SELECT SUM(quantity) FROM ActualQuantityDespatched WHERE InvoiceID = '{InvoiceID}') ELSE 0 END AS 'Prev Qty', a.Quantity AS 'Qty delivered', IFNULL(f.Quantity, 0) AS 'Qty to follow', a.BundlesNumber, oi.PriceInOrder as 'UnitPrice' FROM ActualQuantityDespatched a INNER JOIN Invoice i ON a.InvoiceID = i.InvoiceID INNER JOIN Spare s ON a.ItemID = s.SpareID LEFT JOIN OrderItemToFollow f ON f.ItemID = a.ItemID INNER JOIN OrderItem oi ON a.ItemID = oi.ItemID AND oi.OrderSerial = '{orderSerial}' WHERE a.InvoiceID = '{InvoiceID}' GROUP BY a.ItemID, s.SpareName, s.Weight, oi.Quantity - IFNULL(f.Quantity, 0) - CASE WHEN i.CompleteState = 'C' THEN (SELECT SUM(quantity) FROM ActualQuantityDespatched WHERE InvoiceID = '{InvoiceID}') ELSE 0 END, a.Quantity, IFNULL(f.Quantity, 0),f.Quantity, a.BundlesNumber;";
+            sql = $@"SELECT a.ItemID,  s.SpareName,  s.Weight,oi.Quantity,  
+oi.Quantity - IFNULL(f.Quantity, 0) - CASE WHEN i.CompleteState = 'C' THEN (SELECT SUM(quantity) FROM ActualQuantityDespatched WHERE InvoiceID = '{InvoiceID}' and ItemID = a.ItemID) ELSE 0 END AS 'Prev Qty',  
+a.Quantity AS 'Qty delivered',  IFNULL(f.Quantity, 0) AS 'Qty to follow',  a.BundlesNumber, oi.PriceInOrder as 'UnitPrice' FROM  ActualQuantityDespatched a  INNER JOIN Invoice i ON a.InvoiceID = i.InvoiceID  INNER JOIN Spare s ON a.ItemID = s.SpareID  LEFT JOIN OrderItemToFollow f ON f.ItemID = a.ItemID and f.OrderSerial =  i.OrderSerial INNER JOIN OrderItem oi ON a.ItemID = oi.ItemID AND oi.OrderSerial = '{orderSerial}' WHERE  a.InvoiceID = '{InvoiceID}' GROUP BY  a.ItemID,  s.SpareName,  s.Weight,  'Prev Qty',  a.Quantity,  'Qty delivered',f.Quantity,  a.BundlesNumber;";
             using (dt = Main.db.GetDataTable(sql))
             {
                 foreach (DataRow row in dt.Rows)

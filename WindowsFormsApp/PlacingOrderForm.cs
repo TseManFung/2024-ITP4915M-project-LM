@@ -37,6 +37,7 @@ namespace WindowsFormsApp
                 comboBoxSpareName.Items.Clear();
                 comboBoxSpareName.Items.AddRange(Spare.AsEnumerable().Select(x => x[sn].ToString()).ToArray());
             }
+            comboBoxCategoryType.SelectedIndex = -1;
             //comboBoxSpareID.DataSource = Spare;
             //comboBoxSpareID.DisplayMember = "SpareID"; 
             //comboBoxSpareID.ValueMember = "SpareID"; 

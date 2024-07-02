@@ -907,7 +907,7 @@
     <ShortName>Text</ShortName>
     <XPath />
     <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText>Repart new password:</OriginalText>
+    <OriginalText>Enter New PW Again:</OriginalText>
     <SortKey>BAlblRepartNewPassword.Text</SortKey>
     <NodeType>8963</NodeType>
     <Expanded>false</Expanded>
@@ -4674,7 +4674,7 @@
     <ProgID>System.Windows.Forms.Form</ProgID>
     <OriginalText>A</OriginalText>
     <SortKey>BAcomboBox3.Items[0]</SortKey>
-    <NodeType>8965</NodeType>
+    <NodeType>8709</NodeType>
     <Expanded>false</Expanded>
     <ItemLevel>1</ItemLevel>
     <ArrayIndexOrCount>0</ArrayIndexOrCount>
@@ -4689,7 +4689,7 @@
     <ProgID>System.Windows.Forms.Form</ProgID>
     <OriginalText>B</OriginalText>
     <SortKey>BAcomboBox3.Items[1]</SortKey>
-    <NodeType>8965</NodeType>
+    <NodeType>8709</NodeType>
     <Expanded>false</Expanded>
     <ItemLevel>1</ItemLevel>
     <ArrayIndexOrCount>1</ArrayIndexOrCount>
@@ -4704,7 +4704,7 @@
     <ProgID>System.Windows.Forms.Form</ProgID>
     <OriginalText>C</OriginalText>
     <SortKey>BAcomboBox3.Items[2]</SortKey>
-    <NodeType>8965</NodeType>
+    <NodeType>8709</NodeType>
     <Expanded>false</Expanded>
     <ItemLevel>1</ItemLevel>
     <ArrayIndexOrCount>2</ArrayIndexOrCount>
@@ -4719,7 +4719,7 @@
     <ProgID>System.Windows.Forms.Form</ProgID>
     <OriginalText>D</OriginalText>
     <SortKey>BAcomboBox3.Items[3]</SortKey>
-    <NodeType>8965</NodeType>
+    <NodeType>8709</NodeType>
     <Expanded>false</Expanded>
     <ItemLevel>1</ItemLevel>
     <ArrayIndexOrCount>3</ArrayIndexOrCount>

@@ -117,20 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="_Date" xml:space="preserve">
-    <value>日期</value>
-  </data>
-  <data name="_error" xml:space="preserve">
-    <value>错误</value>
-  </data>
-  <data name="_Order" xml:space="preserve">
-    <value>订单</value>
-  </data>
   <data name="Add_Department" xml:space="preserve">
     <value>添加部门</value>
   </data>
   <data name="Add_New_Spare" xml:space="preserve">
-    <value>添加新备件</value>
+    <value>添加新零件</value>
   </data>
   <data name="Add_SaleArea" xml:space="preserve">
     <value>添加销售区域</value>
@@ -139,7 +130,7 @@
     <value>添加仓库</value>
   </data>
   <data name="All_fuck_up" xml:space="preserve">
-    <value>备件的数量不一致</value>
+    <value>零件的数量不一致</value>
   </data>
   <data name="all_warehouse" xml:space="preserve">
     <value>所有仓库</value>
@@ -162,6 +153,9 @@
   <data name="Are_you_sure_you_want_to_remov" xml:space="preserve">
     <value>您确定要从购物车中删除所有商品吗？</value>
   </data>
+  <data name="Cannot_select_the_location_to_" xml:space="preserve">
+    <value>无法选择要删除的位置！</value>
+  </data>
   <data name="can_not_get_price" xml:space="preserve">
     <value>无法获取价格</value>
   </data>
@@ -171,11 +165,8 @@
   <data name="Can_not_print_now" xml:space="preserve">
     <value>现在无法打印</value>
   </data>
-  <data name="Cannot_select_the_location_to_" xml:space="preserve">
-    <value>无法选择要删除的位置！</value>
-  </data>
   <data name="Collect_Spare" xml:space="preserve">
-    <value>收集备件</value>
+    <value>收集零件</value>
   </data>
   <data name="companyName" xml:space="preserve">
     <value>公司名称</value>
@@ -192,6 +183,9 @@
   <data name="Data_sources_are_not_properly_" xml:space="preserve">
     <value>数据源未正确初始化。</value>
   </data>
+  <data name="DealerID" xml:space="preserve">
+    <value>经销商ID</value>
+  </data>
   <data name="DEALER_CODE" xml:space="preserve">
     <value>经销商代码</value>
   </data>
@@ -201,8 +195,8 @@
   <data name="Dealer_name" xml:space="preserve">
     <value>经销商名称：</value>
   </data>
-  <data name="DealerID" xml:space="preserve">
-    <value>经销商ID</value>
+  <data name="DeliveryAddress" xml:space="preserve">
+    <value>收货地址</value>
   </data>
   <data name="DELIVERY_ADDRESS_IF_DIFFERENT" xml:space="preserve">
     <value>收货地址（如果不同）</value>
@@ -210,23 +204,20 @@
   <data name="Delivery_address_not_yet_recor" xml:space="preserve">
     <value>收货位址尚未记录。</value>
   </data>
-  <data name="DeliveryAddress" xml:space="preserve">
-    <value>收货地址</value>
-  </data>
   <data name="Department_ID_already_exists_P" xml:space="preserve">
-    <value>“部门识别码”已存在。请选择其他 ID。</value>
+    <value>“部门ID”已存在。请选择其他 ID。</value>
   </data>
   <data name="Department_ID_cannot_exceed_5_" xml:space="preserve">
     <value>部门识别码不能超过 5 个字符。请重新输入。</value>
   </data>
   <data name="Despatch_Foreman" xml:space="preserve">
-    <value>发货工头</value>
+    <value>经手人</value>
   </data>
   <data name="Despatch_Instruction_Set" xml:space="preserve">
     <value>发货指令集</value>
   </data>
   <data name="Do_you_want_to_change_the_data" xml:space="preserve">
-    <value>是否要更改数据？</value>
+    <value>是否要更改资料？</value>
   </data>
   <data name="Do_you_want_to_turn_to_the_nex" xml:space="preserve">
     <value>你想翻到下一页吗？</value>
@@ -235,13 +226,13 @@
     <value>重复的电话号码</value>
   </data>
   <data name="Edit_Department" xml:space="preserve">
-    <value>编辑部</value>
+    <value>编辑部门</value>
   </data>
   <data name="Edit_SaleArea" xml:space="preserve">
     <value>编辑销售区域</value>
   </data>
   <data name="Edit_Spare" xml:space="preserve">
-    <value>编辑备件</value>
+    <value>编辑零件</value>
   </data>
   <data name="Edit_Warehouse" xml:space="preserve">
     <value>编辑仓库</value>
@@ -256,8 +247,8 @@
   <data name="Grams_LegendMC" xml:space="preserve">
     <value>克：LegendMC</value>
   </data>
-  <data name="In_transit" xml:space="preserve">
-    <value>在途中</value>
+  <data name="have_restock_order" xml:space="preserve">
+    <value>有补货订单！</value>
   </data>
   <data name="Invalid_access_level_Please_en" xml:space="preserve">
     <value>访问级别无效。请输入一个介于 1 和 10000 之间的有效整数值。</value>
@@ -271,11 +262,14 @@
   <data name="Invalid_input_Please_enter_a_v0" xml:space="preserve">
     <value>输入无效。请输入最多 20 位数位的有效数位。</value>
   </data>
+  <data name="InvoiceDate" xml:space="preserve">
+    <value>发票日期</value>
+  </data>
   <data name="INVOICE_ADDRESS" xml:space="preserve">
     <value>发票地址</value>
   </data>
-  <data name="InvoiceDate" xml:space="preserve">
-    <value>发票日期</value>
+  <data name="In_transit" xml:space="preserve">
+    <value>在途中</value>
   </data>
   <data name="IS_Are_you_sure_you_want_to_re" xml:space="preserve">
     <value>您确实要从购物车中删除 {0}：{1} ？</value>
@@ -287,16 +281,15 @@
     <value>错误： {0} 已在您的购物车中</value>
   </data>
   <data name="IS_Not_enough_stock_for_0_1_On" xml:space="preserve">
-    <value> {0}库存不足：只有{1}
- 可以订购 {2}
-还在下订单？</value>
+    <value>{0}:{1}库存不足，只有{2}
+还在要下订单？</value>
   </data>
   <data name="IS_Order_placed_successfully_t" xml:space="preserve">
     <value>下单成功，订单序列号为 {0}</value>
   </data>
   <data name="IS_The_price_of_0_1_has_change" xml:space="preserve">
-    <value> {0}的价格 ：{1} 已从 {2} 更改为 {3}
-还在下订单？</value>
+    <value>{0}的价格 ：{1} 已从 {2} 更改为 {3}
+还要下订单？</value>
   </data>
   <data name="IS_Total_Price_0" xml:space="preserve">
     <value>总价：
@@ -307,7 +300,7 @@
 {0}</value>
   </data>
   <data name="Item_successfully_deleted" xml:space="preserve">
-    <value>專案已成功刪除</value>
+    <value>物品已成功删除</value>
   </data>
   <data name="Latitude_must_be_between_90_an" xml:space="preserve">
     <value>纬度必须介于 -90 和 90 之间。无效输入</value>
@@ -331,7 +324,7 @@
     <value>缺少资料！</value>
   </data>
   <data name="Modify_Information" xml:space="preserve">
-    <value>修改信息</value>
+    <value>修改资讯</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>名字</value>
@@ -343,7 +336,7 @@
     <value>未找到数据</value>
   </data>
   <data name="No_data_to_export" xml:space="preserve">
-    <value>没有要导出的数据</value>
+    <value>没有要汇出的数据</value>
   </data>
   <data name="No_data_to_save" xml:space="preserve">
     <value>没有数据要保存</value>
@@ -358,10 +351,10 @@
     <value>没有捆绑包数量</value>
   </data>
   <data name="No_Order_to_Collect" xml:space="preserve">
-    <value>没有订单可取</value>
+    <value>没有零件要收集</value>
   </data>
   <data name="No_path_selected" xml:space="preserve">
-    <value>未选择路径</value>
+    <value>未选择位置</value>
   </data>
   <data name="No_rows_available_in_the_resto" xml:space="preserve">
     <value>補貨清單中沒有可用的行。</value>
@@ -370,7 +363,7 @@
     <value>沒有可供移動的行。</value>
   </data>
   <data name="No_rows_were_processed" xml:space="preserve">
-    <value>未處理任何行。</value>
+    <value>请选择至少一个零件!</value>
   </data>
   <data name="No_saleArea" xml:space="preserve">
     <value>暂无销售区域</value>
@@ -386,6 +379,9 @@
   </data>
   <data name="Only_spaces_and_letters_are_al" xml:space="preserve">
     <value>只允許使用空格和字母！</value>
+  </data>
+  <data name="OrderItem" xml:space="preserve">
+    <value>订单项</value>
   </data>
   <data name="Order_can_not_be_deleted" xml:space="preserve">
     <value>订单无法删除</value>
@@ -405,14 +401,11 @@
   <data name="Order_Record" xml:space="preserve">
     <value>订单记录</value>
   </data>
-  <data name="OrderItem" xml:space="preserve">
-    <value>订单项</value>
-  </data>
   <data name="OUR_ORDER_NO" xml:space="preserve">
     <value>我们的订单号</value>
   </data>
   <data name="Part_No" xml:space="preserve">
-    <value>备件编号</value>
+    <value>零件编号</value>
   </data>
   <data name="Phone_number_cannot_exceed_20_" xml:space="preserve">
     <value>电话号码不能超过 20 位数字。</value>
@@ -422,10 +415,10 @@
   </data>
   <data name="Please_contact_us_to_reset_you" xml:space="preserve">
     <value>请联系我们重置您的密码。
-    香港电话：2595-8333
-    中国电话：012-3456-7890
-    电子邮件： it@legendmotor.com
-营业时间：每日上午9时至下午6时，包括公众假期。</value>
+   香港电话：2595-8333
+   中国电话：012-3456-7890
+   电子邮件： it@legendmotor.com
+上班时间：每日上午9时至下午6时，不包括公众假期。</value>
   </data>
   <data name="Please_enter_a_maximum_of_20_d" xml:space="preserve">
     <value>请输入最多20位数位！</value>
@@ -437,7 +430,7 @@
     <value>请输入完整数据！</value>
   </data>
   <data name="Please_enter_valid_numeric_val" xml:space="preserve">
-    <value>请输入纬度和经度的有效数值。无效输入</value>
+    <value>请输入有效的纬度和经度数值</value>
   </data>
   <data name="Please_enter_values_in_at_leas" xml:space="preserve">
     <value>请在至少一个字段中输入值。</value>
@@ -463,6 +456,12 @@
   <data name="Please_provide_Location" xml:space="preserve">
     <value>请提供位置！</value>
   </data>
+  <data name="Please_select_an_account_optio" xml:space="preserve">
+    <value>请选择一个帐户选项！</value>
+  </data>
+  <data name="Please_select_an_item_to_delet" xml:space="preserve">
+    <value>请选择要删除的专案</value>
+  </data>
   <data name="Please_select_a_gemder" xml:space="preserve">
     <value>请选择一个性别！</value>
   </data>
@@ -473,16 +472,13 @@
     <value>请选择要移动的一行。</value>
   </data>
   <data name="Please_select_a_spare" xml:space="preserve">
-    <value>请选择备件</value>
+    <value>请选择零件</value>
   </data>
-  <data name="Please_select_an_account_optio" xml:space="preserve">
-    <value>请选择一个帐户选项！</value>
-  </data>
-  <data name="Please_select_an_item_to_delet" xml:space="preserve">
-    <value>请选择要删除的专案</value>
+  <data name="Please_select_a_warehouse" xml:space="preserve">
+    <value>请选择仓库</value>
   </data>
   <data name="Prev_Qty" xml:space="preserve">
-    <value>上一页 数量</value>
+    <value>之前数量</value>
   </data>
   <data name="Price" xml:space="preserve">
     <value>价格</value>
@@ -494,19 +490,13 @@
     <value>数量</value>
   </data>
   <data name="Qty_to_follow" xml:space="preserve">
-    <value>要遵循的数量</value>
+    <value>未完成的数量</value>
   </data>
   <data name="quantity" xml:space="preserve">
     <value>数量</value>
   </data>
   <data name="Quantity_delivered" xml:space="preserve">
     <value>交付数量</value>
-  </data>
-  <data name="Re_Stock" xml:space="preserve">
-    <value>补货</value>
-  </data>
-  <data name="Re_Stock_Record" xml:space="preserve">
-    <value>补货记录</value>
   </data>
   <data name="Received" xml:space="preserve">
     <value>收到</value>
@@ -516,6 +506,12 @@
   </data>
   <data name="Report" xml:space="preserve">
     <value>报告</value>
+  </data>
+  <data name="Re_Stock" xml:space="preserve">
+    <value>补货</value>
+  </data>
+  <data name="Re_Stock_Record" xml:space="preserve">
+    <value>补货记录</value>
   </data>
   <data name="Same_location" xml:space="preserve">
     <value>同一地點</value>
@@ -527,46 +523,52 @@
     <value>扫描。。。</value>
   </data>
   <data name="scrap" xml:space="preserve">
-    <value>废料</value>
+    <value>报废零件</value>
   </data>
   <data name="ScrapItem_Successful" xml:space="preserve">
-    <value>报废物品成功！</value>
+    <value>报废成功！</value>
   </data>
   <data name="Select_language" xml:space="preserve">
     <value>选择语言</value>
   </data>
-  <data name="set_stock_level" xml:space="preserve">
-    <value>设置库存水平</value>
-  </data>
   <data name="Setting_Successful" xml:space="preserve">
     <value>设置成功！</value>
   </data>
+  <data name="set_stock_level" xml:space="preserve">
+    <value>设置库存水平</value>
+  </data>
   <data name="Shipping" xml:space="preserve">
-    <value>航运</value>
+    <value>运送中</value>
   </data>
   <data name="Signatory" xml:space="preserve">
-    <value>签署</value>
+    <value>签署人</value>
   </data>
   <data name="Signature" xml:space="preserve">
     <value>签名</value>
+  </data>
+  <data name="Signature_already_exists" xml:space="preserve">
+    <value>已经签名了</value>
   </data>
   <data name="Simulate_server" xml:space="preserve">
     <value>模拟服务器</value>
   </data>
   <data name="SpareID" xml:space="preserve">
-    <value>备件 ID</value>
+    <value>零件 ID</value>
   </data>
   <data name="SpareName" xml:space="preserve">
-    <value>备件名称</value>
+    <value>零件名称</value>
   </data>
   <data name="SpareType" xml:space="preserve">
-    <value>备件类型</value>
+    <value>零件类型</value>
   </data>
   <data name="StaffID" xml:space="preserve">
     <value>员工 ID</value>
   </data>
   <data name="StaffID_not_found_for_current_" xml:space="preserve">
-    <value>找不到當前使用者的成员ID。</value>
+    <value>找不到当前user的员工ID。</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
   </data>
   <data name="succeed" xml:space="preserve">
     <value>成功！</value>
@@ -586,11 +588,11 @@
   <data name="Successful_add" xml:space="preserve">
     <value>添加成功！</value>
   </data>
-  <data name="Successful_ADD_your_added_new_" xml:space="preserve">
-    <value>添加成功，您添加的新备件ID为</value>
-  </data>
   <data name="Successful_adding" xml:space="preserve">
     <value>添加成功！</value>
+  </data>
+  <data name="Successful_ADD_your_added_new_" xml:space="preserve">
+    <value>添加成功，您添加的新零件ID为</value>
   </data>
   <data name="Successful_creating" xml:space="preserve">
     <value>成功创建</value>
@@ -601,11 +603,11 @@
   <data name="Successful_reset_password" xml:space="preserve">
     <value>重置密码成功</value>
   </data>
-  <data name="Supplier_Management" xml:space="preserve">
-    <value>供应商管理</value>
-  </data>
   <data name="SupplierName" xml:space="preserve">
     <value>供应商名称</value>
+  </data>
+  <data name="Supplier_Management" xml:space="preserve">
+    <value>供应商管理</value>
   </data>
   <data name="System_is_busy_please_try_agai" xml:space="preserve">
     <value>系统繁忙，请稍后再试</value>
@@ -629,14 +631,13 @@
     <value>输入两次的密码不同，请重新输入！</value>
   </data>
   <data name="The_settings_have_been_saved" xml:space="preserve">
-    <value>设置已保存。
-</value>
+    <value>设置已保存。</value>
   </data>
   <data name="The_spare_is_not_in_the_collec" xml:space="preserve">
-    <value>备件不在收集列表中</value>
+    <value>零件不在收集列表中</value>
   </data>
   <data name="This_invoice_create_at" xml:space="preserve">
-    <value>此发票创建于</value>
+    <value>此帐单创建于</value>
   </data>
   <data name="this_order_is_finfshed" xml:space="preserve">
     <value>此订单已完成</value>
@@ -660,7 +661,7 @@
     <value>未知状态</value>
   </data>
   <data name="User_Management" xml:space="preserve">
-    <value>用户管理</value>
+    <value>使用者管理</value>
   </data>
   <data name="Waiting" xml:space="preserve">
     <value>等待</value>
@@ -680,13 +681,13 @@
   <data name="your_working_warehouse" xml:space="preserve">
     <value>您的工作仓库</value>
   </data>
-  <data name="Signature_already_exists" xml:space="preserve">
-    <value>已经签名了</value>
+  <data name="_Date" xml:space="preserve">
+    <value>日期</value>
   </data>
-  <data name="Please_select_a_warehouse" xml:space="preserve">
-    <value>请选择仓库</value>
+  <data name="_error" xml:space="preserve">
+    <value>错误</value>
   </data>
-  <data name="have_restock_order" xml:space="preserve">
-    <value>有补货订单！</value>
+  <data name="_Order" xml:space="preserve">
+    <value>订单</value>
   </data>
 </root>

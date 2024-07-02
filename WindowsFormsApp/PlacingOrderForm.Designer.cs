@@ -60,6 +60,11 @@
             // 
             resources.ApplyResources(this.comboBoxCategoryType, "comboBoxCategoryType");
             this.comboBoxCategoryType.FormattingEnabled = true;
+            this.comboBoxCategoryType.Items.AddRange(new object[] {
+            resources.GetString("comboBoxCategoryType.Items"),
+            resources.GetString("comboBoxCategoryType.Items1"),
+            resources.GetString("comboBoxCategoryType.Items2"),
+            resources.GetString("comboBoxCategoryType.Items3")});
             this.comboBoxCategoryType.Name = "comboBoxCategoryType";
             // 
             // lblCategoryType

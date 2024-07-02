@@ -92,6 +92,10 @@ namespace WindowsFormsApp
 
             // Print SpareName and SpareID
             DataRowView drv = (DataRowView)comboBoxSpareID.SelectedItem;
+            if (drv == null) { 
+                Main.ShowMessage("Please select a SpareID");
+                return;
+            }
             string spareID = drv["SpareID"].ToString(),spareName = drv["SpareName"].ToString();
 
             // Set the font and brush for drawing text
