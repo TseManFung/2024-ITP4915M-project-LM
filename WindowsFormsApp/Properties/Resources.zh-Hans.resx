@@ -242,7 +242,7 @@
 请致电技术人员寻求帮助。</value>
   </data>
   <data name="Generate_Spare_QR_code" xml:space="preserve">
-    <value>生成备用二维码</value>
+    <value>生成零件二维码</value>
   </data>
   <data name="Grams_LegendMC" xml:space="preserve">
     <value>克：LegendMC</value>

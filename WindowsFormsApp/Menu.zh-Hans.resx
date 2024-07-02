@@ -121,7 +121,7 @@
     <value>主菜单</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>生成备用二维码</value>
+    <value>生成零件二维码</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>模拟服务器</value>
@@ -130,10 +130,10 @@
     <value>添加部门</value>
   </data>
   <data name="lblAddNewSpare.Text" xml:space="preserve">
-    <value>添加新备件</value>
+    <value>添加新零件</value>
   </data>
   <data name="lblAddSaleArea.Text" xml:space="preserve">
-    <value>添加 SaleArea</value>
+    <value>添加销售区域</value>
   </data>
   <data name="lblAddWarehouse.Text" xml:space="preserve">
     <value>添加仓库</value>
@@ -142,16 +142,16 @@
     <value>更改密码</value>
   </data>
   <data name="lblCollectSpare.Text" xml:space="preserve">
-    <value>收集备件</value>
+    <value>收集零件</value>
   </data>
   <data name="lblEditDepartment.Text" xml:space="preserve">
-    <value>编辑部</value>
+    <value>编辑部门</value>
   </data>
   <data name="lblEditSaleArea.Text" xml:space="preserve">
-    <value>编辑 SaleArea</value>
+    <value>编辑销售区域</value>
   </data>
   <data name="lblEditSpare.Text" xml:space="preserve">
-    <value>编辑备件</value>
+    <value>编辑零件</value>
   </data>
   <data name="lblEditWarehouse.Text" xml:space="preserve">
     <value>编辑仓库</value>
@@ -160,7 +160,7 @@
     <value>登出</value>
   </data>
   <data name="lblModifyInformation.Text" xml:space="preserve">
-    <value>修改信息</value>
+    <value>修改资讯</value>
   </data>
   <data name="lblOrderEdit.Text" xml:space="preserve">
     <value>订单编辑</value>
@@ -181,7 +181,7 @@
     <value>补货记录</value>
   </data>
   <data name="lblScrap.Text" xml:space="preserve">
-    <value>废料</value>
+    <value>报废零件</value>
   </data>
   <data name="lblSetStockLevel.Text" xml:space="preserve">
     <value>设置库存水平</value>
@@ -190,6 +190,6 @@
     <value>供应商管理</value>
   </data>
   <data name="lblUserManagement.Text" xml:space="preserve">
-    <value>用户管理</value>
+    <value>使用者管理</value>
   </data>
 </root>

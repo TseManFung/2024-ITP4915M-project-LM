@@ -121,7 +121,7 @@
     <value>主功能表</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>生成備用二維碼</value>
+    <value>生成零件二維碼</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>模擬伺服器</value>
@@ -130,10 +130,10 @@
     <value>添加部門</value>
   </data>
   <data name="lblAddNewSpare.Text" xml:space="preserve">
-    <value>添加新備件</value>
+    <value>添加新零件</value>
   </data>
   <data name="lblAddSaleArea.Text" xml:space="preserve">
-    <value>添加 SaleArea</value>
+    <value>添加銷售區域</value>
   </data>
   <data name="lblAddWarehouse.Text" xml:space="preserve">
     <value>添加倉庫</value>
@@ -142,16 +142,16 @@
     <value>更改密碼</value>
   </data>
   <data name="lblCollectSpare.Text" xml:space="preserve">
-    <value>收集備件</value>
+    <value>收集零件</value>
   </data>
   <data name="lblEditDepartment.Text" xml:space="preserve">
-    <value>編輯部</value>
+    <value>編輯部門</value>
   </data>
   <data name="lblEditSaleArea.Text" xml:space="preserve">
-    <value>編輯 SaleArea</value>
+    <value>編輯銷售區域</value>
   </data>
   <data name="lblEditSpare.Text" xml:space="preserve">
-    <value>編輯備件</value>
+    <value>編輯零件</value>
   </data>
   <data name="lblEditWarehouse.Text" xml:space="preserve">
     <value>編輯倉庫</value>
@@ -181,7 +181,7 @@
     <value>補貨記錄</value>
   </data>
   <data name="lblScrap.Text" xml:space="preserve">
-    <value>廢料</value>
+    <value>報廢零件</value>
   </data>
   <data name="lblSetStockLevel.Text" xml:space="preserve">
     <value>設置庫存水準</value>
