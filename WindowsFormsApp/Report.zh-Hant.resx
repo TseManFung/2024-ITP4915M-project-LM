@@ -127,7 +127,7 @@
     <value>銷售報告（倉庫）</value>
   </data>
   <data name="comboBoxReportType.Items1" xml:space="preserve">
-    <value>銷售報告（備用）</value>
+    <value>銷售報告（備件）</value>
   </data>
   <data name="comboBoxReportType.Items2" xml:space="preserve">
     <value>庫存報告</value>

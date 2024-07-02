@@ -120,9 +120,6 @@
   <data name="btnLogIn.Text" xml:space="preserve">
     <value>登錄</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>登錄</value>
-  </data>
   <data name="lblForgotPassword.Text" xml:space="preserve">
     <value>忘記密碼？</value>
   </data>
@@ -137,5 +134,8 @@
   </data>
   <data name="lblWrongPassword.Text" xml:space="preserve">
     <value>登錄名或密碼錯誤</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>登錄</value>
   </data>
 </root>

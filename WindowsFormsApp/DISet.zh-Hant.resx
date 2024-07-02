@@ -127,7 +127,7 @@
     <value>日期：</value>
   </data>
   <data name="lblDealerOrderNo.Text" xml:space="preserve">
-    <value>轉銷商訂單號:</value>
+    <value>經銷商訂單號:</value>
   </data>
   <data name="lblDeliveryAddress.Text" xml:space="preserve">
     <value>收貨位址：</value>

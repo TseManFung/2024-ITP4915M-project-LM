@@ -127,7 +127,7 @@
     <value>添加倉庫</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>名稱：</value>
+    <value>名字：</value>
   </data>
   <data name="lblLocation.Text" xml:space="preserve">
     <value>位置：</value>

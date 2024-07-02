@@ -130,7 +130,7 @@
     <value>下單</value>
   </data>
   <data name="lblCategoryType.Text" xml:space="preserve">
-    <value>類別類型：</value>
+    <value>種類(類型)：</value>
   </data>
   <data name="lblSelectedSpareName.Text" xml:space="preserve">
     <value>選定的備件名稱：</value>

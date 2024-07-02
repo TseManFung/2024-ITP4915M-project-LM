@@ -133,7 +133,7 @@
     <value>交货</value>
   </data>
   <data name="lblItems.Text" xml:space="preserve">
-    <value>0 个项目</value>
+    <value>0 个物品</value>
   </data>
   <data name="lblRelatedspare.Text" xml:space="preserve">
     <value>相关备件：</value>

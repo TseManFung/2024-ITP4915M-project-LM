@@ -67,7 +67,7 @@ namespace WindowsFormsApp
 
         private void frmUserManagementAndAccountManagement_Load(object sender, EventArgs e)
         {
-
+            txtAccessLevel.Text = "1";
         }
 
         private void txtLoginName_TextChanged(object sender, EventArgs e)
@@ -77,8 +77,9 @@ namespace WindowsFormsApp
 
         private void txtAccessLevel_TextChanged(object sender, EventArgs e)
         {
-            if (int.TryParse(txtAccessLevel.Text?.TrimStart('1'), out int accessLevel))
+            if (int.TryParse(txtAccessLevel.Text, out int accessLevel))
             {
+                // Check if the access level is within the allowed range
                 if (accessLevel >= 1 && accessLevel <= 10000)
                 {
                     GlobalAccessLevelForCreate = accessLevel;
@@ -90,23 +91,15 @@ namespace WindowsFormsApp
             }
             else
             {
-                if (txtAccessLevel.Text == null)
-                {
-                    txtAccessLevel.Text = "1";
-                }
-                else
-                {
-                    ShowInvalidAccessLevelError();
-                }
+                // If parsing fails, show an error and reset the access level to 1
+                ShowInvalidAccessLevelError();
             }
 
             void ShowInvalidAccessLevelError()
             {
-                if (txtAccessLevel.Text != null && txtAccessLevel.Text != "1")
-                {
-                    Main.ShowMessage(Resources.Invalid_access_level_Please_en);
-                    txtAccessLevel.Text = "1";
-                }
+                // Display an error message and reset the text to "1"
+                Main.ShowMessage(Resources.Invalid_access_level_Please_en);
+                txtAccessLevel.Text = "1";
             }
         }
 

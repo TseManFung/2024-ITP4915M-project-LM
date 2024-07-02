@@ -133,7 +133,7 @@
     <value>描述：</value>
   </data>
   <data name="lblSpareName.Text" xml:space="preserve">
-    <value>备用名称：</value>
+    <value>备件名称：</value>
   </data>
   <data name="lblSparePrice.Text" xml:space="preserve">
     <value>价格：</value>
