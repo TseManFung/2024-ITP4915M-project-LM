@@ -53,6 +53,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.dgvItemFollowingROL, 5);
             resources.ApplyResources(this.dgvItemFollowingROL, "dgvItemFollowingROL");
             this.dgvItemFollowingROL.Name = "dgvItemFollowingROL";
+            this.dgvItemFollowingROL.ReadOnly = true;
             this.dgvItemFollowingROL.RowTemplate.Height = 24;
             this.dgvItemFollowingROL.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItemFollowingROL_CellContentClick);
             this.dgvItemFollowingROL.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvItemFollowingROL_CellPainting);
@@ -81,6 +82,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.dgvRestock, 5);
             resources.ApplyResources(this.dgvRestock, "dgvRestock");
             this.dgvRestock.Name = "dgvRestock";
+            this.dgvRestock.ReadOnly = true;
             this.dgvRestock.RowTemplate.Height = 24;
             this.dgvRestock.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRestock_CellContentClick);
             // 

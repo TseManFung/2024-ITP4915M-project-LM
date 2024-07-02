@@ -907,7 +907,7 @@
     <ShortName>Text</ShortName>
     <XPath />
     <ProgID>System.Windows.Forms.Form</ProgID>
-    <OriginalText>Repart new password:</OriginalText>
+    <OriginalText>Enter New PW Again:</OriginalText>
     <SortKey>BAlblRepartNewPassword.Text</SortKey>
     <NodeType>8963</NodeType>
     <Expanded>false</Expanded>
