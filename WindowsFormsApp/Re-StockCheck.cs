@@ -32,12 +32,9 @@ namespace WindowsFormsApp
                 reader.Read();
                 respent_warehouse = reader.GetInt32(0);
             }
-            string sql = $"SELECT ro.RestockOrderID, ri.ItemID, ri.Quantity, ri.State FROM RestockOrder ro JOIN RestockItem ri ON ro.RestockOrderID = ri.RestockOrderID WHERE ro.WarehouseID = {respent_warehouse};";
+            string sql = $"SELECT ro.RestockOrderID, ri.ItemID, ri.Quantity, ri.State FROM RestockOrder ro JOIN RestockItem ri ON ro.RestockOrderID = ri.RestockOrderID WHERE ro.WarehouseID = {respent_warehouse} AND ri.State != 'F';";
             
             RestockOrder = Main.db.GetDataTable(sql);
-
-
-
         }
         private void frmReStockCheck_Load(object sender, EventArgs e)
         {

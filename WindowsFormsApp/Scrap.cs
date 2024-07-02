@@ -35,7 +35,7 @@ namespace WindowsFormsApp
             // 檢查 txtQuantity 和 txtDiscrepancy 是否為空
             if (string.IsNullOrWhiteSpace(txtQuantity.Text) || string.IsNullOrWhiteSpace(txtDiscrepancy.Text))
             {
-                Main.ShowYesNoDialog(Resources.Please_enter_full_data);
+                Main.ShowMessage(Resources.Please_enter_full_data);
                 return;
             }
 
@@ -53,7 +53,7 @@ namespace WindowsFormsApp
 
                 UpdateStock(itemID, quantity, warehouseID);
 
-                Main.ShowYesNoDialog(Resources.ScrapItem_Successful);
+                Main.ShowMessage(Resources.ScrapItem_Successful);
             }
         }
 

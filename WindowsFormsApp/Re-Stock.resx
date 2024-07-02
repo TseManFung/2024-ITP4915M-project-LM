@@ -117,30 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnConfirm.Text" xml:space="preserve">
-    <value>Confirm</value>
-  </data>
-  <data name="btnMovedown.Text" xml:space="preserve">
-    <value>↓</value>
-  </data>
-  <data name="btnMoveUp.Text" xml:space="preserve">
-    <value>↑</value>
-  </data>
-  <data name="btnReStockConfirm.Text" xml:space="preserve">
-    <value>Restocking to CSL</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Re-stock</value>
-  </data>
-  <data name="lblItemFollowingROL.Text" xml:space="preserve">
-    <value>The following items have arrived in ROL:</value>
-  </data>
-  <data name="lblReStock.Text" xml:space="preserve">
-    <value>Restock:</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>5</value>
@@ -151,7 +127,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnMovedown.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt</value>
+    <value>新細明體, 24pt</value>
   </data>
   <data name="btnMovedown.Location" type="System.Drawing.Point, System.Drawing">
     <value>718, 255</value>
@@ -161,6 +137,9 @@
   </data>
   <data name="btnMovedown.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
+  </data>
+  <data name="btnMovedown.Text" xml:space="preserve">
+    <value>↓</value>
   </data>
   <data name="&gt;&gt;btnMovedown.Name" xml:space="preserve">
     <value>btnMovedown</value>
@@ -181,7 +160,7 @@
     <value>Fill</value>
   </data>
   <data name="lblItemFollowingROL.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt</value>
+    <value>新細明體, 24pt</value>
   </data>
   <data name="lblItemFollowingROL.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
@@ -191,6 +170,9 @@
   </data>
   <data name="lblItemFollowingROL.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
+  </data>
+  <data name="lblItemFollowingROL.Text" xml:space="preserve">
+    <value>The following items have arrived in ROL:</value>
   </data>
   <data name="&gt;&gt;lblItemFollowingROL.Name" xml:space="preserve">
     <value>lblItemFollowingROL</value>
@@ -208,7 +190,7 @@
     <value>Fill</value>
   </data>
   <data name="btnMoveUp.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt</value>
+    <value>新細明體, 24pt</value>
   </data>
   <data name="btnMoveUp.Location" type="System.Drawing.Point, System.Drawing">
     <value>333, 255</value>
@@ -218,6 +200,9 @@
   </data>
   <data name="btnMoveUp.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
+  </data>
+  <data name="btnMoveUp.Text" xml:space="preserve">
+    <value>↑</value>
   </data>
   <data name="&gt;&gt;btnMoveUp.Name" xml:space="preserve">
     <value>btnMoveUp</value>
@@ -262,7 +247,7 @@
     <value>Fill</value>
   </data>
   <data name="lblReStock.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt</value>
+    <value>新細明體, 24pt</value>
   </data>
   <data name="lblReStock.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 308</value>
@@ -272,6 +257,9 @@
   </data>
   <data name="lblReStock.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
+  </data>
+  <data name="lblReStock.Text" xml:space="preserve">
+    <value>Restock:</value>
   </data>
   <data name="&gt;&gt;lblReStock.Name" xml:space="preserve">
     <value>lblReStock</value>
@@ -289,7 +277,7 @@
     <value>Fill</value>
   </data>
   <data name="btnReStockConfirm.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt</value>
+    <value>新細明體, 24pt</value>
   </data>
   <data name="btnReStockConfirm.Location" type="System.Drawing.Point, System.Drawing">
     <value>773, 507</value>
@@ -299,6 +287,9 @@
   </data>
   <data name="btnReStockConfirm.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
+  </data>
+  <data name="btnReStockConfirm.Text" xml:space="preserve">
+    <value>Restocking to CSL</value>
   </data>
   <data name="&gt;&gt;btnReStockConfirm.Name" xml:space="preserve">
     <value>btnReStockConfirm</value>
@@ -367,7 +358,7 @@
     <value>3</value>
   </data>
   <data name="btnConfirm.Font" type="System.Drawing.Font, System.Drawing">
-    <value>PMingLiU, 24pt</value>
+    <value>新細明體, 24pt</value>
   </data>
   <data name="btnConfirm.Location" type="System.Drawing.Point, System.Drawing">
     <value>1379, 864</value>
@@ -377,6 +368,9 @@
   </data>
   <data name="btnConfirm.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
+  </data>
+  <data name="btnConfirm.Text" xml:space="preserve">
+    <value>Confirm</value>
   </data>
   <data name="&gt;&gt;btnConfirm.Name" xml:space="preserve">
     <value>btnConfirm</value>
@@ -390,11 +384,17 @@
   <data name="&gt;&gt;btnConfirm.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1100, 561</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Re-stock</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmReStock</value>

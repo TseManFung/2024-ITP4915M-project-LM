@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using System.Text.RegularExpressions;
 
 namespace WindowsFormsApp
 {
@@ -16,10 +17,16 @@ namespace WindowsFormsApp
     {
         private bool IsValidEmail(string email)
         {
+            var trimmedEmail = email.Trim();
+
+            if (trimmedEmail.EndsWith("."))
+            {
+                return false; // suggested by @TK-421
+            }
             try
             {
                 var addr = new System.Net.Mail.MailAddress(email);
-                return addr.Address == email;
+                return addr.Address == trimmedEmail;
             }
             catch
             {
@@ -48,14 +55,7 @@ namespace WindowsFormsApp
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtEmail.Text))
-            {
-                if (!IsValidEmail(txtEmail.Text))
-                {
-                    Main.ShowMessage(Resources.Please_enter_a_valid_email_add);
-                    txtEmail.Text = string.Empty;
-                }
-            }
+
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
@@ -107,9 +107,18 @@ namespace WindowsFormsApp
                 }
                 if (!string.IsNullOrEmpty(txtEmail.Text))
                 {
-                    string Email = txtEmail.Text.ToString();
-                    sql = $"UPDATE Dealer SET email = '{Email}' WHERE DealerID = {DealerID};";
-                    Main.db.updateBySql(sql);
+                    if (!IsValidEmail(txtEmail.Text))
+                    {
+                        Main.ShowMessage("Please enter a valid email address.");
+                        txtEmail.Text = string.Empty;
+                        txtEmail.SelectionStart = txtEmail.Text.Length;
+                    }
+                    else
+                    {
+                        string Email = txtEmail.Text.ToString();
+                        sql = $"UPDATE Dealer SET email = '{Email}' WHERE DealerID = {DealerID};";
+                        Main.db.updateBySql(sql);
+                    }
                 }
                 if (!string.IsNullOrEmpty(txtOfficeAdress.Text))
                 {
@@ -128,6 +137,7 @@ namespace WindowsFormsApp
                 txtEmail.Text = string.Empty;
                 txtOfficeAdress.Text = string.Empty;
                 txtDeliveryAddress.Text = string.Empty;
+                (this.ParentForm as Main)?.refreshPage(sender, e);
             }
 
         }

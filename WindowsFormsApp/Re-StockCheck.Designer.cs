@@ -47,6 +47,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.dataGridViewItemHaveArrivedInROL, 2);
             resources.ApplyResources(this.dataGridViewItemHaveArrivedInROL, "dataGridViewItemHaveArrivedInROL");
             this.dataGridViewItemHaveArrivedInROL.Name = "dataGridViewItemHaveArrivedInROL";
+            this.dataGridViewItemHaveArrivedInROL.ReadOnly = true;
             this.dataGridViewItemHaveArrivedInROL.RowTemplate.Height = 24;
             this.dataGridViewItemHaveArrivedInROL.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewItemHaveArrivedInROL_CellClick);
             this.dataGridViewItemHaveArrivedInROL.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewItemHaveArrivedInROL_CellContentClick);

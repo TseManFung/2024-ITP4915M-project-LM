@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace WindowsFormsApp
 {
@@ -49,7 +50,13 @@ namespace WindowsFormsApp
         {
             if (Main.ShowYesNoDialog(Resources.Do_you_want_to_turn_to_the_nex))
             {
-
+                if (!IsValidEmail(txtDepartmentEmail.Text))
+                {
+                    Main.ShowMessage("Please enter a valid email address.");
+                    txtDepartmentEmail.Text = string.Empty;
+                    txtDepartmentEmail.SelectionStart = txtDepartmentEmail.Text.Length;
+                    return;
+                }
                 if (!string.IsNullOrEmpty(txtDepartmentName.Text) && !string.IsNullOrEmpty(txtDepartmentEmail.Text) && !string.IsNullOrEmpty(txtDepartmentID.Text))
                 {
                     string DepartmentID = txtDepartmentID.Text;
@@ -133,7 +140,23 @@ namespace WindowsFormsApp
             txtDepartmentName.Text = String.Empty;
             txtDepartmentEmail.Text = String.Empty;
         }
+        private bool IsValidEmail(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+                return false;
 
+            try
+            {
+                // 使用正则表达式验证电子邮件格式
+                return Regex.IsMatch(email,
+                    @"^[^@\s]+@[^@\s]+\.[^@\s]{2,}$",
+                    RegexOptions.IgnoreCase);
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                return false;
+            }
+        }
         private void txtDepartmentID_TextChanged(object sender, EventArgs e)
         {
             string departmentID = txtDepartmentID.Text;

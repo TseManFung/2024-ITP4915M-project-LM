@@ -913,7 +913,7 @@
     <value>1</value>
   </data>
   <data name="lblDealerID.Text" xml:space="preserve">
-    <value>Dealer ID:</value>
+    <value>Dealer Name:</value>
   </data>
   <data name="lblDealerID.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>

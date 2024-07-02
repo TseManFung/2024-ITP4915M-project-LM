@@ -116,7 +116,7 @@ namespace WindowsFormsApp
         {
             if (dgvItemFollowingROL.Rows.Count == 0)
             {
-                Main.ShowMessage(Resources.No_rows_available_to_move);
+                //Main.ShowMessage(Resources.No_rows_available_to_move);
                 return;
             }
 
@@ -158,7 +158,7 @@ namespace WindowsFormsApp
         {
             if (dgvRestock.Rows.Count == 0)
             {
-                Main.ShowMessage(Resources.No_rows_available_to_move);
+                //Main.ShowMessage(Resources.No_rows_available_to_move);
                 return;
             }
 
@@ -201,7 +201,7 @@ namespace WindowsFormsApp
             // 確保 DataGridView 有行可供處理
             if (dgvRestock.Rows.Count == 0)
             {
-                MessageBox.Show(Resources.No_rows_available_in_the_resto);
+                //MessageBox.Show(Resources.No_rows_available_in_the_resto);
                 return;
             }
 

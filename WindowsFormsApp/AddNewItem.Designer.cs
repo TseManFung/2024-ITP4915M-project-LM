@@ -82,6 +82,7 @@
             resources.ApplyResources(this.txtSpareWeight, "txtSpareWeight");
             this.txtSpareWeight.Name = "txtSpareWeight";
             this.txtSpareWeight.TextChanged += new System.EventHandler(this.txtSpareWeight_TextChanged);
+            this.txtSpareWeight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSpareWeight_KeyPress);
             // 
             // btnSave
             // 
@@ -147,6 +148,7 @@
             resources.ApplyResources(this.txtSparePrice, "txtSparePrice");
             this.txtSparePrice.Name = "txtSparePrice";
             this.txtSparePrice.TextChanged += new System.EventHandler(this.txtSparePrice_TextChanged);
+            this.txtSparePrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSparePrice_KeyPress);
             // 
             // btnClear
             // 

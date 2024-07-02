@@ -113,14 +113,7 @@ namespace WindowsFormsApp
 
         private void txtPrice_TextChanged(object sender, EventArgs e)
         {
-            if (double.TryParse(txtPrice.Text, out double inputValue))
-            {
-                txtPrice.Text = string.Format("{0:#,##0.00}", inputValue);
-            }
-            else
-            {
-                txtPrice.Text = "0.00";
-            }
+
         }
 
         private void txtSpareWeight_TextChanged(object sender, EventArgs e)
@@ -227,6 +220,48 @@ namespace WindowsFormsApp
             else
             {
                 Main.ShowMessage(Resources.Please_select_an_item_to_delet);
+            }
+        }
+
+        private void txtPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // 获取当前输入的文本
+            string input = txtPrice.Text;
+
+            // 检查输入字符是否是数字（0-9）或退格键
+            if (char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back)
+            {
+                e.Handled = false;
+            }
+            // 允许输入一个小数点但不能重复
+            else if (e.KeyChar == '.' && !input.Contains('.'))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtSpareWeight_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // 获取当前输入的文本
+            string input = txtSpareWeight.Text;
+
+            // 检查输入字符是否是数字（0-9）或退格键
+            if (char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back)
+            {
+                e.Handled = false;
+            }
+            // 允许输入一个小数点但不能重复
+            else if (e.KeyChar == '.' && !input.Contains('.'))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
             }
         }
     }
