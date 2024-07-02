@@ -39,7 +39,7 @@ namespace WindowsFormsApp
                     // 检查 LoginName 是否已存在
                     if (IsLoginNameDuplicate(GlobalLoginNameForCreate))
                     {
-                        Main.ShowMessage("LoginName already exists. Please choose another name.");
+                        Main.ShowMessage(Resources.lnaepcann);
                         return;
                     }
 

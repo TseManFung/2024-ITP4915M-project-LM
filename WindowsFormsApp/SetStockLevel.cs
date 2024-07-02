@@ -114,7 +114,7 @@ namespace WindowsFormsApp
                     // 新增的验证逻辑，确保 DL < ROL < CSL
                     if (dangerLevel >= reOrderLevel || reOrderLevel >= commonStockLevel)
                     {
-                        Main.ShowMessage("Need to follow DL < ROL < CSL rule"); // 请在 Resources 中添加相应的资源字符串
+                        Main.ShowMessage(Resources.ntfdrcr); // 请在 Resources 中添加相应的资源字符串
                         return;
                     }
 

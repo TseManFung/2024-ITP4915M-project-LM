@@ -99,7 +99,7 @@ namespace WindowsFormsApp
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Do you want to creat a new account?"))
+            if (Main.ShowYesNoDialog(Resources.dywtcana))
             {
 
                 Random random = new Random();
@@ -113,13 +113,13 @@ namespace WindowsFormsApp
                 {
                     if (string.IsNullOrWhiteSpace(txtStaffName.Text))
                     {
-                        Main.ShowMessage("Staff Name cannot be empty.");
+                        Main.ShowMessage(Resources.sncbe);
                         return;
                     }
 
                     if (string.IsNullOrWhiteSpace(txtPhoneNum.Text))
                     {
-                        Main.ShowMessage("Phone Number cannot be empty.");
+                        Main.ShowMessage(Resources.pncbe);
                         return;
                     }
                     if (!string.IsNullOrEmpty(txtStaffName.Text)){

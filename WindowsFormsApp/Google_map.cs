@@ -156,7 +156,7 @@ namespace WindowsFormsApp
         {
 
             // 顯示確認對話框
-            if (Main.ShowYesNoDialog("Are you sure about this location ?"))
+            if (Main.ShowYesNoDialog(Resources.aysatl))
             {
                 // 嘗試將 txtlatitude 和 txtlongitude 的文本內容轉換為 decimal 類型
                 try

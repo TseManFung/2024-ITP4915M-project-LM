@@ -147,7 +147,7 @@ namespace WindowsFormsApp
 
                     if (duplicateCount > 0)
                     {
-                        Main.ShowMessage("Name Repeat.");
+                        Main.ShowMessage(Resources.nr);
                         return;
                     }
 
@@ -179,7 +179,7 @@ namespace WindowsFormsApp
                 }
                 else
                 {
-                    Main.ShowMessage("Please provide all data");
+                    Main.ShowMessage(Resources.ppad);
                 }
             }
         }

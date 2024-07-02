@@ -89,7 +89,7 @@ namespace WindowsFormsApp
         private void btnCreateNewSupplier_Click(object sender, EventArgs e)
         {
 
-            if (Main.ShowYesNoDialog("Do you want to add a supplier?"))
+            if (Main.ShowYesNoDialog(Resources.dywtas))
             {
                 if (!string.IsNullOrEmpty(txtEmail.Text))
                 {

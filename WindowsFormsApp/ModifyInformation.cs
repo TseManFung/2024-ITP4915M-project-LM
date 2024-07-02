@@ -109,7 +109,7 @@ namespace WindowsFormsApp
                 {
                     if (!IsValidEmail(txtEmail.Text))
                     {
-                        Main.ShowMessage("Please enter a valid email address.");
+                        Main.ShowYesNoDialog(Resources.peavea);
                         txtEmail.Text = string.Empty;
                         txtEmail.SelectionStart = txtEmail.Text.Length;
                     }

@@ -56,7 +56,7 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Do you want to add a new Warehouse?"))
+            if (Main.ShowYesNoDialog(Resources.dywanw))
             {
                 if (!string.IsNullOrEmpty(txtLocation.Text) && !string.IsNullOrEmpty(txtName.Text))
                 {
@@ -88,7 +88,7 @@ namespace WindowsFormsApp
 
                     if (existingRecords > 0)
                     {
-                        Main.ShowMessage("Name or Location already exists");
+                        Main.ShowMessage(Resources.nlae);
                     }
                     else
                     {

@@ -53,7 +53,7 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog("Do you want to add a new spare?"))
+            if (Main.ShowYesNoDialog(Resources.dywtans))
             {
                 if (
                 comboBoxSpareType.SelectedItem != null &&

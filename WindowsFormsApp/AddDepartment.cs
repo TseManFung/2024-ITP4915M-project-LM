@@ -48,11 +48,11 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog(Resources.Do_you_want_to_turn_to_the_nex))
+            if (Main.ShowYesNoDialog(Resources.dywand))
             {
                 if (!IsValidEmail(txtDepartmentEmail.Text))
                 {
-                    Main.ShowMessage("Please enter a valid email address.");
+                    Main.ShowYesNoDialog(Resources.peavea);
                     txtDepartmentEmail.Text = string.Empty;
                     txtDepartmentEmail.SelectionStart = txtDepartmentEmail.Text.Length;
                     return;
