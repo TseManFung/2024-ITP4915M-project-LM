@@ -22,15 +22,24 @@ namespace WindowsFormsApp
 
         private void btnRecord_Click(object sender, EventArgs e)
         {
+            // 檢查 comboBoxSpareID 是否有選取的項目
+            if (comboBoxSpareID.SelectedItem == null)
+            {
+                return;
+            }
 
+
+            // 確認操作
             if (!Main.ShowYesNoDialog(Resources.Are_you_sure_you_want_to_chang0)) return;
 
+            // 檢查 txtQuantity 和 txtDiscrepancy 是否為空
             if (string.IsNullOrWhiteSpace(txtQuantity.Text) || string.IsNullOrWhiteSpace(txtDiscrepancy.Text))
             {
                 Main.ShowYesNoDialog(Resources.Please_enter_full_data);
                 return;
             }
 
+            // 檢查數量是否為有效的整數
             if (int.TryParse(txtQuantity.Text, out int quantity))
             {
                 int staffID = GetStaffID();
@@ -117,7 +126,7 @@ namespace WindowsFormsApp
         private void LoadSpareIDs(int warehouseID)
         {
             List<string> spareIDList = new List<string>();
-            string sql = $"SELECT SpareID FROM WarehouseStockLevel WHERE WarehouseID = {warehouseID}";
+            string sql = $"SELECT SpareID FROM ActualStock WHERE WarehouseID = {warehouseID} AND quantity > 0";
             using (var reader = Main.db.readBySql(sql))
             {
                 while (reader.Read())

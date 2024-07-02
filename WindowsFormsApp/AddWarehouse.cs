@@ -56,7 +56,7 @@ namespace WindowsFormsApp
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (Main.ShowYesNoDialog(Resources.Do_you_want_to_turn_to_the_nex))
+            if (Main.ShowYesNoDialog("Do you want to add a new Warehouse?"))
             {
                 if (!string.IsNullOrEmpty(txtLocation.Text) && !string.IsNullOrEmpty(txtName.Text))
                 {

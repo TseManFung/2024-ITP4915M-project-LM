@@ -67,7 +67,7 @@ namespace WindowsFormsApp
 
                 return;
             }
-            if (Main.ShowYesNoDialog(Resources.Are_you_sure_you_want_to_chang0))
+            if (Main.ShowYesNoDialog("Do you want to creat a new account?"))
             {
                 Random random = new Random();
                 string randompasswd = CreatePassword(8);
