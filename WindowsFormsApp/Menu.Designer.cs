@@ -33,6 +33,12 @@
             this.lblAddNewSpare = new System.Windows.Forms.Label();
             this.lblReStock = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel26 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBoxAddNewProduct = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
@@ -103,6 +109,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBoxLenguage = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tableLayoutPanel26.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAddNewProduct)).BeginInit();
             this.tableLayoutPanel8.SuspendLayout();
@@ -177,6 +187,8 @@
             // flowLayoutPanel1
             // 
             resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel25);
+            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel26);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel3);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel8);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel23);
@@ -203,6 +215,56 @@
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel24);
             this.flowLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
+            // tableLayoutPanel25
+            // 
+            resources.ApplyResources(this.tableLayoutPanel25, "tableLayoutPanel25");
+            this.tableLayoutPanel25.Controls.Add(this.pictureBox2, 0, 0);
+            this.tableLayoutPanel25.Controls.Add(this.label3, 0, 1);
+            this.tableLayoutPanel25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tableLayoutPanel25.Name = "tableLayoutPanel25";
+            this.tableLayoutPanel25.Click += new System.EventHandler(this.tableLayoutPanel25_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Image = global::WindowsFormsApp.Properties.Resources.search_452448;
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.tableLayoutPanel25_Click);
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label3.Name = "label3";
+            this.label3.Click += new System.EventHandler(this.tableLayoutPanel25_Click);
+            // 
+            // tableLayoutPanel26
+            // 
+            resources.ApplyResources(this.tableLayoutPanel26, "tableLayoutPanel26");
+            this.tableLayoutPanel26.Controls.Add(this.pictureBox3, 0, 0);
+            this.tableLayoutPanel26.Controls.Add(this.label4, 0, 1);
+            this.tableLayoutPanel26.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tableLayoutPanel26.Name = "tableLayoutPanel26";
+            this.tableLayoutPanel26.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
+            this.pictureBox3.Image = global::WindowsFormsApp.Properties.Resources.printing_document_72649;
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label4.Name = "label4";
+            this.label4.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -755,6 +817,12 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Load += new System.EventHandler(this.FrmDirectory_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel25.ResumeLayout(false);
+            this.tableLayoutPanel25.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tableLayoutPanel26.ResumeLayout(false);
+            this.tableLayoutPanel26.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAddNewProduct)).EndInit();
@@ -905,6 +973,12 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel24;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel25;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel26;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

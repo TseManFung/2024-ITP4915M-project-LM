@@ -68,7 +68,21 @@ namespace WindowsFormsApp.Properties {
                 return ResourceManager.GetString("_Date", resourceCulture);
             }
         }
-        
+        public static string Signature_already_exists
+        {
+            get
+            {
+                return ResourceManager.GetString("Signature_already_exists", resourceCulture);
+            }
+        }
+        public static string have_restock_order
+        {
+            get
+            {
+                return ResourceManager.GetString("have_restock_order", resourceCulture);
+            }
+        }
+
         /// <summary>
         ///   查詢類似 error 的當地語系化字串。
         /// </summary>
@@ -122,13 +136,7 @@ namespace WindowsFormsApp.Properties {
                 return ResourceManager.GetString("Add_Warehouse", resourceCulture);
             }
         }
-        public static string have_restock_order
-        {
-            get
-            {
-                return ResourceManager.GetString("have_restock_order", resourceCulture);
-            }
-        }
+        
         /// <summary>
         ///   查詢類似 All fuck up 的當地語系化字串。
         /// </summary>
@@ -146,13 +154,7 @@ namespace WindowsFormsApp.Properties {
                 return ResourceManager.GetString("all_warehouse", resourceCulture);
             }
         }
-        public static string Please_select_a_warehouse
-        {
-            get
-            {
-                return ResourceManager.GetString("Please_select_a_warehouse", resourceCulture);
-            }
-        }
+        
         /// <summary>
         ///   查詢類似 Are you sure you want to change your password? 的當地語系化字串。
         /// </summary>
@@ -198,11 +200,6 @@ namespace WindowsFormsApp.Properties {
             }
         }
         
-        public static string Signature_already_exists
-        {
-            get { return ResourceManager.GetString("Signature_already_exists", resourceCulture); }
-        }
-
         /// <summary>
         ///   查詢類似 Are you sure you want to remove all items from your cart? 的當地語系化字串。
         /// </summary>
@@ -805,7 +802,129 @@ namespace WindowsFormsApp.Properties {
                 return ResourceManager.GetString("No_item_in_cart", resourceCulture);
             }
         }
-        
+        public static string sncbe
+        {
+            get
+            {
+                return ResourceManager.GetString("sncbe", resourceCulture);
+            }
+        }
+
+        public static string pncbe
+        {
+            get
+            {
+                return ResourceManager.GetString("pncbe", resourceCulture);
+            }
+        }
+
+        public static string lnaepcann
+        {
+            get
+            {
+                return ResourceManager.GetString("lnaepcann", resourceCulture);
+            }
+        }
+
+        public static string ntfdrcr
+        {
+            get
+            {
+                return ResourceManager.GetString("ntfdrcr", resourceCulture);
+            }
+        }
+
+        public static string ppad
+        {
+            get
+            {
+                return ResourceManager.GetString("ppad", resourceCulture);
+            }
+        }
+
+        public static string nr
+        {
+            get
+            {
+                return ResourceManager.GetString("nr", resourceCulture);
+            }
+        }
+
+        public static string nlae
+        {
+            get
+            {
+                return ResourceManager.GetString("nlae", resourceCulture);
+            }
+        }
+
+        public static string dywanw
+        {
+            get
+            {
+                return ResourceManager.GetString("dywanw", resourceCulture);
+            }
+        }
+
+        public static string dywand
+        {
+            get
+            {
+                return ResourceManager.GetString("dywand", resourceCulture);
+            }
+        }
+
+        public static string aysatl
+        {
+            get
+            {
+                return ResourceManager.GetString("aysatl", resourceCulture);
+            }
+        }
+
+        public static string dywtcana
+        {
+            get
+            {
+                return ResourceManager.GetString("dywtcana", resourceCulture);
+            }
+        }
+
+
+
+        public static string dywtas
+        {
+            get
+            {
+                return ResourceManager.GetString("dywtas", resourceCulture);
+            }
+        }
+
+        public static string dywtanw
+        {
+            get
+            {
+                return ResourceManager.GetString("dywtanw", resourceCulture);
+            }
+        }
+
+        public static string dywtans
+        {
+            get
+            {
+                return ResourceManager.GetString("dywtans", resourceCulture);
+            }
+        }
+
+        public static string peavea
+        {
+            get
+            {
+                return ResourceManager.GetString("peavea", resourceCulture);
+            }
+        }
+
+
         /// <summary>
         ///   查詢類似 No. of bundles 的當地語系化字串。
         /// </summary>
@@ -1343,6 +1462,16 @@ namespace WindowsFormsApp.Properties {
         }
         
         /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        public static System.Drawing.Bitmap search_452448 {
+            get {
+                object obj = ResourceManager.GetObject("search_452448", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 Select language 的當地語系化字串。
         /// </summary>
         public static string Select_language {
@@ -1783,129 +1912,5 @@ namespace WindowsFormsApp.Properties {
                 return ResourceManager.GetString("your_working_warehouse", resourceCulture);
             }
         }
-
-        public static string sncbe
-        {
-            get
-            {
-                return ResourceManager.GetString("sncbe", resourceCulture);
-            }
-        }
-
-        public static string pncbe
-        {
-            get
-            {
-                return ResourceManager.GetString("pncbe", resourceCulture);
-            }
-        }
-
-        public static string lnaepcann
-        {
-            get
-            {
-                return ResourceManager.GetString("lnaepcann", resourceCulture);
-            }
-        }
-
-        public static string ntfdrcr
-        {
-            get
-            {
-                return ResourceManager.GetString("ntfdrcr", resourceCulture);
-            }
-        }
-
-        public static string ppad
-        {
-            get
-            {
-                return ResourceManager.GetString("ppad", resourceCulture);
-            }
-        }
-
-        public static string nr
-        {
-            get
-            {
-                return ResourceManager.GetString("nr", resourceCulture);
-            }
-        }
-
-        public static string nlae
-        {
-            get
-            {
-                return ResourceManager.GetString("nlae", resourceCulture);
-            }
-        }
-
-        public static string dywanw
-        {
-            get
-            {
-                return ResourceManager.GetString("dywanw", resourceCulture);
-            }
-        }
-
-        public static string dywand
-        {
-            get
-            {
-                return ResourceManager.GetString("dywand", resourceCulture);
-            }
-        }
-
-        public static string aysatl
-        {
-            get
-            {
-                return ResourceManager.GetString("aysatl", resourceCulture);
-            }
-        }
-
-        public static string dywtcana
-        {
-            get
-            {
-                return ResourceManager.GetString("dywtcana", resourceCulture);
-            }
-        }
-
-
-        public static string dywtas
-        {
-            get
-            {
-                return ResourceManager.GetString("dywtas", resourceCulture);
-            }
-        }
-
-        public static string dywtanw
-        {
-            get
-            {
-                return ResourceManager.GetString("dywtanw", resourceCulture);
-            }
-        }
-
-        public static string dywtans
-        {
-            get
-            {
-                return ResourceManager.GetString("dywtans", resourceCulture);
-            }
-        }
-
-        public static string peavea
-        {
-            get
-            {
-                return ResourceManager.GetString("peavea", resourceCulture);
-            }
-        }
-
-
-
     }
 }

@@ -108,7 +108,8 @@ namespace WindowsFormsApp
 
                 if (remainingQuantity < quantity)
                 {
-                    if (remainingQuantity <= 0){
+                    if (remainingQuantity <= 0)
+                    {
                         // Update OrderItemToFollow state to 'D' (Done)
                         string updateOrderItemToFollowSql = $@"
                     UPDATE OrderItemToFollow
@@ -167,7 +168,7 @@ WHERE OrderSerial = '{orderSerial}' AND ItemID = '{itemId}';";
                         Main.db.updateBySql(sql);
                     }
                 }
-                
+
             }
             Main.ShowMessage(Resources.Order_Items_Assigned_to_Collec);
         }

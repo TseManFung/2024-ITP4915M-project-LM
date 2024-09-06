@@ -240,5 +240,15 @@ namespace WindowsFormsApp
             //Google_map map = new Google_map();
             //map.ShowDialog();
         }
+
+        private void tableLayoutPanel25_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(WB));
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            (this.ParentForm as Main)?.Change_pContent(typeof(Printer));
+        }
     }
 }

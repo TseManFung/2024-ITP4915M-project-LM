@@ -19,8 +19,8 @@ namespace WindowsFormsApp
     {
         SshClient client;
         MySqlConnection dbconnect;
-        string mysqlUid = "mysqluser",mysqlPW = "P@$$w0rd",dbName= "test";
-        string serverIP = "192.9.149.106", serverUser = "mysqluser", serverPassword = "P@$$w0rd";
+        string mysqlUid = "yourSqlUser", mysqlPW = "yourPassword", dbName= "yourDB";
+        string serverIP = "192.168.0.105", serverUser = "yourServerUser", serverPassword = "yourPassword";
         public sshdatabase()
 
         {

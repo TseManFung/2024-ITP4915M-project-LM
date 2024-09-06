@@ -57,7 +57,7 @@ namespace WindowsFormsApp
                     return; // 直接返回，不执行后续代码
                 }
 
-                var locationService = new GoogleLocationService("AIzaSyAeOo4nChV9deCrWRXYLclKMxJOTe3zW1M");
+                var locationService = new GoogleLocationService("Your Google map API key");
                 var point = locationService.GetLatLongFromAddress(address);
 
                 if (point != null)
